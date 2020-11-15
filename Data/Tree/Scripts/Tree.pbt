@@ -490,12 +490,6 @@ Objects {
   }
   ParentId: 17922148234597677997
   UnregisteredParameters {
-    Overrides {
-      Name: "cs:UITextBox"
-      ObjectReference {
-        SelfId: 5224127701068141297
-      }
-    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -526,7 +520,6 @@ Objects {
   ParentId: 5539997602360125933
   ChildIds: 11187243948824875444
   ChildIds: 17061046855740868296
-  ChildIds: 4233317978159871635
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -535,33 +528,6 @@ Objects {
   }
   NetworkContext {
     Type: Server
-  }
-}
-Objects {
-  Id: 4233317978159871635
-  Name: "Overrun_Barriers_Server"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 8379578297261672591
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 12646508123531220181
-    }
   }
 }
 Objects {
