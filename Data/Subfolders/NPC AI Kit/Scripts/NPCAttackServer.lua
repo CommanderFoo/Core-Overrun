@@ -206,7 +206,10 @@ function ApplyDamage(dmg, source, position, rotation)
 		
 		-- Events
 		
-		Events.Broadcast("ObjectDamaged", id, prevHealth, amount, impactPosition, impactRotation, source)
+		if(source:IsA("Player")) then
+			source:SetResource("money", source:GetResource("money") + 10)
+		end
+		--Events.Broadcast("ObjectDamaged", id, prevHealth, amount, impactPosition, impactRotation, source)
 		--Events.BroadcastToAllPlayers("ObjectDamaged", id, prevHealth, amount, impactPosition, impactRotation)
 
 		if (newHealth <= 0) then

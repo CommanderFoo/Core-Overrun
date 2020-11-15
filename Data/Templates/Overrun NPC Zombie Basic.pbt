@@ -40,7 +40,7 @@
           }
           Overrides {
             Name: "cs:MoveSpeed"
-            Float: 200
+            Float: 250
           }
           Overrides {
             Name: "cs:TurnSpeed"
@@ -60,7 +60,7 @@
           }
           Overrides {
             Name: "cs:VisionRadius"
-            Float: 2500
+            Float: 25000
           }
           Overrides {
             Name: "cs:HearingRadius"
@@ -76,7 +76,7 @@
           }
           Overrides {
             Name: "cs:PossibilityRadius"
-            Float: 800
+            Float: 8000
           }
           Overrides {
             Name: "cs:ChaseRadius"
@@ -84,7 +84,7 @@
           }
           Overrides {
             Name: "cs:AttackRange"
-            Float: 180
+            Float: 200
           }
           Overrides {
             Name: "cs:AttackCast"
@@ -100,7 +100,7 @@
           }
           Overrides {
             Name: "cs:IsPushable"
-            Bool: true
+            Bool: false
           }
           Overrides {
             Name: "cs:RewardResourceType"

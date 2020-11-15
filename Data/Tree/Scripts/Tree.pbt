@@ -465,6 +465,7 @@ Objects {
   }
   ParentId: 5539997602360125933
   ChildIds: 2806057428770215655
+  ChildIds: 7362314865063371097
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -472,6 +473,41 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   NetworkContext {
+  }
+}
+Objects {
+  Id: 7362314865063371097
+  Name: "Overrun_Barrier_Repair_Client"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17922148234597677997
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:rebuild_barrier_ui"
+      ObjectReference {
+        SelfId: 14072280616316253174
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 4086251281095042596
+    }
   }
 }
 Objects {
@@ -490,6 +526,42 @@ Objects {
   }
   ParentId: 17922148234597677997
   UnregisteredParameters {
+    Overrides {
+      Name: "cs:players_info_ui_root"
+      ObjectReference {
+        SelfId: 3010311085128505972
+      }
+    }
+    Overrides {
+      Name: "cs:player_info_ui"
+      AssetReference {
+        Id: 7808514694293132521
+      }
+    }
+    Overrides {
+      Name: "cs:own_info_color"
+      Color {
+        R: 0.0730460584
+        G: 0.278068542
+        B: 0.426000118
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:PIXELDEPTH_API"
+      AssetReference {
+        Id: 16622261663679835299
+      }
+    }
+    Overrides {
+      Name: "cs:joined_sound"
+      ObjectReference {
+        SelfId: 13911773174050182807
+        SubObjectId: 3650108233775351565
+        InstanceId: 214292183232496103
+        TemplateId: 7018041226583989658
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"

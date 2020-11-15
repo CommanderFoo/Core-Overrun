@@ -3,9 +3,11 @@ local zombie = script:GetCustomProperty("zombie")
 local spawn_points = script:GetCustomProperty("spawn_points"):WaitForObject()
 
 local spawned = 0
-local max = 0
+local max = 10
 local spawn_task = nil
 
+--Task.Wait(10)
+--[[
 spawn_task = Task.Spawn(function()
 	local point = spawn_points:GetChildren()[math.random(#spawn_points:GetChildren())]
 	local pos = point:GetWorldPosition()
@@ -16,4 +18,5 @@ spawn_task = Task.Spawn(function()
 end)
 
 spawn_task.repeatCount = max
-spawn_task.repeatInterval = 1
+spawn_task.repeatInterval = 4
+--]]

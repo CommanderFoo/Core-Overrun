@@ -138,9 +138,10 @@ function SetState(newState)
 
 	elseif (newState == STATE_DISABLED) then
 
-			ROOT:Destroy()
-
-			ROOT.visibility = Visibility.FORCE_OFF
+			if(ROOT) then
+				ROOT.visibility = Visibility.FORCE_OFF
+				ROOT:Destroy()
+			end
 
 	end
 

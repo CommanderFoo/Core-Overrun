@@ -3,16 +3,34 @@ local timer = 20
 local starting_money = 500
 local round = 1
 
-function player_joined(player)
+local players = {}
+
+function player_joined(p)
+	if(not players[p.id]) then
+		players[p.id] = {
+			
+			player = p,
+			money = 500
+
+		}
+	end
+
 	if(not game_started) then
 		start_count_down()
 	end
 
-	setup_basics(player)
+	p:SetResource("money", starting_money)
+
+	--Events.BroadcastToAllPlayers("on_player_joined")
 end
 
-function setup_basics(player)
-	player:SetResource("money", starting_money)
+
+function player_left(p)
+	if(players[p.id]) then
+		players[p.id] = nil
+	end
+
+	--Events.BroadcastToAllPlayers("on_")
 end
 
 function start_count_down()
@@ -28,3 +46,4 @@ function start_count_down()
 end
 
 Game.playerJoinedEvent:Connect(player_joined)
+Game.playerLeftEvent:Connect(player_left)

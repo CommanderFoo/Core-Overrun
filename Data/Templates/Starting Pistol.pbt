@@ -20,6 +20,7 @@
         ChildIds: 17873086566573210660
         ChildIds: 1362060855448717416
         ChildIds: 4373499945125048077
+        ChildIds: 5059658367404588707
         UnregisteredParameters {
         }
         WantsNetworking: true
@@ -604,6 +605,32 @@
           ScriptAsset {
             Id: 16535125421909335487
           }
+        }
+      }
+      Objects {
+        Id: 5059658367404588707
+        Name: "ServerContext"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 14156651541393010698
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        NetworkContext {
+          Type: Server
         }
       }
     }

@@ -1,8 +1,8 @@
 ﻿Name: "Barriers"
 RootId: 4575465872145801983
 Objects {
-  Id: 5565754451585328209
-  Name: "Overrun Fake NPC Barrier"
+  Id: 1623792801752357824
+  Name: "Overrun Barrier"
   Transform {
     Scale {
       X: 1
@@ -11,27 +11,56 @@ Objects {
     }
   }
   ParentId: 4575465872145801983
-  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceon"
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
     ParameterOverrideMap {
-      key: 13696646143133727923
+      key: 7917693585915175409
       value {
         Overrides {
-          Name: "Name"
-          String: "Overrun Fake NPC Barrier"
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:forceoff"
+          }
         }
         Overrides {
           Name: "Position"
           Vector {
-            X: 806.170349
-            Y: -52.838707
-            Z: 243.948761
+            X: -6.4619751
+            Y: 45.6309128
+            Z: 99.5240479
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.71510231
+            Y: 0.170937777
+            Z: 2.74540138
+          }
+        }
+        Overrides {
+          Name: "StaticMesh"
+          AssetReference {
+            Id: 12095835209017042614
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 14837395404085517563
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Overrun Barrier"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
           }
         }
         Overrides {
@@ -42,7 +71,7 @@ Objects {
       }
     }
     TemplateAsset {
-      Id: 11892570005658649769
+      Id: 18099356846919095742
     }
   }
 }
