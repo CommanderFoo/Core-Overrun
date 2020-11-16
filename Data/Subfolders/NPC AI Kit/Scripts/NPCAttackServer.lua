@@ -206,17 +206,22 @@ function ApplyDamage(dmg, source, position, rotation)
 		
 		-- Events
 		
-		if(source:IsA("Player")) then
-			source:SetResource("money", source:GetResource("money") + 10)
-		end
+		local money = ROOT:GetCustomProperty("money_per_hit")
+
 		--Events.Broadcast("ObjectDamaged", id, prevHealth, amount, impactPosition, impactRotation, source)
 		--Events.BroadcastToAllPlayers("ObjectDamaged", id, prevHealth, amount, impactPosition, impactRotation)
 
 		if (newHealth <= 0) then
+			money = money + ROOT:GetCustomProperty("money_per_kill")
+
 			Events.Broadcast("ObjectDestroyed", id)
-			Events.BroadcastToAllPlayers("ObjectDestroyed", id)
+			--Events.BroadcastToAllPlayers("ObjectDestroyed", id)
 			
 			DropRewards(source)
+		end
+
+		if(source:IsA("Player")) then
+			source:SetResource("money", source:GetResource("money") + money)
 		end
 
 		--print(ROOT.name .. " Health = " .. newHealth)

@@ -24,6 +24,7 @@ Objects {
   ChildIds: 4575465872145801983
   ChildIds: 11108024316399262656
   ChildIds: 2202992188429786742
+  ChildIds: 6538324789638676258
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -33,6 +34,32 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 6538324789638676258
+  Name: "Wall Weapons"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Wall Weapons"
   }
 }
 Objects {
@@ -191,6 +218,7 @@ Objects {
   ParentId: 4781671109827199097
   ChildIds: 5202632611776707024
   ChildIds: 13271393933971779920
+  ChildIds: 13813425955813086161
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceon"
   }
@@ -199,6 +227,55 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 13813425955813086161
+  Name: "Cube"
+  Transform {
+    Location {
+      X: 871.996826
+      Y: -1393.24548
+      Z: 282.528442
+    }
+    Rotation {
+      Yaw: 90
+    }
+    Scale {
+      X: 3.35734844
+      Y: 0.524211287
+      Z: 3.51104212
+    }
+  }
+  ParentId: 7027765657621367027
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+      TeamInt: 1
+      IsTeamCollisionEnabled: true
+    }
+    DisableDistanceFieldLighting: true
+    DisableCastShadows: true
+    DisableReceiveDecals: true
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
   }
 }
 Objects {

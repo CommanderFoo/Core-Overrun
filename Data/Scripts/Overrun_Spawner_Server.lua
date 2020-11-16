@@ -3,7 +3,7 @@ local zombie = script:GetCustomProperty("zombie")
 local spawn_points = script:GetCustomProperty("spawn_points"):WaitForObject()
 
 local spawned = 0
-local max = 10
+local max = 5
 local spawn_task = nil
 
 --Task.Wait(10)

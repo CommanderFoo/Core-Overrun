@@ -1,4 +1,8 @@
-﻿local player_info_ui_root = script:GetCustomProperty("players_info_ui_root"):WaitForObject()
+﻿local PIXELDEPTH = require(script:GetCustomProperty("PIXELDEPTH_API"))
+
+PIXELDEPTH.Utils = PIXELDEPTH.require("Utils")
+
+local player_info_ui_root = script:GetCustomProperty("players_info_ui_root"):WaitForObject()
 local player_info_ui = script:GetCustomProperty("player_info_ui")
 local own_info_color = script:GetCustomProperty("own_info_color")
 local joined_sound = script:GetCustomProperty("joined_sound"):WaitForObject()
@@ -158,13 +162,24 @@ function player_left(p)
 	end
 end
 
-function resource_changed(player, prop, val)
+function resource_changed(p, prop, val)
 	if(prop == "money") then
+		if(players[local_player.id]) then
+			players[local_player.id].money_ui.text = PIXELDEPTH.Utils.number_format(local_player:GetResource("money"))
+		end
+	end
+end
 
+function money_changed(data)
+	for i = 1, #data do
+		if(data[i].id ~= local_player.id and players[data[i].id]) then
+			players[data[i].id].money_ui.text =  PIXELDEPTH.Utils.number_format(data[i].m)
+		end
 	end
 end
 
 Events.Connect("on_game_starting", game_starting)
+Events.Connect("on_player_money_changed", money_changed)
 
 Game.playerJoinedEvent:Connect(player_joined)
 Game.playerLeftEvent:Connect(player_left)

@@ -115,6 +115,14 @@
             String: "Common"
           }
           Overrides {
+            Name: "cs:money_per_hit"
+            Int: 20
+          }
+          Overrides {
+            Name: "cs:money_per_kill"
+            Int: 50
+          }
+          Overrides {
             Name: "cs:CurrentState:isrep"
             Bool: true
           }

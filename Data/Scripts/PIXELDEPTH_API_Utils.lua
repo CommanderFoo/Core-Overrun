@@ -44,4 +44,8 @@ function Utils.Queue.new()
 	return setmetatable({list = {}}, {__index = Utils.Queue})
 end
 
+function Utils.number_format(i)
+	return tostring(i):reverse():gsub("%d%d%d", "%1,"):reverse():gsub("^,", "")
+end
+  
 return Utils
