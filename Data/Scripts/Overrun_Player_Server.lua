@@ -1,6 +1,6 @@
 ﻿local game_started = false
 local timer = 20
-local starting_money = 500
+local starting_money = 5000
 local round = 1
 
 local players = {}

@@ -7,7 +7,7 @@
       RootId: 14156651541393010698
       Objects {
         Id: 14156651541393010698
-        Name: "Starting Pistol"
+        Name: "Overrun Starting Pistol"
         Transform {
           Scale {
             X: 1
@@ -22,6 +22,10 @@
         ChildIds: 4373499945125048077
         ChildIds: 5059658367404588707
         UnregisteredParameters {
+          Overrides {
+            Name: "cs:asset_id"
+            String: "E22EA37EB8218DAE"
+          }
         }
         WantsNetworking: true
         Collidable_v2 {

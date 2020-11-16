@@ -20,6 +20,10 @@
         ChildIds: 15993272946379664876
         ChildIds: 7866912545958509903
         UnregisteredParameters {
+          Overrides {
+            Name: "cs:asset_id"
+            String: "34991C6E67BCACC9"
+          }
         }
         WantsNetworking: true
         Collidable_v2 {
@@ -80,6 +84,7 @@
             }
             MaxAmmo: 10
             AmmoType: "rounds"
+            IsFiniteAmmo: true
             MultiShot: 5
             ProjectileSpeed: 25000
             ProjectileLifeSpan: 10

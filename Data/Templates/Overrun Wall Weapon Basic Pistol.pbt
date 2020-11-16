@@ -16,10 +16,10 @@
           }
         }
         ParentId: 6538324789638676258
-        ChildIds: 10670131652563543676
         ChildIds: 2352675836155460061
         ChildIds: 16087585303900235575
         ChildIds: 12327541943399218918
+        ChildIds: 2111972060741272325
         UnregisteredParameters {
           Overrides {
             Name: "cs:asset"
@@ -32,12 +32,12 @@
             Bool: true
           }
           Overrides {
-            Name: "cs:weapon_id"
-            String: "Starting Pistol"
+            Name: "cs:basic_id"
+            String: "E22EA37EB8218DAE"
           }
           Overrides {
-            Name: "cs:weapon_upgrade_id"
-            String: "Starting Pistol Upgraded"
+            Name: "cs:upgrade_id"
+            String: "ddddd"
           }
           Overrides {
             Name: "cs:basic_price"
@@ -76,6 +76,15 @@
               A: 1
             }
           }
+          Overrides {
+            Name: "cs:sound"
+            ObjectReference {
+              SelfId: 7020767313076153098
+              SubObjectId: 16871770483126420369
+              InstanceId: 6356875522555402097
+              TemplateId: 4203657736232604118
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -85,49 +94,7 @@
         }
         Folder {
           IsFilePartition: true
-        }
-      }
-      Objects {
-        Id: 10670131652563543676
-        Name: "Overrun_Wall_Weapon_Server"
-        Transform {
-          Location {
-            Y: 0.000122070313
-            Z: 3.05175781e-05
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 16750022872046165057
-        UnregisteredParameters {
-          Overrides {
-            Name: "cs:trigger"
-            ObjectReference {
-              SubObjectId: 12327541943399218918
-            }
-          }
-          Overrides {
-            Name: "cs:root"
-            ObjectReference {
-              SubObjectId: 16750022872046165057
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Script {
-          ScriptAsset {
-            Id: 768736100330168367
-          }
+          FilePartitionName: "Overrun Wall Weapon Basic Pistol"
         }
       }
       Objects {
@@ -703,12 +670,12 @@
         Name: "Trigger"
         Transform {
           Location {
-            Y: 56.0771484
+            Y: 56.0772705
           }
           Rotation {
           }
           Scale {
-            X: 1.81235743
+            X: 1.81235754
             Y: 1.17053008
             Z: 2.56026721
           }
@@ -723,10 +690,78 @@
         Trigger {
           TeamSettings {
             IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
           }
           TriggerShape_v2 {
             Value: "mc:etriggershape:box"
+          }
+        }
+      }
+      Objects {
+        Id: 2111972060741272325
+        Name: "ServerContext"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 16750022872046165057
+        ChildIds: 10670131652563543676
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        NetworkContext {
+          Type: Server
+        }
+      }
+      Objects {
+        Id: 10670131652563543676
+        Name: "Overrun_Wall_Weapon_Server"
+        Transform {
+          Location {
+            Y: 0.000122070313
+            Z: 3.05175781e-05
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 2111972060741272325
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:trigger"
+            ObjectReference {
+              SubObjectId: 12327541943399218918
+            }
+          }
+          Overrides {
+            Name: "cs:root"
+            ObjectReference {
+              SubObjectId: 16750022872046165057
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Script {
+          ScriptAsset {
+            Id: 768736100330168367
           }
         }
       }

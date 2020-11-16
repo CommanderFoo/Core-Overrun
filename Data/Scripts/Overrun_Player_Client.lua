@@ -5,7 +5,6 @@ PIXELDEPTH.Utils = PIXELDEPTH.require("Utils")
 local player_info_ui_root = script:GetCustomProperty("players_info_ui_root"):WaitForObject()
 local player_info_ui = script:GetCustomProperty("player_info_ui")
 local own_info_color = script:GetCustomProperty("own_info_color")
-local joined_sound = script:GetCustomProperty("joined_sound"):WaitForObject()
 
 local local_player = Game.GetLocalPlayer()
 local players = {}
@@ -76,7 +75,7 @@ function player_joined(p)
 		avatar_ui:SetImage(p)
 
 		Task.Spawn(function()
-			joined_sound:Play()
+			Events.Broadcast("on_audio_player_joined")
 		end)
 	end
 end
@@ -106,7 +105,7 @@ function reset_info_ui(info)
 	overlay_ui.visibility = Visibility.FORCE_OFF
 
 	Task.Spawn(function()
-		joined_sound:Play()
+		Events.Broadcast("on_audio_player_joined")
 	end)
 end
 

@@ -32,12 +32,12 @@
             Bool: true
           }
           Overrides {
-            Name: "cs:weapon_id"
-            String: "Basic Shotgun"
+            Name: "cs:basic_id"
+            String: "34991C6E67BCACC9"
           }
           Overrides {
-            Name: "cs:weapon_upgrade_id"
-            String: "Basic Shotgun Upgraded"
+            Name: "cs:upgrade_id"
+            String: "ssssssssss"
           }
           Overrides {
             Name: "cs:basic_price"
@@ -76,6 +76,15 @@
               A: 1
             }
           }
+          Overrides {
+            Name: "cs:sound"
+            ObjectReference {
+              SelfId: 7020767313076153098
+              SubObjectId: 16871770483126420369
+              InstanceId: 6356875522555402097
+              TemplateId: 4203657736232604118
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -105,7 +114,6 @@
         ChildIds: 12649203150066256138
         UnregisteredParameters {
         }
-        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -203,7 +211,6 @@
         ChildIds: 2757307821845500683
         UnregisteredParameters {
         }
-        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -875,7 +882,6 @@
         Trigger {
           TeamSettings {
             IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
           }
           TriggerShape_v2 {
             Value: "mc:etriggershape:box"

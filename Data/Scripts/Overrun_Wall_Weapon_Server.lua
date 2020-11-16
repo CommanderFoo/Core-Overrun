@@ -1,10 +1,9 @@
 ﻿local trigger = script:GetCustomProperty("trigger"):WaitForObject()
 local root = script:GetCustomProperty("root"):WaitForObject()
 
-local asset = root:GetCustomProperty("asset")
+local basic_id = root:GetCustomProperty("basic_id")
+local upgrade_id = root:GetCustomProperty("upgrade_id")
 local can_purchase = root:GetCustomProperty("can_purchase")
-local weapon_id = root:GetCustomProperty("weapon_id")
-local weapon_upgrade_id = root:GetCustomProperty("weapon_upgrade_id")
 local basic_price = root:GetCustomProperty("basic_price")
 local basic_ammo_price = root:GetCustomProperty("basic_ammo_price")
 local upgraded_ammo_price = root:GetCustomProperty("upgraded_ammo_price")
@@ -23,30 +22,22 @@ function on_trigger_enter(t, obj)
 					local equipment = obj:GetEquipment()[1]
 
 					if(equipment:IsA("Weapon")) then
+						local id = equipment:GetCustomProperty("asset_id")
 						local money = obj:GetResource("money")
 						local rounds = obj:GetResource("rounds")
 						local cost = 0
 
-						if(equipment.name == weapon_id or equipment.name == weapon_upgrade_id) then
-							if(equipment.name == weapon_id and rounds < max_basic_ammo) then
+						if(id == basic_id or id == upgrade_id) then
+							if(id == basic_id and rounds < max_basic_ammo) then
 								cost = basic_ammo_price
 								obj:SetResource("rounds", max_basic_ammo)
-							elseif(equipment.name == weapon_upgrade_id and rounds < max_upgraded_ammo) then
+							elseif(id == upgrade_id and rounds < max_upgraded_ammo) then
 								cost = upgraded_ammo_price
 								obj:SetResource("rounds", max_upgraded_ammo)
 							end
 						elseif(money >= basic_price) then
-							equipment:Destroy()
-							
-							local new_weapon = World.SpawnAsset(asset)
-						
+							Events.Broadcast("on_bought_item", obj, basic_id, max_basic_ammo, basic_price)
 							cost = basic_price
-
-							new_weapon.currentAmmo = max_basic_ammo
-							
-							obj:SetResource("rounds", max_basic_ammo)
-
-							new_weapon:Equip(obj)
 						end
 
 						if(cost > 0) then
