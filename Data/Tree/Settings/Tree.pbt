@@ -174,7 +174,7 @@ Objects {
     }
     Overrides {
       Name: "bp:Intensity"
-      Float: 1.42228508
+      Float: 5
     }
     Overrides {
       Name: "bp:Sun Disc Color"
@@ -445,9 +445,9 @@ Objects {
   Name: "Spawn Point"
   Transform {
     Location {
-      X: 759.774536
-      Y: -389.079163
-      Z: 295.145935
+      X: 253.891785
+      Y: -9290.06348
+      Z: 379.506561
     }
     Rotation {
       Yaw: 84.1020508

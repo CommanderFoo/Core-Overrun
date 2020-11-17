@@ -52,6 +52,17 @@ Objects {
       }
     }
     ParameterOverrideMap {
+      key: 13614077702068932019
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 14837395404085517563
       value {
         Overrides {
@@ -66,6 +77,28 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 14901728647884234909
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16584300676580248509
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:inheritfromparent"
           }
         }
       }
