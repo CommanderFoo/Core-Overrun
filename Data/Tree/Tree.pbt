@@ -28,7 +28,6 @@ Objects {
   ChildIds: 3121589836909472008
   ChildIds: 7265624749015544125
   ChildIds: 8346790829017566368
-  ChildIds: 16088300255758840790
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -38,67 +37,6 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
-  }
-}
-Objects {
-  Id: 16088300255758840790
-  Name: "UI Progress Bar"
-  Transform {
-    Location {
-      X: 1799.86719
-      Y: -14151.4697
-      Z: -83.7924957
-    }
-    Rotation {
-      Yaw: 131.199081
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    Width: 200
-    Height: 60
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    StatBar {
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      BackgroundColor {
-        R: 0.5
-        G: 0.5
-        B: 0.5
-        A: 1
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
   }
 }
 Objects {
@@ -626,54 +564,6 @@ Objects {
     }
     Foliage {
       Asset {
-        Id: 13608735086353292660
-      }
-      DistanceBetweenInstances: 1470
-      SpawnDistance: 22400
-      CullDistance {
-        Min: 10000
-        Max: 20000
-      }
-      ReceivesDecals: true
-      GroundSlopeAngle {
-        Max: 90
-      }
-      Scaling {
-        ScaleX {
-          Min: 1
-          Max: 1
-        }
-        ScaleY {
-          Min: 1
-          Max: 1
-        }
-        ScaleZ {
-          Min: 1
-          Max: 1
-        }
-      }
-      RotationAlignment: AlignToWorldUp
-      RandomYaw: true
-      RandomPitchAngle: 6
-      Materials {
-        key: "Nature_Leaves"
-        value {
-          Id: 841534158063459245
-        }
-      }
-      LocalPositionOffset {
-      }
-      LocalRotationOffset {
-      }
-      GlobalPositionOffset {
-      }
-      Height {
-        Min: -102400
-        Max: 102400
-      }
-    }
-    Foliage {
-      Asset {
         Id: 9135206421299978471
       }
       DistanceBetweenInstances: 420
@@ -761,6 +651,104 @@ Objects {
       }
       Materials {
         key: "Nature_Trunk"
+        value {
+          Id: 841534158063459245
+        }
+      }
+      LocalPositionOffset {
+      }
+      LocalRotationOffset {
+      }
+      GlobalPositionOffset {
+      }
+      Height {
+        Min: -102400
+        Max: 102400
+      }
+    }
+    Foliage {
+      Asset {
+        Id: 936751460831594415
+      }
+      DistanceBetweenInstances: 1000
+      MaterialChannel: 3
+      SpawnDistance: 20000
+      CullDistance {
+        Min: 10000
+        Max: 20000
+      }
+      ReceivesDecals: true
+      GroundSlopeAngle {
+        Max: 90
+      }
+      Scaling {
+        ScaleX {
+          Min: 1
+          Max: 1
+        }
+        ScaleY {
+          Min: 1
+          Max: 1
+        }
+        ScaleZ {
+          Min: 1
+          Max: 1
+        }
+      }
+      RotationAlignment: AlignToWorldUp
+      RandomYaw: true
+      RandomPitchAngle: 6
+      Materials {
+        key: "Nature_Leaves"
+        value {
+          Id: 841534158063459245
+        }
+      }
+      LocalPositionOffset {
+      }
+      LocalRotationOffset {
+      }
+      GlobalPositionOffset {
+      }
+      Height {
+        Min: -102400
+        Max: 102400
+      }
+    }
+    Foliage {
+      Asset {
+        Id: 6470475713757890799
+      }
+      DistanceBetweenInstances: 1000
+      MaterialChannel: 3
+      SpawnDistance: 20000
+      CullDistance {
+        Min: 10000
+        Max: 20000
+      }
+      ReceivesDecals: true
+      GroundSlopeAngle {
+        Max: 90
+      }
+      Scaling {
+        ScaleX {
+          Min: 1
+          Max: 1
+        }
+        ScaleY {
+          Min: 1
+          Max: 1
+        }
+        ScaleZ {
+          Min: 1
+          Max: 1
+        }
+      }
+      RotationAlignment: AlignToWorldUp
+      RandomYaw: true
+      RandomPitchAngle: 6
+      Materials {
+        key: "Nature_Leaves"
         value {
           Id: 841534158063459245
         }
@@ -976,14 +964,96 @@ Objects {
   ChildIds: 14079722232521504702
   ChildIds: 7930498593431899775
   ChildIds: 5711699909833018752
+  ChildIds: 12112594076951558615
+  ChildIds: 13360581374618955457
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceon"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceon"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 13360581374618955457
+  Name: "Cube"
+  Transform {
+    Location {
+      X: -1851.2666
+      Y: -11300.2783
+      Z: 75.024231
+    }
+    Rotation {
+      Yaw: -179.999954
+    }
+    Scale {
+      X: 2.41697383
+      Y: 0.499315739
+      Z: 0.479944706
+    }
+  }
+  ParentId: 7027765657621367027
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 12112594076951558615
+  Name: "Cube"
+  Transform {
+    Location {
+      X: -2308.29614
+      Y: -11300.2783
+      Z: 75.024231
+    }
+    Rotation {
+      Yaw: -179.999969
+    }
+    Scale {
+      X: 2.41697383
+      Y: 0.499315739
+      Z: 0.479944706
+    }
+  }
+  ParentId: 7027765657621367027
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
   }
 }
 Objects {
@@ -1554,8 +1624,8 @@ Objects {
       Yaw: 180
     }
     Scale {
-      X: 0.354165018
-      Y: 4.98291111
+      X: 0.354164392
+      Y: 4.33791113
       Z: 0.609268188
     }
   }

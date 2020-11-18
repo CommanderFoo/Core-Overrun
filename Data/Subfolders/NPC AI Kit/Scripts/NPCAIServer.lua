@@ -575,7 +575,7 @@ function CanSeeEnemy(enemy, myPos, forwardVector, nearestDistSquared)
 	end
 	
 	-- Angle vision in front
-	if (canSeeFromDistance and
+	--[[if (canSeeFromDistance and
 		GetVisionHalfAngle() > 0 and GetVisionHalfAngle() < 360) then
 
 		local distance = math.sqrt(distSquared)
@@ -604,7 +604,7 @@ function CanSeeEnemy(enemy, myPos, forwardVector, nearestDistSquared)
 		else
 			--CoreDebug.DrawLine(rayStart, rayEnd, {duration = 1, color = Color.WHITE})
 		end
-	end
+	end--]]
 	
 	--print("dist = " .. tostring(math.sqrt(distSquared)) .. ", " .. tostring(distSquared) .. ", " .. tostring(GetVisionRadiusSquared()))
 	return canSeeFromDistance, distSquared

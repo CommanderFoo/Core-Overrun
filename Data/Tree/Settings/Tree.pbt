@@ -206,6 +206,10 @@ Objects {
         A: 1
       }
     }
+    Overrides {
+      Name: "bp:Cast Shadows"
+      Bool: false
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -367,7 +371,7 @@ Objects {
     }
     Overrides {
       Name: "bp:Cloud Opacity"
-      Float: 0
+      Float: 0.49346602
     }
     Overrides {
       Name: "bp:Cloud Ambient Color"
@@ -397,7 +401,7 @@ Objects {
     }
     Overrides {
       Name: "bp:Cloud Wisp Opacity"
-      Float: 0.4
+      Float: 0.719947219
     }
     Overrides {
       Name: "bp:Cloud Speed"
@@ -405,7 +409,7 @@ Objects {
     }
     Overrides {
       Name: "bp:Brightness"
-      Float: 0.174098253
+      Float: 0.115855075
     }
     Overrides {
       Name: "bp:Background Clouds"
@@ -417,7 +421,7 @@ Objects {
     }
     Overrides {
       Name: "bp:High Cloud Opacity"
-      Float: 0
+      Float: 0.0492162108
     }
     Overrides {
       Name: "bp:High Cloud Noise Amount"
@@ -445,12 +449,12 @@ Objects {
   Name: "Spawn Point"
   Transform {
     Location {
-      X: 253.891785
-      Y: -9290.06348
-      Z: 379.506561
+      X: 1664.61658
+      Y: -7592.22119
+      Z: 137.806335
     }
     Rotation {
-      Yaw: 84.1020508
+      Yaw: 161.592819
     }
     Scale {
       X: 1
@@ -672,6 +676,7 @@ Objects {
       ChatMode {
         Value: "mc:echatmode:teamandall"
       }
+      EnablePlayModeProfiler: true
       ChatSettings {
         ChatMode {
           Value: "mc:echatmode:allonly"

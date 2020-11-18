@@ -40,7 +40,7 @@
           }
           Overrides {
             Name: "cs:MoveSpeed"
-            Float: 250
+            Float: 400
           }
           Overrides {
             Name: "cs:TurnSpeed"
@@ -60,11 +60,11 @@
           }
           Overrides {
             Name: "cs:VisionRadius"
-            Float: 25000
+            Float: 250000
           }
           Overrides {
             Name: "cs:HearingRadius"
-            Float: 1000
+            Float: 100000
           }
           Overrides {
             Name: "cs:SearchBonusVision"

@@ -14786,16 +14786,16 @@ Objects {
   }
 }
 Objects {
-  Id: 9259142162907408895
+  Id: 12738739329876475061
   Name: "Urban Fence - 8m Template"
   Transform {
     Location {
       X: 2400
-      Y: -14400
+      Y: -15600
       Z: -0.100585938
     }
     Rotation {
-      Yaw: 89.9999924
+      Yaw: 89.9999771
     }
     Scale {
       X: 1
@@ -14804,41 +14804,1617 @@ Objects {
     }
   }
   ParentId: 3354848507310204679
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 14427631128354138120
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Urban Fence - 8m Template"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 2400
-            Y: -15600
-            Z: -0.100585938
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: 89.9999771
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
+  ChildIds: 154604301262157312
+  ChildIds: 684300156412279851
+  ChildIds: 7823441429540072901
+  ChildIds: 9876553654408483421
+  ChildIds: 15646873208067535779
+  ChildIds: 6632174987138388061
+  ChildIds: 12428640373250087487
+  ChildIds: 15473727180607720878
+  ChildIds: 11360761398467941803
+  ChildIds: 7748713547004819279
+  ChildIds: 11797167453161554569
+  ChildIds: 7988229226677411858
+  ChildIds: 10047485463981119971
+  ChildIds: 11910243685502810545
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 12738739329876475061
+    SubobjectId: 14427631128354138120
+    InstanceId: 9259142162907408895
+    TemplateId: 16613409493591869399
+    WasRoot: true
+  }
+}
+Objects {
+  Id: 11910243685502810545
+  Name: "Military Fence Panel"
+  Transform {
+    Location {
+      X: 6283.27441
+      Y: -963.557129
+      Z: -2.34399
+    }
+    Rotation {
+      Pitch: 1.36603776e-05
+      Yaw: 3.38688946
+      Roll: -89.9999695
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12738739329876475061
+  ChildIds: 4775958486116860604
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_Detail2:id"
+      AssetReference {
+        Id: 2753101109375824093
       }
     }
-    TemplateAsset {
-      Id: 16613409493591869399
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 2245166893642970858
+      }
     }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 472496642976630875
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 7823441429540072901
+    SubobjectId: 1468836999978842488
+    InstanceId: 9259142162907408895
+    TemplateId: 16613409493591869399
+  }
+}
+Objects {
+  Id: 4775958486116860604
+  Name: "Military Fence Crossbar - Panel"
+  Transform {
+    Location {
+      Y: 15
+    }
+    Rotation {
+      Pitch: 44.9999695
+      Yaw: 179.999969
+      Roll: 179.999969
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11910243685502810545
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 2245166893642970858
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:id"
+      AssetReference {
+        Id: 12224679477727788171
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 5457962044230310640
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 5567017893793587810
+    SubobjectId: 3869204202705155807
+    InstanceId: 9259142162907408895
+    TemplateId: 16613409493591869399
+  }
+}
+Objects {
+  Id: 10047485463981119971
+  Name: "Military Fence Panel"
+  Transform {
+    Location {
+      X: 9699.75098
+      Y: -1531.45166
+      Z: -2.34252524
+    }
+    Rotation {
+      Pitch: 1.36603776e-05
+      Yaw: 3.38688946
+      Roll: -89.9999695
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12738739329876475061
+  ChildIds: 5032521998237588503
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_Detail2:id"
+      AssetReference {
+        Id: 2753101109375824093
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 2245166893642970858
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 472496642976630875
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 7823441429540072901
+    SubobjectId: 1468836999978842488
+    InstanceId: 9259142162907408895
+    TemplateId: 16613409493591869399
+  }
+}
+Objects {
+  Id: 5032521998237588503
+  Name: "Military Fence Crossbar - Panel"
+  Transform {
+    Location {
+      Y: 15
+    }
+    Rotation {
+      Pitch: 44.9999695
+      Yaw: 179.999969
+      Roll: 179.999969
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10047485463981119971
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 2245166893642970858
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:id"
+      AssetReference {
+        Id: 12224679477727788171
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 5457962044230310640
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 5567017893793587810
+    SubobjectId: 3869204202705155807
+    InstanceId: 9259142162907408895
+    TemplateId: 16613409493591869399
+  }
+}
+Objects {
+  Id: 7988229226677411858
+  Name: "Military Fence Panel"
+  Transform {
+    Location {
+      X: 14840.8301
+      Y: -874.598633
+      Z: -2.34130454
+    }
+    Rotation {
+      Pitch: 1.36603776e-05
+      Yaw: 3.38688946
+      Roll: -89.9999695
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12738739329876475061
+  ChildIds: 1737416451243906204
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_Detail2:id"
+      AssetReference {
+        Id: 2753101109375824093
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 2245166893642970858
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 472496642976630875
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 7823441429540072901
+    SubobjectId: 1468836999978842488
+    InstanceId: 9259142162907408895
+    TemplateId: 16613409493591869399
+  }
+}
+Objects {
+  Id: 1737416451243906204
+  Name: "Military Fence Crossbar - Panel"
+  Transform {
+    Location {
+      Y: 15
+    }
+    Rotation {
+      Pitch: 44.9999695
+      Yaw: 179.999969
+      Roll: 179.999969
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7988229226677411858
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 2245166893642970858
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:id"
+      AssetReference {
+        Id: 12224679477727788171
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 5457962044230310640
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 5567017893793587810
+    SubobjectId: 3869204202705155807
+    InstanceId: 9259142162907408895
+    TemplateId: 16613409493591869399
+  }
+}
+Objects {
+  Id: 11797167453161554569
+  Name: "Military Fence Panel"
+  Transform {
+    Location {
+      X: 16799.6152
+      Y: 3188.11523
+      Z: -2.34348392
+    }
+    Rotation {
+      Pitch: 1.36603776e-05
+      Yaw: 3.38688946
+      Roll: -89.9999695
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12738739329876475061
+  ChildIds: 5916166590729670238
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_Detail2:id"
+      AssetReference {
+        Id: 2753101109375824093
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 2245166893642970858
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 472496642976630875
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 7823441429540072901
+    SubobjectId: 1468836999978842488
+    InstanceId: 9259142162907408895
+    TemplateId: 16613409493591869399
+  }
+}
+Objects {
+  Id: 5916166590729670238
+  Name: "Military Fence Crossbar - Panel"
+  Transform {
+    Location {
+      Y: 15
+    }
+    Rotation {
+      Pitch: 44.9999695
+      Yaw: 179.999969
+      Roll: 179.999969
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11797167453161554569
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 2245166893642970858
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:id"
+      AssetReference {
+        Id: 12224679477727788171
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 5457962044230310640
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 5567017893793587810
+    SubobjectId: 3869204202705155807
+    InstanceId: 9259142162907408895
+    TemplateId: 16613409493591869399
+  }
+}
+Objects {
+  Id: 7748713547004819279
+  Name: "Military Fence Panel"
+  Transform {
+    Location {
+      X: 13607.6709
+      Y: 4808.12207
+      Z: -2.34538889
+    }
+    Rotation {
+      Pitch: 1.36603776e-05
+      Yaw: 3.38688946
+      Roll: -89.9999695
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12738739329876475061
+  ChildIds: 1945509015577367633
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_Detail2:id"
+      AssetReference {
+        Id: 2753101109375824093
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 2245166893642970858
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 472496642976630875
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 7823441429540072901
+    SubobjectId: 1468836999978842488
+    InstanceId: 9259142162907408895
+    TemplateId: 16613409493591869399
+  }
+}
+Objects {
+  Id: 1945509015577367633
+  Name: "Military Fence Crossbar - Panel"
+  Transform {
+    Location {
+      Y: 15
+    }
+    Rotation {
+      Pitch: 44.9999695
+      Yaw: 179.999969
+      Roll: 179.999969
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7748713547004819279
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 2245166893642970858
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:id"
+      AssetReference {
+        Id: 12224679477727788171
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 5457962044230310640
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 5567017893793587810
+    SubobjectId: 3869204202705155807
+    InstanceId: 9259142162907408895
+    TemplateId: 16613409493591869399
+  }
+}
+Objects {
+  Id: 11360761398467941803
+  Name: "Military Fence Panel"
+  Transform {
+    Location {
+      X: 10083.0469
+      Y: 5200.19824
+      Z: -2.34636545
+    }
+    Rotation {
+      Pitch: 1.36603776e-05
+      Yaw: 3.38688946
+      Roll: -89.9999695
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12738739329876475061
+  ChildIds: 12584628315892578805
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_Detail2:id"
+      AssetReference {
+        Id: 2753101109375824093
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 2245166893642970858
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 472496642976630875
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 7823441429540072901
+    SubobjectId: 1468836999978842488
+    InstanceId: 9259142162907408895
+    TemplateId: 16613409493591869399
+  }
+}
+Objects {
+  Id: 12584628315892578805
+  Name: "Military Fence Crossbar - Panel"
+  Transform {
+    Location {
+      Y: 15
+    }
+    Rotation {
+      Pitch: 44.9999695
+      Yaw: 179.999969
+      Roll: 179.999969
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11360761398467941803
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 2245166893642970858
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:id"
+      AssetReference {
+        Id: 12224679477727788171
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 5457962044230310640
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 5567017893793587810
+    SubobjectId: 3869204202705155807
+    InstanceId: 9259142162907408895
+    TemplateId: 16613409493591869399
+  }
+}
+Objects {
+  Id: 15473727180607720878
+  Name: "Military Fence Panel"
+  Transform {
+    Location {
+      X: 8037.41455
+      Y: 5909.94482
+      Z: -2.34741211
+    }
+    Rotation {
+      Pitch: 1.36603776e-05
+      Yaw: 3.38689661
+      Roll: -89.9999695
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12738739329876475061
+  ChildIds: 11298421888340362042
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_Detail2:id"
+      AssetReference {
+        Id: 2753101109375824093
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 2245166893642970858
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 472496642976630875
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 7823441429540072901
+    SubobjectId: 1468836999978842488
+    InstanceId: 9259142162907408895
+    TemplateId: 16613409493591869399
+  }
+}
+Objects {
+  Id: 11298421888340362042
+  Name: "Military Fence Crossbar - Panel"
+  Transform {
+    Location {
+      Y: 15
+    }
+    Rotation {
+      Pitch: 44.9999695
+      Yaw: 179.999969
+      Roll: 179.999969
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15473727180607720878
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 2245166893642970858
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:id"
+      AssetReference {
+        Id: 12224679477727788171
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 5457962044230310640
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 5567017893793587810
+    SubobjectId: 3869204202705155807
+    InstanceId: 9259142162907408895
+    TemplateId: 16613409493591869399
+  }
+}
+Objects {
+  Id: 12428640373250087487
+  Name: "Military Fence Panel"
+  Transform {
+    Location {
+      X: 3857.69434
+      Y: 5050.73242
+      Z: -2.34790039
+    }
+    Rotation {
+      Pitch: 6.83018879e-06
+      Yaw: 3.38691306
+      Roll: -89.9999695
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12738739329876475061
+  ChildIds: 12073748069556876458
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_Detail2:id"
+      AssetReference {
+        Id: 2753101109375824093
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 2245166893642970858
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 472496642976630875
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 7823441429540072901
+    SubobjectId: 1468836999978842488
+    InstanceId: 9259142162907408895
+    TemplateId: 16613409493591869399
+  }
+}
+Objects {
+  Id: 12073748069556876458
+  Name: "Military Fence Crossbar - Panel"
+  Transform {
+    Location {
+      Y: 15
+    }
+    Rotation {
+      Pitch: 44.9999695
+      Yaw: 179.999969
+      Roll: 179.999969
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12428640373250087487
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 2245166893642970858
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:id"
+      AssetReference {
+        Id: 12224679477727788171
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 5457962044230310640
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 5567017893793587810
+    SubobjectId: 3869204202705155807
+    InstanceId: 9259142162907408895
+    TemplateId: 16613409493591869399
+  }
+}
+Objects {
+  Id: 6632174987138388061
+  Name: "Military Fence Panel"
+  Transform {
+    Location {
+      X: -252.366943
+      Y: 3004.45801
+      Z: -2.34777832
+    }
+    Rotation {
+      Yaw: 3.38692641
+      Roll: -90
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12738739329876475061
+  ChildIds: 10796549441149972053
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_Detail2:id"
+      AssetReference {
+        Id: 2753101109375824093
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 2245166893642970858
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 472496642976630875
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 7823441429540072901
+    SubobjectId: 1468836999978842488
+    InstanceId: 9259142162907408895
+    TemplateId: 16613409493591869399
+  }
+}
+Objects {
+  Id: 10796549441149972053
+  Name: "Military Fence Crossbar - Panel"
+  Transform {
+    Location {
+      Y: 15
+    }
+    Rotation {
+      Pitch: 44.9999695
+      Yaw: 179.999969
+      Roll: 179.999969
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6632174987138388061
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 2245166893642970858
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:id"
+      AssetReference {
+        Id: 12224679477727788171
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 5457962044230310640
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 5567017893793587810
+    SubobjectId: 3869204202705155807
+    InstanceId: 9259142162907408895
+    TemplateId: 16613409493591869399
+  }
+}
+Objects {
+  Id: 15646873208067535779
+  Name: "Military Fence Panel"
+  Transform {
+    Location {
+      X: 591.899536
+      Y: -220.097107
+      Z: -2.34571838
+    }
+    Rotation {
+      Yaw: -15.5978394
+      Roll: -90
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12738739329876475061
+  ChildIds: 14307541730317688533
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_Detail2:id"
+      AssetReference {
+        Id: 2753101109375824093
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 2245166893642970858
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 472496642976630875
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 7823441429540072901
+    SubobjectId: 1468836999978842488
+    InstanceId: 9259142162907408895
+    TemplateId: 16613409493591869399
+  }
+}
+Objects {
+  Id: 14307541730317688533
+  Name: "Military Fence Crossbar - Panel"
+  Transform {
+    Location {
+      Y: 15
+    }
+    Rotation {
+      Pitch: 44.9999695
+      Yaw: 179.999969
+      Roll: 179.999969
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15646873208067535779
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 2245166893642970858
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:id"
+      AssetReference {
+        Id: 12224679477727788171
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 5457962044230310640
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 5567017893793587810
+    SubobjectId: 3869204202705155807
+    InstanceId: 9259142162907408895
+    TemplateId: 16613409493591869399
+  }
+}
+Objects {
+  Id: 9876553654408483421
+  Name: "Military Fence Panel"
+  Transform {
+    Location {
+      X: 591.899536
+      Y: -220.097107
+      Z: -2.34571838
+    }
+    Rotation {
+      Yaw: -15.5978088
+      Roll: -90
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12738739329876475061
+  ChildIds: 18162944647819054024
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_Detail2:id"
+      AssetReference {
+        Id: 2753101109375824093
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 2245166893642970858
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 472496642976630875
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 7823441429540072901
+    SubobjectId: 1468836999978842488
+    InstanceId: 9259142162907408895
+    TemplateId: 16613409493591869399
+  }
+}
+Objects {
+  Id: 18162944647819054024
+  Name: "Military Fence Crossbar - Panel"
+  Transform {
+    Location {
+      Y: 15
+    }
+    Rotation {
+      Pitch: 44.9999695
+      Yaw: 179.999969
+      Roll: 179.999969
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9876553654408483421
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 2245166893642970858
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:id"
+      AssetReference {
+        Id: 12224679477727788171
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 5457962044230310640
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 5567017893793587810
+    SubobjectId: 3869204202705155807
+    InstanceId: 9259142162907408895
+    TemplateId: 16613409493591869399
+  }
+}
+Objects {
+  Id: 7823441429540072901
+  Name: "Military Fence Panel"
+  Transform {
+    Location {
+      X: 200
+      Z: 210
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12738739329876475061
+  ChildIds: 5567017893793587810
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_Detail2:id"
+      AssetReference {
+        Id: 2753101109375824093
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 2245166893642970858
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 472496642976630875
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 7823441429540072901
+    SubobjectId: 1468836999978842488
+    InstanceId: 9259142162907408895
+    TemplateId: 16613409493591869399
+  }
+}
+Objects {
+  Id: 5567017893793587810
+  Name: "Military Fence Crossbar - Panel"
+  Transform {
+    Location {
+      Y: 15
+    }
+    Rotation {
+      Pitch: 44.9999695
+      Yaw: 179.999969
+      Roll: 179.999969
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7823441429540072901
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 2245166893642970858
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:id"
+      AssetReference {
+        Id: 12224679477727788171
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 5457962044230310640
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 5567017893793587810
+    SubobjectId: 3869204202705155807
+    InstanceId: 9259142162907408895
+    TemplateId: 16613409493591869399
+  }
+}
+Objects {
+  Id: 684300156412279851
+  Name: "Military Fence Pole - Connecting"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12738739329876475061
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_Detail1:id"
+      AssetReference {
+        Id: 12224679477727788171
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 2245166893642970858
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7720350652240094542
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 684300156412279851
+    SubobjectId: 8182819118958618774
+    InstanceId: 9259142162907408895
+    TemplateId: 16613409493591869399
+  }
+}
+Objects {
+  Id: 154604301262157312
+  Name: "Military Fence Pole - Connecting"
+  Transform {
+    Location {
+      X: 400
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12738739329876475061
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_Detail1:id"
+      AssetReference {
+        Id: 12224679477727788171
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 2245166893642970858
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7720350652240094542
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 154604301262157312
+    SubobjectId: 8851097420562784957
+    InstanceId: 9259142162907408895
+    TemplateId: 16613409493591869399
   }
 }
 Objects {
