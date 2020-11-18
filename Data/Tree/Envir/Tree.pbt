@@ -134,6 +134,35 @@ Objects {
     }
   }
   ParentId: 5508549066234980964
+  ChildIds: 14376791159187876327
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceon"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 14376791159187876327
+  Name: "MergedModel"
+  Transform {
+    Location {
+      X: 368.914948
+      Y: 23.529871
+      Z: -799.999939
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9040961440572232732
   ChildIds: 4542364683940198531
   ChildIds: 5914562716381428082
   ChildIds: 17124824776798844024
@@ -169,13 +198,14 @@ Objects {
   ChildIds: 1784104473517786003
   ChildIds: 10488764004160583529
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceon"
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Folder {
-    IsGroup: true
+    Model {
+    }
   }
 }
 Objects {
@@ -183,14 +213,14 @@ Objects {
   Name: "Wood 2x4 4m"
   Transform {
     Location {
-      X: 549.995178
-      Y: 50
-      Z: -799.999329
+      X: 181.080215
+      Y: 26.4697266
+      Z: 0.000610351563
     }
     Rotation {
-      Pitch: -0.000183105469
-      Yaw: -90
-      Roll: 0.000115912146
+      Pitch: -0.000184415097
+      Yaw: -89.9999847
+      Roll: 0.000118326971
     }
     Scale {
       X: 0.8
@@ -198,7 +228,7 @@ Objects {
       Z: 0.5
     }
   }
-  ParentId: 9040961440572232732
+  ParentId: 14376791159187876327
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -261,14 +291,14 @@ Objects {
   Name: "Wood 2x4 4m"
   Transform {
     Location {
-      X: 449.996094
-      Y: 50
-      Z: -799.998657
+      X: 81.0811386
+      Y: 26.4697266
+      Z: 0.00134277344
     }
     Rotation {
-      Pitch: -0.000152587891
-      Yaw: -90
-      Roll: 9.41786129e-05
+      Pitch: -0.000157094342
+      Yaw: -89.9999847
+      Roll: 9.41786202e-05
     }
     Scale {
       X: 0.8
@@ -276,7 +306,7 @@ Objects {
       Z: 0.5
     }
   }
-  ParentId: 9040961440572232732
+  ParentId: 14376791159187876327
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -339,14 +369,14 @@ Objects {
   Name: "Wood 2x4 4m"
   Transform {
     Location {
-      X: 349.997192
-      Y: 50
-      Z: -799.999329
+      X: -18.9177227
+      Y: 26.4697266
+      Z: 0.000732421875
     }
     Rotation {
-      Pitch: -0.000122070313
-      Yaw: -90
-      Roll: 7.0030248e-05
+      Pitch: -0.000122943398
+      Yaw: -89.9999771
+      Roll: 7.24450801e-05
     }
     Scale {
       X: 0.8
@@ -354,7 +384,7 @@ Objects {
       Z: 0.5
     }
   }
-  ParentId: 9040961440572232732
+  ParentId: 14376791159187876327
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -417,14 +447,14 @@ Objects {
   Name: "Wood 2x4 4m"
   Transform {
     Location {
-      X: 249.998108
-      Y: 50
-      Z: -799.99939
+      X: -118.916702
+      Y: 26.4697266
+      Z: 0.000541687
     }
     Rotation {
-      Pitch: -9.15527344e-05
-      Yaw: -90
-      Roll: 6.03709086e-05
+      Pitch: -9.56226431e-05
+      Yaw: -89.9999847
+      Roll: 6.0370905e-05
     }
     Scale {
       X: 0.8
@@ -432,7 +462,7 @@ Objects {
       Z: 0.5
     }
   }
-  ParentId: 9040961440572232732
+  ParentId: 14376791159187876327
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -495,14 +525,14 @@ Objects {
   Name: "Wood 2x4 4m"
   Transform {
     Location {
-      X: 149.999695
-      Y: 50
-      Z: -799.99939
+      X: -218.915176
+      Y: 26.4697266
+      Z: 0.000549316406
     }
     Rotation {
-      Pitch: -6.10351563e-05
-      Yaw: -90
-      Roll: 4.82967225e-05
+      Pitch: -6.14717e-05
+      Yaw: -89.9999771
+      Roll: 5.31263941e-05
     }
     Scale {
       X: 0.8
@@ -510,7 +540,7 @@ Objects {
       Z: 0.5
     }
   }
-  ParentId: 9040961440572232732
+  ParentId: 14376791159187876327
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -573,14 +603,14 @@ Objects {
   Name: "Wood 2x4 4m"
   Transform {
     Location {
-      X: 49.9984131
-      Y: 50
-      Z: -799.99939
+      X: -318.916382
+      Y: 26.4697266
+      Z: 0.000518798828
     }
     Rotation {
-      Pitch: -3.05175781e-05
-      Yaw: -90
-      Roll: 2.6563197e-05
+      Pitch: -3.4150944e-05
+      Yaw: -89.9999847
+      Roll: 2.65632e-05
     }
     Scale {
       X: 0.8
@@ -588,7 +618,7 @@ Objects {
       Z: 0.5
     }
   }
-  ParentId: 9040961440572232732
+  ParentId: 14376791159187876327
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -651,9 +681,9 @@ Objects {
   Name: "Wood 2x4 4m"
   Transform {
     Location {
-      X: 0.000305175781
-      Y: 50
-      Z: -799.999512
+      X: -368.914551
+      Y: 26.4697266
+      Z: 0.00048828125
     }
     Rotation {
     }
@@ -663,7 +693,7 @@ Objects {
       Z: 0.5
     }
   }
-  ParentId: 9040961440572232732
+  ParentId: 14376791159187876327
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -726,8 +756,9 @@ Objects {
   Name: "Wood 2x4 4m"
   Transform {
     Location {
-      X: 0.000305175781
-      Z: -799.999512
+      X: -368.914551
+      Y: -23.5302734
+      Z: 0.00048828125
     }
     Rotation {
     }
@@ -737,7 +768,7 @@ Objects {
       Z: 0.5
     }
   }
-  ParentId: 9040961440572232732
+  ParentId: 14376791159187876327
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -800,9 +831,9 @@ Objects {
   Name: "Wood 2x4 4m"
   Transform {
     Location {
-      X: 0.000305175781
-      Y: -50
-      Z: -799.999512
+      X: -368.914551
+      Y: -73.5302734
+      Z: 0.00048828125
     }
     Rotation {
     }
@@ -812,7 +843,7 @@ Objects {
       Z: 0.5
     }
   }
-  ParentId: 9040961440572232732
+  ParentId: 14376791159187876327
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -875,9 +906,9 @@ Objects {
   Name: "Wood 2x4 4m"
   Transform {
     Location {
-      X: 0.000305175781
-      Y: -100
-      Z: -799.999512
+      X: -368.914551
+      Y: -123.530273
+      Z: 0.00048828125
     }
     Rotation {
     }
@@ -887,7 +918,7 @@ Objects {
       Z: 0.5
     }
   }
-  ParentId: 9040961440572232732
+  ParentId: 14376791159187876327
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -950,14 +981,14 @@ Objects {
   Name: "Wood 2x4 4m"
   Transform {
     Location {
-      X: 637.930664
-      Y: 50
-      Z: -799.999939
+      X: 269.015686
+      Y: 26.4697266
+      Z: 6.10351563e-05
     }
     Rotation {
-      Pitch: -3.05175781e-05
-      Yaw: -90
-      Roll: 89.9999847
+      Pitch: -2.73207552e-05
+      Yaw: -89.9999771
+      Roll: 89.9999542
     }
     Scale {
       X: 0.8
@@ -965,7 +996,7 @@ Objects {
       Z: 0.5
     }
   }
-  ParentId: 9040961440572232732
+  ParentId: 14376791159187876327
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -1028,13 +1059,13 @@ Objects {
   Name: "Wood 2x4 4m"
   Transform {
     Location {
-      X: 637.931152
-      Y: 50
-      Z: -749.999573
+      X: 269.016235
+      Y: 26.4697266
+      Z: 50.0003662
     }
     Rotation {
-      Yaw: -90
-      Roll: 89.9999924
+      Yaw: -89.9999847
+      Roll: 89.9999695
     }
     Scale {
       X: 0.8
@@ -1042,7 +1073,7 @@ Objects {
       Z: 0.5
     }
   }
-  ParentId: 9040961440572232732
+  ParentId: 14376791159187876327
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -1105,13 +1136,14 @@ Objects {
   Name: "Wood 2x4 4m"
   Transform {
     Location {
-      X: 637.931885
-      Y: 50
-      Z: -645.598328
+      X: 269.016968
+      Y: 26.4697266
+      Z: 154.401581
     }
     Rotation {
-      Yaw: -90
-      Roll: 90
+      Pitch: 6.83018879e-06
+      Yaw: -89.9999771
+      Roll: 89.9999771
     }
     Scale {
       X: 0.8
@@ -1119,7 +1151,7 @@ Objects {
       Z: 0.5
     }
   }
-  ParentId: 9040961440572232732
+  ParentId: 14376791159187876327
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -1182,13 +1214,14 @@ Objects {
   Name: "Wood 2x4 4m"
   Transform {
     Location {
-      X: 637.93219
-      Y: 50
-      Z: -545.597839
+      X: 269.017273
+      Y: 26.4697266
+      Z: 254.402008
     }
     Rotation {
-      Yaw: -90
-      Roll: 90
+      Pitch: 6.83018879e-06
+      Yaw: -89.9999771
+      Roll: 89.9999771
     }
     Scale {
       X: 0.8
@@ -1196,7 +1229,7 @@ Objects {
       Z: 0.5
     }
   }
-  ParentId: 9040961440572232732
+  ParentId: 14376791159187876327
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -1259,13 +1292,14 @@ Objects {
   Name: "Wood 2x4 4m"
   Transform {
     Location {
-      X: 637.932434
-      Y: 50.0009766
-      Z: -445.59903
+      X: 269.017517
+      Y: 26.4707031
+      Z: 354.400848
     }
     Rotation {
-      Yaw: -90
-      Roll: 90
+      Pitch: 6.83018879e-06
+      Yaw: -89.9999771
+      Roll: 89.9999771
     }
     Scale {
       X: 0.8
@@ -1273,7 +1307,7 @@ Objects {
       Z: 0.5
     }
   }
-  ParentId: 9040961440572232732
+  ParentId: 14376791159187876327
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -1336,13 +1370,14 @@ Objects {
   Name: "Wood 2x4 4m"
   Transform {
     Location {
-      X: 637.932678
-      Y: 50.0009766
-      Z: -345.599884
+      X: 269.017731
+      Y: 26.4707031
+      Z: 454.399933
     }
     Rotation {
-      Yaw: -90
-      Roll: 90
+      Pitch: 6.83018879e-06
+      Yaw: -89.9999771
+      Roll: 89.9999771
     }
     Scale {
       X: 0.8
@@ -1350,7 +1385,7 @@ Objects {
       Z: 0.5
     }
   }
-  ParentId: 9040961440572232732
+  ParentId: 14376791159187876327
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -1413,13 +1448,14 @@ Objects {
   Name: "Wood 2x4 4m"
   Transform {
     Location {
-      X: 637.932922
-      Y: 50.0019531
-      Z: -245.600922
+      X: 269.018
+      Y: 26.4716797
+      Z: 554.398926
     }
     Rotation {
-      Yaw: -90
-      Roll: 90
+      Pitch: 6.83018879e-06
+      Yaw: -89.9999771
+      Roll: 89.9999771
     }
     Scale {
       X: 0.8
@@ -1427,7 +1463,7 @@ Objects {
       Z: 0.5
     }
   }
-  ParentId: 9040961440572232732
+  ParentId: 14376791159187876327
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -1490,13 +1526,14 @@ Objects {
   Name: "Wood 2x4 4m"
   Transform {
     Location {
-      X: 637.933105
-      Y: 50.0019531
-      Z: -145.603027
+      X: 269.018188
+      Y: 26.4716797
+      Z: 654.396851
     }
     Rotation {
-      Yaw: -90
-      Roll: 90
+      Pitch: 6.83018879e-06
+      Yaw: -89.9999771
+      Roll: 89.9999771
     }
     Scale {
       X: 0.8
@@ -1504,7 +1541,7 @@ Objects {
       Z: 0.5
     }
   }
-  ParentId: 9040961440572232732
+  ParentId: 14376791159187876327
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -1567,13 +1604,14 @@ Objects {
   Name: "Wood 2x4 4m"
   Transform {
     Location {
-      X: 637.933105
-      Y: 50.0019531
-      Z: -45.6020508
+      X: 269.018188
+      Y: 26.4716797
+      Z: 754.397827
     }
     Rotation {
-      Yaw: -90
-      Roll: 90
+      Pitch: 6.83018879e-06
+      Yaw: -89.9999771
+      Roll: 89.9999771
     }
     Scale {
       X: 0.8
@@ -1581,7 +1619,7 @@ Objects {
       Z: 0.5
     }
   }
-  ParentId: 9040961440572232732
+  ParentId: 14376791159187876327
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -1644,9 +1682,9 @@ Objects {
   Name: "Wood 2x4 4m"
   Transform {
     Location {
-      X: 637.933777
-      Y: 50.0019531
-      Z: 4.39654541
+      X: 269.018799
+      Y: 26.4716797
+      Z: 804.396362
     }
     Rotation {
       Pitch: -90
@@ -1657,7 +1695,7 @@ Objects {
       Z: 0.5
     }
   }
-  ParentId: 9040961440572232732
+  ParentId: 14376791159187876327
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -1720,9 +1758,9 @@ Objects {
   Name: "Wood 2x4 4m"
   Transform {
     Location {
-      X: 637.933777
-      Y: 0.001953125
-      Z: 4.39648438
+      X: 269.018738
+      Y: -23.5283203
+      Z: 804.39624
     }
     Rotation {
       Pitch: -90
@@ -1733,7 +1771,7 @@ Objects {
       Z: 0.5
     }
   }
-  ParentId: 9040961440572232732
+  ParentId: 14376791159187876327
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -1796,9 +1834,9 @@ Objects {
   Name: "Wood 2x4 4m"
   Transform {
     Location {
-      X: 637.934265
-      Y: -49.9980469
-      Z: 4.39642334
+      X: 269.019287
+      Y: -73.5283203
+      Z: 804.396179
     }
     Rotation {
       Pitch: -90
@@ -1809,7 +1847,7 @@ Objects {
       Z: 0.5
     }
   }
-  ParentId: 9040961440572232732
+  ParentId: 14376791159187876327
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -1872,9 +1910,9 @@ Objects {
   Name: "Wood 2x4 4m"
   Transform {
     Location {
-      X: 637.934509
-      Y: -99.9980469
-      Z: 4.39697266
+      X: 269.019592
+      Y: -123.52832
+      Z: 804.396729
     }
     Rotation {
       Pitch: -90
@@ -1885,7 +1923,7 @@ Objects {
       Z: 0.5
     }
   }
-  ParentId: 9040961440572232732
+  ParentId: 14376791159187876327
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -1948,14 +1986,14 @@ Objects {
   Name: "Wood 2x4 4m"
   Transform {
     Location {
-      X: 649.999695
-      Y: 50
-      Z: -0.000183105469
+      X: 281.084717
+      Y: 26.4697266
+      Z: 799.999634
     }
     Rotation {
-      Pitch: -0.000183105469
-      Yaw: -90
-      Roll: 0.000115912146
+      Pitch: -0.000184415097
+      Yaw: -89.9999847
+      Roll: 0.000118326971
     }
     Scale {
       X: 0.8
@@ -1963,7 +2001,7 @@ Objects {
       Z: 0.5
     }
   }
-  ParentId: 9040961440572232732
+  ParentId: 14376791159187876327
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -2026,14 +2064,14 @@ Objects {
   Name: "Wood 2x4 4m"
   Transform {
     Location {
-      X: 549.999695
-      Y: 50
-      Z: -6.10351563e-05
+      X: 181.084778
+      Y: 26.4697266
+      Z: 799.999756
     }
     Rotation {
-      Pitch: -0.000152587891
-      Yaw: -90
-      Roll: 9.41786129e-05
+      Pitch: -0.000157094342
+      Yaw: -89.9999847
+      Roll: 9.41786202e-05
     }
     Scale {
       X: 0.8
@@ -2041,7 +2079,7 @@ Objects {
       Z: 0.5
     }
   }
-  ParentId: 9040961440572232732
+  ParentId: 14376791159187876327
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -2104,14 +2142,14 @@ Objects {
   Name: "Wood 2x4 4m"
   Transform {
     Location {
-      X: 449.999756
-      Y: 50
-      Z: -0.000183105469
+      X: 81.0847778
+      Y: 26.4697266
+      Z: 799.999634
     }
     Rotation {
-      Pitch: -0.000122070313
-      Yaw: -90
-      Roll: 7.0030248e-05
+      Pitch: -0.000122943398
+      Yaw: -89.9999771
+      Roll: 7.24450801e-05
     }
     Scale {
       X: 0.8
@@ -2119,7 +2157,7 @@ Objects {
       Z: 0.5
     }
   }
-  ParentId: 9040961440572232732
+  ParentId: 14376791159187876327
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -2182,14 +2220,14 @@ Objects {
   Name: "Wood 2x4 4m"
   Transform {
     Location {
-      X: 349.999847
-      Y: 50
-      Z: -0.000152587891
+      X: -18.9150391
+      Y: 26.4697266
+      Z: 799.999634
     }
     Rotation {
-      Pitch: -9.15527344e-05
-      Yaw: -90
-      Roll: 6.03709086e-05
+      Pitch: -9.56226431e-05
+      Yaw: -89.9999847
+      Roll: 6.0370905e-05
     }
     Scale {
       X: 0.8
@@ -2197,7 +2235,7 @@ Objects {
       Z: 0.5
     }
   }
-  ParentId: 9040961440572232732
+  ParentId: 14376791159187876327
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -2260,14 +2298,14 @@ Objects {
   Name: "Wood 2x4 4m"
   Transform {
     Location {
-      X: 249.999878
-      Y: 50
-      Z: -0.000152587891
+      X: -118.914978
+      Y: 26.4697266
+      Z: 799.999634
     }
     Rotation {
-      Pitch: -6.10351563e-05
-      Yaw: -90
-      Roll: 4.82967225e-05
+      Pitch: -6.14717e-05
+      Yaw: -89.9999771
+      Roll: 5.31263941e-05
     }
     Scale {
       X: 0.8
@@ -2275,7 +2313,7 @@ Objects {
       Z: 0.5
     }
   }
-  ParentId: 9040961440572232732
+  ParentId: 14376791159187876327
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -2338,14 +2376,14 @@ Objects {
   Name: "Wood 2x4 4m"
   Transform {
     Location {
-      X: 149.999893
-      Y: 50
-      Z: -0.000183105469
+      X: -218.914978
+      Y: 26.4697266
+      Z: 799.999512
     }
     Rotation {
-      Pitch: -3.05175781e-05
-      Yaw: -90
-      Roll: 2.6563197e-05
+      Pitch: -3.4150944e-05
+      Yaw: -89.9999847
+      Roll: 2.65632e-05
     }
     Scale {
       X: 0.8
@@ -2353,7 +2391,7 @@ Objects {
       Z: 0.5
     }
   }
-  ParentId: 9040961440572232732
+  ParentId: 14376791159187876327
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -2416,12 +2454,14 @@ Objects {
   Name: "Wood 2x4 4m"
   Transform {
     Location {
-      X: 49.9987335
-      Y: 50
-      Z: -0.000217437744
+      X: -318.916138
+      Y: 26.4697266
+      Z: 799.999573
     }
     Rotation {
-      Yaw: -90
+      Pitch: 6.83018879e-06
+      Yaw: -89.9999847
+      Roll: 2.41483599e-06
     }
     Scale {
       X: 0.8
@@ -2429,7 +2469,7 @@ Objects {
       Z: 0.5
     }
   }
-  ParentId: 9040961440572232732
+  ParentId: 14376791159187876327
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -2492,9 +2532,9 @@ Objects {
   Name: "Wood 2x4 4m"
   Transform {
     Location {
-      X: -1.144409e-05
-      Y: 50
-      Z: -3.81469818e-06
+      X: -368.914856
+      Y: 26.4697266
+      Z: 799.999756
     }
     Rotation {
     }
@@ -2504,7 +2544,7 @@ Objects {
       Z: 0.5
     }
   }
-  ParentId: 9040961440572232732
+  ParentId: 14376791159187876327
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -2567,8 +2607,9 @@ Objects {
   Name: "Wood 2x4 4m"
   Transform {
     Location {
-      X: -2.22044605e-16
-      Z: -3.72527476e-09
+      X: -368.914856
+      Y: -23.5302734
+      Z: 799.999756
     }
     Rotation {
     }
@@ -2578,7 +2619,7 @@ Objects {
       Z: 0.5
     }
   }
-  ParentId: 9040961440572232732
+  ParentId: 14376791159187876327
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -2641,9 +2682,9 @@ Objects {
   Name: "Wood 2x4 4m"
   Transform {
     Location {
-      X: -2.22044605e-16
-      Y: -50
-      Z: -3.72527786e-09
+      X: -368.914856
+      Y: -73.5302734
+      Z: 799.999756
     }
     Rotation {
     }
@@ -2653,7 +2694,7 @@ Objects {
       Z: 0.5
     }
   }
-  ParentId: 9040961440572232732
+  ParentId: 14376791159187876327
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -2716,9 +2757,9 @@ Objects {
   Name: "Wood 2x4 4m"
   Transform {
     Location {
-      X: -2.22044605e-16
-      Y: -100
-      Z: -3.72528164e-09
+      X: -368.914856
+      Y: -123.530273
+      Z: 799.999756
     }
     Rotation {
     }
@@ -2728,7 +2769,7 @@ Objects {
       Z: 0.5
     }
   }
-  ParentId: 9040961440572232732
+  ParentId: 14376791159187876327
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -2943,6 +2984,35 @@ Objects {
     }
   }
   ParentId: 5508549066234980964
+  ChildIds: 4131872850895316345
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 4131872850895316345
+  Name: "MergedModel"
+  Transform {
+    Location {
+      X: -73.548584
+      Y: -3.50621223
+      Z: -17.4831238
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 393962688624612544
   ChildIds: 9171024612250306692
   ChildIds: 12312190396077215850
   ChildIds: 7474225659804435933
@@ -3110,13 +3180,14 @@ Objects {
   ChildIds: 8646214424672498020
   ChildIds: 16628279317087131718
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Folder {
-    IsGroup: true
+    Model {
+    }
   }
 }
 Objects {
@@ -3124,12 +3195,12 @@ Objects {
   Name: "Craftsman Roof 01 End"
   Transform {
     Location {
-      X: -400.576904
-      Y: -808.266357
-      Z: 600
+      X: -327.02832
+      Y: -804.76
+      Z: 617.483154
     }
     Rotation {
-      Yaw: 180
+      Yaw: -179.999985
     }
     Scale {
       X: -1
@@ -3137,7 +3208,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -3172,12 +3243,12 @@ Objects {
   Name: "Craftsman Wall 01"
   Transform {
     Location {
-      X: -1999.99915
-      Y: -808.266357
-      Z: -2.85198975
+      X: -1926.44946
+      Y: -804.759583
+      Z: 14.631134
     }
     Rotation {
-      Yaw: 89.9999542
+      Yaw: 89.999939
     }
     Scale {
       X: 1
@@ -3185,7 +3256,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner:id"
@@ -3234,9 +3305,9 @@ Objects {
   Name: "Craftsman Floor 01 8m x 8m"
   Transform {
     Location {
-      X: -1999.99939
-      Y: -8.26635742
-      Z: -2.85223389
+      X: -1926.44971
+      Y: -4.76005125
+      Z: 14.6308899
     }
     Rotation {
     }
@@ -3246,7 +3317,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Floor:id"
@@ -3297,9 +3368,9 @@ Objects {
   Name: "Craftsman Floor 01 8m x 8m"
   Transform {
     Location {
-      X: -1199.77112
-      Y: -8.26635742
-      Z: -2.85223389
+      X: -1126.22156
+      Y: -4.76009321
+      Z: 14.6308899
     }
     Rotation {
     }
@@ -3309,7 +3380,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Floor:id"
@@ -3360,12 +3431,12 @@ Objects {
   Name: "Craftsman Roof 01 Cap"
   Transform {
     Location {
-      X: -1199.99939
-      Y: -928.266357
-      Z: 1247.14795
+      X: -1126.44983
+      Y: -924.759583
+      Z: 1264.6311
     }
     Rotation {
-      Yaw: 89.9999542
+      Yaw: 89.999939
     }
     Scale {
       X: 1.30824721
@@ -3373,7 +3444,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -3408,12 +3479,12 @@ Objects {
   Name: "Craftsman Roof 01"
   Transform {
     Location {
-      X: -399.999939
-      Y: 791.733643
-      Z: 597.147949
+      X: -326.451172
+      Y: 795.23938
+      Z: 614.631104
     }
     Rotation {
-      Yaw: -89.999939
+      Yaw: -89.9999161
     }
     Scale {
       X: 1
@@ -3421,7 +3492,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -3456,12 +3527,12 @@ Objects {
   Name: "Craftsman Roof 01 Eaves"
   Transform {
     Location {
-      X: -1999.99915
-      Y: -808.266357
-      Z: 597.147949
+      X: -1926.44946
+      Y: -804.759583
+      Z: 614.631104
     }
     Rotation {
-      Yaw: 89.9999542
+      Yaw: 89.999939
     }
     Scale {
       X: 1
@@ -3469,7 +3540,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -3504,12 +3575,12 @@ Objects {
   Name: "Craftsman Roof 01"
   Transform {
     Location {
-      X: -1999.99915
-      Y: -808.266357
-      Z: 597.147949
+      X: -1926.44946
+      Y: -804.759583
+      Z: 614.631104
     }
     Rotation {
-      Yaw: 89.9999542
+      Yaw: 89.999939
     }
     Scale {
       X: 1
@@ -3517,7 +3588,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -3552,8 +3623,9 @@ Objects {
   Name: "Craftsman Wall 01 Garage Single"
   Transform {
     Location {
-      X: -1200
-      Y: 800
+      X: -1126.45044
+      Y: 803.505798
+      Z: 17.4831238
     }
     Rotation {
     }
@@ -3563,7 +3635,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner:id"
@@ -3604,13 +3676,13 @@ Objects {
   Name: "Craftsman Garage Door 01"
   Transform {
     Location {
-      X: -1350
-      Y: 800
-      Z: 25.0000305
+      X: -1276.45044
+      Y: 803.505798
+      Z: 42.4831543
     }
     Rotation {
       Yaw: -179.999939
-      Roll: 1.69038558e-05
+      Roll: 1.69038503e-05
     }
     Scale {
       X: 1
@@ -3618,7 +3690,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -3653,8 +3725,9 @@ Objects {
   Name: "Craftsman Wall 01 Garage Single"
   Transform {
     Location {
-      X: -2000
-      Y: 800
+      X: -1926.45044
+      Y: 803.505554
+      Z: 17.4831238
     }
     Rotation {
     }
@@ -3664,7 +3737,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner:id"
@@ -3705,8 +3778,9 @@ Objects {
   Name: "Craftsman Stairs 01 Pillar"
   Transform {
     Location {
-      X: 399.410645
-      Y: -1603.39648
+      X: 472.958954
+      Y: -1599.88916
+      Z: 17.4831238
     }
     Rotation {
     }
@@ -3716,7 +3790,7 @@ Objects {
       Z: 1.21188378
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3743,8 +3817,9 @@ Objects {
   Name: "Craftsman Stairs 01 Pillar"
   Transform {
     Location {
-      X: 801.619141
-      Y: -1603.39648
+      X: 875.167175
+      Y: -1599.88928
+      Z: 17.4831238
     }
     Rotation {
     }
@@ -3754,7 +3829,7 @@ Objects {
       Z: 1.21188378
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3781,8 +3856,9 @@ Objects {
   Name: "Craftsman Stairs 01 Pillar"
   Transform {
     Location {
-      X: 1201.78564
-      Y: -1603.39648
+      X: 1275.33325
+      Y: -1599.88916
+      Z: 17.4831238
     }
     Rotation {
     }
@@ -3792,7 +3868,7 @@ Objects {
       Z: 1.21188378
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3819,8 +3895,9 @@ Objects {
   Name: "Craftsman Stairs 01 Pillar"
   Transform {
     Location {
-      X: -400.380127
-      Y: -1199.64844
+      X: -326.831329
+      Y: -1196.14124
+      Z: 17.4831238
     }
     Rotation {
     }
@@ -3830,7 +3907,7 @@ Objects {
       Z: 1.21188378
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3857,9 +3934,9 @@ Objects {
   Name: "Craftsman Floor 01 4m x 4m"
   Transform {
     Location {
-      X: 800
-      Y: -1200
-      Z: 600
+      X: 873.548035
+      Y: -1196.4928
+      Z: 617.483154
     }
     Rotation {
     }
@@ -3869,7 +3946,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3896,9 +3973,9 @@ Objects {
   Name: "Craftsman Floor 01 4m x 4m"
   Transform {
     Location {
-      X: 400
-      Y: -1200
-      Z: 600
+      X: 473.548309
+      Y: -1196.49255
+      Z: 617.483154
     }
     Rotation {
     }
@@ -3908,7 +3985,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3935,9 +4012,9 @@ Objects {
   Name: "Craftsman Floor 01 4m x 4m"
   Transform {
     Location {
-      X: 800
-      Y: -800
-      Z: 600
+      X: 873.548035
+      Y: -796.493225
+      Z: 617.483154
     }
     Rotation {
     }
@@ -3947,7 +4024,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3974,9 +4051,9 @@ Objects {
   Name: "Craftsman Floor 01 4m x 4m"
   Transform {
     Location {
-      X: 400
-      Y: -800
-      Z: 600
+      X: 473.548309
+      Y: -796.493347
+      Z: 617.483154
     }
     Rotation {
     }
@@ -3986,7 +4063,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -4013,8 +4090,9 @@ Objects {
   Name: "Craftsman Floor 01 4m x 4m"
   Transform {
     Location {
-      Y: -800
-      Z: 600
+      X: 73.5485306
+      Y: -796.493164
+      Z: 617.483154
     }
     Rotation {
     }
@@ -4024,7 +4102,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -4051,12 +4129,12 @@ Objects {
   Name: "Craftsman Floor 01 4m x 4m"
   Transform {
     Location {
-      X: -400
-      Y: 400
-      Z: 600
+      X: -326.451172
+      Y: 403.506104
+      Z: 617.483154
     }
     Rotation {
-      Yaw: 89.9999542
+      Yaw: 89.999939
     }
     Scale {
       X: 1
@@ -4064,7 +4142,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -4091,11 +4169,12 @@ Objects {
   Name: "Craftsman Floor 01 4m x 4m"
   Transform {
     Location {
-      X: -400
-      Z: 600
+      X: -326.451202
+      Y: 3.50621939
+      Z: 617.483154
     }
     Rotation {
-      Yaw: 89.9999542
+      Yaw: 89.999939
     }
     Scale {
       X: 1
@@ -4103,7 +4182,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -4130,9 +4209,9 @@ Objects {
   Name: "Craftsman Floor 01 4m x 4m"
   Transform {
     Location {
-      X: -400
-      Y: -800
-      Z: 600
+      X: -326.451233
+      Y: -796.493042
+      Z: 617.483154
     }
     Rotation {
     }
@@ -4142,7 +4221,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -4169,12 +4248,12 @@ Objects {
   Name: "Craftsman Porch Fence Post 01"
   Transform {
     Location {
-      X: 400
-      Y: -1600
-      Z: 600
+      X: 473.548309
+      Y: -1596.49268
+      Z: 617.483154
     }
     Rotation {
-      Yaw: 89.9999542
+      Yaw: 89.999939
     }
     Scale {
       X: 1
@@ -4182,7 +4261,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -4217,9 +4296,9 @@ Objects {
   Name: "Craftsman Porch Fence Railing 01"
   Transform {
     Location {
-      X: 800
-      Y: -1600
-      Z: 600
+      X: 873.548035
+      Y: -1596.4928
+      Z: 617.483154
     }
     Rotation {
       Yaw: -179.999954
@@ -4230,7 +4309,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -4265,12 +4344,12 @@ Objects {
   Name: "Craftsman Porch Fence Post 01"
   Transform {
     Location {
-      X: 800
-      Y: -1600
-      Z: 600
+      X: 873.548035
+      Y: -1596.4928
+      Z: 617.483154
     }
     Rotation {
-      Yaw: 89.9999542
+      Yaw: 89.999939
     }
     Scale {
       X: 1
@@ -4278,7 +4357,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -4313,9 +4392,9 @@ Objects {
   Name: "Craftsman Porch Fence Railing 01"
   Transform {
     Location {
-      X: 1200
-      Y: -1600
-      Z: 600
+      X: 1273.54761
+      Y: -1596.49268
+      Z: 617.483154
     }
     Rotation {
       Yaw: -179.999954
@@ -4326,7 +4405,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -4361,9 +4440,9 @@ Objects {
   Name: "Craftsman Porch Fence Post 01"
   Transform {
     Location {
-      X: 1200
-      Y: -1600
-      Z: 600
+      X: 1273.54761
+      Y: -1596.49268
+      Z: 617.483154
     }
     Rotation {
       Yaw: -179.999954
@@ -4374,7 +4453,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -4409,12 +4488,12 @@ Objects {
   Name: "Craftsman Porch Fence Railing 01"
   Transform {
     Location {
-      X: 1200
-      Y: -1200
-      Z: 600
+      X: 1273.54761
+      Y: -1196.49268
+      Z: 617.483154
     }
     Rotation {
-      Yaw: -89.9999542
+      Yaw: -89.999939
     }
     Scale {
       X: 1
@@ -4422,7 +4501,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -4457,9 +4536,9 @@ Objects {
   Name: "Craftsman Porch Fence Post 01"
   Transform {
     Location {
-      X: 400
-      Y: -1200
-      Z: 600
+      X: 473.548309
+      Y: -1196.49255
+      Z: 617.483154
     }
     Rotation {
       Yaw: -179.999954
@@ -4470,7 +4549,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -4505,9 +4584,9 @@ Objects {
   Name: "Craftsman Porch Fence Railing 01"
   Transform {
     Location {
-      X: 400
-      Y: -1200
-      Z: 600
+      X: 473.548309
+      Y: -1196.49255
+      Z: 617.483154
     }
     Rotation {
       Yaw: -179.999954
@@ -4518,7 +4597,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -4553,8 +4632,9 @@ Objects {
   Name: "Craftsman Porch Fence Post 01"
   Transform {
     Location {
-      Y: -1200
-      Z: 600
+      X: 73.5485229
+      Y: -1196.49268
+      Z: 617.483154
     }
     Rotation {
       Yaw: -179.999954
@@ -4565,7 +4645,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -4600,8 +4680,9 @@ Objects {
   Name: "Craftsman Porch Fence Railing 01"
   Transform {
     Location {
-      Y: -1200
-      Z: 600
+      X: 73.5485229
+      Y: -1196.49268
+      Z: 617.483154
     }
     Rotation {
       Yaw: -179.999954
@@ -4612,7 +4693,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -4647,12 +4728,12 @@ Objects {
   Name: "Craftsman Porch Fence Railing 01"
   Transform {
     Location {
-      X: 1200
-      Y: -800
-      Z: 600
+      X: 1273.54761
+      Y: -796.493103
+      Z: 617.483154
     }
     Rotation {
-      Yaw: -89.9999542
+      Yaw: -89.999939
     }
     Scale {
       X: 1
@@ -4660,7 +4741,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -4695,9 +4776,9 @@ Objects {
   Name: "Craftsman Porch Fence Post 01"
   Transform {
     Location {
-      X: 1200
-      Y: -1200
-      Z: 600
+      X: 1273.54761
+      Y: -1196.49268
+      Z: 617.483154
     }
     Rotation {
       Yaw: -179.999954
@@ -4708,7 +4789,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -4743,9 +4824,9 @@ Objects {
   Name: "Craftsman Porch Fence Post 01"
   Transform {
     Location {
-      X: -399.999756
-      Y: -1200
-      Z: 600
+      X: -326.450958
+      Y: -1196.4928
+      Z: 617.483154
     }
     Rotation {
       Yaw: -179.999954
@@ -4756,7 +4837,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -4791,12 +4872,12 @@ Objects {
   Name: "Craftsman Porch Fence Railing 01"
   Transform {
     Location {
-      X: -400
-      Y: -800
-      Z: 600
+      X: -326.451233
+      Y: -796.493042
+      Z: 617.483154
     }
     Rotation {
-      Yaw: -89.9999542
+      Yaw: -89.999939
     }
     Scale {
       X: 1
@@ -4804,7 +4885,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -4839,9 +4920,9 @@ Objects {
   Name: "Craftsman Wall 03 Triangle"
   Transform {
     Location {
-      X: 400
-      Y: -790
-      Z: 1200
+      X: 473.548309
+      Y: -786.493347
+      Z: 1217.48315
     }
     Rotation {
       Yaw: -179.999954
@@ -4852,7 +4933,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner:id"
@@ -4901,9 +4982,9 @@ Objects {
   Name: "Craftsman Wall 03 Triangle"
   Transform {
     Location {
-      X: 400
-      Y: -790
-      Z: 1200
+      X: 473.548584
+      Y: -786.493652
+      Z: 1217.48315
     }
     Rotation {
       Yaw: -179.999954
@@ -4914,7 +4995,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner:id"
@@ -4963,9 +5044,9 @@ Objects {
   Name: "Craftsman Wall 03 Triangle"
   Transform {
     Location {
-      X: 400
-      Y: 1590
-      Z: 1200
+      X: 473.548584
+      Y: 1593.5061
+      Z: 1217.48315
     }
     Rotation {
     }
@@ -4975,7 +5056,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner:id"
@@ -5024,9 +5105,9 @@ Objects {
   Name: "Craftsman Wall 03 Triangle"
   Transform {
     Location {
-      X: 400
-      Y: 1590
-      Z: 1200
+      X: 473.548309
+      Y: 1593.50549
+      Z: 1217.48315
     }
     Rotation {
     }
@@ -5036,7 +5117,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner:id"
@@ -5085,9 +5166,9 @@ Objects {
   Name: "Craftsman Wall 02 Window 3x"
   Transform {
     Location {
-      X: 400
-      Y: 1600
-      Z: 600
+      X: 473.548309
+      Y: 1603.50549
+      Z: 617.483154
     }
     Rotation {
     }
@@ -5097,7 +5178,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner:color"
@@ -5140,9 +5221,9 @@ Objects {
   Name: "Craftsman Wall 02 Corner"
   Transform {
     Location {
-      X: 1200
-      Y: 1600
-      Z: 600
+      X: 1273.54761
+      Y: 1603.50513
+      Z: 617.483154
     }
     Rotation {
     }
@@ -5152,7 +5233,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -5187,12 +5268,12 @@ Objects {
   Name: "Craftsman Wall 02 Corner"
   Transform {
     Location {
-      X: -400
-      Y: 1600
-      Z: 600
+      X: -326.451233
+      Y: 1603.50525
+      Z: 617.483154
     }
     Rotation {
-      Yaw: 89.9999542
+      Yaw: 89.999939
     }
     Scale {
       X: 1
@@ -5200,7 +5281,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -5235,9 +5316,9 @@ Objects {
   Name: "Craftsman Wall 02 Corner"
   Transform {
     Location {
-      X: -400
-      Y: -800
-      Z: 600
+      X: -326.451233
+      Y: -796.493042
+      Z: 617.483154
     }
     Rotation {
       Yaw: -179.999954
@@ -5248,7 +5329,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -5283,9 +5364,9 @@ Objects {
   Name: "Craftsman Wall 02"
   Transform {
     Location {
-      X: 400
-      Y: -800
-      Z: 600
+      X: 473.548309
+      Y: -796.493347
+      Z: 617.483154
     }
     Rotation {
       Yaw: -179.999954
@@ -5296,7 +5377,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner:id"
@@ -5337,9 +5418,9 @@ Objects {
   Name: "Craftsman Wall Interior 01 Doorway"
   Transform {
     Location {
-      X: -400
-      Y: 800
-      Z: 600
+      X: -326.451172
+      Y: 803.506
+      Z: 617.483154
     }
     Rotation {
     }
@@ -5349,7 +5430,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner:id"
@@ -5405,12 +5486,12 @@ Objects {
   Name: "Craftsman Wall 02"
   Transform {
     Location {
-      X: -400
-      Y: -800
-      Z: 600
+      X: -326.451233
+      Y: -796.493042
+      Z: 617.483154
     }
     Rotation {
-      Yaw: 89.9999542
+      Yaw: 89.999939
     }
     Scale {
       X: 1
@@ -5418,7 +5499,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner:id"
@@ -5459,11 +5540,12 @@ Objects {
   Name: "Craftsman Wall 02"
   Transform {
     Location {
-      X: -400
-      Z: 600
+      X: -326.451202
+      Y: 3.50621939
+      Z: 617.483154
     }
     Rotation {
-      Yaw: 89.9999542
+      Yaw: 89.999939
     }
     Scale {
       X: 1
@@ -5471,7 +5553,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner:id"
@@ -5512,12 +5594,12 @@ Objects {
   Name: "Craftsman Wall 02"
   Transform {
     Location {
-      X: -400
-      Y: 800
-      Z: 600
+      X: -326.451172
+      Y: 803.506
+      Z: 617.483154
     }
     Rotation {
-      Yaw: 89.9999542
+      Yaw: 89.999939
     }
     Scale {
       X: 1
@@ -5525,7 +5607,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner:id"
@@ -5566,11 +5648,12 @@ Objects {
   Name: "Craftsman Wall 02"
   Transform {
     Location {
-      X: 1200
-      Z: 600
+      X: 1273.54761
+      Y: 3.5063796
+      Z: 617.483154
     }
     Rotation {
-      Yaw: -89.9999542
+      Yaw: -89.999939
     }
     Scale {
       X: 1
@@ -5578,7 +5661,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner:id"
@@ -5619,12 +5702,12 @@ Objects {
   Name: "Craftsman Wall 02"
   Transform {
     Location {
-      X: 1200
-      Y: 800
-      Z: 600
+      X: 1273.54761
+      Y: 803.50592
+      Z: 617.483154
     }
     Rotation {
-      Yaw: -89.9999542
+      Yaw: -89.999939
     }
     Scale {
       X: 1
@@ -5632,7 +5715,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner:id"
@@ -5673,12 +5756,12 @@ Objects {
   Name: "Craftsman Wall 02"
   Transform {
     Location {
-      X: 1200
-      Y: 1600
-      Z: 600
+      X: 1273.54761
+      Y: 1603.50513
+      Z: 617.483154
     }
     Rotation {
-      Yaw: -89.9999542
+      Yaw: -89.999939
     }
     Scale {
       X: 1
@@ -5686,7 +5769,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner:id"
@@ -5727,9 +5810,9 @@ Objects {
   Name: "Craftsman Wall 02 Window 3x"
   Transform {
     Location {
-      X: -400
-      Y: 1600
-      Z: 600
+      X: -326.451233
+      Y: 1603.50525
+      Z: 617.483154
     }
     Rotation {
     }
@@ -5739,7 +5822,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner:color"
@@ -5782,9 +5865,9 @@ Objects {
   Name: "Craftsman Wall 02 Doorway"
   Transform {
     Location {
-      X: 1200
-      Y: -800
-      Z: 600
+      X: 1273.54761
+      Y: -796.493103
+      Z: 617.483154
     }
     Rotation {
       Yaw: -179.999954
@@ -5795,7 +5878,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner:id"
@@ -5840,12 +5923,12 @@ Objects {
   Name: "Craftsman Wall 02 Corner"
   Transform {
     Location {
-      X: 1200
-      Y: -800
-      Z: 600
+      X: 1273.54761
+      Y: -796.493103
+      Z: 617.483154
     }
     Rotation {
-      Yaw: -90.0000534
+      Yaw: -90.0000305
     }
     Scale {
       X: 1
@@ -5853,7 +5936,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -5888,12 +5971,12 @@ Objects {
   Name: "Craftsman Wall Interior 01 Cap"
   Transform {
     Location {
-      X: 800
-      Y: -366.686523
-      Z: 600
+      X: 873.548096
+      Y: -363.179871
+      Z: 617.483154
     }
     Rotation {
-      Yaw: -89.9999771
+      Yaw: -89.9999466
     }
     Scale {
       X: 1
@@ -5901,7 +5984,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -5936,8 +6019,9 @@ Objects {
   Name: "Craftsman Wall Interior 01 Cap"
   Transform {
     Location {
-      X: 400
-      Y: -100
+      X: 473.548309
+      Y: -96.4935455
+      Z: 17.4831238
     }
     Rotation {
       Yaw: -179.999954
@@ -5948,7 +6032,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -5983,8 +6067,9 @@ Objects {
   Name: "Craftsman Wall 01 Corner"
   Transform {
     Location {
-      X: 1200
-      Y: 1600
+      X: 1273.54761
+      Y: 1603.50513
+      Z: 17.4831238
     }
     Rotation {
     }
@@ -5994,7 +6079,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -6029,11 +6114,12 @@ Objects {
   Name: "Craftsman Wall 01 Corner"
   Transform {
     Location {
-      X: -400
-      Y: 1600
+      X: -326.451233
+      Y: 1603.50525
+      Z: 17.4831238
     }
     Rotation {
-      Yaw: 89.9999771
+      Yaw: 89.9999466
     }
     Scale {
       X: 1
@@ -6041,7 +6127,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -6076,8 +6162,9 @@ Objects {
   Name: "Craftsman Wall 01 Corner"
   Transform {
     Location {
-      X: -400
-      Y: -800
+      X: -326.451233
+      Y: -796.493042
+      Z: 17.4831238
     }
     Rotation {
       Yaw: -179.999954
@@ -6088,7 +6175,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -6123,9 +6210,9 @@ Objects {
   Name: "Craftsman Wall Interior 01"
   Transform {
     Location {
-      X: 400
-      Y: 800
-      Z: 600
+      X: 473.548309
+      Y: 803.505676
+      Z: 617.483154
     }
     Rotation {
     }
@@ -6135,7 +6222,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner:id"
@@ -6185,12 +6272,12 @@ Objects {
   Name: "Craftsman Wall Interior 01"
   Transform {
     Location {
-      X: 800
-      Y: 800
-      Z: 600
+      X: 873.548035
+      Y: 803.506042
+      Z: 617.483154
     }
     Rotation {
-      Yaw: -89.9999771
+      Yaw: -89.9999466
     }
     Scale {
       X: 1
@@ -6198,7 +6285,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner:id"
@@ -6248,11 +6335,12 @@ Objects {
   Name: "Craftsman Wall Interior 01 Half"
   Transform {
     Location {
-      X: 800
-      Z: 600
+      X: 873.548096
+      Y: 3.50627851
+      Z: 617.483154
     }
     Rotation {
-      Yaw: -89.9999771
+      Yaw: -89.9999466
     }
     Scale {
       X: 0.875
@@ -6260,7 +6348,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner:id"
@@ -6310,9 +6398,9 @@ Objects {
   Name: "Craftsman Stairs 01 Straight Inner Wall"
   Transform {
     Location {
-      X: 800
-      Y: 800
-      Z: 3.05175781e-05
+      X: 873.548035
+      Y: 803.506042
+      Z: 17.4831543
     }
     Rotation {
     }
@@ -6322,7 +6410,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -6357,11 +6445,12 @@ Objects {
   Name: "Craftsman Wall 01"
   Transform {
     Location {
-      X: -400
-      Y: 800
+      X: -326.451172
+      Y: 803.506
+      Z: 17.4831238
     }
     Rotation {
-      Yaw: 89.9999542
+      Yaw: 89.999939
     }
     Scale {
       X: 1
@@ -6369,7 +6458,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -6404,10 +6493,12 @@ Objects {
   Name: "Craftsman Wall 01"
   Transform {
     Location {
-      X: -400
+      X: -326.451202
+      Y: 3.50621939
+      Z: 17.4831238
     }
     Rotation {
-      Yaw: 89.9999771
+      Yaw: 89.9999466
     }
     Scale {
       X: 1
@@ -6415,7 +6506,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallOuter:id"
@@ -6474,8 +6565,9 @@ Objects {
   Name: "Craftsman Wall 01 Doorway"
   Transform {
     Location {
-      X: 1200
-      Y: -800
+      X: 1273.54761
+      Y: -796.493103
+      Z: 17.4831238
     }
     Rotation {
       Yaw: -179.999893
@@ -6486,7 +6578,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner:id"
@@ -6536,12 +6628,11 @@ Objects {
   Name: "Craftsman Stairs 01 Straight"
   Transform {
     Location {
-      X: -411.59082
-      Y: -1591.1543
-      Z: -17.4831238
+      X: -338.042
+      Y: -1587.64697
     }
     Rotation {
-      Yaw: 89.9999771
+      Yaw: 89.9999466
     }
     Scale {
       X: 1
@@ -6549,7 +6640,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -6584,12 +6675,11 @@ Objects {
   Name: "Craftsman Stairs 01 Banister"
   Transform {
     Location {
-      X: -411.590576
-      Y: -1241.1543
-      Z: -17.4831238
+      X: -338.041748
+      Y: -1237.64709
     }
     Rotation {
-      Yaw: 89.9999771
+      Yaw: 89.9999466
     }
     Scale {
       X: 1
@@ -6597,7 +6687,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -6632,9 +6722,9 @@ Objects {
   Name: "Craftsman Stairs 01 Banister"
   Transform {
     Location {
-      X: 1150
-      Y: 800.365234
-      Z: 20.6165314
+      X: 1223.54761
+      Y: 803.871155
+      Z: 38.0996552
     }
     Rotation {
     }
@@ -6644,7 +6734,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -6679,9 +6769,9 @@ Objects {
   Name: "Craftsman Stairs 01 Straight"
   Transform {
     Location {
-      X: 800
-      Y: 800.365234
-      Z: 20.6165314
+      X: 873.548035
+      Y: 803.871277
+      Z: 38.0996552
     }
     Rotation {
     }
@@ -6691,7 +6781,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -6726,9 +6816,9 @@ Objects {
   Name: "Craftsman Roof 01 Bracket"
   Transform {
     Location {
-      X: -2020
-      Y: -35
-      Z: 517.147949
+      X: -1946.45044
+      Y: -31.493681
+      Z: 534.631104
     }
     Rotation {
       Yaw: 179.999954
@@ -6739,7 +6829,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -6774,9 +6864,9 @@ Objects {
   Name: "Craftsman Floor 01 8m x 8m"
   Transform {
     Location {
-      X: -1199.77112
-      Y: 791.733643
-      Z: -2.85223389
+      X: -1126.22156
+      Y: 795.239685
+      Z: 14.6308899
     }
     Rotation {
     }
@@ -6786,7 +6876,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Floor:id"
@@ -6837,9 +6927,9 @@ Objects {
   Name: "Craftsman Floor 01 8m x 8m"
   Transform {
     Location {
-      X: -1999.99939
-      Y: 791.733643
-      Z: -2.85223389
+      X: -1926.45
+      Y: 795.239441
+      Z: 14.6308899
     }
     Rotation {
     }
@@ -6849,7 +6939,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Floor:id"
@@ -6900,9 +6990,9 @@ Objects {
   Name: "Craftsman Wall 01"
   Transform {
     Location {
-      X: -400
-      Y: -808.266357
-      Z: -2.85198975
+      X: -326.451233
+      Y: -804.759644
+      Z: 14.631134
     }
     Rotation {
       Yaw: -179.999954
@@ -6913,7 +7003,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner:id"
@@ -6962,9 +7052,9 @@ Objects {
   Name: "Craftsman Wall 02 Triangle"
   Transform {
     Location {
-      X: -1200
-      Y: 800
-      Z: 597.147949
+      X: -1126.45142
+      Y: 803.506104
+      Z: 614.631104
     }
     Rotation {
     }
@@ -6974,7 +7064,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner:id"
@@ -7023,9 +7113,9 @@ Objects {
   Name: "Craftsman Wall 02 Triangle"
   Transform {
     Location {
-      X: -1200
-      Y: 800
-      Z: 597.147949
+      X: -1126.45044
+      Y: 803.505798
+      Z: 614.631104
     }
     Rotation {
     }
@@ -7035,7 +7125,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner:id"
@@ -7084,9 +7174,9 @@ Objects {
   Name: "Craftsman Wall 01 Doorway"
   Transform {
     Location {
-      X: -1200
-      Y: -808.266357
-      Z: -2.85198975
+      X: -1126.45044
+      Y: -804.759583
+      Z: 14.631134
     }
     Rotation {
       Yaw: 179.999954
@@ -7097,7 +7187,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner:id"
@@ -7146,9 +7236,9 @@ Objects {
   Name: "Craftsman Wall 01 Corner"
   Transform {
     Location {
-      X: -1999.99915
-      Y: -808.266357
-      Z: -2.85205078
+      X: -1926.44946
+      Y: -804.759583
+      Z: 14.631073
     }
     Rotation {
       Yaw: 179.999954
@@ -7159,7 +7249,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -7194,9 +7284,9 @@ Objects {
   Name: "Craftsman Wall 02 Triangle"
   Transform {
     Location {
-      X: -1200
-      Y: -808.266357
-      Z: 597.147949
+      X: -1126.45142
+      Y: -804.76
+      Z: 614.631104
     }
     Rotation {
       Yaw: 179.999954
@@ -7207,7 +7297,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner:id"
@@ -7256,9 +7346,9 @@ Objects {
   Name: "Craftsman Wall 02 Triangle"
   Transform {
     Location {
-      X: -1200
-      Y: -808.266357
-      Z: 597.147949
+      X: -1126.45044
+      Y: -804.759583
+      Z: 614.631104
     }
     Rotation {
       Yaw: 179.999954
@@ -7269,7 +7359,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner:id"
@@ -7318,12 +7408,12 @@ Objects {
   Name: "Craftsman Wall 01 Corner"
   Transform {
     Location {
-      X: -2000
-      Y: 800
-      Z: -2.85205078
+      X: -1926.45044
+      Y: 803.505554
+      Z: 14.631073
     }
     Rotation {
-      Yaw: 89.9999542
+      Yaw: 89.999939
     }
     Scale {
       X: 1
@@ -7331,7 +7421,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -7366,12 +7456,12 @@ Objects {
   Name: "Craftsman Wall 01"
   Transform {
     Location {
-      X: -1999.99805
-      Y: -8.26635742
-      Z: -2.85198975
+      X: -1926.44849
+      Y: -4.76005125
+      Z: 14.631134
     }
     Rotation {
-      Yaw: 89.9999542
+      Yaw: 89.999939
     }
     Scale {
       X: 1
@@ -7379,7 +7469,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner:id"
@@ -7428,9 +7518,9 @@ Objects {
   Name: "Craftsman Roof 01 End"
   Transform {
     Location {
-      X: -400
-      Y: 791.733643
-      Z: 597.147949
+      X: -326.451172
+      Y: 795.23938
+      Z: 614.631104
     }
     Rotation {
     }
@@ -7440,7 +7530,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -7475,11 +7565,12 @@ Objects {
   Name: "Craftsman Roof 01 End"
   Transform {
     Location {
-      X: -2000.00012
-      Y: 791.733643
-      Z: 597.147949
+      X: -1926.45142
+      Y: 795.24
+      Z: 614.631104
     }
     Rotation {
+      Yaw: -1.01777712e-12
     }
     Scale {
       X: -1
@@ -7487,7 +7578,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -7522,9 +7613,9 @@ Objects {
   Name: "Craftsman Roof Arch 01"
   Transform {
     Location {
-      X: -1600
-      Y: 800
-      Z: 872.147949
+      X: -1526.45044
+      Y: 803.50592
+      Z: 889.631104
     }
     Rotation {
     }
@@ -7534,7 +7625,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -7569,9 +7660,9 @@ Objects {
   Name: "Craftsman Roof Arch 01"
   Transform {
     Location {
-      X: -800
-      Y: -808.266357
-      Z: 872.147949
+      X: -726.451
+      Y: -804.759521
+      Z: 889.631104
     }
     Rotation {
       Yaw: -179.999954
@@ -7582,7 +7673,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -7617,9 +7708,9 @@ Objects {
   Name: "Craftsman Roof 01 End"
   Transform {
     Location {
-      X: -1999.99915
-      Y: -808.266357
-      Z: 597.147949
+      X: -1926.44946
+      Y: -804.759583
+      Z: 614.631104
     }
     Rotation {
       Yaw: 179.999954
@@ -7630,7 +7721,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -7665,12 +7756,12 @@ Objects {
   Name: "Craftsman Roof 01"
   Transform {
     Location {
-      X: -1999.99915
-      Y: -8.26635742
-      Z: 597.147949
+      X: -1926.44971
+      Y: -4.76005125
+      Z: 614.631104
     }
     Rotation {
-      Yaw: 89.9999542
+      Yaw: 89.999939
     }
     Scale {
       X: 1
@@ -7678,7 +7769,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -7713,12 +7804,12 @@ Objects {
   Name: "Craftsman Roof 01 Cap"
   Transform {
     Location {
-      X: -1200
-      Y: -123.970703
-      Z: 1247.14795
+      X: -1126.45044
+      Y: -120.464409
+      Z: 1264.6311
     }
     Rotation {
-      Yaw: 89.9999542
+      Yaw: 89.999939
     }
     Scale {
       X: 1.30824721
@@ -7726,7 +7817,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -7761,12 +7852,12 @@ Objects {
   Name: "Craftsman Roof 01"
   Transform {
     Location {
-      X: -399.999939
-      Y: -8.26635742
-      Z: 597.147949
+      X: -326.451141
+      Y: -4.76013517
+      Z: 614.631104
     }
     Rotation {
-      Yaw: -89.999939
+      Yaw: -89.9999161
     }
     Scale {
       X: 1
@@ -7774,7 +7865,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -7809,9 +7900,9 @@ Objects {
   Name: "Craftsman Roof 01 Eaves End"
   Transform {
     Location {
-      X: -1999.99915
-      Y: -808.266357
-      Z: 597.147949
+      X: -1926.44946
+      Y: -804.759583
+      Z: 614.631104
     }
     Rotation {
       Yaw: 179.999954
@@ -7822,7 +7913,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -7857,9 +7948,9 @@ Objects {
   Name: "Craftsman Roof 01 Eaves End"
   Transform {
     Location {
-      X: -1999.99963
-      Y: 761.733643
-      Z: 597.147949
+      X: -1926.45093
+      Y: 765.24
+      Z: 614.631104
     }
     Rotation {
     }
@@ -7869,7 +7960,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -7904,12 +7995,12 @@ Objects {
   Name: "Craftsman Roof 01 Eaves"
   Transform {
     Location {
-      X: -1999.99915
-      Y: -8.26635742
-      Z: 597.147949
+      X: -1926.44971
+      Y: -4.76005125
+      Z: 614.631104
     }
     Rotation {
-      Yaw: 89.9999542
+      Yaw: 89.999939
     }
     Scale {
       X: 1
@@ -7917,7 +8008,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -7952,9 +8043,9 @@ Objects {
   Name: "Craftsman Roof 01 Eaves End"
   Transform {
     Location {
-      X: 1200
-      Y: -800
-      Z: 1200
+      X: 1273.54858
+      Y: -796.493408
+      Z: 1217.48315
     }
     Rotation {
       Yaw: -179.999954
@@ -7965,7 +8056,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -8000,9 +8091,9 @@ Objects {
   Name: "Craftsman Roof 01 Eaves End"
   Transform {
     Location {
-      X: -400
-      Y: -800
-      Z: 1200
+      X: -326.451233
+      Y: -796.493042
+      Z: 1217.48315
     }
     Rotation {
       Yaw: -179.999954
@@ -8013,7 +8104,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -8048,12 +8139,12 @@ Objects {
   Name: "Craftsman Roof 01 Eaves"
   Transform {
     Location {
-      X: -400
-      Y: 800
-      Z: 1200
+      X: -326.451172
+      Y: 803.506
+      Z: 1217.48315
     }
     Rotation {
-      Yaw: 89.9999542
+      Yaw: 89.999939
     }
     Scale {
       X: 1
@@ -8061,7 +8152,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -8096,11 +8187,12 @@ Objects {
   Name: "Craftsman Roof 01 Eaves"
   Transform {
     Location {
-      X: -399.999512
-      Z: 1200
+      X: -326.450714
+      Y: 3.50621939
+      Z: 1217.48315
     }
     Rotation {
-      Yaw: 89.9999542
+      Yaw: 89.999939
     }
     Scale {
       X: 1
@@ -8108,7 +8200,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -8143,12 +8235,12 @@ Objects {
   Name: "Craftsman Roof 01 Eaves"
   Transform {
     Location {
-      X: -400
-      Y: -800
-      Z: 1200
+      X: -326.451233
+      Y: -796.493042
+      Z: 1217.48315
     }
     Rotation {
-      Yaw: 89.9999542
+      Yaw: 89.999939
     }
     Scale {
       X: 1
@@ -8156,7 +8248,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -8191,9 +8283,9 @@ Objects {
   Name: "Craftsman Roof 01 Eaves End"
   Transform {
     Location {
-      X: -400
-      Y: 1600
-      Z: 1200
+      X: -326.451416
+      Y: 1603.5061
+      Z: 1217.48315
     }
     Rotation {
       Yaw: -3.05175672e-05
@@ -8204,7 +8296,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -8239,11 +8331,12 @@ Objects {
   Name: "Craftsman Roof 01 Eaves"
   Transform {
     Location {
-      X: 1200
-      Z: 1200
+      X: 1273.54761
+      Y: 3.5063796
+      Z: 1217.48315
     }
     Rotation {
-      Yaw: -90.0000534
+      Yaw: -90.0000305
     }
     Scale {
       X: 1
@@ -8251,7 +8344,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -8286,12 +8379,12 @@ Objects {
   Name: "Craftsman Roof 01 Eaves"
   Transform {
     Location {
-      X: 1200
-      Y: 800
-      Z: 1200
+      X: 1273.54761
+      Y: 803.50592
+      Z: 1217.48315
     }
     Rotation {
-      Yaw: -90.0000534
+      Yaw: -90.0000305
     }
     Scale {
       X: 1
@@ -8299,7 +8392,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -8334,12 +8427,12 @@ Objects {
   Name: "Craftsman Roof 01 Eaves End"
   Transform {
     Location {
-      X: 1200
-      Y: 1600
-      Z: 1200
+      X: 1273.54761
+      Y: 1603.50513
+      Z: 1217.48315
     }
     Rotation {
-      Yaw: -3.05175672e-05
+      Yaw: -3.05175563e-05
     }
     Scale {
       X: 1
@@ -8347,7 +8440,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -8382,12 +8475,12 @@ Objects {
   Name: "Craftsman Roof 01 Eaves"
   Transform {
     Location {
-      X: 1200
-      Y: 1600
-      Z: 1200
+      X: 1273.54761
+      Y: 1603.50513
+      Z: 1217.48315
     }
     Rotation {
-      Yaw: -90.0000534
+      Yaw: -90.0000305
     }
     Scale {
       X: 1
@@ -8395,7 +8488,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -8430,9 +8523,9 @@ Objects {
   Name: "Craftsman Roof Arch 01"
   Transform {
     Location {
-      X: 800
-      Y: -800
-      Z: 1400
+      X: 873.548035
+      Y: -796.493225
+      Z: 1417.48315
     }
     Rotation {
       Yaw: -179.999954
@@ -8443,7 +8536,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -8478,9 +8571,9 @@ Objects {
   Name: "Craftsman Roof 01 End"
   Transform {
     Location {
-      X: -400
-      Y: -800
-      Z: 1200
+      X: -326.451233
+      Y: -796.493042
+      Z: 1217.48315
     }
     Rotation {
       Yaw: -179.999954
@@ -8491,7 +8584,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -8526,9 +8619,9 @@ Objects {
   Name: "Craftsman Roof 01 End"
   Transform {
     Location {
-      X: 1200
-      Y: -800.001
-      Z: 1200
+      X: 1273.54858
+      Y: -796.494385
+      Z: 1217.48315
     }
     Rotation {
       Yaw: -179.999954
@@ -8539,7 +8632,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -8574,12 +8667,12 @@ Objects {
   Name: "Craftsman Roof 01 Cap"
   Transform {
     Location {
-      X: 400
-      Y: -955.65625
-      Z: 1845.2207
+      X: 473.548309
+      Y: -952.149597
+      Z: 1862.70386
     }
     Rotation {
-      Yaw: 89.9999542
+      Yaw: 89.999939
     }
     Scale {
       X: 1.2
@@ -8587,7 +8680,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -8622,11 +8715,12 @@ Objects {
   Name: "Craftsman Roof 01 Cap"
   Transform {
     Location {
-      X: 400
-      Z: 1845.2207
+      X: 473.548309
+      Y: 3.50642157
+      Z: 1862.70386
     }
     Rotation {
-      Yaw: 89.9999542
+      Yaw: 89.999939
     }
     Scale {
       X: 1.2
@@ -8634,7 +8728,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -8669,11 +8763,12 @@ Objects {
   Name: "Craftsman Roof 01"
   Transform {
     Location {
-      X: 1200
-      Z: 1200
+      X: 1273.54761
+      Y: 3.5063796
+      Z: 1217.48315
     }
     Rotation {
-      Yaw: -89.9999542
+      Yaw: -89.999939
     }
     Scale {
       X: 1
@@ -8681,7 +8776,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -8716,12 +8811,12 @@ Objects {
   Name: "Craftsman Roof 01"
   Transform {
     Location {
-      X: -400
-      Y: -800
-      Z: 1200
+      X: -326.451233
+      Y: -796.493042
+      Z: 1217.48315
     }
     Rotation {
-      Yaw: 89.9999542
+      Yaw: 89.999939
     }
     Scale {
       X: 1
@@ -8729,7 +8824,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -8764,11 +8859,12 @@ Objects {
   Name: "Craftsman Roof 01"
   Transform {
     Location {
-      X: -400
-      Z: 1200
+      X: -326.451202
+      Y: 3.50621939
+      Z: 1217.48315
     }
     Rotation {
-      Yaw: 89.9999542
+      Yaw: 89.999939
     }
     Scale {
       X: 1
@@ -8776,7 +8872,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -8811,8 +8907,9 @@ Objects {
   Name: "Craftsman Roof Arch 01"
   Transform {
     Location {
-      Y: 1600
-      Z: 1400
+      X: 73.5485306
+      Y: 1603.50562
+      Z: 1417.48315
     }
     Rotation {
     }
@@ -8822,7 +8919,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -8857,12 +8954,12 @@ Objects {
   Name: "Craftsman Roof 01"
   Transform {
     Location {
-      X: 1200
-      Y: 800
-      Z: 1200
+      X: 1273.54761
+      Y: 803.50592
+      Z: 1217.48315
     }
     Rotation {
-      Yaw: -89.9999542
+      Yaw: -89.999939
     }
     Scale {
       X: 1
@@ -8870,7 +8967,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -8905,12 +9002,12 @@ Objects {
   Name: "Craftsman Roof 01 Cap"
   Transform {
     Location {
-      X: 400
-      Y: 800
-      Z: 1845.2207
+      X: 473.548309
+      Y: 803.505676
+      Z: 1862.70386
     }
     Rotation {
-      Yaw: 89.9999542
+      Yaw: 89.999939
     }
     Scale {
       X: 1.2
@@ -8918,7 +9015,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -8953,9 +9050,9 @@ Objects {
   Name: "Craftsman Roof 01 End"
   Transform {
     Location {
-      X: -400
-      Y: 1600
-      Z: 1200
+      X: -326.451416
+      Y: 1603.5061
+      Z: 1217.48315
     }
     Rotation {
     }
@@ -8965,7 +9062,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -9000,9 +9097,9 @@ Objects {
   Name: "Craftsman Roof 01 End"
   Transform {
     Location {
-      X: 1200
-      Y: 1600
-      Z: 1200
+      X: 1273.54761
+      Y: 1603.50513
+      Z: 1217.48315
     }
     Rotation {
     }
@@ -9012,7 +9109,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -9047,12 +9144,12 @@ Objects {
   Name: "Craftsman Roof 01"
   Transform {
     Location {
-      X: 1200
-      Y: 1600
-      Z: 1200
+      X: 1273.54761
+      Y: 1603.50513
+      Z: 1217.48315
     }
     Rotation {
-      Yaw: -89.9999542
+      Yaw: -89.999939
     }
     Scale {
       X: 1
@@ -9060,7 +9157,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -9095,12 +9192,12 @@ Objects {
   Name: "Craftsman Roof 01"
   Transform {
     Location {
-      X: -400
-      Y: 800
-      Z: 1200
+      X: -326.451172
+      Y: 803.506
+      Z: 1217.48315
     }
     Rotation {
-      Yaw: 89.9999542
+      Yaw: 89.999939
     }
     Scale {
       X: 1
@@ -9108,7 +9205,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -9143,9 +9240,9 @@ Objects {
   Name: "Craftsman Roof 01 Bracket"
   Transform {
     Location {
-      X: -1600
-      Y: -808.266357
-      Z: 800
+      X: -1526.45044
+      Y: -804.75946
+      Z: 817.483154
     }
     Rotation {
       Yaw: -179.999954
@@ -9156,7 +9253,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -9191,9 +9288,9 @@ Objects {
   Name: "Craftsman Roof 01 Bracket"
   Transform {
     Location {
-      X: -1210.00098
-      Y: -25
-      Z: 1135
+      X: -1136.45142
+      Y: -21.4937267
+      Z: 1152.48315
     }
     Rotation {
       Yaw: -179.999954
@@ -9204,7 +9301,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -9239,9 +9336,9 @@ Objects {
   Name: "Craftsman Roof 01 Bracket"
   Transform {
     Location {
-      X: -820.001
-      Y: -808.265381
-      Z: 800
+      X: -746.451965
+      Y: -804.758545
+      Z: 817.483154
     }
     Rotation {
       Yaw: -179.999954
@@ -9252,7 +9349,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -9287,9 +9384,9 @@ Objects {
   Name: "Craftsman Roof 01 Bracket"
   Transform {
     Location {
-      X: -800
-      Y: 800
-      Z: 800
+      X: -726.451
+      Y: 803.505615
+      Z: 817.483154
     }
     Rotation {
     }
@@ -9299,7 +9396,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -9334,9 +9431,9 @@ Objects {
   Name: "Craftsman Roof 01 Bracket"
   Transform {
     Location {
-      X: -1189.99951
-      Y: 825
-      Z: 1135
+      X: -1116.45
+      Y: 828.505798
+      Z: 1152.48315
     }
     Rotation {
     }
@@ -9346,7 +9443,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -9381,9 +9478,9 @@ Objects {
   Name: "Craftsman Roof 01 Bracket"
   Transform {
     Location {
-      X: -1579.99902
-      Y: 800
-      Z: 800
+      X: -1506.44946
+      Y: 803.50592
+      Z: 817.483154
     }
     Rotation {
     }
@@ -9393,7 +9490,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -9428,12 +9525,12 @@ Objects {
   Name: "Craftsman Roof 01 Bracket"
   Transform {
     Location {
-      X: -400.000977
-      Y: 1600
-      Z: 1046.23987
+      X: -326.452209
+      Y: 1603.50525
+      Z: 1063.72302
     }
     Rotation {
-      Yaw: 89.9999542
+      Yaw: 89.999939
     }
     Scale {
       X: 1
@@ -9441,7 +9538,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -9476,12 +9573,12 @@ Objects {
   Name: "Craftsman Roof 01 Bracket"
   Transform {
     Location {
-      X: -400
-      Y: 800
-      Z: 1046.23987
+      X: -326.451172
+      Y: 803.506
+      Z: 1063.72302
     }
     Rotation {
-      Yaw: 89.9999542
+      Yaw: 89.999939
     }
     Scale {
       X: 1
@@ -9489,7 +9586,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -9524,12 +9621,12 @@ Objects {
   Name: "Craftsman Roof 01 Bracket"
   Transform {
     Location {
-      X: -400
-      Y: -130.150391
-      Z: 1046.23987
+      X: -326.451172
+      Y: -126.643898
+      Z: 1063.72302
     }
     Rotation {
-      Yaw: 89.9999542
+      Yaw: 89.999939
     }
     Scale {
       X: 1
@@ -9537,7 +9634,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -9572,12 +9669,12 @@ Objects {
   Name: "Craftsman Roof 01 Bracket"
   Transform {
     Location {
-      X: -400
-      Y: -800
-      Z: 1046.23987
+      X: -326.451233
+      Y: -796.493042
+      Z: 1063.72302
     }
     Rotation {
-      Yaw: 89.9999542
+      Yaw: 89.999939
     }
     Scale {
       X: 1
@@ -9585,7 +9682,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -9620,12 +9717,12 @@ Objects {
   Name: "Craftsman Roof 01 Bracket"
   Transform {
     Location {
-      X: 1200
-      Y: -800
-      Z: 1046.23987
+      X: 1273.54761
+      Y: -796.493103
+      Z: 1063.72302
     }
     Rotation {
-      Yaw: -90.0000534
+      Yaw: -90.0000305
     }
     Scale {
       X: 1
@@ -9633,7 +9730,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -9668,11 +9765,12 @@ Objects {
   Name: "Craftsman Roof 01 Bracket"
   Transform {
     Location {
-      X: 1200
-      Z: 1046.23987
+      X: 1273.54761
+      Y: 3.5063796
+      Z: 1063.72302
     }
     Rotation {
-      Yaw: -90.0000534
+      Yaw: -90.0000305
     }
     Scale {
       X: 1
@@ -9680,7 +9778,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -9715,12 +9813,12 @@ Objects {
   Name: "Craftsman Roof 01 Bracket"
   Transform {
     Location {
-      X: 1200
-      Y: 1600
-      Z: 1046.23987
+      X: 1273.54761
+      Y: 1603.50513
+      Z: 1063.72302
     }
     Rotation {
-      Yaw: -90.0000534
+      Yaw: -90.0000305
     }
     Scale {
       X: 1
@@ -9728,7 +9826,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -9763,12 +9861,12 @@ Objects {
   Name: "Craftsman Roof 01 Bracket"
   Transform {
     Location {
-      X: 1200
-      Y: 930.150391
-      Z: 1046.23987
+      X: 1273.54761
+      Y: 933.656311
+      Z: 1063.72302
     }
     Rotation {
-      Yaw: -90.0000534
+      Yaw: -90.0000305
     }
     Scale {
       X: 1
@@ -9776,7 +9874,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -9811,9 +9909,9 @@ Objects {
   Name: "Craftsman Roof 01 Bracket"
   Transform {
     Location {
-      X: 790
-      Y: -810.001953
-      Z: 1425
+      X: 863.548035
+      Y: -806.495178
+      Z: 1442.48315
     }
     Rotation {
       Yaw: -179.999954
@@ -9824,7 +9922,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -9859,9 +9957,9 @@ Objects {
   Name: "Craftsman Roof 01 Bracket"
   Transform {
     Location {
-      X: 400
-      Y: -835.001953
-      Z: 1760
+      X: 473.548309
+      Y: -831.4953
+      Z: 1777.48315
     }
     Rotation {
       Yaw: -179.999954
@@ -9872,7 +9970,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -9907,9 +10005,9 @@ Objects {
   Name: "Craftsman Roof 01 Bracket"
   Transform {
     Location {
-      X: 10.0009766
-      Y: -810.001
-      Z: 1425
+      X: 83.5495
+      Y: -806.494141
+      Z: 1442.48315
     }
     Rotation {
       Yaw: -179.999954
@@ -9920,7 +10018,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -9955,9 +10053,9 @@ Objects {
   Name: "Craftsman Roof 01 Bracket"
   Transform {
     Location {
-      X: 789.999512
-      Y: 1610.00195
-      Z: 1425
+      X: 863.547546
+      Y: 1613.5072
+      Z: 1442.48315
     }
     Rotation {
     }
@@ -9967,7 +10065,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -10002,9 +10100,9 @@ Objects {
   Name: "Craftsman Roof 01 Bracket"
   Transform {
     Location {
-      X: 10.0004883
-      Y: 1610.00195
-      Z: 1425
+      X: 83.5490112
+      Y: 1613.50757
+      Z: 1442.48315
     }
     Rotation {
     }
@@ -10014,7 +10112,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -10049,9 +10147,9 @@ Objects {
   Name: "Craftsman Roof 01 Bracket"
   Transform {
     Location {
-      X: 400
-      Y: 1635.00195
-      Z: 1760
+      X: 473.548309
+      Y: 1638.50745
+      Z: 1777.48315
     }
     Rotation {
     }
@@ -10061,7 +10159,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -10096,11 +10194,12 @@ Objects {
   Name: "Craftsman Wall 01 Doorway"
   Transform {
     Location {
-      X: -400
-      Y: -800
+      X: -326.451233
+      Y: -796.493042
+      Z: 17.4831238
     }
     Rotation {
-      Yaw: 89.9999619
+      Yaw: 89.999939
     }
     Scale {
       X: 1
@@ -10108,7 +10207,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner:id"
@@ -10176,9 +10275,9 @@ Objects {
   Name: "Craftsman Wall Interior 01"
   Transform {
     Location {
-      X: 400
-      Y: -100
-      Z: -3.05175781e-05
+      X: 473.548309
+      Y: -96.4935455
+      Z: 17.4830933
     }
     Rotation {
     }
@@ -10188,7 +10287,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner:id"
@@ -10248,8 +10347,9 @@ Objects {
   Name: "Craftsman Wall 01"
   Transform {
     Location {
-      X: -384.105225
-      Y: 1556.94055
+      X: -310.556427
+      Y: 1560.44617
+      Z: 17.4831238
     }
     Rotation {
     }
@@ -10259,7 +10359,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -10294,8 +10394,9 @@ Objects {
   Name: "Craftsman Wall 01 Doorway"
   Transform {
     Location {
-      X: 415.892212
-      Y: 1556.93835
+      X: 489.440521
+      Y: 1560.44397
+      Z: 17.4831238
     }
     Rotation {
     }
@@ -10305,7 +10406,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner:id"
@@ -10355,11 +10456,12 @@ Objects {
   Name: "Craftsman Wall 01"
   Transform {
     Location {
-      X: 1200
-      Y: 1600
+      X: 1273.54761
+      Y: 1603.50513
+      Z: 17.4831238
     }
     Rotation {
-      Yaw: -89.9999619
+      Yaw: -89.999939
     }
     Scale {
       X: 1
@@ -10367,7 +10469,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -10402,11 +10504,12 @@ Objects {
   Name: "Craftsman Wall 01"
   Transform {
     Location {
-      X: 1200
-      Y: 800
+      X: 1273.54761
+      Y: 803.50592
+      Z: 17.4831238
     }
     Rotation {
-      Yaw: -89.9999619
+      Yaw: -89.999939
     }
     Scale {
       X: 1
@@ -10414,7 +10517,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -10449,11 +10552,12 @@ Objects {
   Name: "Craftsman Wall 01 Corner"
   Transform {
     Location {
-      X: 1200
-      Y: -800
+      X: 1273.54761
+      Y: -796.493103
+      Z: 17.4831238
     }
     Rotation {
-      Yaw: -90.0000534
+      Yaw: -90.0000305
     }
     Scale {
       X: 1
@@ -10461,7 +10565,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -10496,10 +10600,12 @@ Objects {
   Name: "Craftsman Wall 01"
   Transform {
     Location {
-      X: 1200
+      X: 1273.54761
+      Y: 3.5063796
+      Z: 17.4831238
     }
     Rotation {
-      Yaw: -89.9999847
+      Yaw: -89.9999542
     }
     Scale {
       X: 1
@@ -10507,7 +10613,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -10542,8 +10648,9 @@ Objects {
   Name: "Craftsman Wall 01"
   Transform {
     Location {
-      X: 400
-      Y: -800
+      X: 473.548309
+      Y: -796.493347
+      Z: 17.4831238
     }
     Rotation {
       Yaw: -179.999954
@@ -10554,7 +10661,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -10589,12 +10696,12 @@ Objects {
   Name: "Craftsman Floor 01 8m x 8m"
   Transform {
     Location {
-      X: 400
-      Y: 800
-      Z: 1200
+      X: 473.548309
+      Y: 803.505676
+      Z: 1217.48315
     }
     Rotation {
-      Yaw: 89.9999542
+      Yaw: 89.999939
     }
     Scale {
       X: 1
@@ -10602,7 +10709,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Floor:id"
@@ -10656,12 +10763,12 @@ Objects {
   Name: "Craftsman Floor 01 8m x 8m"
   Transform {
     Location {
-      X: -400
-      Y: 800
-      Z: 1200
+      X: -326.451172
+      Y: 803.506
+      Z: 1217.48315
     }
     Rotation {
-      Yaw: 89.9999542
+      Yaw: 89.999939
     }
     Scale {
       X: 1
@@ -10669,7 +10776,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Floor:id"
@@ -10723,11 +10830,12 @@ Objects {
   Name: "Craftsman Floor 01 8m x 8m"
   Transform {
     Location {
-      X: -400
-      Z: 1200
+      X: -326.451202
+      Y: 3.50621939
+      Z: 1217.48315
     }
     Rotation {
-      Yaw: 89.9999542
+      Yaw: 89.999939
     }
     Scale {
       X: 1
@@ -10735,7 +10843,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Floor:id"
@@ -10789,11 +10897,12 @@ Objects {
   Name: "Craftsman Floor 01 8m x 8m"
   Transform {
     Location {
-      X: 400
-      Z: 1200
+      X: 473.548309
+      Y: 3.50642157
+      Z: 1217.48315
     }
     Rotation {
-      Yaw: 89.9999542
+      Yaw: 89.999939
     }
     Scale {
       X: 1
@@ -10801,7 +10910,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Floor:id"
@@ -10855,12 +10964,12 @@ Objects {
   Name: "Craftsman Floor 01 8m x 8m"
   Transform {
     Location {
-      X: 400
-      Y: -800
-      Z: 1200
+      X: 473.548309
+      Y: -796.493347
+      Z: 1217.48315
     }
     Rotation {
-      Yaw: 89.9999542
+      Yaw: 89.999939
     }
     Scale {
       X: 1
@@ -10868,7 +10977,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Floor:id"
@@ -10922,12 +11031,12 @@ Objects {
   Name: "Craftsman Floor 01 8m x 8m"
   Transform {
     Location {
-      X: -400
-      Y: -800
-      Z: 1200
+      X: -326.451233
+      Y: -796.493042
+      Z: 1217.48315
     }
     Rotation {
-      Yaw: 89.9999542
+      Yaw: 89.999939
     }
     Scale {
       X: 1
@@ -10935,7 +11044,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Floor:id"
@@ -10989,12 +11098,12 @@ Objects {
   Name: "Craftsman Floor 01 8m x 8m"
   Transform {
     Location {
-      X: -400
-      Y: -800
-      Z: 600
+      X: -326.451233
+      Y: -796.493042
+      Z: 617.483154
     }
     Rotation {
-      Yaw: 89.9999542
+      Yaw: 89.999939
     }
     Scale {
       X: 1
@@ -11002,7 +11111,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Floor:id"
@@ -11056,10 +11165,12 @@ Objects {
   Name: "Craftsman Floor 01 8m x 8m"
   Transform {
     Location {
-      Z: 600
+      X: 73.5485229
+      Y: 3.50632048
+      Z: 617.483154
     }
     Rotation {
-      Yaw: 89.9999542
+      Yaw: 89.999939
     }
     Scale {
       X: 1
@@ -11067,7 +11178,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Floor:id"
@@ -11121,12 +11232,12 @@ Objects {
   Name: "Craftsman Floor 01 8m x 8m"
   Transform {
     Location {
-      X: 400
-      Y: 800
-      Z: 600
+      X: 473.548309
+      Y: 803.505676
+      Z: 617.483154
     }
     Rotation {
-      Yaw: 89.9999542
+      Yaw: 89.999939
     }
     Scale {
       X: 1
@@ -11134,7 +11245,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Floor:id"
@@ -11188,12 +11299,12 @@ Objects {
   Name: "Craftsman Floor 01 8m x 8m"
   Transform {
     Location {
-      X: -400
-      Y: 800
-      Z: 600
+      X: -326.451172
+      Y: 803.506
+      Z: 617.483154
     }
     Rotation {
-      Yaw: 89.9999542
+      Yaw: 89.999939
     }
     Scale {
       X: 1
@@ -11201,7 +11312,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Floor:id"
@@ -11255,11 +11366,12 @@ Objects {
   Name: "Craftsman Floor 01 8m x 8m"
   Transform {
     Location {
-      X: -400
-      Y: -800
+      X: -326.451233
+      Y: -796.493042
+      Z: 17.4831238
     }
     Rotation {
-      Yaw: 89.9999542
+      Yaw: 89.999939
     }
     Scale {
       X: 1
@@ -11267,7 +11379,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Floor:id"
@@ -11321,12 +11433,12 @@ Objects {
   Name: "Craftsman Floor 01 8m x 8m"
   Transform {
     Location {
-      X: 400
-      Y: -800
-      Z: 600
+      X: 473.548309
+      Y: -796.493347
+      Z: 617.483154
     }
     Rotation {
-      Yaw: 89.9999542
+      Yaw: 89.999939
     }
     Scale {
       X: 1
@@ -11334,7 +11446,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Floor:id"
@@ -11388,11 +11500,12 @@ Objects {
   Name: "Craftsman Floor 01 8m x 8m"
   Transform {
     Location {
-      X: -400
-      Y: 800
+      X: -326.451172
+      Y: 803.506
+      Z: 17.4831238
     }
     Rotation {
-      Yaw: 89.9999542
+      Yaw: 89.999939
     }
     Scale {
       X: 1
@@ -11400,7 +11513,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Floor:id"
@@ -11454,11 +11567,12 @@ Objects {
   Name: "Craftsman Floor 01 8m x 8m"
   Transform {
     Location {
-      X: 400
-      Y: 800
+      X: 473.548309
+      Y: 803.505676
+      Z: 17.4831238
     }
     Rotation {
-      Yaw: 89.9999542
+      Yaw: 89.999939
     }
     Scale {
       X: 1
@@ -11466,7 +11580,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Floor:id"
@@ -11520,10 +11634,12 @@ Objects {
   Name: "Craftsman Floor 01 8m x 8m"
   Transform {
     Location {
-      X: 400
+      X: 473.548309
+      Y: 3.50642157
+      Z: 17.4831238
     }
     Rotation {
-      Yaw: 89.9999542
+      Yaw: 89.999939
     }
     Scale {
       X: 1
@@ -11531,7 +11647,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Floor:id"
@@ -11585,10 +11701,12 @@ Objects {
   Name: "Craftsman Floor 01 8m x 8m"
   Transform {
     Location {
-      X: -400
+      X: -326.451202
+      Y: 3.50621939
+      Z: 17.4831238
     }
     Rotation {
-      Yaw: 89.9999542
+      Yaw: 89.999939
     }
     Scale {
       X: 1
@@ -11596,7 +11714,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Floor:id"
@@ -11650,11 +11768,12 @@ Objects {
   Name: "Craftsman Floor 01 8m x 8m"
   Transform {
     Location {
-      X: 400
-      Y: -800
+      X: 473.548309
+      Y: -796.493347
+      Z: 17.4831238
     }
     Rotation {
-      Yaw: 89.9999542
+      Yaw: 89.999939
     }
     Scale {
       X: 1
@@ -11662,7 +11781,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 393962688624612544
+  ParentId: 4131872850895316345
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Floor:id"
@@ -11728,6 +11847,35 @@ Objects {
     }
   }
   ParentId: 5508549066234980964
+  ChildIds: 16182596037522310045
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 16182596037522310045
+  Name: "MergedModel"
+  Transform {
+    Location {
+      X: -9.06128502
+      Y: 74.5111389
+      Z: -17.4831238
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14836524915378583793
   ChildIds: 9665774260951533665
   ChildIds: 14438667607390183313
   ChildIds: 13446147450088778593
@@ -11888,13 +12036,14 @@ Objects {
   ChildIds: 17772939184602219426
   ChildIds: 2128994110193714946
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceon"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Folder {
-    IsGroup: true
+    Model {
+    }
   }
 }
 Objects {
@@ -11902,8 +12051,9 @@ Objects {
   Name: "Craftsman Wall 01 Garage Single"
   Transform {
     Location {
-      X: -1200
-      Y: 800
+      X: -1190.93872
+      Y: 725.489258
+      Z: 17.4831238
     }
     Rotation {
     }
@@ -11913,7 +12063,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner:id"
@@ -11954,9 +12104,9 @@ Objects {
   Name: "Craftsman Garage Door 01"
   Transform {
     Location {
-      X: -1350
-      Y: 800
-      Z: 25.0000305
+      X: -1340.93872
+      Y: 725.489258
+      Z: 42.4831543
     }
     Rotation {
       Pitch: -6.83018879e-06
@@ -11969,7 +12119,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -12004,8 +12154,9 @@ Objects {
   Name: "Craftsman Wall 01 Garage Single"
   Transform {
     Location {
-      X: -2000
-      Y: 800
+      X: -1990.93872
+      Y: 725.489258
+      Z: 17.4831238
     }
     Rotation {
     }
@@ -12015,7 +12166,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner:id"
@@ -12056,8 +12207,9 @@ Objects {
   Name: "Craftsman Stairs 01 Pillar"
   Transform {
     Location {
-      X: 399.410645
-      Y: -1603.39648
+      X: 408.471924
+      Y: -1677.90723
+      Z: 17.4831238
     }
     Rotation {
     }
@@ -12067,7 +12219,7 @@ Objects {
       Z: 1.21188378
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -12094,8 +12246,9 @@ Objects {
   Name: "Craftsman Stairs 01 Pillar"
   Transform {
     Location {
-      X: 801.619141
-      Y: -1603.39648
+      X: 810.68042
+      Y: -1677.90723
+      Z: 17.4831238
     }
     Rotation {
     }
@@ -12105,7 +12258,7 @@ Objects {
       Z: 1.21188378
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -12132,8 +12285,9 @@ Objects {
   Name: "Craftsman Stairs 01 Pillar"
   Transform {
     Location {
-      X: 1201.78564
-      Y: -1603.39648
+      X: 1210.84692
+      Y: -1677.90723
+      Z: 17.4831238
     }
     Rotation {
     }
@@ -12143,7 +12297,7 @@ Objects {
       Z: 1.21188378
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -12170,8 +12324,9 @@ Objects {
   Name: "Craftsman Stairs 01 Pillar"
   Transform {
     Location {
-      X: -400.380127
-      Y: -1199.64844
+      X: -391.318848
+      Y: -1274.15918
+      Z: 17.4831238
     }
     Rotation {
     }
@@ -12181,7 +12336,7 @@ Objects {
       Z: 1.21188378
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -12208,9 +12363,9 @@ Objects {
   Name: "Craftsman Floor 01 4m x 4m"
   Transform {
     Location {
-      X: 800
-      Y: -1200
-      Z: 600
+      X: 809.061279
+      Y: -1274.51074
+      Z: 617.483154
     }
     Rotation {
     }
@@ -12220,7 +12375,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -12247,9 +12402,9 @@ Objects {
   Name: "Craftsman Floor 01 4m x 4m"
   Transform {
     Location {
-      X: 400
-      Y: -1200
-      Z: 600
+      X: 409.061279
+      Y: -1274.51074
+      Z: 617.483154
     }
     Rotation {
     }
@@ -12259,7 +12414,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -12286,9 +12441,9 @@ Objects {
   Name: "Craftsman Floor 01 4m x 4m"
   Transform {
     Location {
-      X: 800
-      Y: -800
-      Z: 600
+      X: 809.061279
+      Y: -874.510742
+      Z: 617.483154
     }
     Rotation {
     }
@@ -12298,7 +12453,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -12325,9 +12480,9 @@ Objects {
   Name: "Craftsman Floor 01 4m x 4m"
   Transform {
     Location {
-      X: 400
-      Y: -800
-      Z: 600
+      X: 409.061279
+      Y: -874.510742
+      Z: 617.483154
     }
     Rotation {
     }
@@ -12337,7 +12492,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -12364,8 +12519,9 @@ Objects {
   Name: "Craftsman Floor 01 4m x 4m"
   Transform {
     Location {
-      Y: -800
-      Z: 600
+      X: 9.0612793
+      Y: -874.510742
+      Z: 617.483154
     }
     Rotation {
     }
@@ -12375,7 +12531,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -12402,9 +12558,9 @@ Objects {
   Name: "Craftsman Floor 01 4m x 4m"
   Transform {
     Location {
-      X: -400
-      Y: 400
-      Z: 600
+      X: -390.938721
+      Y: 325.489258
+      Z: 617.483154
     }
     Rotation {
       Yaw: 89.9999542
@@ -12415,7 +12571,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -12442,8 +12598,9 @@ Objects {
   Name: "Craftsman Floor 01 4m x 4m"
   Transform {
     Location {
-      X: -400
-      Z: 600
+      X: -390.938721
+      Y: -74.5107422
+      Z: 617.483154
     }
     Rotation {
       Yaw: 89.9999542
@@ -12454,7 +12611,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -12481,9 +12638,9 @@ Objects {
   Name: "Craftsman Floor 01 4m x 4m"
   Transform {
     Location {
-      X: -400
-      Y: -800
-      Z: 600
+      X: -390.938721
+      Y: -874.510742
+      Z: 617.483154
     }
     Rotation {
     }
@@ -12493,7 +12650,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -12520,9 +12677,9 @@ Objects {
   Name: "Craftsman Porch Fence Post 01"
   Transform {
     Location {
-      X: 400
-      Y: -1600
-      Z: 600
+      X: 409.061279
+      Y: -1674.51074
+      Z: 617.483154
     }
     Rotation {
       Yaw: 89.9999542
@@ -12533,7 +12690,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -12568,9 +12725,9 @@ Objects {
   Name: "Craftsman Porch Fence Railing 01"
   Transform {
     Location {
-      X: 800
-      Y: -1600
-      Z: 600
+      X: 809.061279
+      Y: -1674.51074
+      Z: 617.483154
     }
     Rotation {
       Yaw: -179.999954
@@ -12581,7 +12738,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -12616,9 +12773,9 @@ Objects {
   Name: "Craftsman Porch Fence Post 01"
   Transform {
     Location {
-      X: 800
-      Y: -1600
-      Z: 600
+      X: 809.061279
+      Y: -1674.51074
+      Z: 617.483154
     }
     Rotation {
       Yaw: 89.9999542
@@ -12629,7 +12786,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -12664,9 +12821,9 @@ Objects {
   Name: "Craftsman Porch Fence Railing 01"
   Transform {
     Location {
-      X: 1200
-      Y: -1600
-      Z: 600
+      X: 1209.06128
+      Y: -1674.51074
+      Z: 617.483154
     }
     Rotation {
       Yaw: -179.999954
@@ -12677,7 +12834,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -12712,9 +12869,9 @@ Objects {
   Name: "Craftsman Porch Fence Post 01"
   Transform {
     Location {
-      X: 1200
-      Y: -1600
-      Z: 600
+      X: 1209.06128
+      Y: -1674.51074
+      Z: 617.483154
     }
     Rotation {
       Yaw: -179.999954
@@ -12725,7 +12882,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -12760,9 +12917,9 @@ Objects {
   Name: "Craftsman Porch Fence Railing 01"
   Transform {
     Location {
-      X: 1200
-      Y: -1200
-      Z: 600
+      X: 1209.06128
+      Y: -1274.51074
+      Z: 617.483154
     }
     Rotation {
       Yaw: -89.9999542
@@ -12773,7 +12930,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -12808,9 +12965,9 @@ Objects {
   Name: "Craftsman Porch Fence Post 01"
   Transform {
     Location {
-      X: 400
-      Y: -1200
-      Z: 600
+      X: 409.061279
+      Y: -1274.51074
+      Z: 617.483154
     }
     Rotation {
       Yaw: -179.999954
@@ -12821,7 +12978,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -12856,9 +13013,9 @@ Objects {
   Name: "Craftsman Porch Fence Railing 01"
   Transform {
     Location {
-      X: 400
-      Y: -1200
-      Z: 600
+      X: 409.061279
+      Y: -1274.51074
+      Z: 617.483154
     }
     Rotation {
       Yaw: -179.999954
@@ -12869,7 +13026,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -12904,8 +13061,9 @@ Objects {
   Name: "Craftsman Porch Fence Post 01"
   Transform {
     Location {
-      Y: -1200
-      Z: 600
+      X: 9.0612793
+      Y: -1274.51074
+      Z: 617.483154
     }
     Rotation {
       Yaw: -179.999954
@@ -12916,7 +13074,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -12951,8 +13109,9 @@ Objects {
   Name: "Craftsman Porch Fence Railing 01"
   Transform {
     Location {
-      Y: -1200
-      Z: 600
+      X: 9.0612793
+      Y: -1274.51074
+      Z: 617.483154
     }
     Rotation {
       Yaw: -179.999954
@@ -12963,7 +13122,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -12998,9 +13157,9 @@ Objects {
   Name: "Craftsman Porch Fence Railing 01"
   Transform {
     Location {
-      X: 1200
-      Y: -800
-      Z: 600
+      X: 1209.06128
+      Y: -874.510742
+      Z: 617.483154
     }
     Rotation {
       Yaw: -89.9999542
@@ -13011,7 +13170,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -13046,9 +13205,9 @@ Objects {
   Name: "Craftsman Porch Fence Post 01"
   Transform {
     Location {
-      X: 1200
-      Y: -1200
-      Z: 600
+      X: 1209.06128
+      Y: -1274.51074
+      Z: 617.483154
     }
     Rotation {
       Yaw: -179.999954
@@ -13059,7 +13218,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -13094,9 +13253,9 @@ Objects {
   Name: "Craftsman Porch Fence Post 01"
   Transform {
     Location {
-      X: -399.999756
-      Y: -1200
-      Z: 600
+      X: -390.938477
+      Y: -1274.51074
+      Z: 617.483154
     }
     Rotation {
       Yaw: -179.999954
@@ -13107,7 +13266,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -13142,9 +13301,9 @@ Objects {
   Name: "Craftsman Porch Fence Railing 01"
   Transform {
     Location {
-      X: -400
-      Y: -800
-      Z: 600
+      X: -390.938721
+      Y: -874.510742
+      Z: 617.483154
     }
     Rotation {
       Yaw: -89.9999542
@@ -13155,7 +13314,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -13190,9 +13349,9 @@ Objects {
   Name: "Craftsman Wall 03 Triangle"
   Transform {
     Location {
-      X: 400
-      Y: -790
-      Z: 1200
+      X: 409.061279
+      Y: -864.510742
+      Z: 1217.48315
     }
     Rotation {
       Yaw: -179.999954
@@ -13203,7 +13362,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner:id"
@@ -13252,9 +13411,9 @@ Objects {
   Name: "Craftsman Wall 03 Triangle"
   Transform {
     Location {
-      X: 400
-      Y: -790
-      Z: 1200
+      X: 409.061279
+      Y: -864.510742
+      Z: 1217.48315
     }
     Rotation {
       Yaw: -179.999954
@@ -13265,7 +13424,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner:id"
@@ -13314,9 +13473,9 @@ Objects {
   Name: "Craftsman Wall 03 Triangle"
   Transform {
     Location {
-      X: 400
-      Y: 1590
-      Z: 1200
+      X: 409.061279
+      Y: 1515.48926
+      Z: 1217.48315
     }
     Rotation {
     }
@@ -13326,7 +13485,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner:id"
@@ -13375,9 +13534,9 @@ Objects {
   Name: "Craftsman Wall 03 Triangle"
   Transform {
     Location {
-      X: 400
-      Y: 1590
-      Z: 1200
+      X: 409.061279
+      Y: 1515.48926
+      Z: 1217.48315
     }
     Rotation {
     }
@@ -13387,7 +13546,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner:id"
@@ -13436,9 +13595,9 @@ Objects {
   Name: "Craftsman Wall 02 Window 3x"
   Transform {
     Location {
-      X: 400
-      Y: 1600
-      Z: 600
+      X: 409.061279
+      Y: 1525.48926
+      Z: 617.483154
     }
     Rotation {
     }
@@ -13448,7 +13607,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner:color"
@@ -13498,9 +13657,9 @@ Objects {
   Name: "Craftsman Wall 02 Corner"
   Transform {
     Location {
-      X: 1200
-      Y: 1600
-      Z: 600
+      X: 1209.06128
+      Y: 1525.48926
+      Z: 617.483154
     }
     Rotation {
     }
@@ -13510,7 +13669,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -13545,9 +13704,9 @@ Objects {
   Name: "Craftsman Wall 02 Corner"
   Transform {
     Location {
-      X: -400
-      Y: 1600
-      Z: 600
+      X: -390.938721
+      Y: 1525.48926
+      Z: 617.483154
     }
     Rotation {
       Yaw: 89.9999542
@@ -13558,7 +13717,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -13593,9 +13752,9 @@ Objects {
   Name: "Craftsman Wall 02 Corner"
   Transform {
     Location {
-      X: -400
-      Y: -800
-      Z: 600
+      X: -390.938721
+      Y: -874.510742
+      Z: 617.483154
     }
     Rotation {
       Yaw: -179.999954
@@ -13606,7 +13765,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -13641,9 +13800,9 @@ Objects {
   Name: "Craftsman Wall 02"
   Transform {
     Location {
-      X: 400
-      Y: -800
-      Z: 600
+      X: 409.061279
+      Y: -874.510742
+      Z: 617.483154
     }
     Rotation {
       Yaw: -179.999954
@@ -13654,7 +13813,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner:id"
@@ -13695,9 +13854,9 @@ Objects {
   Name: "Craftsman Wall Interior 01 Doorway"
   Transform {
     Location {
-      X: -400
-      Y: 800
-      Z: 600
+      X: -390.938721
+      Y: 725.489258
+      Z: 617.483154
     }
     Rotation {
     }
@@ -13707,7 +13866,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner:id"
@@ -13763,9 +13922,9 @@ Objects {
   Name: "Craftsman Wall 02"
   Transform {
     Location {
-      X: -400
-      Y: -800
-      Z: 600
+      X: -390.938721
+      Y: -874.510742
+      Z: 617.483154
     }
     Rotation {
       Yaw: 89.9999542
@@ -13776,7 +13935,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner:id"
@@ -13817,8 +13976,9 @@ Objects {
   Name: "Craftsman Wall 02"
   Transform {
     Location {
-      X: -400
-      Z: 600
+      X: -390.938721
+      Y: -74.5107422
+      Z: 617.483154
     }
     Rotation {
       Yaw: 89.9999542
@@ -13829,7 +13989,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner:id"
@@ -13870,9 +14030,9 @@ Objects {
   Name: "Craftsman Wall 02"
   Transform {
     Location {
-      X: -400
-      Y: 800
-      Z: 600
+      X: -390.938721
+      Y: 725.489258
+      Z: 617.483154
     }
     Rotation {
       Yaw: 89.9999542
@@ -13883,7 +14043,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner:id"
@@ -13924,8 +14084,9 @@ Objects {
   Name: "Craftsman Wall 02"
   Transform {
     Location {
-      X: 1200
-      Z: 600
+      X: 1209.06128
+      Y: -74.5107422
+      Z: 617.483154
     }
     Rotation {
       Yaw: -89.9999542
@@ -13936,7 +14097,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner:id"
@@ -13977,9 +14138,9 @@ Objects {
   Name: "Craftsman Wall 02"
   Transform {
     Location {
-      X: 1200
-      Y: 800
-      Z: 600
+      X: 1209.06128
+      Y: 725.489258
+      Z: 617.483154
     }
     Rotation {
       Yaw: -89.9999542
@@ -13990,7 +14151,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner:id"
@@ -14031,9 +14192,9 @@ Objects {
   Name: "Craftsman Wall 02"
   Transform {
     Location {
-      X: 1200
-      Y: 1600
-      Z: 600
+      X: 1209.06128
+      Y: 1525.48926
+      Z: 617.483154
     }
     Rotation {
       Yaw: -89.9999542
@@ -14044,7 +14205,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner:id"
@@ -14085,9 +14246,9 @@ Objects {
   Name: "Craftsman Wall 02 Window 3x"
   Transform {
     Location {
-      X: -400
-      Y: 1600
-      Z: 600
+      X: -390.938721
+      Y: 1525.48926
+      Z: 617.483154
     }
     Rotation {
     }
@@ -14097,7 +14258,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner:color"
@@ -14147,9 +14308,9 @@ Objects {
   Name: "Craftsman Wall 02 Doorway"
   Transform {
     Location {
-      X: 1200
-      Y: -800
-      Z: 600
+      X: 1209.06128
+      Y: -874.510742
+      Z: 617.483154
     }
     Rotation {
       Yaw: -179.999954
@@ -14160,7 +14321,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner:id"
@@ -14205,9 +14366,9 @@ Objects {
   Name: "Craftsman Wall 02 Corner"
   Transform {
     Location {
-      X: 1200
-      Y: -800
-      Z: 600
+      X: 1209.06128
+      Y: -874.510742
+      Z: 617.483154
     }
     Rotation {
       Yaw: -90.0000534
@@ -14218,7 +14379,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -14253,12 +14414,12 @@ Objects {
   Name: "Craftsman Wall Interior 01 Cap"
   Transform {
     Location {
-      X: 800
-      Y: -366.686523
-      Z: 600
+      X: 809.061279
+      Y: -441.197266
+      Z: 617.483154
     }
     Rotation {
-      Yaw: -89.9999771
+      Yaw: -89.9999619
     }
     Scale {
       X: 1
@@ -14266,7 +14427,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner2:id"
@@ -14307,8 +14468,9 @@ Objects {
   Name: "Craftsman Wall Interior 01 Cap"
   Transform {
     Location {
-      X: 400
-      Y: -100
+      X: 409.061279
+      Y: -174.510742
+      Z: 17.4831238
     }
     Rotation {
       Yaw: -179.999954
@@ -14319,7 +14481,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -14354,8 +14516,9 @@ Objects {
   Name: "Craftsman Wall 01 Corner"
   Transform {
     Location {
-      X: 1200
-      Y: 1600
+      X: 1209.06128
+      Y: 1525.48926
+      Z: 17.4831238
     }
     Rotation {
     }
@@ -14365,7 +14528,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -14400,11 +14563,12 @@ Objects {
   Name: "Craftsman Wall 01 Corner"
   Transform {
     Location {
-      X: -400
-      Y: 1600
+      X: -390.938721
+      Y: 1525.48926
+      Z: 17.4831238
     }
     Rotation {
-      Yaw: 89.9999771
+      Yaw: 89.9999619
     }
     Scale {
       X: 1
@@ -14412,7 +14576,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -14447,8 +14611,9 @@ Objects {
   Name: "Craftsman Wall 01 Corner"
   Transform {
     Location {
-      X: -400
-      Y: -800
+      X: -390.938721
+      Y: -874.510742
+      Z: 17.4831238
     }
     Rotation {
       Yaw: -179.999954
@@ -14459,7 +14624,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -14494,9 +14659,9 @@ Objects {
   Name: "Craftsman Wall Interior 01"
   Transform {
     Location {
-      X: 400
-      Y: 800
-      Z: 600
+      X: 409.061279
+      Y: 725.489258
+      Z: 617.483154
     }
     Rotation {
     }
@@ -14506,7 +14671,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner:id"
@@ -14571,12 +14736,12 @@ Objects {
   Name: "Craftsman Wall Interior 01"
   Transform {
     Location {
-      X: 800
-      Y: 800
-      Z: 600
+      X: 809.061279
+      Y: 725.489258
+      Z: 617.483154
     }
     Rotation {
-      Yaw: -89.9999771
+      Yaw: -89.9999619
     }
     Scale {
       X: 1
@@ -14584,7 +14749,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner:id"
@@ -14649,11 +14814,12 @@ Objects {
   Name: "Craftsman Wall Interior 01 Half"
   Transform {
     Location {
-      X: 800
-      Z: 600
+      X: 809.061279
+      Y: -74.5107422
+      Z: 617.483154
     }
     Rotation {
-      Yaw: -89.9999771
+      Yaw: -89.9999619
     }
     Scale {
       X: 0.875
@@ -14661,7 +14827,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner:id"
@@ -14726,9 +14892,9 @@ Objects {
   Name: "Craftsman Stairs 01 Straight Inner Wall"
   Transform {
     Location {
-      X: 800
-      Y: 800
-      Z: 3.05175781e-05
+      X: 809.061279
+      Y: 725.489258
+      Z: 17.4831543
     }
     Rotation {
     }
@@ -14738,7 +14904,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -14773,8 +14939,9 @@ Objects {
   Name: "Craftsman Wall 01"
   Transform {
     Location {
-      X: -400
-      Y: 800
+      X: -390.938721
+      Y: 725.489258
+      Z: 17.4831238
     }
     Rotation {
       Yaw: 89.9999542
@@ -14785,7 +14952,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -14820,10 +14987,12 @@ Objects {
   Name: "Craftsman Wall 01"
   Transform {
     Location {
-      X: -400
+      X: -390.938721
+      Y: -74.5107422
+      Z: 17.4831238
     }
     Rotation {
-      Yaw: 89.9999771
+      Yaw: 89.9999619
     }
     Scale {
       X: 1
@@ -14831,7 +15000,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallOuter:id"
@@ -14884,8 +15053,9 @@ Objects {
   Name: "Craftsman Wall 01 Doorway"
   Transform {
     Location {
-      X: 1200
-      Y: -800
+      X: 1209.06128
+      Y: -874.510742
+      Z: 17.4831238
     }
     Rotation {
       Yaw: -179.999893
@@ -14896,7 +15066,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner:id"
@@ -14946,12 +15116,11 @@ Objects {
   Name: "Craftsman Stairs 01 Straight"
   Transform {
     Location {
-      X: -411.59082
-      Y: -1591.1543
-      Z: -17.4831238
+      X: -402.529541
+      Y: -1665.66504
     }
     Rotation {
-      Yaw: 89.9999771
+      Yaw: 89.9999619
     }
     Scale {
       X: 1
@@ -14959,7 +15128,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -14994,12 +15163,11 @@ Objects {
   Name: "Craftsman Stairs 01 Banister"
   Transform {
     Location {
-      X: -411.590576
-      Y: -1241.1543
-      Z: -17.4831238
+      X: -402.529297
+      Y: -1315.66504
     }
     Rotation {
-      Yaw: 89.9999771
+      Yaw: 89.9999619
     }
     Scale {
       X: 1
@@ -15007,7 +15175,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -15042,9 +15210,9 @@ Objects {
   Name: "Craftsman Stairs 01 Banister"
   Transform {
     Location {
-      X: 1150
-      Y: 800.365234
-      Z: 20.6165314
+      X: 1159.06128
+      Y: 725.854492
+      Z: 38.0996552
     }
     Rotation {
     }
@@ -15054,7 +15222,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -15089,9 +15257,9 @@ Objects {
   Name: "Craftsman Stairs 01 Straight"
   Transform {
     Location {
-      X: 800
-      Y: 800.365234
-      Z: 20.6165314
+      X: 809.061279
+      Y: 725.854492
+      Z: 38.0996552
     }
     Rotation {
     }
@@ -15101,7 +15269,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -15136,9 +15304,9 @@ Objects {
   Name: "Craftsman Roof 01 Bracket"
   Transform {
     Location {
-      X: -2020
-      Y: -35
-      Z: 517.147949
+      X: -2010.93872
+      Y: -109.510742
+      Z: 534.631104
     }
     Rotation {
       Yaw: 179.999954
@@ -15149,7 +15317,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -15184,9 +15352,9 @@ Objects {
   Name: "Craftsman Floor 01 8m x 8m"
   Transform {
     Location {
-      X: -1200
-      Y: 800
-      Z: -2.85223389
+      X: -1190.93872
+      Y: 725.489258
+      Z: 14.6308899
     }
     Rotation {
     }
@@ -15196,7 +15364,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Floor:id"
@@ -15247,9 +15415,9 @@ Objects {
   Name: "Craftsman Floor 01 8m x 8m"
   Transform {
     Location {
-      X: -2000
-      Y: 800
-      Z: -2.85223389
+      X: -1990.93872
+      Y: 725.489258
+      Z: 14.6308899
     }
     Rotation {
     }
@@ -15259,7 +15427,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Floor:id"
@@ -15310,8 +15478,9 @@ Objects {
   Name: "Craftsman Wall 01"
   Transform {
     Location {
-      X: -400
-      Z: -2.85198975
+      X: -390.938721
+      Y: -74.5107422
+      Z: 14.631134
     }
     Rotation {
       Yaw: -179.999954
@@ -15322,7 +15491,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner:id"
@@ -15371,9 +15540,9 @@ Objects {
   Name: "Craftsman Wall 02 Triangle"
   Transform {
     Location {
-      X: -1200
-      Y: 800
-      Z: 597.147949
+      X: -1190.93872
+      Y: 725.489258
+      Z: 614.631104
     }
     Rotation {
     }
@@ -15383,7 +15552,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner:id"
@@ -15432,9 +15601,9 @@ Objects {
   Name: "Craftsman Wall 02 Triangle"
   Transform {
     Location {
-      X: -1200
-      Y: 800
-      Z: 597.147949
+      X: -1190.93872
+      Y: 725.489258
+      Z: 614.631104
     }
     Rotation {
     }
@@ -15444,7 +15613,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner:id"
@@ -15493,8 +15662,9 @@ Objects {
   Name: "Craftsman Wall 01 Doorway"
   Transform {
     Location {
-      X: -1200
-      Z: -2.85198975
+      X: -1190.93872
+      Y: -74.5107422
+      Z: 14.631134
     }
     Rotation {
       Yaw: 179.999954
@@ -15505,7 +15675,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner:id"
@@ -15554,8 +15724,9 @@ Objects {
   Name: "Craftsman Wall 01 Corner"
   Transform {
     Location {
-      X: -2000
-      Z: -2.85205078
+      X: -1990.93872
+      Y: -74.5107422
+      Z: 14.631073
     }
     Rotation {
       Yaw: 179.999954
@@ -15566,7 +15737,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -15601,8 +15772,9 @@ Objects {
   Name: "Craftsman Wall 02 Triangle"
   Transform {
     Location {
-      X: -1200
-      Z: 597.147949
+      X: -1190.93872
+      Y: -74.5107422
+      Z: 614.631104
     }
     Rotation {
       Yaw: 179.999954
@@ -15613,7 +15785,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner:id"
@@ -15662,8 +15834,9 @@ Objects {
   Name: "Craftsman Wall 02 Triangle"
   Transform {
     Location {
-      X: -1200
-      Z: 597.147949
+      X: -1190.93872
+      Y: -74.5107422
+      Z: 614.631104
     }
     Rotation {
       Yaw: 179.999954
@@ -15674,7 +15847,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner:id"
@@ -15723,9 +15896,9 @@ Objects {
   Name: "Craftsman Wall 01 Corner"
   Transform {
     Location {
-      X: -2000
-      Y: 800
-      Z: -2.85205078
+      X: -1990.93872
+      Y: 725.489258
+      Z: 14.631073
     }
     Rotation {
       Yaw: 89.9999542
@@ -15736,7 +15909,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -15771,8 +15944,9 @@ Objects {
   Name: "Craftsman Wall 01"
   Transform {
     Location {
-      X: -2000
-      Z: -2.85198975
+      X: -1990.93872
+      Y: -74.5107422
+      Z: 14.631134
     }
     Rotation {
       Yaw: 89.9999542
@@ -15783,7 +15957,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner:id"
@@ -15832,9 +16006,9 @@ Objects {
   Name: "Craftsman Roof 01 End"
   Transform {
     Location {
-      X: -400
-      Y: 800
-      Z: 597.147949
+      X: -390.938721
+      Y: 725.489258
+      Z: 614.631104
     }
     Rotation {
     }
@@ -15844,7 +16018,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Roof:color"
@@ -15888,9 +16062,9 @@ Objects {
   Name: "Craftsman Roof 01 End"
   Transform {
     Location {
-      X: -2000
-      Y: 800
-      Z: 597.147949
+      X: -1990.93872
+      Y: 725.489258
+      Z: 614.631104
     }
     Rotation {
     }
@@ -15900,7 +16074,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Roof:color"
@@ -15944,9 +16118,9 @@ Objects {
   Name: "Craftsman Roof Arch 01"
   Transform {
     Location {
-      X: -1600
-      Y: 800
-      Z: 872.147949
+      X: -1590.93872
+      Y: 725.489258
+      Z: 889.631104
     }
     Rotation {
     }
@@ -15956,7 +16130,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -15991,8 +16165,9 @@ Objects {
   Name: "Craftsman Roof Arch 01"
   Transform {
     Location {
-      X: -800
-      Z: 872.147949
+      X: -790.938721
+      Y: -74.5107422
+      Z: 889.631104
     }
     Rotation {
       Yaw: -179.999954
@@ -16003,7 +16178,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -16038,8 +16213,9 @@ Objects {
   Name: "Craftsman Roof 01 End"
   Transform {
     Location {
-      X: -2000
-      Z: 597.147949
+      X: -1990.93872
+      Y: -74.5107422
+      Z: 614.631104
     }
     Rotation {
       Yaw: 179.999954
@@ -16050,7 +16226,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Roof:color"
@@ -16094,8 +16270,9 @@ Objects {
   Name: "Craftsman Roof 01"
   Transform {
     Location {
-      X: -2000
-      Z: 597.147949
+      X: -1990.93872
+      Y: -74.5107422
+      Z: 614.631104
     }
     Rotation {
       Yaw: 89.9999542
@@ -16106,7 +16283,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Roof:color"
@@ -16150,9 +16327,9 @@ Objects {
   Name: "Craftsman Roof 01 Cap"
   Transform {
     Location {
-      X: -1200
-      Y: -123.970703
-      Z: 1247.14795
+      X: -1190.93872
+      Y: -198.481445
+      Z: 1264.6311
     }
     Rotation {
       Yaw: 89.9999542
@@ -16163,7 +16340,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_Detail1:color"
@@ -16207,9 +16384,9 @@ Objects {
   Name: "Craftsman Roof 01"
   Transform {
     Location {
-      X: -400
-      Y: 800
-      Z: 597.147949
+      X: -390.938721
+      Y: 725.489258
+      Z: 614.631104
     }
     Rotation {
       Yaw: -89.9999542
@@ -16220,7 +16397,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Roof:color"
@@ -16264,8 +16441,9 @@ Objects {
   Name: "Craftsman Roof 01 End"
   Transform {
     Location {
-      X: -400
-      Z: 597.147949
+      X: -390.938721
+      Y: -74.5107422
+      Z: 614.631104
     }
     Rotation {
       Yaw: 179.999954
@@ -16276,7 +16454,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Roof:color"
@@ -16320,8 +16498,9 @@ Objects {
   Name: "Craftsman Roof 01 Eaves End"
   Transform {
     Location {
-      X: -2000
-      Z: 597.147949
+      X: -1990.93872
+      Y: -74.5107422
+      Z: 614.631104
     }
     Rotation {
       Yaw: 179.999954
@@ -16332,7 +16511,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Roof:color"
@@ -16376,9 +16555,9 @@ Objects {
   Name: "Craftsman Roof 01 Eaves End"
   Transform {
     Location {
-      X: -2000
-      Y: 770
-      Z: 597.147949
+      X: -1990.93872
+      Y: 695.489258
+      Z: 614.631104
     }
     Rotation {
     }
@@ -16388,7 +16567,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Roof:color"
@@ -16432,8 +16611,9 @@ Objects {
   Name: "Craftsman Roof 01 Eaves"
   Transform {
     Location {
-      X: -2000
-      Z: 597.147949
+      X: -1990.93872
+      Y: -74.5107422
+      Z: 614.631104
     }
     Rotation {
       Yaw: 89.9999542
@@ -16444,7 +16624,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Roof:color"
@@ -16488,9 +16668,9 @@ Objects {
   Name: "Craftsman Roof 01 Eaves End"
   Transform {
     Location {
-      X: 1200
-      Y: -800
-      Z: 1200
+      X: 1209.06128
+      Y: -874.510742
+      Z: 1217.48315
     }
     Rotation {
       Yaw: -179.999954
@@ -16501,7 +16681,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Roof:color"
@@ -16545,9 +16725,9 @@ Objects {
   Name: "Craftsman Roof 01 Eaves End"
   Transform {
     Location {
-      X: -400
-      Y: -800
-      Z: 1200
+      X: -390.938721
+      Y: -874.510742
+      Z: 1217.48315
     }
     Rotation {
       Yaw: -179.999954
@@ -16558,7 +16738,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Roof:color"
@@ -16602,9 +16782,9 @@ Objects {
   Name: "Craftsman Roof 01 Eaves"
   Transform {
     Location {
-      X: -400
-      Y: 800
-      Z: 1200
+      X: -390.938721
+      Y: 725.489258
+      Z: 1217.48315
     }
     Rotation {
       Yaw: 89.9999542
@@ -16615,7 +16795,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Roof:color"
@@ -16659,8 +16839,9 @@ Objects {
   Name: "Craftsman Roof 01 Eaves"
   Transform {
     Location {
-      X: -399.999512
-      Z: 1200
+      X: -390.938232
+      Y: -74.5107422
+      Z: 1217.48315
     }
     Rotation {
       Yaw: 89.9999542
@@ -16671,7 +16852,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Roof:color"
@@ -16715,9 +16896,9 @@ Objects {
   Name: "Craftsman Roof 01 Eaves"
   Transform {
     Location {
-      X: -400
-      Y: -800
-      Z: 1200
+      X: -390.938721
+      Y: -874.510742
+      Z: 1217.48315
     }
     Rotation {
       Yaw: 89.9999542
@@ -16728,7 +16909,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Roof:color"
@@ -16772,9 +16953,9 @@ Objects {
   Name: "Craftsman Roof 01 Eaves End"
   Transform {
     Location {
-      X: -400
-      Y: 1600
-      Z: 1200
+      X: -390.938721
+      Y: 1525.48926
+      Z: 1217.48315
     }
     Rotation {
       Yaw: -3.05175672e-05
@@ -16785,7 +16966,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Roof:color"
@@ -16829,8 +17010,9 @@ Objects {
   Name: "Craftsman Roof 01 Eaves"
   Transform {
     Location {
-      X: 1200
-      Z: 1200
+      X: 1209.06128
+      Y: -74.5107422
+      Z: 1217.48315
     }
     Rotation {
       Yaw: -90.0000534
@@ -16841,7 +17023,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Roof:color"
@@ -16885,9 +17067,9 @@ Objects {
   Name: "Craftsman Roof 01 Eaves"
   Transform {
     Location {
-      X: 1200
-      Y: 800
-      Z: 1200
+      X: 1209.06128
+      Y: 725.489258
+      Z: 1217.48315
     }
     Rotation {
       Yaw: -90.0000534
@@ -16898,7 +17080,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Roof:color"
@@ -16942,9 +17124,9 @@ Objects {
   Name: "Craftsman Roof 01 Eaves End"
   Transform {
     Location {
-      X: 1200
-      Y: 1600
-      Z: 1200
+      X: 1209.06128
+      Y: 1525.48926
+      Z: 1217.48315
     }
     Rotation {
       Yaw: -3.05175672e-05
@@ -16955,7 +17137,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Roof:color"
@@ -16999,9 +17181,9 @@ Objects {
   Name: "Craftsman Roof 01 Eaves"
   Transform {
     Location {
-      X: 1200
-      Y: 1600
-      Z: 1200
+      X: 1209.06128
+      Y: 1525.48926
+      Z: 1217.48315
     }
     Rotation {
       Yaw: -90.0000534
@@ -17012,7 +17194,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Roof:color"
@@ -17056,9 +17238,9 @@ Objects {
   Name: "Craftsman Roof Arch 01"
   Transform {
     Location {
-      X: 800
-      Y: -800
-      Z: 1400
+      X: 809.061279
+      Y: -874.510742
+      Z: 1417.48315
     }
     Rotation {
       Yaw: -179.999954
@@ -17069,7 +17251,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -17104,9 +17286,9 @@ Objects {
   Name: "Craftsman Roof 01 End"
   Transform {
     Location {
-      X: -400
-      Y: -800
-      Z: 1200
+      X: -390.938721
+      Y: -874.510742
+      Z: 1217.48315
     }
     Rotation {
       Yaw: -179.999954
@@ -17117,7 +17299,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Roof:color"
@@ -17161,9 +17343,9 @@ Objects {
   Name: "Craftsman Roof 01 End"
   Transform {
     Location {
-      X: 1200
-      Y: -800.001
-      Z: 1200
+      X: 1209.06128
+      Y: -874.511719
+      Z: 1217.48315
     }
     Rotation {
       Yaw: -179.999954
@@ -17174,7 +17356,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Roof:color"
@@ -17218,9 +17400,9 @@ Objects {
   Name: "Craftsman Roof 01 Cap"
   Transform {
     Location {
-      X: 400
-      Y: -955.65625
-      Z: 1845.2207
+      X: 409.061279
+      Y: -1030.16699
+      Z: 1862.70386
     }
     Rotation {
       Yaw: 89.9999542
@@ -17231,7 +17413,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_Detail1:color"
@@ -17275,8 +17457,9 @@ Objects {
   Name: "Craftsman Roof 01 Cap"
   Transform {
     Location {
-      X: 400
-      Z: 1845.2207
+      X: 409.061279
+      Y: -74.5107422
+      Z: 1862.70386
     }
     Rotation {
       Yaw: 89.9999542
@@ -17287,7 +17470,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_Detail1:color"
@@ -17331,8 +17514,9 @@ Objects {
   Name: "Craftsman Roof 01"
   Transform {
     Location {
-      X: 1200
-      Z: 1200
+      X: 1209.06128
+      Y: -74.5107422
+      Z: 1217.48315
     }
     Rotation {
       Yaw: -89.9999542
@@ -17343,7 +17527,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Roof:color"
@@ -17387,9 +17571,9 @@ Objects {
   Name: "Craftsman Roof 01"
   Transform {
     Location {
-      X: -400
-      Y: -800
-      Z: 1200
+      X: -390.938721
+      Y: -874.510742
+      Z: 1217.48315
     }
     Rotation {
       Yaw: 89.9999542
@@ -17400,7 +17584,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Roof:color"
@@ -17444,8 +17628,9 @@ Objects {
   Name: "Craftsman Roof 01"
   Transform {
     Location {
-      X: -400
-      Z: 1200
+      X: -390.938721
+      Y: -74.5107422
+      Z: 1217.48315
     }
     Rotation {
       Yaw: 89.9999542
@@ -17456,7 +17641,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Roof:color"
@@ -17500,8 +17685,9 @@ Objects {
   Name: "Craftsman Roof Arch 01"
   Transform {
     Location {
-      Y: 1600
-      Z: 1400
+      X: 9.0612793
+      Y: 1525.48926
+      Z: 1417.48315
     }
     Rotation {
     }
@@ -17511,7 +17697,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -17546,9 +17732,9 @@ Objects {
   Name: "Craftsman Roof 01"
   Transform {
     Location {
-      X: 1200
-      Y: 800
-      Z: 1200
+      X: 1209.06128
+      Y: 725.489258
+      Z: 1217.48315
     }
     Rotation {
       Yaw: -89.999939
@@ -17559,7 +17745,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Roof:color"
@@ -17603,9 +17789,9 @@ Objects {
   Name: "Craftsman Roof 01 Cap"
   Transform {
     Location {
-      X: 400
-      Y: 800
-      Z: 1845.2207
+      X: 409.061279
+      Y: 725.489258
+      Z: 1862.70386
     }
     Rotation {
       Yaw: 89.9999542
@@ -17616,7 +17802,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_Detail1:color"
@@ -17660,9 +17846,9 @@ Objects {
   Name: "Craftsman Roof 01 End"
   Transform {
     Location {
-      X: -400
-      Y: 1600
-      Z: 1200
+      X: -390.938721
+      Y: 1525.48926
+      Z: 1217.48315
     }
     Rotation {
     }
@@ -17672,7 +17858,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Roof:color"
@@ -17716,9 +17902,9 @@ Objects {
   Name: "Craftsman Roof 01 End"
   Transform {
     Location {
-      X: 1200
-      Y: 1600
-      Z: 1200
+      X: 1209.06128
+      Y: 1525.48926
+      Z: 1217.48315
     }
     Rotation {
     }
@@ -17728,7 +17914,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Roof:color"
@@ -17772,9 +17958,9 @@ Objects {
   Name: "Craftsman Roof 01"
   Transform {
     Location {
-      X: 1200
-      Y: 1600
-      Z: 1200
+      X: 1209.06128
+      Y: 1525.48926
+      Z: 1217.48315
     }
     Rotation {
       Yaw: -89.9999542
@@ -17785,7 +17971,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Roof:color"
@@ -17829,9 +18015,9 @@ Objects {
   Name: "Craftsman Roof 01"
   Transform {
     Location {
-      X: -400
-      Y: 800
-      Z: 1200
+      X: -390.938721
+      Y: 725.489258
+      Z: 1217.48315
     }
     Rotation {
       Yaw: 89.9999542
@@ -17842,7 +18028,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Roof:color"
@@ -17886,8 +18072,9 @@ Objects {
   Name: "Craftsman Roof 01 Bracket"
   Transform {
     Location {
-      X: -1600
-      Z: 800
+      X: -1590.93872
+      Y: -74.5107422
+      Z: 817.483154
     }
     Rotation {
       Yaw: -179.999954
@@ -17898,7 +18085,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -17933,9 +18120,9 @@ Objects {
   Name: "Craftsman Roof 01 Bracket"
   Transform {
     Location {
-      X: -1210.00098
-      Y: -25
-      Z: 1135
+      X: -1200.9397
+      Y: -99.5107422
+      Z: 1152.48315
     }
     Rotation {
       Yaw: -179.999954
@@ -17946,7 +18133,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -17981,9 +18168,9 @@ Objects {
   Name: "Craftsman Roof 01 Bracket"
   Transform {
     Location {
-      X: -820.001
-      Y: 0.0009765625
-      Z: 800
+      X: -810.939697
+      Y: -74.5097656
+      Z: 817.483154
     }
     Rotation {
       Yaw: -179.999954
@@ -17994,7 +18181,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -18029,9 +18216,9 @@ Objects {
   Name: "Craftsman Roof 01 Bracket"
   Transform {
     Location {
-      X: -800
-      Y: 800
-      Z: 800
+      X: -790.938721
+      Y: 725.489258
+      Z: 817.483154
     }
     Rotation {
     }
@@ -18041,7 +18228,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -18076,9 +18263,9 @@ Objects {
   Name: "Craftsman Roof 01 Bracket"
   Transform {
     Location {
-      X: -1189.99951
-      Y: 825
-      Z: 1135
+      X: -1180.93823
+      Y: 750.489258
+      Z: 1152.48315
     }
     Rotation {
     }
@@ -18088,7 +18275,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -18123,9 +18310,9 @@ Objects {
   Name: "Craftsman Roof 01 Bracket"
   Transform {
     Location {
-      X: -1579.99902
-      Y: 800
-      Z: 800
+      X: -1570.93774
+      Y: 725.489258
+      Z: 817.483154
     }
     Rotation {
     }
@@ -18135,7 +18322,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -18170,9 +18357,9 @@ Objects {
   Name: "Craftsman Roof 01 Bracket"
   Transform {
     Location {
-      X: -400.000977
-      Y: 1600
-      Z: 1046.23987
+      X: -390.939697
+      Y: 1525.48926
+      Z: 1063.72302
     }
     Rotation {
       Yaw: 89.9999542
@@ -18183,7 +18370,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -18218,9 +18405,9 @@ Objects {
   Name: "Craftsman Roof 01 Bracket"
   Transform {
     Location {
-      X: -400
-      Y: 800
-      Z: 1046.23987
+      X: -390.938721
+      Y: 725.489258
+      Z: 1063.72302
     }
     Rotation {
       Yaw: 89.9999542
@@ -18231,7 +18418,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -18266,9 +18453,9 @@ Objects {
   Name: "Craftsman Roof 01 Bracket"
   Transform {
     Location {
-      X: -400
-      Y: -130.150391
-      Z: 1046.23987
+      X: -390.938721
+      Y: -204.661133
+      Z: 1063.72302
     }
     Rotation {
       Yaw: 89.9999542
@@ -18279,7 +18466,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -18314,9 +18501,9 @@ Objects {
   Name: "Craftsman Roof 01 Bracket"
   Transform {
     Location {
-      X: -400
-      Y: -800
-      Z: 1046.23987
+      X: -390.938721
+      Y: -874.510742
+      Z: 1063.72302
     }
     Rotation {
       Yaw: 89.9999542
@@ -18327,7 +18514,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -18362,9 +18549,9 @@ Objects {
   Name: "Craftsman Roof 01 Bracket"
   Transform {
     Location {
-      X: 1200
-      Y: -800
-      Z: 1046.23987
+      X: 1209.06128
+      Y: -874.510742
+      Z: 1063.72302
     }
     Rotation {
       Yaw: -90.0000534
@@ -18375,7 +18562,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -18410,8 +18597,9 @@ Objects {
   Name: "Craftsman Roof 01 Bracket"
   Transform {
     Location {
-      X: 1200
-      Z: 1046.23987
+      X: 1209.06128
+      Y: -74.5107422
+      Z: 1063.72302
     }
     Rotation {
       Yaw: -90.0000534
@@ -18422,7 +18610,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -18457,9 +18645,9 @@ Objects {
   Name: "Craftsman Roof 01 Bracket"
   Transform {
     Location {
-      X: 1200
-      Y: 1600
-      Z: 1046.23987
+      X: 1209.06128
+      Y: 1525.48926
+      Z: 1063.72302
     }
     Rotation {
       Yaw: -90.0000534
@@ -18470,7 +18658,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -18505,9 +18693,9 @@ Objects {
   Name: "Craftsman Roof 01 Bracket"
   Transform {
     Location {
-      X: 1200
-      Y: 930.150391
-      Z: 1046.23987
+      X: 1209.06128
+      Y: 855.639648
+      Z: 1063.72302
     }
     Rotation {
       Yaw: -90.0000534
@@ -18518,7 +18706,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -18553,9 +18741,9 @@ Objects {
   Name: "Craftsman Roof 01 Bracket"
   Transform {
     Location {
-      X: 790
-      Y: -810.001953
-      Z: 1425
+      X: 799.061279
+      Y: -884.512695
+      Z: 1442.48315
     }
     Rotation {
       Yaw: -179.999954
@@ -18566,7 +18754,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -18601,9 +18789,9 @@ Objects {
   Name: "Craftsman Roof 01 Bracket"
   Transform {
     Location {
-      X: 400
-      Y: -835.001953
-      Z: 1760
+      X: 409.061279
+      Y: -909.512695
+      Z: 1777.48315
     }
     Rotation {
       Yaw: -179.999954
@@ -18614,7 +18802,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -18649,9 +18837,9 @@ Objects {
   Name: "Craftsman Roof 01 Bracket"
   Transform {
     Location {
-      X: 10.0009766
-      Y: -810.001
-      Z: 1425
+      X: 19.0622559
+      Y: -884.511719
+      Z: 1442.48315
     }
     Rotation {
       Yaw: -179.999954
@@ -18662,7 +18850,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -18697,9 +18885,9 @@ Objects {
   Name: "Craftsman Roof 01 Bracket"
   Transform {
     Location {
-      X: 789.999512
-      Y: 1610.00195
-      Z: 1425
+      X: 799.060791
+      Y: 1535.49121
+      Z: 1442.48315
     }
     Rotation {
     }
@@ -18709,7 +18897,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -18744,9 +18932,9 @@ Objects {
   Name: "Craftsman Roof 01 Bracket"
   Transform {
     Location {
-      X: 10.0004883
-      Y: 1610.00195
-      Z: 1425
+      X: 19.0617676
+      Y: 1535.49121
+      Z: 1442.48315
     }
     Rotation {
     }
@@ -18756,7 +18944,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -18791,9 +18979,9 @@ Objects {
   Name: "Craftsman Roof 01 Bracket"
   Transform {
     Location {
-      X: 400
-      Y: 1635.00195
-      Z: 1760
+      X: 409.061279
+      Y: 1560.49121
+      Z: 1777.48315
     }
     Rotation {
     }
@@ -18803,7 +18991,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -18838,11 +19026,12 @@ Objects {
   Name: "Craftsman Wall 01 Doorway"
   Transform {
     Location {
-      X: -400
-      Y: -800
+      X: -390.938721
+      Y: -874.510742
+      Z: 17.4831238
     }
     Rotation {
-      Yaw: 89.9999619
+      Yaw: 89.9999542
     }
     Scale {
       X: 1
@@ -18850,7 +19039,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner:id"
@@ -18900,9 +19089,9 @@ Objects {
   Name: "Craftsman Wall Interior 01"
   Transform {
     Location {
-      X: 400
-      Y: -100
-      Z: -3.05175781e-05
+      X: 409.061279
+      Y: -174.510742
+      Z: 17.4830933
     }
     Rotation {
     }
@@ -18912,7 +19101,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner:id"
@@ -18985,8 +19174,9 @@ Objects {
   Name: "Craftsman Wall 01"
   Transform {
     Location {
-      X: 400
-      Y: 1600
+      X: 409.061279
+      Y: 1525.48926
+      Z: 17.4831238
     }
     Rotation {
     }
@@ -18996,7 +19186,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -19031,8 +19221,9 @@ Objects {
   Name: "Craftsman Wall 01 Doorway"
   Transform {
     Location {
-      X: -400
-      Y: 1600
+      X: -390.938721
+      Y: 1525.48926
+      Z: 17.4831238
     }
     Rotation {
     }
@@ -19042,7 +19233,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallInner:id"
@@ -19092,11 +19283,12 @@ Objects {
   Name: "Craftsman Wall 01"
   Transform {
     Location {
-      X: 1200
-      Y: 1600
+      X: 1209.06128
+      Y: 1525.48926
+      Z: 17.4831238
     }
     Rotation {
-      Yaw: -89.9999619
+      Yaw: -89.9999542
     }
     Scale {
       X: 1
@@ -19104,7 +19296,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -19139,11 +19331,12 @@ Objects {
   Name: "Craftsman Wall 01"
   Transform {
     Location {
-      X: 1200
-      Y: 800
+      X: 1209.06128
+      Y: 725.489258
+      Z: 17.4831238
     }
     Rotation {
-      Yaw: -89.9999619
+      Yaw: -89.9999542
     }
     Scale {
       X: 1
@@ -19151,7 +19344,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -19186,8 +19379,9 @@ Objects {
   Name: "Craftsman Wall 01 Corner"
   Transform {
     Location {
-      X: 1200
-      Y: -800
+      X: 1209.06128
+      Y: -874.510742
+      Z: 17.4831238
     }
     Rotation {
       Yaw: -90.0000534
@@ -19198,7 +19392,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -19233,10 +19427,12 @@ Objects {
   Name: "Craftsman Wall 01"
   Transform {
     Location {
-      X: 1200
+      X: 1209.06128
+      Y: -74.5107422
+      Z: 17.4831238
     }
     Rotation {
-      Yaw: -89.9999847
+      Yaw: -89.9999771
     }
     Scale {
       X: 1
@@ -19244,7 +19440,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -19279,8 +19475,9 @@ Objects {
   Name: "Craftsman Wall 01"
   Transform {
     Location {
-      X: 400
-      Y: -800
+      X: 409.061279
+      Y: -874.510742
+      Z: 17.4831238
     }
     Rotation {
       Yaw: -179.999954
@@ -19291,7 +19488,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -19326,9 +19523,9 @@ Objects {
   Name: "Craftsman Floor 01 8m x 8m"
   Transform {
     Location {
-      X: 400
-      Y: 800
-      Z: 1200
+      X: 409.061279
+      Y: 725.489258
+      Z: 1217.48315
     }
     Rotation {
       Yaw: 89.9999542
@@ -19339,7 +19536,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Floor:id"
@@ -19393,9 +19590,9 @@ Objects {
   Name: "Craftsman Floor 01 8m x 8m"
   Transform {
     Location {
-      X: -400
-      Y: 800
-      Z: 1200
+      X: -390.938721
+      Y: 725.489258
+      Z: 1217.48315
     }
     Rotation {
       Yaw: 89.9999542
@@ -19406,7 +19603,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Floor:id"
@@ -19460,8 +19657,9 @@ Objects {
   Name: "Craftsman Floor 01 8m x 8m"
   Transform {
     Location {
-      X: -400
-      Z: 1200
+      X: -390.938721
+      Y: -74.5107422
+      Z: 1217.48315
     }
     Rotation {
       Yaw: 89.9999542
@@ -19472,7 +19670,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Floor:id"
@@ -19526,8 +19724,9 @@ Objects {
   Name: "Craftsman Floor 01 8m x 8m"
   Transform {
     Location {
-      X: 400
-      Z: 1200
+      X: 409.061279
+      Y: -74.5107422
+      Z: 1217.48315
     }
     Rotation {
       Yaw: 89.9999542
@@ -19538,7 +19737,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Floor:id"
@@ -19592,9 +19791,9 @@ Objects {
   Name: "Craftsman Floor 01 8m x 8m"
   Transform {
     Location {
-      X: 400
-      Y: -800
-      Z: 1200
+      X: 409.061279
+      Y: -874.510742
+      Z: 1217.48315
     }
     Rotation {
       Yaw: 89.9999542
@@ -19605,7 +19804,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Floor:id"
@@ -19659,9 +19858,9 @@ Objects {
   Name: "Craftsman Floor 01 8m x 8m"
   Transform {
     Location {
-      X: -400
-      Y: -800
-      Z: 1200
+      X: -390.938721
+      Y: -874.510742
+      Z: 1217.48315
     }
     Rotation {
       Yaw: 89.9999542
@@ -19672,7 +19871,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Floor:id"
@@ -19726,9 +19925,9 @@ Objects {
   Name: "Craftsman Floor 01 8m x 8m"
   Transform {
     Location {
-      X: -400
-      Y: -800
-      Z: 600
+      X: -390.938721
+      Y: -874.510742
+      Z: 617.483154
     }
     Rotation {
       Yaw: 89.9999542
@@ -19739,7 +19938,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Floor:id"
@@ -19793,7 +19992,9 @@ Objects {
   Name: "Craftsman Floor 01 8m x 8m"
   Transform {
     Location {
-      Z: 600
+      X: 9.0612793
+      Y: -74.5107422
+      Z: 617.483154
     }
     Rotation {
       Yaw: 89.9999542
@@ -19804,7 +20005,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Floor:id"
@@ -19858,9 +20059,9 @@ Objects {
   Name: "Craftsman Floor 01 8m x 8m"
   Transform {
     Location {
-      X: 400
-      Y: 800
-      Z: 600
+      X: 409.061279
+      Y: 725.489258
+      Z: 617.483154
     }
     Rotation {
       Yaw: 89.9999542
@@ -19871,7 +20072,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Floor:id"
@@ -19925,9 +20126,9 @@ Objects {
   Name: "Craftsman Floor 01 8m x 8m"
   Transform {
     Location {
-      X: -400
-      Y: 800
-      Z: 600
+      X: -390.938721
+      Y: 725.489258
+      Z: 617.483154
     }
     Rotation {
       Yaw: 89.9999542
@@ -19938,7 +20139,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Floor:id"
@@ -19992,8 +20193,9 @@ Objects {
   Name: "Craftsman Floor 01 8m x 8m"
   Transform {
     Location {
-      X: -400
-      Y: -800
+      X: -390.938721
+      Y: -874.510742
+      Z: 17.4831238
     }
     Rotation {
       Yaw: 89.9999542
@@ -20004,7 +20206,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Floor:id"
@@ -20058,9 +20260,9 @@ Objects {
   Name: "Craftsman Floor 01 8m x 8m"
   Transform {
     Location {
-      X: 400
-      Y: -800
-      Z: 600
+      X: 409.061279
+      Y: -874.510742
+      Z: 617.483154
     }
     Rotation {
       Yaw: 89.9999542
@@ -20071,7 +20273,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Floor:id"
@@ -20125,8 +20327,9 @@ Objects {
   Name: "Craftsman Floor 01 8m x 8m"
   Transform {
     Location {
-      X: -400
-      Y: 800
+      X: -390.938721
+      Y: 725.489258
+      Z: 17.4831238
     }
     Rotation {
       Yaw: 89.9999542
@@ -20137,7 +20340,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Floor:id"
@@ -20191,8 +20394,9 @@ Objects {
   Name: "Craftsman Floor 01 8m x 8m"
   Transform {
     Location {
-      X: 400
-      Y: 800
+      X: 409.061279
+      Y: 725.489258
+      Z: 17.4831238
     }
     Rotation {
       Yaw: 89.9999542
@@ -20203,7 +20407,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Floor:id"
@@ -20257,7 +20461,9 @@ Objects {
   Name: "Craftsman Floor 01 8m x 8m"
   Transform {
     Location {
-      X: 400
+      X: 409.061279
+      Y: -74.5107422
+      Z: 17.4831238
     }
     Rotation {
       Yaw: 89.9999542
@@ -20268,7 +20474,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Floor:id"
@@ -20322,7 +20528,9 @@ Objects {
   Name: "Craftsman Floor 01 8m x 8m"
   Transform {
     Location {
-      X: -400
+      X: -390.938721
+      Y: -74.5107422
+      Z: 17.4831238
     }
     Rotation {
       Yaw: 89.9999542
@@ -20333,7 +20541,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Floor:id"
@@ -20387,8 +20595,9 @@ Objects {
   Name: "Craftsman Floor 01 8m x 8m"
   Transform {
     Location {
-      X: 400
-      Y: -800
+      X: 409.061279
+      Y: -874.510742
+      Z: 17.4831238
     }
     Rotation {
       Yaw: 89.9999542
@@ -20399,7 +20608,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14836524915378583793
+  ParentId: 16182596037522310045
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Floor:id"

@@ -152,15 +152,6 @@ Assets {
   }
 }
 Assets {
-  Id: 13637078664533668977
-  Name: "Prism - 3-Sided Polished"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prism_hq_001"
-  }
-}
-Assets {
   Id: 13085174305471638229
   Name: "Metal Painted Old 01"
   PlatformAssetType: 2
@@ -251,15 +242,6 @@ Assets {
   }
 }
 Assets {
-  Id: 9065570772823211085
-  Name: "Prism - 6-Sided Polished"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prism_hexagon_hq_001"
-  }
-}
-Assets {
   Id: 8606699818147202890
   Name: "Military Worn Tire Large 01"
   PlatformAssetType: 1
@@ -275,15 +257,6 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_mil_kamo_net_001_uv_ref"
-  }
-}
-Assets {
-  Id: 7283825798727192743
-  Name: "Metal Iron Rusted 02"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_metal_iron_003"
   }
 }
 Assets {
@@ -365,6 +338,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_urb_dtn_mst_railing_001_ref"
+  }
+}
+Assets {
+  Id: 3994090323722992185
+  Name: "Wood 2x4 4m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_two-by-four_3m"
   }
 }
 Assets {
