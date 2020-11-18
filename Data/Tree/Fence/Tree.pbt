@@ -7251,7 +7251,8 @@ Objects {
   Name: "Military Fence Panel"
   Transform {
     Location {
-      X: 600
+      X: -602.301331
+      Y: -0.000915527344
       Z: 210
     }
     Rotation {

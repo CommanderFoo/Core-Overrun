@@ -1,24 +1,24 @@
-﻿Name: "Misc"
-RootId: 15140683507560872085
+﻿Name: "Barrels"
+RootId: 13221512614293312567
 Objects {
-  Id: 6286960592480405805
-  Name: "Shipping Pallet - Square"
+  Id: 14730474695718565688
+  Name: "Military Hazard Barrel"
   Transform {
     Location {
-      X: -479.609863
-      Y: -11428.2861
-      Z: 164.458511
+      X: 1574.83105
+      Y: -8901.35449
+      Z: 0.427597046
     }
     Rotation {
-      Yaw: -30.333046
+      Yaw: -103.911736
     }
     Scale {
-      X: 1
-      Y: 1
-      Z: 1
+      X: 1.27088857
+      Y: 1.27088857
+      Z: 1.27088857
     }
   }
-  ParentId: 15140683507560872085
+  ParentId: 13221512614293312567
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -27,7 +27,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 9783373452716819494
+      Id: 3694419892625887874
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -41,24 +41,23 @@ Objects {
   }
 }
 Objects {
-  Id: 8420070107845894148
-  Name: "Wood 2x4 4m"
+  Id: 17155707173014975169
+  Name: "Military Hazard Barrel"
   Transform {
     Location {
-      X: -2085.45068
-      Y: -2391.75781
-      Z: 164.199585
+      X: 1485.49329
+      Y: -8721.60938
+      Z: 0.427597046
     }
     Rotation {
-      Yaw: -24.0830765
     }
     Scale {
-      X: 1
-      Y: 1
-      Z: 1
+      X: 1.27088857
+      Y: 1.27088857
+      Z: 1.27088857
     }
   }
-  ParentId: 15140683507560872085
+  ParentId: 13221512614293312567
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -67,7 +66,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 3994090323722992185
+      Id: 3694419892625887874
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -81,23 +80,23 @@ Objects {
   }
 }
 Objects {
-  Id: 9925416750405459500
-  Name: "Wood 2x4 4m"
+  Id: 1991814215114876856
+  Name: "Military Hazard Barrel"
   Transform {
     Location {
-      X: -2082.61621
-      Y: -2579.66479
-      Z: 164.199585
+      X: 1627.13184
+      Y: -8757.90527
+      Z: 0.427597046
     }
     Rotation {
     }
     Scale {
-      X: 1
-      Y: 1
-      Z: 1
+      X: 1.27088857
+      Y: 1.27088857
+      Z: 1.27088857
     }
   }
-  ParentId: 15140683507560872085
+  ParentId: 13221512614293312567
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -106,7 +105,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 3994090323722992185
+      Id: 3694419892625887874
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -120,24 +119,23 @@ Objects {
   }
 }
 Objects {
-  Id: 9232727395834710964
-  Name: "Shipping Pallet - Square"
+  Id: 12551332973401654704
+  Name: "Military Hazard Barrel"
   Transform {
     Location {
-      X: -1767.50513
-      Y: -2789.14673
-      Z: 403.115448
+      X: 1725.31824
+      Y: -8904.35742
+      Z: 0.427597046
     }
     Rotation {
-      Yaw: 50.3788338
     }
     Scale {
-      X: 1
-      Y: 1
-      Z: 1
+      X: 1.27088857
+      Y: 1.27088857
+      Z: 1.27088857
     }
   }
-  ParentId: 15140683507560872085
+  ParentId: 13221512614293312567
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -146,7 +144,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 9783373452716819494
+      Id: 3694419892625887874
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -160,24 +158,23 @@ Objects {
   }
 }
 Objects {
-  Id: 3890139123887207498
-  Name: "Shipping Pallet - Rectangular"
+  Id: 8518977957474300221
+  Name: "Military Hazard Barrel"
   Transform {
     Location {
-      X: -3283.29077
-      Y: -6359.46094
-      Z: 97.5268707
+      X: 1782.12549
+      Y: -8755.30762
+      Z: 0.427597046
     }
     Rotation {
-      Pitch: -67.3858948
     }
     Scale {
-      X: 1
-      Y: 1
-      Z: 1
+      X: 1.27088857
+      Y: 1.27088857
+      Z: 1.27088857
     }
   }
-  ParentId: 15140683507560872085
+  ParentId: 13221512614293312567
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -186,7 +183,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 9820333862526212022
+      Id: 3694419892625887874
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -200,24 +197,23 @@ Objects {
   }
 }
 Objects {
-  Id: 14017366561842354733
-  Name: "Shipping Pallet - Square"
+  Id: 1696462951740764723
+  Name: "Military Hazard Barrel"
   Transform {
     Location {
-      X: 736.279358
-      Y: -7935.87646
-      Z: 146.289017
+      X: 1431.17493
+      Y: -8879.48535
+      Z: 0.427597046
     }
     Rotation {
-      Pitch: -73.1793137
     }
     Scale {
-      X: 1
-      Y: 1
-      Z: 1
+      X: 1.27088857
+      Y: 1.27088857
+      Z: 1.27088857
     }
   }
-  ParentId: 15140683507560872085
+  ParentId: 13221512614293312567
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -226,7 +222,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 9783373452716819494
+      Id: 3694419892625887874
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -240,24 +236,23 @@ Objects {
   }
 }
 Objects {
-  Id: 3168799035475292000
-  Name: "Shipping Pallet - Square"
+  Id: 17401000360838104279
+  Name: "Military Hazard Barrel"
   Transform {
     Location {
-      X: -1883.67163
-      Y: -1096.18372
-      Z: 50.9674072
+      X: 317.939087
+      Y: 6.90087891
     }
     Rotation {
-      Pitch: -52.3666344
+      Yaw: 86.2371063
     }
     Scale {
-      X: 1
-      Y: 1
-      Z: 1
+      X: 1.2961961
+      Y: 1.2961961
+      Z: 1.2961961
     }
   }
-  ParentId: 15140683507560872085
+  ParentId: 13221512614293312567
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -266,7 +261,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 9783373452716819494
+      Id: 3694419892625887874
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -280,24 +275,23 @@ Objects {
   }
 }
 Objects {
-  Id: 8790924205103436781
-  Name: "Corrugated Sheet Bent"
+  Id: 15761791307854788474
+  Name: "Military Hazard Barrel"
   Transform {
     Location {
-      X: -1265.2511
-      Y: -2463.17871
-      Z: -1.84814453
+      X: 125.098877
+      Y: 123.300781
     }
     Rotation {
-      Roll: -22.301651
+      Yaw: -94.7474
     }
     Scale {
-      X: 1
-      Y: 1
-      Z: 1
+      X: 1.2961961
+      Y: 1.2961961
+      Z: 1.2961961
     }
   }
-  ParentId: 15140683507560872085
+  ParentId: 13221512614293312567
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -306,7 +300,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 6865249745567109080
+      Id: 3694419892625887874
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -320,25 +314,22 @@ Objects {
   }
 }
 Objects {
-  Id: 5586034648678652031
-  Name: "Corrugated Sheet Large"
+  Id: 9275696104764955791
+  Name: "Military Hazard Barrel"
   Transform {
     Location {
-      X: 631.081848
-      Y: -14.1887512
-      Z: -0.100830078
+      X: 164.988647
+      Y: -16.6115723
     }
     Rotation {
-      Yaw: 90
-      Roll: 17.1109676
     }
     Scale {
-      X: 1
-      Y: 1
-      Z: 1
+      X: 1.2961961
+      Y: 1.2961961
+      Z: 1.2961961
     }
   }
-  ParentId: 15140683507560872085
+  ParentId: 13221512614293312567
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -347,7 +338,82 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 12598129352734110789
+      Id: 3694419892625887874
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 9402435494650067216
+  Name: "Military Hazard Barrel"
+  Transform {
+    Location {
+      X: -7.70849609
+      Y: 175.471191
+    }
+    Rotation {
+      Yaw: 130.146957
+    }
+    Scale {
+      X: 1.2961961
+      Y: 1.2961961
+      Z: 1.2961961
+    }
+  }
+  ParentId: 13221512614293312567
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3694419892625887874
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 6542747086105409423
+  Name: "Military Hazard Barrel"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1.2961961
+      Y: 1.2961961
+      Z: 1.2961961
+    }
+  }
+  ParentId: 13221512614293312567
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3694419892625887874
     }
     Teams {
       IsTeamCollisionEnabled: true

@@ -1,24 +1,24 @@
-﻿Name: "Misc"
-RootId: 15140683507560872085
+﻿Name: "Rocks"
+RootId: 2485558528813290714
 Objects {
-  Id: 6286960592480405805
-  Name: "Shipping Pallet - Square"
+  Id: 9854465111223546289
+  Name: "Rock Block 02"
   Transform {
     Location {
-      X: -479.609863
-      Y: -11428.2861
-      Z: 164.458511
+      X: -1194.18384
+      Y: 9410.8
+      Z: 176.817963
     }
     Rotation {
-      Yaw: -30.333046
+      Yaw: 9.78222
     }
     Scale {
-      X: 1
-      Y: 1
-      Z: 1
+      X: 3.25923014
+      Y: 2.80903816
+      Z: 2.80903864
     }
   }
-  ParentId: 15140683507560872085
+  ParentId: 2485558528813290714
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -27,7 +27,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 9783373452716819494
+      Id: 8611571778840658009
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -41,24 +41,23 @@ Objects {
   }
 }
 Objects {
-  Id: 8420070107845894148
-  Name: "Wood 2x4 4m"
+  Id: 16765813629588976665
+  Name: "Rock 03"
   Transform {
     Location {
-      X: -2085.45068
-      Y: -2391.75781
-      Z: 164.199585
+      X: 2177.02734
+      Y: 9948.76855
+      Z: 93.4746704
     }
     Rotation {
-      Yaw: -24.0830765
     }
     Scale {
-      X: 1
-      Y: 1
-      Z: 1
+      X: 1.80396879
+      Y: 1.80396879
+      Z: 1.80396879
     }
   }
-  ParentId: 15140683507560872085
+  ParentId: 2485558528813290714
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -67,7 +66,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 3994090323722992185
+      Id: 13710161915374590549
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -81,13 +80,13 @@ Objects {
   }
 }
 Objects {
-  Id: 9925416750405459500
-  Name: "Wood 2x4 4m"
+  Id: 18136701241436936194
+  Name: "Rock Pile 001"
   Transform {
     Location {
-      X: -2082.61621
-      Y: -2579.66479
-      Z: 164.199585
+      X: 1930.31433
+      Y: 10021.2383
+      Z: 3.98416138
     }
     Rotation {
     }
@@ -97,7 +96,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15140683507560872085
+  ParentId: 2485558528813290714
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -106,7 +105,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 3994090323722992185
+      Id: 10835155324150586940
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -120,16 +119,15 @@ Objects {
   }
 }
 Objects {
-  Id: 9232727395834710964
-  Name: "Shipping Pallet - Square"
+  Id: 10311500012364963629
+  Name: "Rock Pile 002"
   Transform {
     Location {
-      X: -1767.50513
-      Y: -2789.14673
-      Z: 403.115448
+      X: 1853.83765
+      Y: 9852.45117
+      Z: 3.98431396
     }
     Rotation {
-      Yaw: 50.3788338
     }
     Scale {
       X: 1
@@ -137,7 +135,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15140683507560872085
+  ParentId: 2485558528813290714
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -146,7 +144,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 9783373452716819494
+      Id: 3377721323622766709
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -160,16 +158,18 @@ Objects {
   }
 }
 Objects {
-  Id: 3890139123887207498
-  Name: "Shipping Pallet - Rectangular"
+  Id: 3704301711482679260
+  Name: "Rock 01"
   Transform {
     Location {
-      X: -3283.29077
-      Y: -6359.46094
-      Z: 97.5268707
+      X: 2417.521
+      Y: 10074.2607
+      Z: 3.98425293
     }
     Rotation {
-      Pitch: -67.3858948
+      Pitch: 13.3616114
+      Yaw: -46.9915085
+      Roll: -13.914876
     }
     Scale {
       X: 1
@@ -177,7 +177,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15140683507560872085
+  ParentId: 2485558528813290714
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -186,7 +186,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 9820333862526212022
+      Id: 18302154991031027573
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -200,16 +200,15 @@ Objects {
   }
 }
 Objects {
-  Id: 14017366561842354733
-  Name: "Shipping Pallet - Square"
+  Id: 17636771020189136818
+  Name: "Rock 03"
   Transform {
     Location {
-      X: 736.279358
-      Y: -7935.87646
-      Z: 146.289017
+      X: 2188.03613
+      Y: 10084.6426
+      Z: 3.98443604
     }
     Rotation {
-      Pitch: -73.1793137
     }
     Scale {
       X: 1
@@ -217,7 +216,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15140683507560872085
+  ParentId: 2485558528813290714
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -226,7 +225,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 9783373452716819494
+      Id: 13710161915374590549
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -240,24 +239,23 @@ Objects {
   }
 }
 Objects {
-  Id: 3168799035475292000
-  Name: "Shipping Pallet - Square"
+  Id: 7819009157750339467
+  Name: "Rock 03"
   Transform {
     Location {
-      X: -1883.67163
-      Y: -1096.18372
-      Z: 50.9674072
+      X: 870.813599
+      Y: -1471.96
+      Z: 153.028229
     }
     Rotation {
-      Pitch: -52.3666344
     }
     Scale {
-      X: 1
-      Y: 1
-      Z: 1
+      X: 2.12161756
+      Y: 2.31948614
+      Z: 3.36651015
     }
   }
-  ParentId: 15140683507560872085
+  ParentId: 2485558528813290714
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -266,7 +264,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 9783373452716819494
+      Id: 13710161915374590549
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -280,24 +278,22 @@ Objects {
   }
 }
 Objects {
-  Id: 8790924205103436781
-  Name: "Corrugated Sheet Bent"
+  Id: 4498765006904301206
+  Name: "Rock 02"
   Transform {
     Location {
-      X: -1265.2511
-      Y: -2463.17871
-      Z: -1.84814453
+      X: -172.465271
+      Y: 967.980469
     }
     Rotation {
-      Roll: -22.301651
     }
     Scale {
       X: 1
       Y: 1
-      Z: 1
+      Z: 0.387963712
     }
   }
-  ParentId: 15140683507560872085
+  ParentId: 2485558528813290714
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -306,7 +302,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 6865249745567109080
+      Id: 9400351047821029349
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -320,25 +316,24 @@ Objects {
   }
 }
 Objects {
-  Id: 5586034648678652031
-  Name: "Corrugated Sheet Large"
+  Id: 8357678503380603787
+  Name: "Rock 03"
   Transform {
     Location {
-      X: 631.081848
-      Y: -14.1887512
-      Z: -0.100830078
+      X: 227.132904
+      Y: 530.539063
+      Z: 153.616455
     }
     Rotation {
-      Yaw: 90
-      Roll: 17.1109676
+      Roll: -33.9732475
     }
     Scale {
-      X: 1
-      Y: 1
-      Z: 1
+      X: 1.54431403
+      Y: 2.42720389
+      Z: 1.54431403
     }
   }
-  ParentId: 15140683507560872085
+  ParentId: 2485558528813290714
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -347,7 +342,88 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 12598129352734110789
+      Id: 13710161915374590549
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 15523367570851147870
+  Name: "Rock 01"
+  Transform {
+    Location {
+      X: 237.259277
+      Y: 886.72168
+      Z: 204.084778
+    }
+    Rotation {
+      Pitch: -6.83296871
+      Yaw: -62.7088661
+      Roll: -3.51266503
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2485558528813290714
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 18302154991031027573
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 16275928348026493591
+  Name: "Rock 03"
+  Transform {
+    Location {
+      X: -1162.74072
+      Y: -913.27832
+      Z: 4.0849
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2485558528813290714
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13710161915374590549
     }
     Teams {
       IsTeamCollisionEnabled: true

@@ -1,24 +1,24 @@
-﻿Name: "Misc"
-RootId: 15140683507560872085
+﻿Name: "House Props"
+RootId: 18291726727931816741
 Objects {
-  Id: 6286960592480405805
-  Name: "Shipping Pallet - Square"
+  Id: 13513026624897196760
+  Name: "Curtains Straight"
   Transform {
     Location {
-      X: -479.609863
-      Y: -11428.2861
-      Z: 164.458511
+      X: -72.2348633
+      Y: 660.519531
+      Z: 865.295349
     }
     Rotation {
-      Yaw: -30.333046
+      Yaw: -179.999954
     }
     Scale {
       X: 1
       Y: 1
-      Z: 1
+      Z: 0.938411891
     }
   }
-  ParentId: 15140683507560872085
+  ParentId: 18291726727931816741
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -27,7 +27,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 9783373452716819494
+      Id: 9047034035222337872
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -41,24 +41,24 @@ Objects {
   }
 }
 Objects {
-  Id: 8420070107845894148
-  Name: "Wood 2x4 4m"
+  Id: 18257799689643245851
+  Name: "Curtains Straight"
   Transform {
     Location {
-      X: -2085.45068
-      Y: -2391.75781
-      Z: 164.199585
+      X: 458.301086
+      Y: 660.519531
+      Z: 865.295349
     }
     Rotation {
-      Yaw: -24.0830765
+      Yaw: -179.999969
     }
     Scale {
       X: 1
       Y: 1
-      Z: 1
+      Z: 0.938411891
     }
   }
-  ParentId: 15140683507560872085
+  ParentId: 18291726727931816741
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -67,7 +67,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 3994090323722992185
+      Id: 9047034035222337872
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -81,23 +81,23 @@ Objects {
   }
 }
 Objects {
-  Id: 9925416750405459500
-  Name: "Wood 2x4 4m"
+  Id: 11219283516482178615
+  Name: "Curtain Rod 01"
   Transform {
     Location {
-      X: -2082.61621
-      Y: -2579.66479
-      Z: 164.199585
+      X: 194.446106
+      Y: 674.515625
+      Z: 1104.27637
     }
     Rotation {
     }
     Scale {
-      X: 1
+      X: 1.27200615
       Y: 1
       Z: 1
     }
   }
-  ParentId: 15140683507560872085
+  ParentId: 18291726727931816741
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -106,7 +106,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 3994090323722992185
+      Id: 11846093043025792081
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -120,24 +120,24 @@ Objects {
   }
 }
 Objects {
-  Id: 9232727395834710964
-  Name: "Shipping Pallet - Square"
+  Id: 11700324003364994657
+  Name: "Curtains Straight"
   Transform {
     Location {
-      X: -1767.50513
-      Y: -2789.14673
-      Z: 403.115448
+      X: -872.710693
+      Y: 660.519531
+      Z: 865.295349
     }
     Rotation {
-      Yaw: 50.3788338
+      Yaw: -179.999969
     }
     Scale {
       X: 1
       Y: 1
-      Z: 1
+      Z: 0.938411891
     }
   }
-  ParentId: 15140683507560872085
+  ParentId: 18291726727931816741
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -146,7 +146,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 9783373452716819494
+      Id: 9047034035222337872
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -160,24 +160,24 @@ Objects {
   }
 }
 Objects {
-  Id: 3890139123887207498
-  Name: "Shipping Pallet - Rectangular"
+  Id: 4549226133405516085
+  Name: "Curtains Straight"
   Transform {
     Location {
-      X: -3283.29077
-      Y: -6359.46094
-      Z: 97.5268707
+      X: -342.17511
+      Y: 660.519531
+      Z: 865.295349
     }
     Rotation {
-      Pitch: -67.3858948
+      Yaw: -179.999985
     }
     Scale {
       X: 1
       Y: 1
-      Z: 1
+      Z: 0.938411891
     }
   }
-  ParentId: 15140683507560872085
+  ParentId: 18291726727931816741
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -186,7 +186,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 9820333862526212022
+      Id: 9047034035222337872
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -200,24 +200,23 @@ Objects {
   }
 }
 Objects {
-  Id: 14017366561842354733
-  Name: "Shipping Pallet - Square"
+  Id: 5978189978485359572
+  Name: "Curtain Rod 01"
   Transform {
     Location {
-      X: 736.279358
-      Y: -7935.87646
-      Z: 146.289017
+      X: -606.029663
+      Y: 674.515625
+      Z: 1104.27637
     }
     Rotation {
-      Pitch: -73.1793137
     }
     Scale {
-      X: 1
+      X: 1.27200615
       Y: 1
       Z: 1
     }
   }
-  ParentId: 15140683507560872085
+  ParentId: 18291726727931816741
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -226,7 +225,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 9783373452716819494
+      Id: 11846093043025792081
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -240,16 +239,16 @@ Objects {
   }
 }
 Objects {
-  Id: 3168799035475292000
-  Name: "Shipping Pallet - Square"
+  Id: 13315017835514115287
+  Name: "Counter - Drawers"
   Transform {
     Location {
-      X: -1883.67163
-      Y: -1096.18372
-      Z: 50.9674072
+      X: 247.600769
+      Y: -1040.94043
+      Z: 1.33514404e-05
     }
     Rotation {
-      Pitch: -52.3666344
+      Yaw: -179.999954
     }
     Scale {
       X: 1
@@ -257,7 +256,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15140683507560872085
+  ParentId: 18291726727931816741
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -266,7 +265,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 9783373452716819494
+      Id: 6894865973411526629
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -280,16 +279,16 @@ Objects {
   }
 }
 Objects {
-  Id: 8790924205103436781
-  Name: "Corrugated Sheet Bent"
+  Id: 7782748127410607269
+  Name: "Counter - Drawers"
   Transform {
     Location {
-      X: -1265.2511
-      Y: -2463.17871
-      Z: -1.84814453
+      X: 547.600769
+      Y: -1040.94043
+      Z: 1.33514404e-05
     }
     Rotation {
-      Roll: -22.301651
+      Yaw: -179.999969
     }
     Scale {
       X: 1
@@ -297,7 +296,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15140683507560872085
+  ParentId: 18291726727931816741
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -306,7 +305,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 6865249745567109080
+      Id: 6894865973411526629
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -320,17 +319,15 @@ Objects {
   }
 }
 Objects {
-  Id: 5586034648678652031
-  Name: "Corrugated Sheet Large"
+  Id: 8524914493648175566
+  Name: "Counter - Sink"
   Transform {
     Location {
-      X: 631.081848
-      Y: -14.1887512
-      Z: -0.100830078
+      X: 447.600769
+      Y: -1040.94043
     }
     Rotation {
-      Yaw: 90
-      Roll: 17.1109676
+      Yaw: -179.999969
     }
     Scale {
       X: 1
@@ -338,7 +335,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15140683507560872085
+  ParentId: 18291726727931816741
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -347,7 +344,46 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 12598129352734110789
+      Id: 3321897578082064713
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 13489481804572643122
+  Name: "Craftsman Couch"
+  Transform {
+    Location {
+      X: -2.39923096
+      Y: -868.282227
+      Z: 24.6833553
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18291726727931816741
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3453348941722657327
     }
     Teams {
       IsTeamCollisionEnabled: true
