@@ -20,12 +20,13 @@ function on_trigger_enter(t, obj)
 			if(in_zone and binding == "ability_extra_33") then
 				if(#obj:GetEquipment() > 0) then
 					local equipment = obj:GetEquipment()[1]
+					local is_melee = equipment:GetCustomProperty("is_melee")
 
-					if(equipment:IsA("Weapon")) then
+					if(equipment:IsA("Weapon") or is_melee) then
 						local id = equipment:GetCustomProperty("asset_id")
 						local money = obj:GetResource("money")
 						local rounds = obj:GetResource("rounds")
-						local cost = 0
+						local cost = -1
 
 						if(id == basic_id or id == upgrade_id) then
 							if(id == basic_id and rounds < max_basic_ammo) then
@@ -39,7 +40,7 @@ function on_trigger_enter(t, obj)
 							cost = basic_price
 						end
 
-						if(cost > 0) then
+						if(cost >= 0) then
 							Events.Broadcast("on_bought_item", obj, basic_id, max_basic_ammo, basic_price)
 							obj:SetResource("money", math.max(0, money - cost))
 						end

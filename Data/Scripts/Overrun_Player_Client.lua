@@ -177,8 +177,14 @@ function money_changed(data)
 	end
 end
 
+function purchase_complete(is_melee)
+	Events.Broadcast("on_ammo_purchase_change", is_melee)
+	Events.Broadcast("on_audio_purchase")
+end
+
 Events.Connect("on_game_starting", game_starting)
 Events.Connect("on_player_money_changed", money_changed)
+Events.Connect("on_purchase_complete", purchase_complete)
 
 Game.playerJoinedEvent:Connect(player_joined)
 Game.playerLeftEvent:Connect(player_left)

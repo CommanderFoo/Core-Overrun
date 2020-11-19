@@ -24,6 +24,10 @@
             Name: "cs:asset_id"
             String: "34991C6E67BCACC9"
           }
+          Overrides {
+            Name: "cs:is_melee"
+            Bool: false
+          }
         }
         WantsNetworking: true
         Collidable_v2 {

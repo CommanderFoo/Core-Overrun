@@ -1,13 +1,13 @@
 ﻿Assets {
-  Id: 11954596756513607817
-  Name: "Overrun Wall Weapon Basic Pistol"
+  Id: 10926424233706991286
+  Name: "Overrun Wall Weapon Basic Knife"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
       RootId: 16750022872046165057
       Objects {
         Id: 16750022872046165057
-        Name: "Overrun Wall Weapon Basic Pistol"
+        Name: "Overrun Wall Weapon Basic Knife"
         Transform {
           Scale {
             X: 1
@@ -16,6 +16,7 @@
           }
         }
         ParentId: 6538324789638676258
+        ChildIds: 2352675836155460061
         ChildIds: 16087585303900235575
         ChildIds: 12327541943399218918
         ChildIds: 2111972060741272325
@@ -32,7 +33,7 @@
           }
           Overrides {
             Name: "cs:basic_id"
-            String: "E22EA37EB8218DAE"
+            String: "B1905A799B79C498"
           }
           Overrides {
             Name: "cs:upgrade_id"
@@ -40,23 +41,23 @@
           }
           Overrides {
             Name: "cs:basic_price"
-            Int: 500
+            Int: 0
           }
           Overrides {
             Name: "cs:basic_ammo_price"
-            Int: 200
+            Int: 0
           }
           Overrides {
             Name: "cs:upgraded_ammo_price"
-            Int: 2000
+            Int: 0
           }
           Overrides {
             Name: "cs:max_basic_ammo"
-            Int: 96
+            Int: 0
           }
           Overrides {
             Name: "cs:max_upgraded_ammo"
-            Int: 192
+            Int: 0
           }
           Overrides {
             Name: "cs:can_afford_color"
@@ -86,7 +87,7 @@
           }
           Overrides {
             Name: "cs:is_melee"
-            Bool: false
+            Bool: true
           }
         }
         Collidable_v2 {
@@ -101,13 +102,11 @@
         }
       }
       Objects {
-        Id: 16087585303900235575
-        Name: "ClientContext"
+        Id: 2352675836155460061
+        Name: "Basic Knife"
         Transform {
           Location {
-            X: 706.963867
-            Y: -1166.8844
-            Z: 347.666901
+            X: -3.05175781e-05
           }
           Rotation {
           }
@@ -118,92 +117,7 @@
           }
         }
         ParentId: 16750022872046165057
-        ChildIds: 3258593524636778538
-        ChildIds: 2352675836155460061
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        NetworkContext {
-        }
-      }
-      Objects {
-        Id: 3258593524636778538
-        Name: "Overrun_Wall_Weapon_Client"
-        Transform {
-          Location {
-            X: -471.309265
-            Y: 777.923
-            Z: -231.777939
-          }
-          Rotation {
-          }
-          Scale {
-            X: 0.666666687
-            Y: 0.666666687
-            Z: 0.666666687
-          }
-        }
-        ParentId: 16087585303900235575
-        UnregisteredParameters {
-          Overrides {
-            Name: "cs:trigger"
-            ObjectReference {
-              SubObjectId: 12327541943399218918
-            }
-          }
-          Overrides {
-            Name: "cs:root"
-            ObjectReference {
-              SubObjectId: 16750022872046165057
-            }
-          }
-          Overrides {
-            Name: "cs:purchase_ui"
-            ObjectReference {
-              SelfId: 2989902567877894445
-            }
-          }
-          Overrides {
-            Name: "cs:PIXELDEPTH_API"
-            AssetReference {
-              Id: 16622261663679835299
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Script {
-          ScriptAsset {
-            Id: 2577854209140518759
-          }
-        }
-      }
-      Objects {
-        Id: 2352675836155460061
-        Name: "Basic Pistol"
-        Transform {
-          Location {
-            X: -471.309326
-            Y: 777.923
-            Z: -231.777924
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 16087585303900235575
-        ChildIds: 6035214685705194158
+        ChildIds: 5281855047222597232
         UnregisteredParameters {
         }
         Collidable_v2 {
@@ -283,10 +197,43 @@
         }
       }
       Objects {
-        Id: 6035214685705194158
-        Name: "Client Art"
+        Id: 5281855047222597232
+        Name: "Geo"
         Transform {
           Location {
+            X: -3.03316192e-05
+            Y: 7.55164365e-05
+          }
+          Rotation {
+            Pitch: -20.6779861
+          }
+          Scale {
+            X: 0.666666687
+            Y: 0.666666687
+            Z: 0.666666687
+          }
+        }
+        ParentId: 2352675836155460061
+        ChildIds: 10839393194752593585
+        ChildIds: 4351542338268397644
+        UnregisteredParameters {
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 10839393194752593585
+        Name: "Knife - Blade"
+        Transform {
+          Location {
+            Z: 20.6940308
           }
           Rotation {
           }
@@ -296,10 +243,112 @@
             Z: 1
           }
         }
-        ParentId: 2352675836155460061
-        ChildIds: 13571263185690873952
+        ParentId: 5281855047222597232
         UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_Detail1:id"
+            AssetReference {
+              Id: 5838555605866310072
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 5838555605866310072
+            }
+          }
         }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 14237220486008111868
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 4351542338268397644
+        Name: "Knife - Handle"
+        Transform {
+          Location {
+            Z: 3.05175781e-05
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 5281855047222597232
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 5838555605866310072
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:id"
+            AssetReference {
+              Id: 5838555605866310072
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 1474317466637388472
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 16087585303900235575
+        Name: "ClientContext"
+        Transform {
+          Location {
+            X: 706.963867
+            Y: -1166.8844
+            Z: 347.666901
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1.5
+            Y: 1.5
+            Z: 1.5
+          }
+        }
+        ParentId: 16750022872046165057
+        ChildIds: 3258593524636778538
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -310,26 +359,48 @@
         }
       }
       Objects {
-        Id: 13571263185690873952
-        Name: "Geo"
+        Id: 3258593524636778538
+        Name: "Overrun_Wall_Weapon_Client"
         Transform {
           Location {
+            X: -471.309265
+            Y: 777.923
+            Z: -231.777939
           }
           Rotation {
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 0.666666687
+            Y: 0.666666687
+            Z: 0.666666687
           }
         }
-        ParentId: 6035214685705194158
-        ChildIds: 15260957181801525536
-        ChildIds: 18442697594347786136
-        ChildIds: 649984354005596201
-        ChildIds: 5838639204757265369
-        ChildIds: 14410090152755893277
+        ParentId: 16087585303900235575
         UnregisteredParameters {
+          Overrides {
+            Name: "cs:trigger"
+            ObjectReference {
+              SubObjectId: 12327541943399218918
+            }
+          }
+          Overrides {
+            Name: "cs:root"
+            ObjectReference {
+              SubObjectId: 16750022872046165057
+            }
+          }
+          Overrides {
+            Name: "cs:purchase_ui"
+            ObjectReference {
+              SelfId: 2989902567877894445
+            }
+          }
+          Overrides {
+            Name: "cs:PIXELDEPTH_API"
+            AssetReference {
+              Id: 16622261663679835299
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -337,337 +408,9 @@
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
-        Folder {
-          IsGroup: true
-        }
-      }
-      Objects {
-        Id: 15260957181801525536
-        Name: "Modern Weapon - Slide 01"
-        Transform {
-          Location {
-            X: -9.3879385
-            Z: 15.6609459
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 13571263185690873952
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 1
-              G: 1
-              B: 1
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:id"
-            AssetReference {
-              Id: 5838555605866310072
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:color"
-            Color {
-              R: 1
-              G: 1
-              B: 1
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Trim:color"
-            Color {
-              R: 1
-              G: 1
-              B: 1
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 5838555605866310072
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Trim:id"
-            AssetReference {
-              Id: 5838555605866310072
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 697347799158381382
-          }
-          Teams {
-          }
-          DisableCastShadows: true
-          DisableReceiveDecals: true
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 18442697594347786136
-        Name: "Trigger - Rear"
-        Transform {
-          Location {
-            X: 2.68535042
-            Z: 6.59273911
-          }
-          Rotation {
-            Yaw: 89.9999542
-          }
-          Scale {
-            X: 0.0216475781
-            Y: 0.0397833697
-            Z: 0.0606815
-          }
-        }
-        ParentId: 13571263185690873952
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 5838555605866310072
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 1
-              G: 1
-              B: 1
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 16965777294932964901
-          }
-          Teams {
-          }
-          DisableCastShadows: true
-          DisableReceiveDecals: true
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 649984354005596201
-        Name: "Modern Weapon - Grip 04"
-        Transform {
-          Location {
-            X: -0.222086906
-            Y: -0.110616684
-            Z: 8.6464119
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 13571263185690873952
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 1
-              G: 1
-              B: 1
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Trim:color"
-            Color {
-              R: 1
-              G: 1
-              B: 1
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Trim:id"
-            AssetReference {
-              Id: 5838555605866310072
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 5838555605866310072
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 15552769917126078605
-          }
-          Teams {
-          }
-          DisableCastShadows: true
-          DisableReceiveDecals: true
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 5838639204757265369
-        Name: "Modern Weapon - Sight Forward 01"
-        Transform {
-          Location {
-            X: 27.5106201
-            Z: 19.9975243
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 13571263185690873952
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_Detail1:id"
-            AssetReference {
-              Id: 5838555605866310072
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:color"
-            Color {
-              R: 1
-              G: 1
-              B: 1
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 1
-              G: 1
-              B: 1
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 5838555605866310072
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 7395101924488058849
-          }
-          Teams {
-          }
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 14410090152755893277
-        Name: "Modern Weapon - Sight Rear 01"
-        Transform {
-          Location {
-            X: -7.69331264
-            Z: 19.2971725
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 13571263185690873952
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 1
-              G: 1
-              B: 1
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 5838555605866310072
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 9117384065423546074
-          }
-          Teams {
-          }
-          DisableCastShadows: true
-          DisableReceiveDecals: true
-          StaticMesh {
-            Physics {
-            }
+        Script {
+          ScriptAsset {
+            Id: 2577854209140518759
           }
         }
       }
@@ -773,48 +516,21 @@
       }
     }
     Assets {
-      Id: 697347799158381382
-      Name: "Modern Weapon - Slide 01"
+      Id: 14237220486008111868
+      Name: "Knife - Blade"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_weap_modern_slide_001"
+        AssetId: "sm_weap_modern_knife_001"
       }
     }
     Assets {
-      Id: 16965777294932964901
-      Name: "Cube - Polished"
+      Id: 1474317466637388472
+      Name: "Knife - Handle"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_cube_hq_002"
-      }
-    }
-    Assets {
-      Id: 15552769917126078605
-      Name: "Modern Weapon - Grip 04"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_weap_modern_grip_004"
-      }
-    }
-    Assets {
-      Id: 7395101924488058849
-      Name: "Modern Weapon - Sight Forward 01"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_weap_modern_sight_forw_001"
-      }
-    }
-    Assets {
-      Id: 9117384065423546074
-      Name: "Modern Weapon - Sight Rear 01"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_weap_modern_sight_rear_002"
+        AssetId: "sm_weap_modern_knife_handle_001"
       }
     }
     PrimaryAssetId {

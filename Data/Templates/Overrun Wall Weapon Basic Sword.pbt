@@ -1,13 +1,13 @@
 ﻿Assets {
-  Id: 11954596756513607817
-  Name: "Overrun Wall Weapon Basic Pistol"
+  Id: 12289882312617958317
+  Name: "Overrun Wall Weapon Basic Sword"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 16750022872046165057
+      RootId: 8142315959314213260
       Objects {
-        Id: 16750022872046165057
-        Name: "Overrun Wall Weapon Basic Pistol"
+        Id: 8142315959314213260
+        Name: "Overrun Wall Weapon Basic Sword"
         Transform {
           Scale {
             X: 1
@@ -16,9 +16,9 @@
           }
         }
         ParentId: 6538324789638676258
-        ChildIds: 16087585303900235575
-        ChildIds: 12327541943399218918
-        ChildIds: 2111972060741272325
+        ChildIds: 3566575126170432885
+        ChildIds: 11208291924209880473
+        ChildIds: 14219762194858039946
         UnregisteredParameters {
           Overrides {
             Name: "cs:asset"
@@ -32,7 +32,7 @@
           }
           Overrides {
             Name: "cs:basic_id"
-            String: "E22EA37EB8218DAE"
+            String: "D9F72E4BF46D6BF2"
           }
           Overrides {
             Name: "cs:upgrade_id"
@@ -40,23 +40,23 @@
           }
           Overrides {
             Name: "cs:basic_price"
-            Int: 500
+            Int: 0
           }
           Overrides {
             Name: "cs:basic_ammo_price"
-            Int: 200
+            Int: 0
           }
           Overrides {
             Name: "cs:upgraded_ammo_price"
-            Int: 2000
+            Int: 0
           }
           Overrides {
             Name: "cs:max_basic_ammo"
-            Int: 96
+            Int: 0
           }
           Overrides {
             Name: "cs:max_upgraded_ammo"
-            Int: 192
+            Int: 0
           }
           Overrides {
             Name: "cs:can_afford_color"
@@ -86,7 +86,7 @@
           }
           Overrides {
             Name: "cs:is_melee"
-            Bool: false
+            Bool: true
           }
         }
         Collidable_v2 {
@@ -97,11 +97,10 @@
         }
         Folder {
           IsFilePartition: true
-          FilePartitionName: "Overrun Wall Weapon Basic Pistol"
         }
       }
       Objects {
-        Id: 16087585303900235575
+        Id: 3566575126170432885
         Name: "ClientContext"
         Transform {
           Location {
@@ -117,9 +116,9 @@
             Z: 1.5
           }
         }
-        ParentId: 16750022872046165057
-        ChildIds: 3258593524636778538
-        ChildIds: 2352675836155460061
+        ParentId: 8142315959314213260
+        ChildIds: 7663613203114690405
+        ChildIds: 6231292900442671702
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -130,7 +129,7 @@
         }
       }
       Objects {
-        Id: 3258593524636778538
+        Id: 7663613203114690405
         Name: "Overrun_Wall_Weapon_Client"
         Transform {
           Location {
@@ -146,18 +145,18 @@
             Z: 0.666666687
           }
         }
-        ParentId: 16087585303900235575
+        ParentId: 3566575126170432885
         UnregisteredParameters {
           Overrides {
             Name: "cs:trigger"
             ObjectReference {
-              SubObjectId: 12327541943399218918
+              SubObjectId: 11208291924209880473
             }
           }
           Overrides {
             Name: "cs:root"
             ObjectReference {
-              SubObjectId: 16750022872046165057
+              SubObjectId: 8142315959314213260
             }
           }
           Overrides {
@@ -186,12 +185,12 @@
         }
       }
       Objects {
-        Id: 2352675836155460061
-        Name: "Basic Pistol"
+        Id: 6231292900442671702
+        Name: "Basic Knife"
         Transform {
           Location {
-            X: -471.309326
-            Y: 777.923
+            X: -471.309174
+            Y: 777.922729
             Z: -231.777924
           }
           Rotation {
@@ -202,8 +201,8 @@
             Z: 1
           }
         }
-        ParentId: 16087585303900235575
-        ChildIds: 6035214685705194158
+        ParentId: 3566575126170432885
+        ChildIds: 7631850974195632807
         UnregisteredParameters {
         }
         Collidable_v2 {
@@ -283,34 +282,7 @@
         }
       }
       Objects {
-        Id: 6035214685705194158
-        Name: "Client Art"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 2352675836155460061
-        ChildIds: 13571263185690873952
-        UnregisteredParameters {
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        NetworkContext {
-        }
-      }
-      Objects {
-        Id: 13571263185690873952
+        Id: 7631850974195632807
         Name: "Geo"
         Transform {
           Location {
@@ -318,19 +290,16 @@
           Rotation {
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 0.666666687
+            Y: 0.666666687
+            Z: 0.666666687
           }
         }
-        ParentId: 6035214685705194158
-        ChildIds: 15260957181801525536
-        ChildIds: 18442697594347786136
-        ChildIds: 649984354005596201
-        ChildIds: 5838639204757265369
-        ChildIds: 14410090152755893277
-        UnregisteredParameters {
-        }
+        ParentId: 6231292900442671702
+        ChildIds: 16377969720306941268
+        ChildIds: 16210876017384281229
+        ChildIds: 10535895686402595162
+        ChildIds: 1892024811516154980
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -342,12 +311,11 @@
         }
       }
       Objects {
-        Id: 15260957181801525536
-        Name: "Modern Weapon - Slide 01"
+        Id: 16377969720306941268
+        Name: "Fantasy Sword Grip 01"
         Transform {
           Location {
-            X: -9.3879385
-            Z: 15.6609459
+            Z: -18
           }
           Rotation {
           }
@@ -357,41 +325,8 @@
             Z: 1
           }
         }
-        ParentId: 13571263185690873952
+        ParentId: 7631850974195632807
         UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 1
-              G: 1
-              B: 1
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:id"
-            AssetReference {
-              Id: 5838555605866310072
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:color"
-            Color {
-              R: 1
-              G: 1
-              B: 1
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Trim:color"
-            Color {
-              R: 1
-              G: 1
-              B: 1
-              A: 1
-            }
-          }
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
@@ -413,11 +348,12 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 697347799158381382
+            Id: 3682206342183528038
           }
           Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
           }
-          DisableCastShadows: true
           DisableReceiveDecals: true
           StaticMesh {
             Physics {
@@ -426,30 +362,22 @@
         }
       }
       Objects {
-        Id: 18442697594347786136
-        Name: "Trigger - Rear"
+        Id: 16210876017384281229
+        Name: "Fantasy Pommel 01"
         Transform {
           Location {
-            X: 2.68535042
-            Z: 6.59273911
+            Z: -18
           }
           Rotation {
-            Yaw: 89.9999542
           }
           Scale {
-            X: 0.0216475781
-            Y: 0.0397833697
-            Z: 0.0606815
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
-        ParentId: 13571263185690873952
+        ParentId: 7631850974195632807
         UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 5838555605866310072
-            }
-          }
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
@@ -457,6 +385,12 @@
               G: 1
               B: 1
               A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 5838555605866310072
             }
           }
         }
@@ -468,11 +402,12 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 16965777294932964901
+            Id: 1383772742094820961
           }
           Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
           }
-          DisableCastShadows: true
           DisableReceiveDecals: true
           StaticMesh {
             Physics {
@@ -481,13 +416,11 @@
         }
       }
       Objects {
-        Id: 649984354005596201
-        Name: "Modern Weapon - Grip 04"
+        Id: 10535895686402595162
+        Name: "Fantasy Sword Guard 01"
         Transform {
           Location {
-            X: -0.222086906
-            Y: -0.110616684
-            Z: 8.6464119
+            Z: 8
           }
           Rotation {
           }
@@ -497,7 +430,7 @@
             Z: 1
           }
         }
-        ParentId: 13571263185690873952
+        ParentId: 7631850974195632807
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -506,6 +439,18 @@
               G: 1
               B: 1
               A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 5838555605866310072
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Trim:id"
+            AssetReference {
+              Id: 5838555605866310072
             }
           }
           Overrides {
@@ -517,18 +462,6 @@
               A: 1
             }
           }
-          Overrides {
-            Name: "ma:Shared_Trim:id"
-            AssetReference {
-              Id: 5838555605866310072
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 5838555605866310072
-            }
-          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -538,11 +471,12 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 15552769917126078605
+            Id: 1920010878601219178
           }
           Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
           }
-          DisableCastShadows: true
           DisableReceiveDecals: true
           StaticMesh {
             Physics {
@@ -551,12 +485,11 @@
         }
       }
       Objects {
-        Id: 5838639204757265369
-        Name: "Modern Weapon - Sight Forward 01"
+        Id: 1892024811516154980
+        Name: "Fantasy Sword Blade 02"
         Transform {
           Location {
-            X: 27.5106201
-            Z: 19.9975243
+            Z: 15
           }
           Rotation {
           }
@@ -566,8 +499,14 @@
             Z: 1
           }
         }
-        ParentId: 13571263185690873952
+        ParentId: 7631850974195632807
         UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 5838555605866310072
+            }
+          }
           Overrides {
             Name: "ma:Shared_Detail1:id"
             AssetReference {
@@ -575,25 +514,7 @@
             }
           }
           Overrides {
-            Name: "ma:Shared_Detail1:color"
-            Color {
-              R: 1
-              G: 1
-              B: 1
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 1
-              G: 1
-              B: 1
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
+            Name: "ma:Shared_Trim:id"
             AssetReference {
               Id: 5838555605866310072
             }
@@ -607,63 +528,12 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 7395101924488058849
+            Id: 4342756216088781504
           }
           Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
           }
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 14410090152755893277
-        Name: "Modern Weapon - Sight Rear 01"
-        Transform {
-          Location {
-            X: -7.69331264
-            Z: 19.2971725
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 13571263185690873952
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 1
-              G: 1
-              B: 1
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 5838555605866310072
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 9117384065423546074
-          }
-          Teams {
-          }
-          DisableCastShadows: true
           DisableReceiveDecals: true
           StaticMesh {
             Physics {
@@ -672,7 +542,7 @@
         }
       }
       Objects {
-        Id: 12327541943399218918
+        Id: 11208291924209880473
         Name: "Trigger"
         Transform {
           Location {
@@ -686,7 +556,7 @@
             Z: 2.56026721
           }
         }
-        ParentId: 16750022872046165057
+        ParentId: 8142315959314213260
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -703,7 +573,7 @@
         }
       }
       Objects {
-        Id: 2111972060741272325
+        Id: 14219762194858039946
         Name: "ServerContext"
         Transform {
           Location {
@@ -716,8 +586,8 @@
             Z: 1
           }
         }
-        ParentId: 16750022872046165057
-        ChildIds: 10670131652563543676
+        ParentId: 8142315959314213260
+        ChildIds: 6249053634460839281
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -729,7 +599,7 @@
         }
       }
       Objects {
-        Id: 10670131652563543676
+        Id: 6249053634460839281
         Name: "Overrun_Wall_Weapon_Server"
         Transform {
           Location {
@@ -744,18 +614,18 @@
             Z: 1
           }
         }
-        ParentId: 2111972060741272325
+        ParentId: 14219762194858039946
         UnregisteredParameters {
           Overrides {
             Name: "cs:trigger"
             ObjectReference {
-              SubObjectId: 12327541943399218918
+              SubObjectId: 11208291924209880473
             }
           }
           Overrides {
             Name: "cs:root"
             ObjectReference {
-              SubObjectId: 16750022872046165057
+              SubObjectId: 8142315959314213260
             }
           }
         }
@@ -773,48 +643,39 @@
       }
     }
     Assets {
-      Id: 697347799158381382
-      Name: "Modern Weapon - Slide 01"
+      Id: 3682206342183528038
+      Name: "Fantasy Sword Grip 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_weap_modern_slide_001"
+        AssetId: "sm_weap_fan_grip_sword_001"
       }
     }
     Assets {
-      Id: 16965777294932964901
-      Name: "Cube - Polished"
+      Id: 1383772742094820961
+      Name: "Fantasy Pommel 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_cube_hq_002"
+        AssetId: "sm_weap_fan_pommel_001"
       }
     }
     Assets {
-      Id: 15552769917126078605
-      Name: "Modern Weapon - Grip 04"
+      Id: 1920010878601219178
+      Name: "Fantasy Sword Guard 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_weap_modern_grip_004"
+        AssetId: "sm_weap_fan_guard_sword_001"
       }
     }
     Assets {
-      Id: 7395101924488058849
-      Name: "Modern Weapon - Sight Forward 01"
+      Id: 4342756216088781504
+      Name: "Fantasy Sword Blade 02"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_weap_modern_sight_forw_001"
-      }
-    }
-    Assets {
-      Id: 9117384065423546074
-      Name: "Modern Weapon - Sight Rear 01"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_weap_modern_sight_rear_002"
+        AssetId: "sm_weap_fan_blade_sword_002"
       }
     }
     PrimaryAssetId {

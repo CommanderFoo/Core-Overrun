@@ -28,6 +28,18 @@ Objects {
         Id: 3790091821921381577
       }
     }
+    Overrides {
+      Name: "cs:OverrunBasicAssault"
+      AssetReference {
+        Id: 6938449804404030971
+      }
+    }
+    Overrides {
+      Name: "cs:OverrunBasicSword"
+      AssetReference {
+        Id: 15706073129236130802
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -195,7 +207,7 @@ Objects {
 }
 Objects {
   Id: 8027858075814413371
-  Name: "Overrun_Player_Ammo"
+  Name: "Overrun_Player_Ammo_Client"
   Transform {
     Location {
     }
@@ -684,7 +696,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceon"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   NetworkContext {
     Type: Server

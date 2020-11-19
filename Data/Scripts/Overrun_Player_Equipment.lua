@@ -8,14 +8,12 @@ function on_player_joined(player)
 	equipment:Equip(player)
 end
 
--- Think about moving asset out of the broadcast and doing a lookup
--- table instead?
-
 function bought_item(player, asset_id, max_basic_ammo, price)
 	if(#player:GetEquipment() > 0) then
 		local equipment = player:GetEquipment()[1]
+		local is_melee = equipment:GetCustomProperty("is_melee")
 
-		if(equipment:IsA("Weapon")) then
+		if(equipment:IsA("Weapon") or is_melee) then
 			local asset = Overrun_Weapon_Lookup.context.get_asset(asset_id)
 
 			if(asset ~= nil) then
@@ -25,10 +23,13 @@ function bought_item(player, asset_id, max_basic_ammo, price)
 
 				player:SetResource("rounds", max_basic_ammo)
 
-				new_weapon.currentAmmo = max_basic_ammo
+				if(new_weapon.currentAmmo ~= nil) then
+					new_weapon.currentAmmo = max_basic_ammo
+				end
+
 				new_weapon:Equip(player)
 				
-				Events.BroadcastToPlayer(player, "on_audio_purchase")
+				Events.BroadcastToPlayer(player, "on_purchase_complete", new_weapon:GetCustomProperty("is_melee"))
 			end
 		end
 	end

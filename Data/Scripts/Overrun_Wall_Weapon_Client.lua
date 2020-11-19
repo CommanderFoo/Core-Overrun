@@ -25,36 +25,45 @@ function on_trigger_enter(t, obj)
 		if(#obj:GetEquipment() > 0) then
 			local equipment = obj:GetEquipment()[1]
 
-			if(equipment ~= nil and equipment:IsA("Weapon")) then
-				local id = equipment:GetCustomProperty("asset_id")
-				local money = local_player:GetResource("money")
-				local rounds = local_player:GetResource("rounds")
+			if(equipment ~= nil) then
+				local is_melee = equipment:GetCustomProperty("is_melee")
+				
+				if(equipment:IsA("Weapon") or is_melee) then
+					local id = equipment:GetCustomProperty("asset_id")
+					local money = local_player:GetResource("money")
+					local rounds = local_player:GetResource("rounds")
 
-				if(id == basic_id or id == upgrade_id) then
-					if(id == basic_id) then
-						if(money >= basic_ammo_price) then
-							purchase_ui.text = "Press [F] to purchase ammo for " .. PIXELDEPTH.Utils.number_format(basic_ammo_price)
-							purchase_ui:SetColor(can_afford_color)
-						else
-							purchase_ui.text = "Ammo cost " .. PIXELDEPTH.Utils.number_format(basic_price)
-							purchase_ui:SetColor(cant_afford_color)
+					if((id == basic_id or id == upgrade_id) and not is_melee) then
+						if(id == basic_id) then
+							if(money >= basic_ammo_price) then
+								purchase_ui.text = "Press [F] to purchase ammo for " .. PIXELDEPTH.Utils.number_format(basic_ammo_price)
+								purchase_ui:SetColor(can_afford_color)
+							else
+								purchase_ui.text = "Ammo cost " .. PIXELDEPTH.Utils.number_format(basic_price)
+								purchase_ui:SetColor(cant_afford_color)
+							end
+						elseif(id == upgrade_id) then
+							if(money >= upgraded_ammo_price) then
+								purchase_ui.text = "Press [F] to purchase upgraded ammo for " .. PIXELDEPTH.Utils.number_format(upgraded_ammo_price)
+								purchase_ui:SetColor(can_afford_color)
+							else
+								purchase_ui.text = "Ammo cost " .. PIXELDEPTH.Utils.number_format(upgraded_ammo_price)
+								purchase_ui:SetColor(cant_afford_color)
+							end
 						end
-					elseif(id == upgrade_id) then
-						if(money >= upgraded_ammo_price) then
-							purchase_ui.text = "Press [F] to purchase upgraded ammo for " .. PIXELDEPTH.Utils.number_format(upgraded_ammo_price)
-							purchase_ui:SetColor(can_afford_color)
-						else
-							purchase_ui.text = "Ammo cost " .. PIXELDEPTH.Utils.number_format(upgraded_ammo_price)
-							purchase_ui:SetColor(cant_afford_color)
-						end
-					end
-				else
-					if(money >= basic_price) then
-						purchase_ui.text = "Press [F] to purchase this weapon for " .. PIXELDEPTH.Utils.number_format(basic_price)
-						purchase_ui:SetColor(can_afford_color)
 					else
-						purchase_ui.text = "Weapon cost " .. PIXELDEPTH.Utils.number_format(basic_price)
-						purchase_ui:SetColor(cant_afford_color)
+						if(money >= basic_price) then
+							if(basic_price == 0) then
+								purchase_ui.text = "Press [F] to get this weapon for free"
+							else
+								purchase_ui.text = "Press [F] to purchase this weapon for " .. PIXELDEPTH.Utils.number_format(basic_price)
+							end
+
+							purchase_ui:SetColor(can_afford_color)
+						else
+							purchase_ui.text = "Weapon cost " .. PIXELDEPTH.Utils.number_format(basic_price)
+							purchase_ui:SetColor(cant_afford_color)
+						end
 					end
 				end
 
