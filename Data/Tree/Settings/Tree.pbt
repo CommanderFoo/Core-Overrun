@@ -139,14 +139,14 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "bp:Use Temperature"
-      Bool: false
+      Bool: true
     }
     Overrides {
       Name: "bp:Light Color"
       Color {
-        R: 1
-        G: 0.955973327
-        B: 0.73791039
+        R: 0.560285568
+        G: 0.514000058
+        B: 1
         A: 1
       }
     }
@@ -174,7 +174,7 @@ Objects {
     }
     Overrides {
       Name: "bp:Intensity"
-      Float: 5
+      Float: 1.85822952
     }
     Overrides {
       Name: "bp:Sun Disc Color"
@@ -208,7 +208,15 @@ Objects {
     }
     Overrides {
       Name: "bp:Cast Shadows"
-      Bool: false
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Soft Distance Shadows"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Temperature"
+      Float: 10000
     }
   }
   Collidable_v2 {
@@ -249,7 +257,7 @@ Objects {
     }
     Overrides {
       Name: "bp:Intensity"
-      Float: 5
+      Float: 4.16593933
     }
     Overrides {
       Name: "bp:Lower Hemisphere Color"

@@ -1,10 +1,10 @@
 ﻿Assets {
-  Id: 12095835209017042614
-  Name: "Cube"
-  PlatformAssetType: 1
+  Id: 16742125756419714110
+  Name: "BG Flat 004"
+  PlatformAssetType: 9
   PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cube_002"
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundNoOutline_22"
   }
 }
 Assets {
@@ -77,15 +77,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_foliage_gen_flower_wild_lily_001_ref"
-  }
-}
-Assets {
-  Id: 3994090323722992185
-  Name: "Wood 2x4 4m"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_two-by-four_3m"
   }
 }
 Assets {

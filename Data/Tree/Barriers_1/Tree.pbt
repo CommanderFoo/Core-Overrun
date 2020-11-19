@@ -584,6 +584,14 @@ Objects {
   ChildIds: 14341518755881839253
   ChildIds: 8957746747828243827
   ChildIds: 15766042138679256877
+  ChildIds: 585297118004028304
+  ChildIds: 5462206673477570882
+  ChildIds: 14779838557468990363
+  ChildIds: 17694343749287790310
+  ChildIds: 545704132313888471
+  ChildIds: 6016948017254028967
+  ChildIds: 709888858740806784
+  ChildIds: 5293260250399232060
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -593,6 +601,534 @@ Objects {
   Folder {
     Model {
     }
+  }
+}
+Objects {
+  Id: 5293260250399232060
+  Name: "Barbed Wire"
+  Transform {
+    Location {
+      X: -1175.25903
+      Y: 3723.51807
+      Z: 206.865784
+    }
+    Rotation {
+      Pitch: -71.7197571
+      Yaw: 87.2406616
+      Roll: -143.160355
+    }
+    Scale {
+      X: 1.38710058
+      Y: 1.38826275
+      Z: 1.38826394
+    }
+  }
+  ParentId: 2263102109253131667
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 6110151164091798177
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.581273
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 1
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 11036095586913707253
+    }
+    Teams {
+    }
+    DisableReceiveDecals: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 10531463749659879718
+    SubobjectId: 12960129855789037126
+    InstanceId: 6511113659018438411
+    TemplateId: 10831384472297433797
+  }
+}
+Objects {
+  Id: 709888858740806784
+  Name: "Barbed Wire"
+  Transform {
+    Location {
+      X: -1270.5802
+      Y: 3727.53857
+      Z: 206.865707
+    }
+    Rotation {
+      Pitch: -71.7197571
+      Yaw: 87.2406616
+      Roll: -143.160355
+    }
+    Scale {
+      X: 1.38710058
+      Y: 1.38826275
+      Z: 1.38826394
+    }
+  }
+  ParentId: 2263102109253131667
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 6110151164091798177
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.581273
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 1
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 11036095586913707253
+    }
+    Teams {
+    }
+    DisableReceiveDecals: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 10531463749659879718
+    SubobjectId: 12960129855789037126
+    InstanceId: 6511113659018438411
+    TemplateId: 10831384472297433797
+  }
+}
+Objects {
+  Id: 6016948017254028967
+  Name: "Barbed Wire"
+  Transform {
+    Location {
+      X: 142.301849
+      Y: 5921.61084
+      Z: 199.534546
+    }
+    Rotation {
+      Pitch: -71.7204895
+      Yaw: 175.96608
+      Roll: -143.159943
+    }
+    Scale {
+      X: 1.38710058
+      Y: 1.38826275
+      Z: 1.38826394
+    }
+  }
+  ParentId: 2263102109253131667
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 6110151164091798177
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.581273
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 1
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 11036095586913707253
+    }
+    Teams {
+    }
+    DisableReceiveDecals: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 10531463749659879718
+    SubobjectId: 12960129855789037126
+    InstanceId: 6511113659018438411
+    TemplateId: 10831384472297433797
+  }
+}
+Objects {
+  Id: 545704132313888471
+  Name: "Barbed Wire"
+  Transform {
+    Location {
+      X: 136.161835
+      Y: 5826.40283
+      Z: 199.534515
+    }
+    Rotation {
+      Pitch: -71.7204895
+      Yaw: 175.96608
+      Roll: -143.159943
+    }
+    Scale {
+      X: 1.38710058
+      Y: 1.38826275
+      Z: 1.38826394
+    }
+  }
+  ParentId: 2263102109253131667
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 6110151164091798177
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.581273
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 1
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 11036095586913707253
+    }
+    Teams {
+    }
+    DisableReceiveDecals: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 10531463749659879718
+    SubobjectId: 12960129855789037126
+    InstanceId: 6511113659018438411
+    TemplateId: 10831384472297433797
+  }
+}
+Objects {
+  Id: 17694343749287790310
+  Name: "Barbed Wire"
+  Transform {
+    Location {
+      X: -422.740051
+      Y: -4694.87451
+      Z: 199.534546
+    }
+    Rotation {
+      Pitch: -71.7204
+      Yaw: 175.96608
+      Roll: -143.159836
+    }
+    Scale {
+      X: 1.38710058
+      Y: 1.38826275
+      Z: 1.38826394
+    }
+  }
+  ParentId: 2263102109253131667
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 6110151164091798177
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.581273
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 1
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 11036095586913707253
+    }
+    Teams {
+    }
+    DisableReceiveDecals: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 10531463749659879718
+    SubobjectId: 12960129855789037126
+    InstanceId: 6511113659018438411
+    TemplateId: 10831384472297433797
+  }
+}
+Objects {
+  Id: 14779838557468990363
+  Name: "Barbed Wire"
+  Transform {
+    Location {
+      X: -428.880066
+      Y: -4790.08252
+      Z: 199.534515
+    }
+    Rotation {
+      Pitch: -71.7204
+      Yaw: 175.96608
+      Roll: -143.159836
+    }
+    Scale {
+      X: 1.38710058
+      Y: 1.38826275
+      Z: 1.38826394
+    }
+  }
+  ParentId: 2263102109253131667
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 6110151164091798177
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.581273
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 1
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 11036095586913707253
+    }
+    Teams {
+    }
+    DisableReceiveDecals: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 10531463749659879718
+    SubobjectId: 12960129855789037126
+    InstanceId: 6511113659018438411
+    TemplateId: 10831384472297433797
+  }
+}
+Objects {
+  Id: 5462206673477570882
+  Name: "Barbed Wire"
+  Transform {
+    Location {
+      X: 986.617432
+      Y: -2571.19971
+      Z: 243.083282
+    }
+    Rotation {
+      Pitch: -71.7208862
+      Yaw: 89.6544647
+      Roll: -143.159424
+    }
+    Scale {
+      X: 1.38710058
+      Y: 1.38826275
+      Z: 1.38826394
+    }
+  }
+  ParentId: 2263102109253131667
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 6110151164091798177
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.581273
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 1
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 11036095586913707253
+    }
+    Teams {
+    }
+    DisableReceiveDecals: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 10531463749659879718
+    SubobjectId: 12960129855789037126
+    InstanceId: 6511113659018438411
+    TemplateId: 10831384472297433797
+  }
+}
+Objects {
+  Id: 585297118004028304
+  Name: "Barbed Wire"
+  Transform {
+    Location {
+      X: 891.209106
+      Y: -2571.19971
+      Z: 243.083282
+    }
+    Rotation {
+      Pitch: -108.279114
+      Yaw: -90.3455505
+      Roll: 36.8406067
+    }
+    Scale {
+      X: 1.38710058
+      Y: 1.38826275
+      Z: 1.38826394
+    }
+  }
+  ParentId: 2263102109253131667
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 6110151164091798177
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.581273
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 1
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 11036095586913707253
+    }
+    Teams {
+    }
+    DisableReceiveDecals: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 10531463749659879718
+    SubobjectId: 12960129855789037126
+    InstanceId: 6511113659018438411
+    TemplateId: 10831384472297433797
   }
 }
 Objects {

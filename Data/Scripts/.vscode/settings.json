@@ -18,6 +18,10 @@
     "WeaponSpreadClient.lua": true,
     "WeaponAutoReloadClient.lua": true,
     "WeaponAimClient.lua": true,
-    "WeaponReticleUIClient.lua": true
+    "WeaponReticleUIClient.lua": true,
+    "EquipmentAttachObjectToPlayer.lua": true,
+    "EquipmentMeleeAttacksServer.lua": true,
+    "EquipmentStanceServer.lua": true,
+    "EquipmentMeleeAttacksClient.lua": true
   }
 }

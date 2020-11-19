@@ -18,7 +18,7 @@ local max_upgraded_ammo = root:GetCustomProperty("max_upgraded_ammo")
 local can_afford_color = root:GetCustomProperty("can_afford_color")
 local cant_afford_color = root:GetCustomProperty("cant_afford_color")
 
-local_player = Game.GetLocalPlayer()
+local local_player = Game.GetLocalPlayer()
 
 function on_trigger_enter(t, obj)
 	if(obj:IsA("Player") and obj.id == local_player.id) then
@@ -67,7 +67,7 @@ function on_trigger_enter(t, obj)
 					end
 				end
 
-				purchase_ui.visibility = Visibility.FORCE_ON
+				purchase_ui.parent.visibility = Visibility.FORCE_ON
 			end
 		end
 	end
@@ -75,7 +75,7 @@ end
 
 function on_trigger_exit(t, obj)
 	if(obj:IsA("Player") and obj.id == local_player.id) then
-		purchase_ui.visibility = Visibility.FORCE_OFF
+		purchase_ui.parent.visibility = Visibility.FORCE_OFF
 	end
 end
 

@@ -1,74 +1,23 @@
-﻿Name: "Foliage"
-RootId: 381984274143651690
+﻿Name: "Blocking Player Colliders"
+RootId: 2792350089564264743
 Objects {
-  Id: 4119957274865248739
-  Name: "MergedModel"
+  Id: 5491820028231341023
+  Name: "Cube"
   Transform {
     Location {
-      X: -2287.17749
-      Y: -4515.86377
-      Z: -0.000732421875
+      X: 429.859741
+      Y: -4856.0249
+      Z: -0.560440063
     }
     Rotation {
     }
     Scale {
-      X: 1
-      Y: 1
-      Z: 1
+      X: 0.670273483
+      Y: 3.40386772
+      Z: 1.27105725
     }
   }
-  ParentId: 381984274143651690
-  ChildIds: 17586436776852014565
-  ChildIds: 8190137320560335945
-  ChildIds: 12091188627589778599
-  ChildIds: 6328111039865798068
-  ChildIds: 7158171180262614130
-  ChildIds: 16098436449511052612
-  ChildIds: 808809365339219372
-  ChildIds: 10384425826790581600
-  ChildIds: 8560871410468981483
-  ChildIds: 1241448324480467867
-  ChildIds: 5990086894940134705
-  ChildIds: 10240608368690442223
-  ChildIds: 16046359228488879325
-  ChildIds: 14362245463521071544
-  ChildIds: 8484453446736814092
-  ChildIds: 9119822532311580644
-  ChildIds: 905729128507960006
-  ChildIds: 13285074080821536173
-  ChildIds: 9542997534012902187
-  ChildIds: 1403280251934195316
-  ChildIds: 4983651137132195926
-  ChildIds: 7977052824561701489
-  ChildIds: 74180694761652081
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    Model {
-    }
-  }
-}
-Objects {
-  Id: 74180694761652081
-  Name: "Bush 02"
-  Transform {
-    Location {
-      X: -2514.92505
-      Y: -3016.70313
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4119957274865248739
+  ParentId: 2792350089564264743
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -77,7 +26,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 12321102101527006931
+      Id: 12095835209017042614
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -91,23 +40,23 @@ Objects {
   }
 }
 Objects {
-  Id: 7977052824561701489
-  Name: "Bush 02"
+  Id: 3378450457472684797
+  Name: "Cube"
   Transform {
     Location {
-      X: -2344.12964
-      Y: -4048.16895
-      Z: 0.000244140625
+      X: -366.643463
+      Y: 3577.85791
+      Z: 17.1211243
     }
     Rotation {
     }
     Scale {
-      X: 1
-      Y: 1
-      Z: 1
+      X: 3.4142859
+      Y: 0.788310528
+      Z: 1.59858918
     }
   }
-  ParentId: 4119957274865248739
+  ParentId: 2792350089564264743
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -116,7 +65,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 12321102101527006931
+      Id: 12095835209017042614
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -130,23 +79,23 @@ Objects {
   }
 }
 Objects {
-  Id: 4983651137132195926
-  Name: "Bush 02"
+  Id: 7873700804454166370
+  Name: "Cube"
   Transform {
     Location {
-      X: -2734.4563
-      Y: 1249.46533
-      Z: 0.000732421875
+      X: 1028.52283
+      Y: 5725.74
+      Z: 12.2928467
     }
     Rotation {
     }
     Scale {
-      X: 1
-      Y: 1
-      Z: 1
+      X: 0.527932167
+      Y: 3.30736423
+      Z: 1.46062493
     }
   }
-  ParentId: 4119957274865248739
+  ParentId: 2792350089564264743
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -155,7 +104,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 12321102101527006931
+      Id: 12095835209017042614
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -169,23 +118,23 @@ Objects {
   }
 }
 Objects {
-  Id: 1403280251934195316
-  Name: "Bush 02"
+  Id: 9541564907839034391
+  Name: "Cube"
   Transform {
     Location {
-      X: 2116.0459
-      Y: 3557.56
-      Z: 0.000549316406
+      X: 2167.94458
+      Y: -1864.51025
+      Z: -9.34680176
     }
     Rotation {
     }
     Scale {
-      X: 1
+      X: 3.06146693
       Y: 1
-      Z: 1
+      Z: 1.55654728
     }
   }
-  ParentId: 4119957274865248739
+  ParentId: 2792350089564264743
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -194,7 +143,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 12321102101527006931
+      Id: 12095835209017042614
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -208,23 +157,23 @@ Objects {
   }
 }
 Objects {
-  Id: 9542997534012902187
-  Name: "Bush 02"
+  Id: 7667427132045088057
+  Name: "Cube"
   Transform {
     Location {
-      X: 2825.73755
-      Y: 2515.55664
-      Z: 0.000549316406
+      X: 1802.77014
+      Y: -2685.40186
+      Z: 53.8258667
     }
     Rotation {
     }
     Scale {
-      X: 1
-      Y: 1
-      Z: 1
+      X: 2.98144031
+      Y: 0.599667966
+      Z: 1.84029257
     }
   }
-  ParentId: 4119957274865248739
+  ParentId: 2792350089564264743
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -233,7 +182,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 12321102101527006931
+      Id: 12095835209017042614
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -247,23 +196,24 @@ Objects {
   }
 }
 Objects {
-  Id: 13285074080821536173
-  Name: "Bush 02"
+  Id: 13360581374618955457
+  Name: "Cube"
   Transform {
     Location {
-      X: 3237.22778
-      Y: 1697.16064
-      Z: 0.000671386719
+      X: -1372.21338
+      Y: -3567.35693
+      Z: 10.024231
     }
     Rotation {
+      Yaw: -179.999954
     }
     Scale {
-      X: 1
-      Y: 1
-      Z: 1
+      X: 2.41697383
+      Y: 0.499315739
+      Z: 0.479944706
     }
   }
-  ParentId: 4119957274865248739
+  ParentId: 2792350089564264743
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -272,7 +222,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 12321102101527006931
+      Id: 12095835209017042614
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -286,23 +236,24 @@ Objects {
   }
 }
 Objects {
-  Id: 905729128507960006
-  Name: "Tree Redwood Big"
+  Id: 12112594076951558615
+  Name: "Cube"
   Transform {
     Location {
-      X: 24.4836426
-      Y: -8462.57324
-      Z: 0.000671386719
+      X: -1893.39282
+      Y: -3567.35693
+      Z: 10.024231
     }
     Rotation {
+      Yaw: -179.999954
     }
     Scale {
-      X: 1
-      Y: 1
-      Z: 1
+      X: 2.41697383
+      Y: 0.499315739
+      Z: 0.479944706
     }
   }
-  ParentId: 4119957274865248739
+  ParentId: 2792350089564264743
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -311,7 +262,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 7965112509213566676
+      Id: 12095835209017042614
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -325,24 +276,23 @@ Objects {
   }
 }
 Objects {
-  Id: 9119822532311580644
-  Name: "Tree Redwood Small"
+  Id: 5711699909833018752
+  Name: "Cube"
   Transform {
     Location {
-      X: 1738.99487
-      Y: -4848.60938
-      Z: 0.000610351563
+      X: 2597.75317
+      Y: 5563.97314
+      Z: 12.5253906
     }
     Rotation {
-      Yaw: 31.255703
     }
     Scale {
-      X: 1
-      Y: 1
+      X: 3.21315861
+      Y: 0.572802722
       Z: 1
     }
   }
-  ParentId: 4119957274865248739
+  ParentId: 2792350089564264743
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -351,7 +301,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 2164073212463708164
+      Id: 12095835209017042614
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -365,23 +315,24 @@ Objects {
   }
 }
 Objects {
-  Id: 8484453446736814092
-  Name: "Tree Redwood Small"
+  Id: 7930498593431899775
+  Name: "Cube"
   Transform {
     Location {
-      X: 1708.56812
-      Y: -3380.47852
-      Z: 0.000610351563
+      X: -398.960602
+      Y: 29.2231445
+      Z: 33.344162
     }
     Rotation {
+      Yaw: 45.2473488
     }
     Scale {
       X: 1
-      Y: 1
-      Z: 1
+      Y: 1.71896529
+      Z: 1.55567753
     }
   }
-  ParentId: 4119957274865248739
+  ParentId: 2792350089564264743
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -390,7 +341,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 2164073212463708164
+      Id: 12095835209017042614
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -404,23 +355,23 @@ Objects {
   }
 }
 Objects {
-  Id: 14362245463521071544
-  Name: "Tree Redwood Small"
+  Id: 14079722232521504702
+  Name: "Cube"
   Transform {
     Location {
-      X: -2021.04028
-      Y: -2807.03516
-      Z: 0.0009765625
+      X: 43.1530457
+      Y: 63.2817383
+      Z: 33.344162
     }
     Rotation {
     }
     Scale {
       X: 1
-      Y: 1
-      Z: 1
+      Y: 1.71896529
+      Z: 1.55567753
     }
   }
-  ParentId: 4119957274865248739
+  ParentId: 2792350089564264743
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -429,7 +380,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 2164073212463708164
+      Id: 12095835209017042614
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -443,23 +394,23 @@ Objects {
   }
 }
 Objects {
-  Id: 16046359228488879325
-  Name: "Bush 02"
+  Id: 13340987311716411739
+  Name: "Cube"
   Transform {
     Location {
-      X: -1231.26929
-      Y: -3395.8584
-      Z: 0.000854492188
+      X: -726.95459
+      Y: 2762.69287
+      Z: 10.4725037
     }
     Rotation {
     }
     Scale {
-      X: 1
+      X: 2.04276299
       Y: 1
-      Z: 1
+      Z: 1.56584156
     }
   }
-  ParentId: 4119957274865248739
+  ParentId: 2792350089564264743
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -468,7 +419,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 12321102101527006931
+      Id: 12095835209017042614
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -482,23 +433,23 @@ Objects {
   }
 }
 Objects {
-  Id: 10240608368690442223
-  Name: "Bush 02"
+  Id: 15121615861930105215
+  Name: "Cube"
   Transform {
     Location {
-      X: -2610.53247
-      Y: -3620.37891
-      Z: 0.00048828125
+      X: -1305.41516
+      Y: 2651.83936
+      Z: 10.4725037
     }
     Rotation {
     }
     Scale {
-      X: 1
+      X: 2.04276299
       Y: 1
-      Z: 1
+      Z: 1.56584156
     }
   }
-  ParentId: 4119957274865248739
+  ParentId: 2792350089564264743
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -507,7 +458,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 12321102101527006931
+      Id: 12095835209017042614
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -521,23 +472,23 @@ Objects {
   }
 }
 Objects {
-  Id: 5990086894940134705
-  Name: "Tree Redwood Big"
+  Id: 1145244992570906156
+  Name: "Cube"
   Transform {
     Location {
-      X: -2754.20825
-      Y: -2154.03027
-      Z: 0.000732421875
+      X: -1539.46436
+      Y: -1370.14697
+      Z: 25.34375
     }
     Rotation {
     }
     Scale {
-      X: 1
+      X: 1.97899318
       Y: 1
-      Z: 1
+      Z: 1.69763041
     }
   }
-  ParentId: 4119957274865248739
+  ParentId: 2792350089564264743
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -546,7 +497,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 7965112509213566676
+      Id: 12095835209017042614
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -560,23 +511,24 @@ Objects {
   }
 }
 Objects {
-  Id: 1241448324480467867
-  Name: "Tree Redwood Small"
+  Id: 17853689676987595656
+  Name: "Cube"
   Transform {
     Location {
-      X: -2258.9895
-      Y: 3030.29614
-      Z: 0.000915527344
+      X: -841.542236
+      Y: -2574.79053
+      Z: 29.7534943
     }
     Rotation {
+      Yaw: 2.8344667
     }
     Scale {
       X: 1
-      Y: 1
-      Z: 1
+      Y: 1.96796846
+      Z: 1.71905625
     }
   }
-  ParentId: 4119957274865248739
+  ParentId: 2792350089564264743
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -585,7 +537,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 2164073212463708164
+      Id: 12095835209017042614
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -599,23 +551,24 @@ Objects {
   }
 }
 Objects {
-  Id: 8560871410468981483
-  Name: "Tree Redwood Small"
+  Id: 14636886593806785869
+  Name: "Cube"
   Transform {
     Location {
-      X: -2216.37134
-      Y: 2252.36768
-      Z: 0.000549316406
+      X: -743.220581
+      Y: -1940.48584
+      Z: 29.7534943
     }
     Rotation {
+      Yaw: -39.9344063
     }
     Scale {
       X: 1
-      Y: 1
-      Z: 1
+      Y: 1.96796846
+      Z: 1.71905625
     }
   }
-  ParentId: 4119957274865248739
+  ParentId: 2792350089564264743
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -624,7 +577,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 2164073212463708164
+      Id: 12095835209017042614
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -638,101 +591,24 @@ Objects {
   }
 }
 Objects {
-  Id: 10384425826790581600
-  Name: "Branches Cluster Medium"
+  Id: 11583572623872656542
+  Name: "Cube"
   Transform {
     Location {
-      X: 1301.05212
-      Y: 2175.83105
-      Z: 0.000732421875
+      X: 4128.13721
+      Y: 1816.8623
+      Z: 0.000183105469
     }
     Rotation {
+      Yaw: 16.6696777
     }
     Scale {
-      X: 1
-      Y: 1
-      Z: 1
+      X: 0.354165018
+      Y: 4.98291111
+      Z: 0.609268188
     }
   }
-  ParentId: 4119957274865248739
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 1067714168958734094
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 808809365339219372
-  Name: "Branches Cluster Big"
-  Transform {
-    Location {
-      X: 2185.10352
-      Y: 3933.10425
-      Z: 0.0009765625
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4119957274865248739
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 11232411851329662557
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 16098436449511052612
-  Name: "Bush 01"
-  Transform {
-    Location {
-      X: 1976.49731
-      Y: 2741.42212
-      Z: 0.000610351563
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4119957274865248739
+  ParentId: 2792350089564264743
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -741,7 +617,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 5818051000036987312
+      Id: 12095835209017042614
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -755,23 +631,24 @@ Objects {
   }
 }
 Objects {
-  Id: 7158171180262614130
-  Name: "Bush 02"
+  Id: 9447565304854245769
+  Name: "Cube"
   Transform {
     Location {
-      X: 2046.87793
-      Y: 3048.45679
-      Z: 0.000793457031
+      X: 3411.78418
+      Y: 6934.65625
+      Z: 6.10351563e-05
     }
     Rotation {
+      Yaw: -2.20312476
     }
     Scale {
-      X: 1
-      Y: 1
-      Z: 1
+      X: 0.354165018
+      Y: 4.98291111
+      Z: 0.609268188
     }
   }
-  ParentId: 4119957274865248739
+  ParentId: 2792350089564264743
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -780,7 +657,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 12321102101527006931
+      Id: 12095835209017042614
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -794,23 +671,24 @@ Objects {
   }
 }
 Objects {
-  Id: 6328111039865798068
-  Name: "Bush 02"
+  Id: 13039684949615202124
+  Name: "Cube"
   Transform {
     Location {
-      X: 3400.09424
-      Y: 1315.85107
-      Z: 0.000671386719
+      X: -395.967926
+      Y: 8735.9
+      Z: 6.10351563e-05
     }
     Rotation {
+      Yaw: 88.5071335
     }
     Scale {
-      X: 1
-      Y: 1
-      Z: 1
+      X: 0.354165018
+      Y: 4.98291111
+      Z: 0.609268188
     }
   }
-  ParentId: 4119957274865248739
+  ParentId: 2792350089564264743
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -819,7 +697,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 12321102101527006931
+      Id: 12095835209017042614
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -833,23 +711,24 @@ Objects {
   }
 }
 Objects {
-  Id: 12091188627589778599
-  Name: "Bush 02"
+  Id: 12137791364823988303
+  Name: "Cube"
   Transform {
     Location {
-      X: -2445.95874
-      Y: 1568.37109
-      Z: 0.000732421875
+      X: -1784.10596
+      Y: 5746.60889
+      Z: 6.10351563e-05
     }
     Rotation {
+      Yaw: -178.807602
     }
     Scale {
-      X: 1
-      Y: 1
-      Z: 1
+      X: 0.354165018
+      Y: 4.98291111
+      Z: 0.609268188
     }
   }
-  ParentId: 4119957274865248739
+  ParentId: 2792350089564264743
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -858,7 +737,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 12321102101527006931
+      Id: 12095835209017042614
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -872,23 +751,24 @@ Objects {
   }
 }
 Objects {
-  Id: 8190137320560335945
-  Name: "Bush 02"
+  Id: 14958628081539092699
+  Name: "Cube"
   Transform {
     Location {
-      X: -1684.67017
-      Y: 2132.52637
-      Z: 0.000610351563
+      X: -2382.77539
+      Y: 1934.65576
+      Z: 3.05175781e-05
     }
     Rotation {
+      Yaw: 87.974
     }
     Scale {
-      X: 1
-      Y: 1
-      Z: 1
+      X: 0.354165018
+      Y: 4.98291111
+      Z: 0.609268188
     }
   }
-  ParentId: 4119957274865248739
+  ParentId: 2792350089564264743
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -897,7 +777,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 12321102101527006931
+      Id: 12095835209017042614
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -911,23 +791,24 @@ Objects {
   }
 }
 Objects {
-  Id: 17586436776852014565
-  Name: "Tree Redwood Small"
+  Id: 2289468612282727895
+  Name: "Cube"
   Transform {
     Location {
-      X: 2287.17749
-      Y: 4515.86328
-      Z: 0.000732421875
+      X: -2818.56689
+      Y: 144.874512
+      Z: 6.10351563e-05
     }
     Rotation {
+      Yaw: -174.490402
     }
     Scale {
-      X: 1
-      Y: 1
-      Z: 1
+      X: 0.354165018
+      Y: 4.98291111
+      Z: 0.609268188
     }
   }
-  ParentId: 4119957274865248739
+  ParentId: 2792350089564264743
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -936,7 +817,164 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 2164073212463708164
+      Id: 12095835209017042614
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 4686632822020556380
+  Name: "Cube"
+  Transform {
+    Location {
+      X: -1985.09668
+      Y: -4067.07861
+      Z: 6.10351563e-05
+    }
+    Rotation {
+      Yaw: -179.999985
+    }
+    Scale {
+      X: 0.354164392
+      Y: 4.33791113
+      Z: 0.609268188
+    }
+  }
+  ParentId: 2792350089564264743
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 18142517275411613520
+  Name: "Cube"
+  Transform {
+    Location {
+      X: -185.09671
+      Y: -7867.07861
+      Z: 0.000122070313
+    }
+    Rotation {
+      Yaw: -89.9999924
+    }
+    Scale {
+      X: 0.354165018
+      Y: 4.98291111
+      Z: 0.609268188
+    }
+  }
+  ParentId: 2792350089564264743
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 5295981719345637559
+  Name: "Cube"
+  Transform {
+    Location {
+      X: 2814.11377
+      Y: -7274.40381
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.354165018
+      Y: 4.98291111
+      Z: 0.609268188
+    }
+  }
+  ParentId: 2792350089564264743
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 3534292043189825622
+  Name: "Cube"
+  Transform {
+    Location {
+      X: 3575.06104
+      Y: -1470.46338
+    }
+    Rotation {
+      Yaw: -25.0188389
+    }
+    Scale {
+      X: 0.384708524
+      Y: 4.56416368
+      Z: 0.38281256
+    }
+  }
+  ParentId: 2792350089564264743
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
     }
     Teams {
       IsTeamCollisionEnabled: true

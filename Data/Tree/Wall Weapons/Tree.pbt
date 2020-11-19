@@ -32,6 +32,15 @@ Objects {
           Rotator {
           }
         }
+        Overrides {
+          Name: "cs:can_afford_color"
+          Color {
+            R: 0.14180623
+            G: 0.14180623
+            B: 0.76052475
+            A: 1
+          }
+        }
       }
     }
     TemplateAsset {
@@ -76,6 +85,15 @@ Objects {
           Name: "Rotation"
           Rotator {
             Yaw: 111.080833
+          }
+        }
+        Overrides {
+          Name: "cs:can_afford_color"
+          Color {
+            R: 0.14180623
+            G: 0.14180623
+            B: 0.76052475
+            A: 1
           }
         }
       }
@@ -124,6 +142,15 @@ Objects {
             Yaw: -90
           }
         }
+        Overrides {
+          Name: "cs:can_afford_color"
+          Color {
+            R: 0.14180623
+            G: 0.14180623
+            B: 0.76052475
+            A: 1
+          }
+        }
       }
     }
     TemplateAsset {
@@ -170,6 +197,15 @@ Objects {
             Yaw: 180
           }
         }
+        Overrides {
+          Name: "cs:can_afford_color"
+          Color {
+            R: 0.14180623
+            G: 0.14180623
+            B: 0.76052475
+            A: 1
+          }
+        }
       }
     }
     TemplateAsset {
@@ -214,6 +250,15 @@ Objects {
           Name: "Rotation"
           Rotator {
             Yaw: 68.1168213
+          }
+        }
+        Overrides {
+          Name: "cs:can_afford_color"
+          Color {
+            R: 0.14180623
+            G: 0.14180623
+            B: 0.76052475
+            A: 1
           }
         }
       }

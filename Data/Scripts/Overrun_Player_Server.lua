@@ -3,6 +3,8 @@ local timer = 20
 local starting_money = 5000000
 local round = 1
 
+-- Look at Game.StartRound() and end
+
 local players = {}
 
 local has_resouces_changed = false
