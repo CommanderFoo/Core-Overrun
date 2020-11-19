@@ -79,7 +79,7 @@ end
 
 
 function GetWrapperFor(object)
-	if object:IsA("Player") then
+	if object and object:IsA("Player") then
 		return PLAYER_WRAPPER
 	end
 	return NPC_WRAPPER

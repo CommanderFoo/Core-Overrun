@@ -36,11 +36,11 @@ function on_trigger_enter(t, obj)
 								obj:SetResource("rounds", max_upgraded_ammo)
 							end
 						elseif(money >= basic_price) then
-							Events.Broadcast("on_bought_item", obj, basic_id, max_basic_ammo, basic_price)
 							cost = basic_price
 						end
 
 						if(cost > 0) then
+							Events.Broadcast("on_bought_item", obj, basic_id, max_basic_ammo, basic_price)
 							obj:SetResource("money", math.max(0, money - cost))
 						end
 					end

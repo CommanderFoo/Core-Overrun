@@ -684,7 +684,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:forceon"
   }
   NetworkContext {
     Type: Server
@@ -8883,6 +8883,7 @@ Objects {
     Scale {
       X: 2.61375
       Y: 1.25307906
+      Z: 0.01
     }
   }
   ParentId: 11173696738678739330
@@ -9878,6 +9879,7 @@ Objects {
     Scale {
       X: 2.41628909
       Y: 3.00000143
+      Z: 0.01
     }
   }
   ParentId: 11173696738678739330
@@ -10685,6 +10687,7 @@ Objects {
     Scale {
       X: 2.41628909
       Y: 3.00000143
+      Z: 0.01
     }
   }
   ParentId: 11173696738678739330
@@ -10747,6 +10750,7 @@ Objects {
     Scale {
       X: 2.41628909
       Y: 3.00000143
+      Z: 0.01
     }
   }
   ParentId: 11173696738678739330

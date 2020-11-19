@@ -1,6 +1,23 @@
 {
-	"files.exclude": {
-		"**.pbt": true
-	}
-
+  "files.exclude": {
+    "**.pbt": true,
+    "BasicDoorControllerClient_1.lua": true,
+    "BasicDoorControllerClient.lua": true,
+    "BasicDoorControllerServer_1.lua": true,
+    "BasicDoorControllerServer.lua": true,
+    "EquipmentPickupServer.lua": true,
+    "EquipmentPickupClient.lua": true,
+    "DoubleDoorControllerClient.lua": true,
+    "DoubleDoorControllerServer.lua": true,
+    "GarageDoorScript.lua": true,
+    "DoorScript.lua": true,
+    "WeaponDamageShootServer.lua": true,
+    "WeaponAimServer.lua": true,
+    "WeaponAmmoFeedbackClient.lua": true,
+    "WeaponReticleClient.lua": true,
+    "WeaponSpreadClient.lua": true,
+    "WeaponAutoReloadClient.lua": true,
+    "WeaponAimClient.lua": true,
+    "WeaponReticleUIClient.lua": true
+  }
 }

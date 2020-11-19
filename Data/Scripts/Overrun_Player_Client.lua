@@ -65,7 +65,7 @@ function player_joined(p)
 	players[p.id].avatar_border_ui = avatar_border_ui
 
 	if(local_player.id == p.id) then
-		money_ui.text = tostring(local_player:GetResource("money"))
+		money_ui.text = PIXELDEPTH.Utils.number_format(local_player:GetResource("money"))
 		name_ui:SetColor(own_info_color)
 		name_ui.text = local_player.name
 		avatar_ui:SetImage(local_player)

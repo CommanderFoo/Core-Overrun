@@ -28,6 +28,7 @@ Objects {
   ChildIds: 3121589836909472008
   ChildIds: 7265624749015544125
   ChildIds: 8346790829017566368
+  ChildIds: 8756841199430259712
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -37,6 +38,46 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 8756841199430259712
+  Name: "Overrun NPC Zombie Girl 2"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 5428197330804731499
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Overrun NPC Zombie Guy"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 733.573242
+            Y: -8700.33203
+            Z: 25.9998474
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 18048664039051367434
+    }
   }
 }
 Objects {
@@ -2488,7 +2529,7 @@ Objects {
     Value: "mc:ecollisionsetting:forceoff"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceon"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   Folder {
     IsFilePartition: true

@@ -7,7 +7,7 @@ local max = 15
 local spawn_task = nil
 
 --Task.Wait(10)
--- [[
+--[[
 spawn_task = Task.Spawn(function()
 	local point = spawn_points:GetChildren()[math.random(#spawn_points:GetChildren())]
 	local pos = point:GetWorldPosition()

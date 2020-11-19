@@ -1,6 +1,6 @@
 ﻿local game_started = false
 local timer = 20
-local starting_money = 5000
+local starting_money = 5000000
 local round = 1
 
 local players = {}
@@ -14,7 +14,7 @@ function player_joined(p)
 		players[p.id] = {
 			
 			player = p,
-			money = 500
+			money = starting_money
 
 		}
 	end
