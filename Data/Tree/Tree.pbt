@@ -28,6 +28,8 @@ Objects {
   ChildIds: 3121589836909472008
   ChildIds: 7265624749015544125
   ChildIds: 8346790829017566368
+  ChildIds: 7508389135912318772
+  ChildIds: 6368159737168183737
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -37,6 +39,71 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 6368159737168183737
+  Name: "Wood 2x4 4m"
+  Transform {
+    Location {
+      X: -717.714355
+      Y: -2561.3457
+      Z: 23.8732605
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3994090323722992185
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 7508389135912318772
+  Name: "NewFolder"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "NewFolder"
   }
 }
 Objects {

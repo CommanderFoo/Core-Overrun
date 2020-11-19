@@ -3179,6 +3179,7 @@ Objects {
   ChildIds: 8528615705698806905
   ChildIds: 8646214424672498020
   ChildIds: 16628279317087131718
+  ChildIds: 4006621086774447511
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3188,6 +3189,72 @@ Objects {
   Folder {
     Model {
     }
+  }
+}
+Objects {
+  Id: 4006621086774447511
+  Name: "Craftsman Wall 01"
+  Transform {
+    Location {
+      X: -326.962219
+      Y: 3.00011587
+      Z: 17.4831238
+    }
+    Rotation {
+      Yaw: 90
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4131872850895316345
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Building_WallOuter:id"
+      AssetReference {
+        Id: 2758266643690185227
+      }
+    }
+    Overrides {
+      Name: "ma:Building_Foundation:id"
+      AssetReference {
+        Id: 2758266643690185227
+      }
+    }
+    Overrides {
+      Name: "ma:Building_LowerTrimOuter:id"
+      AssetReference {
+        Id: 2758266643690185227
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 4282920344287573610
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 14978251093240965811
+    SubobjectId: 15118143344973557601
+    InstanceId: 409341384887312199
+    TemplateId: 2049420351792613419
   }
 }
 Objects {
@@ -6531,6 +6598,27 @@ Objects {
       AssetReference {
         Id: 17067775927665836537
       }
+    }
+    Overrides {
+      Name: "ma:Building_WallInner:color"
+      Color {
+        R: 0.730461
+        G: 0.333632171
+        B: 0.0266313758
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Building_WallInner:utile"
+      Float: 2
+    }
+    Overrides {
+      Name: "ma:Building_WallInner:vtile"
+      Float: 2
+    }
+    Overrides {
+      Name: "ma:Building_WallInner:smart"
+      Bool: false
     }
   }
   Collidable_v2 {
@@ -11701,7 +11789,7 @@ Objects {
   Name: "Craftsman Floor 01 8m x 8m"
   Transform {
     Location {
-      X: -326.451202
+      X: -326.451
       Y: 3.50621939
       Z: 17.4831238
     }

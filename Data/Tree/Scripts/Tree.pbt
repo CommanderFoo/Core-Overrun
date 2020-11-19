@@ -40,6 +40,12 @@ Objects {
         Id: 15706073129236130802
       }
     }
+    Overrides {
+      Name: "cs:OverrunBasicSMG"
+      AssetReference {
+        Id: 17831556309989914884
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"

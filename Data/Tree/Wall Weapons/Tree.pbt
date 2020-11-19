@@ -1,6 +1,45 @@
 ﻿Name: "Wall Weapons"
 RootId: 6538324789638676258
 Objects {
+  Id: 17247977784825264103
+  Name: "Overrun Wall Weapon Basic SMG"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6538324789638676258
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9864558201461469171
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Overrun Wall Weapon Basic SMG"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -554.893066
+            Y: -3264.2356
+            Z: 180
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 11351616299957382968
+    }
+  }
+}
+Objects {
   Id: 9384885936614418900
   Name: "Overrun Wall Weapon Basic Sword"
   Transform {
