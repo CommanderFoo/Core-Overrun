@@ -17,10 +17,7 @@ function on_trigger_enter(t, obj)
 					Events.BroadcastToPlayer(obj, "on_audio_purchase")
 					obj:SetResource("money", math.max(0, money - cost))
 					
-					geo.collision = Collision.FORCE_OFF
-					geo.visibility = Visibility.FORCE_OFF
-
-					trigger.collision = Collision.FORCE_OFF
+					root:Destroy()
 				end
 			end
 		end)

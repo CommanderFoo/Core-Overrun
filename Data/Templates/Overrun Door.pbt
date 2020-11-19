@@ -7,7 +7,7 @@
       RootId: 14543558069228464333
       Objects {
         Id: 14543558069228464333
-        Name: "House 1 Front Door"
+        Name: "Overrun Door"
         Transform {
           Scale {
             X: 1
@@ -23,14 +23,31 @@
         UnregisteredParameters {
           Overrides {
             Name: "cs:cost"
-            Int: 1500
+            Int: 2000
+          }
+          Overrides {
+            Name: "cs:outline_color"
+            Color {
+              R: 0.0472381413
+              G: 0.186000109
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "cs:fade_start"
+            Int: 1400
+          }
+          Overrides {
+            Name: "cs:fade_end"
+            Int: 400
           }
         }
+        WantsNetworking: true
         Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceon"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
+          Value: "mc:evisibilitysetting:forceon"
         }
         Folder {
           IsFilePartition: true
@@ -338,8 +355,12 @@
         }
         ParentId: 14543558069228464333
         ChildIds: 6660329445554957542
+        ChildIds: 18170817965451680727
+        UnregisteredParameters {
+        }
+        WantsNetworking: true
         Collidable_v2 {
-          Value: "mc:ecollisionsetting:forceoff"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
@@ -390,6 +411,12 @@
               SubObjectId: 14543558069228464333
             }
           }
+          Overrides {
+            Name: "cs:outline"
+            ObjectReference {
+              SubObjectId: 18170817965451680727
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -400,6 +427,65 @@
         Script {
           ScriptAsset {
             Id: 13510435356378391205
+          }
+        }
+      }
+      Objects {
+        Id: 18170817965451680727
+        Name: "Outline Object"
+        Transform {
+          Location {
+            X: 140.054779
+            Z: 149.64
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 3495746164414845004
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Object To Outline"
+            ObjectReference {
+              SubObjectId: 13075082258103556735
+            }
+          }
+          Overrides {
+            Name: "bp:Thickness"
+            Float: 1
+          }
+          Overrides {
+            Name: "bp:Outline Channel"
+            Int: 1
+          }
+          Overrides {
+            Name: "bp:Hierarchy Discovery Depth"
+            Int: 2
+          }
+          Overrides {
+            Name: "bp:Min Distance"
+            Float: 7.02525902
+          }
+          Overrides {
+            Name: "bp:Enabled"
+            Bool: true
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 12723299678648922894
+          }
+          TeamSettings {
           }
         }
       }
@@ -419,6 +505,7 @@
         }
         ParentId: 14543558069228464333
         ChildIds: 497385721789612783
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -522,6 +609,15 @@
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_two-by-four_3m"
+      }
+    }
+    Assets {
+      Id: 12723299678648922894
+      Name: "Outline Object"
+      PlatformAssetType: 20
+      PrimaryAsset {
+        AssetType: "BlueprintAssetRef"
+        AssetId: "fxbp_local_outline"
       }
     }
     PrimaryAssetId {

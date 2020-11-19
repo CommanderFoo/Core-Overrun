@@ -1,13 +1,76 @@
 ﻿Name: "Doors"
 RootId: 7508389135912318772
 Objects {
-  Id: 18077741519810644090
-  Name: "House 1 Front Door"
+  Id: 2359341917586828184
+  Name: "Overrun Door"
   Transform {
     Location {
-      X: -750.641
-      Y: -5006.22559
-      Z: 54.3034668
+      X: -448.87088
+      Y: -4981.64209
+      Z: 58.3909454
+    }
+    Rotation {
+      Yaw: -179.999985
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7508389135912318772
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceon"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 14543558069228464333
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Overrun Door"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -413.849731
+            Y: -2628.00928
+            Z: 58.3909149
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -179.999969
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 6902673128315260216
+    }
+  }
+}
+Objects {
+  Id: 13774918262342810826
+  Name: "Overrun Door"
+  Transform {
+    Location {
+      X: 1055.28784
+      Y: -11959.3125
+      Z: 71.5894165
     }
     Rotation {
     }
@@ -18,11 +81,12 @@ Objects {
     }
   }
   ParentId: 7508389135912318772
+  WantsNetworking: true
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceon"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceon"
   }
   TemplateInstance {
     ParameterOverrideMap {
@@ -30,14 +94,14 @@ Objects {
       value {
         Overrides {
           Name: "Name"
-          String: "House 2 Back Door"
+          String: "Overrun Door"
         }
         Overrides {
           Name: "Position"
           Vector {
-            X: -422.843506
-            Y: -2631.64648
-            Z: 76.9446716
+            X: -448.87088
+            Y: -4981.64209
+            Z: 58.3909454
           }
         }
         Overrides {
@@ -54,10 +118,6 @@ Objects {
             Z: 1
           }
         }
-        Overrides {
-          Name: "cs:cost"
-          Int: 2000
-        }
       }
     }
     TemplateAsset {
@@ -66,13 +126,13 @@ Objects {
   }
 }
 Objects {
-  Id: 13183981885134094339
-  Name: "House 1 Front Door"
+  Id: 13575535523413459348
+  Name: "Overrun Door"
   Transform {
     Location {
-      X: 259.386047
-      Y: -9568.69434
-      Z: 54.3034668
+      X: 252.858551
+      Y: -9567.83789
+      Z: 54.0198517
     }
     Rotation {
     }
@@ -83,11 +143,12 @@ Objects {
     }
   }
   ParentId: 7508389135912318772
+  WantsNetworking: true
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceon"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceon"
   }
   TemplateInstance {
     ParameterOverrideMap {
@@ -95,75 +156,14 @@ Objects {
       value {
         Overrides {
           Name: "Name"
-          String: "House 2 Front Door"
+          String: "Overrun Door"
         }
         Overrides {
           Name: "Position"
           Vector {
-            X: -442.802338
-            Y: -4980.81201
-            Z: 54.3034668
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: 180
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 6902673128315260216
-    }
-  }
-}
-Objects {
-  Id: 17071786326196779311
-  Name: "House 1 Front Door"
-  Transform {
-    Location {
-      X: 259.386047
-      Y: -9568.69434
-      Z: 54.3034668
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 7508389135912318772
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 14543558069228464333
-      value {
-        Overrides {
-          Name: "Name"
-          String: "House 1 Back Door"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 1063.02026
-            Y: -11964.9531
-            Z: 70.5545959
+            X: 1055.28784
+            Y: -11959.3125
+            Z: 71.5894165
           }
         }
         Overrides {
@@ -179,10 +179,6 @@ Objects {
             Z: 1
           }
         }
-        Overrides {
-          Name: "cs:cost"
-          Int: 2000
-        }
       }
     }
     TemplateAsset {
@@ -191,8 +187,8 @@ Objects {
   }
 }
 Objects {
-  Id: 9047581178254524826
-  Name: "House 1 Front Door"
+  Id: 12176480301896455479
+  Name: "Overrun Door"
   Transform {
     Scale {
       X: 1
@@ -201,11 +197,12 @@ Objects {
     }
   }
   ParentId: 7508389135912318772
+  WantsNetworking: true
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceon"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceon"
   }
   TemplateInstance {
     ParameterOverrideMap {
@@ -213,14 +210,14 @@ Objects {
       value {
         Overrides {
           Name: "Name"
-          String: "House 1 Front Door"
+          String: "Overrun Door"
         }
         Overrides {
           Name: "Position"
           Vector {
-            X: 259.386047
-            Y: -9568.69434
-            Z: 54.3034668
+            X: 252.858551
+            Y: -9567.83789
+            Z: 54.0198517
           }
         }
         Overrides {
