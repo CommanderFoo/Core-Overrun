@@ -27,8 +27,8 @@ Objects {
   ChildIds: 6538324789638676258
   ChildIds: 3121589836909472008
   ChildIds: 7265624749015544125
-  ChildIds: 8346790829017566368
   ChildIds: 7508389135912318772
+  ChildIds: 8346790829017566368
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -38,6 +38,34 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 8346790829017566368
+  Name: "Mystery Boxes"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Mystery Boxes"
   }
 }
 Objects {
@@ -64,32 +92,6 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "Doors"
-  }
-}
-Objects {
-  Id: 8346790829017566368
-  Name: "Mystery Boxes"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Mystery Boxes"
   }
 }
 Objects {
@@ -153,8 +155,8 @@ Objects {
       Asset {
         Id: 11671205960862962229
       }
-      DistanceBetweenInstances: 230
-      SpawnDistance: 22400
+      DistanceBetweenInstances: 200
+      SpawnDistance: 25600
       CullDistance {
         Min: 10000
         Max: 20000
@@ -250,8 +252,8 @@ Objects {
       Asset {
         Id: 6470475713757890799
       }
-      DistanceBetweenInstances: 1580
-      SpawnDistance: 22400
+      DistanceBetweenInstances: 1720.00012
+      SpawnDistance: 25600
       CullDistance {
         Min: 10000
         Max: 20000
@@ -1648,6 +1650,7 @@ Objects {
   ParentId: 4781671109827199097
   ChildIds: 214292183232496103
   ChildIds: 6356875522555402097
+  ChildIds: 15491499378302737999
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -1655,6 +1658,32 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   NetworkContext {
+  }
+}
+Objects {
+  Id: 15491499378302737999
+  Name: "Overrun Craft Open Sound"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14970369702912541898
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 11697283612816656497
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Overrun Crate Open Sound"
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 18443078751069168377
+    }
   }
 }
 Objects {

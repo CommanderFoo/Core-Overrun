@@ -1,7 +1,5 @@
 ﻿local PIXELDEPTH = require(script:GetCustomProperty("PIXELDEPTH_API"))
 
-PIXELDEPTH.Utils = PIXELDEPTH.require("Utils")
-
 local player_info_ui_root = script:GetCustomProperty("players_info_ui_root"):WaitForObject()
 local player_info_ui = script:GetCustomProperty("player_info_ui")
 local own_info_color = script:GetCustomProperty("own_info_color")

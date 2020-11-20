@@ -1,10 +1,10 @@
 ﻿Assets {
-  Id: 16141415707502227175
-  Name: "Additive Edgeline Top Fade"
-  PlatformAssetType: 2
+  Id: 16700600020911428660
+  Name: "Smoke Volume VFX"
+  PlatformAssetType: 8
   PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "fxmi_add_edgeline_sharpline_topfade"
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_smoke_volume_vfx"
   }
 }
 Assets {
@@ -17,47 +17,11 @@ Assets {
   }
 }
 Assets {
-  Id: 14803841533992348173
-  Name: "Military Rare Crate Hinge"
-  PlatformAssetType: 1
+  Id: 12723299678648922894
+  Name: "Outline Object"
+  PlatformAssetType: 20
   PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prop_mil_crate_hinge_002_ref"
-  }
-}
-Assets {
-  Id: 14113021633396972507
-  Name: "Camouflage - Woodland"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "camo_woodland_001"
-  }
-}
-Assets {
-  Id: 6648688902516484551
-  Name: "Military Rare Crate Lid"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prop_mil_crate_lid_002_ref"
-  }
-}
-Assets {
-  Id: 5458790514689601451
-  Name: "Military Rare Crate Base"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prop_mil_crate_002_ref"
-  }
-}
-Assets {
-  Id: 1137112816547272582
-  Name: "Cylinder"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cylinder_002"
+    AssetType: "BlueprintAssetRef"
+    AssetId: "fxbp_local_outline"
   }
 }

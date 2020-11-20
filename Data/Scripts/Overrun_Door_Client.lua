@@ -1,7 +1,5 @@
 ﻿local PIXELDEPTH = require(script:GetCustomProperty("PIXELDEPTH_API"))
 
-PIXELDEPTH.Utils = PIXELDEPTH.require("Utils")
-
 local trigger = script:GetCustomProperty("trigger"):WaitForObject()
 local root = script:GetCustomProperty("root"):WaitForObject()
 local interact_ui = script:GetCustomProperty("interact_ui"):WaitForObject()

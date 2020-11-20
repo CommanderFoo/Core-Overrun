@@ -1,6 +1,124 @@
 ﻿Name: "Blocking Player Colliders"
 RootId: 2792350089564264743
 Objects {
+  Id: 15277886984863578069
+  Name: "Cube"
+  Transform {
+    Location {
+      X: 728.903198
+      Y: -4831.98389
+      Z: -65.1006775
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1.93031144
+      Y: 2.911484
+      Z: 2.34612751
+    }
+  }
+  ParentId: 2792350089564264743
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 4814083784258715457
+  Name: "Cube"
+  Transform {
+    Location {
+      X: -1818.40186
+      Y: -5539.21436
+      Z: -34.3132324
+    }
+    Rotation {
+      Yaw: -87.2613144
+    }
+    Scale {
+      X: 3.53366423
+      Y: 1.00000238
+      Z: 1.31098759
+    }
+  }
+  ParentId: 2792350089564264743
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 17718122854652203284
+  Name: "Cube"
+  Transform {
+    Location {
+      X: -1858.41211
+      Y: -6037.78369
+      Z: -34.3132324
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.53203154
+      Y: 1
+      Z: 1.31098759
+    }
+  }
+  ParentId: 2792350089564264743
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
   Id: 5491820028231341023
   Name: "Cube"
   Transform {

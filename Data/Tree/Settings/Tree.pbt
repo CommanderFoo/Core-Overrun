@@ -174,7 +174,7 @@ Objects {
     }
     Overrides {
       Name: "bp:Intensity"
-      Float: 1.85822952
+      Float: 0.58379519
     }
     Overrides {
       Name: "bp:Sun Disc Color"
@@ -257,7 +257,7 @@ Objects {
     }
     Overrides {
       Name: "bp:Intensity"
-      Float: 4.16593933
+      Float: 3.20512438
     }
     Overrides {
       Name: "bp:Lower Hemisphere Color"
@@ -306,7 +306,7 @@ Objects {
     Overrides {
       Name: "bp:Ambient Image"
       Enum {
-        Value: "mc:eambientcubemapssmall:5"
+        Value: "mc:eambientcubemapssmall:0"
       }
     }
   }

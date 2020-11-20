@@ -199,6 +199,17 @@ Objects {
     }
   }
   ParentId: 17922148234597677997
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:crate_open"
+      ObjectReference {
+        SelfId: 14681250137965303018
+        SubObjectId: 11697283612816656497
+        InstanceId: 15491499378302737999
+        TemplateId: 18443078751069168377
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -360,6 +371,7 @@ Objects {
   ParentId: 5539997602360125933
   ChildIds: 11187243948824875444
   ChildIds: 17061046855740868296
+  ChildIds: 8232192817320125062
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -368,6 +380,33 @@ Objects {
   }
   NetworkContext {
     Type: Server
+  }
+}
+Objects {
+  Id: 8232192817320125062
+  Name: "Overrun_Mystery_Box_Manager"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8379578297261672591
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 11517159152631715159
+    }
   }
 }
 Objects {
@@ -698,6 +737,7 @@ Objects {
   ChildIds: 2204695981646612581
   ChildIds: 538928765954044878
   ChildIds: 3950441724094907620
+  ChildIds: 13273868461713144553
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -710,6 +750,69 @@ Objects {
   InstanceHistory {
     SelfId: 11173696738678739330
     SubobjectId: 4402008544469842897
+    InstanceId: 8050441978913481353
+    TemplateId: 14023927948338123572
+  }
+}
+Objects {
+  Id: 13273868461713144553
+  Name: "Plane"
+  Transform {
+    Location {
+      X: 156.9776
+      Y: -12913.8027
+      Z: 26
+    }
+    Rotation {
+      Yaw: -90
+    }
+    Scale {
+      X: 2.41628957
+      Y: 4.54179382
+      Z: 0.01
+    }
+  }
+  ParentId: 11173696738678739330
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 1982591396225977542
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.016
+        G: 0.016
+        B: 0.016
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6284939371362434604
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 14853188944352923723
+    SubobjectId: 7504899337627023896
     InstanceId: 8050441978913481353
     TemplateId: 14023927948338123572
   }
@@ -9887,7 +9990,7 @@ Objects {
   Name: "Plane"
   Transform {
     Location {
-      X: 610.357361
+      X: 551.147644
       Y: -12800
       Z: 26
     }
@@ -9895,8 +9998,8 @@ Objects {
       Yaw: -90
     }
     Scale {
-      X: 2.41628909
-      Y: 3.00000143
+      X: 2.41628933
+      Y: 3.76184845
       Z: 0.01
     }
   }

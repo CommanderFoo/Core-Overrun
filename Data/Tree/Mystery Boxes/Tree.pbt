@@ -5,26 +5,30 @@ Objects {
   Name: "Overrun Mystery Box"
   Transform {
     Location {
-      X: 1050
-      Y: -9750
-      Z: 11.6966553
+      X: -2297.90283
+      Y: -12361.5605
     }
     Rotation {
-      Yaw: 180
+      Yaw: -90
     }
     Scale {
-      X: 1.14384484
-      Y: 1.14384484
-      Z: 1.14384484
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
   ParentId: 8346790829017566368
-  ChildIds: 10889442595381924602
-  ChildIds: 14800932019280253775
-  ChildIds: 1866708985166253615
-  ChildIds: 13094250037077284445
+  ChildIds: 17334325529640171088
   ChildIds: 10686143615787692960
   ChildIds: 7282226096922481117
+  ChildIds: 14700164326522061079
+  ChildIds: 3414433476282259819
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:cost"
+      Int: 950
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -43,6 +47,68 @@ Objects {
   }
 }
 Objects {
+  Id: 3414433476282259819
+  Name: "Weapons"
+  Transform {
+    Location {
+      Y: 12.5009766
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1817753955544824337
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Weapons"
+  }
+}
+Objects {
+  Id: 14700164326522061079
+  Name: "Trigger"
+  Transform {
+    Location {
+      Y: 102.724609
+      Z: 148.899277
+    }
+    Rotation {
+    }
+    Scale {
+      X: 3.79882693
+      Y: 2.73492837
+      Z: 3.19009376
+    }
+  }
+  ParentId: 1817753955544824337
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
   Id: 7282226096922481117
   Name: "ServerContext"
   Transform {
@@ -57,6 +123,7 @@ Objects {
     }
   }
   ParentId: 1817753955544824337
+  ChildIds: 8671359046617176211
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -65,6 +132,81 @@ Objects {
   }
   NetworkContext {
     Type: Server
+  }
+  InstanceHistory {
+    SelfId: 7282226096922481117
+    SubobjectId: 6320351782660392127
+    InstanceId: 14834317734107008120
+    TemplateId: 18055038792696851711
+  }
+}
+Objects {
+  Id: 8671359046617176211
+  Name: "Overrun_Mystery_Box_Server"
+  Transform {
+    Location {
+      X: 917.954163
+      Y: -8523.88
+      Z: -10.2257357
+    }
+    Rotation {
+      Yaw: 179.999985
+    }
+    Scale {
+      X: 0.874244392
+      Y: 0.874244392
+      Z: 0.874244392
+    }
+  }
+  ParentId: 7282226096922481117
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:root"
+      ObjectReference {
+        SelfId: 1817753955544824337
+      }
+    }
+    Overrides {
+      Name: "cs:trigger"
+      ObjectReference {
+        SelfId: 14700164326522061079
+      }
+    }
+    Overrides {
+      Name: "cs:lid"
+      ObjectReference {
+        SelfId: 13543995713997807281
+      }
+    }
+    Overrides {
+      Name: "cs:PIXELDEPTH_API"
+      AssetReference {
+        Id: 16622261663679835299
+      }
+    }
+    Overrides {
+      Name: "cs:weapons"
+      ObjectReference {
+        SelfId: 3414433476282259819
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 10024669025027559389
+    }
+  }
+  InstanceHistory {
+    SelfId: 8671359046617176211
+    SubobjectId: 5399560200273432049
+    InstanceId: 14834317734107008120
+    TemplateId: 18055038792696851711
   }
 }
 Objects {
@@ -82,6 +224,10 @@ Objects {
     }
   }
   ParentId: 1817753955544824337
+  ChildIds: 9150351654192455093
+  ChildIds: 13094250037077284445
+  ChildIds: 10853597392438436980
+  ChildIds: 1649722924827754590
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -90,30 +236,173 @@ Objects {
   }
   NetworkContext {
   }
+  InstanceHistory {
+    SelfId: 10686143615787692960
+    SubobjectId: 12030525797548385986
+    InstanceId: 14834317734107008120
+    TemplateId: 18055038792696851711
+  }
+}
+Objects {
+  Id: 1649722924827754590
+  Name: "Outline Object"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.874244213
+      Y: 0.874244213
+      Z: 0.874244213
+    }
+  }
+  ParentId: 10686143615787692960
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Object To Outline"
+      ObjectReference {
+        SelfId: 355931644008740519
+      }
+    }
+    Overrides {
+      Name: "bp:Thickness"
+      Float: 2.23360109
+    }
+    Overrides {
+      Name: "bp:Dynamic Thickness"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Max Distance"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Show Behind Objects"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 12723299678648922894
+    }
+    TeamSettings {
+    }
+  }
+}
+Objects {
+  Id: 10853597392438436980
+  Name: "Smoke Volume VFX"
+  Transform {
+    Location {
+      X: 6.90249681
+      Y: 10.3551855
+      Z: 61.4335
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.10947132
+      Y: 0.854474843
+      Z: 0.874244392
+    }
+  }
+  ParentId: 10686143615787692960
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Density"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:Wind Speed"
+      Vector {
+      }
+    }
+    Overrides {
+      Name: "bp:Gravity"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Particle Scale Multiplier"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:Camera Depth Fade Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Camera Depth Fade Length"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Life"
+      Float: 3
+    }
+    Overrides {
+      Name: "bp:color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 0.775000036
+      }
+    }
+    Overrides {
+      Name: "bp:Initial Velocity High"
+      Vector {
+      }
+    }
+    Overrides {
+      Name: "bp:Initial Velocity Low"
+      Vector {
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 16700600020911428660
+    }
+    TeamSettings {
+    }
+    Vfx {
+    }
+  }
 }
 Objects {
   Id: 13094250037077284445
   Name: "Ember Volume VFX"
   Transform {
     Location {
-      X: 0.95791316
-      Y: 9.42405796
-      Z: 140.125626
+      X: 0.957914174
+      Y: 9.42373657
+      Z: 140.12561
     }
     Rotation {
-      Yaw: 89.9999847
+      Yaw: 89.9999542
     }
     Scale {
-      X: 0.687758207
+      X: 0.687758148
       Y: 2.05789828
-      Z: 2.81196213
+      Z: 2.81196189
     }
   }
-  ParentId: 1817753955544824337
+  ParentId: 10686143615787692960
   UnregisteredParameters {
     Overrides {
       Name: "bp:Emissive Boost"
-      Float: 2
+      Float: 0.283111483
     }
     Overrides {
       Name: "bp:Life"
@@ -121,7 +410,7 @@ Objects {
     }
     Overrides {
       Name: "bp:Particle Scale Multiplier"
-      Float: 1.5
+      Float: 1.44960928
     }
     Overrides {
       Name: "bp:Density"
@@ -129,7 +418,7 @@ Objects {
     }
     Overrides {
       Name: "bp:Gravity"
-      Float: 0.391973495
+      Float: 0.217772484
     }
     Overrides {
       Name: "bp:Wind Speed"
@@ -155,6 +444,26 @@ Objects {
       Vector {
       }
     }
+    Overrides {
+      Name: "bp:color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Volume Color"
+      Color {
+        G: 0.25
+        A: 0.0210000016
+      }
+    }
+    Overrides {
+      Name: "bp:Sort Priority Adjustment"
+      Int: 0
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -169,7 +478,6 @@ Objects {
     TeamSettings {
     }
     Vfx {
-      AutoPlay: true
     }
   }
   InstanceHistory {
@@ -180,13 +488,97 @@ Objects {
   }
 }
 Objects {
-  Id: 1866708985166253615
-  Name: "Military Rare Crate Hinged Lid"
+  Id: 9150351654192455093
+  Name: "Overrun_Mystery_Box_Client"
   Transform {
     Location {
-      X: -30
-      Y: -47
-      Z: 70
+      X: 917.954163
+      Y: -8523.88
+      Z: -10.2257357
+    }
+    Rotation {
+      Yaw: 179.999985
+    }
+    Scale {
+      X: 0.874244392
+      Y: 0.874244392
+      Z: 0.874244392
+    }
+  }
+  ParentId: 10686143615787692960
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:root"
+      ObjectReference {
+        SelfId: 1817753955544824337
+      }
+    }
+    Overrides {
+      Name: "cs:trigger"
+      ObjectReference {
+        SelfId: 14700164326522061079
+      }
+    }
+    Overrides {
+      Name: "cs:interact_ui"
+      ObjectReference {
+        SelfId: 2989902567877894445
+      }
+    }
+    Overrides {
+      Name: "cs:PIXELDEPTH_API"
+      AssetReference {
+        Id: 16622261663679835299
+      }
+    }
+    Overrides {
+      Name: "cs:lid"
+      ObjectReference {
+        SelfId: 13543995713997807281
+      }
+    }
+    Overrides {
+      Name: "cs:ember_vfx"
+      ObjectReference {
+        SelfId: 13094250037077284445
+      }
+    }
+    Overrides {
+      Name: "cs:smoke_vfx"
+      ObjectReference {
+        SelfId: 10853597392438436980
+      }
+    }
+    Overrides {
+      Name: "cs:client_lid"
+      ObjectReference {
+        SelfId: 12992852249118874541
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 11262761256912268940
+    }
+  }
+  InstanceHistory {
+    SelfId: 9150351654192455093
+    SubobjectId: 5495895821244336343
+    InstanceId: 14834317734107008120
+    TemplateId: 18055038792696851711
+  }
+}
+Objects {
+  Id: 17334325529640171088
+  Name: "Crate"
+  Transform {
+    Location {
     }
     Rotation {
     }
@@ -197,9 +589,6 @@ Objects {
     }
   }
   ParentId: 1817753955544824337
-  ChildIds: 7688838604425652013
-  ChildIds: 11703617588480748924
-  ChildIds: 13543995713997807281
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -207,525 +596,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Folder {
-    IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 1866708985166253615
-    SubobjectId: 3124985314951781197
-    InstanceId: 14834317734107008120
-    TemplateId: 18055038792696851711
-  }
-}
-Objects {
-  Id: 13543995713997807281
-  Name: "Military Rare Crate Lid"
-  Transform {
-    Location {
-      X: 30.0000687
-      Y: 3.50001907
-      Z: -4.99999857
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1.99999928
-      Y: 1.29999948
-      Z: 0.999999642
-    }
-  }
-  ParentId: 1866708985166253615
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 14113021633396972507
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: true
-    }
-    Overrides {
-      Name: "ma:Shared_Detail1:id"
-      AssetReference {
-        Id: 9635440827203888092
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 6648688902516484551
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 13543995713997807281
-    SubobjectId: 9893348655893482451
-    InstanceId: 14834317734107008120
-    TemplateId: 18055038792696851711
-  }
-}
-Objects {
-  Id: 11703617588480748924
-  Name: "Military Rare Crate Hinge"
-  Transform {
-    Location {
-      X: 108.53714
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 1866708985166253615
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 9635440827203888092
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 14803841533992348173
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 11703617588480748924
-    SubobjectId: 10435498157997996062
-    InstanceId: 14834317734107008120
-    TemplateId: 18055038792696851711
-  }
-}
-Objects {
-  Id: 7688838604425652013
-  Name: "Military Rare Crate Hinge"
-  Transform {
-    Location {
-      X: -56.2229233
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 1866708985166253615
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 9635440827203888092
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 14803841533992348173
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 7688838604425652013
-    SubobjectId: 6344992990511493711
-    InstanceId: 14834317734107008120
-    TemplateId: 18055038792696851711
-  }
-}
-Objects {
-  Id: 14800932019280253775
-  Name: "Military Rare Crate Base"
-  Transform {
-    Location {
-      Y: 13.8577127
-    }
-    Rotation {
-    }
-    Scale {
-      X: 2
-      Y: 1.3
-      Z: 1
-    }
-  }
-  ParentId: 1817753955544824337
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_Detail1:id"
-      AssetReference {
-        Id: 14113021633396972507
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 14113021633396972507
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_Detail2:color"
-      Color {
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 5458790514689601451
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 14800932019280253775
-    SubobjectId: 18437373178574112301
-    InstanceId: 14834317734107008120
-    TemplateId: 18055038792696851711
-  }
-}
-Objects {
-  Id: 10889442595381924602
-  Name: "Mystery Box Beam"
-  Transform {
-    Location {
-      X: 3.20969248
-      Y: 17.5557499
-      Z: 3250.11133
-    }
-    Rotation {
-      Yaw: 89.9999847
-    }
-    Scale {
-      X: 0.874244392
-      Y: 0.874244392
-      Z: 63.996273
-    }
-  }
-  ParentId: 1817753955544824337
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 16141415707502227175
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceon"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 1137112816547272582
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 10889442595381924602
-    SubobjectId: 11936472092727396248
-    InstanceId: 14834317734107008120
-    TemplateId: 18055038792696851711
-  }
-}
-Objects {
-  Id: 7496744450500638729
-  Name: "Overrun Mystery Box"
-  Transform {
-    Location {
-      X: 765.910156
-      Y: -4673.91553
-      Z: -0.100646973
-    }
-    Rotation {
-      Yaw: -89.9999924
-    }
-    Scale {
-      X: 1.14384484
-      Y: 1.14384484
-      Z: 1.14384484
-    }
-  }
-  ParentId: 8346790829017566368
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 3134569042339262323
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Overrun Mystery Box"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 1612.98071
-            Y: -15470.1279
-            Z: -0.100585938
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1.14384484
-            Y: 1.14384484
-            Z: 1.14384484
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 18055038792696851711
-    }
-  }
-}
-Objects {
-  Id: 12208198576937180529
-  Name: "Overrun Mystery Box"
-  Transform {
-    Location {
-      X: 765.910156
-      Y: -4673.91553
-      Z: -0.100646973
-    }
-    Rotation {
-      Yaw: -89.9999924
-    }
-    Scale {
-      X: 1.14384484
-      Y: 1.14384484
-      Z: 1.14384484
-    }
-  }
-  ParentId: 8346790829017566368
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 3134569042339262323
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Overrun Mystery Box"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -2290.38916
-            Y: -12337.7813
-            Z: -0.100585938
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: -89.9999847
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1.14384484
-            Y: 1.14384484
-            Z: 1.14384484
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 18055038792696851711
-    }
-  }
-}
-Objects {
-  Id: 17068489853083705803
-  Name: "Overrun Mystery Box"
-  Transform {
-    Location {
-      X: 765.910156
-      Y: -4673.91553
-      Z: -0.100646973
-    }
-    Rotation {
-      Yaw: -89.9999924
-    }
-    Scale {
-      X: 1.14384484
-      Y: 1.14384484
-      Z: 1.14384484
-    }
-  }
-  ParentId: 8346790829017566368
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 3134569042339262323
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Overrun Mystery Box"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -2088.03418
-            Y: -250.999237
-            Z: -0.100585938
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: -90
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1.14384484
-            Y: 1.14384484
-            Z: 1.14384484
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 18055038792696851711
-    }
-  }
-}
-Objects {
-  Id: 9866193265224974520
-  Name: "Overrun Mystery Box"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 8346790829017566368
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 3134569042339262323
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Overrun Mystery Box"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 765.910156
-            Y: -4673.91553
-            Z: -0.100646973
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: -90
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 18055038792696851711
-    }
+    IsFilePartition: true
+    FilePartitionName: "Crate"
   }
 }

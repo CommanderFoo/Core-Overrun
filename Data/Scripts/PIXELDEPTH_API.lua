@@ -12,4 +12,7 @@ API.require = function(api, is_api, context)
 	return require(context:GetCustomProperty("PIXELDEPTH_" .. api))
 end
 
+API.Utils = API.require("Utils")
+API.Tween = API.require("Tween")
+
 return API

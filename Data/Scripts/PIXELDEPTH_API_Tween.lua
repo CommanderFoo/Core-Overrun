@@ -1,4 +1,30 @@
-﻿local Tween = {}
+﻿--[[
+Example of how to use this library
+
+local my_tween = PIXELDEPTH.Tween:new(.3, {a = 0}, {w = 1})
+
+my_tween:on_complete(function()
+	my_tween = nil
+end)
+	
+my_tween:on_change(function(changed)
+	local col = current_item:GetColor()
+
+	col.a = changed.a
+	obj:SetColor(col)
+end)
+
+my_tween:set_easing("outExpo")
+my_tween:delay(.5)
+
+function Tick()
+	if(my_tween ~= nil and my_tween:active()) then
+		my_tween:tween(dt)
+	end
+end
+]]
+
+local Tween = {}
 
 Tween.Easings = require(script:GetCustomProperty("PIXELDEPTH_API_Tween_Easings"))
 
@@ -25,7 +51,7 @@ Tween.copy_table = function(t)
 	return tmp
 end
 
- function Tween:start(delta)
+function Tween:tween(delta)
 	if(self.tween_finished == true) then
 		return
 	end
@@ -51,9 +77,9 @@ end
 			self.complete_evt()
 		end
 	else
-		if(self.start_evt) then
+		if(self.start_evt and not self.start_evt_invoked) then
 			self.start_evt()
-			self.start_evt = nil
+			self.start_evt_invoked = true
 		end
 
 		self.from = Tween.ease(self.from, self.to, self.original, self.time - self.delay_tween, self.duration, self.easing or "linear")
@@ -84,6 +110,7 @@ function Tween:reset()
 	self.from = Tween.copy_table(self.original_from)
 	self.to = Tween.copy_table(self.original_to)
 
+	self.start_evt_invoked = false
 	self.original = nil
 	self.tween_finished = false
 end
@@ -112,7 +139,7 @@ function Tween:on_start(fn)
 	return self
 end
 
-function Tween:delay(delay_time)
+function Tween:set_delay(delay_time)
 	if(delay_time and delay_time > 0) then
 		self.delay_tween = delay_time
 	end
@@ -132,7 +159,7 @@ function Tween:active()
 	return not self.tween_finished
 end
 
- function Tween:new(duration, from, to)
+ function Tween:new(duration, from, to, easing)
 	self.__index = self
 	
 	return setmetatable({
@@ -144,12 +171,13 @@ end
 		 tween_finished = false,
 		 complete_evt = nil,
 		 start_evt = nil,
-		 easing = nil,
+		 easing = easing or nil,
 		 delay_tween = 0,
 		 time_started = 0,
 		 original_from = Tween.copy_table(from),
 		 original_to = Tween.copy_table(to),
-		 change_evt = nil
+		 change_evt = nil,
+		 start_evt_invoked = false
  
 	 }, self)
  end
