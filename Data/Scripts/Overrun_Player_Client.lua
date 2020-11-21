@@ -4,6 +4,10 @@ local player_info_ui_root = script:GetCustomProperty("players_info_ui_root"):Wai
 local player_info_ui = script:GetCustomProperty("player_info_ui")
 local own_info_color = script:GetCustomProperty("own_info_color")
 
+local hit_ui = script:GetCustomProperty("hit_ui"):WaitForObject()
+local hit_sound = script:GetCustomProperty("hit_sound"):WaitForObject()
+
+
 local local_player = Game.GetLocalPlayer()
 local players = {}
 local total_players = 0
@@ -175,14 +179,29 @@ function money_changed(data)
 	end
 end
 
-function purchase_complete(is_melee)
+function purchase_complete(is_melee, play_audio)
 	Events.Broadcast("on_ammo_purchase_change", is_melee)
-	Events.Broadcast("on_audio_purchase")
+
+	if(play_audio) then
+		Events.Broadcast("on_audio_purchase")
+	end
+end
+
+function on_zombie_hit()
+	hit_ui.visibility = Visibility.FORCE_ON
+
+	Task.Spawn(function()
+		Task.Wait(0.33)
+		hit_ui.visibility = Visibility.FORCE_OFF
+	end)
+
+	hit_sound:Play()
 end
 
 Events.Connect("on_game_starting", game_starting)
 Events.Connect("on_player_money_changed", money_changed)
 Events.Connect("on_purchase_complete", purchase_complete)
+Events.Connect("on_zombie_hit", on_zombie_hit)
 
 Game.playerJoinedEvent:Connect(player_joined)
 Game.playerLeftEvent:Connect(player_left)

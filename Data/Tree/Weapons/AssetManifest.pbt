@@ -161,15 +161,6 @@ Assets {
   }
 }
 Assets {
-  Id: 11597592556193149105
-  Name: "Hatchet - Handle"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_weap_modern_axe_handle_001"
-  }
-}
-Assets {
   Id: 10590218355808461561
   Name: "Modern Weapon - Foregrip 01"
   PlatformAssetType: 1
@@ -284,15 +275,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_weap_modern_body_002"
-  }
-}
-Assets {
-  Id: 4281380979366999084
-  Name: "Hatchet - Blade"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_weap_modern_axe_001"
   }
 }
 Assets {

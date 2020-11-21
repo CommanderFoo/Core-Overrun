@@ -292,6 +292,10 @@ Objects {
       String: "closed"
     }
     Overrides {
+      Name: "cs:weapon_took"
+      Bool: false
+    }
+    Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
         Id: 14113021633396972507
@@ -309,6 +313,10 @@ Objects {
     }
     Overrides {
       Name: "cs:state:isrep"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:weapon_took:isrep"
       Bool: true
     }
   }

@@ -5,8 +5,9 @@ Objects {
   Name: "Overrun Mystery Box"
   Transform {
     Location {
-      X: -2297.90283
-      Y: -12361.5605
+      X: 1195.53723
+      Y: -7607.23242
+      Z: -0.000244140625
     }
     Rotation {
       Yaw: -90

@@ -16,6 +16,7 @@ local in_zone = false
 
 local opened = false
 local got_random_weapon = false
+local took_weapon = false
 
 lid.networkedPropertyChangedEvent:Connect(function(obj, prop)
 	if(prop == "state") then
@@ -47,6 +48,13 @@ lid.networkedPropertyChangedEvent:Connect(function(obj, prop)
 			smoke_vfx.visibility = Visibility.FORCE_OFF
 			smoke_vfx:Stop()
 			smoke_vfx:SetSmartProperty("Density", 2)
+			took_weapon = false
+		end
+	end
+
+	if(prop == "weapon_took") then
+		if(lid:GetCustomProperty("weapon_took")) then
+			took_weapon = true
 		end
 	end
 end)
@@ -69,7 +77,7 @@ function on_trigger_enter(t, obj)
 		in_zone = true
 
 		if(opened) then
-			if(got_random_weapon) then
+			if(got_random_weapon and not took_weapon) then
 				interact_ui.text = "Press [F] to take weapon"
 				interact_ui.parent.visibility = Visibility.FORCE_ON
 			else

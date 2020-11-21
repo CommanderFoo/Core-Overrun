@@ -8,7 +8,7 @@ function on_player_joined(player)
 	equipment:Equip(player)
 end
 
-function bought_item(player, asset_id, max_basic_ammo, price)
+function bought_item(player, asset_id, max_basic_ammo, play_audio)
 	if(#player:GetEquipment() > 0) then
 		local equipment = player:GetEquipment()[1]
 		local is_melee = equipment:GetCustomProperty("is_melee")
@@ -29,7 +29,7 @@ function bought_item(player, asset_id, max_basic_ammo, price)
 
 				new_weapon:Equip(player)
 				
-				Events.BroadcastToPlayer(player, "on_purchase_complete", new_weapon:GetCustomProperty("is_melee"))
+				Events.BroadcastToPlayer(player, "on_purchase_complete", new_weapon:GetCustomProperty("is_melee"), play_audio)
 			end
 		end
 	end

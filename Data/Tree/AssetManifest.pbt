@@ -8,6 +8,15 @@
   }
 }
 Assets {
+  Id: 12040474275828567627
+  Name: "Crosshair 020"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Crosshair_020"
+  }
+}
+Assets {
   Id: 11671205960862962229
   Name: "Grass Short"
   PlatformAssetType: 1
@@ -41,6 +50,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_grass_generic_001"
+  }
+}
+Assets {
+  Id: 7312235065341263458
+  Name: "Melee Hit Slap Face Hit 02 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_slap_face_hit_02_Cue_ref"
   }
 }
 Assets {

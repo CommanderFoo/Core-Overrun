@@ -25,6 +25,14 @@ Objects {
   ChildIds: 18003900575255036333
   ChildIds: 10544300056887830835
   UnregisteredParameters {
+    Overrides {
+      Name: "cs:asset_id"
+      String: "760A24B635D5051D"
+    }
+    Overrides {
+      Name: "cs:ammo"
+      Int: 60
+    }
   }
   WantsNetworking: true
   Collidable_v2 {
@@ -472,6 +480,14 @@ Objects {
   ChildIds: 2511260853445941635
   ChildIds: 289288971549438847
   UnregisteredParameters {
+    Overrides {
+      Name: "cs:asset_id"
+      String: "BAE245397FD6597D"
+    }
+    Overrides {
+      Name: "cs:ammo"
+      Int: 70
+    }
   }
   WantsNetworking: true
   Collidable_v2 {
@@ -861,6 +877,14 @@ Objects {
   ChildIds: 9216854173152968659
   ChildIds: 3503660217439331334
   UnregisteredParameters {
+    Overrides {
+      Name: "cs:asset_id"
+      String: "4C415F5FBA60ECF8"
+    }
+    Overrides {
+      Name: "cs:ammo"
+      Int: 140
+    }
   }
   WantsNetworking: true
   Collidable_v2 {
@@ -1220,6 +1244,14 @@ Objects {
   ChildIds: 7512224179314892641
   ChildIds: 752989318716777472
   UnregisteredParameters {
+    Overrides {
+      Name: "cs:asset_id"
+      String: "5F2EA87901BF9FB1"
+    }
+    Overrides {
+      Name: "cs:ammo"
+      Int: 80
+    }
   }
   WantsNetworking: true
   Collidable_v2 {
@@ -1607,6 +1639,14 @@ Objects {
   ChildIds: 13144405344856504359
   ChildIds: 8229240758816889626
   UnregisteredParameters {
+    Overrides {
+      Name: "cs:asset_id"
+      String: "7685F7DB0728F266"
+    }
+    Overrides {
+      Name: "cs:ammo"
+      Int: 60
+    }
   }
   WantsNetworking: true
   Collidable_v2 {
@@ -1929,6 +1969,14 @@ Objects {
   ChildIds: 7412220242643084532
   ChildIds: 1061532132861644039
   UnregisteredParameters {
+    Overrides {
+      Name: "cs:asset_id"
+      String: "D897DC11D8EA7E8C"
+    }
+    Overrides {
+      Name: "cs:ammo"
+      Int: 240
+    }
   }
   WantsNetworking: true
   Collidable_v2 {
@@ -2697,136 +2745,5 @@ Objects {
     SubobjectId: 14079396989711981494
     InstanceId: 7413379853494251273
     TemplateId: 8206733003187083805
-  }
-}
-Objects {
-  Id: 3496200607495326466
-  Name: "Advanced Axe"
-  Transform {
-    Location {
-      X: -8.1315918
-      Z: -24.5228119
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 3414433476282259819
-  ChildIds: 6788129325578664455
-  ChildIds: 3207024601802745900
-  UnregisteredParameters {
-  }
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
-  }
-  Folder {
-    IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 3496200607495326466
-    SubobjectId: 1595937608306147425
-    InstanceId: 6594900856064251681
-    TemplateId: 15128973835443202786
-  }
-}
-Objects {
-  Id: 3207024601802745900
-  Name: "Hatchet - Handle"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 3496200607495326466
-  UnregisteredParameters {
-  }
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 11597592556193149105
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 3207024601802745900
-    SubobjectId: 729781889713431375
-    InstanceId: 6594900856064251681
-    TemplateId: 15128973835443202786
-  }
-}
-Objects {
-  Id: 6788129325578664455
-  Name: "Hatchet - Blade"
-  Transform {
-    Location {
-      X: 1.63818359
-      Z: 46.7093048
-    }
-    Rotation {
-      Pitch: -19.8819275
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 3496200607495326466
-  UnregisteredParameters {
-  }
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 4281380979366999084
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 6788129325578664455
-    SubobjectId: 8688939606747574628
-    InstanceId: 6594900856064251681
-    TemplateId: 15128973835443202786
   }
 }

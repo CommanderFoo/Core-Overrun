@@ -46,6 +46,48 @@ Objects {
         Id: 17831556309989914884
       }
     }
+    Overrides {
+      Name: "cs:OverrunAxe"
+      AssetReference {
+        Id: 18313588029887388118
+      }
+    }
+    Overrides {
+      Name: "cs:OverrunAdvancedAssault"
+      AssetReference {
+        Id: 15607185002887544460
+      }
+    }
+    Overrides {
+      Name: "cs:OverrunCrossbow"
+      AssetReference {
+        Id: 8540504788468036198
+      }
+    }
+    Overrides {
+      Name: "cs:OverrunAdvancedPistol"
+      AssetReference {
+        Id: 6858604520205688753
+      }
+    }
+    Overrides {
+      Name: "cs:OverrunAdvancedSMG"
+      AssetReference {
+        Id: 5494777885122161912
+      }
+    }
+    Overrides {
+      Name: "cs:OverrunAdvancedShotgun"
+      AssetReference {
+        Id: 8505651211248403741
+      }
+    }
+    Overrides {
+      Name: "cs:OverrunRevolver"
+      AssetReference {
+        Id: 13466401949051410813
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -339,6 +381,18 @@ Objects {
       Name: "cs:PIXELDEPTH_API"
       AssetReference {
         Id: 16622261663679835299
+      }
+    }
+    Overrides {
+      Name: "cs:hit_ui"
+      ObjectReference {
+        SelfId: 6278713090139348785
+      }
+    }
+    Overrides {
+      Name: "cs:hit_sound"
+      ObjectReference {
+        SelfId: 2746382917114278438
       }
     }
   }

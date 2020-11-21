@@ -12,19 +12,21 @@ local in_zone = false
 local opened = false
 local player_init = false
 
-local open_duration = 9
+local open_duration = 6
 local open_started_time = 0
 
 local open_tween = PIXELDEPTH.Tween:new(3, {v = 0}, {v = -90}, "outExpo")
-local close_tween = PIXELDEPTH.Tween:new(6, {v = -90}, {v = 0}, "outExpo")
+local close_tween = PIXELDEPTH.Tween:new(5, {v = -90}, {v = 0}, "outExpo")
 
 local weapons_up_tween = PIXELDEPTH.Tween:new(3, {v = 0}, {v = 130}, "outExpo")
-local weapons_down_tween = PIXELDEPTH.Tween:new(6, {v = 130}, {v = 0}, "outExpo")
+local weapons_down_tween = PIXELDEPTH.Tween:new(5, {v = 130}, {v = 0}, "outExpo")
 
 local move_weapons_up = false
 local move_weapons_down = false
 
 local random_weapon_task = nil
+local picked_weapon = nil
+local took_weapon = false
 
 --[[
 UNINITIALIZED 0
@@ -50,6 +52,11 @@ function on_trigger_enter(t, obj)
 
 					Events.BroadcastToPlayer(obj, "on_crate_open")
 					obj:SetResource("money", math.max(0, money - cost))
+				elseif(opened and picked_weapon ~= nil and not took_weapon) then
+					Events.Broadcast("on_bought_item", obj, picked_weapon:GetCustomProperty("asset_id"), picked_weapon:GetCustomProperty("ammo"), false)
+					picked_weapon.visibility = Visibility.FORCE_OFF
+					lid:SetNetworkedCustomProperty("weapon_took", true)
+					took_weapon = true
 				end
 			end
 		end)
@@ -162,6 +169,13 @@ function setup_tweens()
 
 		close_tween:reset()
 		open_started_time = 0
+
+		if(picked_weapon ~= nil) then
+			picked_weapon.visibility = Visibility.FORCE_ON
+			picked_weapon = nil
+			lid:SetNetworkedCustomProperty("weapon_took", false)
+			took_weapon = false
+		end
 
 		lid:SetNetworkedCustomProperty("state", "closed")
 	end)

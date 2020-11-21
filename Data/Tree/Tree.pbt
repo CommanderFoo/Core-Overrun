@@ -29,6 +29,7 @@ Objects {
   ChildIds: 7265624749015544125
   ChildIds: 7508389135912318772
   ChildIds: 8346790829017566368
+  ChildIds: 10427040623207137466
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -38,6 +39,41 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 10427040623207137466
+  Name: "Overrun NPC Zombie Girl"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3491882363712052561
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Overrun NPC Zombie Girl"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -37.102478
+            Y: -8802.38867
+            Z: 25.9999084
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 4378427399398930891
+    }
   }
 }
 Objects {
@@ -1034,6 +1070,7 @@ Objects {
   ChildIds: 3010311085128505972
   ChildIds: 5892695419628468539
   ChildIds: 9392629182803146004
+  ChildIds: 6278713090139348785
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1057,6 +1094,67 @@ Objects {
       TargetAnchor {
         Anchor {
           Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 6278713090139348785
+  Name: "Hit"
+  Transform {
+    Location {
+      X: 1620.00061
+      Y: -10121.791
+      Z: 1000.45221
+    }
+    Rotation {
+      Yaw: -119.476311
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5445118748943985758
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  Control {
+    Width: 45
+    Height: 45
+    RotationAngle: 45
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Image {
+      Brush {
+        Id: 12040474275828567627
+      }
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 0.3
+      }
+      TeamSettings {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
         }
       }
     }
@@ -1651,6 +1749,7 @@ Objects {
   ChildIds: 214292183232496103
   ChildIds: 6356875522555402097
   ChildIds: 15491499378302737999
+  ChildIds: 2746382917114278438
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -1658,6 +1757,37 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   NetworkContext {
+  }
+}
+Objects {
+  Id: 2746382917114278438
+  Name: "Melee Hit Slap Face Hit 02 SFX"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14970369702912541898
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 7312235065341263458
+    }
+    Pitch: 128.186768
+    Volume: 2.0903635
+    Falloff: -1
+    Radius: -1
   }
 }
 Objects {
