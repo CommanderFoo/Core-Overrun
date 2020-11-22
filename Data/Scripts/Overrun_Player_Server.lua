@@ -1,9 +1,4 @@
-﻿local game_started = false
-local timer = 20
-local starting_money = 5000000
-local round = 1
-
--- Look at Game.StartRound() and end
+﻿local starting_money = 5000000
 
 local players = {}
 
@@ -19,10 +14,6 @@ function player_joined(p)
 			money = starting_money
 
 		}
-	end
-
-	if(not game_started) then
-		start_count_down()
 	end
 
 	p:SetResource("money", starting_money)
@@ -71,18 +62,6 @@ function on_player_died(player)
 	for k, v in pairs(e) do
 		v:Destroy()
 	end
-end
-
-function start_count_down()
-	game_started = true
-
-	local task = Task.Spawn(function()
-		Events.BroadcastToAllPlayers("on_game_starting", timer)
-		timer = timer - 1
-	end)
-
-	task.repeatInterval = 1
-	task.repeatCount = timer
 end
 
 Game.playerJoinedEvent:Connect(player_joined)

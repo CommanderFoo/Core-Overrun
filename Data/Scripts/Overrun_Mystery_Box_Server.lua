@@ -27,6 +27,11 @@ local move_weapons_down = false
 local random_weapon_task = nil
 local picked_weapon = nil
 local took_weapon = false
+local has_skull = false
+
+local current_player = nil
+
+local disabled = false
 
 --[[
 UNINITIALIZED 0
@@ -40,6 +45,10 @@ BLOCKED 7
 ]]
 
 function on_trigger_enter(t, obj)
+	if(disabled) then
+		return
+	end
+
 	if(obj:IsA("Player")) then
 		in_zone = true
 
@@ -48,11 +57,11 @@ function on_trigger_enter(t, obj)
 				local money = obj:GetResource("money")
 
 				if(not opened and not player_init and money >= cost) then
+					current_player = obj
 					open_crate()
-
 					Events.BroadcastToPlayer(obj, "on_crate_open")
 					obj:SetResource("money", math.max(0, money - cost))
-				elseif(opened and picked_weapon ~= nil and not took_weapon) then
+				elseif(opened and not has_skull and picked_weapon ~= nil and not took_weapon) then
 					Events.Broadcast("on_bought_item", obj, picked_weapon:GetCustomProperty("asset_id"), picked_weapon:GetCustomProperty("ammo"), false)
 					picked_weapon.visibility = Visibility.FORCE_OFF
 					lid:SetNetworkedCustomProperty("weapon_took", true)
@@ -70,23 +79,32 @@ function on_trigger_exit(t, obj)
 end
 
 function Tick(dt)
-	if(player_init and not opened) then
-		open_tween:tween(dt)
-	elseif(opened and time() > (open_started_time + open_duration)) then
-		close_tween:tween(dt)
-	end
+	if(not disabled) then
+		if(player_init and not opened) then
+			open_tween:tween(dt)
+		elseif(opened and time() > (open_started_time + open_duration)) then
+			close_tween:tween(dt)
+		end
 
-	if(move_weapons_up) then
-		weapons_up_tween:tween(dt)
-	elseif(move_weapons_down) then
-		weapons_down_tween:tween(dt)
-	end
+		if(move_weapons_up) then
+			weapons_up_tween:tween(dt)
+		elseif(move_weapons_down) then
+			weapons_down_tween:tween(dt)
+		end
 
-	if(random_weapon_task ~= nil) then
-		if(random_weapon_task:GetStatus() == TaskStatus.UNINITIALIZED) then
-			random_weapon_task = nil
+		if(random_weapon_task ~= nil) then
+			if(random_weapon_task:GetStatus() == TaskStatus.UNINITIALIZED) then
+				random_weapon_task = nil
 
-			lid:SetNetworkedCustomProperty("state", "opened_with_weapon")
+				if(picked_weapon ~= nil and picked_weapon.name ~= "Skull") then
+					lid:SetNetworkedCustomProperty("state", "opened_with_weapon")
+				else					
+					local money = current_player:GetResource("money")
+
+					current_player:SetResource("money", math.max(0, money + cost))
+					current_player = nil
+				end
+			end
 		end
 	end
 end
@@ -110,6 +128,8 @@ function randomise_weapons()
 
 			picked_weapon = picked
 			picked.visibility = Visibility.FORCE_ON
+
+			has_skull = picked.name == "Skull"
 		end
 	end)
 
@@ -171,6 +191,12 @@ function setup_tweens()
 		open_started_time = 0
 
 		if(picked_weapon ~= nil) then
+			if(has_skull) then
+				disabled = true
+			end
+
+			current_player = nil
+			has_skull = false
 			picked_weapon.visibility = Visibility.FORCE_ON
 			picked_weapon = nil
 			lid:SetNetworkedCustomProperty("weapon_took", false)

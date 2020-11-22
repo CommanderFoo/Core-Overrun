@@ -124,15 +124,45 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:zombie"
+      Name: "cs:spawn_points"
+      ObjectReference {
+        SelfId: 10208137556615864073
+      }
+    }
+    Overrides {
+      Name: "cs:center_spawns"
+      ObjectReference {
+        SelfId: 12595136826229712824
+      }
+    }
+    Overrides {
+      Name: "cs:house_1_spawns"
+      ObjectReference {
+        SelfId: 13194144015473889140
+      }
+    }
+    Overrides {
+      Name: "cs:house_2_spawns"
+      ObjectReference {
+        SelfId: 1539028890634100055
+      }
+    }
+    Overrides {
+      Name: "cs:zombie_basic"
       AssetReference {
         Id: 2849525443677777771
       }
     }
     Overrides {
-      Name: "cs:spawn_points"
-      ObjectReference {
-        SelfId: 10208137556615864073
+      Name: "cs:zombie_guy"
+      AssetReference {
+        Id: 18048664039051367434
+      }
+    }
+    Overrides {
+      Name: "cs:zombie_girl"
+      AssetReference {
+        Id: 4378427399398930891
       }
     }
   }
@@ -395,6 +425,18 @@ Objects {
         SelfId: 2746382917114278438
       }
     }
+    Overrides {
+      Name: "cs:countdown_text"
+      ObjectReference {
+        SelfId: 11645716946727354333
+      }
+    }
+    Overrides {
+      Name: "cs:countdown_panel"
+      ObjectReference {
+        SelfId: 9508632497040932628
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -426,6 +468,7 @@ Objects {
   ChildIds: 11187243948824875444
   ChildIds: 17061046855740868296
   ChildIds: 8232192817320125062
+  ChildIds: 13077922076364839605
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -434,6 +477,33 @@ Objects {
   }
   NetworkContext {
     Type: Server
+  }
+}
+Objects {
+  Id: 13077922076364839605
+  Name: "Overrun_Game_Manager_Server"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8379578297261672591
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5372937809984182755
+    }
   }
 }
 Objects {

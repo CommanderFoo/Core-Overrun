@@ -539,7 +539,6 @@ Objects {
   ChildIds: 10496031784098282603
   ChildIds: 1921117835291205508
   ChildIds: 6156632716360357880
-  ChildIds: 6585800733168504337
   ChildIds: 12654258968867879116
   ChildIds: 10180308231484926814
   ChildIds: 7782601639549073118
@@ -3399,45 +3398,6 @@ Objects {
     }
     Rotation {
       Yaw: -79.9355
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 2263102109253131667
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 14292869428683022472
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 6585800733168504337
-  Name: "Barrier Concrete 01"
-  Transform {
-    Location {
-      X: 594.928223
-      Y: 862.272949
-      Z: 269.837952
-    }
-    Rotation {
     }
     Scale {
       X: 1

@@ -27,7 +27,7 @@ end
 add_spawn_points(center_spawns)
 
 --Task.Wait(10)
--- [[
+--[[
 spawn_task = Task.Spawn(function()
 	local zombie = zombie_assets[math.random(#zombie_assets)]
 	local point = spawn_points[math.random(#spawn_points)]

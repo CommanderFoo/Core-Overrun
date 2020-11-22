@@ -7,13 +7,20 @@ local own_info_color = script:GetCustomProperty("own_info_color")
 local hit_ui = script:GetCustomProperty("hit_ui"):WaitForObject()
 local hit_sound = script:GetCustomProperty("hit_sound"):WaitForObject()
 
+local countdown_text = script:GetCustomProperty("countdown_text"):WaitForObject()
+local countdown_panel = script:GetCustomProperty("countdown_panel"):WaitForObject()
 
 local local_player = Game.GetLocalPlayer()
 local players = {}
 local total_players = 0
 
-function game_starting(timer)	
-	--print("Game is starting in " .. tostring(timer) ..  " seconds")
+function game_starting(timer)
+	if(timer > 0) then
+		countdown_text.text = tostring(timer)
+		countdown_panel.visibility = Visibility.FORCE_ON
+	else
+		countdown_panel.visibility = Visibility.FORCE_OFF
+	end
 end
 
 function player_joined(p)
