@@ -10,6 +10,7 @@
 local weapon = script:FindAncestorByType("Equipment")
 
 function OnShowDamageFeedback(amount, position)
+	print("ok")
 	local viewPos = Game.GetLocalPlayer():GetViewWorldPosition()
 	local distance = (viewPos - position).sizeSquared
 	local isBig = (distance < 1000000) -- 10 meters squared

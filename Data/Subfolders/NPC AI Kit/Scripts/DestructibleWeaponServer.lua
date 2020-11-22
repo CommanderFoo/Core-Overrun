@@ -66,7 +66,7 @@ local damagedListener = Events.Connect("CombatWrapAPI.OnDamageTaken", OnDamageTa
 function BroadcastDamageFeedback(amount, position)
 	local player = WEAPON.owner
 	if Object.IsValid(player) then
-		Events.BroadcastToPlayer(player, "ShowDamageFeedback", amount, position)
+		--Events.BroadcastToPlayer(player, "ShowDamageFeedback", amount, position)
 	end
 end
 

@@ -7,7 +7,7 @@
       RootId: 3491882363712052561
       Objects {
         Id: 3491882363712052561
-        Name: "Overrun NPC Zombie Testing"
+        Name: "Overrun NPC Zombie Girl"
         Transform {
           Scale {
             X: 1

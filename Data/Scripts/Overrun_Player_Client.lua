@@ -194,7 +194,7 @@ function purchase_complete(is_melee, play_audio)
 	end
 end
 
-function on_zombie_hit()
+function on_zombie_hit(amount, position)
 	hit_ui.visibility = Visibility.FORCE_ON
 
 	Task.Spawn(function()
@@ -203,6 +203,12 @@ function on_zombie_hit()
 	end)
 
 	hit_sound:Play()
+
+	local view_pos = local_player:GetViewWorldPosition()
+	local distance = (view_pos - position).sizeSquared
+	local is_big = (distance < 1000000) -- 10 meters squared
+		
+	UI.ShowFlyUpText(tostring(amount), position, {color = Color.RED, isBig = is_big})
 end
 
 Events.Connect("on_game_starting", game_starting)

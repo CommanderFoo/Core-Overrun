@@ -208,7 +208,7 @@ function ApplyDamage(dmg, source, position, rotation)
 		
 		local money = ROOT:GetCustomProperty("money_per_hit")
 
-		Events.BroadcastToPlayer(source, "on_zombie_hit")
+		Events.BroadcastToPlayer(source, "on_zombie_hit", amount, impactPosition)
 		Events.Broadcast("ObjectDamaged", id, prevHealth, amount, impactPosition, impactRotation, source)
 		--Events.BroadcastToAllPlayers("ObjectDamaged", id, prevHealth, amount, impactPosition, impactRotation)
 
