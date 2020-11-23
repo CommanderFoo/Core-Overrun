@@ -88,13 +88,13 @@ local temporaryVisionAngle = nil
 local temporaryVisionRadius = nil
 local temporaryHearingRadius = nil
 
-
 function SetState(newState)
 
 	if (newState == STATE_SLEEPING) then
 		ROTATION_ROOT:StopRotate()
 		
 	elseif (newState == STATE_ENGAGING) then
+
 		--print("target = " .. tostring(target) .. ", moveSpeed = " .. tostring(MOVE_SPEED) .. ", attackRange = " .. ATTACK_RANGE)
 
 		if (not IsWithinRangeSquared(target, ATTACK_RANGE_SQUARED)) then
@@ -112,6 +112,7 @@ function SetState(newState)
 		end
 
 	elseif (newState == STATE_PATROLLING) then
+
 		local targetPosition = moveObjective
 		StepTowards(targetPosition)
 
@@ -125,7 +126,7 @@ function SetState(newState)
 
 	elseif (newState == STATE_LOOKING_AROUND) then
 		--
-		
+
 	elseif (newState == STATE_DEAD_1) then
 		ROOT:StopMove()
 		ROTATION_ROOT:StopRotate()
@@ -370,6 +371,10 @@ local function StepTowardsFallback(targetPosition)
 end
 
 local function FindPathOnNavMesh(targetPosition)
+	if(not ROOT) then
+		return
+	end
+
 	local pos = ROOT:GetWorldPosition()
 	waitingForPath = true
 	navMeshPath = NAV_MESH().FindPath(pos, targetPosition)

@@ -96,17 +96,14 @@
             ProjectileLifeSpan: 10
             ProjectileLength: 50
             ProjectileRadius: 5
-            SpreadMax: 2
-            SpreadDecreaseSpeed: 8
-            SpreadIncreasePerShot: 1
-            SpreadPenaltyPerShot: 0.5
+            SpreadMax: 0.1
             DefaultAbility {
               SubObjectId: 5047134629311476418
             }
             ReloadAbility {
               SubObjectId: 17873086566573210660
             }
-            Damage: 25
+            Damage: 100
           }
         }
       }
@@ -659,11 +656,11 @@
         UnregisteredParameters {
           Overrides {
             Name: "cs:DamageToObjects"
-            Int: 10
+            Int: 100
           }
           Overrides {
             Name: "cs:DamageToPlayers"
-            Int: 5
+            Int: 0
           }
         }
         WantsNetworking: true

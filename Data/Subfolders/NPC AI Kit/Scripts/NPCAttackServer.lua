@@ -203,7 +203,7 @@ function ApplyDamage(dmg, source, position, rotation)
 		elseif DAMAGE_FX then
 			SpawnAsset(DAMAGE_FX, impactPosition, impactRotation)
 		end
-		
+
 		-- Events
 		
 		local money = ROOT:GetCustomProperty("money_per_hit")
@@ -212,17 +212,27 @@ function ApplyDamage(dmg, source, position, rotation)
 		Events.Broadcast("ObjectDamaged", id, prevHealth, amount, impactPosition, impactRotation, source)
 		--Events.BroadcastToAllPlayers("ObjectDamaged", id, prevHealth, amount, impactPosition, impactRotation)
 
+		local zombie_dead = false
+
 		if (newHealth <= 0) then
+			zombie_dead = true
 			money = money + ROOT:GetCustomProperty("money_per_kill")
 
 			Events.Broadcast("ObjectDestroyed", id)
+			Events.Broadcast("on_zombie_killed", id)
 			--Events.BroadcastToAllPlayers("ObjectDestroyed", id)
 			
 			DropRewards(source)
 		end
 
 		if(source:IsA("Player")) then
-			source:SetResource("money", source:GetResource("money") + money)
+			source:AddResource("money", money)
+			source:AddResource("total_money", amount)
+			source:AddResource("damage", amount)
+			
+			if(zombie_dead) then
+				source:AddResource("kills", 1)
+			end
 		end
 
 		--print(ROOT.name .. " Health = " .. newHealth)

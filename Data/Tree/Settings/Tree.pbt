@@ -1,6 +1,32 @@
 ﻿Name: "Settings"
 RootId: 1162429485289182677
 Objects {
+  Id: 9079804109610400015
+  Name: "Player Spawns"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1162429485289182677
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Player Spawns"
+  }
+}
+Objects {
   Id: 16549319288852007469
   Name: "Respawn Settings"
   Transform {
@@ -26,7 +52,7 @@ Objects {
     RespawnSettings {
       RespawnDelay: 1
       RespawnMode_v2 {
-        Value: "mc:erespawnmode:inplace"
+        Value: "mc:erespawnmode:none"
       }
     }
   }
@@ -450,38 +476,6 @@ Objects {
     BlueprintAsset {
       Id: 7887238662729938253
     }
-  }
-}
-Objects {
-  Id: 16813558807825262224
-  Name: "Spawn Point"
-  Transform {
-    Location {
-      X: 1664.61658
-      Y: -7592.22119
-      Z: 270.795471
-    }
-    Rotation {
-      Yaw: 161.592819
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 1162429485289182677
-  UnregisteredParameters {
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  PlayerSpawnPoint {
-    TeamInt: 1
-    PlayerScaleMultiplier: 1
   }
 }
 Objects {

@@ -7,21 +7,9 @@ local own_info_color = script:GetCustomProperty("own_info_color")
 local hit_ui = script:GetCustomProperty("hit_ui"):WaitForObject()
 local hit_sound = script:GetCustomProperty("hit_sound"):WaitForObject()
 
-local countdown_text = script:GetCustomProperty("countdown_text"):WaitForObject()
-local countdown_panel = script:GetCustomProperty("countdown_panel"):WaitForObject()
-
 local local_player = Game.GetLocalPlayer()
 local players = {}
 local total_players = 0
-
-function game_starting(timer)
-	if(timer > 0) then
-		countdown_text.text = tostring(timer)
-		countdown_panel.visibility = Visibility.FORCE_ON
-	else
-		countdown_panel.visibility = Visibility.FORCE_OFF
-	end
-end
 
 function player_joined(p)
 	total_players = total_players + 1
@@ -80,7 +68,7 @@ function player_joined(p)
 		avatar_ui:SetImage(local_player)
 	else
 		name_ui.text = p.name
-		money_ui.text = tostring(p:GetResource("money"))
+		money_ui.text = PIXELDEPTH.Utils.number_format(p:GetResource("money"))
 		avatar_ui:SetImage(p)
 
 		Task.Spawn(function()
@@ -179,10 +167,14 @@ function resource_changed(p, prop, val)
 end
 
 function money_changed(data)
-	for i = 1, #data do
-		if(data[i].id ~= local_player.id and players[data[i].id]) then
-			players[data[i].id].money_ui.text =  PIXELDEPTH.Utils.number_format(data[i].m)
-		end
+	--for i = 1, #data do
+	--	if(data[i].id ~= local_player.id and players[data[i].id]) then
+	--		players[data[i].id].money_ui.text =  PIXELDEPTH.Utils.number_format(data[i].m)
+	--	end
+	--end
+
+	if(data.id ~= local_player.id and players[data.id]) then
+		players[data.id].money_ui.text =  PIXELDEPTH.Utils.number_format(data.m)
 	end
 end
 
@@ -211,7 +203,6 @@ function on_zombie_hit(amount, position)
 	UI.ShowFlyUpText(tostring(amount), position, {color = Color.RED, isBig = is_big})
 end
 
-Events.Connect("on_game_starting", game_starting)
 Events.Connect("on_player_money_changed", money_changed)
 Events.Connect("on_purchase_complete", purchase_complete)
 Events.Connect("on_zombie_hit", on_zombie_hit)

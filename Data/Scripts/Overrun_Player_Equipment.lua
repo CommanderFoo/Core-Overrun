@@ -3,6 +3,10 @@ local Overrun_Weapon_Lookup = script:GetCustomProperty("Overrun_Weapon_Lookup"):
 
 
 function on_player_joined(player)
+	give_starting_pistol(player)
+end
+
+function give_starting_pistol(player)
 	local equipment = World.SpawnAsset(starting_pistol)
 
 	equipment:Equip(player)

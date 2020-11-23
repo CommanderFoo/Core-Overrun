@@ -59,7 +59,7 @@ function on_trigger_enter(t, obj)
 				if(not opened and not player_init and money >= cost) then
 					current_player = obj
 					open_crate()
-					Events.BroadcastToPlayer(obj, "on_crate_open")
+					Events.BroadcastToPlayer(obj, "on_audio_crate_open")
 					obj:SetResource("money", math.max(0, money - cost))
 				elseif(opened and not has_skull and picked_weapon ~= nil and not took_weapon) then
 					Events.Broadcast("on_bought_item", obj, picked_weapon:GetCustomProperty("asset_id"), picked_weapon:GetCustomProperty("ammo"), false)

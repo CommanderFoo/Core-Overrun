@@ -1,6 +1,4 @@
-﻿local starting_money = 5000000
-
-local players = {}
+﻿local players = {}
 
 local has_resouces_changed = false
 local last_broadcast = 0
@@ -10,17 +8,12 @@ function player_joined(p)
 	if(not players[p.id]) then
 		players[p.id] = {
 			
-			player = p,
-			money = starting_money
-
+			player = p
+		
 		}
 	end
 
-	p:SetResource("money", starting_money)
-	p:SetResource("rounds", 96)
-
 	p.resourceChangedEvent:Connect(resource_changed)
-	p.diedEvent:Connect(on_player_died)
 end
 
 function Tick()
@@ -32,13 +25,15 @@ function Tick()
 
 		for k, v in pairs(players) do
 			if(v.money_to_broadcast ~= nil) then
-				table.insert(get_changed_money, {id = v.player.id, m = v.money_to_broadcast})
+				Events.BroadcastToAllPlayers("on_player_money_changed", {id = v.player.id, m = v.money_to_broadcast})
+				--table.insert(get_changed_money, {id = v.player.id, m = v.money_to_broadcast})
 				v.money_to_broadcast = nil
 			end
 		end
 
 		if(#get_changed_money > 0) then
-			Events.BroadcastToAllPlayers("on_player_money_changed", get_changed_money)
+			--print(get_changed_money)
+			--Events.BroadcastToAllPlayers("on_player_money_changed", get_changed_money)
 		end
 	end
 end
@@ -53,14 +48,6 @@ end
 function player_left(p)
 	if(players[p.id]) then
 		players[p.id] = nil
-	end
-end
-
-function on_player_died(player)
-	local e = player:GetEquipment()
-
-	for k, v in pairs(e) do
-		v:Destroy()
 	end
 end
 

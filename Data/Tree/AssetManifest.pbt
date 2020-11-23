@@ -44,6 +44,15 @@ Assets {
   }
 }
 Assets {
+  Id: 9181948012513295547
+  Name: "Magic Dark Powerup 02 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_magic_dark_buff_powerup_02_Cue_ref"
+  }
+}
+Assets {
   Id: 9135206421299978471
   Name: "Grass Tall"
   PlatformAssetType: 1
