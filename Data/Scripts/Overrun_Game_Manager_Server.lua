@@ -4,7 +4,7 @@ local Player_Equipment = script:GetCustomProperty("Overrun_Player_Equipment"):Wa
 local starting_money = 50000
 
 local game_state = "WAITING"
-local timer = 3
+local timer = 6
 local round = 1
 local countdown_started = false
 local players = {}
@@ -80,7 +80,7 @@ function on_player_died(p)
 
 			Task.Wait(5)
 			game_state = "WAITING"
-			timer = 10
+			timer = 6
 			round = 1
 			total_players_down = 0
 			countdown_started = false
@@ -121,12 +121,15 @@ end
 function start_count_down()
 	countdown_started = true
 
+	Events.Broadcast("on_disable_all_players")
+
 	local task = Task.Spawn(function()
 		Events.BroadcastToAllPlayers("on_game_starting", timer)
 		timer = timer - 1
 
-		if(timer == 0) then
+		if(timer == -1) then
 			game_state = "PLAYING"
+			Events.Broadcast("on_enable_all_players")
 			Spawner.context.spawn_zombies()
 		end
 	end)

@@ -73,11 +73,13 @@ end
 
 function game_starting(timer)
 	if(timer > 0) then
+		UI.SetReticleVisible(false)
 		countdown_text.text = tostring(timer)
 		countdown_panel.visibility = Visibility.FORCE_ON
 	else
 		countdown_panel.visibility = Visibility.FORCE_OFF
 		hide_leaderboard()
+		UI.SetReticleVisible(true)
 	end
 end
 

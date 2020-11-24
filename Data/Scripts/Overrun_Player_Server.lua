@@ -73,5 +73,32 @@ function player_left(p)
 	end
 end
 
+function disable_players()
+	for k, player in pairs(Game.GetPlayers()) do
+		local abilities = player:GetAbilities()
+
+		for i = 1, #abilities do
+			abilities[i].isEnabled = false
+		end
+
+		player.movementControlMode = MovementControlMode.NONE
+	end
+end
+
+function enable_players()
+	for k, player in pairs(Game.GetPlayers()) do
+		local abilities = player:GetAbilities()
+
+		for i = 1, #abilities do
+			abilities[i].isEnabled = true
+		end
+
+		player.movementControlMode = MovementControlMode.VIEW_RELATIVE
+	end
+end
+
+Events.Connect("on_disable_all_players", disable_players)
+Events.Connect("on_enable_all_players", enable_players)
+
 Game.playerJoinedEvent:Connect(player_joined)
 Game.playerLeftEvent:Connect(player_left)

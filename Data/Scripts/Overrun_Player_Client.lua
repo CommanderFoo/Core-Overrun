@@ -221,7 +221,7 @@ function Tick(dt)
 			
 			})
 			
-			fx_tween:on_change(function(v))
+			fx_tween:on_change(function(v)
 				hit_effect:SetSmartProperty("Effect Strength", v.a)
 			end)
 
