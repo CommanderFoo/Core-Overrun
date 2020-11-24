@@ -28,7 +28,6 @@ Objects {
   ChildIds: 7265624749015544125
   ChildIds: 7508389135912318772
   ChildIds: 8346790829017566368
-  ChildIds: 17674047906434952804
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -38,46 +37,6 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
-  }
-}
-Objects {
-  Id: 17674047906434952804
-  Name: "Overrun Starting Pistol"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  WantsNetworking: true
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 14156651541393010698
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Overrun Starting Pistol"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 1066.74121
-            Y: -6913.39648
-            Z: 25.9997253
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 16298143866150817198
-    }
   }
 }
 Objects {

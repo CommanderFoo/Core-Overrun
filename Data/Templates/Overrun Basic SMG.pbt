@@ -19,6 +19,7 @@
         ChildIds: 17693710445180760605
         ChildIds: 597576593365841973
         ChildIds: 16604582378725414065
+        ChildIds: 11891337336602501805
         UnregisteredParameters {
           Overrides {
             Name: "cs:asset_id"
@@ -593,6 +594,47 @@
           StaticMesh {
             Physics {
             }
+          }
+        }
+      }
+      Objects {
+        Id: 11891337336602501805
+        Name: "DestructibleWeaponServer"
+        Transform {
+          Location {
+            X: 1191.18237
+            Y: -1009.63391
+            Z: -0.000122070313
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1.00000012
+            Y: 1.00000012
+            Z: 1
+          }
+        }
+        ParentId: 18249410734534434392
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:DamageToObjects"
+            Int: 25
+          }
+          Overrides {
+            Name: "cs:DamageToPlayers"
+            Int: 0
+          }
+        }
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Script {
+          ScriptAsset {
+            Id: 16535125421909335487
           }
         }
       }

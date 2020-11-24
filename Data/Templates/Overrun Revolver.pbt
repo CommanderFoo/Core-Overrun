@@ -446,7 +446,6 @@
         }
         ParentId: 11675705988199002280
         ChildIds: 4885397441779293808
-        ChildIds: 11447156418783821543
         ChildIds: 3314661608195581539
         ChildIds: 931576394806181583
         ChildIds: 309615042904430660
@@ -488,35 +487,6 @@
         Script {
           ScriptAsset {
             Id: 440168262593430639
-          }
-        }
-      }
-      Objects {
-        Id: 11447156418783821543
-        Name: "WeaponAimClient"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1.00000012
-            Y: 1.00000012
-            Z: 1
-          }
-        }
-        ParentId: 15095978927394395233
-        UnregisteredParameters {
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Script {
-          ScriptAsset {
-            Id: 9654009968499969690
           }
         }
       }
@@ -1092,11 +1062,11 @@
         UnregisteredParameters {
           Overrides {
             Name: "cs:DamageToObjects"
-            Int: 10
+            Int: 100
           }
           Overrides {
             Name: "cs:DamageToPlayers"
-            Int: 5
+            Int: 0
           }
         }
         WantsNetworking: true

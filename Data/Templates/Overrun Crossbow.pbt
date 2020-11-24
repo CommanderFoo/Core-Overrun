@@ -32,7 +32,7 @@
           }
           Overrides {
             Name: "cs:EnableAutoReload"
-            Bool: true
+            Bool: false
           }
           Overrides {
             Name: "cs:EnableAim"
@@ -208,12 +208,11 @@
             ImpactProjectileAssetRef {
               Id: 7826957446471998063
             }
-            IsHitscan: true
             BeamAssetRef {
               Id: 841534158063459245
             }
             BurstCount: 1
-            BurstDuration: 1
+            BurstDuration: 2
             AttackCooldown: 0.25
             Range: 100000
             ImpactPlayerAssetRef {
@@ -222,7 +221,7 @@
             ReticleType {
               Value: "mc:ereticletype:none"
             }
-            MaxAmmo: 1
+            MaxAmmo: 6
             AmmoType: "rounds"
             IsFiniteAmmo: true
             MultiShot: 1
@@ -410,7 +409,6 @@
         }
         ParentId: 1913171039696578905
         ChildIds: 1868856970333135433
-        ChildIds: 9447648386755677841
         ChildIds: 4291059450968242169
         ChildIds: 3648597302518192961
         ChildIds: 16562249120299683191
@@ -453,35 +451,6 @@
         Script {
           ScriptAsset {
             Id: 440168262593430639
-          }
-        }
-      }
-      Objects {
-        Id: 9447648386755677841
-        Name: "WeaponAimClient"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1.00000012
-            Y: 1.00000012
-            Z: 1
-          }
-        }
-        ParentId: 1247930820473156030
-        UnregisteredParameters {
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Script {
-          ScriptAsset {
-            Id: 9654009968499969690
           }
         }
       }
@@ -1030,11 +999,11 @@
         UnregisteredParameters {
           Overrides {
             Name: "cs:DamageToObjects"
-            Int: 10
+            Int: 100
           }
           Overrides {
             Name: "cs:DamageToPlayers"
-            Int: 5
+            Int: 0
           }
         }
         WantsNetworking: true

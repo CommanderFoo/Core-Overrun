@@ -32,7 +32,7 @@
           }
           Overrides {
             Name: "cs:EnableAutoReload"
-            Bool: true
+            Bool: false
           }
           Overrides {
             Name: "cs:EnableAim"
@@ -230,7 +230,7 @@
             ProjectileLifeSpan: 10
             ProjectileLength: 50
             ProjectileRadius: 5
-            SpreadMax: 3
+            SpreadMax: 2
             SpreadDecreaseSpeed: 5.5
             SpreadIncreasePerShot: 0.5
             SpreadPenaltyPerShot: 1
@@ -412,7 +412,6 @@
         }
         ParentId: 16290276033039985891
         ChildIds: 15618750322129071346
-        ChildIds: 13709837676177699404
         ChildIds: 2933571241273870624
         ChildIds: 13455425427836246794
         ChildIds: 10129761594793830347
@@ -454,35 +453,6 @@
         Script {
           ScriptAsset {
             Id: 440168262593430639
-          }
-        }
-      }
-      Objects {
-        Id: 13709837676177699404
-        Name: "WeaponAimClient"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1.00000012
-            Y: 1.00000012
-            Z: 1
-          }
-        }
-        ParentId: 5487135774256036248
-        UnregisteredParameters {
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Script {
-          ScriptAsset {
-            Id: 9654009968499969690
           }
         }
       }
@@ -1415,11 +1385,11 @@
         UnregisteredParameters {
           Overrides {
             Name: "cs:DamageToObjects"
-            Int: 10
+            Int: 40
           }
           Overrides {
             Name: "cs:DamageToPlayers"
-            Int: 5
+            Int: 0
           }
         }
         WantsNetworking: true

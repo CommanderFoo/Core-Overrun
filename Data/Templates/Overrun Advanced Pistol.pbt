@@ -24,7 +24,7 @@
         UnregisteredParameters {
           Overrides {
             Name: "cs:BaseDamage"
-            Float: 28
+            Float: 35
           }
           Overrides {
             Name: "cs:HeadshotDamage"
@@ -32,7 +32,7 @@
           }
           Overrides {
             Name: "cs:EnableAutoReload"
-            Bool: true
+            Bool: false
           }
           Overrides {
             Name: "cs:EnableAim"
@@ -208,11 +208,12 @@
             ImpactProjectileAssetRef {
               Id: 841534158063459245
             }
+            IsHitscan: true
             BeamAssetRef {
               Id: 841534158063459245
             }
-            BurstCount: 1
-            BurstDuration: 1
+            BurstCount: 3
+            BurstDuration: 6
             AttackCooldown: 0.25
             Range: 70000
             ImpactPlayerAssetRef {
@@ -221,7 +222,7 @@
             ReticleType {
               Value: "mc:ereticletype:none"
             }
-            MaxAmmo: 16
+            MaxAmmo: 30
             AmmoType: "rounds"
             IsFiniteAmmo: true
             MultiShot: 1
@@ -229,7 +230,7 @@
             ProjectileLifeSpan: 10
             ProjectileLength: 50
             ProjectileRadius: 5
-            SpreadMax: 2
+            SpreadMax: 1
             SpreadDecreaseSpeed: 8
             SpreadIncreasePerShot: 1
             SpreadPenaltyPerShot: 0.5
@@ -259,7 +260,6 @@
         ParentId: 15938281963487901165
         ChildIds: 18296743015773731321
         ChildIds: 17718522420298969678
-        ChildIds: 10884804392969194000
         UnregisteredParameters {
         }
         WantsNetworking: true
@@ -334,35 +334,6 @@
         Script {
           ScriptAsset {
             Id: 12210489528647249200
-          }
-        }
-      }
-      Objects {
-        Id: 10884804392969194000
-        Name: "WeaponAimServer"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1.00000012
-            Y: 1.00000012
-            Z: 1
-          }
-        }
-        ParentId: 8454822938286861492
-        UnregisteredParameters {
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Script {
-          ScriptAsset {
-            Id: 2472577150731722024
           }
         }
       }
@@ -1055,11 +1026,11 @@
         UnregisteredParameters {
           Overrides {
             Name: "cs:DamageToObjects"
-            Int: 10
+            Int: 35
           }
           Overrides {
             Name: "cs:DamageToPlayers"
-            Int: 5
+            Int: 0
           }
         }
         WantsNetworking: true

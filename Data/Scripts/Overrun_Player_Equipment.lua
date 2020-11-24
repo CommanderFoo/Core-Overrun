@@ -1,18 +1,18 @@
-﻿local starting_pistol = script:GetCustomProperty("starting_pistol")
+﻿local starting_weapon = script:GetCustomProperty("starting_weapon")
 local Overrun_Weapon_Lookup = script:GetCustomProperty("Overrun_Weapon_Lookup"):WaitForObject()
 
 
 function on_player_joined(player)
-	give_starting_pistol(player)
+	give_starting_weapon(player)
 end
 
-function give_starting_pistol(player)
-	local equipment = World.SpawnAsset(starting_pistol)
+function give_starting_weapon(player)
+	local equipment = World.SpawnAsset(starting_weapon)
 
 	equipment:Equip(player)
 end
 
-function bought_item(player, asset_id, max_basic_ammo, play_audio)
+function bought_item(player, asset_id, ammo, play_audio)
 	if(#player:GetEquipment() > 0) then
 		local equipment = player:GetEquipment()[1]
 		local is_melee = equipment:GetCustomProperty("is_melee")
@@ -21,14 +21,16 @@ function bought_item(player, asset_id, max_basic_ammo, play_audio)
 			local asset = Overrun_Weapon_Lookup.context.get_asset(asset_id)
 
 			if(asset ~= nil) then
-				equipment:Destroy()
+				destroy_all_equipment(player)
 				
 				local new_weapon = World.SpawnAsset(asset)
 
-				player:SetResource("rounds", max_basic_ammo)
+				player:SetResource("rounds", ammo)
+
+				print(new_weapon.currentAmmo, ammo, new_weapon.name)
 
 				if(new_weapon.currentAmmo ~= nil) then
-					new_weapon.currentAmmo = max_basic_ammo
+					new_weapon.currentAmmo = ammo
 				end
 
 				new_weapon:Equip(player)
@@ -36,6 +38,14 @@ function bought_item(player, asset_id, max_basic_ammo, play_audio)
 				Events.BroadcastToPlayer(player, "on_purchase_complete", new_weapon:GetCustomProperty("is_melee"), play_audio)
 			end
 		end
+	end
+end
+
+function destroy_all_equipment(player)
+	local equipment = player:GetEquipment()
+
+	for k, v in pairs(equipment) do
+		v:Destroy()
 	end
 end
 

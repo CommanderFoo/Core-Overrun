@@ -24,7 +24,7 @@
         UnregisteredParameters {
           Overrides {
             Name: "cs:BaseDamage"
-            Float: 15
+            Float: 20
           }
           Overrides {
             Name: "cs:HeadshotDamage"
@@ -32,7 +32,7 @@
           }
           Overrides {
             Name: "cs:EnableAutoReload"
-            Bool: true
+            Bool: false
           }
           Overrides {
             Name: "cs:EnableAim"
@@ -106,7 +106,7 @@
           }
           Overrides {
             Name: "cs:is_melee"
-            String: ""
+            Bool: false
           }
           Overrides {
             Name: "cs:BaseDamage:tooltip"
@@ -222,7 +222,7 @@
             ReticleType {
               Value: "mc:ereticletype:none"
             }
-            MaxAmmo: 10
+            MaxAmmo: 12
             AmmoType: "rounds"
             IsFiniteAmmo: true
             MultiShot: 5
@@ -232,7 +232,7 @@
             ProjectileRadius: 5
             ProjectileDrag: -10
             SpreadMin: 0.5
-            SpreadMax: 2.6
+            SpreadMax: 2
             SpreadDecreaseSpeed: 7
             SpreadIncreasePerShot: 1.3
             SpreadAperture: 150
@@ -262,7 +262,6 @@
         ParentId: 2999898498800686869
         ChildIds: 14200215625946544275
         ChildIds: 2123599146696571325
-        ChildIds: 11708204936132444271
         UnregisteredParameters {
         }
         WantsNetworking: true
@@ -341,35 +340,6 @@
         }
       }
       Objects {
-        Id: 11708204936132444271
-        Name: "WeaponAimServer"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1.00000012
-            Y: 1.00000012
-            Z: 1
-          }
-        }
-        ParentId: 1247799730662312200
-        UnregisteredParameters {
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Script {
-          ScriptAsset {
-            Id: 2472577150731722024
-          }
-        }
-      }
-      Objects {
         Id: 3428444632029121115
         Name: "Client Context"
         Transform {
@@ -414,7 +384,6 @@
         }
         ParentId: 3428444632029121115
         ChildIds: 11402530270483255070
-        ChildIds: 17895046195605362681
         ChildIds: 10190626919661917067
         ChildIds: 1936895349116401700
         ChildIds: 17171320464076747538
@@ -456,35 +425,6 @@
         Script {
           ScriptAsset {
             Id: 440168262593430639
-          }
-        }
-      }
-      Objects {
-        Id: 17895046195605362681
-        Name: "WeaponAimClient"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1.00000012
-            Y: 1.00000012
-            Z: 1
-          }
-        }
-        ParentId: 4844450735226550318
-        UnregisteredParameters {
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Script {
-          ScriptAsset {
-            Id: 9654009968499969690
           }
         }
       }
@@ -1111,11 +1051,11 @@
         UnregisteredParameters {
           Overrides {
             Name: "cs:DamageToObjects"
-            Int: 10
+            Int: 20
           }
           Overrides {
             Name: "cs:DamageToPlayers"
-            Int: 5
+            Int: 0
           }
         }
         WantsNetworking: true

@@ -15,12 +15,13 @@
             Z: 1
           }
         }
-        ParentId: 14351769760478014791
+        ParentId: 4781671109827199097
         ChildIds: 1392879424662617188
         ChildIds: 14643327588434436475
         ChildIds: 13471641576489486240
         ChildIds: 91045186832852432
         ChildIds: 2128842841433334046
+        ChildIds: 17761742002651155050
         UnregisteredParameters {
           Overrides {
             Name: "cs:BaseDamage"
@@ -204,7 +205,7 @@
             BeamAssetRef {
               Id: 841534158063459245
             }
-            BurstCount: 1
+            BurstCount: 6
             BurstDuration: 1
             AttackCooldown: 0.25
             Range: 100000
@@ -249,7 +250,6 @@
         ParentId: 14934994781472954733
         ChildIds: 11645660490659801268
         ChildIds: 15224345360202133246
-        ChildIds: 12516839961855638791
         UnregisteredParameters {
         }
         WantsNetworking: true
@@ -324,35 +324,6 @@
         Script {
           ScriptAsset {
             Id: 12210489528647249200
-          }
-        }
-      }
-      Objects {
-        Id: 12516839961855638791
-        Name: "WeaponAimServer"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1.00000012
-            Y: 1.00000012
-            Z: 1
-          }
-        }
-        ParentId: 1392879424662617188
-        UnregisteredParameters {
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Script {
-          ScriptAsset {
-            Id: 2472577150731722024
           }
         }
       }
@@ -1036,6 +1007,47 @@
           Animation: "2hand_rifle_reload_magazine"
           KeyBinding_v2 {
             Value: "mc:egameaction:extraaction_33"
+          }
+        }
+      }
+      Objects {
+        Id: 17761742002651155050
+        Name: "DestructibleWeaponServer"
+        Transform {
+          Location {
+            X: 1172.56531
+            Y: -1053.95959
+            Z: -0.000122070313
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1.00000012
+            Y: 1.00000012
+            Z: 1
+          }
+        }
+        ParentId: 14934994781472954733
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:DamageToObjects"
+            Int: 100
+          }
+          Overrides {
+            Name: "cs:DamageToPlayers"
+            Int: 0
+          }
+        }
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Script {
+          ScriptAsset {
+            Id: 16535125421909335487
           }
         }
       }

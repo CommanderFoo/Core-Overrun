@@ -269,7 +269,7 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:starting_pistol"
+      Name: "cs:starting_weapon"
       AssetReference {
         Id: 16298143866150817198
       }
@@ -309,7 +309,6 @@ Objects {
   }
   ParentId: 5539997602360125933
   ChildIds: 2806057428770215655
-  ChildIds: 7362314865063371097
   ChildIds: 8027858075814413371
   ChildIds: 985933359023610377
   ChildIds: 1616209010227049162
@@ -491,41 +490,6 @@ Objects {
   }
 }
 Objects {
-  Id: 7362314865063371097
-  Name: "Overrun_Barrier_Repair_Client"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 17922148234597677997
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:rebuild_barrier_ui"
-      ObjectReference {
-        SelfId: 14072280616316253174
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 4086251281095042596
-    }
-  }
-}
-Objects {
   Id: 2806057428770215655
   Name: "Overrun_Player_Client"
   Transform {
@@ -609,7 +573,6 @@ Objects {
   }
   ParentId: 5539997602360125933
   ChildIds: 11187243948824875444
-  ChildIds: 17061046855740868296
   ChildIds: 8232192817320125062
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -645,41 +608,6 @@ Objects {
   Script {
     ScriptAsset {
       Id: 11517159152631715159
-    }
-  }
-}
-Objects {
-  Id: 17061046855740868296
-  Name: "Overrun_Areas_Server"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 8379578297261672591
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:areas"
-      ObjectReference {
-        SelfId: 11108024316399262656
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 8513244940030127018
     }
   }
 }

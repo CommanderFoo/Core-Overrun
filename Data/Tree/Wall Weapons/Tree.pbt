@@ -261,6 +261,10 @@ Objects {
             A: 1
           }
         }
+        Overrides {
+          Name: "cs:max_basic_ammo"
+          Int: 48
+        }
       }
     }
     TemplateAsset {

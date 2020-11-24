@@ -53,7 +53,7 @@ function setup_resources(p)
 	p:SetResource("kills", 0)
 	p:SetResource("rounds", 48)
 
-	Player_Equipment.context.give_starting_pistol(p)
+	Player_Equipment.context.give_starting_weapon(p)
 end
 
 function on_player_died(p)

@@ -19,6 +19,7 @@
         ChildIds: 15742504046948872525
         ChildIds: 17273667644281298884
         ChildIds: 17497506309738318497
+        ChildIds: 15630842783526957638
         UnregisteredParameters {
           Overrides {
             Name: "cs:asset_id"
@@ -95,7 +96,7 @@
             ProjectileLifeSpan: 10
             ProjectileLength: 50
             ProjectileRadius: 5
-            SpreadMax: 3
+            SpreadMax: 2
             SpreadDecreaseSpeed: 5.5
             SpreadIncreasePerShot: 0.5
             SpreadPenaltyPerShot: 1
@@ -105,7 +106,7 @@
             ReloadAbility {
               SubObjectId: 17273667644281298884
             }
-            Damage: 35
+            Damage: 25
           }
         }
       }
@@ -992,6 +993,47 @@
           StaticMesh {
             Physics {
             }
+          }
+        }
+      }
+      Objects {
+        Id: 15630842783526957638
+        Name: "DestructibleWeaponServer"
+        Transform {
+          Location {
+            X: 608.143311
+            Y: -630.568848
+            Z: -0.000122070313
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 12271537993503036529
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:DamageToObjects"
+            Int: 20
+          }
+          Overrides {
+            Name: "cs:DamageToPlayers"
+            Int: 0
+          }
+        }
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Script {
+          ScriptAsset {
+            Id: 16535125421909335487
           }
         }
       }

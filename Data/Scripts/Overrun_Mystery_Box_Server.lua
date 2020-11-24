@@ -63,9 +63,9 @@ function on_trigger_enter(t, obj)
 					obj:SetResource("money", math.max(0, money - cost))
 				elseif(opened and not has_skull and picked_weapon ~= nil and not took_weapon) then
 					Events.Broadcast("on_bought_item", obj, picked_weapon:GetCustomProperty("asset_id"), picked_weapon:GetCustomProperty("ammo"), false)
-					picked_weapon.visibility = Visibility.FORCE_OFF
 					lid:SetNetworkedCustomProperty("weapon_took", true)
 					took_weapon = true
+					picked_weapon.visibility = Visibility.FORCE_OFF
 				end
 			end
 		end)
@@ -197,7 +197,7 @@ function setup_tweens()
 
 			current_player = nil
 			has_skull = false
-			picked_weapon.visibility = Visibility.FORCE_ON
+			picked_weapon.visibility = Visibility.FORCE_OFF
 			picked_weapon = nil
 			lid:SetNetworkedCustomProperty("weapon_took", false)
 			took_weapon = false
