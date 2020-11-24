@@ -20,14 +20,13 @@ Objects {
   ChildIds: 9873365768176998975
   ChildIds: 2792350089564264743
   ChildIds: 10208137556615864073
-  ChildIds: 5539997602360125933
-  ChildIds: 11108024316399262656
   ChildIds: 2202992188429786742
   ChildIds: 6538324789638676258
   ChildIds: 3121589836909472008
   ChildIds: 7265624749015544125
   ChildIds: 7508389135912318772
   ChildIds: 8346790829017566368
+  ChildIds: 5539997602360125933
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -37,6 +36,32 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 5539997602360125933
+  Name: "Scripts"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Scripts"
   }
 }
 Objects {
@@ -851,58 +876,6 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "Zombies"
-  }
-}
-Objects {
-  Id: 11108024316399262656
-  Name: "Areas"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Areas"
-  }
-}
-Objects {
-  Id: 5539997602360125933
-  Name: "Scripts"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Scripts"
   }
 }
 Objects {

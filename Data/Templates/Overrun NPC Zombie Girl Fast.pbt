@@ -1,13 +1,13 @@
 ﻿Assets {
-  Id: 4378427399398930891
-  Name: "Overrun NPC Zombie Girl"
+  Id: 10262823019506420651
+  Name: "Overrun NPC Zombie Girl Fast"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
       RootId: 3491882363712052561
       Objects {
         Id: 3491882363712052561
-        Name: "Overrun NPC Zombie Girl"
+        Name: "Overrun NPC Zombie Girl Fast"
         Transform {
           Scale {
             X: 1
@@ -121,6 +121,12 @@
           Overrides {
             Name: "cs:money_per_kill"
             Int: 50
+          }
+          Overrides {
+            Name: "cs:Overrun_Spawner_Server"
+            ObjectReference {
+              SelfId: 17836668198438326760
+            }
           }
           Overrides {
             Name: "cs:CurrentState:isrep"
@@ -347,7 +353,7 @@
           Overrides {
             Name: "cs:MuzzleFlash"
             AssetReference {
-              Id: 14823229310259545338
+              Id: 15969291792815963364
             }
           }
           Overrides {
@@ -866,9 +872,18 @@
           Overrides {
             Name: "ma:Shared_Detail1:color"
             Color {
-              R: 0.583
-              G: 0.294415
-              B: 0.299224675
+              R: 0.218000054
+              G: 0.292476535
+              B: 1
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail2:color"
+            Color {
+              R: 1
+              G: 0.218000054
+              B: 0.764159262
               A: 1
             }
           }

@@ -4,10 +4,37 @@ local center_spawns = script:GetCustomProperty("center_spawns"):WaitForObject()
 local house_1_spawns = script:GetCustomProperty("house_1_spawns"):WaitForObject()
 local house_2_spawns = script:GetCustomProperty("house_2_spawns"):WaitForObject()
 
-local zombie_assets = {
+local zombie_slow_assets = {
 
-	[1] = script:GetCustomProperty("zombie_guy"),
-	[2] = script:GetCustomProperty("zombie_girl")
+	[1] = script:GetCustomProperty("OverrunNPCZombieGuySlow"),
+	[2] = script:GetCustomProperty("OverrunNPCZombieGirlSlow")	
+
+}
+
+local zombie_fast_assets = {
+
+	[1] = script:GetCustomProperty("OverrunNPCZombieGuyFast"),
+	[2] = script:GetCustomProperty("OverrunNPCZombieGirlFast")	
+
+}
+
+local zombie_faster_assets = {
+
+	[1] = script:GetCustomProperty("OverrunNPCZombieGuyFaster"),
+	[2] = script:GetCustomProperty("OverrunNPCZombieGirlFaster")	
+
+}
+
+local zombie_spitter_assets = {
+
+	[1] = script:GetCustomProperty("OverrunNPCZombieSpitter"),
+	[2] = script:GetCustomProperty("OverrunNPCZombieSpitterBrute")	
+
+}
+
+local zombie_tank_assets = {
+
+	[1] = script:GetCustomProperty("OverrunNPCZombieGuyTank")
 
 }
 
@@ -17,6 +44,9 @@ local spawned = 0
 local max = 5
 local spawn_task = nil
 local killed = 0
+local round = 1
+
+local health_increase = 0
 
 local spawned_zombies = {}
 
@@ -28,15 +58,80 @@ end
 
 add_spawn_points(center_spawns)
 
+function set_zombie_stats_per_round()
+	if(round >= 2) then
+		local health_add = 10
+
+		if(round >= 25) then
+			health_add = 100
+		elseif(round >= 20) then
+			health_add = 60
+		elseif(round >= 10) then
+			health_add = 40
+		elseif(round >= 5) then
+			health_add = 20
+		elseif(round >= 2) then
+			health_add = 10
+		end
+
+		health_increase = round * health_add
+	end
+end
+
+function get_health_increase()
+	return health_increase
+end
+
+function concat_table(t1, t2)
+    for i = 1, #t2 do
+        t1[#t1+i] = t2[i]
+	end
+	
+    return t1
+end
+
+
+function get_random_zombie_asset()
+	local assets = concat_table({}, zombie_slow_assets)
+
+	if(round >= 4) then
+		assets = concat_table(assets, zombie_fast_assets)
+	end
+
+	if(round >= 6) then
+		assets = concat_table(assets, zombie_spitter_assets)
+		assets = concat_table(assets, zombie_faster_assets)
+	end
+
+	if(round >=8) then
+		assets = concat_table(assets, zombie_tank_assets)
+		assets = concat_table(assets, zombie_spitter_assets)
+		assets = concat_table(assets, zombie_fast_assets)
+	end
+
+	-- Spitter only rounds
+
+	if(round % 5 == 0) then
+		assets = concat_table({}, zombie_spitter_assets)
+	end
+
+	return assets[math.random(#assets)]
+end
+
 function spawn_zombies()
+	if(round > 1) then
+		set_zombie_stats_per_round()
+	end
+
 	spawn_task = Task.Spawn(function()
-		local zombie = zombie_assets[math.random(#zombie_assets)]
+		local zombie = get_random_zombie_asset()
 		local point = spawn_points[math.random(#spawn_points)]
 		local pos = point:GetWorldPosition()
 		local rot = point:GetWorldRotation()
 		local z = World.SpawnAsset(zombie, {parent = container, position = pos, rotation = rot})
-	
+		
 		spawned_zombies[z:GetCustomProperty("ObjectId")] = z
+
 		spawned = spawned + 1
 	end)
 	
@@ -80,12 +175,19 @@ function clear_all_zombies()
 	spawned_zombies = {}
 end
 
+function set_round(r)
+	round = r
+end
+
 function reset()
 	clear_all_zombies()
 	killed = 0
 	spawned = 0
 	max = 0
+	round = 1
 	spawn_points = {}
+	health_increase = 0
+
 	add_spawn_points(center_spawns)
 end
 

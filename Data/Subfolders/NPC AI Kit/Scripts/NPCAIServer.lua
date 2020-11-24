@@ -1,4 +1,6 @@
-﻿--[[
+﻿local Spawner = script.parent:GetCustomProperty("Overrun_Spawner_Server"):WaitForObject()
+
+--[[
 	NPCAI - Server
 	by: standardcombo, DarkDev
 	v0.9.3
@@ -13,6 +15,7 @@
 local MODULE = require( script:GetCustomProperty("ModuleManager") )
 require ( script:GetCustomProperty("NPCManager") )
 function NPC_MANAGER() return MODULE.Get("standardcombo.NPCKit.NPCManager") end
+function CROSS_CONTEXT_CALLER() return MODULE.Get("standardcombo.Utils.CrossContextCaller") end
 function NAV_MESH() return _G.NavMesh end
 
 
@@ -21,6 +24,7 @@ local ROTATION_ROOT = script:GetCustomProperty("RotationRoot"):WaitForObject()
 local COLLIDER = script:GetCustomProperty("Collider"):WaitForObject()
 local TRIGGER = script:GetCustomProperty("Trigger"):GetObject()
 local ATTACK_COMPONENT = script:GetCustomProperty("AttackComponent"):WaitForObject()
+local ENGAGE_EFFECT = script:GetCustomProperty("EngageEffect")
 
 local MOVE_SPEED = ROOT:GetCustomProperty("MoveSpeed") or 400
 local TURN_SPEED = ROOT:GetCustomProperty("TurnSpeed") or 2
@@ -40,6 +44,9 @@ local ATTACK_COOLDOWN = ROOT:GetCustomProperty("AttackCooldown") or 0
 local OBJECTIVE_THRESHOLD_DISTANCE_SQUARED = 900
 
 MAX_HEALTH = ROOT:GetCustomProperty("CurrentHealth")
+
+MAX_HEALTH = MAX_HEALTH + Spawner.context.get_health_increase()
+--MOVE_SPEED = MOVE_SPEED + Spawner.context.get_speed_increase()
 
 local PATHING_STEP = MOVE_SPEED * LOGICAL_PERIOD + 10
 local PATHING_STEP_SQUARED = PATHING_STEP * PATHING_STEP
@@ -851,6 +858,15 @@ function HandleTeamChanged()
 	COLLIDER.team = GetTeam()
 end
 HandleTeamChanged()
+
+function PlayEngageEffect()
+	if ENGAGE_EFFECT then
+		CROSS_CONTEXT_CALLER().Call(function()
+			local pos = script:GetWorldPosition()
+			World.SpawnAsset(ENGAGE_EFFECT, {position = pos})
+		end)
+	end
+end
 
 ROOT.networkedPropertyChangedEvent:Connect(OnPropertyChanged)
 --]]

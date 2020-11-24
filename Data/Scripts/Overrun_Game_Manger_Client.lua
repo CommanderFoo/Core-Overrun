@@ -21,11 +21,11 @@ function round_completed(round)
 
 	flash_task = Task.Spawn(function()
 		round_ui:SetColor(Color.WHITE)
-		Task.Wait(.5)
+		Task.Wait(.2)
 		round_ui:SetColor(Color.RED)
 	end)
 
-	flash_task.repeatCount = 10
+	flash_task.repeatCount = 8
 	flash_task.repeatInterval = 1
 end
 

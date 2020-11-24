@@ -219,15 +219,57 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:zombie_guy"
+      Name: "cs:OverrunNPCZombieGuySlow"
       AssetReference {
         Id: 18048664039051367434
       }
     }
     Overrides {
-      Name: "cs:zombie_girl"
+      Name: "cs:OverrunNPCZombieGuyFast"
+      AssetReference {
+        Id: 4609476761201917764
+      }
+    }
+    Overrides {
+      Name: "cs:OverrunNPCZombieGuyFaster"
+      AssetReference {
+        Id: 6957496207641492681
+      }
+    }
+    Overrides {
+      Name: "cs:OverrunNPCZombieGirlSlow"
       AssetReference {
         Id: 4378427399398930891
+      }
+    }
+    Overrides {
+      Name: "cs:OverrunNPCZombieGirlFast"
+      AssetReference {
+        Id: 10262823019506420651
+      }
+    }
+    Overrides {
+      Name: "cs:OverrunNPCZombieGirlFaster"
+      AssetReference {
+        Id: 12411740015946529860
+      }
+    }
+    Overrides {
+      Name: "cs:OverrunNPCZombieSpitter"
+      AssetReference {
+        Id: 521426991623052014
+      }
+    }
+    Overrides {
+      Name: "cs:OverrunNPCZombieSpitterBrute"
+      AssetReference {
+        Id: 6035966600575450220
+      }
+    }
+    Overrides {
+      Name: "cs:OverrunNPCZombieGuyTank"
+      AssetReference {
+        Id: 15071444661122516876
       }
     }
   }

@@ -140,9 +140,11 @@ end
 
 function round_completed()
 	round = round + 1
-	
+
+	Spawner.context.set_round(round)
+
 	round_task = Task.Spawn(function()
-		Task.Wait(3)
+		Task.Wait(8)
 		Spawner.context.set_max_spawns(math.min(25, round + 2))
 		Events.BroadcastToAllPlayers("on_round_start", round)
 		Spawner.context.spawn_zombies()

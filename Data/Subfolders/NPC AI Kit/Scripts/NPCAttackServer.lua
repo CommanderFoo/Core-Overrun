@@ -1,4 +1,6 @@
-﻿--[[
+﻿local Spawner = script.parent:GetCustomProperty("Overrun_Spawner_Server"):WaitForObject()
+
+--[[
 	NPCAttack - Server
 	by: standardcombo
 	v0.9.1
@@ -16,8 +18,9 @@ function PLAYER_HOMING_TARGETS() return MODULE.Get("standardcombo.Combat.PlayerH
 function CROSS_CONTEXT_CALLER() return MODULE.Get("standardcombo.Utils.CrossContextCaller") end
 function LOOT_DROP_FACTORY() return MODULE.Get_Optional("standardcombo.NPCKit.LootDropFactory") end
 
-
 local ROOT = script:GetCustomProperty("Root"):WaitForObject()
+
+ROOT:SetNetworkedCustomProperty("CurrentHealth", ROOT:GetCustomProperty("CurrentHealth") + Spawner.context.get_health_increase())
 
 local DAMAGE_TO_PLAYERS = script:GetCustomProperty("DamageToPlayers") or 1
 local DAMAGE_TO_NPCS = script:GetCustomProperty("DamageToNPCs") or 1
@@ -246,7 +249,6 @@ end
 function SetHealth(value)
 	ROOT:SetNetworkedCustomProperty("CurrentHealth", value)
 end
-
 
 function DropRewards(killer)
 	-- Give resources
