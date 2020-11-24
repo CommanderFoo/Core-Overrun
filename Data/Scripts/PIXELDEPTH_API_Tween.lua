@@ -1,7 +1,7 @@
 ﻿--[[
 Example of how to use this library
 
-local my_tween = PIXELDEPTH.Tween:new(.3, {a = 0}, {w = 1})
+local my_tween = PIXELDEPTH.Tween:new(.3, {a = 0}, {a = 1})
 
 my_tween:on_complete(function()
 	my_tween = nil

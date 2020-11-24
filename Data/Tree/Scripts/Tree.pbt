@@ -544,6 +544,12 @@ Objects {
         SelfId: 2746382917114278438
       }
     }
+    Overrides {
+      Name: "cs:hit_effect"
+      ObjectReference {
+        SelfId: 5804301829799054227
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"

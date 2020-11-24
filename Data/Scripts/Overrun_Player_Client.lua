@@ -7,6 +7,8 @@ local own_info_color = script:GetCustomProperty("own_info_color")
 local hit_ui = script:GetCustomProperty("hit_ui"):WaitForObject()
 local hit_sound = script:GetCustomProperty("hit_sound"):WaitForObject()
 
+local hit_effect = script:GetCustomProperty("hit_effect"):WaitForObject()
+
 local local_player = Game.GetLocalPlayer()
 local players = {}
 local total_players = 0
@@ -202,6 +204,43 @@ function on_zombie_hit(amount, position)
 		
 	UI.ShowFlyUpText(tostring(amount), position, {color = Color.RED, isBig = is_big})
 end
+
+local fx_tween = nil
+
+function Tick(dt)
+	if(local_player.hitPoints < local_player.maxHitPoints) then
+		local s = (1 - (local_player.hitPoints / local_player.maxHitPoints))
+
+		if(fx_tween == nil) then
+			fx_tween = PIXELDEPTH.Tween:new(.3, {
+				
+				a = hit_effect:GetSmartProperty("Effect Strength")
+			}, {
+				
+				a = (1 - (local_player.hitPoints / local_player.maxHitPoints))
+			
+			})
+			
+			fx_tween:on_change(function(v))
+				hit_effect:SetSmartProperty("Effect Strength", v.a)
+			end)
+
+			fx_tween:on_complete(function()
+				fx_tween = nil
+			end)
+		else
+			fx_tween:tween(dt)
+		end
+	elseif(hit_effect:GetSmartProperty("Effect Strength") > 0) then
+		hit_effect:SetSmartProperty("Effect Strength", 0)
+	end
+end
+
+--function on_player_damaged(source, hit_points)
+--	if(source.id ~= local_player.id) then
+--		UI.ShowDamageDirection(source)
+--	end
+--end
 
 Events.Connect("on_player_money_changed", money_changed)
 Events.Connect("on_purchase_complete", purchase_complete)

@@ -4,7 +4,7 @@ local Player_Equipment = script:GetCustomProperty("Overrun_Player_Equipment"):Wa
 local starting_money = 50000
 
 local game_state = "WAITING"
-local timer = 10
+local timer = 3
 local round = 1
 local countdown_started = false
 local players = {}

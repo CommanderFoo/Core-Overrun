@@ -27,8 +27,6 @@ function bought_item(player, asset_id, ammo, play_audio)
 
 				player:SetResource("rounds", ammo)
 
-				print(new_weapon.currentAmmo, ammo, new_weapon.name)
-
 				if(new_weapon.currentAmmo ~= nil) then
 					new_weapon.currentAmmo = ammo
 				end

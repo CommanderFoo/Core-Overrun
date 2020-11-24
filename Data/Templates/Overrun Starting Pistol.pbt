@@ -19,7 +19,6 @@
         ChildIds: 5047134629311476418
         ChildIds: 17873086566573210660
         ChildIds: 1362060855448717416
-        ChildIds: 12168153747274678748
         ChildIds: 4373499945125048077
         UnregisteredParameters {
           Overrides {
@@ -570,69 +569,6 @@
           StaticMesh {
             Physics {
             }
-          }
-        }
-      }
-      Objects {
-        Id: 12168153747274678748
-        Name: "Client Context"
-        Transform {
-          Location {
-            X: -126.716553
-            Y: 304.058105
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 14156651541393010698
-        ChildIds: 12942125097446317078
-        UnregisteredParameters {
-        }
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        NetworkContext {
-        }
-      }
-      Objects {
-        Id: 12942125097446317078
-        Name: "DestructrableWeaponClient"
-        Transform {
-          Location {
-            X: -15304.0957
-            Y: -19673.4902
-            Z: -11012.0156
-          }
-          Rotation {
-            Pitch: 14.2927504
-            Yaw: 97.7076645
-            Roll: 13.0108719
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 12168153747274678748
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Script {
-          ScriptAsset {
-            Id: 1701896480030378327
           }
         }
       }

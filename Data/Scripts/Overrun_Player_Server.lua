@@ -3,6 +3,33 @@
 local has_resouces_changed = false
 local last_broadcast = 0
 local broadcast_cooldown = 2 -- Every X seconds if there is changes in money, broadcast it to all players.
+local regen_time_after_damage = 5
+local regen_amount = 10
+
+function on_player_damaged(p, damage)
+	Events.BroadcastToPlayer(p, "on_damaged", p.hitPoints)
+	
+	if(players[p.id]) then
+		players[p.id].damage_timestamp = time()
+	end
+end
+
+function regen()
+	for k, player in pairs(Game.GetPlayers()) do
+		if(players[player.id] and player.hitPoints < player.maxHitPoints and players[player.id].damage_timestamp > 0) then
+			if(time() > (players[player.id].damage_timestamp + regen_time_after_damage)) then
+				player.hitPoints = math.min(player.hitPoints + regen_amount, player.maxHitPoints) 
+			end
+		end
+	end
+end
+
+local regen_task = Task.Spawn(function()
+	regen()
+end)
+
+regen_task.repeatCount = -1
+regen_task.repeatInterval = 1
 
 function player_joined(p)
 	if(not players[p.id]) then
@@ -14,6 +41,7 @@ function player_joined(p)
 	end
 
 	p.resourceChangedEvent:Connect(resource_changed)
+	p.damagedEvent:Connect(on_player_damaged)
 end
 
 function Tick()
@@ -26,14 +54,8 @@ function Tick()
 		for k, v in pairs(players) do
 			if(v.money_to_broadcast ~= nil) then
 				Events.BroadcastToAllPlayers("on_player_money_changed", {id = v.player.id, m = v.money_to_broadcast})
-				--table.insert(get_changed_money, {id = v.player.id, m = v.money_to_broadcast})
 				v.money_to_broadcast = nil
 			end
-		end
-
-		if(#get_changed_money > 0) then
-			--print(get_changed_money)
-			--Events.BroadcastToAllPlayers("on_player_money_changed", get_changed_money)
 		end
 	end
 end
