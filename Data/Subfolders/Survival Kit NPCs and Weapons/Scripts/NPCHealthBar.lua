@@ -32,7 +32,7 @@ function Tick()
 	local hp = _data:GetHealth()
 	local maxHP = _data:GetMaxHealth()
 	
-	if hp <= 0 or hp >= maxHP then
+	if hp <= 0 then
 		script.parent.visibility = Visibility.FORCE_OFF
 		return
 		

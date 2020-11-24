@@ -90,7 +90,7 @@ function on_trigger_enter(t, obj)
 				interact_ui:SetColor(Color.RED)
 			end
 
-			interact_ui.text = "Press [F] to spin mystery box for " .. PIXELDEPTH.Utils.number_format(cost)
+			interact_ui.text = "Press [F] to spin mystery crate for " .. PIXELDEPTH.Utils.number_format(cost)
 			interact_ui.parent.visibility = Visibility.FORCE_ON
 		end
 	end

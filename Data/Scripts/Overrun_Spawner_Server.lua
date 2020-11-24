@@ -1,4 +1,6 @@
-﻿local container = script:GetCustomProperty("container"):WaitForObject()
+﻿local DEBUG_DISABLE_SPAWNS = true
+
+local container = script:GetCustomProperty("container"):WaitForObject()
 
 local center_spawns = script:GetCustomProperty("center_spawns"):WaitForObject()
 local house_1_spawns = script:GetCustomProperty("house_1_spawns"):WaitForObject()
@@ -119,6 +121,10 @@ function get_random_zombie_asset()
 end
 
 function spawn_zombies()
+	if(DEBUG_DISABLE_SPAWNS) then
+		return
+	end
+	
 	if(round > 1) then
 		set_zombie_stats_per_round()
 	end

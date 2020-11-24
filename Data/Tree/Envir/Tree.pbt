@@ -2973,6 +2973,7 @@ Objects {
     Location {
       X: 220.576904
       Y: -3391.73364
+      Z: -16.6001472
     }
     Rotation {
       Yaw: -179.999985
@@ -11925,6 +11926,7 @@ Objects {
     Location {
       X: 400
       Y: -11200
+      Z: -16.6
     }
     Rotation {
     }
