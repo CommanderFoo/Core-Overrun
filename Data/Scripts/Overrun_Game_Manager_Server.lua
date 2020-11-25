@@ -1,10 +1,10 @@
 ﻿local Spawner = script:GetCustomProperty("Overrun_Spawner_Server"):WaitForObject()
 local Player_Equipment = script:GetCustomProperty("Overrun_Player_Equipment"):WaitForObject()
 
-local starting_money = 50000
+local starting_money = 5000
 
 local game_state = "WAITING"
-local timer = 1
+local timer = 2
 local round = 1
 local countdown_started = false
 local players = {}
@@ -33,6 +33,11 @@ function player_joined(p)
 
 	if(game_state == "WAITING" and not countdown_started) then
 		start_count_down()
+	elseif(game_state == "PLAYING") then
+		Task.Spawn(function()
+			Task.Wait(5)
+			Events.Broadcast("on_update_players_crate")
+		end)
 	end
 
 	p.diedEvent:Connect(on_player_died)
@@ -128,6 +133,7 @@ function start_count_down()
 		timer = timer - 1
 
 		if(timer == -1) then
+			Events.Broadcast("on_random_crate")
 			game_state = "PLAYING"
 			Events.Broadcast("on_enable_all_players")
 			Spawner.context.spawn_zombies()

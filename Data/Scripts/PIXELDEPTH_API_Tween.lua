@@ -52,7 +52,7 @@ Tween.copy_table = function(t)
 end
 
 function Tween:tween(delta)
-	if(self.tween_finished == true) then
+	if(self.tween_finished or self.tween_paused) then
 		return
 	end
 
@@ -113,6 +113,9 @@ function Tween:reset()
 	self.start_evt_invoked = false
 	self.original = nil
 	self.tween_finished = false
+	self.tween_paused = false
+
+	return self
 end
 
 function Tween:set_easing(ease)
@@ -147,12 +150,37 @@ function Tween:set_delay(delay_time)
 	return self
 end
 
+function Tween:paused()
+	return self.tween_paused
+end
+
+function Tween:pause()
+	self.tween_paused = true
+
+	return self
+end
+
+function Tween:continue()
+	self.tween_paused = false
+
+	return self
+end
+
+function Tween:play()
+	self.tween_paused = false
+
+	return self
+end
+
 function Tween:stop()
 	self.tween_finished = true
+	self.tween_paused = false
 
 	if(self.complete_evt and type(self.complete_evt) == "function") then
 		self.complete_evt()
 	end
+
+	return self
 end
 
 function Tween:active()
@@ -177,7 +205,8 @@ end
 		 original_from = Tween.copy_table(from),
 		 original_to = Tween.copy_table(to),
 		 change_evt = nil,
-		 start_evt_invoked = false
+		 start_evt_invoked = false,
+		 tween_paused = false
  
 	 }, self)
  end

@@ -463,15 +463,6 @@ Objects {
   ParentId: 17922148234597677997
   UnregisteredParameters {
     Overrides {
-      Name: "cs:crate_open"
-      ObjectReference {
-        SelfId: 14681250137965303018
-        SubObjectId: 11697283612816656497
-        InstanceId: 15491499378302737999
-        TemplateId: 18443078751069168377
-      }
-    }
-    Overrides {
       Name: "cs:round_completed"
       ObjectReference {
         SelfId: 13285737509251707278
@@ -647,6 +638,14 @@ Objects {
     }
   }
   ParentId: 8379578297261672591
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:crates"
+      ObjectReference {
+        SelfId: 8346790829017566368
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }

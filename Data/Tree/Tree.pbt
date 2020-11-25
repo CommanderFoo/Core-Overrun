@@ -66,7 +66,7 @@ Objects {
 }
 Objects {
   Id: 8346790829017566368
-  Name: "Mystery Boxes"
+  Name: "Mystery Crates"
   Transform {
     Location {
     }
@@ -89,7 +89,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Mystery Boxes"
+    FilePartitionName: "Mystery Crates"
   }
 }
 Objects {
@@ -4154,9 +4154,8 @@ Objects {
     }
   }
   ParentId: 4781671109827199097
-  ChildIds: 214292183232496103
-  ChildIds: 6356875522555402097
-  ChildIds: 15491499378302737999
+  ChildIds: 13911773174050182807
+  ChildIds: 7020767313076153098
   ChildIds: 2746382917114278438
   ChildIds: 13285737509251707278
   Collidable_v2 {
@@ -4234,35 +4233,13 @@ Objects {
   }
 }
 Objects {
-  Id: 15491499378302737999
-  Name: "Overrun Craft Open Sound"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 14970369702912541898
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 11697283612816656497
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Overrun Crate Open Sound"
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 18443078751069168377
-    }
-  }
-}
-Objects {
-  Id: 6356875522555402097
+  Id: 7020767313076153098
   Name: "Overrun Purchased Sound"
   Transform {
+    Location {
+    }
+    Rotation {
+    }
     Scale {
       X: 1
       Y: 1
@@ -4270,43 +4247,37 @@ Objects {
     }
   }
   ParentId: 14970369702912541898
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 16871770483126420369
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Overrun Purchased Sound"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 3914586926377705325
     }
-    TemplateAsset {
-      Id: 4203657736232604118
-    }
+    Pitch: -73.1711426
+    Volume: 1.66027749
+    Falloff: -1
+    Radius: -1
+  }
+  InstanceHistory {
+    SelfId: 7020767313076153098
+    SubobjectId: 16871770483126420369
+    InstanceId: 6356875522555402097
+    TemplateId: 4203657736232604118
+    WasRoot: true
   }
 }
 Objects {
-  Id: 214292183232496103
+  Id: 13911773174050182807
   Name: "Overrun Player Joined Sound"
   Transform {
+    Location {
+    }
+    Rotation {
+    }
     Scale {
       X: 1
       Y: 1
@@ -4314,37 +4285,27 @@ Objects {
     }
   }
   ParentId: 14970369702912541898
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 3650108233775351565
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Overrun Player Joined Sound"
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-      }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 12309468336365169754
     }
-    TemplateAsset {
-      Id: 7018041226583989658
-    }
+    Pitch: 1348.42822
+    Volume: 1.90417874
+    Falloff: -1
+    Radius: -1
+  }
+  InstanceHistory {
+    SelfId: 13911773174050182807
+    SubobjectId: 3650108233775351565
+    InstanceId: 214292183232496103
+    TemplateId: 7018041226583989658
+    WasRoot: true
   }
 }
 Objects {

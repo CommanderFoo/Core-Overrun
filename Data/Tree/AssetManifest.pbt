@@ -8,6 +8,15 @@
   }
 }
 Assets {
+  Id: 12309468336365169754
+  Name: "Suction Whoosh 04 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_suction_whoosh_04_Cue_ref"
+  }
+}
+Assets {
   Id: 12040474275828567627
   Name: "Crosshair 020"
   PlatformAssetType: 9
@@ -104,6 +113,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_foliage_gen_flower_wild_lily_001_ref"
+  }
+}
+Assets {
+  Id: 3914586926377705325
+  Name: "Cash Register Purchase 05 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_cash_register_purchase_05_Cue_ref"
   }
 }
 Assets {

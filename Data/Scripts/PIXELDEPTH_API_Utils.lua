@@ -47,5 +47,13 @@ end
 function Utils.number_format(i)
 	return tostring(i):reverse():gsub("%d%d%d", "%1,"):reverse():gsub("^,", "")
 end
+
+function Utils.concat_table(t1, t2)
+    for i = 1, #t2 do
+        t1[#t1 + i] = t2[i]
+	end
+	
+    return t1
+end
   
 return Utils
