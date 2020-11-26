@@ -189,7 +189,7 @@ function Tick(deltaTime)
 	end
 	
 	if currentState == STATE_ENGAGING then
-		if (not IsObjectAlive(target)) then
+		if (not IsObjectAlive(target) or target.team == 2) then
 			target = nil
 			
 		elseif IsWithinRangeSquared(target, ATTACK_RANGE_SQUARED) then

@@ -4,7 +4,7 @@ local Player_Equipment = script:GetCustomProperty("Overrun_Player_Equipment"):Wa
 local starting_money = 5000
 
 local game_state = "WAITING"
-local timer = 2
+local timer = 0
 local round = 1
 local countdown_started = false
 local players = {}
@@ -120,7 +120,8 @@ function all_dead()
 		end
 	end
 
-	return all_dead
+	return false
+	--return all_dead
 end
 
 function start_count_down()
@@ -158,20 +159,6 @@ function round_completed()
 
 	Events.BroadcastToAllPlayers("on_round_completed", round - 1)
 end
-
-
-	--[[
-	Task.Spawn(function()
-		Task.Wait(2)
-		p.animationStance = "unarmed_death"
-		Task.Wait(0.9)
-		p:EnableRagdoll("lower_spine", .4)
-		p:EnableRagdoll("right_shoulder", .2)
-		p:EnableRagdoll("left_shoulder", .6)
-		p:EnableRagdoll("right_hip", .6)
-		p:EnableRagdoll("left_hip", .6)
-	end)
-	--]]
 
 Events.Connect("on_all_zombies_killed", round_completed)
 

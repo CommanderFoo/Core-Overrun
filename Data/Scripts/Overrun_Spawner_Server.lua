@@ -172,7 +172,9 @@ function zombie_killed(id)
 end
 
 function clear_all_zombies()
-	spawn_task:Cancel()
+	if(spawn_task ~= nil) then
+		spawn_task:Cancel()
+	end
 	
 	for k, v in pairs(spawned_zombies) do
 		v:Destroy()
