@@ -1,4 +1,4 @@
-﻿local DEBUG_DISABLE_SPAWNS = true
+﻿local DEBUG_DISABLE_SPAWNS = false
 
 local container = script:GetCustomProperty("container"):WaitForObject()
 
@@ -46,7 +46,7 @@ local spawned = 0
 local max = 5
 local spawn_task = nil
 local killed = 0
-local round = 1
+local round = 5
 
 local health_increase = 0
 

@@ -1,10 +1,11 @@
-﻿local players = {}
+﻿local regen_amount = script:GetCustomProperty("regen_amount")
+local regen_time_after_damage = script:GetCustomProperty("regen_after_time")
+
+local players = {}
 
 local has_resouces_changed = false
 local last_broadcast = 0
 local broadcast_cooldown = 2 -- Every X seconds if there is changes in money, broadcast it to all players.
-local regen_time_after_damage = 5
-local regen_amount = 10
 
 function on_player_damaged(p, damage)
 	Events.BroadcastToPlayer(p, "on_damaged", p.hitPoints)
@@ -16,7 +17,7 @@ end
 
 function regen()
 	for k, player in pairs(Game.GetPlayers()) do
-		if(players[player.id] and player.hitPoints < player.maxHitPoints and players[player.id].damage_timestamp > 0) then
+		if(player:GetResource("is_down") == 0 and not player.isDead and players[player.id] and player.hitPoints < player.maxHitPoints and players[player.id].damage_timestamp > 0) then
 			if(time() > (players[player.id].damage_timestamp + regen_time_after_damage)) then
 				player.hitPoints = math.min(player.hitPoints + regen_amount, player.maxHitPoints) 
 			end

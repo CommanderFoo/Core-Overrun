@@ -1,9 +1,9 @@
 ﻿local starting_weapon = script:GetCustomProperty("starting_weapon")
 local Overrun_Weapon_Lookup = script:GetCustomProperty("Overrun_Weapon_Lookup"):WaitForObject()
 
-
 function on_player_joined(player)
-	give_starting_weapon(player)
+	--destroy_all_equipment(player)
+	--give_starting_weapon(player)
 end
 
 function give_starting_weapon(player)

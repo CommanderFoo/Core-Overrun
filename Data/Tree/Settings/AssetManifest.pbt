@@ -1,4 +1,13 @@
 ﻿Assets {
+  Id: 17392062504371618374
+  Name: "Environment Fog Default VFX"
+  PlatformAssetType: 20
+  PrimaryAsset {
+    AssetType: "BlueprintAssetRef"
+    AssetId: "fxbp_env_fog_default"
+  }
+}
+Assets {
   Id: 16910278292812118833
   Name: "Sun Light"
   PlatformAssetType: 6

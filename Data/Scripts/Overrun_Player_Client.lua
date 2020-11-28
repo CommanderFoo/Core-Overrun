@@ -208,7 +208,7 @@ end
 local fx_tween = nil
 
 function Tick(dt)
-	if(local_player.hitPoints < local_player.maxHitPoints) then
+	if(local_player.hitPoints < local_player.maxHitPoints and not local_player.isDead) then
 		local s = (1 - (local_player.hitPoints / local_player.maxHitPoints))
 
 		if(fx_tween == nil) then

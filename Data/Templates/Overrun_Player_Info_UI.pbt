@@ -274,6 +274,7 @@
           Width: 200
           Height: 44
           UIX: -90
+          UIY: 5
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"

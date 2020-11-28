@@ -118,6 +118,16 @@ function Tick(dt)
 	else
 		interact_ui.parent.visibility = Visibility.FORCE_OFF
 	end
+
+	local objects = trigger:GetOverlappingObjects()
+
+	for _, obj in pairs(objects) do
+		if(obj:IsA("Player") and obj.id == local_player.id) then
+			if(obj:GetResource("is_down") == 1) then
+				interact_ui.parent.visibility = Visibility.FORCE_OFF
+			end
+		end
+	end
 end
 
 function randomise_weapons()

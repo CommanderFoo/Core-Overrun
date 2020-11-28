@@ -13,11 +13,11 @@ local max_upgraded_ammo = root:GetCustomProperty("max_upgraded_ammo")
 local in_zone = false
 
 function on_trigger_enter(t, obj)
-	if(obj:IsA("Player")) then
+	if(obj:IsA("Player") and obj:GetResource("is_down") == 0) then
 		in_zone = true
 
 		obj.bindingPressedEvent:Connect(function(player, binding)
-			if(in_zone and binding == "ability_extra_33") then
+			if(in_zone and binding == "ability_extra_33" and obj:GetResource("is_down") == 0) then
 				if(#obj:GetEquipment() > 0) then
 					local equipment = obj:GetEquipment()[1]
 					local is_melee = equipment:GetCustomProperty("is_melee")

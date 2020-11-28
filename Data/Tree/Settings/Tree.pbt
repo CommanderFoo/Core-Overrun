@@ -18,6 +18,7 @@ Objects {
   ChildIds: 5804301829799054227
   ChildIds: 17842474075048233775
   ChildIds: 1824298544681992953
+  ChildIds: 1315552106580729237
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -25,6 +26,86 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   NetworkContext {
+  }
+}
+Objects {
+  Id: 1315552106580729237
+  Name: "Environment Fog Default VFX"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1538990537252132493
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Fog Density"
+      Float: 10
+    }
+    Overrides {
+      Name: "bp:Volumetric Fog"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Directional Inscattering Color"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Falloff"
+      Float: 3
+    }
+    Overrides {
+      Name: "bp:Start"
+      Float: 749.052368
+    }
+    Overrides {
+      Name: "bp:Albedo"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Layered Fog Density"
+      Float: 0.902992129
+    }
+    Overrides {
+      Name: "bp:color"
+      Color {
+        R: 0.0968750343
+        G: 0.0968750343
+        B: 0.0968750343
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Layered Fog Offset Height"
+      Float: 45.1013947
+    }
+    Overrides {
+      Name: "bp:Layered Fog Falloff"
+      Float: 1.75375915
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 17392062504371618374
+    }
+    TeamSettings {
+    }
   }
 }
 Objects {
@@ -350,7 +431,7 @@ Objects {
     }
     Overrides {
       Name: "bp:Intensity"
-      Float: 0.58379519
+      Float: 0.613997579
     }
     Overrides {
       Name: "bp:Sun Disc Color"
@@ -394,6 +475,10 @@ Objects {
       Name: "bp:Temperature"
       Float: 10000
     }
+    Overrides {
+      Name: "bp:Volumetric Intensity"
+      Float: 1.09118342
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -433,7 +518,7 @@ Objects {
     }
     Overrides {
       Name: "bp:Intensity"
-      Float: 3.20512438
+      Float: 5
     }
     Overrides {
       Name: "bp:Lower Hemisphere Color"
@@ -482,8 +567,12 @@ Objects {
     Overrides {
       Name: "bp:Ambient Image"
       Enum {
-        Value: "mc:eambientcubemapssmall:0"
+        Value: "mc:eambientcubemapssmall:5"
       }
+    }
+    Overrides {
+      Name: "bp:Use Captured Sky"
+      Bool: false
     }
   }
   Collidable_v2 {
@@ -547,15 +636,15 @@ Objects {
     }
     Overrides {
       Name: "bp:Cloud Ambient Brightness"
-      Float: 3
+      Float: 2
     }
     Overrides {
       Name: "bp:Cloud Rim Brightness"
-      Float: 50
+      Float: 4
     }
     Overrides {
       Name: "bp:Cloud Opacity"
-      Float: 0.49346602
+      Float: 1
     }
     Overrides {
       Name: "bp:Cloud Ambient Color"
@@ -577,11 +666,13 @@ Objects {
     }
     Overrides {
       Name: "bp:Cloud Shape"
-      Int: 4
+      Enum {
+        Value: "mc:ecloudshapes:0"
+      }
     }
     Overrides {
       Name: "bp:Cloud Lighting Brightness"
-      Float: 1
+      Float: 1.35784245
     }
     Overrides {
       Name: "bp:Cloud Wisp Opacity"
@@ -593,7 +684,7 @@ Objects {
     }
     Overrides {
       Name: "bp:Brightness"
-      Float: 0.115855075
+      Float: 0.0831506625
     }
     Overrides {
       Name: "bp:Background Clouds"
@@ -614,6 +705,35 @@ Objects {
     Overrides {
       Name: "bp:High Cloud Noise Scale"
       Float: 0.2
+    }
+    Overrides {
+      Name: "bp:Overall Tint"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Haze Falloff"
+      Float: 15
+    }
+    Overrides {
+      Name: "bp:Horizon Falloff"
+      Float: 6
+    }
+    Overrides {
+      Name: "bp:Disable Cloud Mask"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Sky Influence On Clouds"
+      Float: 0.431371331
+    }
+    Overrides {
+      Name: "bp:Cloud Sun Behind Transmission"
+      Float: 0.164358377
     }
   }
   Collidable_v2 {

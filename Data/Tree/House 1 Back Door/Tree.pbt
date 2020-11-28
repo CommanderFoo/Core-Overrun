@@ -18,6 +18,16 @@ Objects {
     }
   }
   ParentId: 1519006748550436204
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:opened"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:opened:isrep"
+      Bool: true
+    }
+  }
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"

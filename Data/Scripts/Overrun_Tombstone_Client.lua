@@ -1,40 +1,75 @@
-﻿local root = script:GetCustomProperty("root"):WaitForObject()
-local trigger = root:GetCustomProperty("trigger"):WaitForObject()
+﻿local PIXELDEPTH = require(script:GetCustomProperty("PIXELDEPTH_API"))
 
+local root = script:GetCustomProperty("root"):WaitForObject()
 local tomb = root:GetCustomProperty("tomb"):WaitForObject()
 
-local front_name = root:GetCustomProperty("front_name"):WaitForObject()
-local back_name = root:GetCustomProperty("back_name"):WaitForObject()
+local smoke = root:GetCustomProperty("smoke"):WaitForObject()
+local sound = root:GetCustomProperty("sound"):WaitForObject()
+local sparkle = root:GetCustomProperty("sparkle"):WaitForObject()
 
-local revive_ui = root:GetCustomProperty("revive_ui"):WaitForObject()
+local revive_progress = root:GetCustomProperty("revive_progress"):WaitForObject()
+local revive_duration = root:GetCustomProperty("revive_duration")
 
-local in_zone = false
 local local_player = Game.GetLocalPlayer()
 
+local progress_tween = PIXELDEPTH.Tween:new(revive_duration, {v = 1}, {v = 0})
 
-function on_trigger_enter(t, obj)
-	if(trigger:GetCustomProperty("down") and obj:IsA("Player") and obj.id ~= trigger:GetCustomProperty("id")) then
-		revive_ui.text = "Revive " .. trigger:GetCustomProperty("name")
-		revive_ui.parent.visibility = Visibility.FORCE_ON
-		in_zone = true
+local reviving = false
+
+progress_tween:on_change(function(changed)
+	revive_progress.progress = changed.v
+end)
+
+progress_tween:on_start(function()
+	revive_progress.visibility = Visibility.FORCE_ON
+end)
+
+progress_tween:on_complete(function()
+	reviving = false
+	revive_progress.progress = 1
+	progress_tween:reset()
+	revive_progress.visibility = Visibility.FORCE_OFF
+end)
+
+function Tick(dt)
+	if(tomb:GetCustomProperty("id") == local_player.id and reviving and progress_tween:active() and revive_progress.progress > 0) then
+		progress_tween:tween(dt)
 	end
 end
 
-function on_trigger_exit(t, obj)
-	if(obj:IsA("Player") and obj.id ~= trigger:GetCustomProperty("id")) then
-		revive_ui.parent.visibility = Visibility.FORCE_OFF
+function player_reviving(id, progress)
+	if(id == local_player.id and tomb:GetCustomProperty("id") == local_player.id) then
+		reviving = true
 
-		in_zone = false
+		UI.SetReticleVisible(false)
+
+		if(progress == 0) then
+			reviving = false
+			UI.SetReticleVisible(true)
+		end
+	elseif(id == tomb:GetCustomProperty("id") and progress == 0) then
+		smoke:Play()
+	end
+
+	if(progress == 0) then
+		sparkle:Stop()
 	end
 end
 
-function player_down(id, pos)
-	if(id ~= local_player.id) then
-		
+function player_down(id, name, pos)
+	if(id == local_player.id and id == tomb:GetCustomProperty("id")) then
+
 	end
+	
+	smoke:SetWorldPosition(Vector3.New(pos.x, pos.y, 0))
+	smoke:Play()
+
+	sparkle:SetWorldPosition(Vector3.New(pos.x, pos.y, 25))
+	sparkle:Play()
+
+	sound:SetWorldPosition(pos)
+	sound:Play()
 end
 
+Events.Connect("on_player_reviving", player_reviving)
 Events.Connect("on_player_down", player_down)
-
-trigger.beginOverlapEvent:Connect(on_trigger_enter)
-trigger.endOverlapEvent:Connect(on_trigger_exit)

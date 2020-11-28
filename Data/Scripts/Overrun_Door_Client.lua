@@ -39,10 +39,22 @@ function Tick()
 		outline:SetSmartProperty("Color A", outline_color)
 		outline.isEnabled = true
 	end
+
+	local objects = trigger:GetOverlappingObjects()
+
+	for _, obj in pairs(objects) do
+		if(obj:IsA("Player") and obj.id == local_player.id) then
+			if(obj:GetResource("is_down") == 1 or trigger:GetCustomProperty("opened")) then
+				interact_ui.parent.visibility = Visibility.FORCE_OFF
+			elseif(not trigger:GetCustomProperty("opened")) then
+				interact_ui.parent.visibility = Visibility.FORCE_ON
+			end
+		end
+	end
 end
 
 function on_trigger_enter(t, obj)
-	if(obj:IsA("Player") and obj.id == local_player.id) then
+	if(obj:IsA("Player") and obj.id == local_player.id and obj:GetResource("is_down") == 0 and not trigger:GetCustomProperty("opened")) then
 		local money = obj:GetResource("money")
 
 		if(money <= cost) then

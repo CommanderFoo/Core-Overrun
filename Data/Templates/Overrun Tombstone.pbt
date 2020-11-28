@@ -33,22 +33,38 @@
             }
           }
           Overrides {
-            Name: "cs:trigger"
-            ObjectReference {
-              SubObjectId: 17970934855804510321
-            }
-          }
-          Overrides {
             Name: "cs:tomb"
             ObjectReference {
               SubObjectId: 4354177456273038973
             }
           }
           Overrides {
-            Name: "cs:revive_ui"
+            Name: "cs:smoke"
             ObjectReference {
-              SubObjectId: 3432133879916233228
+              SubObjectId: 12260033473945836365
             }
+          }
+          Overrides {
+            Name: "cs:sound"
+            ObjectReference {
+              SubObjectId: 7402846527799214404
+            }
+          }
+          Overrides {
+            Name: "cs:sparkle"
+            ObjectReference {
+              SubObjectId: 15335776030967989232
+            }
+          }
+          Overrides {
+            Name: "cs:revive_progress"
+            ObjectReference {
+              SubObjectId: 6857586211677339966
+            }
+          }
+          Overrides {
+            Name: "cs:revive_duration"
+            Int: 15
           }
         }
         Collidable_v2 {
@@ -83,7 +99,57 @@
         ChildIds: 18174112215586844016
         ChildIds: 6636555598673621511
         ChildIds: 14601729221407951604
-        ChildIds: 17970934855804510321
+        ChildIds: 6570728466512436722
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:down"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:id"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:name"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:used"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:reviving"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:revive_time"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:down:isrep"
+            Bool: true
+          }
+          Overrides {
+            Name: "cs:id:isrep"
+            Bool: true
+          }
+          Overrides {
+            Name: "cs:name:isrep"
+            Bool: true
+          }
+          Overrides {
+            Name: "cs:used:isrep"
+            Bool: true
+          }
+          Overrides {
+            Name: "cs:reviving:isrep"
+            Bool: true
+          }
+          Overrides {
+            Name: "cs:revive_time:isrep"
+            Bool: true
+          }
+        }
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -100,8 +166,6 @@
         Name: "MergedModel"
         Transform {
           Location {
-            X: 0.169270843
-            Y: 0.0572916679
           }
           Rotation {
           }
@@ -1067,7 +1131,7 @@
         Transform {
           Location {
             X: 0.273763031
-            Y: 9.97005272
+            Y: 6.65234375
             Z: 98.3850555
           }
           Rotation {
@@ -1123,7 +1187,7 @@
         Transform {
           Location {
             X: 0.273763031
-            Y: -7.37174511
+            Y: -7.88346386
             Z: 98.3850555
           }
           Rotation {
@@ -1310,11 +1374,11 @@
         Transform {
           Location {
             X: 0.0618489608
-            Y: -10.0097656
+            Y: -10.3164063
             Z: 74.3848724
           }
           Rotation {
-            Yaw: -89.9999542
+            Yaw: -89.999939
           }
           Scale {
             X: 0.400000036
@@ -1349,53 +1413,29 @@
         }
       }
       Objects {
-        Id: 17970934855804510321
-        Name: "Trigger"
+        Id: 6570728466512436722
+        Name: "Decal Stone Garden Rings 01"
         Transform {
           Location {
-            Z: 80.0000229
           }
           Rotation {
           }
           Scale {
-            X: 2.09465551
-            Y: 1.66002691
-            Z: 1.63442457
+            X: 0.3
+            Y: 0.3
+            Z: 0.03
           }
         }
         ParentId: 4354177456273038973
         UnregisteredParameters {
           Overrides {
-            Name: "cs:id"
-            String: ""
-          }
-          Overrides {
-            Name: "cs:name"
-            String: ""
-          }
-          Overrides {
-            Name: "cs:down"
-            Bool: false
-          }
-          Overrides {
-            Name: "cs:used"
-            Bool: false
-          }
-          Overrides {
-            Name: "cs:id:isrep"
-            Bool: true
-          }
-          Overrides {
-            Name: "cs:name:isrep"
-            Bool: true
-          }
-          Overrides {
-            Name: "cs:down:isrep"
-            Bool: true
-          }
-          Overrides {
-            Name: "cs:used:isrep"
-            Bool: true
+            Name: "bp:color"
+            Color {
+              R: 0.388541698
+              G: 0.388541698
+              B: 0.388541698
+              A: 1
+            }
           }
         }
         WantsNetworking: true
@@ -1405,13 +1445,13 @@
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
-        Trigger {
-          TeamSettings {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
+        Blueprint {
+          BlueprintAsset {
+            Id: 14589403132467573852
           }
-          TriggerShape_v2 {
-            Value: "mc:etriggershape:box"
+          TeamSettings {
+          }
+          DecalBP {
           }
         }
       }
@@ -1430,8 +1470,11 @@
           }
         }
         ParentId: 4378342255339779195
+        ChildIds: 12260033473945836365
+        ChildIds: 15335776030967989232
         ChildIds: 511678363223872230
         ChildIds: 16604922219659557742
+        ChildIds: 7402846527799214404
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -1439,6 +1482,151 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         NetworkContext {
+        }
+      }
+      Objects {
+        Id: 12260033473945836365
+        Name: "Smoke Puff Radial VFX"
+        Transform {
+          Location {
+            X: 920.000183
+            Y: -5546.66699
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.666666687
+            Y: 0.666666687
+            Z: 0.666666687
+          }
+        }
+        ParentId: 11476611141517653892
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Density"
+            Float: 3.08425307
+          }
+          Overrides {
+            Name: "bp:Radius"
+            Float: 1.79628193
+          }
+          Overrides {
+            Name: "bp:Burst"
+            Bool: true
+          }
+          Overrides {
+            Name: "bp:Particle Scale Multiplier"
+            Float: 1.31555212
+          }
+          Overrides {
+            Name: "bp:Gravity"
+            Float: -3.64637899
+          }
+          Overrides {
+            Name: "bp:Life"
+            Float: 1.80167103
+          }
+          Overrides {
+            Name: "bp:color"
+            Color {
+              R: 0.617708385
+              G: 0.617708385
+              B: 0.617708385
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:forceon"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 16959773372604902989
+          }
+          TeamSettings {
+          }
+          Vfx {
+          }
+        }
+      }
+      Objects {
+        Id: 15335776030967989232
+        Name: "Callout Sparkle"
+        Transform {
+          Location {
+            X: 920.000183
+            Y: -5546.66699
+            Z: 25
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1.88944948
+            Y: 1.88944948
+            Z: 1.88944948
+          }
+        }
+        ParentId: 11476611141517653892
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Volume Type"
+            Enum {
+              Value: "mc:evfxvolumetype:1"
+            }
+          }
+          Overrides {
+            Name: "bp:color"
+            Color {
+              R: 0.0260418262
+              G: 0.0260418262
+              B: 0.0260418262
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Gravity"
+            Float: 0.251580238
+          }
+          Overrides {
+            Name: "bp:Density"
+            Float: 3.40583086
+          }
+          Overrides {
+            Name: "bp:Particle Scale Multiplier"
+            Float: 3.40583086
+          }
+          Overrides {
+            Name: "bp:Curl Offset"
+            Vector {
+              X: 2
+            }
+          }
+          Overrides {
+            Name: "bp:Curl Variance"
+            Float: 0.496337742
+          }
+          Overrides {
+            Name: "bp:Life"
+            Float: 1.65793538
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:forceon"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 14906760034578035600
+          }
+          TeamSettings {
+          }
+          Vfx {
+          }
         }
       }
       Objects {
@@ -1464,6 +1652,12 @@
             Name: "cs:root"
             ObjectReference {
               SubObjectId: 4378342255339779195
+            }
+          }
+          Overrides {
+            Name: "cs:PIXELDEPTH_API"
+            AssetReference {
+              Id: 16622261663679835299
             }
           }
         }
@@ -1498,7 +1692,7 @@
           }
         }
         ParentId: 11476611141517653892
-        ChildIds: 1529361472930833548
+        ChildIds: 6857586211677339966
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1528,25 +1722,25 @@
         }
       }
       Objects {
-        Id: 1529361472930833548
-        Name: "Info"
+        Id: 6857586211677339966
+        Name: "UI Progress Bar"
         Transform {
           Location {
-            X: -501.253967
-            Y: -1185.31201
-            Z: -418.688934
+            X: 1766.82031
+            Y: -7514.36475
+            Z: -0.000244140625
           }
           Rotation {
-            Yaw: 132.462708
+            Yaw: 89.9999542
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 0.666666687
+            Y: 0.666666687
+            Z: 0.666666687
           }
         }
         ParentId: 16604922219659557742
-        ChildIds: 3432133879916233228
+        ChildIds: 4349602742322010347
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1554,23 +1748,27 @@
           Value: "mc:evisibilitysetting:forceoff"
         }
         Control {
-          Width: 450
-          Height: 65
+          Width: 300
+          Height: 50
           UIY: 150
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
             }
           }
-          Image {
-            Brush {
-              Id: 16742125756419714110
-            }
+          StatBar {
             Color {
-              A: 0.567000031
+              G: 0.0224127844
+              B: 0.70600009
+              A: 1
             }
-            TeamSettings {
+            BackgroundColor {
+              R: 0.252666473
+              G: 0.202000022
+              B: 1
+              A: 1
             }
+            Percent: 1
           }
           AnchorLayout {
             SelfAnchor {
@@ -1587,16 +1785,14 @@
         }
       }
       Objects {
-        Id: 3432133879916233228
-        Name: "Text"
+        Id: 4349602742322010347
+        Name: "UI Text Box"
         Transform {
           Location {
-            X: 536.023926
-            Y: -1169.99951
-            Z: 418.688934
+            X: 0.00146484375
+            Y: 0.000732421875
           }
           Rotation {
-            Yaw: -132.462662
           }
           Scale {
             X: 1
@@ -1604,7 +1800,7 @@
             Z: 1
           }
         }
-        ParentId: 1529361472930833548
+        ParentId: 6857586211677339966
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1612,37 +1808,87 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Control {
-          Width: 850
-          Height: 65
+          Width: 200
+          Height: 60
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
             }
           }
+          UseParentWidth: true
+          UseParentHeight: true
           Text {
-            Label: "Revive"
+            Label: "Reviving..."
             Color {
-              R: 0.14180623
-              G: 0.14180623
-              B: 0.76052475
+              R: 1
+              G: 1
+              B: 1
               A: 1
             }
-            Size: 28
+            Size: 22
             Justification {
               Value: "mc:etextjustify:center"
             }
+            AutoWrapText: true
           }
           AnchorLayout {
             SelfAnchor {
               Anchor {
-                Value: "mc:euianchor:middlecenter"
+                Value: "mc:euianchor:topleft"
               }
             }
             TargetAnchor {
               Anchor {
-                Value: "mc:euianchor:middlecenter"
+                Value: "mc:euianchor:topleft"
               }
             }
+          }
+        }
+      }
+      Objects {
+        Id: 7402846527799214404
+        Name: "Distant Explosions Set 01 SFX"
+        Transform {
+          Location {
+            X: 613.333496
+            Y: -3697.77808
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.666666687
+            Y: 0.666666687
+            Z: 0.666666687
+          }
+        }
+        ParentId: 11476611141517653892
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Type"
+            Enum {
+              Value: "mc:esfx_explosions_distant:22"
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 6151775615622082807
+          }
+          TeamSettings {
+          }
+          AudioBP {
+            Pitch: -251.459473
+            Volume: 0.588577449
+            Falloff: 3600
+            Radius: 400
+            IsSpatializationEnabled: true
+            IsAttenuationEnabled: true
           }
         }
       }
@@ -1775,12 +2021,39 @@
       }
     }
     Assets {
-      Id: 16742125756419714110
-      Name: "BG Flat 004"
-      PlatformAssetType: 9
+      Id: 14589403132467573852
+      Name: "Decal Stone Garden Rings 01"
+      PlatformAssetType: 14
       PrimaryAsset {
-        AssetType: "PlatformBrushAssetRef"
-        AssetId: "BackgroundNoOutline_22"
+        AssetType: "DecalBlueprintAssetRef"
+        AssetId: "bp_decal_rock_garden_001"
+      }
+    }
+    Assets {
+      Id: 16959773372604902989
+      Name: "Smoke Puff Radial VFX"
+      PlatformAssetType: 8
+      PrimaryAsset {
+        AssetType: "VfxBlueprintAssetRef"
+        AssetId: "fxbp_smoke_puff_radial"
+      }
+    }
+    Assets {
+      Id: 14906760034578035600
+      Name: "Callout Sparkle"
+      PlatformAssetType: 8
+      PrimaryAsset {
+        AssetType: "VfxBlueprintAssetRef"
+        AssetId: "fxbp_sparkles_volume_vfx"
+      }
+    }
+    Assets {
+      Id: 6151775615622082807
+      Name: "Distant Explosions Set 01 SFX"
+      PlatformAssetType: 10
+      PrimaryAsset {
+        AssetType: "AudioBlueprintAssetRef"
+        AssetId: "sfxabp_explosions_distant_ref"
       }
     }
     PrimaryAssetId {

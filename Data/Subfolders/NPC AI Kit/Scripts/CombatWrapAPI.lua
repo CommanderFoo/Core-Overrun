@@ -50,17 +50,16 @@ end
 function API.ApplyDamage(object, dmg, source, pos, rot)
 	Events.Broadcast("GoingToTakeDamage", object, dmg, source)
 	
-	if(object:IsA("Player")) then
+	if(object ~= nil and object:IsA("Player")) then
 		local current_health = object.hitPoints
 		local damage_amount = dmg.amount
 
 		if(damage_amount >= current_health) then
-			object.hitPoints = 1
 			dmg.amount = current_health - 1
 			Events.Broadcast("on_player_put_down", object.id)
 		end
 	end
-
+	
 	CROSS_CONTEXT_CALLER().Call(function()
 		GetWrapperFor(object).ApplyDamage(object, dmg, source, pos, rot)
 	end)

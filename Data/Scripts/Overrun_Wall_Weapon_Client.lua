@@ -18,8 +18,22 @@ local cant_afford_color = root:GetCustomProperty("cant_afford_color")
 
 local local_player = Game.GetLocalPlayer()
 
+function Tick()
+	local objects = trigger:GetOverlappingObjects()
+
+	for _, obj in pairs(objects) do
+		if(obj:IsA("Player") and obj.id == local_player.id) then
+			if(obj:GetResource("is_down") == 1) then
+				purchase_ui.parent.visibility = Visibility.FORCE_OFF
+			else
+				purchase_ui.parent.visibility = Visibility.FORCE_ON
+			end
+		end
+	end
+end
+
 function on_trigger_enter(t, obj)
-	if(obj:IsA("Player") and obj.id == local_player.id) then
+	if(obj:IsA("Player") and obj.id == local_player.id and obj:GetResource("is_down") == 0) then
 		if(#obj:GetEquipment() > 0) then
 			local equipment = obj:GetEquipment()[1]
 

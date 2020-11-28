@@ -21,7 +21,7 @@ function random_crate()
 		to_enable = math.random(#ids)
 	until(to_enable ~= to_disable)
 
-	to_enable = 2
+	--to_enable = 2
 	random_enabled_crate = to_enable
 
 	Events.Broadcast("on_crates_update", to_disable, to_enable)	

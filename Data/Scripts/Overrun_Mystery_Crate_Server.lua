@@ -71,7 +71,7 @@ function on_trigger_enter(t, obj)
 		in_zone = true
 
 		obj.bindingPressedEvent:Connect(function(player, binding)
-			if(in_zone and binding == "ability_extra_33") then
+			if(in_zone and binding == "ability_extra_33" and obj:GetResource("is_down") == 0) then
 				local player_purchased = trigger:GetCustomProperty("player_purchased")
 				local random_index = get_random_index()
 

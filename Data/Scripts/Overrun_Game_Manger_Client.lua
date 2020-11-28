@@ -5,6 +5,8 @@ local leaderboards = script:GetCustomProperty("leaderboards"):WaitForObject()
 local countdown_text = script:GetCustomProperty("countdown_text"):WaitForObject()
 local countdown_panel = script:GetCustomProperty("countdown_panel"):WaitForObject()
 
+local local_player = Game.GetLocalPlayer()
+
 local entries = {
 
 	[1] = script:GetCustomProperty("entry_1"):WaitForObject(),
@@ -77,6 +79,7 @@ function game_starting(timer)
 		countdown_text.text = tostring(timer)
 		countdown_panel.visibility = Visibility.FORCE_ON
 	else
+		local_player:ClearOverrideCamera(0)
 		countdown_panel.visibility = Visibility.FORCE_OFF
 		hide_leaderboard()
 		UI.SetReticleVisible(true)

@@ -354,7 +354,6 @@ Objects {
   ChildIds: 8027858075814413371
   ChildIds: 985933359023610377
   ChildIds: 1616209010227049162
-  ChildIds: 15663481893314971170
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -362,41 +361,6 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   NetworkContext {
-  }
-}
-Objects {
-  Id: 15663481893314971170
-  Name: "Overrun_Revive_Client"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 17922148234597677997
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:tombstone"
-      AssetReference {
-        Id: 2317706112786566186
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 9062613682039331694
-    }
   }
 }
 Objects {
@@ -682,6 +646,10 @@ Objects {
         SelfId: 17224320865940605733
       }
     }
+    Overrides {
+      Name: "cs:no_damage_duration"
+      Int: 2
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -745,6 +713,16 @@ Objects {
     }
   }
   ParentId: 8379578297261672591
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:regen_amount"
+      Int: 10
+    }
+    Overrides {
+      Name: "cs:regen_after_time"
+      Int: 3
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
