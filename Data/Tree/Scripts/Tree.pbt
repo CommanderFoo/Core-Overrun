@@ -159,6 +159,22 @@ Objects {
         SelfId: 6369583621083966554
       }
     }
+    Overrides {
+      Name: "cs:round_end_duration"
+      Int: 6
+    }
+    Overrides {
+      Name: "cs:game_start_duration"
+      Int: 0
+    }
+    Overrides {
+      Name: "cs:starting_money"
+      Int: 10000
+    }
+    Overrides {
+      Name: "cs:late_join_money_per_round"
+      Int: 100
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -648,7 +664,7 @@ Objects {
     }
     Overrides {
       Name: "cs:no_damage_duration"
-      Int: 2
+      Int: 1
     }
   }
   Collidable_v2 {
@@ -716,11 +732,11 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:regen_amount"
-      Int: 10
+      Int: 15
     }
     Overrides {
       Name: "cs:regen_after_time"
-      Int: 3
+      Int: 1
     }
   }
   Collidable_v2 {
@@ -928,11 +944,9 @@ Objects {
   ChildIds: 820289830780617813
   ChildIds: 17092334741477099285
   ChildIds: 15077667658633846137
-  ChildIds: 11334969270005805431
   ChildIds: 491529578712508191
   ChildIds: 996125099989226719
   ChildIds: 7015281638365427702
-  ChildIds: 16989696204744886974
   ChildIds: 9861871182989912006
   ChildIds: 14406744887470516614
   ChildIds: 8375751176109407753
@@ -986,6 +1000,26 @@ Objects {
   ChildIds: 13273868461713144553
   ChildIds: 7732725816682374060
   ChildIds: 15671806588727248512
+  ChildIds: 1607704238379974784
+  ChildIds: 15777528908543744187
+  ChildIds: 3347685226469867059
+  ChildIds: 5569360300170766831
+  ChildIds: 15912833746131196510
+  ChildIds: 11582354493755420975
+  ChildIds: 16768139084799994686
+  ChildIds: 5671344254534558331
+  ChildIds: 12866207256927491338
+  ChildIds: 12545704588343951572
+  ChildIds: 85345475006638788
+  ChildIds: 326726003067198158
+  ChildIds: 4124376471218338651
+  ChildIds: 11492764995989356479
+  ChildIds: 12773952528061444938
+  ChildIds: 564933734487996985
+  ChildIds: 14191382327756491514
+  ChildIds: 12667533148100238365
+  ChildIds: 6200418783409448458
+  ChildIds: 1121417015242457389
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -998,6 +1032,1260 @@ Objects {
   InstanceHistory {
     SelfId: 11173696738678739330
     SubobjectId: 4402008544469842897
+    InstanceId: 8050441978913481353
+    TemplateId: 14023927948338123572
+  }
+}
+Objects {
+  Id: 1121417015242457389
+  Name: "Plane"
+  Transform {
+    Location {
+      X: -404.73175
+      Y: -4127.97949
+      Z: 2
+    }
+    Rotation {
+      Yaw: 90
+    }
+    Scale {
+      X: 4.4616847
+      Y: 2.97045398
+      Z: 0.2
+    }
+  }
+  ParentId: 11173696738678739330
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 1982591396225977542
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.016
+        G: 0.016
+        B: 0.016
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6284939371362434604
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 14853188944352923723
+    SubobjectId: 7504899337627023896
+    InstanceId: 8050441978913481353
+    TemplateId: 14023927948338123572
+  }
+}
+Objects {
+  Id: 6200418783409448458
+  Name: "Plane"
+  Transform {
+    Location {
+      X: -301.226685
+      Y: -3826.21289
+      Z: 2
+    }
+    Rotation {
+      Yaw: -126.402588
+    }
+    Scale {
+      X: 8.78720093
+      Y: 2.34438348
+      Z: 0.2
+    }
+  }
+  ParentId: 11173696738678739330
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 1982591396225977542
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.016
+        G: 0.016
+        B: 0.016
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6284939371362434604
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 14853188944352923723
+    SubobjectId: 7504899337627023896
+    InstanceId: 8050441978913481353
+    TemplateId: 14023927948338123572
+  }
+}
+Objects {
+  Id: 12667533148100238365
+  Name: "Plane"
+  Transform {
+    Location {
+      X: 42.2779694
+      Y: -3421.08423
+      Z: 2
+    }
+    Rotation {
+      Yaw: -89.3400879
+    }
+    Scale {
+      X: 7.75020409
+      Y: 3.6710813
+      Z: 0.2
+    }
+  }
+  ParentId: 11173696738678739330
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 1982591396225977542
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.016
+        G: 0.016
+        B: 0.016
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6284939371362434604
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 14853188944352923723
+    SubobjectId: 7504899337627023896
+    InstanceId: 8050441978913481353
+    TemplateId: 14023927948338123572
+  }
+}
+Objects {
+  Id: 14191382327756491514
+  Name: "Plane"
+  Transform {
+    Location {
+      X: -630.682922
+      Y: -3137.83398
+      Z: 2
+    }
+    Rotation {
+      Yaw: -89.3400879
+    }
+    Scale {
+      X: 1.91319
+      Y: 5.53131771
+      Z: 0.2
+    }
+  }
+  ParentId: 11173696738678739330
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 1982591396225977542
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.016
+        G: 0.016
+        B: 0.016
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6284939371362434604
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 14853188944352923723
+    SubobjectId: 7504899337627023896
+    InstanceId: 8050441978913481353
+    TemplateId: 14023927948338123572
+  }
+}
+Objects {
+  Id: 564933734487996985
+  Name: "Plane"
+  Transform {
+    Location {
+      X: 440.665405
+      Y: -3739.27368
+      Z: 2
+    }
+    Rotation {
+      Yaw: -89.3400879
+    }
+    Scale {
+      X: 1.28474355
+      Y: 2.21554089
+      Z: 0.2
+    }
+  }
+  ParentId: 11173696738678739330
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 1982591396225977542
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.016
+        G: 0.016
+        B: 0.016
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6284939371362434604
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 14853188944352923723
+    SubobjectId: 7504899337627023896
+    InstanceId: 8050441978913481353
+    TemplateId: 14023927948338123572
+  }
+}
+Objects {
+  Id: 12773952528061444938
+  Name: "Plane"
+  Transform {
+    Location {
+      X: 29.4472809
+      Y: -4473.53809
+      Z: 2
+    }
+    Rotation {
+      Yaw: -89.3400879
+    }
+    Scale {
+      X: 5.60665846
+      Y: 7.49044371
+      Z: 0.2
+    }
+  }
+  ParentId: 11173696738678739330
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 1982591396225977542
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.016
+        G: 0.016
+        B: 0.016
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6284939371362434604
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 14853188944352923723
+    SubobjectId: 7504899337627023896
+    InstanceId: 8050441978913481353
+    TemplateId: 14023927948338123572
+  }
+}
+Objects {
+  Id: 11492764995989356479
+  Name: "Plane"
+  Transform {
+    Location {
+      X: 868.470703
+      Y: -3488.61768
+      Z: 2
+    }
+    Rotation {
+      Yaw: 89.9999847
+    }
+    Scale {
+      X: 2.32829046
+      Y: 4.0654645
+      Z: 0.2
+    }
+  }
+  ParentId: 11173696738678739330
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 1982591396225977542
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.016
+        G: 0.016
+        B: 0.016
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6284939371362434604
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 14853188944352923723
+    SubobjectId: 7504899337627023896
+    InstanceId: 8050441978913481353
+    TemplateId: 14023927948338123572
+  }
+}
+Objects {
+  Id: 4124376471218338651
+  Name: "Plane"
+  Transform {
+    Location {
+      X: 994.763916
+      Y: -2798.15674
+      Z: 2
+    }
+    Rotation {
+      Yaw: 90
+    }
+    Scale {
+      X: 2.7229085
+      Y: 5.97783566
+      Z: 0.2
+    }
+  }
+  ParentId: 11173696738678739330
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 1982591396225977542
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.016
+        G: 0.016
+        B: 0.016
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6284939371362434604
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 14853188944352923723
+    SubobjectId: 7504899337627023896
+    InstanceId: 8050441978913481353
+    TemplateId: 14023927948338123572
+  }
+}
+Objects {
+  Id: 326726003067198158
+  Name: "Plane"
+  Transform {
+    Location {
+      X: 1519.62903
+      Y: -3152.9895
+      Z: 2
+    }
+    Rotation {
+      Yaw: -102.821838
+    }
+    Scale {
+      X: 4.30176306
+      Y: 10.2877522
+      Z: 0.2
+    }
+  }
+  ParentId: 11173696738678739330
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 1982591396225977542
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.016
+        G: 0.016
+        B: 0.016
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6284939371362434604
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 14853188944352923723
+    SubobjectId: 7504899337627023896
+    InstanceId: 8050441978913481353
+    TemplateId: 14023927948338123572
+  }
+}
+Objects {
+  Id: 85345475006638788
+  Name: "Plane"
+  Transform {
+    Location {
+      X: 1680.65784
+      Y: -3392.86719
+      Z: 2
+    }
+    Rotation {
+      Yaw: -61.4473877
+    }
+    Scale {
+      X: 3.58276916
+      Y: 10.2877512
+      Z: 0.2
+    }
+  }
+  ParentId: 11173696738678739330
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 1982591396225977542
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.016
+        G: 0.016
+        B: 0.016
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6284939371362434604
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 14853188944352923723
+    SubobjectId: 7504899337627023896
+    InstanceId: 8050441978913481353
+    TemplateId: 14023927948338123572
+  }
+}
+Objects {
+  Id: 12545704588343951572
+  Name: "Plane"
+  Transform {
+    Location {
+      X: 1143.36426
+      Y: -3699.51904
+      Z: 2
+    }
+    Rotation {
+      Yaw: -98.3979492
+    }
+    Scale {
+      X: 12.4846554
+      Y: 3.7715745
+      Z: 0.2
+    }
+  }
+  ParentId: 11173696738678739330
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 1982591396225977542
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.016
+        G: 0.016
+        B: 0.016
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6284939371362434604
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 14853188944352923723
+    SubobjectId: 7504899337627023896
+    InstanceId: 8050441978913481353
+    TemplateId: 14023927948338123572
+  }
+}
+Objects {
+  Id: 12866207256927491338
+  Name: "Plane"
+  Transform {
+    Location {
+      X: -1365.25964
+      Y: -11068.4795
+      Z: 2
+    }
+    Rotation {
+    }
+    Scale {
+      X: 3.12918425
+      Y: 1.36825776
+      Z: 0.2
+    }
+  }
+  ParentId: 11173696738678739330
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 1982591396225977542
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.016
+        G: 0.016
+        B: 0.016
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6284939371362434604
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 14853188944352923723
+    SubobjectId: 7504899337627023896
+    InstanceId: 8050441978913481353
+    TemplateId: 14023927948338123572
+  }
+}
+Objects {
+  Id: 5671344254534558331
+  Name: "Plane"
+  Transform {
+    Location {
+      X: -996.60791
+      Y: -10592.0088
+      Z: 2
+    }
+    Rotation {
+    }
+    Scale {
+      X: 3.27098632
+      Y: 2.7134726
+      Z: 0.2
+    }
+  }
+  ParentId: 11173696738678739330
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 1982591396225977542
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.016
+        G: 0.016
+        B: 0.016
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6284939371362434604
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 14853188944352923723
+    SubobjectId: 7504899337627023896
+    InstanceId: 8050441978913481353
+    TemplateId: 14023927948338123572
+  }
+}
+Objects {
+  Id: 16768139084799994686
+  Name: "Plane"
+  Transform {
+    Location {
+      X: -928.557617
+      Y: -10876.584
+      Z: 2
+    }
+    Rotation {
+    }
+    Scale {
+      X: 7.47810173
+      Y: 5.02860928
+      Z: 0.2
+    }
+  }
+  ParentId: 11173696738678739330
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 1982591396225977542
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.016
+        G: 0.016
+        B: 0.016
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6284939371362434604
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 14853188944352923723
+    SubobjectId: 7504899337627023896
+    InstanceId: 8050441978913481353
+    TemplateId: 14023927948338123572
+  }
+}
+Objects {
+  Id: 11582354493755420975
+  Name: "Plane"
+  Transform {
+    Location {
+      X: 1432.67029
+      Y: -11652.6436
+      Z: 2
+    }
+    Rotation {
+      Yaw: 89.2803726
+    }
+    Scale {
+      X: 2.49282312
+      Y: 2.2537818
+      Z: 0.2
+    }
+  }
+  ParentId: 11173696738678739330
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 1982591396225977542
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.016
+        G: 0.016
+        B: 0.016
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6284939371362434604
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 14853188944352923723
+    SubobjectId: 7504899337627023896
+    InstanceId: 8050441978913481353
+    TemplateId: 14023927948338123572
+  }
+}
+Objects {
+  Id: 15912833746131196510
+  Name: "Plane"
+  Transform {
+    Location {
+      X: 758.147156
+      Y: -11468.4785
+      Z: 2
+    }
+    Rotation {
+      Yaw: 89.2803726
+    }
+    Scale {
+      X: 1.84092522
+      Y: 3.23587418
+      Z: 0.2
+    }
+  }
+  ParentId: 11173696738678739330
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 1982591396225977542
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.016
+        G: 0.016
+        B: 0.016
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6284939371362434604
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 14853188944352923723
+    SubobjectId: 7504899337627023896
+    InstanceId: 8050441978913481353
+    TemplateId: 14023927948338123572
+  }
+}
+Objects {
+  Id: 5569360300170766831
+  Name: "Plane"
+  Transform {
+    Location {
+      X: 676.035461
+      Y: -10945.457
+      Z: 2
+    }
+    Rotation {
+      Yaw: 89.280365
+    }
+    Scale {
+      X: 5.71723032
+      Y: 2.59803915
+      Z: 0.2
+    }
+  }
+  ParentId: 11173696738678739330
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 1982591396225977542
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.016
+        G: 0.016
+        B: 0.016
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6284939371362434604
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 14853188944352923723
+    SubobjectId: 7504899337627023896
+    InstanceId: 8050441978913481353
+    TemplateId: 14023927948338123572
+  }
+}
+Objects {
+  Id: 3347685226469867059
+  Name: "Plane"
+  Transform {
+    Location {
+      X: 1064.46045
+      Y: -10353.0244
+      Z: 2
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.70355439
+      Y: 1.69191873
+      Z: 0.2
+    }
+  }
+  ParentId: 11173696738678739330
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 1982591396225977542
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.016
+        G: 0.016
+        B: 0.016
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6284939371362434604
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 14853188944352923723
+    SubobjectId: 7504899337627023896
+    InstanceId: 8050441978913481353
+    TemplateId: 14023927948338123572
+  }
+}
+Objects {
+  Id: 15777528908543744187
+  Name: "Plane"
+  Transform {
+    Location {
+      X: 864.350342
+      Y: -10554.3691
+      Z: 2
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1.41704834
+      Y: 5.88541698
+      Z: 0.2
+    }
+  }
+  ParentId: 11173696738678739330
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 1982591396225977542
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.016
+        G: 0.016
+        B: 0.016
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6284939371362434604
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 14853188944352923723
+    SubobjectId: 7504899337627023896
+    InstanceId: 8050441978913481353
+    TemplateId: 14023927948338123572
+  }
+}
+Objects {
+  Id: 1607704238379974784
+  Name: "Plane"
+  Transform {
+    Location {
+      X: 152.560257
+      Y: -10456.0908
+      Z: 2
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1.84830689
+      Y: 5.5136013
+      Z: 0.2
+    }
+  }
+  ParentId: 11173696738678739330
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 1982591396225977542
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.016
+        G: 0.016
+        B: 0.016
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6284939371362434604
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 14853188944352923723
+    SubobjectId: 7504899337627023896
     InstanceId: 8050441978913481353
     TemplateId: 14023927948338123572
   }
@@ -1017,7 +2305,7 @@ Objects {
     Scale {
       X: 2.9801681
       Y: 1.33658814
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -1080,7 +2368,7 @@ Objects {
     Scale {
       X: 6.58466053
       Y: 5.53357
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -1143,7 +2431,7 @@ Objects {
     Scale {
       X: 2.41628957
       Y: 4.54179382
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -1206,7 +2494,7 @@ Objects {
     Scale {
       X: 6.03683329
       Y: 10.4494267
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -1269,7 +2557,7 @@ Objects {
     Scale {
       X: 3.71090055
       Y: 20.4313698
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -1332,7 +2620,7 @@ Objects {
     Scale {
       X: 2.49503374
       Y: 5.71881151
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -1395,7 +2683,7 @@ Objects {
     Scale {
       X: 11.6932583
       Y: 2.84336495
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -1458,7 +2746,7 @@ Objects {
     Scale {
       X: 7.9227066
       Y: 6.59223366
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -1521,7 +2809,7 @@ Objects {
     Scale {
       X: 11.6932583
       Y: 2.84336495
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -1584,7 +2872,7 @@ Objects {
     Scale {
       X: 11.6932583
       Y: 2.84336495
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -1647,7 +2935,7 @@ Objects {
     Scale {
       X: 11.6932583
       Y: 2.84336495
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -1710,7 +2998,7 @@ Objects {
     Scale {
       X: 6.97190571
       Y: 2.84336734
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -1773,7 +3061,7 @@ Objects {
     Scale {
       X: 6.97190571
       Y: 2.84336734
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -1836,7 +3124,7 @@ Objects {
     Scale {
       X: 6.9719
       Y: 22.9716377
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -1899,7 +3187,7 @@ Objects {
     Scale {
       X: 6.4689765
       Y: 6.07326746
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -1962,7 +3250,7 @@ Objects {
     Scale {
       X: 2.92033148
       Y: 21.4090195
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -2025,7 +3313,7 @@ Objects {
     Scale {
       X: 8.73426533
       Y: 6.1163044
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -2088,7 +3376,7 @@ Objects {
     Scale {
       X: 2.61331391
       Y: 16.673769
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -2151,7 +3439,7 @@ Objects {
     Scale {
       X: 2.61330676
       Y: 4.49723673
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -2214,7 +3502,7 @@ Objects {
     Scale {
       X: 8.2588129
       Y: 12.1031
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -2277,7 +3565,7 @@ Objects {
     Scale {
       X: 2.70170736
       Y: 36.2294
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -2340,7 +3628,7 @@ Objects {
     Scale {
       X: 7.94505262
       Y: 7.94050694
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -2403,7 +3691,7 @@ Objects {
     Scale {
       X: 14.1638908
       Y: 4.36999464
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -2466,7 +3754,7 @@ Objects {
     Scale {
       X: 10.3298626
       Y: 3.11426973
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -2529,7 +3817,7 @@ Objects {
     Scale {
       X: 5.53918695
       Y: 2.69083309
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -2592,7 +3880,7 @@ Objects {
     Scale {
       X: 7.91441774
       Y: 8.51026535
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -2655,7 +3943,7 @@ Objects {
     Scale {
       X: 3.7514236
       Y: 13.7744093
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -2718,7 +4006,7 @@ Objects {
     Scale {
       X: 2.98564076
       Y: 4.7782793
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -2781,7 +4069,7 @@ Objects {
     Scale {
       X: 2.22552681
       Y: 3.63589025
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -2844,7 +4132,7 @@ Objects {
     Scale {
       X: 2.22552681
       Y: 3.63589025
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -2907,7 +4195,7 @@ Objects {
     Scale {
       X: 2.22552681
       Y: 3.63589025
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -2970,7 +4258,7 @@ Objects {
     Scale {
       X: 5.71737862
       Y: 5.07649565
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -3033,7 +4321,7 @@ Objects {
     Scale {
       X: 10.5957518
       Y: 9.34400082
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -3096,7 +4384,7 @@ Objects {
     Scale {
       X: 13.4197264
       Y: 7.49260426
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -3159,7 +4447,7 @@ Objects {
     Scale {
       X: 3.5936048
       Y: 2.29012632
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -3222,7 +4510,7 @@ Objects {
     Scale {
       X: 11.5095673
       Y: 22.1442204
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -3275,8 +4563,8 @@ Objects {
   Name: "Plane"
   Transform {
     Location {
-      X: -176.240723
-      Y: 219.125961
+      X: -187.842346
+      Y: 218.992325
       Z: 2
     }
     Rotation {
@@ -3285,7 +4573,7 @@ Objects {
     Scale {
       X: 2.9801681
       Y: 1.33658814
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -3338,8 +4626,8 @@ Objects {
   Name: "Plane"
   Transform {
     Location {
-      X: -1799.79431
-      Y: 200.425888
+      X: -1818.04944
+      Y: 200.215622
       Z: 2
     }
     Rotation {
@@ -3348,7 +4636,7 @@ Objects {
     Scale {
       X: 2.9801681
       Y: 1.33658814
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -3411,7 +4699,7 @@ Objects {
     Scale {
       X: 6.9719
       Y: 22.9716377
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -3474,7 +4762,7 @@ Objects {
     Scale {
       X: 2.78981638
       Y: 5.08779573
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -3537,7 +4825,7 @@ Objects {
     Scale {
       X: 1.61038494
       Y: 5.08779573
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -3600,7 +4888,7 @@ Objects {
     Scale {
       X: 2.28356671
       Y: 5.08779573
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -3663,7 +4951,7 @@ Objects {
     Scale {
       X: 18.5292778
       Y: 19.8046494
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -3726,7 +5014,7 @@ Objects {
     Scale {
       X: 2.83008337
       Y: 3.54915595
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -3789,7 +5077,7 @@ Objects {
     Scale {
       X: 2.83008456
       Y: 2.79818916
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -3852,7 +5140,7 @@ Objects {
     Scale {
       X: 4.56082964
       Y: 14.7735052
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -3915,7 +5203,7 @@ Objects {
     Scale {
       X: 1.33400738
       Y: 3.35627508
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -3978,7 +5266,7 @@ Objects {
     Scale {
       X: 2.40208077
       Y: 26.4260597
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -4041,7 +5329,7 @@ Objects {
     Scale {
       X: 1.91294122
       Y: 2.49238634
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -4104,7 +5392,7 @@ Objects {
     Scale {
       X: 1.91294014
       Y: 4.80098963
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -4167,7 +5455,7 @@ Objects {
     Scale {
       X: 2.83008456
       Y: 2.79818916
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -4230,7 +5518,7 @@ Objects {
     Scale {
       X: 11.2064381
       Y: 11.3205814
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -4283,80 +5571,17 @@ Objects {
   Name: "Plane"
   Transform {
     Location {
-      X: -499.652313
-      Y: -2942.75708
+      X: -251.310562
+      Y: -2874.98096
       Z: 2
     }
     Rotation {
       Yaw: -89.3400879
     }
     Scale {
-      X: 5.37932
-      Y: 8.13269234
-      Z: 0.1
-    }
-  }
-  ParentId: 11173696738678739330
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 1982591396225977542
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 0.016
-        G: 0.016
-        B: 0.016
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 6284939371362434604
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 14853188944352923723
-    SubobjectId: 7504899337627023896
-    InstanceId: 8050441978913481353
-    TemplateId: 14023927948338123572
-  }
-}
-Objects {
-  Id: 16989696204744886974
-  Name: "Plane"
-  Transform {
-    Location {
-      X: 205.325012
-      Y: -3028.07788
-      Z: 2
-    }
-    Rotation {
-      Yaw: -89.3400879
-    }
-    Scale {
-      X: 7.10421371
-      Y: 6.35359287
-      Z: 0.1
+      X: 4.23414707
+      Y: 10.8117695
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -4409,17 +5634,17 @@ Objects {
   Name: "Plane"
   Transform {
     Location {
-      X: -22.1667728
-      Y: -3794.35156
+      X: 166.630173
+      Y: -3897.39868
       Z: 2
     }
     Rotation {
       Yaw: -89.3400879
     }
     Scale {
-      X: 8.5668335
-      Y: 10.9751101
-      Z: 0.1
+      X: 6.8963604
+      Y: 3.91092324
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -4472,17 +5697,17 @@ Objects {
   Name: "Plane"
   Transform {
     Location {
-      X: -184.154175
-      Y: -4538.57568
+      X: -601.931519
+      Y: -4556.46631
       Z: 2
     }
     Rotation {
       Yaw: -89.3400879
     }
     Scale {
-      X: 6.73450804
-      Y: 14.4485826
-      Z: 0.1
+      X: 6.77089643
+      Y: 5.83531427
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -4545,70 +5770,7 @@ Objects {
     Scale {
       X: 3.27107811
       Y: 1.26579559
-      Z: 0.1
-    }
-  }
-  ParentId: 11173696738678739330
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 1982591396225977542
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 0.016
-        G: 0.016
-        B: 0.016
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 6284939371362434604
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 14853188944352923723
-    SubobjectId: 7504899337627023896
-    InstanceId: 8050441978913481353
-    TemplateId: 14023927948338123572
-  }
-}
-Objects {
-  Id: 11334969270005805431
-  Name: "Plane"
-  Transform {
-    Location {
-      X: 1436.31799
-      Y: -3394.23804
-      Z: 2
-    }
-    Rotation {
-      Yaw: -89.3400879
-    }
-    Scale {
-      X: 14.3756886
-      Y: 14.3387403
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -4661,7 +5823,7 @@ Objects {
   Name: "Plane"
   Transform {
     Location {
-      X: 1029.08862
+      X: 1020.19421
       Y: -4214.53857
       Z: 2
     }
@@ -4669,9 +5831,9 @@ Objects {
       Yaw: -89.3400879
     }
     Scale {
-      X: 2.54775953
-      Y: 4.20513725
-      Z: 0.1
+      X: 2.54776382
+      Y: 4.84063816
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -4734,7 +5896,7 @@ Objects {
     Scale {
       X: 1.93319893
       Y: 3.17846084
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -4797,7 +5959,7 @@ Objects {
     Scale {
       X: 1.93319893
       Y: 3.17846084
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -4860,7 +6022,7 @@ Objects {
     Scale {
       X: 4.74935627
       Y: 2.48096752
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -4923,7 +6085,7 @@ Objects {
     Scale {
       X: 7.90701246
       Y: 2.480968
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -4986,7 +6148,7 @@ Objects {
     Scale {
       X: 8.25636578
       Y: 12.7815876
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -5049,7 +6211,7 @@ Objects {
     Scale {
       X: 6.43521643
       Y: 3.25493431
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -5112,7 +6274,7 @@ Objects {
     Scale {
       X: 7.90701246
       Y: 2.480968
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -5175,7 +6337,7 @@ Objects {
     Scale {
       X: 2.52469969
       Y: 2.1731348
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -5238,7 +6400,7 @@ Objects {
     Scale {
       X: 8.16431522
       Y: 7.90049696
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -5301,7 +6463,7 @@ Objects {
     Scale {
       X: 6.02928066
       Y: 6.18988466
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -5364,7 +6526,7 @@ Objects {
     Scale {
       X: 6.85910559
       Y: 14.0977011
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -5427,7 +6589,7 @@ Objects {
     Scale {
       X: 7.87931776
       Y: 2.07382917
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -5490,7 +6652,7 @@ Objects {
     Scale {
       X: 25.9520435
       Y: 4.49722385
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -5544,16 +6706,16 @@ Objects {
   Transform {
     Location {
       X: 2641.15918
-      Y: -7250.5459
+      Y: -7214.66553
       Z: 2
     }
     Rotation {
       Yaw: -15.5885925
     }
     Scale {
-      X: 7.24292088
-      Y: 1.6140573
-      Z: 0.1
+      X: 7.24292183
+      Y: 2.59829831
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -5616,7 +6778,7 @@ Objects {
     Scale {
       X: 4.42203331
       Y: 7.13913679
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -5669,7 +6831,7 @@ Objects {
   Name: "Plane"
   Transform {
     Location {
-      X: 2073.50903
+      X: 2130.771
       Y: -6713.72
       Z: 2
     }
@@ -5677,9 +6839,9 @@ Objects {
       Yaw: 8.99421501
     }
     Scale {
-      X: 5.84274673
-      Y: 11.8457737
-      Z: 0.1
+      X: 6.63228798
+      Y: 11.845768
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -5742,7 +6904,7 @@ Objects {
     Scale {
       X: 4.3914237
       Y: 3.54207325
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -5805,7 +6967,7 @@ Objects {
     Scale {
       X: 6.79081
       Y: 5.11993504
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -5868,7 +7030,7 @@ Objects {
     Scale {
       X: 8.53970337
       Y: 36.6018181
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -5931,7 +7093,7 @@ Objects {
     Scale {
       X: 6.79080534
       Y: 11.1601086
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -5994,7 +7156,7 @@ Objects {
     Scale {
       X: 6.79079866
       Y: 30.1463814
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -6057,7 +7219,7 @@ Objects {
     Scale {
       X: 3.41639304
       Y: 3.00136614
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -6120,7 +7282,7 @@ Objects {
     Scale {
       X: 6.79080534
       Y: 11.1601086
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -6183,7 +7345,7 @@ Objects {
     Scale {
       X: 7.95099735
       Y: 7.1084218
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -6246,7 +7408,7 @@ Objects {
     Scale {
       X: 3.2396121
       Y: 4.51708937
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -6309,7 +7471,7 @@ Objects {
     Scale {
       X: 14.615921
       Y: 7.10842514
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -6372,7 +7534,7 @@ Objects {
     Scale {
       X: 2.63106799
       Y: 3.78047824
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -6435,7 +7597,7 @@ Objects {
     Scale {
       X: 14.1319103
       Y: 6.51041269
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -6497,7 +7659,7 @@ Objects {
     Scale {
       X: 9.29095078
       Y: 11.8457737
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -6560,7 +7722,7 @@ Objects {
     Scale {
       X: 4.54994726
       Y: 1.50703621
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -6623,7 +7785,7 @@ Objects {
     Scale {
       X: 5.59534359
       Y: 12.7848206
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -6686,7 +7848,7 @@ Objects {
     Scale {
       X: 6.59414101
       Y: 4.11711168
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -6749,7 +7911,7 @@ Objects {
     Scale {
       X: 12.0506992
       Y: 11.4591713
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -6812,7 +7974,7 @@ Objects {
     Scale {
       X: 2.70172024
       Y: 4.15666294
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -6875,7 +8037,7 @@ Objects {
     Scale {
       X: 14.9343586
       Y: 6.6748867
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -6938,7 +8100,7 @@ Objects {
     Scale {
       X: 3.59433794
       Y: 11.4596853
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -7001,7 +8163,7 @@ Objects {
     Scale {
       X: 2.66138363
       Y: 9.67466354
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -7064,7 +8226,7 @@ Objects {
     Scale {
       X: 10.5407009
       Y: 12.6518965
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -7127,7 +8289,7 @@ Objects {
     Scale {
       X: 9.48624897
       Y: 1.98989153
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -7190,7 +8352,7 @@ Objects {
     Scale {
       X: 9.76996136
       Y: 1.98988688
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -7253,7 +8415,7 @@ Objects {
     Scale {
       X: 3.03116369
       Y: 2.87060261
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -7316,7 +8478,7 @@ Objects {
     Scale {
       X: 4.36499166
       Y: 2.34659457
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -7378,7 +8540,7 @@ Objects {
     Scale {
       X: 21.8037338
       Y: 4.04464912
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -7440,7 +8602,7 @@ Objects {
     Scale {
       X: 7.61991549
       Y: 20.0876369
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -7503,7 +8665,7 @@ Objects {
     Scale {
       X: 2.63106799
       Y: 3.78047824
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -7565,7 +8727,7 @@ Objects {
     Scale {
       X: 2.75337362
       Y: 2.34659195
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -7627,7 +8789,7 @@ Objects {
     Scale {
       X: 8.08309746
       Y: 6.06407261
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -7689,7 +8851,7 @@ Objects {
     Scale {
       X: 4.70057821
       Y: 2.34659195
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -7751,7 +8913,7 @@ Objects {
     Scale {
       X: 2.75337362
       Y: 2.34659195
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -7813,7 +8975,7 @@ Objects {
     Scale {
       X: 2.75337362
       Y: 2.34659195
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -7867,15 +9029,15 @@ Objects {
   Transform {
     Location {
       X: -31.1282959
-      Y: -9157.17285
+      Y: -9177.89
       Z: 2
     }
     Rotation {
     }
     Scale {
       X: 2.75337362
-      Y: 2.34659195
-      Z: 0.1
+      Y: 2.55928731
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -7937,7 +9099,7 @@ Objects {
     Scale {
       X: 13.9444132
       Y: 7.63497066
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -7999,7 +9161,7 @@ Objects {
     Scale {
       X: 2.46495676
       Y: 6.22850418
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -8052,17 +9214,17 @@ Objects {
   Name: "Plane"
   Transform {
     Location {
-      X: -827.170105
-      Y: -9788.34277
+      X: -812.00647
+      Y: -9839.14063
       Z: 2
     }
     Rotation {
       Yaw: -73.379364
     }
     Scale {
-      X: 2.46495676
-      Y: 5.56389475
-      Z: 0.1
+      X: 3.27387142
+      Y: 5.56389761
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -8115,16 +9277,16 @@ Objects {
   Name: "Plane"
   Transform {
     Location {
-      X: -391.187195
+      X: -375.914551
       Y: -9696.58105
       Z: 2
     }
     Rotation {
     }
     Scale {
-      X: 5.44562292
+      X: 6.17290354
       Y: 12.4615345
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -8177,16 +9339,16 @@ Objects {
   Name: "Plane"
   Transform {
     Location {
-      X: -399.348267
+      X: -385.494171
       Y: -10418.71
       Z: 2
     }
     Rotation {
     }
     Scale {
-      X: 3.85108304
+      X: 4.34692717
       Y: 2.34274697
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -8239,16 +9401,16 @@ Objects {
   Name: "Plane"
   Transform {
     Location {
-      X: -794.628052
-      Y: -10789.043
+      X: -330.185944
+      Y: -10796.7559
       Z: 2
     }
     Rotation {
     }
     Scale {
-      X: 14.3210163
-      Y: 6.45727873
-      Z: 0.1
+      X: 5.3498435
+      Y: 6.588902
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -8311,7 +9473,7 @@ Objects {
     Scale {
       X: 2.61375
       Y: 1.25307906
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -8373,7 +9535,7 @@ Objects {
     Scale {
       X: 6.76904535
       Y: 12.3316536
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -8435,7 +9597,7 @@ Objects {
     Scale {
       X: 1.05901873
       Y: 3.30497
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -8488,16 +9650,16 @@ Objects {
   Name: "Plane"
   Transform {
     Location {
-      X: 1123.32764
-      Y: -11646.8438
+      X: 915.097229
+      Y: -11713.7656
       Z: 2
     }
     Rotation {
     }
     Scale {
-      X: 8.27536106
-      Y: 5.52976847
-      Z: 0.1
+      X: 9.83138847
+      Y: 4.56791306
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -8550,16 +9712,16 @@ Objects {
   Name: "Plane"
   Transform {
     Location {
-      X: 392.186646
-      Y: -11556.1201
+      X: 400.244812
+      Y: -11463.2227
       Z: 2
     }
     Rotation {
     }
     Scale {
-      X: 6.57507515
-      Y: 7.43275642
-      Z: 0.1
+      X: 4.69986
+      Y: 5.79184198
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -8612,16 +9774,16 @@ Objects {
   Name: "Plane"
   Transform {
     Location {
-      X: 626.90387
-      Y: -10772.1299
+      X: 391.828583
+      Y: -10759.4785
       Z: 2
     }
     Rotation {
     }
     Scale {
-      X: 11.1170816
-      Y: 9.07768
-      Z: 0.1
+      X: 3.85604095
+      Y: 10.209713
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -8674,16 +9836,16 @@ Objects {
   Name: "Plane"
   Transform {
     Location {
-      X: 460.071655
-      Y: -9773.7666
+      X: 476.238525
+      Y: -9800.10156
       Z: 2
     }
     Rotation {
     }
     Scale {
-      X: 7.65230703
-      Y: 1.87676263
-      Z: 0.1
+      X: 8.06400394
+      Y: 2.59873605
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -8736,16 +9898,16 @@ Objects {
   Name: "Plane"
   Transform {
     Location {
-      X: 1396.11292
-      Y: -9773.7666
+      X: 1290.98779
+      Y: -9783.68359
       Z: 2
     }
     Rotation {
     }
     Scale {
-      X: 2.58348179
-      Y: 1.87676263
-      Z: 0.1
+      X: 1.10828662
+      Y: 2.2966845
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -8798,16 +9960,16 @@ Objects {
   Name: "Plane"
   Transform {
     Location {
-      X: 800.180359
-      Y: -10109.4668
+      X: 862.068176
+      Y: -10070.2061
       Z: 2
     }
     Rotation {
     }
     Scale {
-      X: 14.5095253
-      Y: 5.03621578
-      Z: 0.1
+      X: 13.1929092
+      Y: 4.14316893
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -8869,7 +10031,7 @@ Objects {
     Scale {
       X: 12.5538692
       Y: 7.45941448
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -8931,7 +10093,7 @@ Objects {
     Scale {
       X: 7.90078974
       Y: 2.65876961
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -8994,7 +10156,7 @@ Objects {
     Scale {
       X: 14.6947622
       Y: 2.78346014
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -9057,7 +10219,7 @@ Objects {
     Scale {
       X: 9.29680157
       Y: 7.77571106
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -9120,7 +10282,7 @@ Objects {
     Scale {
       X: 11.1523533
       Y: 2.83064198
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -9183,7 +10345,7 @@ Objects {
     Scale {
       X: 2.41629076
       Y: 7.94874191
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -9246,7 +10408,7 @@ Objects {
     Scale {
       X: 2.41628933
       Y: 3.76184845
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -9308,7 +10470,7 @@ Objects {
     Scale {
       X: 7.65040922
       Y: 2.51896596
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -9370,7 +10532,7 @@ Objects {
     Scale {
       X: 14.0089474
       Y: 8.08449173
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -9432,7 +10594,7 @@ Objects {
     Scale {
       X: 2.42667389
       Y: 2.05818462
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -9494,7 +10656,7 @@ Objects {
     Scale {
       X: 2.42667389
       Y: 2.75291109
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -9556,7 +10718,7 @@ Objects {
     Scale {
       X: 8.19507694
       Y: 6.74574327
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -9618,7 +10780,7 @@ Objects {
     Scale {
       X: 7.90078974
       Y: 2.65876961
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -9680,7 +10842,7 @@ Objects {
     Scale {
       X: 20.5417213
       Y: 6.09164095
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -9742,7 +10904,7 @@ Objects {
     Scale {
       X: 8.19507694
       Y: 3.87736344
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -9805,7 +10967,7 @@ Objects {
     Scale {
       X: 2.06485891
       Y: 5.72787523
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -9867,7 +11029,7 @@ Objects {
     Scale {
       X: 2.58890271
       Y: 9.04853725
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -9929,7 +11091,7 @@ Objects {
     Scale {
       X: 15.5645885
       Y: 8.02326584
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -9991,7 +11153,7 @@ Objects {
     Scale {
       X: 22.374567
       Y: 5.88205194
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -10054,7 +11216,7 @@ Objects {
     Scale {
       X: 2.41628909
       Y: 3.00000143
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -10117,7 +11279,7 @@ Objects {
     Scale {
       X: 2.41628909
       Y: 3.00000143
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -10179,7 +11341,7 @@ Objects {
     Scale {
       X: 13.5671644
       Y: 6.35330534
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -10242,7 +11404,7 @@ Objects {
     Scale {
       X: 5.14153337
       Y: 2.63297892
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -10305,7 +11467,7 @@ Objects {
     Scale {
       X: 2.57073355
       Y: 1.14480901
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -10368,7 +11530,7 @@ Objects {
     Scale {
       X: 3.10907364
       Y: 1.15319085
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -10430,7 +11592,7 @@ Objects {
     Scale {
       X: 23.6322308
       Y: 8.42601776
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -10492,7 +11654,7 @@ Objects {
     Scale {
       X: 23.6322308
       Y: 7.29562759
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -10554,7 +11716,7 @@ Objects {
     Scale {
       X: 11.0972891
       Y: 6.78875113
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -10617,7 +11779,7 @@ Objects {
     Scale {
       X: 20.6755695
       Y: 6.98571
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -10680,7 +11842,7 @@ Objects {
     Scale {
       X: 16.1169987
       Y: 11.8216057
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -10743,7 +11905,7 @@ Objects {
     Scale {
       X: 9.04621506
       Y: 5.4119916
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -10806,7 +11968,7 @@ Objects {
     Scale {
       X: 11.0972891
       Y: 5.41199303
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -10869,7 +12031,7 @@ Objects {
     Scale {
       X: 11.0972891
       Y: 5.41199303
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -10932,7 +12094,7 @@ Objects {
     Scale {
       X: 8.05322266
       Y: 7.95114088
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -10994,7 +12156,7 @@ Objects {
     Scale {
       X: 10.0592537
       Y: 9.65074158
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330
@@ -11057,7 +12219,7 @@ Objects {
     Scale {
       X: 11.1523533
       Y: 2.83064198
-      Z: 0.1
+      Z: 0.2
     }
   }
   ParentId: 11173696738678739330

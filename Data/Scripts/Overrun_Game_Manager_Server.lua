@@ -1,11 +1,14 @@
 ﻿local Spawner = script:GetCustomProperty("Overrun_Spawner_Server"):WaitForObject()
 local Player_Equipment = script:GetCustomProperty("Overrun_Player_Equipment"):WaitForObject()
 
-local starting_money = 50000
+local round_end_duration = script:GetCustomProperty("round_end_duration")
+local game_start_duration = script:GetCustomProperty("game_start_duration")
+local starting_money = script:GetCustomProperty("starting_money")
+local late_join_money_per_round = script:GetCustomProperty("late_join_money_per_round")
 
 local game_state = "WAITING"
-local timer = 10
-local round = 5
+local timer = game_start_duration
+local round = 1
 local countdown_started = false
 local players = {}
 local round_task = nil
@@ -29,9 +32,13 @@ function player_joined(p)
 		}
 	end
 
-	setup_resources(p)
+	setup_resources(p, 3, true, true)
 
 	p.team = 1
+
+	if(game_state == "WAITING") then
+		Events.Broadcast("on_disable_all_players")
+	end
 
 	if(game_state == "WAITING" and not countdown_started) then
 		start_count_down()
@@ -54,16 +61,26 @@ function player_left(p)
 	end
 end
 
-function setup_resources(p)
-	p:SetResource("money", starting_money)
-	p:SetResource("total_money", starting_money)
+function setup_resources(p, lives, reset_total_money, new_player)
+	local money_to_add = 0
+
+	if(new_player and game_state == "PLAYING" and round > 1) then
+		money_to_add = math.min(3000, round * late_join_money_per_round)
+	end
+
+	p:SetResource("money", starting_money + money_to_add)
+
+	if(reset_total_money) then
+		p:SetResource("total_money", starting_money + money_to_add)
+	end
+
 	p:SetResource("downs", 0)
 	p:SetResource("revives", 0)
 	p:SetResource("damage", 0)
 	p:SetResource("kills", 0)
 	p:SetResource("rounds", 48)
 	p:SetResource("is_down", 0)
-	p:SetResource("lifes", 1)
+	p:SetResource("lifes", lives)
 
 	Player_Equipment.context.give_starting_weapon(p)
 end
@@ -94,16 +111,16 @@ function on_player_died(p)
 			end
 
 			Task.Wait(5)
+
 			game_state = "WAITING"
-			timer = 10
-			round = 5
+			timer = game_start_duration
+			round = 1
 			countdown_started = false
-			killed = 0
 			
 			start_count_down()
-			Task.Wait(5)
 
-			spawn_players(true)
+			Task.Wait(5)
+			spawn_players(true, 3, false)
 		end)
 	end
 end
@@ -120,7 +137,7 @@ function all_dead()
 	return all_dead
 end
 
-function spawn_players(force_spawn)
+function spawn_players(force_spawn, lives, reset_total_money)
 	local counter = 1
 
 	for k, v in pairs(players) do
@@ -131,14 +148,22 @@ function spawn_players(force_spawn)
 		if(was_dead or force_spawn) then
 			v.player.team = 1
 
+			if(was_dead) then
+				Events.Broadcast("on_clean_up_tombstones", k)
+			end
+
 			v.player:Respawn({
 				
 				position = player_spawn_points[counter]:GetWorldPosition(),
 				rotation = player_spawn_points[counter]:GetWorldRotation()
 			})
 
-			Events.BroadcastToPlayer(v.player, "on_player_respawn")
-			setup_resources(v.player)
+			if(was_dead and game_state == "PLAYING") then
+				Events.Broadcast("on_player_get_up", v.id, true)
+				Events.BroadcastToPlayer(v.player, "on_player_respawn")
+			end
+
+			setup_resources(v.player, lives, reset_total_money)
 		end
 
 		counter = counter + 1
@@ -164,7 +189,7 @@ function start_count_down()
 	end)
 
 	task.repeatInterval = 1
-	task.repeatCount = timer
+	task.repeatCount = game_start_duration
 end
 
 function round_completed()
@@ -173,12 +198,10 @@ function round_completed()
 	Spawner.context.set_round(round)
 
 	round_task = Task.Spawn(function()
-		Task.Wait(8)
+		spawn_players(false, 1, false)
+		Task.Wait(round_end_duration)
 		Spawner.context.set_max_spawns(math.min(25, round + 2))
 		Events.BroadcastToAllPlayers("on_round_start", round)
-
-		spawn_players(false)
-
 		Spawner.context.spawn_zombies()
 	end)
 

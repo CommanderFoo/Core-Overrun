@@ -59,12 +59,14 @@ local disabled = root:GetCustomProperty("disabled")
 local show_ui = false
 
 function disable_crate()
+	disabled = true
 	enabled_base.visibility = Visibility.FORCE_OFF
 	disabled_base.visibility = Visibility.FORCE_ON
 	outline:SetSmartProperty("Enabled", false)
 end
 
 function enable_crate()
+	disabled = false
 	enabled_base.visibility = Visibility.FORCE_ON
 	disabled_base.visibility = Visibility.FORCE_OFF
 	outline:SetSmartProperty("Enabled", true)	
@@ -113,7 +115,7 @@ function Tick(dt)
 		weapons_down_tween:tween(dt)
 	end
 
-	if(show_ui) then
+	if(show_ui and not disabled) then
 		interact_ui.parent.visibility = Visibility.FORCE_ON
 	else
 		interact_ui.parent.visibility = Visibility.FORCE_OFF

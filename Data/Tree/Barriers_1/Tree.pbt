@@ -26,7 +26,6 @@ Objects {
   ChildIds: 17781262516962880495
   ChildIds: 14046906797707059451
   ChildIds: 2870316269296374577
-  ChildIds: 5122822054648702708
   ChildIds: 7319112731605481032
   ChildIds: 10215991736000784991
   ChildIds: 12541256022697686208
@@ -76,7 +75,6 @@ Objects {
   ChildIds: 4658070288370770578
   ChildIds: 624161785902180848
   ChildIds: 17302952435688286846
-  ChildIds: 6698240933343068896
   ChildIds: 17884253873462495259
   ChildIds: 440079982545052733
   ChildIds: 3125330653704392820
@@ -142,10 +140,6 @@ Objects {
   ChildIds: 14531824774842651327
   ChildIds: 1382566869661170112
   ChildIds: 292490001532785936
-  ChildIds: 7573123131924811999
-  ChildIds: 5604881197730099834
-  ChildIds: 8331824145948127764
-  ChildIds: 8682334307396219737
   ChildIds: 9824718548248607839
   ChildIds: 14200894738428073289
   ChildIds: 13715318168540116912
@@ -184,14 +178,12 @@ Objects {
   ChildIds: 7254899394332097685
   ChildIds: 4719816277121223329
   ChildIds: 3424220608513256641
-  ChildIds: 6679331511373205900
   ChildIds: 17260314889739767469
   ChildIds: 11524804284817834450
   ChildIds: 5651894397507037123
   ChildIds: 1468947659525943945
   ChildIds: 2762653928126337628
   ChildIds: 10579789843514351683
-  ChildIds: 16487058166628025042
   ChildIds: 17825095978195548401
   ChildIds: 4370400544506008114
   ChildIds: 9537057193564628944
@@ -323,7 +315,6 @@ Objects {
   ChildIds: 5117827849631096909
   ChildIds: 1084119261182061359
   ChildIds: 17834968105509906593
-  ChildIds: 4952620352870964400
   ChildIds: 16176491705921017419
   ChildIds: 2185557754809219693
   ChildIds: 3679639842346225188
@@ -386,10 +377,6 @@ Objects {
   ChildIds: 15124419025505668335
   ChildIds: 819670961211828112
   ChildIds: 2035892288792316736
-  ChildIds: 8166978883203583631
-  ChildIds: 6162994239214758954
-  ChildIds: 7777512811367361604
-  ChildIds: 6931614142676774153
   ChildIds: 10382972164559593999
   ChildIds: 15950735981097995033
   ChildIds: 11968679322271623648
@@ -432,7 +419,6 @@ Objects {
   ChildIds: 7287172070486791170
   ChildIds: 7260868539608219984
   ChildIds: 8873204624032775196
-  ChildIds: 911682746629825218
   ChildIds: 949176917065419950
   ChildIds: 337531220101081051
   ChildIds: 16555517269345277180
@@ -451,7 +437,6 @@ Objects {
   ChildIds: 15739689684986882610
   ChildIds: 16902085188104029194
   ChildIds: 2677794962048927762
-  ChildIds: 8476916138106761973
   ChildIds: 10853358481242277830
   ChildIds: 1570560882176474897
   ChildIds: 10531463749659879718
@@ -499,7 +484,6 @@ Objects {
   ChildIds: 12774486350317128527
   ChildIds: 12730236556419374621
   ChildIds: 12631153653544805201
-  ChildIds: 15622944657644780943
   ChildIds: 15655933579590276067
   ChildIds: 15043726035940243606
   ChildIds: 3578154953926134705
@@ -530,7 +514,6 @@ Objects {
   ChildIds: 4714074090731199875
   ChildIds: 4650305800643594449
   ChildIds: 6875036874775672221
-  ChildIds: 2948749086974389059
   ChildIds: 2983311959946675503
   ChildIds: 2370542467073060442
   ChildIds: 13946520181251448189
@@ -3406,6 +3389,16 @@ Objects {
     }
   }
   ParentId: 2263102109253131667
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_Detail1:color"
+      Color {
+        R: 0.122000098
+        G: 0.0367936715
+        A: 1
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3818,69 +3811,6 @@ Objects {
   InstanceHistory {
     SelfId: 2983311959946675503
     SubobjectId: 5252324756961709295
-    InstanceId: 971240129014455266
-    TemplateId: 14902895029142543664
-  }
-}
-Objects {
-  Id: 2948749086974389059
-  Name: "Hill 04"
-  Transform {
-    Location {
-      X: 655.448242
-      Y: 1213.73779
-      Z: 70.1765289
-    }
-    Rotation {
-      Yaw: -90.7041397
-    }
-    Scale {
-      X: 1.4778142
-      Y: 1.56689453
-      Z: 1.12779927
-    }
-  }
-  ParentId: 2263102109253131667
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 12085483327763957900
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 1
-        G: 0.65918
-        B: 0.380405
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 364458167449529418
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 2948749086974389059
-    SubobjectId: 5291400026124657283
     InstanceId: 971240129014455266
     TemplateId: 14902895029142543664
   }
@@ -5457,69 +5387,6 @@ Objects {
   InstanceHistory {
     SelfId: 15655933579590276067
     SubobjectId: 5252324756961709295
-    InstanceId: 9306652400060271917
-    TemplateId: 14902895029142543664
-  }
-}
-Objects {
-  Id: 15622944657644780943
-  Name: "Hill 04"
-  Transform {
-    Location {
-      X: -394.703156
-      Y: 874.480957
-      Z: 70.1765289
-    }
-    Rotation {
-      Yaw: 89.2958145
-    }
-    Scale {
-      X: 1.4778142
-      Y: 1.56689453
-      Z: 1.12779927
-    }
-  }
-  ParentId: 2263102109253131667
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 12085483327763957900
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 1
-        G: 0.65918
-        B: 0.380405
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 364458167449529418
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 15622944657644780943
-    SubobjectId: 5291400026124657283
     InstanceId: 9306652400060271917
     TemplateId: 14902895029142543664
   }
@@ -8124,69 +7991,6 @@ Objects {
   }
 }
 Objects {
-  Id: 8476916138106761973
-  Name: "Hill 02"
-  Transform {
-    Location {
-      X: -967.751953
-      Y: 20.7070313
-      Z: 69.737381
-    }
-    Rotation {
-      Yaw: -141.310974
-    }
-    Scale {
-      X: 1.77484071
-      Y: 1.70099604
-      Z: 1
-    }
-  }
-  ParentId: 2263102109253131667
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 12085483327763957900
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 1
-        G: 0.65918
-        B: 0.380405
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 14023144080669477239
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 8476916138106761973
-    SubobjectId: 6077864278365121941
-    InstanceId: 6511113659018438411
-    TemplateId: 10831384472297433797
-  }
-}
-Objects {
   Id: 2677794962048927762
   Name: "Hill 02"
   Transform {
@@ -9142,69 +8946,6 @@ Objects {
   InstanceHistory {
     SelfId: 949176917065419950
     SubobjectId: 5252324756961709295
-    InstanceId: 6709800775172237033
-    TemplateId: 14902895029142543664
-  }
-}
-Objects {
-  Id: 911682746629825218
-  Name: "Hill 04"
-  Transform {
-    Location {
-      X: -28.46521
-      Y: -282.105957
-      Z: 70.1765289
-    }
-    Rotation {
-      Yaw: 89.2958145
-    }
-    Scale {
-      X: 1.4778142
-      Y: 1.56689453
-      Z: 1.12779927
-    }
-  }
-  ParentId: 2263102109253131667
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 12085483327763957900
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 1
-        G: 0.65918
-        B: 0.380405
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 364458167449529418
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 911682746629825218
-    SubobjectId: 5291400026124657283
     InstanceId: 6709800775172237033
     TemplateId: 14902895029142543664
   }
@@ -11511,230 +11252,6 @@ Objects {
   InstanceHistory {
     SelfId: 10382972164559593999
     SubobjectId: 15728848025391247668
-    InstanceId: 12887986272766766557
-    TemplateId: 10745356484620485231
-  }
-}
-Objects {
-  Id: 6931614142676774153
-  Name: "Rock Pile 002"
-  Transform {
-    Location {
-      X: -2697.76929
-      Y: -5826.96143
-      Z: 114.989502
-    }
-    Rotation {
-      Pitch: 2.77761912
-      Yaw: 84.8860474
-      Roll: 14.0674524
-    }
-    Scale {
-      X: 0.427333593
-      Y: 0.427333593
-      Z: 0.427333593
-    }
-  }
-  ParentId: 2263102109253131667
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 1
-        G: 0.65918
-        B: 0.380405
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 3377721323622766709
-    }
-    Teams {
-    }
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 6931614142676774153
-    SubobjectId: 3057283941062540850
-    InstanceId: 12887986272766766557
-    TemplateId: 10745356484620485231
-  }
-}
-Objects {
-  Id: 7777512811367361604
-  Name: "Rock Pile 001"
-  Transform {
-    Location {
-      X: -2654.43286
-      Y: -5585.42529
-      Z: 103.349701
-    }
-    Rotation {
-      Pitch: -20.1570072
-      Yaw: 33.9303513
-      Roll: 6.15370655
-    }
-    Scale {
-      X: 0.701563895
-      Y: 0.701563895
-      Z: 0.701563895
-    }
-  }
-  ParentId: 2263102109253131667
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 1
-        G: 0.65918
-        B: 0.380405
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 10835155324150586940
-    }
-    Teams {
-    }
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 7777512811367361604
-    SubobjectId: 2427699049705684863
-    InstanceId: 12887986272766766557
-    TemplateId: 10745356484620485231
-  }
-}
-Objects {
-  Id: 6162994239214758954
-  Name: "Rock Pile 002"
-  Transform {
-    Location {
-      X: -1975.6
-      Y: -5851.59814
-      Z: 95.4022522
-    }
-    Rotation {
-      Pitch: 6.23637199
-      Yaw: -149.009018
-      Roll: 20.102499
-    }
-    Scale {
-      X: 0.343756557
-      Y: 0.343756527
-      Z: 0.329329163
-    }
-  }
-  ParentId: 2263102109253131667
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 1
-        G: 0.65918
-        B: 0.380405
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 3377721323622766709
-    }
-    Teams {
-    }
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 6162994239214758954
-    SubobjectId: 2294855891238256401
-    InstanceId: 12887986272766766557
-    TemplateId: 10745356484620485231
-  }
-}
-Objects {
-  Id: 8166978883203583631
-  Name: "Rock Pile 001"
-  Transform {
-    Location {
-      X: -1932.84412
-      Y: -5681.55615
-      Z: 71.1396484
-    }
-    Rotation {
-      Pitch: 10.8073874
-      Yaw: -91.8274307
-      Roll: 14.2261772
-    }
-    Scale {
-      X: 0.743738532
-      Y: 0.743738532
-      Z: 0.743738532
-    }
-  }
-  ParentId: 2263102109253131667
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 1
-        G: 0.65918
-        B: 0.380405
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 10835155324150586940
-    }
-    Teams {
-    }
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 8166978883203583631
-    SubobjectId: 4254034521020439988
     InstanceId: 12887986272766766557
     TemplateId: 10745356484620485231
   }
@@ -15386,68 +14903,6 @@ Objects {
   InstanceHistory {
     SelfId: 16176491705921017419
     SubobjectId: 12259322250123199856
-    InstanceId: 12887986272766766557
-    TemplateId: 10745356484620485231
-  }
-}
-Objects {
-  Id: 4952620352870964400
-  Name: "Hill 01"
-  Transform {
-    Location {
-      X: -2360.25293
-      Y: -5545.53369
-      Z: 69.7372284
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.897255361
-      Y: 0.988725781
-      Z: 0.473168969
-    }
-  }
-  ParentId: 2263102109253131667
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 12085483327763957900
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 1
-        G: 0.65918
-        B: 0.380405
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 15090440283814251585
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 4952620352870964400
-    SubobjectId: 1073141100797300619
     InstanceId: 12887986272766766557
     TemplateId: 10745356484620485231
   }
@@ -22848,62 +22303,6 @@ Objects {
   }
 }
 Objects {
-  Id: 16487058166628025042
-  Name: "Rock Pile 001"
-  Transform {
-    Location {
-      X: 2274.90918
-      Y: 6486.33301
-      Z: 96.3026581
-    }
-    Rotation {
-      Pitch: 1.73531187
-      Yaw: 109.918571
-      Roll: 5.23042345
-    }
-    Scale {
-      X: 0.796874046
-      Y: 0.796874046
-      Z: 0.796874046
-    }
-  }
-  ParentId: 2263102109253131667
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 1
-        G: 0.65918
-        B: 0.380405
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 10835155324150586940
-    }
-    Teams {
-    }
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 16487058166628025042
-    SubobjectId: 16698787401807672279
-    InstanceId: 16542479016376127143
-    TemplateId: 1471188114156919597
-  }
-}
-Objects {
   Id: 10579789843514351683
   Name: "Decal Rubble Concrete 02"
   Transform {
@@ -23203,69 +22602,6 @@ Objects {
   InstanceHistory {
     SelfId: 17260314889739767469
     SubobjectId: 17076306555693023144
-    InstanceId: 16542479016376127143
-    TemplateId: 1471188114156919597
-  }
-}
-Objects {
-  Id: 6679331511373205900
-  Name: "Hill 05"
-  Transform {
-    Location {
-      X: 2312.38257
-      Y: 6571.70654
-      Z: 69.7375
-    }
-    Rotation {
-      Yaw: -151.166168
-    }
-    Scale {
-      X: 1.10026908
-      Y: 1.17032361
-      Z: 0.370400518
-    }
-  }
-  ParentId: 2263102109253131667
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 12085483327763957900
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 1
-        G: 0.65918
-        B: 0.380405
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 2029515409028393758
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 6679331511373205900
-    SubobjectId: 6900093217562927241
     InstanceId: 16542479016376127143
     TemplateId: 1471188114156919597
   }
@@ -25366,230 +24702,6 @@ Objects {
   InstanceHistory {
     SelfId: 9824718548248607839
     SubobjectId: 15728848025391247668
-    InstanceId: 16212973413123260038
-    TemplateId: 10745356484620485231
-  }
-}
-Objects {
-  Id: 8682334307396219737
-  Name: "Rock Pile 002"
-  Transform {
-    Location {
-      X: 1870.61328
-      Y: 351.47168
-      Z: 114.989502
-    }
-    Rotation {
-      Pitch: 2.77761245
-      Yaw: 63.5517311
-      Roll: 14.0674543
-    }
-    Scale {
-      X: 0.427333593
-      Y: 0.427333593
-      Z: 0.427333593
-    }
-  }
-  ParentId: 2263102109253131667
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 1
-        G: 0.65918
-        B: 0.380405
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 3377721323622766709
-    }
-    Teams {
-    }
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 8682334307396219737
-    SubobjectId: 3057283941062540850
-    InstanceId: 16212973413123260038
-    TemplateId: 10745356484620485231
-  }
-}
-Objects {
-  Id: 8331824145948127764
-  Name: "Rock Pile 001"
-  Transform {
-    Location {
-      X: 1998.85352
-      Y: 560.689941
-      Z: 103.349701
-    }
-    Rotation {
-      Pitch: -20.1570072
-      Yaw: 12.5959873
-      Roll: 6.15370464
-    }
-    Scale {
-      X: 0.701563895
-      Y: 0.701563895
-      Z: 0.701563895
-    }
-  }
-  ParentId: 2263102109253131667
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 1
-        G: 0.65918
-        B: 0.380405
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 10835155324150586940
-    }
-    Teams {
-    }
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 8331824145948127764
-    SubobjectId: 2427699049705684863
-    InstanceId: 16212973413123260038
-    TemplateId: 10745356484620485231
-  }
-}
-Objects {
-  Id: 5604881197730099834
-  Name: "Rock Pile 002"
-  Transform {
-    Location {
-      X: 2534.33154
-      Y: 65.7905273
-      Z: 95.4022522
-    }
-    Rotation {
-      Pitch: 6.23637199
-      Yaw: -170.343369
-      Roll: 20.1024952
-    }
-    Scale {
-      X: 0.343756557
-      Y: 0.343756527
-      Z: 0.329329163
-    }
-  }
-  ParentId: 2263102109253131667
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 1
-        G: 0.65918
-        B: 0.380405
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 3377721323622766709
-    }
-    Teams {
-    }
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 5604881197730099834
-    SubobjectId: 2294855891238256401
-    InstanceId: 16212973413123260038
-    TemplateId: 10745356484620485231
-  }
-}
-Objects {
-  Id: 7573123131924811999
-  Name: "Rock Pile 001"
-  Transform {
-    Location {
-      X: 2636.02051
-      Y: 208.625
-      Z: 71.1396484
-    }
-    Rotation {
-      Pitch: 10.8073874
-      Yaw: -113.161758
-      Roll: 14.2261715
-    }
-    Scale {
-      X: 0.743738532
-      Y: 0.743738532
-      Z: 0.743738532
-    }
-  }
-  ParentId: 2263102109253131667
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 1
-        G: 0.65918
-        B: 0.380405
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 10835155324150586940
-    }
-    Teams {
-    }
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 7573123131924811999
-    SubobjectId: 4254034521020439988
     InstanceId: 16212973413123260038
     TemplateId: 10745356484620485231
   }
@@ -29390,69 +28502,6 @@ Objects {
   }
 }
 Objects {
-  Id: 6698240933343068896
-  Name: "Hill 01"
-  Transform {
-    Location {
-      X: 2287.38721
-      Y: 490.822266
-      Z: 62.9594612
-    }
-    Rotation {
-      Yaw: -21.3343487
-    }
-    Scale {
-      X: 0.897255361
-      Y: 0.988725781
-      Z: 0.473168969
-    }
-  }
-  ParentId: 2263102109253131667
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 12085483327763957900
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 1
-        G: 0.65918
-        B: 0.380405
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 15090440283814251585
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 6698240933343068896
-    SubobjectId: 1073141100797300619
-    InstanceId: 16212973413123260038
-    TemplateId: 10745356484620485231
-  }
-}
-Objects {
   Id: 17302952435688286846
   Name: "Corrugated Sheet Small"
   Transform {
@@ -32217,69 +31266,6 @@ Objects {
   InstanceHistory {
     SelfId: 7319112731605481032
     SubobjectId: 9432173120673517521
-    InstanceId: 18147740244130625850
-    TemplateId: 12889626296272839287
-  }
-}
-Objects {
-  Id: 5122822054648702708
-  Name: "Hill 05"
-  Transform {
-    Location {
-      X: 39.2258301
-      Y: 6444.50391
-      Z: 69.737442
-    }
-    Rotation {
-      Yaw: -5.40598536
-    }
-    Scale {
-      X: 0.858494759
-      Y: 1.12666214
-      Z: 0.705831945
-    }
-  }
-  ParentId: 2263102109253131667
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 12085483327763957900
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 1
-        G: 0.65918
-        B: 0.380405
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 2029515409028393758
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 5122822054648702708
-    SubobjectId: 11556397991611260781
     InstanceId: 18147740244130625850
     TemplateId: 12889626296272839287
   }

@@ -52,7 +52,7 @@
           }
           Overrides {
             Name: "cs:max_basic_ammo"
-            Int: 96
+            Int: 48
           }
           Overrides {
             Name: "cs:max_upgraded_ammo"
@@ -61,8 +61,8 @@
           Overrides {
             Name: "cs:can_afford_color"
             Color {
-              R: 0.0318960398
-              G: 0.0318960398
+              R: 0.14180623
+              G: 0.14180623
               B: 0.76052475
               A: 1
             }
@@ -681,9 +681,9 @@
           Rotation {
           }
           Scale {
-            X: 1.81235754
-            Y: 1.17053008
-            Z: 2.56026721
+            X: 1.88328815
+            Y: 1.94940901
+            Z: 3.26509
           }
         }
         ParentId: 16750022872046165057

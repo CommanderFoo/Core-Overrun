@@ -80,15 +80,6 @@ Assets {
   }
 }
 Assets {
-  Id: 15090440283814251585
-  Name: "Hill 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_hill_001"
-  }
-}
-Assets {
   Id: 15049846606931455745
   Name: "Simple Crate 150cm"
   PlatformAssetType: 1
@@ -203,15 +194,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_torus_001"
-  }
-}
-Assets {
-  Id: 10835155324150586940
-  Name: "Rock Pile 001"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_rocks_small_001"
   }
 }
 Assets {
@@ -359,30 +341,12 @@ Assets {
   }
 }
 Assets {
-  Id: 3377721323622766709
-  Name: "Rock Pile 002"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_rocks_small_002"
-  }
-}
-Assets {
   Id: 2887966541650210293
   Name: "Invisible"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_invisible_001"
-  }
-}
-Assets {
-  Id: 2029515409028393758
-  Name: "Hill 05"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_hill_005"
   }
 }
 Assets {

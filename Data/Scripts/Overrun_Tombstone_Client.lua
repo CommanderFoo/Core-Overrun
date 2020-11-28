@@ -15,6 +15,7 @@ local local_player = Game.GetLocalPlayer()
 local progress_tween = PIXELDEPTH.Tween:new(revive_duration, {v = 1}, {v = 0})
 
 local reviving = false
+local revive_start_time = 0
 
 progress_tween:on_change(function(changed)
 	revive_progress.progress = changed.v
@@ -32,14 +33,26 @@ progress_tween:on_complete(function()
 end)
 
 function Tick(dt)
-	if(tomb:GetCustomProperty("id") == local_player.id and reviving and progress_tween:active() and revive_progress.progress > 0) then
+	--if(tomb:GetCustomProperty("id") == local_player.id and reviving and progress_tween:active() and revive_progress.progress > 0) then
+	--	progress_tween:tween(dt)
+	--end
+
+	if(reviving and tomb:GetCustomProperty("id") == local_player.id and time() <= (revive_start_time + revive_duration)) then
 		progress_tween:tween(dt)
+	end
+end
+
+function start_player_reviving(id, time_started)
+	if(id == local_player.id) then
+		reviving = true
+		revive_start_time = time_started
 	end
 end
 
 function player_reviving(id, progress)
 	if(id == local_player.id and tomb:GetCustomProperty("id") == local_player.id) then
 		reviving = true
+		revive_started = true
 
 		UI.SetReticleVisible(false)
 
@@ -71,5 +84,5 @@ function player_down(id, name, pos)
 	sound:Play()
 end
 
-Events.Connect("on_player_reviving", player_reviving)
+Events.Connect("on_player_start_revive", start_player_reviving)
 Events.Connect("on_player_down", player_down)

@@ -1,6 +1,67 @@
 ﻿Name: "Mystery Crates"
 RootId: 8346790829017566368
 Objects {
+  Id: 8240868418499344712
+  Name: "Overrun Mystery Crate"
+  Transform {
+    Location {
+      X: -2283.78101
+      Y: -12331.9287
+      Z: -0.000244140625
+    }
+    Rotation {
+      Yaw: -89.9999924
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8346790829017566368
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3152148772846891874
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Overrun Mystery Crate"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 1611.8634
+            Y: -15432.6
+            Z: -0.000213623047
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 12784740200831229499
+    }
+  }
+}
+Objects {
   Id: 6956472188160987775
   Name: "Overrun Mystery Crate"
   Transform {

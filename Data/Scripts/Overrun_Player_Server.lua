@@ -41,6 +41,15 @@ function player_joined(p)
 		}
 	end
 
+	--[[
+	p.bindingPressedEvent:Connect(function(player, binding)
+		if(binding == "ability_extra_33") then
+			p.hitPoints = p.hitPoints - 10
+			players[p.id].damage_timestamp = time()
+		end
+	end)
+	--]]
+
 	p.resourceChangedEvent:Connect(resource_changed)
 	p.damagedEvent:Connect(on_player_damaged)
 end

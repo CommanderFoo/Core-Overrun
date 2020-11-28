@@ -13,6 +13,26 @@ Objects {
   ParentId: 6538324789638676258
   TemplateInstance {
     ParameterOverrideMap {
+      key: 6943090466840951154
+      value {
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.88328815
+            Y: 1.94940901
+            Z: 3.26509
+          }
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            Y: 101.636475
+            Z: -6.17927551
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 9864558201461469171
       value {
         Overrides {
@@ -98,6 +118,27 @@ Objects {
         }
       }
     }
+    ParameterOverrideMap {
+      key: 11208291924209880473
+      value {
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.88328815
+            Y: 1.94940901
+            Z: 3.26509
+          }
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 12.1248932
+            Y: 87.5303802
+            Z: -18.464386
+          }
+        }
+      }
+    }
     TemplateAsset {
       Id: 12289882312617958317
     }
@@ -121,6 +162,26 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
+    ParameterOverrideMap {
+      key: 1109165314423070086
+      value {
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.88328815
+            Y: 1.94940901
+            Z: 3.26509
+          }
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            Y: 93.2294464
+            Z: -6.36495972
+          }
+        }
+      }
+    }
     ParameterOverrideMap {
       key: 9881529434782445678
       value {
@@ -208,6 +269,27 @@ Objects {
         }
       }
     }
+    ParameterOverrideMap {
+      key: 11503849078943744678
+      value {
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.88328815
+            Y: 1.94940901
+            Z: 3.26509
+          }
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 2.2640741e-05
+            Y: 94.9621277
+            Z: -9.2724
+          }
+        }
+      }
+    }
     TemplateAsset {
       Id: 5860437486035652630
     }
@@ -232,6 +314,19 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 12327541943399218918
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -11.6084671
+            Y: 84.9774857
+            Z: -19.4195404
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 16750022872046165057
       value {
         Overrides {
@@ -251,19 +346,6 @@ Objects {
           Rotator {
             Yaw: 68.1168213
           }
-        }
-        Overrides {
-          Name: "cs:can_afford_color"
-          Color {
-            R: 0.14180623
-            G: 0.14180623
-            B: 0.76052475
-            A: 1
-          }
-        }
-        Overrides {
-          Name: "cs:max_basic_ammo"
-          Int: 48
         }
       }
     }

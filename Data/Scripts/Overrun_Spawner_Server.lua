@@ -1,4 +1,4 @@
-﻿local DEBUG_DISABLE_SPAWNS = false
+﻿local DEBUG_DISABLE_SPAWNS = true
 
 local container = script:GetCustomProperty("container"):WaitForObject()
 
@@ -46,7 +46,7 @@ local spawned = 0
 local max = 5
 local spawn_task = nil
 local killed = 0
-local round = 5
+local round = 1
 
 local health_increase = 0
 
@@ -191,7 +191,6 @@ function reset()
 	clear_all_zombies()
 	killed = 0
 	spawned = 0
-	max = 0
 	round = 1
 	spawn_points = {}
 	health_increase = 0

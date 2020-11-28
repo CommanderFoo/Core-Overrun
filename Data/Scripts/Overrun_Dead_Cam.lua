@@ -12,6 +12,7 @@ for i = 1, total_cams do
 end
 
 function remove_dead_cam()
+	Task.Wait(0.3)
 	local_player:ClearOverrideCamera(0)
 end
 

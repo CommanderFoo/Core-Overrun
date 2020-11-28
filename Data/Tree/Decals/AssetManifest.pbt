@@ -1,4 +1,13 @@
 ﻿Assets {
+  Id: 15760578896978427594
+  Name: "Decal Stencil Font 01"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_stencil_letters_001_ref"
+  }
+}
+Assets {
   Id: 13650699884663610996
   Name: "Decal Stains Round 01"
   PlatformAssetType: 14
@@ -23,6 +32,24 @@ Assets {
   PrimaryAsset {
     AssetType: "DecalBlueprintAssetRef"
     AssetId: "bp_decal_mil_posters_002_ref"
+  }
+}
+Assets {
+  Id: 7202307395712524294
+  Name: "Decal Dirt Patch"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_dirt_patch_001"
+  }
+}
+Assets {
+  Id: 6824968345667739188
+  Name: "Decal Bones 02"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_fan_ground_bones_002"
   }
 }
 Assets {

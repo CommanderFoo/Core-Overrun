@@ -3058,7 +3058,6 @@ Objects {
   ChildIds: 14711824226685118288
   ChildIds: 8711836749455215914
   ChildIds: 4979023084771184537
-  ChildIds: 2849569014137966759
   ChildIds: 8171961914138072381
   ChildIds: 9969726258476078219
   ChildIds: 721339238227030151
@@ -5289,8 +5288,8 @@ Objects {
   Name: "Craftsman Wall 02 Corner"
   Transform {
     Location {
-      X: 1273.54761
-      Y: 1603.50513
+      X: 1240.60046
+      Y: 1603.52856
       Z: 617.483154
     }
     Rotation {
@@ -5336,8 +5335,8 @@ Objects {
   Name: "Craftsman Wall 02 Corner"
   Transform {
     Location {
-      X: -326.451233
-      Y: 1603.50525
+      X: -303.211182
+      Y: 1603.49255
       Z: 617.483154
     }
     Rotation {
@@ -6135,8 +6134,8 @@ Objects {
   Name: "Craftsman Wall 01 Corner"
   Transform {
     Location {
-      X: 1273.54761
-      Y: 1603.50513
+      X: 1243.77661
+      Y: 1597.96606
       Z: 17.4831238
     }
     Rotation {
@@ -6182,8 +6181,8 @@ Objects {
   Name: "Craftsman Wall 01 Corner"
   Transform {
     Location {
-      X: -326.451233
-      Y: 1603.50525
+      X: -298.989929
+      Y: 1586.18494
       Z: 17.4831238
     }
     Rotation {
@@ -6513,8 +6512,8 @@ Objects {
   Name: "Craftsman Wall 01"
   Transform {
     Location {
-      X: -326.451172
-      Y: 803.506
+      X: -326.956299
+      Y: 794.610474
       Z: 17.4831238
     }
     Rotation {
@@ -9373,54 +9372,6 @@ Objects {
   }
 }
 Objects {
-  Id: 2849569014137966759
-  Name: "Craftsman Roof 01 Bracket"
-  Transform {
-    Location {
-      X: -1136.45142
-      Y: -21.4937267
-      Z: 1152.48315
-    }
-    Rotation {
-      Yaw: -179.999954
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4131872850895316345
-  UnregisteredParameters {
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 15744908842130492752
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 10178216220143708408
-    SubobjectId: 10615924399010131242
-    InstanceId: 409341384887312199
-    TemplateId: 2049420351792613419
-  }
-}
-Objects {
   Id: 4979023084771184537
   Name: "Craftsman Roof 01 Bracket"
   Transform {
@@ -10283,8 +10234,8 @@ Objects {
   Name: "Craftsman Wall 01 Doorway"
   Transform {
     Location {
-      X: -326.451233
-      Y: -796.493042
+      X: -326.962
+      Y: -796.492554
       Z: 17.4831238
     }
     Rotation {
@@ -10545,8 +10496,8 @@ Objects {
   Name: "Craftsman Wall 01"
   Transform {
     Location {
-      X: 1273.54761
-      Y: 1603.50513
+      X: 1273.4303
+      Y: 1534.84937
       Z: 17.4831238
     }
     Rotation {

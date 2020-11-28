@@ -87,11 +87,11 @@ function put_player_down(id)
 	end
 end
 
-function get_player_up(id)
+function get_player_up(id, is_respawn)
 	if(players[id] ~= nil) then
 		local player = players[id].player
 
-		if(player:GetResource("lifes") > 0) then
+		if(player:GetResource("lifes") > 0 or is_respawn) then
 			local abilities = player:GetAbilities()
 
 			for i = 1, #abilities do
@@ -99,15 +99,20 @@ function get_player_up(id)
 			end
 
 			player.movementControlMode = MovementControlMode.VIEW_RELATIVE
-			player.animationStance = players[id].stance		
-			player:SetWorldPosition(players[id].down_pos)
-			player:SetResource("is_down", 0)
-			player:RemoveResource("lifes", 1)
 
-			Task.Spawn(function()
-				Task.Wait(no_damage_duration)
-				player.team = 1
-			end)
+			if(not is_respawn) then
+				player.animationStance = players[id].stance
+				player:SetWorldPosition(players[id].down_pos)
+				
+				player:SetResource("is_down", 0)
+				player:RemoveResource("lifes", 1)
+				player:AddResource("revives", 1)
+
+				Task.Spawn(function()
+					Task.Wait(no_damage_duration)
+					player.team = 1
+				end)
+			end
 
 			player:SetVisibility(true)
 
@@ -127,7 +132,6 @@ function clean_up_tombstones()
 	for k, v in pairs(players) do
 		if(v.player.isDead) then
 			v.tomb:SetNetworkedCustomProperty("down", false)
-			v.tomb:SetNetworkedCustomProperty("revive_time", 0)
 			v.tomb.visibility = Visibility.FORCE_OFF
 		end
 	end

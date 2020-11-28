@@ -64,7 +64,7 @@
           }
           Overrides {
             Name: "cs:revive_duration"
-            Int: 15
+            Int: 5
           }
         }
         Collidable_v2 {

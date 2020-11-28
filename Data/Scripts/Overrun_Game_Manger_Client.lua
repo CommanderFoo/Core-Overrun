@@ -79,6 +79,7 @@ function game_starting(timer)
 		countdown_text.text = tostring(timer)
 		countdown_panel.visibility = Visibility.FORCE_ON
 	else
+		round_start(1)
 		local_player:ClearOverrideCamera(0)
 		countdown_panel.visibility = Visibility.FORCE_OFF
 		hide_leaderboard()

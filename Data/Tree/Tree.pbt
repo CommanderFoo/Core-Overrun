@@ -1104,7 +1104,6 @@ Objects {
   ChildIds: 6278713090139348785
   ChildIds: 9508632497040932628
   ChildIds: 5547360755088596815
-  ChildIds: 8140922503983941259
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1131,32 +1130,6 @@ Objects {
         }
       }
     }
-  }
-}
-Objects {
-  Id: 8140922503983941259
-  Name: "NewFolder"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 5445118748943985758
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "NewFolder_2"
   }
 }
 Objects {
@@ -1636,7 +1609,7 @@ Objects {
       Brush {
       }
       Color {
-        A: 0.69600004
+        A: 0.492
       }
       TeamSettings {
       }
@@ -2081,7 +2054,10 @@ Objects {
       Brush {
       }
       Color {
-        A: 0.69600004
+        R: 0.00937509537
+        G: 0.00937509537
+        B: 0.00937509537
+        A: 0.492
       }
       TeamSettings {
       }
@@ -2526,7 +2502,7 @@ Objects {
       Brush {
       }
       Color {
-        A: 0.69600004
+        A: 0.492
       }
       TeamSettings {
       }
@@ -2971,7 +2947,10 @@ Objects {
       Brush {
       }
       Color {
-        A: 0.69600004
+        R: 0.00937509537
+        G: 0.00937509537
+        B: 0.00937509537
+        A: 0.492
       }
       TeamSettings {
       }
@@ -3420,7 +3399,7 @@ Objects {
       Brush {
       }
       Color {
-        A: 0.837
+        A: 0.745000064
       }
       TeamSettings {
       }
