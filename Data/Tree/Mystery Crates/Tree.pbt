@@ -54,6 +54,10 @@ Objects {
             Z: 1
           }
         }
+        Overrides {
+          Name: "cs:crate_id"
+          Int: 5
+        }
       }
     }
     TemplateAsset {

@@ -46,6 +46,12 @@ local cooldownRemaining = 0
 
 local projectileImpactListener = nil
 
+-- Custom changes for powerups
+
+local has_instant_kill = false
+local has_double_points = false
+
+-- end custom
 
 function GetTeam()
 	return ROOT:GetCustomProperty("Team")
@@ -163,6 +169,11 @@ ROOT:SetNetworkedCustomProperty("ObjectId", id)
 
 function ApplyDamage(dmg, source, position, rotation)
 	local amount = dmg.amount
+
+	if(has_instant_kill) then
+		amount = GetHealth()
+	end
+
 	if (amount ~= 0) then
 		local prevHealth = GetHealth()
 		local newHealth = prevHealth - amount
@@ -229,17 +240,28 @@ function ApplyDamage(dmg, source, position, rotation)
 		end
 
 		if(source:IsA("Player")) then
-			source:AddResource("money", money)
-			source:AddResource("total_money", amount)
+			local double = 1
+
+			if(has_double_points) then
+				double = 2
+			end
+
+			source:AddResource("money", money * double)
+			source:AddResource("total_money", amount * double)
 			source:AddResource("damage", amount)
 			
 			if(zombie_dead) then
 				source:AddResource("kills", 1)
+				spawn_random_power_up(source)
 			end
 		end
 
 		--print(ROOT.name .. " Health = " .. newHealth)
 	end
+end
+
+function spawn_random_power_up(source)
+	Events.Broadcast("on_spawn_random_power_up", ROOT:GetWorldPosition().x, ROOT:GetWorldPosition().y, source:GetWorldRotation().z)
 end
 
 function GetHealth()
@@ -265,4 +287,10 @@ function DropRewards(killer)
 	end
 end
 
-
+Events.Connect("on_power_up", function(power_up, enabled)
+	if(power_up == "instant_kill") then
+		has_instant_kill = enabled
+	elseif(power_up == "double_points") then
+		has_double_points = enabled
+	end
+end)

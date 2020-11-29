@@ -1,7 +1,7 @@
 ﻿Name: "Tombstones"
 RootId: 17224320865940605733
 Objects {
-  Id: 13441528641386691534
+  Id: 14505298558560541131
   Name: "Overrun Tombstone"
   Transform {
     Location {
@@ -38,10 +38,6 @@ Objects {
           Name: "Rotation"
           Rotator {
           }
-        }
-        Overrides {
-          Name: "cs:revive_duration"
-          Int: 5
         }
         Overrides {
           Name: "Scale"
@@ -59,7 +55,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5230560069363518427
+  Id: 5502067533824339652
   Name: "Overrun Tombstone"
   Transform {
     Location {
@@ -96,10 +92,6 @@ Objects {
           Name: "Rotation"
           Rotator {
           }
-        }
-        Overrides {
-          Name: "cs:revive_duration"
-          Int: 5
         }
         Overrides {
           Name: "Scale"
@@ -117,7 +109,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8856215991804604330
+  Id: 16670345127247997962
   Name: "Overrun Tombstone"
   Transform {
     Location {
@@ -154,10 +146,6 @@ Objects {
           Name: "Rotation"
           Rotator {
           }
-        }
-        Overrides {
-          Name: "cs:revive_duration"
-          Int: 5
         }
         Overrides {
           Name: "Scale"

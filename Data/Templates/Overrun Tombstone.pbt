@@ -51,12 +51,6 @@
             }
           }
           Overrides {
-            Name: "cs:sparkle"
-            ObjectReference {
-              SubObjectId: 15335776030967989232
-            }
-          }
-          Overrides {
             Name: "cs:revive_progress"
             ObjectReference {
               SubObjectId: 6857586211677339966
@@ -1471,7 +1465,6 @@
         }
         ParentId: 4378342255339779195
         ChildIds: 12260033473945836365
-        ChildIds: 15335776030967989232
         ChildIds: 511678363223872230
         ChildIds: 16604922219659557742
         ChildIds: 7402846527799214404
@@ -1545,83 +1538,6 @@
         Blueprint {
           BlueprintAsset {
             Id: 16959773372604902989
-          }
-          TeamSettings {
-          }
-          Vfx {
-          }
-        }
-      }
-      Objects {
-        Id: 15335776030967989232
-        Name: "Callout Sparkle"
-        Transform {
-          Location {
-            X: 920.000183
-            Y: -5546.66699
-            Z: 25
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1.88944948
-            Y: 1.88944948
-            Z: 1.88944948
-          }
-        }
-        ParentId: 11476611141517653892
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Volume Type"
-            Enum {
-              Value: "mc:evfxvolumetype:1"
-            }
-          }
-          Overrides {
-            Name: "bp:color"
-            Color {
-              R: 0.0260418262
-              G: 0.0260418262
-              B: 0.0260418262
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "bp:Gravity"
-            Float: 0.251580238
-          }
-          Overrides {
-            Name: "bp:Density"
-            Float: 3.40583086
-          }
-          Overrides {
-            Name: "bp:Particle Scale Multiplier"
-            Float: 3.40583086
-          }
-          Overrides {
-            Name: "bp:Curl Offset"
-            Vector {
-              X: 2
-            }
-          }
-          Overrides {
-            Name: "bp:Curl Variance"
-            Float: 0.496337742
-          }
-          Overrides {
-            Name: "bp:Life"
-            Float: 1.65793538
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:forceon"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 14906760034578035600
           }
           TeamSettings {
           }
@@ -2036,15 +1952,6 @@
       PrimaryAsset {
         AssetType: "VfxBlueprintAssetRef"
         AssetId: "fxbp_smoke_puff_radial"
-      }
-    }
-    Assets {
-      Id: 14906760034578035600
-      Name: "Callout Sparkle"
-      PlatformAssetType: 8
-      PrimaryAsset {
-        AssetType: "VfxBlueprintAssetRef"
-        AssetId: "fxbp_sparkles_volume_vfx"
       }
     }
     Assets {

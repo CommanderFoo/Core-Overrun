@@ -5,9 +5,10 @@ local round_end_duration = script:GetCustomProperty("round_end_duration")
 local game_start_duration = script:GetCustomProperty("game_start_duration")
 local starting_money = script:GetCustomProperty("starting_money")
 local late_join_money_per_round = script:GetCustomProperty("late_join_money_per_round")
+local starting_lives = script:GetCustomProperty("starting_lives")
 
 local game_state = "WAITING"
-local timer = game_start_duration
+local timer = 0 --game_start_duration
 local round = 1
 local countdown_started = false
 local players = {}
@@ -32,7 +33,7 @@ function player_joined(p)
 		}
 	end
 
-	setup_resources(p, 3, true, true)
+	setup_resources(p, starting_lives, true, true)
 
 	p.team = 1
 
@@ -48,6 +49,7 @@ function player_joined(p)
 		Task.Spawn(function()
 			Task.Wait(5)
 			p.team = 1
+
 			Events.Broadcast("on_update_players_crate")
 		end)
 	end
@@ -119,8 +121,10 @@ function on_player_died(p)
 			
 			start_count_down()
 
-			Task.Wait(5)
-			spawn_players(true, 3, false)
+			Task.Wait(3)
+
+			spawn_players(true, starting_lives, true)
+			Events.Broadcast("on_disable_all_players")
 		end)
 	end
 end
@@ -156,10 +160,11 @@ function spawn_players(force_spawn, lives, reset_total_money)
 				
 				position = player_spawn_points[counter]:GetWorldPosition(),
 				rotation = player_spawn_points[counter]:GetWorldRotation()
+
 			})
 
-			if(was_dead and game_state == "PLAYING") then
-				Events.Broadcast("on_player_get_up", v.id, true)
+			if(was_dead) then
+				Events.Broadcast("on_player_get_up", v.player.id, true)
 				Events.BroadcastToPlayer(v.player, "on_player_respawn")
 			end
 

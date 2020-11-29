@@ -15,6 +15,7 @@ function Tick()
 		tomb:SetNetworkedCustomProperty("reviving", false)
 		tomb.visibility = Visibility.FORCE_OFF
 		Events.Broadcast("on_player_get_up", tomb:GetCustomProperty("id"), false)
+		Events.BroadcastToAllPlayers("on_player_revived", tomb:GetCustomProperty("id"))
 	end
 end
 
@@ -40,7 +41,7 @@ function player_down(id, pos, lifes)
 			tomb:SetNetworkedCustomProperty("revive_time", revive_start_time)
 			tomb:SetNetworkedCustomProperty("reviving", true)
 			
-			Events.BroadcastToAllPlayers("on_player_start_revive", id, revive_start_time)
+			Events.BroadcastToAllPlayers("on_player_start_revive", id)
 
 			reviving = true
 		end

@@ -1,4 +1,4 @@
-﻿local DEBUG_DISABLE_SPAWNS = true
+﻿local DEBUG_DISABLE_SPAWNS = false
 
 local container = script:GetCustomProperty("container"):WaitForObject()
 
@@ -166,7 +166,11 @@ function zombie_killed(id)
 
 	if(killed >= max) then
 		killed = 0
-		spawn_task:Cancel()
+
+		if(spawn_task ~= nil) then
+			spawn_task:Cancel()
+		end
+		
 		Events.Broadcast("on_all_zombies_killed")
 	end
 end

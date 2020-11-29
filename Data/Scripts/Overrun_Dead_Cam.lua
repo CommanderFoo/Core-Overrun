@@ -14,9 +14,11 @@ end
 function remove_dead_cam()
 	Task.Wait(0.3)
 	local_player:ClearOverrideCamera(0)
+	UI.SetReticleVisible(true)
 end
 
 function set_dead_cam()
+	UI.SetReticleVisible(false)
 	blood:SetSmartProperty("Effect Strength", 0)
 	local_player:SetOverrideCamera(cams:GetChildren()[current_cam_index], 0)
 end

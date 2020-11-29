@@ -103,7 +103,7 @@ Objects {
 }
 Objects {
   Id: 13077922076364839605
-  Name: "Overrun_Game_Manager_Server"
+  Name: "Overrun_Game_Manager"
   Transform {
     Location {
     }
@@ -165,7 +165,7 @@ Objects {
     }
     Overrides {
       Name: "cs:game_start_duration"
-      Int: 0
+      Int: 6
     }
     Overrides {
       Name: "cs:starting_money"
@@ -174,6 +174,10 @@ Objects {
     Overrides {
       Name: "cs:late_join_money_per_round"
       Int: 100
+    }
+    Overrides {
+      Name: "cs:starting_lives"
+      Int: 1
     }
   }
   Collidable_v2 {
@@ -190,7 +194,7 @@ Objects {
 }
 Objects {
   Id: 17836668198438326760
-  Name: "Overrun_Spawner_Server"
+  Name: "Overrun_Spawner"
   Transform {
     Location {
     }
@@ -348,6 +352,73 @@ Objects {
   Script {
     ScriptAsset {
       Id: 11683067528569836822
+    }
+  }
+}
+Objects {
+  Id: 13149313332253219615
+  Name: "Overrun_Power_Ups_Manager_Server"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5539997602360125933
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:container"
+      ObjectReference {
+        SelfId: 13713193877966858064
+      }
+    }
+    Overrides {
+      Name: "cs:power_up_chance"
+      Int: 100
+    }
+    Overrides {
+      Name: "cs:instant_kill"
+      AssetReference {
+        Id: 17054988283345037629
+      }
+    }
+    Overrides {
+      Name: "cs:instant_kill_duration"
+      Int: 15
+    }
+    Overrides {
+      Name: "cs:instant_kill_chance"
+      Int: 100
+    }
+    Overrides {
+      Name: "cs:double_points"
+      AssetReference {
+        Id: 3433444200211473069
+      }
+    }
+    Overrides {
+      Name: "cs:double_points_duration"
+      Int: 20
+    }
+    Overrides {
+      Name: "cs:double_points_chance"
+      Int: 100
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 8549134997764561411
     }
   }
 }
@@ -681,7 +752,7 @@ Objects {
 }
 Objects {
   Id: 8232192817320125062
-  Name: "Overrun_Mystery_Crate_Manager"
+  Name: "Overrun_Mystery_Crate_Manager_Server"
   Transform {
     Location {
     }
@@ -8216,8 +8287,8 @@ Objects {
   Name: "Plane"
   Transform {
     Location {
-      X: 1185.81677
-      Y: -8778.50195
+      X: 1243.00012
+      Y: -8796.41699
       Z: 2
     }
     Rotation {
@@ -8279,8 +8350,8 @@ Objects {
   Name: "Plane"
   Transform {
     Location {
-      X: 938.751892
-      Y: -8098.49
+      X: 995.935486
+      Y: -8116.40527
       Z: 2
     }
     Rotation {
@@ -9526,8 +9597,8 @@ Objects {
   Name: "Plane"
   Transform {
     Location {
-      X: 394.803772
-      Y: -8889.71875
+      X: 451.987366
+      Y: -8907.63379
       Z: 2
     }
     Rotation {

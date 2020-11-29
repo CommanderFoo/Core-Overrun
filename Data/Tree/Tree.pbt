@@ -29,6 +29,7 @@ Objects {
   ChildIds: 5539997602360125933
   ChildIds: 17224320865940605733
   ChildIds: 3291882807981518249
+  ChildIds: 13713193877966858064
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -38,6 +39,33 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 13713193877966858064
+  Name: "Power Ups"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Power Ups"
   }
 }
 Objects {
@@ -4356,7 +4384,7 @@ Objects {
       Id: 7312235065341263458
     }
     Pitch: 128.186768
-    Volume: 2.0903635
+    Volume: 1.47789562
     Falloff: -1
     Radius: -1
   }
@@ -4387,7 +4415,7 @@ Objects {
       Id: 3914586926377705325
     }
     Pitch: -73.1711426
-    Volume: 1.66027749
+    Volume: 1.28512859
     Falloff: -1
     Radius: -1
   }
