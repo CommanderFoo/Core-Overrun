@@ -63,8 +63,8 @@ Objects {
       Id: 8753381321309695859
     }
     Teams {
+      TeamInt: 1
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -101,8 +101,8 @@ Objects {
       Id: 9910756593103543228
     }
     Teams {
+      TeamInt: 1
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -140,8 +140,8 @@ Objects {
       Id: 8753381321309695859
     }
     Teams {
+      TeamInt: 1
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -178,8 +178,8 @@ Objects {
       Id: 8753381321309695859
     }
     Teams {
+      TeamInt: 1
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -216,8 +216,8 @@ Objects {
       Id: 8753381321309695859
     }
     Teams {
+      TeamInt: 1
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -254,8 +254,8 @@ Objects {
       Id: 9910756593103543228
     }
     Teams {
+      TeamInt: 1
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {

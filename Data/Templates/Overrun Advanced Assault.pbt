@@ -109,6 +109,10 @@
             Bool: false
           }
           Overrides {
+            Name: "cs:ammo_max"
+            Int: 120
+          }
+          Overrides {
             Name: "cs:BaseDamage:tooltip"
             String: "Normal damage that this weapon will do to enemy players."
           }
@@ -230,10 +234,10 @@
             ProjectileLifeSpan: 10
             ProjectileLength: 50
             ProjectileRadius: 5
-            SpreadMax: 2
+            SpreadMax: 1
             SpreadDecreaseSpeed: 5.5
-            SpreadIncreasePerShot: 0.5
-            SpreadPenaltyPerShot: 1
+            SpreadIncreasePerShot: 0.3
+            SpreadPenaltyPerShot: 0.5
             DefaultAbility {
               SubObjectId: 12650696083962866339
             }

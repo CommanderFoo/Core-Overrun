@@ -51,6 +51,8 @@ local projectileImpactListener = nil
 local has_instant_kill = false
 local has_double_points = false
 
+local spawn_max_ammo = false
+
 -- end custom
 
 function GetTeam()
@@ -261,7 +263,11 @@ function ApplyDamage(dmg, source, position, rotation)
 end
 
 function spawn_random_power_up(source)
-	Events.Broadcast("on_spawn_random_power_up", ROOT:GetWorldPosition().x, ROOT:GetWorldPosition().y, source:GetWorldRotation().z)
+	if(spawn_max_ammo) then
+		Events.Broadcast("on_force_spawn_max_ammo", ROOT:GetWorldPosition().x, ROOT:GetWorldPosition().y, source:GetWorldRotation().z)
+	else
+		Events.Broadcast("on_spawn_random_power_up", ROOT:GetWorldPosition().x, ROOT:GetWorldPosition().y, source:GetWorldRotation().z)
+	end
 end
 
 function GetHealth()
@@ -292,5 +298,13 @@ Events.Connect("on_power_up", function(power_up, enabled)
 		has_instant_kill = enabled
 	elseif(power_up == "double_points") then
 		has_double_points = enabled
+	end
+end)
+
+Events.Connect("on_previous_npc_killed", function(round, killed, max)
+	if(killed == max and round % 5 == 0) then
+		spawn_max_ammo = true
+	else
+		spawn_max_ammo = false
 	end
 end)

@@ -36,6 +36,14 @@ Objects {
   ChildIds: 11946212816415160889
   ChildIds: 11627654976927157543
   ChildIds: 12755433973734148664
+  ChildIds: 11924177760165097777
+  ChildIds: 5093073625369228963
+  ChildIds: 10388985954236027649
+  ChildIds: 11927818648673059319
+  ChildIds: 15411668819223389122
+  ChildIds: 8733799717683465147
+  ChildIds: 12201388502348123721
+  ChildIds: 13602424220780845236
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -44,6 +52,318 @@ Objects {
   }
   Folder {
     Model {
+    }
+  }
+}
+Objects {
+  Id: 13602424220780845236
+  Name: "Rock 03"
+  Transform {
+    Location {
+      X: 2535.47876
+      Y: -10612.8418
+      Z: -0.000335693359
+    }
+    Rotation {
+    }
+    Scale {
+      X: 3.87134719
+      Y: 5.2028513
+      Z: 4.77382517
+    }
+  }
+  ParentId: 8684104163774616632
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13710161915374590549
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 12201388502348123721
+  Name: "Rock Flat 01"
+  Transform {
+    Location {
+      X: 2104.14795
+      Y: -9919.99
+      Z: 0.000274658203
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8684104163774616632
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 1551253458421667667
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 8733799717683465147
+  Name: "Rock 03"
+  Transform {
+    Location {
+      X: -2018.52954
+      Y: -12321.9385
+      Z: 21.4339294
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.38139081
+      Y: 1.72553349
+      Z: 2.96581578
+    }
+  }
+  ParentId: 8684104163774616632
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13710161915374590549
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 15411668819223389122
+  Name: "Rock 01"
+  Transform {
+    Location {
+      X: -4905.03613
+      Y: -7897.84375
+      Z: 3.05175781e-05
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 2.64839816
+      Z: 2.18623757
+    }
+  }
+  ParentId: 8684104163774616632
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 18302154991031027573
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 11927818648673059319
+  Name: "Rock 03"
+  Transform {
+    Location {
+      X: -5303.0459
+      Y: -4525.18848
+      Z: -3.05175781e-05
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.03976774
+      Y: 2.63665295
+      Z: 2.64977717
+    }
+  }
+  ParentId: 8684104163774616632
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13710161915374590549
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 10388985954236027649
+  Name: "Rock 03"
+  Transform {
+    Location {
+      X: -5293.31055
+      Y: -761.422363
+      Z: -0.000152587891
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.39515615
+      Y: 3.37400413
+      Z: 3.57968211
+    }
+  }
+  ParentId: 8684104163774616632
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13710161915374590549
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 5093073625369228963
+  Name: "Rock 01"
+  Transform {
+    Location {
+      X: -4660.71777
+      Y: 1704.27612
+      Z: 0.000213623047
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.09786892
+      Y: 2.09786892
+      Z: 2.09786892
+    }
+  }
+  ParentId: 8684104163774616632
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 18302154991031027573
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 11924177760165097777
+  Name: "Rock 03"
+  Transform {
+    Location {
+      X: -1936.56348
+      Y: 6527.68945
+      Z: 32.2210693
+    }
+    Rotation {
+    }
+    Scale {
+      X: 3.76319265
+      Y: 2.51128912
+      Z: 2.51128912
+    }
+  }
+  ParentId: 8684104163774616632
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13710161915374590549
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
     }
   }
 }
@@ -76,8 +396,8 @@ Objects {
       Id: 3377721323622766709
     }
     Teams {
+      TeamInt: 1
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -115,8 +435,8 @@ Objects {
       Id: 10835155324150586940
     }
     Teams {
+      TeamInt: 1
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -154,8 +474,8 @@ Objects {
       Id: 3377721323622766709
     }
     Teams {
+      TeamInt: 1
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -193,8 +513,8 @@ Objects {
       Id: 10835155324150586940
     }
     Teams {
+      TeamInt: 1
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -232,8 +552,8 @@ Objects {
       Id: 3377721323622766709
     }
     Teams {
+      TeamInt: 1
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -271,8 +591,8 @@ Objects {
       Id: 10835155324150586940
     }
     Teams {
+      TeamInt: 1
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -310,8 +630,8 @@ Objects {
       Id: 3377721323622766709
     }
     Teams {
+      TeamInt: 1
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -349,8 +669,8 @@ Objects {
       Id: 10835155324150586940
     }
     Teams {
+      TeamInt: 1
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -388,8 +708,8 @@ Objects {
       Id: 3377721323622766709
     }
     Teams {
+      TeamInt: 1
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -427,8 +747,8 @@ Objects {
       Id: 10835155324150586940
     }
     Teams {
+      TeamInt: 1
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -466,8 +786,8 @@ Objects {
       Id: 3377721323622766709
     }
     Teams {
+      TeamInt: 1
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -506,8 +826,8 @@ Objects {
       Id: 8611571778840658009
     }
     Teams {
+      TeamInt: 1
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -583,8 +903,8 @@ Objects {
       Id: 10835155324150586940
     }
     Teams {
+      TeamInt: 1
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -622,8 +942,8 @@ Objects {
       Id: 3377721323622766709
     }
     Teams {
+      TeamInt: 1
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -703,8 +1023,8 @@ Objects {
       Id: 13710161915374590549
     }
     Teams {
+      TeamInt: 1
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {

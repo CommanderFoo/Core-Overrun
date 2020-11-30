@@ -23,6 +23,7 @@ function on_trigger_enter(t, obj)
 					geo.collision = Collision.FORCE_OFF
 					is_open = true
 					trigger:SetNetworkedCustomProperty("opened", true)
+					Events.BroadcastToAllPlayers("on_notification", "barrier", player.name)
 				end
 			end
 		end)

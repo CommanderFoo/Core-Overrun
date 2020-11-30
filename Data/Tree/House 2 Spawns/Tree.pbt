@@ -5,9 +5,9 @@ Objects {
   Name: "Cube"
   Transform {
     Location {
-      X: -6687.88916
-      Y: -4438.03369
-      Z: 0.00048828125
+      X: -6575.24805
+      Y: -3562.88623
+      Z: 66.3871307
     }
     Rotation {
     }
@@ -60,8 +60,9 @@ Objects {
   Name: "Cube"
   Transform {
     Location {
-      X: 3059.21094
-      Y: -1886.65833
+      X: 2475.04932
+      Y: -1103.90906
+      Z: 66.3871613
     }
     Rotation {
     }
@@ -114,9 +115,9 @@ Objects {
   Name: "Cube"
   Transform {
     Location {
-      X: -3059.21094
-      Y: 1886.65833
-      Z: 0.00048828125
+      X: -3136.31519
+      Y: 2098.92
+      Z: 66.3871
     }
     Rotation {
     }

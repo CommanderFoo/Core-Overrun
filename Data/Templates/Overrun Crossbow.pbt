@@ -24,7 +24,7 @@
         UnregisteredParameters {
           Overrides {
             Name: "cs:BaseDamage"
-            Float: 100
+            Float: 140
           }
           Overrides {
             Name: "cs:HeadshotDamage"
@@ -107,6 +107,10 @@
           Overrides {
             Name: "cs:is_melee"
             Bool: false
+          }
+          Overrides {
+            Name: "cs:ammo_max"
+            Int: 60
           }
           Overrides {
             Name: "cs:BaseDamage:tooltip"
@@ -212,7 +216,7 @@
               Id: 841534158063459245
             }
             BurstCount: 1
-            BurstDuration: 2
+            BurstDuration: 3
             AttackCooldown: 0.25
             Range: 100000
             ImpactPlayerAssetRef {
@@ -221,7 +225,7 @@
             ReticleType {
               Value: "mc:ereticletype:none"
             }
-            MaxAmmo: 6
+            MaxAmmo: 5
             AmmoType: "rounds"
             IsFiniteAmmo: true
             MultiShot: 1
@@ -950,7 +954,7 @@
           IsEnabled: true
           KeyBinding: "ability_ult"
           CastPhaseSettings {
-            Duration: 1.4
+            Duration: 1.8
             CanMove: true
             CanJump: true
             CanRotate: true

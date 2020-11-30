@@ -1,14 +1,10 @@
 ﻿local trigger = script:GetCustomProperty("trigger"):WaitForObject()
 local root = script:GetCustomProperty("root"):WaitForObject()
 
-local basic_id = root:GetCustomProperty("basic_id")
-local upgrade_id = root:GetCustomProperty("upgrade_id")
+local asset_id = root:GetCustomProperty("asset_id")
 local can_purchase = root:GetCustomProperty("can_purchase")
-local basic_price = root:GetCustomProperty("basic_price")
-local basic_ammo_price = root:GetCustomProperty("basic_ammo_price")
-local upgraded_ammo_price = root:GetCustomProperty("upgraded_ammo_price")
-local max_basic_ammo = root:GetCustomProperty("max_basic_ammo")
-local max_upgraded_ammo = root:GetCustomProperty("max_upgraded_ammo")
+local price = root:GetCustomProperty("price")
+local ammo_price = root:GetCustomProperty("ammo_price")
 
 local in_zone = false
 
@@ -28,20 +24,26 @@ function on_trigger_enter(t, obj)
 						local rounds = obj:GetResource("rounds")
 						local cost = -1
 
-						if(id == basic_id or id == upgrade_id) then
-							if(id == basic_id and rounds < max_basic_ammo) then
-								cost = basic_ammo_price
-								obj:SetResource("rounds", max_basic_ammo)
-							elseif(id == upgrade_id and rounds < max_upgraded_ammo) then
-								cost = upgraded_ammo_price
-								obj:SetResource("rounds", max_upgraded_ammo)
+						if(id == asset_id) then
+							cost = ammo_price
+							obj:SetResource("rounds", ammo_price)
+						elseif(money >= price) then
+							cost = price
+						end
+
+						if(id == asset_id) then
+							local max_ammo = equipment:GetCustomProperty("ammo_max")
+
+							if(rounds < max_ammo) then
+								cost = ammo_price
+								obj:SetResource("rounds", max_ammo)
 							end
-						elseif(money >= basic_price) then
-							cost = basic_price
+						elseif(money >= price) then
+							cost = price
 						end
 
 						if(cost >= 0) then
-							Events.Broadcast("on_bought_item", obj, basic_id, max_basic_ammo, true)
+							Events.Broadcast("on_bought_item", obj, asset_id, true)
 							obj:SetResource("money", math.max(0, money - cost))
 						end
 					end

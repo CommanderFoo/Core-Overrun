@@ -84,6 +84,10 @@ function put_player_down(id)
 		player:AddResource("downs", 1)
 		
 		Events.Broadcast("on_player_down", id, pos, player:GetResource("lifes"))
+
+		-- TODO: If have quick revive send time through to notifications
+		
+		Events.BroadcastToAllPlayers("on_notification", "playerdown", player.name)
 	end
 end
 

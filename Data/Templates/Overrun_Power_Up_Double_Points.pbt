@@ -41,15 +41,15 @@
           }
           Overrides {
             Name: "cs:duration"
-            Int: 20
+            Int: 15
           }
           Overrides {
             Name: "cs:flicker_speed_fast_time"
-            Int: 13
+            Int: 10
           }
           Overrides {
             Name: "cs:flicker_speed_faster_time"
-            Int: 7
+            Int: 5
           }
           Overrides {
             Name: "cs:power_up"
@@ -160,6 +160,7 @@
           TeamSettings {
             TeamInt: 1
             IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
           }
           TriggerShape_v2 {
             Value: "mc:etriggershape:sphere"

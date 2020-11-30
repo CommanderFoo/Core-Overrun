@@ -29,6 +29,10 @@
             Name: "cs:is_melee"
             Bool: false
           }
+          Overrides {
+            Name: "cs:ammo_max"
+            Int: 120
+          }
         }
         WantsNetworking: true
         Collidable_v2 {
@@ -89,6 +93,7 @@
             }
             MaxAmmo: 30
             AmmoType: "rounds"
+            IsFiniteAmmo: true
             MultiShot: 1
             ProjectileSpeed: 25000
             ProjectileLifeSpan: 10

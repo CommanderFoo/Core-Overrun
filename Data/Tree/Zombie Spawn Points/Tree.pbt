@@ -33,7 +33,6 @@ Objects {
     Location {
       X: 2090.09619
       Y: 1114.65027
-      Z: 132.170654
     }
     Rotation {
     }
@@ -62,7 +61,6 @@ Objects {
     Location {
       X: 4710.54395
       Y: -15092.1865
-      Z: 132.171371
     }
     Rotation {
     }

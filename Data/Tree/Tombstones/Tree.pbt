@@ -47,6 +47,10 @@ Objects {
             Z: 1.5
           }
         }
+        Overrides {
+          Name: "cs:revive_duration"
+          Int: 20
+        }
       }
     }
     TemplateAsset {
@@ -100,6 +104,10 @@ Objects {
             Y: 1.5
             Z: 1.5
           }
+        }
+        Overrides {
+          Name: "cs:revive_duration"
+          Int: 20
         }
       }
     }
@@ -155,6 +163,10 @@ Objects {
             Z: 1.5
           }
         }
+        Overrides {
+          Name: "cs:revive_duration"
+          Int: 20
+        }
       }
     }
     TemplateAsset {
@@ -196,6 +208,10 @@ Objects {
           Name: "Rotation"
           Rotator {
           }
+        }
+        Overrides {
+          Name: "cs:revive_duration"
+          Int: 20
         }
       }
     }

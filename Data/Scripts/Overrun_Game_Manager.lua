@@ -178,7 +178,7 @@ end
 function start_count_down()
 	countdown_started = true
 
-	Events.Broadcast("on_reset_doors")
+	--Events.Broadcast("on_reset_doors")
 	Events.Broadcast("on_disable_all_players")
 
 	local task = Task.Spawn(function()
@@ -205,6 +205,11 @@ function round_completed()
 	round_task = Task.Spawn(function()
 		spawn_players(false, 1, false)
 		Task.Wait(round_end_duration)
+
+		if(round % 5 == 0) then
+			Events.BroadcastToAllPlayers("on_notification", "spitters")
+		end
+		
 		Spawner.context.set_max_spawns(math.min(25, round + 2))
 		Events.BroadcastToAllPlayers("on_round_start", round)
 		Spawner.context.spawn_zombies()

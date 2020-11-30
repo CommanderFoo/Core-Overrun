@@ -12,7 +12,7 @@ function give_starting_weapon(player)
 	equipment:Equip(player)
 end
 
-function bought_item(player, asset_id, ammo, play_audio)
+function bought_item(player, asset_id, play_audio)
 	if(#player:GetEquipment() > 0) then
 		local equipment = player:GetEquipment()[1]
 		local is_melee = equipment:GetCustomProperty("is_melee")
@@ -25,10 +25,10 @@ function bought_item(player, asset_id, ammo, play_audio)
 				
 				local new_weapon = World.SpawnAsset(asset)
 
-				player:SetResource("rounds", ammo)
+				player:SetResource("rounds", new_weapon:GetCustomProperty("ammo_max"))
 
 				if(new_weapon.currentAmmo ~= nil) then
-					new_weapon.currentAmmo = ammo
+					new_weapon.currentAmmo = new_weapon:GetCustomProperty("ammo_max")
 				end
 
 				new_weapon:Equip(player)
@@ -47,6 +47,23 @@ function destroy_all_equipment(player)
 	end
 end
 
+function max_ammo()
+	for k, player in pairs(Game.GetPlayers()) do
+		local equipment = player:GetEquipment()[1]
+		local is_melee = equipment:GetCustomProperty("is_melee")
+
+		if(equipment:IsA("Weapon")) then
+
+			player:SetResource("rounds", equipment:GetCustomProperty("ammo_max"))
+
+			if(equipment.currentAmmo ~= nil) then
+				equipment.currentAmmo = equipment:GetCustomProperty("ammo_max")
+			end
+		end
+	end
+end
+
 Game.playerJoinedEvent:Connect(on_player_joined)
 
 Events.Connect("on_bought_item", bought_item)
+Events.Connect("on_power_up_max_ammo", max_ammo)

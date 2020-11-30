@@ -114,7 +114,7 @@ function on_trigger_enter(t, obj)
 						end)
 					end
 				elseif(player_purchased == obj.id and open and not has_skull and not trigger:GetCustomProperty("weapon_took") and trigger:GetCustomProperty("can_take_weapon")) then
-					Events.Broadcast("on_bought_item", obj, assets[trigger:GetCustomProperty("weapon_index")].id, assets[trigger:GetCustomProperty("weapon_index")].ammo, false)
+					Events.Broadcast("on_bought_item", obj, assets[trigger:GetCustomProperty("weapon_index")].id, false)
 					trigger:SetNetworkedCustomProperty("weapon_took", true)
 				end
 			end

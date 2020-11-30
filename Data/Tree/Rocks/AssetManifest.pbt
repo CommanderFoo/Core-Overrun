@@ -43,3 +43,12 @@ Assets {
     AssetId: "sm_rocks_small_002"
   }
 }
+Assets {
+  Id: 1551253458421667667
+  Name: "Rock Flat 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_rock_generic_004"
+  }
+}

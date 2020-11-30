@@ -373,7 +373,7 @@ local function StepTowardsFallback(targetPosition)
 		local groundPos = hitResult:GetImpactPosition()
 		stepDestination = groundPos
 	else
-		stepDestination = targetPosition
+		stepDestination = pos
 	end
 end
 
@@ -417,8 +417,11 @@ local function FindPathOnNavMesh(targetPosition)
 			end
 
 			stepDestination = navMeshPath[1]
+		else
+			--print("No path grrr")
 		end
 	else
+		--print("No path")
 		-- The navmesh failed to find a path, use our fallback
 		StepTowardsFallback(targetPosition)
 	end
@@ -873,5 +876,3 @@ ROOT.networkedPropertyChangedEvent:Connect(OnPropertyChanged)
 
 NPC_MANAGER().Register(script)
 NPC_MANAGER().RegisterCollider(script, COLLIDER)
-
-

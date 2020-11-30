@@ -29,6 +29,10 @@
             Name: "cs:is_melee"
             Bool: false
           }
+          Overrides {
+            Name: "cs:ammo_max"
+            Int: 60
+          }
         }
         WantsNetworking: true
         Collidable_v2 {

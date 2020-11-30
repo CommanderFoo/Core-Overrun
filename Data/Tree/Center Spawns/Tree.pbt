@@ -5,9 +5,9 @@ Objects {
   Name: "Center"
   Transform {
     Location {
-      X: -4594.78662
-      Y: -8887.54395
-      Z: 132.171387
+      X: -4727.20117
+      Y: -8842.94922
+      Z: 66.3871918
     }
     Rotation {
     }
@@ -60,9 +60,9 @@ Objects {
   Name: "Center"
   Transform {
     Location {
-      X: -5090.49
-      Y: -4486.86719
-      Z: 132.171143
+      X: -4925.36621
+      Y: -4389.3125
+      Z: 66.3871613
     }
     Rotation {
     }
@@ -115,9 +115,9 @@ Objects {
   Name: "Center"
   Transform {
     Location {
-      X: 5073.66162
-      Y: -5032.29785
-      Z: 132.170654
+      X: 5032.27686
+      Y: -5728.39795
+      Z: 66.3871613
     }
     Rotation {
     }
@@ -170,9 +170,9 @@ Objects {
   Name: "Center"
   Transform {
     Location {
-      X: 7138.73633
-      Y: -9743.03711
-      Z: 132.170654
+      X: 4621.27734
+      Y: -9751.61719
+      Z: 66.3872223
     }
     Rotation {
     }

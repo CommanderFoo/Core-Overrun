@@ -164,6 +164,8 @@ function zombie_killed(id)
 		spawned_zombies[id] = nil
 	end
 
+	Events.Broadcast("on_previous_npc_killed", round, killed, max)
+
 	if(killed >= max) then
 		killed = 0
 

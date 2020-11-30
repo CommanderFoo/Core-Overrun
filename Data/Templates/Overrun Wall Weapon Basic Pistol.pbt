@@ -31,32 +31,16 @@
             Bool: true
           }
           Overrides {
-            Name: "cs:basic_id"
+            Name: "cs:asset_id"
             String: "E22EA37EB8218DAE"
           }
           Overrides {
-            Name: "cs:upgrade_id"
-            String: "ddddd"
-          }
-          Overrides {
-            Name: "cs:basic_price"
+            Name: "cs:price"
             Int: 500
           }
           Overrides {
-            Name: "cs:basic_ammo_price"
+            Name: "cs:ammo_price"
             Int: 200
-          }
-          Overrides {
-            Name: "cs:upgraded_ammo_price"
-            Int: 2000
-          }
-          Overrides {
-            Name: "cs:max_basic_ammo"
-            Int: 48
-          }
-          Overrides {
-            Name: "cs:max_upgraded_ammo"
-            Int: 192
           }
           Overrides {
             Name: "cs:can_afford_color"
@@ -676,7 +660,9 @@
         Name: "Trigger"
         Transform {
           Location {
-            Y: 56.0772705
+            X: -11.6084671
+            Y: 84.9774857
+            Z: -19.4195404
           }
           Rotation {
           }

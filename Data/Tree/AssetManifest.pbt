@@ -134,6 +134,15 @@ Assets {
   }
 }
 Assets {
+  Id: 2624737745351425337
+  Name: "Frame Outline Thin 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "FrameOutline_020"
+  }
+}
+Assets {
   Id: 2164073212463708164
   Name: "Tree Redwood Small"
   PlatformAssetType: 1

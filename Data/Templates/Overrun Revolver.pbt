@@ -113,6 +113,10 @@
             Bool: false
           }
           Overrides {
+            Name: "cs:ammo_max"
+            Int: 48
+          }
+          Overrides {
             Name: "cs:BaseDamage:tooltip"
             String: "Normal damage that this weapon will do to enemy players."
           }

@@ -15,7 +15,7 @@ Objects {
     Scale {
       X: 1.07257009
       Y: 1.45782983
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -31,7 +31,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -55,7 +54,7 @@ Objects {
     Scale {
       X: 1.16994083
       Y: 1.19226503
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -71,7 +70,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -95,7 +93,7 @@ Objects {
     Scale {
       X: 1.04348278
       Y: 1.67888653
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -111,7 +109,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -134,7 +131,7 @@ Objects {
     Scale {
       X: 1.34380889
       Y: 1.78423905
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -150,7 +147,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -174,7 +170,7 @@ Objects {
     Scale {
       X: 1.20759916
       Y: 1.35193396
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -190,7 +186,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -214,7 +209,7 @@ Objects {
     Scale {
       X: 1.18065608
       Y: 6.11095572
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -230,7 +225,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -251,9 +245,9 @@ Objects {
     Rotation {
     }
     Scale {
-      X: 1.18065405
+      X: 0.796956539
       Y: 1.96236944
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -269,7 +263,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -291,9 +284,9 @@ Objects {
       Yaw: 90
     }
     Scale {
-      X: 4.31758118
-      Y: 1.36719787
-      Z: 0.8
+      X: 3.96449518
+      Y: 1.36719775
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -309,7 +302,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -332,8 +324,8 @@ Objects {
     }
     Scale {
       X: 8.96898746
-      Y: 1.36720026
-      Z: 0.8
+      Y: 0.951862097
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -349,7 +341,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -371,8 +362,8 @@ Objects {
     }
     Scale {
       X: 6.0087781
-      Y: 0.833763957
-      Z: 0.8
+      Y: 0.518207312
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -388,7 +379,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -411,8 +401,8 @@ Objects {
     }
     Scale {
       X: 6.26221514
-      Y: 1.36720026
-      Z: 0.8
+      Y: 1.21543193
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -428,7 +418,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -452,7 +441,7 @@ Objects {
     Scale {
       X: 3.92660379
       Y: 1.36720049
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -468,7 +457,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -489,9 +477,9 @@ Objects {
     Rotation {
     }
     Scale {
-      X: 4.03898478
+      X: 3.57730746
       Y: 3.86823606
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -507,7 +495,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -530,7 +517,7 @@ Objects {
     Scale {
       X: 0.991894841
       Y: 2.69726682
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -546,7 +533,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -568,9 +554,9 @@ Objects {
       Yaw: -5.80126953
     }
     Scale {
-      X: 0.991894841
-      Y: 2.69726682
-      Z: 0.8
+      X: 0.556648135
+      Y: 2.69726706
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -586,7 +572,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -610,7 +595,7 @@ Objects {
     Scale {
       X: 9.52396393
       Y: 1.70858753
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -626,7 +611,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -648,9 +632,9 @@ Objects {
       Yaw: 41.573246
     }
     Scale {
-      X: 7.14959
-      Y: 1.70858788
-      Z: 0.8
+      X: 7.14958858
+      Y: 1.33413577
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -666,7 +650,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -688,9 +671,9 @@ Objects {
       Yaw: 19.089407
     }
     Scale {
-      X: 6.73284197
-      Y: 1.36720181
-      Z: 0.8
+      X: 6.73284149
+      Y: 0.365191638
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -706,7 +689,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -730,7 +712,7 @@ Objects {
     Scale {
       X: 3.72285819
       Y: 1.36720109
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -746,7 +728,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -770,7 +751,7 @@ Objects {
     Scale {
       X: 0.83149159
       Y: 2.63260078
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -786,7 +767,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -810,7 +790,7 @@ Objects {
     Scale {
       X: 1.97992706
       Y: 5.10448217
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -826,7 +806,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -850,7 +829,7 @@ Objects {
     Scale {
       X: 1.34934437
       Y: 2.17895317
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -866,7 +845,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -890,7 +868,7 @@ Objects {
     Scale {
       X: 1.34934521
       Y: 3.47631025
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -906,7 +884,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -929,7 +906,7 @@ Objects {
     Scale {
       X: 1.34934521
       Y: 3.47631025
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -945,7 +922,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -967,8 +943,8 @@ Objects {
     }
     Scale {
       X: 2.78803897
-      Y: 1.39751971
-      Z: 0.8
+      Y: 1.06041038
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -984,7 +960,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -1007,7 +982,7 @@ Objects {
     Scale {
       X: 1.55726576
       Y: 0.728143275
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -1023,7 +998,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -1046,7 +1020,7 @@ Objects {
     Scale {
       X: 1.55726576
       Y: 3.43216658
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -1062,7 +1036,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -1085,7 +1058,7 @@ Objects {
     Scale {
       X: 1.69585335
       Y: 1.94337654
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -1101,7 +1074,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -1124,7 +1096,7 @@ Objects {
     Scale {
       X: 1.69585335
       Y: 3.61298561
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -1140,7 +1112,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -1163,7 +1134,7 @@ Objects {
     Scale {
       X: 1.69585335
       Y: 5.14673567
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -1179,7 +1150,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -1203,7 +1173,7 @@ Objects {
     Scale {
       X: 1.69585335
       Y: 3.61286926
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -1219,7 +1189,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -1243,7 +1212,7 @@ Objects {
     Scale {
       X: 1.37806237
       Y: 1.30714905
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -1259,7 +1228,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -1283,7 +1251,7 @@ Objects {
     Scale {
       X: 1.93031311
       Y: 6.43984842
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -1299,7 +1267,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -1323,7 +1290,7 @@ Objects {
     Scale {
       X: 1.63238025
       Y: 8.72982407
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -1339,7 +1306,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -1361,9 +1327,9 @@ Objects {
       Yaw: -90.4615784
     }
     Scale {
-      X: 2.20689726
-      Y: 2.03520131
-      Z: 0.8
+      X: 2.2068994
+      Y: 1.31974363
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -1379,7 +1345,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -1402,7 +1367,7 @@ Objects {
     Scale {
       X: 5.98860264
       Y: 6.10539436
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -1418,7 +1383,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -1442,7 +1406,7 @@ Objects {
     Scale {
       X: 2.20689726
       Y: 6.37433815
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -1458,7 +1422,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -1480,9 +1443,9 @@ Objects {
       Yaw: -119.594376
     }
     Scale {
-      X: 0.863952637
-      Y: 7.90916586
-      Z: 0.8
+      X: 0.492226303
+      Y: 7.90916681
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -1498,7 +1461,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -1522,7 +1484,7 @@ Objects {
     Scale {
       X: 0.863947
       Y: 3.74578547
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -1538,7 +1500,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -1561,7 +1522,7 @@ Objects {
     Scale {
       X: 0.863947
       Y: 3.74578547
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -1577,7 +1538,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -1600,7 +1560,7 @@ Objects {
     Scale {
       X: 0.863947
       Y: 3.74578547
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -1616,7 +1576,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -1639,7 +1598,7 @@ Objects {
     Scale {
       X: 1.29579759
       Y: 2.99107
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -1655,7 +1614,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -1677,9 +1635,9 @@ Objects {
       Yaw: -88.8417053
     }
     Scale {
-      X: 7.5038991
-      Y: 3.54376602
-      Z: 0.8
+      X: 7.82716608
+      Y: 3.54376578
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -1695,7 +1653,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -1719,7 +1676,7 @@ Objects {
     Scale {
       X: 3.48043
       Y: 1.23220277
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -1735,7 +1692,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -1759,7 +1715,7 @@ Objects {
     Scale {
       X: 6.29346323
       Y: 0.762371838
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -1775,7 +1731,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -1799,7 +1754,7 @@ Objects {
     Scale {
       X: 2.93366623
       Y: 0.762369931
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -1815,7 +1770,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -1839,7 +1793,7 @@ Objects {
     Scale {
       X: 6.31494188
       Y: 0.896973
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -1855,7 +1809,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -1878,7 +1831,7 @@ Objects {
     Scale {
       X: 8.85378647
       Y: 0.634462893
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -1894,7 +1847,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -1916,9 +1868,9 @@ Objects {
       Yaw: 53.349
     }
     Scale {
-      X: 5.31418419
-      Y: 0.572802365
-      Z: 0.8
+      X: 5.31418133
+      Y: 0.0705369785
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -1934,7 +1886,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -1958,7 +1909,7 @@ Objects {
     Scale {
       X: 3.41704154
       Y: 0.669549286
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -1974,7 +1925,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -1998,7 +1948,7 @@ Objects {
     Scale {
       X: 4.50347853
       Y: 1.36719954
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -2014,7 +1964,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -2038,7 +1987,7 @@ Objects {
     Scale {
       X: 5.59931087
       Y: 2.81308413
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -2054,7 +2003,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -2078,7 +2026,7 @@ Objects {
     Scale {
       X: 5.59930849
       Y: 2.56679702
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -2094,7 +2042,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -2118,7 +2065,7 @@ Objects {
     Scale {
       X: 3.08380079
       Y: 6.47403622
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -2134,7 +2081,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -2157,7 +2103,7 @@ Objects {
     Scale {
       X: 2.42784238
       Y: 5.06387901
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -2173,7 +2119,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -2197,7 +2142,7 @@ Objects {
     Scale {
       X: 2.97058058
       Y: 5.21044207
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -2213,7 +2158,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -2236,7 +2180,7 @@ Objects {
     Scale {
       X: 1.30073023
       Y: 4.95742226
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -2252,7 +2196,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -2276,7 +2219,7 @@ Objects {
     Scale {
       X: 1.30073023
       Y: 10.3499222
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -2292,7 +2235,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -2316,7 +2258,7 @@ Objects {
     Scale {
       X: 2.29040122
       Y: 3.2315321
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -2332,7 +2274,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -2356,7 +2297,7 @@ Objects {
     Scale {
       X: 1.30072534
       Y: 4.95760918
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -2372,7 +2313,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -2396,7 +2336,7 @@ Objects {
     Scale {
       X: 1.30072391
       Y: 4.51319408
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -2412,7 +2352,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -2434,9 +2373,9 @@ Objects {
       Yaw: 18.7563877
     }
     Scale {
-      X: 1.30072415
-      Y: 6.43035507
-      Z: 0.8
+      X: 1.3007232
+      Y: 4.77082825
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -2452,7 +2391,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -2466,8 +2404,8 @@ Objects {
   Name: "Cube"
   Transform {
     Location {
-      X: 1057.37146
-      Y: 649.662598
+      X: 1057.33862
+      Y: 660.647
       Z: -45
     }
     Rotation {
@@ -2476,7 +2414,7 @@ Objects {
     Scale {
       X: 1.30072415
       Y: 22.4722977
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -2492,7 +2430,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -2514,9 +2451,9 @@ Objects {
       Yaw: 8.65517
     }
     Scale {
-      X: 1.30072951
-      Y: 5.65642166
-      Z: 0.8
+      X: 0.716928244
+      Y: 5.65642452
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -2532,7 +2469,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -2556,7 +2492,7 @@ Objects {
     Scale {
       X: 0.780325949
       Y: 23.3011036
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -2572,7 +2508,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -2596,7 +2531,7 @@ Objects {
     Scale {
       X: 4.77552271
       Y: 3.875283
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -2612,7 +2547,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -2636,7 +2570,7 @@ Objects {
     Scale {
       X: 2.41532683
       Y: 2.35003281
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -2652,7 +2586,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -2676,7 +2609,7 @@ Objects {
     Scale {
       X: 2.40678382
       Y: 3.18480062
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -2692,7 +2625,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -2716,7 +2648,7 @@ Objects {
     Scale {
       X: 2.41532683
       Y: 2.35003281
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -2732,7 +2664,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -2756,7 +2687,7 @@ Objects {
     Scale {
       X: 1.45617318
       Y: 1.33433
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -2772,7 +2703,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -2796,7 +2726,7 @@ Objects {
     Scale {
       X: 3.11034
       Y: 2.40747499
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -2812,7 +2742,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -2834,9 +2763,9 @@ Objects {
       Yaw: -117.088623
     }
     Scale {
-      X: 8.29061508
-      Y: 2.14428
-      Z: 0.8
+      X: 8.29061127
+      Y: 1.44801259
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -2852,7 +2781,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -2874,9 +2802,9 @@ Objects {
       Yaw: -23.4116821
     }
     Scale {
-      X: 6.35535717
-      Y: 2.90577817
-      Z: 0.8
+      X: 6.35535955
+      Y: 2.05743217
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -2892,7 +2820,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -2915,7 +2842,7 @@ Objects {
     Scale {
       X: 2.98144031
       Y: 0.599667966
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -2931,7 +2858,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -2955,7 +2881,7 @@ Objects {
     Scale {
       X: 0.820201337
       Y: 3.29709339
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -2971,7 +2897,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -2995,7 +2920,7 @@ Objects {
     Scale {
       X: 2.61542726
       Y: 0.540313482
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -3011,7 +2936,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -3035,7 +2959,7 @@ Objects {
     Scale {
       X: 13.0221491
       Y: 1.38311493
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -3051,7 +2975,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -3075,7 +2998,7 @@ Objects {
     Scale {
       X: 3.53366423
       Y: 1.00000238
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -3091,7 +3014,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -3115,7 +3037,7 @@ Objects {
     Scale {
       X: 8.31759644
       Y: 1.03558993
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -3131,7 +3053,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -3155,7 +3076,7 @@ Objects {
     Scale {
       X: 4.03936291
       Y: 1.03560114
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -3171,7 +3092,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -3195,7 +3115,7 @@ Objects {
     Scale {
       X: 3.23174024
       Y: 1.85922492
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -3211,7 +3131,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -3233,9 +3152,9 @@ Objects {
       Yaw: -87.2612915
     }
     Scale {
-      X: 3.9067328
-      Y: 2.96295619
-      Z: 0.8
+      X: 3.90673208
+      Y: 3.27890062
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -3251,7 +3170,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -3275,7 +3193,7 @@ Objects {
     Scale {
       X: 3.52611542
       Y: 1.07803071
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -3291,7 +3209,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -3315,7 +3232,7 @@ Objects {
     Scale {
       X: 3.5261147
       Y: 2.22419834
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -3331,7 +3248,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -3355,7 +3271,7 @@ Objects {
     Scale {
       X: 0.999999762
       Y: 3.59834051
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -3371,7 +3287,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -3393,9 +3308,9 @@ Objects {
       Yaw: 88.195076
     }
     Scale {
-      X: 1.00000083
-      Y: 5.12145472
-      Z: 0.8
+      X: 0.523104072
+      Y: 5.12145567
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -3411,7 +3326,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -3435,7 +3349,7 @@ Objects {
     Scale {
       X: 4.55280733
       Y: 1.00000513
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -3451,7 +3365,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -3473,9 +3386,9 @@ Objects {
       Yaw: -33.9147339
     }
     Scale {
-      X: 7.68538761
-      Y: 1.00000536
-      Z: 0.8
+      X: 7.6853838
+      Y: 0.430586874
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -3491,7 +3404,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -3515,7 +3427,7 @@ Objects {
     Scale {
       X: 3.69521713
       Y: 1
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -3531,7 +3443,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -3555,7 +3466,7 @@ Objects {
     Scale {
       X: 3.06146693
       Y: 1
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -3571,7 +3482,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -3595,7 +3505,7 @@ Objects {
     Scale {
       X: 7.91797924
       Y: 0.999998093
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -3611,7 +3521,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -3634,7 +3543,7 @@ Objects {
     Scale {
       X: 1.93031144
       Y: 3.34992146
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -3650,7 +3559,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -3674,7 +3582,7 @@ Objects {
     Scale {
       X: 3.53366423
       Y: 1.00000238
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -3690,7 +3598,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -3713,7 +3620,7 @@ Objects {
     Scale {
       X: 0.670273483
       Y: 3.40386772
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -3729,7 +3636,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -3752,7 +3658,7 @@ Objects {
     Scale {
       X: 3.4142859
       Y: 0.788310528
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -3768,7 +3674,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -3789,9 +3694,9 @@ Objects {
     Rotation {
     }
     Scale {
-      X: 0.527932167
+      X: -0.0619628131
       Y: 3.30736423
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -3807,7 +3712,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -3829,9 +3733,9 @@ Objects {
       Yaw: 26.6867886
     }
     Scale {
-      X: 3.06146693
-      Y: 1
-      Z: 0.8
+      X: 3.06147051
+      Y: 0.521638632
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -3847,7 +3751,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -3870,7 +3773,7 @@ Objects {
     Scale {
       X: 2.98144031
       Y: 0.599667966
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -3886,7 +3789,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -3910,7 +3812,7 @@ Objects {
     Scale {
       X: 8.5510788
       Y: 0.499310017
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -3926,7 +3828,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -3950,7 +3851,7 @@ Objects {
     Scale {
       X: 4.53949642
       Y: 0.572802722
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -3966,7 +3867,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -3990,7 +3890,7 @@ Objects {
     Scale {
       X: 3.90868425
       Y: 2.50525522
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -4006,7 +3906,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -4029,7 +3928,7 @@ Objects {
     Scale {
       X: 1
       Y: 1.71896529
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -4045,7 +3944,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -4068,7 +3966,7 @@ Objects {
     Scale {
       X: 8.25300217
       Y: 1
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -4084,7 +3982,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -4107,7 +4004,7 @@ Objects {
     Scale {
       X: 3.69521713
       Y: 1
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -4123,7 +4020,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -4145,9 +4041,9 @@ Objects {
       Yaw: 2.8344667
     }
     Scale {
-      X: 1.00000083
-      Y: 6.29220629
-      Z: 0.8
+      X: 0.3639009
+      Y: 6.2922163
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -4163,7 +4059,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -4187,7 +4082,7 @@ Objects {
     Scale {
       X: 0.999998331
       Y: 3.7062583
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -4203,7 +4098,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -4227,7 +4121,7 @@ Objects {
     Scale {
       X: 0.354165018
       Y: 4.98291111
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -4243,7 +4137,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -4267,7 +4160,7 @@ Objects {
     Scale {
       X: 0.354165018
       Y: 4.98291111
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -4283,7 +4176,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -4307,7 +4199,7 @@ Objects {
     Scale {
       X: 0.354165018
       Y: 4.98291111
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -4323,7 +4215,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -4347,7 +4238,7 @@ Objects {
     Scale {
       X: 0.354165018
       Y: 4.98291111
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -4363,7 +4254,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -4387,7 +4277,7 @@ Objects {
     Scale {
       X: 0.354165018
       Y: 4.98291111
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -4403,7 +4293,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -4427,7 +4316,7 @@ Objects {
     Scale {
       X: 0.354165018
       Y: 4.98291111
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -4443,7 +4332,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -4467,7 +4355,7 @@ Objects {
     Scale {
       X: 0.354164392
       Y: 4.33791113
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -4483,7 +4371,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -4507,7 +4394,7 @@ Objects {
     Scale {
       X: 0.354165018
       Y: 4.98291111
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -4523,7 +4410,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -4546,7 +4432,7 @@ Objects {
     Scale {
       X: 0.354165018
       Y: 4.98291111
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -4562,7 +4448,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -4586,7 +4471,7 @@ Objects {
     Scale {
       X: 0.384708524
       Y: 4.56416368
-      Z: 0.8
+      Z: 1
     }
   }
   ParentId: 2792350089564264743
@@ -4602,7 +4487,6 @@ Objects {
     }
     Teams {
       IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {

@@ -3,8 +3,9 @@ local power_up_chance = script:GetCustomProperty("power_up_chance")
 
 local random_power_ups = {
 
-	"instant_kill",
-	"double_points"
+	--"instant_kill",
+	--"double_points",
+	"max_ammo"
 
 }
 
@@ -22,6 +23,23 @@ local double_points_duration = script:GetCustomProperty("double_points_duration"
 
 local double_points_task = nil
 
+-- Max ammo
+
+local max_ammo = script:GetCustomProperty("max_ammo")
+
+--------
+
+function spawn_asset(asset, pos_x, pos_y, rot_z)
+	local a = World.SpawnAsset(asset, {
+
+		parent = container
+
+	})
+
+	a:SetWorldPosition(Vector3.New(pos_x, pos_y, 90))
+	a:RotateTo(Rotation.New(0, 0, rot_z), 0, true)
+end
+
 -- Handlers
 
 local power_up_handlers = {
@@ -29,17 +47,11 @@ local power_up_handlers = {
 	-- Instant kill
 
 	instant_kill_spawn = function(pos_x, pos_y, rot_z)
-		local skull = World.SpawnAsset(instant_kill, {
-
-			parent = container
-
-		})
-
-		skull:SetWorldPosition(Vector3.New(pos_x, pos_y, 90))
-		skull:RotateTo(Rotation.New(0, 0, rot_z), 0, true)
+		spawn_asset(instant_kill, pos_x, pos_y, rot_z)
 	end,
 
 	instant_kill_picked_up = function(name)
+		Events.BroadcastToAllPlayers("on_notification", "instantkill", name)
 		Events.Broadcast("on_power_up", "instant_kill", true)
 
 		if(instant_kill_task ~= nil) then
@@ -57,17 +69,11 @@ local power_up_handlers = {
 	-- Double points
 
 	double_points_spawn = function(pos_x, pos_y, rot_z)
-		local skull = World.SpawnAsset(double_points, {
-
-			parent = container
-
-		})
-
-		skull:SetWorldPosition(Vector3.New(pos_x, pos_y, 90))
-		skull:RotateTo(Rotation.New(0, 0, rot_z), 0, true)
+		spawn_asset(double_points, pos_x, pos_y, rot_z)
 	end,
 
 	double_points_picked_up = function(name)
+		Events.BroadcastToAllPlayers("on_notification", "doublepoints", name)
 		Events.Broadcast("on_power_up", "double_points", true)
 
 		if(double_points_task ~= nil) then
@@ -80,6 +86,17 @@ local power_up_handlers = {
 			double_points_task:Cancel()
 			double_points_task = nil
 		end)
+	end,
+
+	-- Max ammo
+
+	max_ammo_spawn = function(pos_x, pos_y, rot_z)
+		spawn_asset(max_ammo, pos_x, pos_y, rot_z)
+	end,
+
+	max_ammo_picked_up = function(name)
+		Events.BroadcastToAllPlayers("on_notification", "maxammo", name)
+		Events.Broadcast("on_power_up_max_ammo")
 	end
 
 }
@@ -94,7 +111,7 @@ Events.Connect("on_spawn_random_power_up", function(pos_x, pos_y, rot_z)
 
 	local r_chance = math.random(100)
 
-	--print(r_chance)
+	--print("First Roll", r_chance, power_up_chance)
 
 	if(r_chance <= power_up_chance) then
 
@@ -106,7 +123,7 @@ Events.Connect("on_spawn_random_power_up", function(pos_x, pos_y, rot_z)
 
 		local r_power_chance = math.random(100)
 
-		--print(r_power_up, r_power_chance)
+		--print("Second Roll", r_power_up, r_power_chance, script:GetCustomProperty(r_power_up .. "_chance"))
 
 		-- See if it is low or equal to the picked power chance
 
@@ -116,4 +133,8 @@ Events.Connect("on_spawn_random_power_up", function(pos_x, pos_y, rot_z)
 			power_up_handlers[r_power_up .. "_spawn"](pos_x, pos_y, rot_z)
 		end
 	end
+end)
+
+Events.Connect("on_force_spawn_max_ammo", function(pos_x, pos_y, rot_z)
+	power_up_handlers.max_ammo_spawn(pos_x, pos_y, rot_z)
 end)
