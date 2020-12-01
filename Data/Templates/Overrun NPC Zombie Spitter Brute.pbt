@@ -344,7 +344,7 @@
           }
           Overrides {
             Name: "cs:DamageToPlayers"
-            Int: 40
+            Int: 50
           }
           Overrides {
             Name: "cs:DamageToNPCs"

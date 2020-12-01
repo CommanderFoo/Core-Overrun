@@ -71,7 +71,10 @@ function put_player_down(id)
 		player.animationStance = "unarmed_death"
 		player:SetVisibility(false)
 
+		local notification_key = "playerdown"
+
 		if(player:GetResource("lifes") == 0) then
+			notification_key = "playerdead"
 			player:Die()
 			Events.BroadcastToPlayer(player, "on_player_dead")
 		end
@@ -85,9 +88,9 @@ function put_player_down(id)
 		
 		Events.Broadcast("on_player_down", id, pos, player:GetResource("lifes"))
 
-		-- TODO: If have quick revive send time through to notifications
-		
-		Events.BroadcastToAllPlayers("on_notification", "playerdown", player.name)
+		if(not all_dead()) then
+			Events.BroadcastToAllPlayers("on_notification", notification_key, player.name, player:GetResource("quick_revive") == 1)
+		end
 	end
 end
 
@@ -130,6 +133,18 @@ function get_player_up(id, is_respawn)
 			players[id].tomb:SetNetworkedCustomProperty("revive_time", 0)
 		end
 	end
+end
+
+function all_dead()
+	local all_dead = true
+
+	for k, p in pairs(players) do
+		if(not p.isDead) then
+			return false
+		end
+	end
+
+	return all_dead
 end
 
 function clean_up_tombstones()

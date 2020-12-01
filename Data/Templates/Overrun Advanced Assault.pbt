@@ -262,7 +262,6 @@
           }
         }
         ParentId: 14576354721811477337
-        ChildIds: 13059318900093777334
         ChildIds: 1048820032258497529
         ChildIds: 14414877381982653011
         UnregisteredParameters {
@@ -276,41 +275,6 @@
         }
         NetworkContext {
           Type: Server
-        }
-      }
-      Objects {
-        Id: 13059318900093777334
-        Name: "EquipmentPickupServer"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1.00000012
-            Y: 1.00000012
-            Z: 1
-          }
-        }
-        ParentId: 16102920378357180755
-        UnregisteredParameters {
-          Overrides {
-            Name: "cs:Trigger"
-            ObjectReference {
-              SelfId: 12472926063577012753
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Script {
-          ScriptAsset {
-            Id: 8459825612529451237
-          }
         }
       }
       Objects {
@@ -415,7 +379,6 @@
           }
         }
         ParentId: 16290276033039985891
-        ChildIds: 15618750322129071346
         ChildIds: 2933571241273870624
         ChildIds: 13455425427836246794
         ChildIds: 10129761594793830347
@@ -431,33 +394,6 @@
         Folder {
           IsFilePartition: true
           FilePartitionName: "Scripts_2"
-        }
-      }
-      Objects {
-        Id: 15618750322129071346
-        Name: "EquipmentPickupClient"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1.00000012
-            Y: 1.00000012
-            Z: 1
-          }
-        }
-        ParentId: 5487135774256036248
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Script {
-          ScriptAsset {
-            Id: 440168262593430639
-          }
         }
       }
       Objects {

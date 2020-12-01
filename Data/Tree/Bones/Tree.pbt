@@ -193,8 +193,8 @@ Objects {
   Name: "Bone Human Scattered 01"
   Transform {
     Location {
-      X: -2491.48267
-      Y: -10618.0586
+      X: -2369.7561
+      Y: -10512.7041
     }
     Rotation {
     }

@@ -88,6 +88,12 @@ Objects {
         Id: 13466401949051410813
       }
     }
+    Overrides {
+      Name: "cs:OverrunSniperRifle"
+      AssetReference {
+        Id: 15202386297783510569
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -165,7 +171,7 @@ Objects {
     }
     Overrides {
       Name: "cs:game_start_duration"
-      Int: 6
+      Int: 2
     }
     Overrides {
       Name: "cs:starting_money"
@@ -177,7 +183,7 @@ Objects {
     }
     Overrides {
       Name: "cs:starting_lives"
-      Int: 3
+      Int: 2
     }
   }
   Collidable_v2 {
@@ -333,7 +339,7 @@ Objects {
     Overrides {
       Name: "cs:starting_weapon"
       AssetReference {
-        Id: 16298143866150817198
+        Id: 15860665667445048882
       }
     }
     Overrides {
@@ -490,6 +496,12 @@ Objects {
         SelfId: 10985511137943655841
       }
     }
+    Overrides {
+      Name: "cs:notes"
+      ObjectReference {
+        SelfId: 1061648515972012744
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -587,13 +599,13 @@ Objects {
     Overrides {
       Name: "cs:countdown_panel"
       ObjectReference {
-        SelfId: 9508632497040932628
+        SelfId: 18220116838347224985
       }
     }
     Overrides {
       Name: "cs:countdown_text"
       ObjectReference {
-        SelfId: 11645716946727354333
+        SelfId: 1494472577952320979
       }
     }
     Overrides {
@@ -913,7 +925,7 @@ Objects {
     }
     Overrides {
       Name: "cs:regen_after_time"
-      Int: 1
+      Int: 2
     }
   }
   Collidable_v2 {

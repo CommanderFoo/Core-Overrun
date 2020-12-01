@@ -1,6 +1,84 @@
 ﻿Name: "Blocking Player Colliders"
 RootId: 2792350089564264743
 Objects {
+  Id: 12237224949197276089
+  Name: "Cube"
+  Transform {
+    Location {
+      X: -1616.15881
+      Y: -7538.52197
+      Z: -45
+    }
+    Rotation {
+      Yaw: -59.9100037
+    }
+    Scale {
+      X: 10.3145761
+      Y: 1.0355916
+      Z: 1
+    }
+  }
+  ParentId: 2792350089564264743
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 12125317294559344183
+  Name: "Cube"
+  Transform {
+    Location {
+      X: 2837.26831
+      Y: 6101.67969
+      Z: -45
+    }
+    Rotation {
+      Yaw: 68.7583542
+    }
+    Scale {
+      X: 9.87180614
+      Y: 0.572805941
+      Z: 1
+    }
+  }
+  ParentId: 2792350089564264743
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
   Id: 10243808915944462952
   Name: "Cube"
   Transform {

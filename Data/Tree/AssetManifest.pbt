@@ -8,6 +8,15 @@
   }
 }
 Assets {
+  Id: 14243630418685584405
+  Name: "Icon Skull"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_Skull"
+  }
+}
+Assets {
   Id: 12309468336365169754
   Name: "Suction Whoosh 04 SFX"
   PlatformAssetType: 7

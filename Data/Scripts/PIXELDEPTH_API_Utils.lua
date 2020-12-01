@@ -55,5 +55,16 @@ function Utils.concat_table(t1, t2)
 	
     return t1
 end
+
+function Utils.truncate(str, len, post_str)
+	local the_str = str
+	local p_str = post_str or ""
+
+	if(#str > len) then
+		the_str = the_str:sub(1, len) .. p_str
+	end
+
+	return the_str
+end
   
 return Utils

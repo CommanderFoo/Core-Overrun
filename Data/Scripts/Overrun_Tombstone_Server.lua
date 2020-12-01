@@ -8,9 +8,10 @@ local revive_duration = root:GetCustomProperty("revive_duration")
 
 local reviving = false
 local revive_start_time = 0
+local duration = revive_duration
 
 function Tick()
-	if(reviving and time() > (revive_start_time + revive_duration)) then
+	if(reviving and time() > (revive_start_time + duration)) then
 		reviving = false
 		tomb:SetNetworkedCustomProperty("reviving", false)
 		tomb.visibility = Visibility.FORCE_OFF
@@ -37,6 +38,12 @@ function player_down(id, pos, lifes)
 		end)
 
 		if(lifes > 0 and revive_task == nil) then
+			local the_player = get_player(id)
+
+			if(the_player ~= nil and the_player:GetResource("quick_revive") == 1) then
+				duration = revive_duration / 2
+			end
+
 			revive_start_time = time()
 			tomb:SetNetworkedCustomProperty("revive_time", revive_start_time)
 			tomb:SetNetworkedCustomProperty("reviving", true)
@@ -46,6 +53,16 @@ function player_down(id, pos, lifes)
 			reviving = true
 		end
 	end
+end
+
+function get_player(id)
+	for k, p in pairs(Game.GetPlayers()) do
+		if(p.id == id) then
+			return p
+		end		
+	end
+
+	return nil
 end
 
 function player_down_left(id)

@@ -32,7 +32,7 @@ function bought_item(player, asset_id, play_audio)
 				end
 
 				new_weapon:Equip(player)
-				
+
 				Events.BroadcastToPlayer(player, "on_purchase_complete", new_weapon:GetCustomProperty("is_melee"), play_audio)
 			end
 		end

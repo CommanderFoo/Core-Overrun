@@ -161,7 +161,11 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "bp:Intensity"
-      Float: 1.26088285
+      Float: 0.830598474
+    }
+    Overrides {
+      Name: "bp:Size Scale"
+      Float: 2
     }
   }
   Collidable_v2 {

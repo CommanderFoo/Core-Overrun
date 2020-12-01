@@ -83,6 +83,11 @@ function setup_resources(p, lives, reset_total_money, new_player)
 	p:SetResource("rounds", 48)
 	p:SetResource("is_down", 0)
 	p:SetResource("lifes", lives)
+	p:SetResource("quick_revive", 0)
+	p:SetResource("juggernog", 0)
+	p:SetResource("fast_hands", 0)
+
+	p.maxHitPoints = 100
 
 	Player_Equipment.context.give_starting_weapon(p)
 end
@@ -121,10 +126,9 @@ function on_player_died(p)
 			
 			start_count_down()
 
-			Task.Wait(3)
-
+			Task.Wait(game_start_duration)
+			--Events.Broadcast("on_disable_all_players")
 			spawn_players(true, starting_lives, true)
-			Events.Broadcast("on_disable_all_players")
 		end)
 	end
 end
@@ -152,7 +156,7 @@ function spawn_players(force_spawn, lives, reset_total_money)
 		if(was_dead or force_spawn) then
 			v.player.team = 1
 
-			if(was_dead) then
+			if(was_dead and not force_spawn) then
 				lives = 1
 				Events.Broadcast("on_clean_up_tombstones", k)
 			end
