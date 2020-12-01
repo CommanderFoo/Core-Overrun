@@ -89,6 +89,15 @@ Assets {
   }
 }
 Assets {
+  Id: 6632827048166756154
+  Name: "UI Basic Shape Square"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Basic_Shape_Square"
+  }
+}
+Assets {
   Id: 6470475713757890799
   Name: "Flower Bellflower Patch 01"
   PlatformAssetType: 1

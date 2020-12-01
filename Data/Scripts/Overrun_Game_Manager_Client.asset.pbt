@@ -1,6 +1,6 @@
 ﻿Assets {
   Id: 8899598601798167089
-  Name: "Overrun_Game_Manger_Client"
+  Name: "Overrun_Game_Manager_Client"
   PlatformAssetType: 3
   TextAsset {
   }

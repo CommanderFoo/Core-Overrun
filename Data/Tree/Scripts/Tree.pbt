@@ -407,7 +407,7 @@ Objects {
     }
     Overrides {
       Name: "cs:double_points_chance"
-      Int: 20
+      Int: 30
     }
     Overrides {
       Name: "cs:max_ammo"
@@ -452,6 +452,7 @@ Objects {
   ChildIds: 985933359023610377
   ChildIds: 1616209010227049162
   ChildIds: 2600664526236328316
+  ChildIds: 2163844371996655319
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -459,6 +460,47 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   NetworkContext {
+  }
+}
+Objects {
+  Id: 2163844371996655319
+  Name: "Overrun_Info_Client"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17922148234597677997
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:credits"
+      ObjectReference {
+        SelfId: 10576236432992691335
+      }
+    }
+    Overrides {
+      Name: "cs:help"
+      ObjectReference {
+        SelfId: 10985511137943655841
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 11663339838694661860
+    }
   }
 }
 Objects {
@@ -516,7 +558,7 @@ Objects {
 }
 Objects {
   Id: 1616209010227049162
-  Name: "Overrun_Game_Manger_Client"
+  Name: "Overrun_Game_Manager_Client"
   Transform {
     Location {
     }

@@ -22,6 +22,8 @@
     "EquipmentAttachObjectToPlayer.lua": true,
     "EquipmentMeleeAttacksServer.lua": true,
     "EquipmentStanceServer.lua": true,
-    "EquipmentMeleeAttacksClient.lua": true
+    "EquipmentMeleeAttacksClient.lua": true,
+    "WeaponProjectileKnockbackServer.lua": true,
+    "WeaponUtilityHideObjectClient.lua": true
   }
 }

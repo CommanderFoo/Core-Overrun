@@ -3,8 +3,8 @@ local power_up_chance = script:GetCustomProperty("power_up_chance")
 
 local random_power_ups = {
 
-	--"instant_kill",
-	--"double_points",
+	"instant_kill",
+	"double_points",
 	"max_ammo"
 
 }

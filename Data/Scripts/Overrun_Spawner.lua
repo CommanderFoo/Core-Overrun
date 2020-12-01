@@ -43,7 +43,7 @@ local zombie_tank_assets = {
 local spawn_points = {}
 
 local spawned = 0
-local max = 5
+local max = 8
 local spawn_task = nil
 local killed = 0
 local round = 1
@@ -86,15 +86,16 @@ end
 
 function concat_table(t1, t2)
     for i = 1, #t2 do
-        t1[#t1+i] = t2[i]
+		table.insert(t1, #t1 + 1, t2[i])
 	end
 	
     return t1
 end
 
-
 function get_random_zombie_asset()
-	local assets = concat_table({}, zombie_slow_assets)
+	local assets = {}
+	
+	 assets = concat_table({}, zombie_slow_assets)
 
 	if(round >= 4) then
 		assets = concat_table(assets, zombie_fast_assets)
@@ -117,7 +118,15 @@ function get_random_zombie_asset()
 		assets = concat_table({}, zombie_spitter_assets)
 	end
 
-	return assets[math.random(#assets)]
+	--for i, v in ipairs(assets) do
+	--	print(i, v)
+	--end
+
+	--print()
+
+	local index = math.random(#assets)
+
+	return assets[index]
 end
 
 function spawn_zombies()
@@ -134,6 +143,7 @@ function spawn_zombies()
 		local point = spawn_points[math.random(#spawn_points)]
 		local pos = point:GetWorldPosition()
 		local rot = point:GetWorldRotation()
+
 		local z = World.SpawnAsset(zombie, {parent = container, position = pos, rotation = rot})
 		
 		spawned_zombies[z:GetCustomProperty("ObjectId")] = z
@@ -141,8 +151,9 @@ function spawn_zombies()
 		spawned = spawned + 1
 	end)
 	
+	--print(max)
 	spawn_task.repeatCount = max - 1
-	spawn_task.repeatInterval = 3
+	spawn_task.repeatInterval = 2
 end
 
 function get_total_spawned()

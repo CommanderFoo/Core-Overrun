@@ -8,7 +8,7 @@ local late_join_money_per_round = script:GetCustomProperty("late_join_money_per_
 local starting_lives = script:GetCustomProperty("starting_lives")
 
 local game_state = "WAITING"
-local timer = 0 --game_start_duration
+local timer = game_start_duration
 local round = 1
 local countdown_started = false
 local players = {}
@@ -153,6 +153,7 @@ function spawn_players(force_spawn, lives, reset_total_money)
 			v.player.team = 1
 
 			if(was_dead) then
+				lives = 1
 				Events.Broadcast("on_clean_up_tombstones", k)
 			end
 
@@ -178,7 +179,7 @@ end
 function start_count_down()
 	countdown_started = true
 
-	--Events.Broadcast("on_reset_doors")
+	Events.Broadcast("on_reset_doors")
 	Events.Broadcast("on_disable_all_players")
 
 	local task = Task.Spawn(function()
@@ -203,14 +204,22 @@ function round_completed()
 	Spawner.context.set_round(round)
 
 	round_task = Task.Spawn(function()
-		spawn_players(false, 1, false)
+		spawn_players(false, starting_lives, false)
 		Task.Wait(round_end_duration)
 
 		if(round % 5 == 0) then
 			Events.BroadcastToAllPlayers("on_notification", "spitters")
 		end
 		
-		Spawner.context.set_max_spawns(math.min(25, round + 2))
+		local max_spawns = 10
+
+		if(round > 3) then
+			max_spawns = max_spawns + (round + 2)
+		elseif(round % 5 == 0) then
+			max_spawns = 15
+		end
+
+		Spawner.context.set_max_spawns(math.min(30, max_spawns))
 		Events.BroadcastToAllPlayers("on_round_start", round)
 		Spawner.context.spawn_zombies()
 	end)
