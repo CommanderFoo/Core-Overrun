@@ -1,4 +1,4 @@
-﻿local DEBUG_DISABLE_SPAWNS = false
+﻿local DEBUG_DISABLE_SPAWNS = true
 
 local container = script:GetCustomProperty("container"):WaitForObject()
 

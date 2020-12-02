@@ -27,12 +27,15 @@ local total_spins = 0
 
 local assets = {
 
-	[1] = {id = "D897DC11D8EA7E8C", ammo = 240},
-	[2] = {id = "7685F7DB0728F266", ammo = 60},
-	[3] = {id = "5F2EA87901BF9FB1", ammo = 80},
-	[4] = {id = "4C415F5FBA60ECF8", ammo = 140},
-	[5] = {id = "BAE245397FD6597D", ammo = 70},
-	[6] = {id = "760A24B635D5051D", ammo = 60}
+	[1] = "D897DC11D8EA7E8C",
+	[2] = "7685F7DB0728F266",
+	[3] = "5F2EA87901BF9FB1",
+	[4] = "4C415F5FBA60ECF8",
+	[5] = "BAE245397FD6597D",
+	[6] = "760A24B635D5051D",
+	[7] = "D2F9B9CAC9A6E629",
+	[8] = "06A947E4C06F43C7",
+	[9] = "96150237D7D518BA"
 
 }
 
@@ -114,7 +117,7 @@ function on_trigger_enter(t, obj)
 						end)
 					end
 				elseif(player_purchased == obj.id and open and not has_skull and not trigger:GetCustomProperty("weapon_took") and trigger:GetCustomProperty("can_take_weapon")) then
-					Events.Broadcast("on_bought_item", obj, assets[trigger:GetCustomProperty("weapon_index")].id, false)
+					Events.Broadcast("on_bought_item", obj, assets[trigger:GetCustomProperty("weapon_index")], false)
 					trigger:SetNetworkedCustomProperty("weapon_took", true)
 				end
 			end
@@ -132,10 +135,10 @@ function get_random_index()
 	--print(total_spins)
 
 	if(total_spins == 9) then
-		r = skull_index
+		--r = skull_index
 	elseif(total_spins >= 4) then
 		if(math.random(4) == 1) then
-			r = skull_index
+		--	r = skull_index
 		end
 	end
 

@@ -14,7 +14,7 @@ local purchase_sound = root:GetCustomProperty("purchase_sound"):WaitForObject()
 local laugh = root:GetCustomProperty("laugh"):WaitForObject()
 
 local items = root:GetCustomProperty("items")
-local skull_index = root:GetCustomProperty("crate_id")
+local skull_index = root:GetCustomProperty("skull_index")
 local cost = root:GetCustomProperty("cost")
 
 local time_to_open = root:GetCustomProperty("time_to_open")

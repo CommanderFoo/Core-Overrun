@@ -68,7 +68,7 @@ Objects {
       value {
         Overrides {
           Name: "Name"
-          String: "Overrun Wall Weapon Basic Sword"
+          String: "Overrun Wall Weapon Free Sword"
         }
         Overrides {
           Name: "Position"

@@ -9,6 +9,11 @@ end
 function give_starting_weapon(player)
 	local equipment = World.SpawnAsset(starting_weapon)
 
+	if(not equipment:GetCustomProperty("is_melee")) then
+		player:SetResource("rounds", equipment:GetCustomProperty("ammo_max"))
+		equipment.currentAmmo = equipment:GetCustomProperty("ammo_max")
+	end
+	
 	equipment:Equip(player)
 end
 
@@ -25,10 +30,12 @@ function bought_item(player, asset_id, play_audio)
 				
 				local new_weapon = World.SpawnAsset(asset)
 
-				player:SetResource("rounds", new_weapon:GetCustomProperty("ammo_max"))
+				if(not new_weapon:GetCustomProperty("is_melee")) then
+					player:SetResource("rounds", new_weapon:GetCustomProperty("ammo_max"))
 
-				if(new_weapon.currentAmmo ~= nil) then
-					new_weapon.currentAmmo = new_weapon:GetCustomProperty("ammo_max")
+					if(new_weapon.currentAmmo ~= nil) then
+						new_weapon.currentAmmo = new_weapon:GetCustomProperty("ammo_max")
+					end
 				end
 
 				new_weapon:Equip(player)

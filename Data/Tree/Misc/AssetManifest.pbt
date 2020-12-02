@@ -8,6 +8,15 @@
   }
 }
 Assets {
+  Id: 14565993562237882178
+  Name: "Military Worn Tire 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_mil_tire_worn_01_ref"
+  }
+}
+Assets {
   Id: 12905923173550510229
   Name: "Cylinder - Polished"
   PlatformAssetType: 1
@@ -23,6 +32,15 @@ Assets {
   PrimaryAsset {
     AssetType: "VfxBlueprintAssetRef"
     AssetId: "fxbp_smoke_volume_vfx"
+  }
+}
+Assets {
+  Id: 12793060997350586228
+  Name: "Hesco Barrier 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_mil_hesco_001"
   }
 }
 Assets {
@@ -50,6 +68,24 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_mil_shipping_pallet_002"
+  }
+}
+Assets {
+  Id: 9605197959426201295
+  Name: "Military Worn Tire 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_mil_tire_worn_02_ref"
+  }
+}
+Assets {
+  Id: 8606699818147202890
+  Name: "Military Worn Tire Large 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_mil_tire_worn_large_01_ref"
   }
 }
 Assets {
@@ -131,5 +167,14 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_torus_004"
+  }
+}
+Assets {
+  Id: 93416790986469
+  Name: "Hesco Barrier - Tall"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_mil_hesco_002"
   }
 }

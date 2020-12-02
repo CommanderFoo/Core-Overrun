@@ -115,6 +115,12 @@ function handle_notification(type, player_name, has_quick_revive)
 	elseif(type == "playerdead" and local_player.name ~= player_name) then
 		item.title = "Player Dead" .. name
 		item.desc = "A played has died and will respawn next round."
+	elseif(type == "buyupgraded") then
+		item.title = "Weapon Upgraded"
+		item.desc = "You have upgraded your weapon to the next tier."
+	elseif(type == "buymaxupgraded") then
+		item.title = "Weapon Upgraded Max"
+		item.desc = "You have upgraded your weapon to the max tier at this station."
 	end
 
 	if(item.title ~= "") then

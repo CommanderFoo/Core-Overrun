@@ -31,6 +31,8 @@ Objects {
   ChildIds: 17744034362255273896
   ChildIds: 4720684057926456785
   ChildIds: 2252914564938262451
+  ChildIds: 7307561655952834572
+  ChildIds: 17305572947550456857
   ChildIds: 2038426666414982102
   ChildIds: 8447166840498775271
   ChildIds: 11946212816415160889
@@ -74,7 +76,7 @@ Objects {
   }
   ParentId: 8684104163774616632
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
+    Value: "mc:ecollisionsetting:forceon"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
@@ -152,7 +154,7 @@ Objects {
   }
   ParentId: 8684104163774616632
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
+    Value: "mc:ecollisionsetting:forceon"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
@@ -191,7 +193,7 @@ Objects {
   }
   ParentId: 8684104163774616632
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
+    Value: "mc:ecollisionsetting:forceon"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
@@ -230,7 +232,7 @@ Objects {
   }
   ParentId: 8684104163774616632
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
+    Value: "mc:ecollisionsetting:forceon"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
@@ -269,7 +271,7 @@ Objects {
   }
   ParentId: 8684104163774616632
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
+    Value: "mc:ecollisionsetting:forceon"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
@@ -308,7 +310,7 @@ Objects {
   }
   ParentId: 8684104163774616632
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
+    Value: "mc:ecollisionsetting:forceon"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
@@ -347,7 +349,7 @@ Objects {
   }
   ParentId: 8684104163774616632
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
+    Value: "mc:ecollisionsetting:forceon"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
@@ -372,8 +374,8 @@ Objects {
   Name: "Rock Pile 002"
   Transform {
     Location {
-      X: 1450.72168
-      Y: 3889.05444
+      X: 1418.81665
+      Y: 3607.08374
       Z: 2.10061646
     }
     Rotation {
@@ -554,6 +556,86 @@ Objects {
     Teams {
       TeamInt: 1
       IsTeamCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 17305572947550456857
+  Name: "Rock Pile 002"
+  Transform {
+    Location {
+      X: -2266.3811
+      Y: 2814.11353
+      Z: 9.15527344e-05
+    }
+    Rotation {
+      Yaw: 49.2473907
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8684104163774616632
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3377721323622766709
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 7307561655952834572
+  Name: "Rock Pile 001"
+  Transform {
+    Location {
+      X: 228.924683
+      Y: 2661.09888
+      Z: 3.05175781e-05
+    }
+    Rotation {
+      Yaw: 12.3169937
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8684104163774616632
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 10835155324150586940
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
     }
     EnableCameraCollision: true
     StaticMesh {
@@ -1052,7 +1134,7 @@ Objects {
   }
   ParentId: 8684104163774616632
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceon"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"

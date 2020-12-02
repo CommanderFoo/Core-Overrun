@@ -77,6 +77,8 @@ Objects {
   ChildIds: 13068163223756095879
   ChildIds: 1586221912350887969
   ChildIds: 16254432828209717142
+  ChildIds: 11844466501988482975
+  ChildIds: 13697844899747285934
   ChildIds: 14742803911303076242
   ChildIds: 8348296636155817600
   ChildIds: 10844040659773618333
@@ -107,6 +109,9 @@ Objects {
   ChildIds: 4634635001487322456
   ChildIds: 17613265445907908743
   ChildIds: 4833427234256825271
+  ChildIds: 12774303427891227308
+  ChildIds: 9223288618446339534
+  ChildIds: 17442004308324408233
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -115,6 +120,123 @@ Objects {
   }
   Folder {
     Model {
+    }
+  }
+}
+Objects {
+  Id: 17442004308324408233
+  Name: "Military Worn Tire 02"
+  Transform {
+    Location {
+      X: 523.41748
+      Y: 8626.69531
+      Z: 235.714355
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1795272068839068311
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9605197959426201295
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 9223288618446339534
+  Name: "Military Worn Tire 02"
+  Transform {
+    Location {
+      X: 763.312378
+      Y: 8473.03516
+      Z: 266.195923
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1795272068839068311
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9605197959426201295
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 12774303427891227308
+  Name: "Military Worn Tire 02"
+  Transform {
+    Location {
+      X: 776.920044
+      Y: 8436.06152
+      Z: 220.666565
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1795272068839068311
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9605197959426201295
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
     }
   }
 }
@@ -1885,6 +2007,86 @@ Objects {
     SubobjectId: 18079887441442738817
     InstanceId: 13855336430750949341
     TemplateId: 9558225258233182466
+  }
+}
+Objects {
+  Id: 13697844899747285934
+  Name: "Military Worn Tire Large 01"
+  Transform {
+    Location {
+      X: 1223.18262
+      Y: 4635.9917
+      Z: 35.9024658
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1795272068839068311
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 8606699818147202890
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 11844466501988482975
+  Name: "Military Worn Tire Large 01"
+  Transform {
+    Location {
+      X: 1307.74854
+      Y: 4575.03662
+      Z: 214.806992
+    }
+    Rotation {
+      Pitch: 64.3695602
+      Yaw: -22.4333344
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1795272068839068311
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 8606699818147202890
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
   }
 }
 Objects {

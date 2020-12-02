@@ -1,7 +1,7 @@
 ﻿Name: "Wood_2"
-RootId: 7617143454340196318
+RootId: 17982867553687178578
 Objects {
-  Id: 4855304400581288766
+  Id: 15230044735860525490
   Name: "Wood 2x4 4m"
   Transform {
     Location {
@@ -18,7 +18,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7617143454340196318
+  ParentId: 17982867553687178578
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -52,14 +52,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 4855304400581288766
+    SelfId: 15230044735860525490
     SubobjectId: 11502193671733517983
-    InstanceId: 13575535523413459348
+    InstanceId: 13774918262342810826
     TemplateId: 6902673128315260216
   }
 }
 Objects {
-  Id: 18003388423333175865
+  Id: 7629835801138350261
   Name: "Wood 2x4 4m"
   Transform {
     Location {
@@ -74,7 +74,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7617143454340196318
+  ParentId: 17982867553687178578
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -108,14 +108,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 18003388423333175865
+    SelfId: 7629835801138350261
     SubobjectId: 2673277762877431704
-    InstanceId: 13575535523413459348
+    InstanceId: 13774918262342810826
     TemplateId: 6902673128315260216
   }
 }
 Objects {
-  Id: 9494446665947446933
+  Id: 1439306549636879385
   Name: "Wood 2x4 4m"
   Transform {
     Location {
@@ -131,7 +131,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7617143454340196318
+  ParentId: 17982867553687178578
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -165,14 +165,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 9494446665947446933
+    SelfId: 1439306549636879385
     SubobjectId: 6846189847998464820
-    InstanceId: 13575535523413459348
+    InstanceId: 13774918262342810826
     TemplateId: 6902673128315260216
   }
 }
 Objects {
-  Id: 12464509553342481425
+  Id: 4377683796833513117
   Name: "Wood 2x4 4m"
   Transform {
     Location {
@@ -186,7 +186,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7617143454340196318
+  ParentId: 17982867553687178578
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -220,14 +220,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 12464509553342481425
+    SelfId: 4377683796833513117
     SubobjectId: 8087150956884851120
-    InstanceId: 13575535523413459348
+    InstanceId: 13774918262342810826
     TemplateId: 6902673128315260216
   }
 }
 Objects {
-  Id: 741715273544904172
+  Id: 11128789689781159776
   Name: "Wood 2x4 4m"
   Transform {
     Location {
@@ -243,7 +243,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7617143454340196318
+  ParentId: 17982867553687178578
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -277,9 +277,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 741715273544904172
+    SelfId: 11128789689781159776
     SubobjectId: 15459339680130388045
-    InstanceId: 13575535523413459348
+    InstanceId: 13774918262342810826
     TemplateId: 6902673128315260216
   }
 }

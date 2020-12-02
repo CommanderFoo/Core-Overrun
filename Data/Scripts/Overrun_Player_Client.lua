@@ -202,7 +202,7 @@ function on_zombie_hit(amount, position)
 	local distance = (view_pos - position).sizeSquared
 	local is_big = (distance < 1000000) -- 10 meters squared
 		
-	UI.ShowFlyUpText(tostring(amount), position, {color = Color.RED, isBig = is_big})
+	UI.ShowFlyUpText(PIXELDEPTH.Utils.number_format(amount), position, {color = Color.YELLOW, isBig = is_big, duration = 1})
 end
 
 local fx_tween = nil

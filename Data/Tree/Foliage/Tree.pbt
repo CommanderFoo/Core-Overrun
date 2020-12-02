@@ -41,6 +41,7 @@ Objects {
   ChildIds: 4983651137132195926
   ChildIds: 7977052824561701489
   ChildIds: 74180694761652081
+  ChildIds: 15021873161586936096
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -49,6 +50,45 @@ Objects {
   }
   Folder {
     Model {
+    }
+  }
+}
+Objects {
+  Id: 15021873161586936096
+  Name: "Bush 01"
+  Transform {
+    Location {
+      X: 2219.40112
+      Y: 6755.52588
+      Z: 0.000793457031
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.80795813
+      Y: 2.80795813
+      Z: 2.80795813
+    }
+  }
+  ParentId: 4119957274865248739
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 5818051000036987312
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
     }
   }
 }

@@ -23,6 +23,9 @@ Objects {
   ChildIds: 16165846130488850022
   ChildIds: 12811340734137313768
   ChildIds: 3691806655861138950
+  ChildIds: 2844008903843614664
+  ChildIds: 13035863942182698068
+  ChildIds: 10798053801402530904
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -35,13 +38,131 @@ Objects {
   }
 }
 Objects {
+  Id: 10798053801402530904
+  Name: "Bone Human Scattered 02"
+  Transform {
+    Location {
+      X: 1624.68555
+      Y: 4596.63086
+      Z: 0.000244140625
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16703637723856708877
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9910756593103543228
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 13035863942182698068
+  Name: "Bone Human Pile Straight 02"
+  Transform {
+    Location {
+      X: -315.065704
+      Y: 5233.81689
+      Z: -6.75802612
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16703637723856708877
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 5765695141968276473
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 2844008903843614664
+  Name: "Bone Human Pile Straight 01"
+  Transform {
+    Location {
+      X: -3255.36719
+      Y: -1653.00195
+      Z: 0.000122070313
+    }
+    Rotation {
+      Yaw: -57.4698219
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16703637723856708877
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6615947568714463578
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
   Id: 3691806655861138950
   Name: "Bone Human Scattered 01"
   Transform {
     Location {
-      X: 1549.07935
-      Y: 1390.30078
-      Z: 5.90240479
+      X: 1393.53027
+      Y: 1451.57544
+      Z: 5.90237427
     }
     Rotation {
     }

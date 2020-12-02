@@ -35,21 +35,9 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:OverrunBasicSword"
-      AssetReference {
-        Id: 15706073129236130802
-      }
-    }
-    Overrides {
       Name: "cs:OverrunBasicSMG"
       AssetReference {
         Id: 17831556309989914884
-      }
-    }
-    Overrides {
-      Name: "cs:OverrunAxe"
-      AssetReference {
-        Id: 18313588029887388118
       }
     }
     Overrides {
@@ -92,6 +80,60 @@ Objects {
       Name: "cs:OverrunSniperRifle"
       AssetReference {
         Id: 15202386297783510569
+      }
+    }
+    Overrides {
+      Name: "cs:OverrunFreeSword"
+      AssetReference {
+        Id: 16462377179637808088
+      }
+    }
+    Overrides {
+      Name: "cs:Overrun2HandedSword"
+      AssetReference {
+        Id: 479993883098301383
+      }
+    }
+    Overrides {
+      Name: "cs:OverrunHammer"
+      AssetReference {
+        Id: 10814552519067637946
+      }
+    }
+    Overrides {
+      Name: "cs:OverrunWeaponStartingPistolTier2"
+      AssetReference {
+        Id: 1835156784608498508
+      }
+    }
+    Overrides {
+      Name: "cs:OverrunWeaponStartingPistolTier3"
+      AssetReference {
+        Id: 6553324621677147087
+      }
+    }
+    Overrides {
+      Name: "cs:OverrunWeapon2HandedSwordTier2"
+      AssetReference {
+        Id: 7017684837337458106
+      }
+    }
+    Overrides {
+      Name: "cs:OverrunWeapon2HandedSwordTier3"
+      AssetReference {
+        Id: 7373319590050248748
+      }
+    }
+    Overrides {
+      Name: "cs:OverrunWeaponBasicAssaultTier2"
+      AssetReference {
+        Id: 1718218841999204875
+      }
+    }
+    Overrides {
+      Name: "cs:OverrunWeaponBasicAssaultTier3"
+      AssetReference {
+        Id: 10505457374000104638
       }
     }
   }
@@ -175,7 +217,7 @@ Objects {
     }
     Overrides {
       Name: "cs:starting_money"
-      Int: 100000
+      Int: 10000000
     }
     Overrides {
       Name: "cs:late_join_money_per_round"
@@ -339,7 +381,7 @@ Objects {
     Overrides {
       Name: "cs:starting_weapon"
       AssetReference {
-        Id: 15860665667445048882
+        Id: 6938449804404030971
       }
     }
     Overrides {

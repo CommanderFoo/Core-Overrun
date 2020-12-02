@@ -32,6 +32,10 @@ Objects {
   ChildIds: 13713193877966858064
   ChildIds: 12461314409581590319
   ChildIds: 8333480848858074493
+  ChildIds: 4697589115697704606
+  ChildIds: 7926792424440722291
+  ChildIds: 872004262838859230
+  ChildIds: 9466778341070239696
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -41,6 +45,539 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 9466778341070239696
+  Name: "aaaa"
+  Transform {
+    Location {
+      X: 1772.54089
+      Y: -8517.02734
+      Z: -0.100585938
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  ChildIds: 2666393555415504884
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:asset_id"
+      String: "1977C95F5DBCD34C"
+    }
+    Overrides {
+      Name: "cs:is_melee"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:ammo_max"
+      Int: 90
+    }
+    Overrides {
+      Name: "cs:upgrade_asset_id"
+      String: "5AF21605BCE333CF"
+    }
+    Overrides {
+      Name: "cs:upgrade_price"
+      Int: 5000
+    }
+  }
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Equipment {
+    SocketName: "right_prop"
+    PickupTrigger {
+      SelfId: 15829010683709047525
+    }
+    Weapon {
+      ProjectileAssetRef {
+        Id: 16313312156352177803
+      }
+      MuzzleFlashAssetRef {
+        Id: 9281011578601836522
+      }
+      TrailAssetRef {
+        Id: 9023864673320310867
+      }
+      ImpactAssetRef {
+        Id: 15728676179772725900
+      }
+      UseReticle: true
+      Muzzle {
+        Location {
+          X: 33
+          Z: 15
+        }
+      }
+      AnimationSet: "1hand_pistol_stance"
+      OutOfAmmoSfxAssetRef {
+        Id: 1683114021203363022
+      }
+      ReloadSfxAssetRef {
+        Id: 12107734285812188601
+      }
+      ShootAnimation: "2hand_rifle_shoot"
+      ImpactProjectileAssetRef {
+        Id: 841534158063459245
+      }
+      IsHitscan: true
+      BeamAssetRef {
+        Id: 841534158063459245
+      }
+      BurstCount: 1
+      BurstDuration: 3
+      AttackCooldown: 0.25
+      Range: 70000
+      ImpactPlayerAssetRef {
+        Id: 307406115803496087
+      }
+      ReticleType {
+        Value: "mc:ereticletype:crosshair"
+      }
+      MaxAmmo: 24
+      AmmoType: "rounds"
+      IsFiniteAmmo: true
+      MultiShot: 1
+      ProjectileSpeed: 25000
+      ProjectileLifeSpan: 10
+      ProjectileLength: 50
+      ProjectileRadius: 5
+      SpreadMax: 0.1
+      DefaultAbility {
+        SelfId: 17137908960365136464
+      }
+      ReloadAbility {
+        SelfId: 841534158063459245
+      }
+      Damage: 100
+    }
+  }
+  InstanceHistory {
+    SelfId: 9466778341070239696
+    SubobjectId: 11891535985240891388
+    InstanceId: 59857602639034439
+    TemplateId: 1835156784608498508
+    WasRoot: true
+  }
+}
+Objects {
+  Id: 2666393555415504884
+  Name: "Audio"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9466778341070239696
+  ChildIds: 11212786742508045051
+  ChildIds: 1967574917739662437
+  ChildIds: 15372095476578340354
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+  InstanceHistory {
+    SelfId: 2666393555415504884
+    SubobjectId: 245189481261055960
+    InstanceId: 59857602639034439
+    TemplateId: 1835156784608498508
+  }
+}
+Objects {
+  Id: 15372095476578340354
+  Name: "Shoot Sound"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2666393555415504884
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Gunshot Type"
+      Enum {
+        Value: "mc:esfx_gunshot_pistol_revolver:1"
+      }
+    }
+    Overrides {
+      Name: "bp:Gunshot Pitch"
+      Float: 2400
+    }
+    Overrides {
+      Name: "bp:Ricochet Type"
+      Enum {
+        Value: "mc:esfx_gunshot_ricochets:0"
+      }
+    }
+    Overrides {
+      Name: "bp:Ricochet Volume"
+      Float: 25
+    }
+    Overrides {
+      Name: "bp:Ricochet Pitch"
+      Float: 2400
+    }
+    Overrides {
+      Name: "bp:Gunshot Volume"
+      Float: 25
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 11671637230280120648
+    }
+    TeamSettings {
+    }
+    AudioBP {
+      Volume: 1
+      Falloff: 9000
+      Radius: 100
+    }
+  }
+  InstanceHistory {
+    SelfId: 15372095476578340354
+    SubobjectId: 17524455179460797998
+    InstanceId: 59857602639034439
+    TemplateId: 1835156784608498508
+  }
+}
+Objects {
+  Id: 1967574917739662437
+  Name: "Low Ammo"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2666393555415504884
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Gunshot Type"
+      Enum {
+        Value: "mc:esfx_gunshot_pistol_revolver:7"
+      }
+    }
+    Overrides {
+      Name: "bp:Gunshot Pitch"
+      Float: 2400
+    }
+    Overrides {
+      Name: "bp:Ricochet Type"
+      Enum {
+        Value: "mc:esfx_gunshot_ricochets:0"
+      }
+    }
+    Overrides {
+      Name: "bp:Ricochet Volume"
+      Float: 24.0345
+    }
+    Overrides {
+      Name: "bp:Ricochet Pitch"
+      Float: 2400
+    }
+    Overrides {
+      Name: "bp:Gunshot Volume"
+      Float: 25
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 11671637230280120648
+    }
+    TeamSettings {
+    }
+    AudioBP {
+      Volume: 1
+      Falloff: 9000
+      Radius: 100
+    }
+  }
+  InstanceHistory {
+    SelfId: 1967574917739662437
+    SubobjectId: 4407267778105697353
+    InstanceId: 59857602639034439
+    TemplateId: 1835156784608498508
+  }
+}
+Objects {
+  Id: 11212786742508045051
+  Name: "Overrun_Weapon_Audio"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2666393555415504884
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:AttackAbility"
+      ObjectReference {
+        SelfId: 841534158063459245
+      }
+    }
+    Overrides {
+      Name: "cs:LowAmmoSound"
+      ObjectReference {
+        SelfId: 1967574917739662437
+      }
+    }
+    Overrides {
+      Name: "cs:MuzzleSound"
+      ObjectReference {
+        SelfId: 15372095476578340354
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 7836242191904254717
+    }
+  }
+  InstanceHistory {
+    SelfId: 11212786742508045051
+    SubobjectId: 13689863582352829143
+    InstanceId: 59857602639034439
+    TemplateId: 1835156784608498508
+  }
+}
+Objects {
+  Id: 872004262838859230
+  Name: "Station"
+  Transform {
+    Location {
+      X: 1484.85205
+      Y: -8027.97559
+    }
+    Rotation {
+      Yaw: -0.673706055
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:trigger"
+      ObjectReference {
+        SelfId: 4633552652896731845
+      }
+    }
+    Overrides {
+      Name: "cs:geo"
+      ObjectReference {
+        SelfId: 12163277286697223373
+      }
+    }
+    Overrides {
+      Name: "cs:can_afford_color"
+      Color {
+        R: 0.14180623
+        G: 0.14180623
+        B: 0.76052475
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:cant_afford_color"
+      Color {
+        R: 0.68200016
+        G: 3.25203018e-07
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:ui"
+      ObjectReference {
+        SelfId: 2989902567877894445
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceon"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Station"
+  }
+}
+Objects {
+  Id: 7926792424440722291
+  Name: "Station"
+  Transform {
+    Location {
+      X: 1790.02393
+      Y: 161.023346
+    }
+    Rotation {
+      Yaw: 180
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:trigger"
+      ObjectReference {
+        SelfId: 15711300095865333254
+      }
+    }
+    Overrides {
+      Name: "cs:geo"
+      ObjectReference {
+        SelfId: 7410867302811500717
+      }
+    }
+    Overrides {
+      Name: "cs:can_afford_color"
+      Color {
+        R: 0.14180623
+        G: 0.14180623
+        B: 0.76052475
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:cant_afford_color"
+      Color {
+        R: 0.68200016
+        G: 3.25203018e-07
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:ui"
+      ObjectReference {
+        SelfId: 2989902567877894445
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceon"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Station_1"
+  }
+}
+Objects {
+  Id: 4697589115697704606
+  Name: "Overrun Dummy"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3491882363712052561
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Overrun Dummy"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 702.624512
+            Y: -8784.89941
+            Z: -0.100341797
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:forceon"
+          }
+        }
+        Overrides {
+          Name: "Collidable"
+          Enum {
+            Value: "mc:ecollisionsetting:forceon"
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17059684618329394520
+    }
   }
 }
 Objects {
@@ -59,10 +596,10 @@ Objects {
   }
   ParentId: 4781671109827199097
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceon"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
     IsFilePartition: true
@@ -233,7 +770,7 @@ Objects {
   UnregisteredParameters {
   }
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
+    Value: "mc:ecollisionsetting:forceon"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:forceon"

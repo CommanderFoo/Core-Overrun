@@ -8,7 +8,7 @@ local late_join_money_per_round = script:GetCustomProperty("late_join_money_per_
 local starting_lives = script:GetCustomProperty("starting_lives")
 
 local game_state = "WAITING"
-local timer = game_start_duration
+local timer = 0--game_start_duration
 local round = 1
 local countdown_started = false
 local players = {}
