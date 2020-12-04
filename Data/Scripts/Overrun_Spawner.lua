@@ -1,4 +1,4 @@
-﻿local DEBUG_DISABLE_SPAWNS = true
+﻿local DEBUG_DISABLE_SPAWNS = false
 
 local container = script:GetCustomProperty("container"):WaitForObject()
 
@@ -99,17 +99,21 @@ function get_random_zombie_asset()
 
 	if(round >= 4) then
 		assets = concat_table(assets, zombie_fast_assets)
+		assets = concat_table(assets, zombie_slow_assets)
 	end
 
 	if(round >= 6) then
 		assets = concat_table(assets, zombie_spitter_assets)
 		assets = concat_table(assets, zombie_faster_assets)
+		assets = concat_table(assets, zombie_fast_assets)
 	end
 
-	if(round >=8) then
+	if(round >= 8) then
 		assets = concat_table(assets, zombie_tank_assets)
 		assets = concat_table(assets, zombie_spitter_assets)
 		assets = concat_table(assets, zombie_fast_assets)
+		assets = concat_table(assets, zombie_slow_assets)
+		assets = concat_table(assets, zombie_faster_assets)
 	end
 
 	-- Spitter only rounds
@@ -149,9 +153,10 @@ function spawn_zombies()
 		spawned_zombies[z:GetCustomProperty("ObjectId")] = z
 
 		spawned = spawned + 1
+
+		--print(max, spawned)
 	end)
 	
-	--print(max)
 	spawn_task.repeatCount = max - 1
 	spawn_task.repeatInterval = 2
 end
@@ -166,11 +171,13 @@ end
 
 function set_max_spawns(amount)
 	max = amount
+	spawned = 0
 end
 
 function zombie_killed(id)
 	killed = killed + 1
 
+	--print("Killed", killed)
 	if(spawned_zombies[id]) then
 		spawned_zombies[id] = nil
 	end

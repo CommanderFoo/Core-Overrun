@@ -26,6 +26,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16048367406070731799
+  Name: "Plane 1m - One Sided"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_plane_1m_001"
+  }
+}
+Assets {
   Id: 15744908842130492752
   Name: "Craftsman Roof 01 Bracket"
   PlatformAssetType: 1

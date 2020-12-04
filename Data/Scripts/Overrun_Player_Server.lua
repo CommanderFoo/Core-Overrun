@@ -81,6 +81,12 @@ function player_left(p)
 	if(players[p.id]) then
 		players[p.id] = nil
 	end
+
+	local equipment = p:GetEquipment()
+
+	for k, v in pairs(equipment) do
+		v:Destroy()
+	end
 end
 
 function disable_players()

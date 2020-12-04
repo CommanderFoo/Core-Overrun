@@ -84,7 +84,7 @@
           }
           Overrides {
             Name: "cs:AttackRange"
-            Float: 600
+            Float: 450
           }
           Overrides {
             Name: "cs:AttackCast"
@@ -120,7 +120,7 @@
           }
           Overrides {
             Name: "cs:money_per_kill"
-            Int: 75
+            Int: 120
           }
           Overrides {
             Name: "cs:Overrun_Spawner_Server"
@@ -344,7 +344,7 @@
           }
           Overrides {
             Name: "cs:DamageToPlayers"
-            Int: 50
+            Int: 30
           }
           Overrides {
             Name: "cs:DamageToNPCs"

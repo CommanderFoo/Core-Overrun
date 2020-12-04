@@ -36,7 +36,7 @@
           }
           Overrides {
             Name: "cs:CurrentHealth"
-            Float: 400
+            Float: 350
           }
           Overrides {
             Name: "cs:MoveSpeed"
@@ -84,7 +84,7 @@
           }
           Overrides {
             Name: "cs:AttackRange"
-            Float: 900
+            Float: 600
           }
           Overrides {
             Name: "cs:AttackCast"
@@ -344,7 +344,7 @@
           }
           Overrides {
             Name: "cs:DamageToPlayers"
-            Int: 50
+            Int: 40
           }
           Overrides {
             Name: "cs:DamageToNPCs"

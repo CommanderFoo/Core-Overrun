@@ -87,9 +87,11 @@ function Tick(dt)
 
 		if(money <= cost) then
 			interact_ui:SetColor(Color.RED)
+		else
+			interact_ui:SetColor(Color.YELLOW)
 		end
 
-		interact_ui.text = "Press [F] to spin mystery box for " .. PIXELDEPTH.Utils.number_format(cost)
+		interact_ui.text = "Press [F] to spin mystery crate for " .. PIXELDEPTH.Utils.number_format(cost)
 		show_ui = true
 	end
 	

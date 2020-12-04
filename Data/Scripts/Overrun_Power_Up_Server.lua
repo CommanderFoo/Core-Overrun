@@ -12,24 +12,28 @@ local wait = .6
 local start_time = time()
 local collected = false
 
+local blink_at = 5
+
 function Tick()
 	if(collected) then
 		return
 	end
 
 	if(time() <= (start_time + duration)) then
-		Task.Wait(wait)
+		if(time() >= (start_time + blink_at)) then
+			Task.Wait(wait)
 
-		if(geo.visibility == Visibility.FORCE_ON) then
-			geo.visibility = Visibility.FORCE_OFF
-		else
-			geo.visibility = Visibility.FORCE_ON
-		end
+			if(geo.visibility == Visibility.FORCE_ON) then
+				geo.visibility = Visibility.FORCE_OFF
+			else
+				geo.visibility = Visibility.FORCE_ON
+			end
 
-		if(time() >= (start_time + (duration - speed_up_faster))) then
-			wait = 0.15
-		elseif(time() >= (start_time + (duration - speed_up_fast))) then
-			wait = 0.3
+			if(time() >= (start_time + (duration - speed_up_faster))) then
+				wait = 0.15
+			elseif(time() >= (start_time + (duration - speed_up_fast))) then
+				wait = 0.3
+			end
 		end
 	else
 		root:Destroy()

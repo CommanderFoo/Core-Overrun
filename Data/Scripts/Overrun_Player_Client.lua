@@ -242,6 +242,19 @@ end
 --	end
 --end
 
+Events.Connect("on_weapon_tier_changed", function()
+	local equipment = local_player:GetEquipment()[1]
+	local upgrade_asset_id = equipment:GetCustomProperty("upgrade_asset_id")
+	local upgrade_price = equipment:GetCustomProperty("upgrade_price")
+	local notify_key = "wepaonupgraded"
+
+	if(upgrade_asset_id == "" and upgrade_price == 0) then
+		notify_key = "weaponmaxupgraded"
+	end
+
+	Events.Broadcast("on_notification", notify_key, local_player.name)
+end)
+
 Events.Connect("on_player_money_changed", money_changed)
 Events.Connect("on_purchase_complete", purchase_complete)
 Events.Connect("on_zombie_hit", on_zombie_hit)

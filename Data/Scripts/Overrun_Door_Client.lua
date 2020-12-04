@@ -59,6 +59,8 @@ function on_trigger_enter(t, obj)
 
 		if(money <= cost) then
 			interact_ui:SetColor(Color.RED)
+		else
+			interact_ui:SetColor(Color.YELLOW)
 		end
 
 		interact_ui.text = "Press [F] to open this area for " .. PIXELDEPTH.Utils.number_format(cost)

@@ -21,6 +21,7 @@
         ChildIds: 14662857203320329587
         ChildIds: 13941336384920651478
         ChildIds: 15414113145037647773
+        ChildIds: 9006560144263700741
         UnregisteredParameters {
           Overrides {
             Name: "cs:BaseDamage"
@@ -146,6 +147,14 @@
           Overrides {
             Name: "cs:ammo_max"
             Int: 48
+          }
+          Overrides {
+            Name: "cs:upgrade_asset_id"
+            String: "FF6E2EE0EF97B7B8"
+          }
+          Overrides {
+            Name: "cs:upgrade_price"
+            Int: 5000
           }
           Overrides {
             Name: "cs:BaseDamage:tooltip"
@@ -404,7 +413,6 @@
         ParentId: 10075681503201542980
         ChildIds: 4658594292282899899
         ChildIds: 15584677894108676225
-        ChildIds: 11496876696066618518
         ChildIds: 4021708777900506491
         UnregisteredParameters {
         }
@@ -435,7 +443,6 @@
         ParentId: 1159748806431269834
         ChildIds: 3915308107008566868
         ChildIds: 4230295771997431732
-        ChildIds: 3880182236491533365
         ChildIds: 15484253362800748014
         UnregisteredParameters {
         }
@@ -523,53 +530,6 @@
         Script {
           ScriptAsset {
             Id: 11579822353805698904
-          }
-        }
-      }
-      Objects {
-        Id: 3880182236491533365
-        Name: "WeaponAmmoFeedbackClient"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1.00000012
-            Y: 1.00000012
-            Z: 1
-          }
-        }
-        ParentId: 4658594292282899899
-        UnregisteredParameters {
-          Overrides {
-            Name: "cs:AttackAbility"
-            ObjectReference {
-              SubObjectId: 14662857203320329587
-            }
-          }
-          Overrides {
-            Name: "cs:LowAmmoSound"
-            ObjectReference {
-              SubObjectId: 14835962349300984183
-            }
-          }
-          Overrides {
-            Name: "cs:MuzzleSound"
-            ObjectReference {
-              SubObjectId: 11740993607449977133
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Script {
-          ScriptAsset {
-            Id: 13835774820385732179
           }
         }
       }
@@ -1105,124 +1065,6 @@
         }
       }
       Objects {
-        Id: 11496876696066618518
-        Name: "Audio Feedback"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 1159748806431269834
-        ChildIds: 11740993607449977133
-        ChildIds: 14835962349300984183
-        UnregisteredParameters {
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Folder {
-          IsFilePartition: true
-          FilePartitionName: "Audio Feedback_10"
-        }
-      }
-      Objects {
-        Id: 11740993607449977133
-        Name: "Gunshot Sniper Rifle"
-        Transform {
-          Location {
-            X: 110.000015
-            Z: 15
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1.00000012
-            Y: 1.00000012
-            Z: 1
-          }
-        }
-        ParentId: 11496876696066618518
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Type"
-            Enum {
-              Value: "mc:esfx_gunshot_sniper_01:20"
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 2859981501041078432
-          }
-          AudioBP {
-            Pitch: -500
-            Volume: 1.2
-            Falloff: 80000
-            Radius: 500
-            EnableOcclusion: true
-            IsSpatializationEnabled: true
-            IsAttenuationEnabled: true
-          }
-        }
-      }
-      Objects {
-        Id: 14835962349300984183
-        Name: "Low Ammo Sound Sniper Rifle"
-        Transform {
-          Location {
-            X: 110.000015
-            Z: 15
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1.00000012
-            Y: 1.00000012
-            Z: 1
-          }
-        }
-        ParentId: 11496876696066618518
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Type"
-            Enum {
-              Value: "mc:esfx_gunshot_sniper_01:8"
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 2859981501041078432
-          }
-          AudioBP {
-            Volume: 1
-            Falloff: 5000
-            Radius: 500
-          }
-        }
-      }
-      Objects {
         Id: 4021708777900506491
         Name: "Zoom Sound"
         Transform {
@@ -1398,6 +1240,187 @@
           }
         }
       }
+      Objects {
+        Id: 9006560144263700741
+        Name: "Audio"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1.00000012
+            Y: 1.00000012
+            Z: 1
+          }
+        }
+        ParentId: 10075681503201542980
+        ChildIds: 834072901916764589
+        ChildIds: 576414707462152805
+        ChildIds: 14576227017544371167
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        NetworkContext {
+        }
+      }
+      Objects {
+        Id: 834072901916764589
+        Name: "Overrun_Weapon_Audio"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 9006560144263700741
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:AttackAbility"
+            ObjectReference {
+              SubObjectId: 14662857203320329587
+            }
+          }
+          Overrides {
+            Name: "cs:LowAmmoSound"
+            ObjectReference {
+              SubObjectId: 576414707462152805
+            }
+          }
+          Overrides {
+            Name: "cs:MuzzleSound"
+            ObjectReference {
+              SubObjectId: 14576227017544371167
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Script {
+          ScriptAsset {
+            Id: 7836242191904254717
+          }
+        }
+      }
+      Objects {
+        Id: 576414707462152805
+        Name: "Low Ammo Sound"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 9006560144263700741
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Gunshot Type"
+            Enum {
+              Value: "mc:esfx_gunshot_pistol_revolver:7"
+            }
+          }
+          Overrides {
+            Name: "bp:Gunshot Pitch"
+            Float: 2400
+          }
+          Overrides {
+            Name: "bp:Ricochet Type"
+            Enum {
+              Value: "mc:esfx_gunshot_ricochets:0"
+            }
+          }
+          Overrides {
+            Name: "bp:Ricochet Volume"
+            Float: 24.0345
+          }
+          Overrides {
+            Name: "bp:Ricochet Pitch"
+            Float: 2400
+          }
+          Overrides {
+            Name: "bp:Gunshot Volume"
+            Float: 25
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 11671637230280120648
+          }
+          TeamSettings {
+          }
+          AudioBP {
+            Volume: 1
+            Falloff: 9000
+            Radius: 100
+          }
+        }
+      }
+      Objects {
+        Id: 14576227017544371167
+        Name: "Gunshot Sniper Rifle Set 01 SFX"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 9006560144263700741
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Type"
+            Enum {
+              Value: "mc:esfx_gunshot_sniper_01:3"
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 2859981501041078432
+          }
+          TeamSettings {
+          }
+          AudioBP {
+            Volume: 1
+            Falloff: 9000
+            Radius: 100
+          }
+        }
+      }
     }
     Assets {
       Id: 13143977643810978320
@@ -1508,21 +1531,30 @@
       }
     }
     Assets {
-      Id: 2859981501041078432
-      Name: "Gunshot Sniper Rifle Set 01 SFX"
-      PlatformAssetType: 10
-      PrimaryAsset {
-        AssetType: "AudioBlueprintAssetRef"
-        AssetId: "sfxabp_gunshot_sniperrifle_ref"
-      }
-    }
-    Assets {
       Id: 5475722979835881503
       Name: "Weapon Handle Grab 01 SFX"
       PlatformAssetType: 7
       PrimaryAsset {
         AssetType: "AudioAssetRef"
         AssetId: "sfx_weapon_handle_01_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 11671637230280120648
+      Name: "Gunshot Pistol & Revolver Set 01 SFX"
+      PlatformAssetType: 10
+      PrimaryAsset {
+        AssetType: "AudioBlueprintAssetRef"
+        AssetId: "sfxabp_gunshot_revolver_ref"
+      }
+    }
+    Assets {
+      Id: 2859981501041078432
+      Name: "Gunshot Sniper Rifle Set 01 SFX"
+      PlatformAssetType: 10
+      PrimaryAsset {
+        AssetType: "AudioBlueprintAssetRef"
+        AssetId: "sfxabp_gunshot_sniperrifle_ref"
       }
     }
     PrimaryAssetId {

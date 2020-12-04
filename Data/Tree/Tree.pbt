@@ -32,10 +32,7 @@ Objects {
   ChildIds: 13713193877966858064
   ChildIds: 12461314409581590319
   ChildIds: 8333480848858074493
-  ChildIds: 4697589115697704606
   ChildIds: 7926792424440722291
-  ChildIds: 872004262838859230
-  ChildIds: 9466778341070239696
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -45,421 +42,6 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
-  }
-}
-Objects {
-  Id: 9466778341070239696
-  Name: "aaaa"
-  Transform {
-    Location {
-      X: 1772.54089
-      Y: -8517.02734
-      Z: -0.100585938
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  ChildIds: 2666393555415504884
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:asset_id"
-      String: "1977C95F5DBCD34C"
-    }
-    Overrides {
-      Name: "cs:is_melee"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:ammo_max"
-      Int: 90
-    }
-    Overrides {
-      Name: "cs:upgrade_asset_id"
-      String: "5AF21605BCE333CF"
-    }
-    Overrides {
-      Name: "cs:upgrade_price"
-      Int: 5000
-    }
-  }
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Equipment {
-    SocketName: "right_prop"
-    PickupTrigger {
-      SelfId: 15829010683709047525
-    }
-    Weapon {
-      ProjectileAssetRef {
-        Id: 16313312156352177803
-      }
-      MuzzleFlashAssetRef {
-        Id: 9281011578601836522
-      }
-      TrailAssetRef {
-        Id: 9023864673320310867
-      }
-      ImpactAssetRef {
-        Id: 15728676179772725900
-      }
-      UseReticle: true
-      Muzzle {
-        Location {
-          X: 33
-          Z: 15
-        }
-      }
-      AnimationSet: "1hand_pistol_stance"
-      OutOfAmmoSfxAssetRef {
-        Id: 1683114021203363022
-      }
-      ReloadSfxAssetRef {
-        Id: 12107734285812188601
-      }
-      ShootAnimation: "2hand_rifle_shoot"
-      ImpactProjectileAssetRef {
-        Id: 841534158063459245
-      }
-      IsHitscan: true
-      BeamAssetRef {
-        Id: 841534158063459245
-      }
-      BurstCount: 1
-      BurstDuration: 3
-      AttackCooldown: 0.25
-      Range: 70000
-      ImpactPlayerAssetRef {
-        Id: 307406115803496087
-      }
-      ReticleType {
-        Value: "mc:ereticletype:crosshair"
-      }
-      MaxAmmo: 24
-      AmmoType: "rounds"
-      IsFiniteAmmo: true
-      MultiShot: 1
-      ProjectileSpeed: 25000
-      ProjectileLifeSpan: 10
-      ProjectileLength: 50
-      ProjectileRadius: 5
-      SpreadMax: 0.1
-      DefaultAbility {
-        SelfId: 17137908960365136464
-      }
-      ReloadAbility {
-        SelfId: 841534158063459245
-      }
-      Damage: 100
-    }
-  }
-  InstanceHistory {
-    SelfId: 9466778341070239696
-    SubobjectId: 11891535985240891388
-    InstanceId: 59857602639034439
-    TemplateId: 1835156784608498508
-    WasRoot: true
-  }
-}
-Objects {
-  Id: 2666393555415504884
-  Name: "Audio"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 9466778341070239696
-  ChildIds: 11212786742508045051
-  ChildIds: 1967574917739662437
-  ChildIds: 15372095476578340354
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  NetworkContext {
-  }
-  InstanceHistory {
-    SelfId: 2666393555415504884
-    SubobjectId: 245189481261055960
-    InstanceId: 59857602639034439
-    TemplateId: 1835156784608498508
-  }
-}
-Objects {
-  Id: 15372095476578340354
-  Name: "Shoot Sound"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 2666393555415504884
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Gunshot Type"
-      Enum {
-        Value: "mc:esfx_gunshot_pistol_revolver:1"
-      }
-    }
-    Overrides {
-      Name: "bp:Gunshot Pitch"
-      Float: 2400
-    }
-    Overrides {
-      Name: "bp:Ricochet Type"
-      Enum {
-        Value: "mc:esfx_gunshot_ricochets:0"
-      }
-    }
-    Overrides {
-      Name: "bp:Ricochet Volume"
-      Float: 25
-    }
-    Overrides {
-      Name: "bp:Ricochet Pitch"
-      Float: 2400
-    }
-    Overrides {
-      Name: "bp:Gunshot Volume"
-      Float: 25
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 11671637230280120648
-    }
-    TeamSettings {
-    }
-    AudioBP {
-      Volume: 1
-      Falloff: 9000
-      Radius: 100
-    }
-  }
-  InstanceHistory {
-    SelfId: 15372095476578340354
-    SubobjectId: 17524455179460797998
-    InstanceId: 59857602639034439
-    TemplateId: 1835156784608498508
-  }
-}
-Objects {
-  Id: 1967574917739662437
-  Name: "Low Ammo"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 2666393555415504884
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Gunshot Type"
-      Enum {
-        Value: "mc:esfx_gunshot_pistol_revolver:7"
-      }
-    }
-    Overrides {
-      Name: "bp:Gunshot Pitch"
-      Float: 2400
-    }
-    Overrides {
-      Name: "bp:Ricochet Type"
-      Enum {
-        Value: "mc:esfx_gunshot_ricochets:0"
-      }
-    }
-    Overrides {
-      Name: "bp:Ricochet Volume"
-      Float: 24.0345
-    }
-    Overrides {
-      Name: "bp:Ricochet Pitch"
-      Float: 2400
-    }
-    Overrides {
-      Name: "bp:Gunshot Volume"
-      Float: 25
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 11671637230280120648
-    }
-    TeamSettings {
-    }
-    AudioBP {
-      Volume: 1
-      Falloff: 9000
-      Radius: 100
-    }
-  }
-  InstanceHistory {
-    SelfId: 1967574917739662437
-    SubobjectId: 4407267778105697353
-    InstanceId: 59857602639034439
-    TemplateId: 1835156784608498508
-  }
-}
-Objects {
-  Id: 11212786742508045051
-  Name: "Overrun_Weapon_Audio"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 2666393555415504884
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:AttackAbility"
-      ObjectReference {
-        SelfId: 841534158063459245
-      }
-    }
-    Overrides {
-      Name: "cs:LowAmmoSound"
-      ObjectReference {
-        SelfId: 1967574917739662437
-      }
-    }
-    Overrides {
-      Name: "cs:MuzzleSound"
-      ObjectReference {
-        SelfId: 15372095476578340354
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 7836242191904254717
-    }
-  }
-  InstanceHistory {
-    SelfId: 11212786742508045051
-    SubobjectId: 13689863582352829143
-    InstanceId: 59857602639034439
-    TemplateId: 1835156784608498508
-  }
-}
-Objects {
-  Id: 872004262838859230
-  Name: "Station"
-  Transform {
-    Location {
-      X: 1484.85205
-      Y: -8027.97559
-    }
-    Rotation {
-      Yaw: -0.673706055
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:trigger"
-      ObjectReference {
-        SelfId: 4633552652896731845
-      }
-    }
-    Overrides {
-      Name: "cs:geo"
-      ObjectReference {
-        SelfId: 12163277286697223373
-      }
-    }
-    Overrides {
-      Name: "cs:can_afford_color"
-      Color {
-        R: 0.14180623
-        G: 0.14180623
-        B: 0.76052475
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "cs:cant_afford_color"
-      Color {
-        R: 0.68200016
-        G: 3.25203018e-07
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "cs:ui"
-      ObjectReference {
-        SelfId: 2989902567877894445
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceon"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceon"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Station"
   }
 }
 Objects {
@@ -496,9 +78,8 @@ Objects {
     Overrides {
       Name: "cs:can_afford_color"
       Color {
-        R: 0.14180623
-        G: 0.14180623
-        B: 0.76052475
+        R: 1
+        G: 1
         A: 1
       }
     }
@@ -526,58 +107,6 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "Station_1"
-  }
-}
-Objects {
-  Id: 4697589115697704606
-  Name: "Overrun Dummy"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  WantsNetworking: true
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 3491882363712052561
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Overrun Dummy"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 702.624512
-            Y: -8784.89941
-            Z: -0.100341797
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-        Overrides {
-          Name: "Visible"
-          Enum {
-            Value: "mc:evisibilitysetting:forceon"
-          }
-        }
-        Overrides {
-          Name: "Collidable"
-          Enum {
-            Value: "mc:ecollisionsetting:forceon"
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 17059684618329394520
-    }
   }
 }
 Objects {
@@ -1787,7 +1316,7 @@ Objects {
       }
     }
     Text {
-      Label: "[H] for Help, [P] for notes"
+      Label: "[H] for Help"
       Color {
         R: 1
         G: 1
@@ -1884,7 +1413,6 @@ Objects {
   }
   ParentId: 7709228761076672015
   ChildIds: 11771603479648913308
-  ChildIds: 7928844010165213614
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1927,438 +1455,6 @@ Objects {
     SubobjectId: 12538310932224241879
     InstanceId: 7367963321086995699
     TemplateId: 7808514694293132521
-  }
-}
-Objects {
-  Id: 7928844010165213614
-  Name: "Box"
-  Transform {
-    Location {
-    }
-    Rotation {
-      Yaw: -2.9882076e-06
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 1061648515972012744
-  ChildIds: 11504562025854439518
-  ChildIds: 14142818679814699365
-  ChildIds: 2007291231460301223
-  ChildIds: 12212976261200101054
-  ChildIds: 15220804428146119214
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    Width: 200
-    Height: 100
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    UseParentWidth: true
-    UseParentHeight: true
-    Image {
-      Brush {
-      }
-      Color {
-        R: 0.00647617318
-        B: 0.0340000391
-        A: 0.5
-      }
-      TeamSettings {
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 9402941867340807671
-    SubobjectId: 17654841973569191533
-    InstanceId: 7367963321086995699
-    TemplateId: 7808514694293132521
-  }
-}
-Objects {
-  Id: 15220804428146119214
-  Name: "UI Text Box"
-  Transform {
-    Location {
-    }
-    Rotation {
-      Yaw: -2.9882076e-06
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 7928844010165213614
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    Width: 200
-    Height: 40
-    UIX: 30
-    UIY: 239.56366
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    UseParentWidth: true
-    Text {
-      Label: "the name \"CommanderFoo\".  Feel free to contact me with your bugs and suggestions."
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      Size: 18
-      Justification {
-        Value: "mc:etextjustify:left"
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 12212976261200101054
-  Name: "UI Text Box"
-  Transform {
-    Location {
-    }
-    Rotation {
-      Yaw: -2.9882076e-06
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 7928844010165213614
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    Width: 200
-    Height: 40
-    UIX: 30
-    UIY: 208.245468
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    UseParentWidth: true
-    Text {
-      Label: "If you would prefer to use Discord, then you can find me in the Official Core channel under"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      Size: 18
-      Justification {
-        Value: "mc:etextjustify:left"
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 2007291231460301223
-  Name: "UI Text Box"
-  Transform {
-    Location {
-    }
-    Rotation {
-      Yaw: -2.9882076e-06
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 7928844010165213614
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    Width: 200
-    Height: 40
-    UIX: 30
-    UIY: 154.682129
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    UseParentWidth: true
-    Text {
-      Label: "This game is current in Alpha, please report any bugs."
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      Size: 18
-      Justification {
-        Value: "mc:etextjustify:left"
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 14142818679814699365
-  Name: "UI Text Box"
-  Transform {
-    Location {
-    }
-    Rotation {
-      Yaw: -2.03555488e-13
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 7928844010165213614
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    Width: 200
-    Height: 40
-    UIX: 30
-    UIY: 94.5342331
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    UseParentWidth: true
-    Text {
-      Label: "Future patch notes will be shown here."
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      Size: 18
-      Justification {
-        Value: "mc:etextjustify:left"
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 11504562025854439518
-  Name: "Title"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 7928844010165213614
-  ChildIds: 14898479306869882470
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    Width: 450
-    Height: 44
-    UIY: 25
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    UseParentWidth: true
-    Text {
-      Label: "Patch Notes"
-      Color {
-        R: 1
-        G: 1
-        A: 1
-      }
-      Size: 25
-      Justification {
-        Value: "mc:etextjustify:center"
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topcenter"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topcenter"
-        }
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 3876043527026307782
-    SubobjectId: 4806772359499002204
-    InstanceId: 7367963321086995699
-    TemplateId: 7808514694293132521
-  }
-}
-Objects {
-  Id: 14898479306869882470
-  Name: "UI Image"
-  Transform {
-    Location {
-      X: -84.7567291
-      Y: 67.3927917
-      Z: -95.37854
-    }
-    Rotation {
-      Yaw: 5.15066767
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 11504562025854439518
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    Width: 160
-    Height: 1
-    UIY: 49.1760216
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Image {
-      Brush {
-        Id: 6632827048166756154
-      }
-      Color {
-        R: 1
-        G: 1
-        A: 0.379
-      }
-      TeamSettings {
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topcenter"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topcenter"
-        }
-      }
-    }
   }
 }
 Objects {
@@ -2582,7 +1678,7 @@ Objects {
     }
     UseParentWidth: true
     Text {
-      Label: "This game is current in Alpha, please report any bugs."
+      Label: "This game is currently in Alpha, please report any bugs."
       Color {
         R: 1
         G: 1
@@ -3686,7 +2782,7 @@ Objects {
     }
     UseParentWidth: true
     Text {
-      Label: "At any time you can bring up the [H]elp window when playing.  You can read while killing."
+      Label: "At any time you can bring up the Help window when playing.  You can read while killing."
       Color {
         R: 1
         G: 1
@@ -8301,8 +7397,8 @@ Objects {
     Value: "mc:evisibilitysetting:forceoff"
   }
   Control {
-    Width: 850
-    Height: 65
+    Width: 800
+    Height: 60
     UIY: 150
     RenderTransformPivot {
       Anchor {
@@ -8314,7 +7410,9 @@ Objects {
         Id: 16742125756419714110
       }
       Color {
-        A: 0.567000031
+        R: 0.00647617318
+        B: 0.0340000391
+        A: 0.5
       }
       TeamSettings {
       }
@@ -8360,21 +7458,21 @@ Objects {
   }
   Control {
     Width: 850
-    Height: 65
+    Height: 52
+    UIY: 1.82855284
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
       }
     }
     Text {
-      Label: "Do something something.  Hello World!!!!!!!  Weeeeeee"
+      Label: "fdfdsf dsfdsfds ffds"
       Color {
-        R: 0.14180623
-        G: 0.14180623
-        B: 0.76052475
+        R: 1
+        G: 1
         A: 1
       }
-      Size: 28
+      Size: 24
       Justification {
         Value: "mc:etextjustify:center"
       }

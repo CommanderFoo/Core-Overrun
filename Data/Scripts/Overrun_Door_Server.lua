@@ -6,11 +6,17 @@ local cost = root:GetCustomProperty("cost")
 local in_zone = false
 local is_open = false
 
+local player_events = {}
+
 function on_trigger_enter(t, obj)
 	if(obj:IsA("Player")) then
 		in_zone = true
 
-		obj.bindingPressedEvent:Connect(function(player, binding)
+		if(player_events[obj.id] ~= nil) then
+			player_events[obj.id]:Disconnect()
+		end
+
+		player_events[obj.id] = obj.bindingPressedEvent:Connect(function(player, binding)
 			if(in_zone and binding == "ability_extra_33" and obj:GetResource("is_down") == 0 and not is_open) then
 				local money = obj:GetResource("money")
 
@@ -39,6 +45,10 @@ end
 
 function on_trigger_exit(t, obj)
 	if(obj:IsA("Player")) then
+		if(player_events[obj.id] ~= nil) then
+			player_events[obj.id]:Disconnect()
+		end
+		
 		in_zone = false
 	end
 end

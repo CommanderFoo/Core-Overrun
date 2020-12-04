@@ -36,7 +36,7 @@
           }
           Overrides {
             Name: "cs:price"
-            Int: 1000
+            Int: 1200
           }
           Overrides {
             Name: "cs:ammo_price"

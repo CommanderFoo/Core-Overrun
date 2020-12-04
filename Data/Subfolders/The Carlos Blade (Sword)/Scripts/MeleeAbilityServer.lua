@@ -92,7 +92,7 @@ end
 function OnEquipped(equipment, player)	
 	Task.Wait(0.1)
 	
-	if(EQUIPMENT == nil) then
+	if(EQUIPMENT == nil or EQUIPMENT.collision == nil) then
 		return
 	end
 	

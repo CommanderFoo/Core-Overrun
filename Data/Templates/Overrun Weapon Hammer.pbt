@@ -53,6 +53,14 @@
             Bool: true
           }
           Overrides {
+            Name: "cs:upgrade_asset_id"
+            String: "0E877AA667D667A9"
+          }
+          Overrides {
+            Name: "cs:upgrade_price"
+            Int: 5000
+          }
+          Overrides {
             Name: "cs:EquipmentStance:tooltip"
             String: "The stance animation when a player picks up the equipment."
           }

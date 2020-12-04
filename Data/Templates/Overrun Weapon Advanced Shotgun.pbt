@@ -113,6 +113,14 @@
             Int: 60
           }
           Overrides {
+            Name: "cs:upgrade_asset_id"
+            String: "91F33F5EB3F06599"
+          }
+          Overrides {
+            Name: "cs:upgrade_price"
+            Int: 5000
+          }
+          Overrides {
             Name: "cs:BaseDamage:tooltip"
             String: "Normal damage that this weapon will do to enemy players."
           }

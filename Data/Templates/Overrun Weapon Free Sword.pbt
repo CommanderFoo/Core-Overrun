@@ -7,7 +7,7 @@
       RootId: 3147868633459346923
       Objects {
         Id: 3147868633459346923
-        Name: "Overrun Free  Sword"
+        Name: "Overrun Weapon Free Sword"
         Transform {
           Scale {
             X: 1
@@ -51,6 +51,14 @@
           Overrides {
             Name: "cs:asset_id"
             String: "E4761CD2CECEFBD8"
+          }
+          Overrides {
+            Name: "cs:upgrade_asset_id"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:upgrade_price"
+            Int: -1
           }
           Overrides {
             Name: "cs:EquipmentStance:tooltip"

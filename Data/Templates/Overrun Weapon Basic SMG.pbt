@@ -33,6 +33,14 @@
             Name: "cs:ammo_max"
             Int: 160
           }
+          Overrides {
+            Name: "cs:upgrade_asset_id"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:upgrade_price"
+            Int: -1
+          }
         }
         WantsNetworking: true
         Collidable_v2 {

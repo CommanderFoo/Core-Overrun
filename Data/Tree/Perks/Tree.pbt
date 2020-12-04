@@ -39,6 +39,14 @@ Objects {
             Yaw: -123.682632
           }
         }
+        Overrides {
+          Name: "cs:can_afford_color"
+          Color {
+            R: 1
+            G: 1
+            A: 1
+          }
+        }
       }
     }
     TemplateAsset {
@@ -82,6 +90,14 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
+          }
+        }
+        Overrides {
+          Name: "cs:can_afford_color"
+          Color {
+            R: 1
+            G: 1
+            A: 1
           }
         }
       }

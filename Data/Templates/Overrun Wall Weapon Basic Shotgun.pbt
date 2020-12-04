@@ -15,7 +15,7 @@
             Z: 1
           }
         }
-        ParentId: 6538324789638676258
+        ParentId: 4781671109827199097
         ChildIds: 2713240632416929296
         ChildIds: 5527795154040717987
         ChildIds: 11503849078943744678
@@ -36,7 +36,7 @@
           }
           Overrides {
             Name: "cs:price"
-            Int: 1000
+            Int: 1200
           }
           Overrides {
             Name: "cs:ammo_price"
@@ -71,6 +71,14 @@
           Overrides {
             Name: "cs:is_melee"
             Bool: false
+          }
+          Overrides {
+            Name: "cs:upgrade_asset_id"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:upgrade_price"
+            Int: 5000
           }
         }
         Collidable_v2 {

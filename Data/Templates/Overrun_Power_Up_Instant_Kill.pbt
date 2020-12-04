@@ -41,7 +41,7 @@
           }
           Overrides {
             Name: "cs:duration"
-            Int: 15
+            Int: 25
           }
           Overrides {
             Name: "cs:flicker_speed_fast_time"
@@ -54,6 +54,10 @@
           Overrides {
             Name: "cs:power_up"
             String: "instant_kill"
+          }
+          Overrides {
+            Name: "cs:flick_after"
+            Int: 5
           }
         }
         WantsNetworking: true

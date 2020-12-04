@@ -14,8 +14,8 @@ local local_player = Game.GetLocalPlayer()
 function Tick(dt)
 	if(queue:length() > 0 and current_item == nil) then
 		current_item = queue:pop()
-		in_tween = PIXELDEPTH.Tween:new(1.3, {v = current_item.offset}, {v = -50})
-		out_tween = PIXELDEPTH.Tween:new(1.3, {v = -50}, {v = current_item.offset})
+		in_tween = PIXELDEPTH.Tween:new(1.2, {v = current_item.offset}, {v = -50})
+		out_tween = PIXELDEPTH.Tween:new(1.2, {v = -50}, {v = current_item.offset})
 	end
 
 	if(current_item ~= nil) then
@@ -50,7 +50,7 @@ function Tick(dt)
 			end)
 			
 			out_tween:set_easing("inOutBack")
-			out_tween:set_delay(5)
+			out_tween:set_delay(4)
 			out_tween:tween(dt)
 		end
 	end
@@ -82,18 +82,18 @@ function handle_notification(type, player_name, has_quick_revive)
 		item.desc = "Max Ammo has been picked up for everyone."
 	elseif(type == "doublepoints") then
 		item.title = "Double Points" .. name
-		item.desc = "Double Points has been picked up for 15 seconds."
+		item.desc = "Double Points has been picked up for 25 seconds."
 	elseif(type == "instantkill") then
 		item.title = "Instant Kill" .. name
-		item.desc = "Instant Kill has been picked up for 15 seconds."
+		item.desc = "Instant Kill has been picked up for 25 seconds."
 	elseif(type == "spitters") then
 		item.title = "Spitters"
-		item.desc = "Spitters are incominng, be careful and stay on the move."
+		item.desc = "Spitters are incominng, stay on the move."
 	elseif(type == "barrier") then
 		item.title = "Barrier Open" .. name
 		item.desc = "A Barrier has been purchased and opens up an area."
 	elseif(type == "playerdown") then
-		local revive_time = 20
+		local revive_time = 15
 
 		if(has_quick_revive) then
 			revive_time = 10
@@ -115,12 +115,12 @@ function handle_notification(type, player_name, has_quick_revive)
 	elseif(type == "playerdead" and local_player.name ~= player_name) then
 		item.title = "Player Dead" .. name
 		item.desc = "A played has died and will respawn next round."
-	elseif(type == "buyupgraded") then
+	elseif(type == "wepaonupgraded") then
 		item.title = "Weapon Upgraded"
 		item.desc = "You have upgraded your weapon to the next tier."
-	elseif(type == "buymaxupgraded") then
+	elseif(type == "weaponmaxupgraded") then
 		item.title = "Weapon Upgraded Max"
-		item.desc = "You have upgraded your weapon to the max tier at this station."
+		item.desc = "You have upgraded your weapon to the max tier."
 	end
 
 	if(item.title ~= "") then

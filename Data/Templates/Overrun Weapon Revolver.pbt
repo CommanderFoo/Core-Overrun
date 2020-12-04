@@ -16,6 +16,7 @@
           }
         }
         ParentId: 4781671109827199097
+        ChildIds: 14752360852595563672
         ChildIds: 9328430862016239740
         ChildIds: 11675705988199002280
         ChildIds: 8224910822260623548
@@ -115,6 +116,14 @@
           Overrides {
             Name: "cs:ammo_max"
             Int: 48
+          }
+          Overrides {
+            Name: "cs:upgrade_asset_id"
+            String: "BB487E7B052BFA47"
+          }
+          Overrides {
+            Name: "cs:upgrade_price"
+            Int: 5000
           }
           Overrides {
             Name: "cs:BaseDamage:tooltip"
@@ -253,6 +262,212 @@
         }
       }
       Objects {
+        Id: 14752360852595563672
+        Name: "Audio"
+        Transform {
+          Location {
+            X: -995.589355
+            Y: 8104.24414
+            Z: 0.100585938
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1.00000012
+            Y: 1.00000012
+            Z: 1
+          }
+        }
+        ParentId: 4325941758412637572
+        ChildIds: 10447805422074681487
+        ChildIds: 18023228209780350959
+        ChildIds: 12429729364207607811
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        NetworkContext {
+        }
+      }
+      Objects {
+        Id: 10447805422074681487
+        Name: "Overrun_Weapon_Audio"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 14752360852595563672
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:AttackAbility"
+            ObjectReference {
+              SubObjectId: 8224910822260623548
+            }
+          }
+          Overrides {
+            Name: "cs:LowAmmoSound"
+            ObjectReference {
+              SubObjectId: 18023228209780350959
+            }
+          }
+          Overrides {
+            Name: "cs:MuzzleSound"
+            ObjectReference {
+              SubObjectId: 12429729364207607811
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Script {
+          ScriptAsset {
+            Id: 7836242191904254717
+          }
+        }
+      }
+      Objects {
+        Id: 18023228209780350959
+        Name: "Low Ammo"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 14752360852595563672
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Gunshot Type"
+            Enum {
+              Value: "mc:esfx_gunshot_pistol_revolver:7"
+            }
+          }
+          Overrides {
+            Name: "bp:Gunshot Pitch"
+            Float: 2400
+          }
+          Overrides {
+            Name: "bp:Ricochet Type"
+            Enum {
+              Value: "mc:esfx_gunshot_ricochets:0"
+            }
+          }
+          Overrides {
+            Name: "bp:Ricochet Volume"
+            Float: 24.0345
+          }
+          Overrides {
+            Name: "bp:Ricochet Pitch"
+            Float: 2400
+          }
+          Overrides {
+            Name: "bp:Gunshot Volume"
+            Float: 25
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 11671637230280120648
+          }
+          TeamSettings {
+          }
+          AudioBP {
+            Volume: 1
+            Falloff: 9000
+            Radius: 100
+          }
+        }
+      }
+      Objects {
+        Id: 12429729364207607811
+        Name: "Shoot Sound"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 14752360852595563672
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Gunshot Type"
+            Enum {
+              Value: "mc:esfx_gunshot_pistol_revolver:9"
+            }
+          }
+          Overrides {
+            Name: "bp:Gunshot Pitch"
+            Float: 2400
+          }
+          Overrides {
+            Name: "bp:Ricochet Type"
+            Enum {
+              Value: "mc:esfx_gunshot_ricochets:0"
+            }
+          }
+          Overrides {
+            Name: "bp:Ricochet Volume"
+            Float: 25
+          }
+          Overrides {
+            Name: "bp:Ricochet Pitch"
+            Float: 2400
+          }
+          Overrides {
+            Name: "bp:Gunshot Volume"
+            Float: 25
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 11671637230280120648
+          }
+          TeamSettings {
+          }
+          AudioBP {
+            Volume: 1
+            Falloff: 9000
+            Radius: 100
+          }
+        }
+      }
+      Objects {
         Id: 9328430862016239740
         Name: "Server Context"
         Transform {
@@ -268,7 +483,6 @@
         }
         ParentId: 4325941758412637572
         ChildIds: 8258889545441500172
-        ChildIds: 9578454870862392216
         ChildIds: 14653913530022474574
         UnregisteredParameters {
         }
@@ -309,35 +523,6 @@
         Script {
           ScriptAsset {
             Id: 12210489528647249200
-          }
-        }
-      }
-      Objects {
-        Id: 9578454870862392216
-        Name: "WeaponProjectileKnockbackServer"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1.00000012
-            Y: 1.00000012
-            Z: 1
-          }
-        }
-        ParentId: 9328430862016239740
-        UnregisteredParameters {
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Script {
-          ScriptAsset {
-            Id: 6379257716595703618
           }
         }
       }
@@ -416,8 +601,6 @@
         ParentId: 11675705988199002280
         ChildIds: 3314661608195581539
         ChildIds: 931576394806181583
-        ChildIds: 309615042904430660
-        ChildIds: 3200499494049598148
         UnregisteredParameters {
         }
         Collidable_v2 {
@@ -486,64 +669,6 @@
         Script {
           ScriptAsset {
             Id: 17169051963161242240
-          }
-        }
-      }
-      Objects {
-        Id: 309615042904430660
-        Name: "WeaponAmmoFeedbackClient"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1.00000012
-            Y: 1.00000012
-            Z: 1
-          }
-        }
-        ParentId: 15095978927394395233
-        UnregisteredParameters {
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Script {
-          ScriptAsset {
-            Id: 16975801195317677333
-          }
-        }
-      }
-      Objects {
-        Id: 3200499494049598148
-        Name: "WeaponAutoReloadClient"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1.00000012
-            Y: 1.00000012
-            Z: 1
-          }
-        }
-        ParentId: 15095978927394395233
-        UnregisteredParameters {
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Script {
-          ScriptAsset {
-            Id: 8163343952479535019
           }
         }
       }
@@ -1022,6 +1147,15 @@
             Id: 16535125421909335487
           }
         }
+      }
+    }
+    Assets {
+      Id: 11671637230280120648
+      Name: "Gunshot Pistol & Revolver Set 01 SFX"
+      PlatformAssetType: 10
+      PrimaryAsset {
+        AssetType: "AudioBlueprintAssetRef"
+        AssetId: "sfxabp_gunshot_revolver_ref"
       }
     }
     Assets {

@@ -504,7 +504,7 @@ Objects {
     Value: "mc:evisibilitysetting:forceoff"
   }
   Control {
-    Width: 850
+    Width: 800
     Height: 65
     UIY: 150
     RenderTransformPivot {
@@ -517,7 +517,9 @@ Objects {
         Id: 16742125756419714110
       }
       Color {
-        A: 0.567000031
+        R: 0.00647617318
+        B: 0.0340000391
+        A: 0.5
       }
       TeamSettings {
       }
@@ -568,8 +570,8 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Control {
-    Width: 850
-    Height: 65
+    Width: 800
+    Height: 49
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -577,9 +579,8 @@ Objects {
     }
     Text {
       Color {
-        R: 0.14180623
-        G: 0.14180623
-        B: 0.76052475
+        R: 1
+        G: 1
         A: 1
       }
       Size: 28
@@ -1975,7 +1976,7 @@ Objects {
     Value: "mc:evisibilitysetting:forceoff"
   }
   Control {
-    Width: 850
+    Width: 800
     Height: 65
     UIY: 150
     RenderTransformPivot {
@@ -1988,7 +1989,9 @@ Objects {
         Id: 16742125756419714110
       }
       Color {
-        A: 0.567000031
+        R: 0.00647617318
+        B: 0.0340000391
+        A: 0.5
       }
       TeamSettings {
       }
@@ -2039,8 +2042,8 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Control {
-    Width: 850
-    Height: 65
+    Width: 800
+    Height: 49
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -2048,9 +2051,8 @@ Objects {
     }
     Text {
       Color {
-        R: 0.14180623
-        G: 0.14180623
-        B: 0.76052475
+        R: 1
+        G: 1
         A: 1
       }
       Size: 28
@@ -3446,7 +3448,7 @@ Objects {
     Value: "mc:evisibilitysetting:forceoff"
   }
   Control {
-    Width: 850
+    Width: 800
     Height: 65
     UIY: 150
     RenderTransformPivot {
@@ -3459,7 +3461,9 @@ Objects {
         Id: 16742125756419714110
       }
       Color {
-        A: 0.567000031
+        R: 0.00647617318
+        B: 0.0340000391
+        A: 0.5
       }
       TeamSettings {
       }
@@ -3510,8 +3514,8 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Control {
-    Width: 850
-    Height: 65
+    Width: 800
+    Height: 49
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -3519,9 +3523,8 @@ Objects {
     }
     Text {
       Color {
-        R: 0.14180623
-        G: 0.14180623
-        B: 0.76052475
+        R: 1
+        G: 1
         A: 1
       }
       Size: 28
@@ -4917,7 +4920,7 @@ Objects {
     Value: "mc:evisibilitysetting:forceoff"
   }
   Control {
-    Width: 850
+    Width: 800
     Height: 65
     UIY: 150
     RenderTransformPivot {
@@ -4930,7 +4933,9 @@ Objects {
         Id: 16742125756419714110
       }
       Color {
-        A: 0.567000031
+        R: 0.00647617318
+        B: 0.0340000391
+        A: 0.5
       }
       TeamSettings {
       }
@@ -4981,8 +4986,8 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Control {
-    Width: 850
-    Height: 65
+    Width: 800
+    Height: 49
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -4990,9 +4995,8 @@ Objects {
     }
     Text {
       Color {
-        R: 0.14180623
-        G: 0.14180623
-        B: 0.76052475
+        R: 1
+        G: 1
         A: 1
       }
       Size: 28
@@ -6388,7 +6392,7 @@ Objects {
     Value: "mc:evisibilitysetting:forceoff"
   }
   Control {
-    Width: 850
+    Width: 800
     Height: 65
     UIY: 150
     RenderTransformPivot {
@@ -6401,7 +6405,9 @@ Objects {
         Id: 16742125756419714110
       }
       Color {
-        A: 0.567000031
+        R: 0.00647617318
+        B: 0.0340000391
+        A: 0.5
       }
       TeamSettings {
       }
@@ -6452,8 +6458,8 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Control {
-    Width: 850
-    Height: 65
+    Width: 800
+    Height: 49
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -6461,12 +6467,11 @@ Objects {
     }
     Text {
       Color {
-        R: 0.14180623
-        G: 0.14180623
-        B: 0.76052475
+        R: 1
+        G: 1
         A: 1
       }
-      Size: 28
+      Size: 23
       Justification {
         Value: "mc:etextjustify:center"
       }

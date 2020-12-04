@@ -38,6 +38,9 @@ function on_trigger_enter(t, obj)
 				ui.text = "Upgrading your weapon will cost " .. PIXELDEPTH.Utils.number_format(upgrade_price)
 				ui:SetColor(cant_afford_color)
 			end
+		elseif(upgrade_price == -1) then
+			ui.text = "This weapon can not be upgraded."
+			ui:SetColor(cant_afford_color)
 		else
 			ui.text = "Your weapon can't be upgraded anymore."
 			ui:SetColor(cant_afford_color)

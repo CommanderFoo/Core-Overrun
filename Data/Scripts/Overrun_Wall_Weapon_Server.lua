@@ -8,12 +8,17 @@ local ammo_price = root:GetCustomProperty("ammo_price")
 local is_melee = root:GetCustomProperty("is_melee")
 
 local in_zone = false
+local player_events = {}
 
 function on_trigger_enter(t, obj)
 	if(obj:IsA("Player") and obj:GetResource("is_down") == 0) then
 		in_zone = true
 
-		obj.bindingPressedEvent:Connect(function(player, binding)
+		if(player_events[obj.id] ~= nil) then
+			player_events[obj.id]:Disconnect()
+		end
+
+		player_events[obj.id] = obj.bindingPressedEvent:Connect(function(player, binding)
 			if(in_zone and binding == "ability_extra_33" and obj:GetResource("is_down") == 0) then
 				if(#obj:GetEquipment() > 0) then
 					local equipment = obj:GetEquipment()[1]
@@ -56,6 +61,10 @@ end
 
 function on_trigger_exit(t, obj)
 	if(obj:IsA("Player")) then
+		if(player_events[obj.id] ~= nil) then
+			player_events[obj.id]:Disconnect()
+		end
+		
 		in_zone = false
 	end
 end

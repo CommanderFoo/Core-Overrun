@@ -38,6 +38,14 @@ Objects {
           Rotator {
           }
         }
+        Overrides {
+          Name: "cs:can_afford_color"
+          Color {
+            R: 1
+            G: 1
+            A: 1
+          }
+        }
       }
     }
     TemplateAsset {
@@ -82,6 +90,14 @@ Objects {
           Name: "Rotation"
           Rotator {
             Yaw: 111.080833
+          }
+        }
+        Overrides {
+          Name: "cs:can_afford_color"
+          Color {
+            R: 1
+            G: 1
+            A: 1
           }
         }
       }
@@ -130,6 +146,14 @@ Objects {
             Yaw: -90
           }
         }
+        Overrides {
+          Name: "cs:can_afford_color"
+          Color {
+            R: 1
+            G: 1
+            A: 1
+          }
+        }
       }
     }
     TemplateAsset {
@@ -174,6 +198,14 @@ Objects {
           Name: "Rotation"
           Rotator {
             Yaw: 180
+          }
+        }
+        Overrides {
+          Name: "cs:can_afford_color"
+          Color {
+            R: 1
+            G: 1
+            A: 1
           }
         }
       }

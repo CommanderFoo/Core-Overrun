@@ -23,6 +23,19 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 4349602742322010347
+      value {
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 1
+            G: 1
+            A: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 4378342255339779195
       value {
         Overrides {
@@ -49,7 +62,34 @@ Objects {
         }
         Overrides {
           Name: "cs:revive_duration"
-          Int: 5
+          Int: 15
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6857586211677339966
+      value {
+        Overrides {
+          Name: "BackgroundColor"
+          Color {
+            R: 0.00647617318
+            B: 0.0340000391
+            A: 0.5
+          }
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 0.0380633548
+            B: 0.218000054
+            A: 1
+          }
+        }
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:forceoff"
+          }
         }
       }
     }
@@ -81,6 +121,19 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 4349602742322010347
+      value {
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 1
+            G: 1
+            A: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 4378342255339779195
       value {
         Overrides {
@@ -107,7 +160,34 @@ Objects {
         }
         Overrides {
           Name: "cs:revive_duration"
-          Int: 5
+          Int: 15
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6857586211677339966
+      value {
+        Overrides {
+          Name: "BackgroundColor"
+          Color {
+            R: 0.00647617318
+            B: 0.0340000391
+            A: 0.5
+          }
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 0.0380633548
+            B: 0.218000054
+            A: 1
+          }
+        }
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:forceoff"
+          }
         }
       }
     }
@@ -139,6 +219,19 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 4349602742322010347
+      value {
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 1
+            G: 1
+            A: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 4378342255339779195
       value {
         Overrides {
@@ -165,7 +258,34 @@ Objects {
         }
         Overrides {
           Name: "cs:revive_duration"
-          Int: 5
+          Int: 15
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6857586211677339966
+      value {
+        Overrides {
+          Name: "BackgroundColor"
+          Color {
+            R: 0.00647617318
+            B: 0.0340000391
+            A: 0.5
+          }
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 0.0380633548
+            B: 0.218000054
+            A: 1
+          }
+        }
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:forceoff"
+          }
         }
       }
     }
@@ -193,6 +313,19 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 4349602742322010347
+      value {
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 1
+            G: 1
+            A: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 4378342255339779195
       value {
         Overrides {
@@ -211,7 +344,38 @@ Objects {
         }
         Overrides {
           Name: "cs:revive_duration"
-          Int: 5
+          Int: 15
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6857586211677339966
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:forceoff"
+          }
+        }
+        Overrides {
+          Name: "BackgroundColor"
+          Color {
+            R: 0.00647617318
+            B: 0.0340000391
+            A: 0.5
+          }
+        }
+        Overrides {
+          Name: "Percent"
+          Float: 1
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 0.0380633548
+            B: 0.218000054
+            A: 1
+          }
         }
       }
     }

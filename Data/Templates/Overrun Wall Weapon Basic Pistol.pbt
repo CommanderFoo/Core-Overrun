@@ -36,7 +36,7 @@
           }
           Overrides {
             Name: "cs:price"
-            Int: 500
+            Int: 750
           }
           Overrides {
             Name: "cs:ammo_price"
@@ -45,9 +45,8 @@
           Overrides {
             Name: "cs:can_afford_color"
             Color {
-              R: 0.14180623
-              G: 0.14180623
-              B: 0.76052475
+              R: 1
+              G: 1
               A: 1
             }
           }

@@ -35,11 +35,11 @@
           }
           Overrides {
             Name: "cs:upgrade_asset_id"
-            String: "17D856EEEBBEE20B"
+            String: ""
           }
           Overrides {
             Name: "cs:upgrade_price"
-            Int: 5000
+            Int: -1
           }
         }
         WantsNetworking: true

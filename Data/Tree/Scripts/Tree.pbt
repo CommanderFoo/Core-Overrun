@@ -1,6 +1,32 @@
 ﻿Name: "Scripts"
 RootId: 5539997602360125933
 Objects {
+  Id: 8217406139491570638
+  Name: "DEBUG"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5539997602360125933
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "DEBUG"
+  }
+}
+Objects {
   Id: 4313802532582342519
   Name: "Overrun_Weapon_Lookup"
   Transform {
@@ -101,18 +127,6 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:OverrunWeaponStartingPistolTier2"
-      AssetReference {
-        Id: 1835156784608498508
-      }
-    }
-    Overrides {
-      Name: "cs:OverrunWeaponStartingPistolTier3"
-      AssetReference {
-        Id: 6553324621677147087
-      }
-    }
-    Overrides {
       Name: "cs:OverrunWeapon2HandedSwordTier2"
       AssetReference {
         Id: 7017684837337458106
@@ -125,15 +139,99 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:OverrunWeaponBasicAssaultTier2"
+      Name: "cs:OverrunWeaponAdvancedAssaultTier2"
       AssetReference {
-        Id: 1718218841999204875
+        Id: 16226993901162392046
       }
     }
     Overrides {
-      Name: "cs:OverrunWeaponBasicAssaultTier3"
+      Name: "cs:OverrunWeaponAdvancedAssaultTier3"
       AssetReference {
-        Id: 10505457374000104638
+        Id: 8737759858538136116
+      }
+    }
+    Overrides {
+      Name: "cs:OverrunWeaponAdvancedPistolTier2"
+      AssetReference {
+        Id: 2789605507050621886
+      }
+    }
+    Overrides {
+      Name: "cs:OverrunWeaponAdvancedPistolTier3"
+      AssetReference {
+        Id: 394860942838040848
+      }
+    }
+    Overrides {
+      Name: "cs:OverrunWeaponAdvancedShotgunTier2"
+      AssetReference {
+        Id: 10516819230818592153
+      }
+    }
+    Overrides {
+      Name: "cs:OverrunWeaponAdvancedShotgunTier3"
+      AssetReference {
+        Id: 11940377638516382672
+      }
+    }
+    Overrides {
+      Name: "cs:OverrunWeaponAdvancedSMGTier2"
+      AssetReference {
+        Id: 14259567467233480565
+      }
+    }
+    Overrides {
+      Name: "cs:OverrunWeaponAdvancedSMGTier3"
+      AssetReference {
+        Id: 17603556603184984149
+      }
+    }
+    Overrides {
+      Name: "cs:OverrunWeaponCrossbowTier2"
+      AssetReference {
+        Id: 8613377789853814429
+      }
+    }
+    Overrides {
+      Name: "cs:OverrunWeaponCrossbowTier3"
+      AssetReference {
+        Id: 7338027603020597966
+      }
+    }
+    Overrides {
+      Name: "cs:OverrunWeaponHammerTier2"
+      AssetReference {
+        Id: 1046940293512193961
+      }
+    }
+    Overrides {
+      Name: "cs:OverrunWeaponHammerTier3"
+      AssetReference {
+        Id: 5779381378270803643
+      }
+    }
+    Overrides {
+      Name: "cs:OverrunWeaponRevolverTier2"
+      AssetReference {
+        Id: 13495175350248536647
+      }
+    }
+    Overrides {
+      Name: "cs:OverrunWeaponRevolverTier3"
+      AssetReference {
+        Id: 8349765453091010003
+      }
+    }
+    Overrides {
+      Name: "cs:OverrunWeaponSniperRifleTier2"
+      AssetReference {
+        Id: 18405700270737045432
+      }
+    }
+    Overrides {
+      Name: "cs:OverrunWeaponSniperRifleTier3"
+      AssetReference {
+        Id: 6386063460561306959
       }
     }
   }
@@ -213,11 +311,11 @@ Objects {
     }
     Overrides {
       Name: "cs:game_start_duration"
-      Int: 2
+      Int: 10
     }
     Overrides {
       Name: "cs:starting_money"
-      Int: 10000000
+      Int: 500
     }
     Overrides {
       Name: "cs:late_join_money_per_round"
@@ -381,7 +479,7 @@ Objects {
     Overrides {
       Name: "cs:starting_weapon"
       AssetReference {
-        Id: 6938449804404030971
+        Id: 16298143866150817198
       }
     }
     Overrides {
@@ -437,11 +535,11 @@ Objects {
     }
     Overrides {
       Name: "cs:instant_kill_duration"
-      Int: 15
+      Int: 25
     }
     Overrides {
       Name: "cs:instant_kill_chance"
-      Int: 20
+      Int: 15
     }
     Overrides {
       Name: "cs:double_points"
@@ -451,11 +549,11 @@ Objects {
     }
     Overrides {
       Name: "cs:double_points_duration"
-      Int: 15
+      Int: 25
     }
     Overrides {
       Name: "cs:double_points_chance"
-      Int: 30
+      Int: 25
     }
     Overrides {
       Name: "cs:max_ammo"
@@ -465,7 +563,7 @@ Objects {
     }
     Overrides {
       Name: "cs:max_ammo_chance"
-      Int: 15
+      Int: 12
     }
   }
   Collidable_v2 {
@@ -501,6 +599,7 @@ Objects {
   ChildIds: 1616209010227049162
   ChildIds: 2600664526236328316
   ChildIds: 2163844371996655319
+  ChildIds: 13225820577735480176
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -508,6 +607,41 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   NetworkContext {
+  }
+}
+Objects {
+  Id: 13225820577735480176
+  Name: "Overrun_Nametag_Client"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17922148234597677997
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:nametag_tpl"
+      AssetReference {
+        Id: 14457330189020935665
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 9976819117252881587
+    }
   }
 }
 Objects {

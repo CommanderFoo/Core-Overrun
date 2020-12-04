@@ -113,6 +113,14 @@
             Int: 90
           }
           Overrides {
+            Name: "cs:upgrade_asset_id"
+            String: "26B6AB6DBF39CBBE"
+          }
+          Overrides {
+            Name: "cs:upgrade_price"
+            Int: 5000
+          }
+          Overrides {
             Name: "cs:BaseDamage:tooltip"
             String: "Normal damage that this weapon will do to enemy players."
           }
@@ -262,7 +270,6 @@
           }
         }
         ParentId: 15938281963487901165
-        ChildIds: 18296743015773731321
         ChildIds: 17718522420298969678
         UnregisteredParameters {
         }
@@ -275,41 +282,6 @@
         }
         NetworkContext {
           Type: Server
-        }
-      }
-      Objects {
-        Id: 18296743015773731321
-        Name: "EquipmentPickupServer"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1.00000012
-            Y: 1.00000012
-            Z: 1
-          }
-        }
-        ParentId: 8454822938286861492
-        UnregisteredParameters {
-          Overrides {
-            Name: "cs:Trigger"
-            ObjectReference {
-              SelfId: 11099727239594088164
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Script {
-          ScriptAsset {
-            Id: 8459825612529451237
-          }
         }
       }
       Objects {
@@ -385,12 +357,9 @@
           }
         }
         ParentId: 12068293658248297113
-        ChildIds: 6964383748507107342
         ChildIds: 1390067410058403447
         ChildIds: 11198497708543378903
         ChildIds: 1629401425648955667
-        ChildIds: 2780278765209540592
-        ChildIds: 11323415445404037297
         UnregisteredParameters {
         }
         Collidable_v2 {
@@ -402,33 +371,6 @@
         Folder {
           IsFilePartition: true
           FilePartitionName: "Scripts_1"
-        }
-      }
-      Objects {
-        Id: 6964383748507107342
-        Name: "EquipmentPickupClient"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1.00000012
-            Y: 1.00000012
-            Z: 1
-          }
-        }
-        ParentId: 8992899154681546236
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Script {
-          ScriptAsset {
-            Id: 440168262593430639
-          }
         }
       }
       Objects {
@@ -515,64 +457,6 @@
         Script {
           ScriptAsset {
             Id: 17169051963161242240
-          }
-        }
-      }
-      Objects {
-        Id: 2780278765209540592
-        Name: "WeaponAmmoFeedbackClient"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1.00000012
-            Y: 1.00000012
-            Z: 1
-          }
-        }
-        ParentId: 8992899154681546236
-        UnregisteredParameters {
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Script {
-          ScriptAsset {
-            Id: 16975801195317677333
-          }
-        }
-      }
-      Objects {
-        Id: 11323415445404037297
-        Name: "WeaponAutoReloadClient"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1.00000012
-            Y: 1.00000012
-            Z: 1
-          }
-        }
-        ParentId: 8992899154681546236
-        UnregisteredParameters {
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Script {
-          ScriptAsset {
-            Id: 8163343952479535019
           }
         }
       }

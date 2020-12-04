@@ -8,7 +8,7 @@ local late_join_money_per_round = script:GetCustomProperty("late_join_money_per_
 local starting_lives = script:GetCustomProperty("starting_lives")
 
 local game_state = "WAITING"
-local timer = 0--game_start_duration
+local timer = game_start_duration
 local round = 1
 local countdown_started = false
 local players = {}
@@ -44,12 +44,10 @@ function player_joined(p)
 	if(game_state == "WAITING" and not countdown_started) then
 		start_count_down()
 	elseif(game_state == "PLAYING") then
-		p.team = 2
+		p.team = 1
 
 		Task.Spawn(function()
 			Task.Wait(5)
-			p.team = 1
-
 			Events.Broadcast("on_update_players_crate")
 		end)
 	end
@@ -85,7 +83,6 @@ function setup_resources(p, lives, reset_total_money, new_player)
 	p:SetResource("lifes", lives)
 	p:SetResource("quick_revive", 0)
 	p:SetResource("juggernog", 0)
-	p:SetResource("fast_hands", 0)
 
 	p.maxHitPoints = 100
 
@@ -215,15 +212,15 @@ function round_completed()
 			Events.BroadcastToAllPlayers("on_notification", "spitters")
 		end
 		
-		local max_spawns = 10
+		local max_spawns = 15
 
 		if(round > 3) then
 			max_spawns = max_spawns + (round + 2)
 		elseif(round % 5 == 0) then
-			max_spawns = 15
+			max_spawns = 10
 		end
 
-		Spawner.context.set_max_spawns(math.min(30, max_spawns))
+		Spawner.context.set_max_spawns(math.min(40, max_spawns))
 		Events.BroadcastToAllPlayers("on_round_start", round)
 		Spawner.context.spawn_zombies()
 	end)

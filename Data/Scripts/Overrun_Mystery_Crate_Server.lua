@@ -43,6 +43,8 @@ local open_time = 0
 local time_until_take_weapon = (random_count * random_interval) + random_interval + weapons_up_time_delay
 local can_take_weapon = false
 
+local player_events = {}
+
 function disable_crate()
 	has_skull = true
 	trigger:SetNetworkedCustomProperty("skull", true)
@@ -73,7 +75,11 @@ function on_trigger_enter(t, obj)
 	if(obj:IsA("Player")) then
 		in_zone = true
 
-		obj.bindingPressedEvent:Connect(function(player, binding)
+		if(player_events[obj.id] ~= nil) then
+			player_events[obj.id]:Disconnect()
+		end
+
+		player_events[obj.id] = obj.bindingPressedEvent:Connect(function(player, binding)
 			if(in_zone and binding == "ability_extra_33" and obj:GetResource("is_down") == 0) then
 				local player_purchased = trigger:GetCustomProperty("player_purchased")
 				local random_index = get_random_index()
@@ -147,6 +153,10 @@ end
 
 function on_trigger_exit(t, obj)
 	if(obj:IsA("Player")) then
+		if(player_events[obj.id] ~= nil) then
+			player_events[obj.id]:Disconnect()
+		end
+		
 		in_zone = false
 	end
 end

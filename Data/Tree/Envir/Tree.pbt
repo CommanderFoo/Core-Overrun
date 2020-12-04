@@ -1,6 +1,45 @@
 ﻿Name: "Envir"
 RootId: 5508549066234980964
 Objects {
+  Id: 4385416386111343334
+  Name: "Plane 1m - One Sided"
+  Transform {
+    Location {
+      X: 1658.34265
+      Y: -7723.75537
+      Z: -0.042535305
+    }
+    Rotation {
+    }
+    Scale {
+      X: 8.50001431
+      Y: 8.50001431
+      Z: 8.50001431
+    }
+  }
+  ParentId: 5508549066234980964
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 16048367406070731799
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
   Id: 18291726727931816741
   Name: "House Props"
   Transform {

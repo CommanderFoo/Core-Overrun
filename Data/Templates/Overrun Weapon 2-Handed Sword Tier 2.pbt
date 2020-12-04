@@ -58,7 +58,7 @@
           }
           Overrides {
             Name: "cs:upgrade_price"
-            Int: 5000
+            Int: 7500
           }
           Overrides {
             Name: "cs:EquipmentStance:tooltip"
