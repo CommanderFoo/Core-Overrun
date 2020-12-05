@@ -5,7 +5,7 @@ local players = {}
 
 local has_resouces_changed = false
 local last_broadcast = 0
-local broadcast_cooldown = 2 -- Every X seconds if there is changes in money, broadcast it to all players.
+local broadcast_cooldown = 3 -- Every X seconds if there is changes in money, broadcast it to all players.
 
 function on_player_damaged(p, damage)
 	Events.BroadcastToPlayer(p, "on_damaged", p.hitPoints)

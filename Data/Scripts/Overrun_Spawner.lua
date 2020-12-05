@@ -142,13 +142,16 @@ function spawn_zombies()
 		set_zombie_stats_per_round()
 	end
 
+	--[[
 	for k, p in pairs(Game.GetPlayers()) do
 		if(p.name == "CommanderFoo") then
 			Events.BroadcastToPlayer(p, "on_debug_spawn_called")
 		end
 	end
+	--]]
 
-	spawn_task = Task.Spawn(function()		
+	spawn_task = Task.Spawn(function()
+		--print("zombie spawned", spawned, killed)
 		local zombie = get_random_zombie_asset()
 		local point = spawn_points[math.random(#spawn_points)]
 		local pos = point:GetWorldPosition()
@@ -164,7 +167,7 @@ function spawn_zombies()
 	end)
 	
 	spawn_task.repeatCount = max - 1
-	spawn_task.repeatInterval = 2
+	spawn_task.repeatInterval = 1.5
 end
 
 function get_total_spawned()
@@ -192,12 +195,11 @@ function zombie_killed(id)
 	Events.Broadcast("on_previous_npc_killed", round, killed, max)
 
 	if(killed >= max) then
-		killed = 0
-
 		if(spawn_task ~= nil) then
 			spawn_task:Cancel()
 		end
 		
+		killed = 0
 		Events.Broadcast("on_all_zombies_killed")
 	end
 end
@@ -239,6 +241,7 @@ Events.Connect("on_door_opened", function(door_name)
 	end
 end)
 
+--[[
 local debug_task = Task.Spawn(function()
 	for k, p in pairs(Game.GetPlayers()) do
 		if(p.name == "CommanderFoo") then
@@ -250,3 +253,4 @@ end)
 
 debug_task.repeatCount = -1
 debug_task.repeatInterval = 0.5
+--]]

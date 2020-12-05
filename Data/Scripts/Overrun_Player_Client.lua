@@ -242,6 +242,7 @@ end
 --	end
 --end
 
+--[[
 Events.Connect("on_weapon_tier_changed", function()
 	local equipment = local_player:GetEquipment()[1]
 	local upgrade_asset_id = equipment:GetCustomProperty("upgrade_asset_id")
@@ -254,6 +255,7 @@ Events.Connect("on_weapon_tier_changed", function()
 
 	Events.Broadcast("on_notification", notify_key, local_player.name)
 end)
+--]]
 
 Events.Connect("on_player_money_changed", money_changed)
 Events.Connect("on_purchase_complete", purchase_complete)

@@ -59,6 +59,8 @@ function player_left(p)
 	if(players[p.id]) then
 		players[p.id] = nil
 	end
+
+	check_player_status()
 end
 
 function setup_resources(p, lives, reset_total_money, new_player)
@@ -98,12 +100,11 @@ function on_player_died(p)
 
 	players[p.id].dead = true
 
-	if(all_dead()) then
-		if(round_task ~= nil) then
-			round_task:Cancel()
-			round_task = nil
-		end
+	check_player_status()
+end
 
+function check_player_status()
+	if(all_dead()) then
 		Spawner.context.reset()
 		
 		Task.Spawn(function()
@@ -202,32 +203,31 @@ function start_count_down()
 end
 
 function round_completed()
+	--print("ROund complete")
+	Events.BroadcastToAllPlayers("on_round_completed", round)
 	round = round + 1
 
 	Spawner.context.set_round(round)
 
-	round_task = Task.Spawn(function()
-		spawn_players(false, starting_lives, false)
-		Task.Wait(round_end_duration)
+	spawn_players(false, starting_lives, false)
 
-		if(round % 5 == 0) then
-			Events.BroadcastToAllPlayers("on_notification", "spitters")
-		end
-		
-		local max_spawns = 15
+	Task.Wait(round_end_duration)
 
-		if(round % 5 == 0) then
-			max_spawns = 10
-		elseif(round > 3) then
-			max_spawns = max_spawns + (round + 2)
-		end
+	if(round % 5 == 0) then
+		Events.BroadcastToAllPlayers("on_notification", "spitters")
+	end
+	
+	local max_spawns = 15
 
-		Spawner.context.set_max_spawns(math.min(40, max_spawns))
-		Events.BroadcastToAllPlayers("on_round_start", round)
-		Spawner.context.spawn_zombies()
-	end)
+	if(round % 5 == 0) then
+		max_spawns = 10
+	elseif(round > 3) then
+		max_spawns = max_spawns + (round + 2)
+	end
 
-	Events.BroadcastToAllPlayers("on_round_completed", round - 1)
+	Spawner.context.set_max_spawns(math.min(40, max_spawns))
+	Events.BroadcastToAllPlayers("on_round_start", round)
+	Spawner.context.spawn_zombies()	
 end
 
 Events.Connect("on_all_zombies_killed", round_completed)

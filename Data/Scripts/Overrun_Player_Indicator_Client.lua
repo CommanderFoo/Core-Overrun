@@ -46,25 +46,26 @@ function Tick()
 		juggernog_ui.visibility = Visibility.FORCE_OFF
 	end
 
-	local equipment = local_player:GetEquipment()[1]
-	local upgrade_asset_id = equipment:GetCustomProperty("upgrade_asset_id")
+	if(#local_player:GetEquipment() > 0) then
+		local equipment = local_player:GetEquipment()[1]
+		local upgrade_asset_id = equipment:GetCustomProperty("upgrade_asset_id")
 
-	if(upgrade_asset_id ~= "") then
-		local u_screen_pos = UI.GetScreenPosition(upgrader:GetWorldPosition())
+		if(upgrade_asset_id ~= "") then
+			local u_screen_pos = UI.GetScreenPosition(upgrader:GetWorldPosition())
 
-		if(u_screen_pos) then
-			if(u_screen_pos.x > 0 and u_screen_pos.x < screen.x and u_screen_pos.y > 0 and u_screen_pos.y < screen.y) then
-				upgrader_ui.x = u_screen_pos.x
-				upgrader_ui.y = u_screen_pos.y
-				upgrader_ui.visibility = Visibility.FORCE_ON
+			if(u_screen_pos) then
+				if(u_screen_pos.x > 0 and u_screen_pos.x < screen.x and u_screen_pos.y > 0 and u_screen_pos.y < screen.y) then
+					upgrader_ui.x = u_screen_pos.x
+					upgrader_ui.y = u_screen_pos.y
+					upgrader_ui.visibility = Visibility.FORCE_ON
+				else
+					upgrader_ui.visibility = Visibility.FORCE_OFF
+				end
 			else
 				upgrader_ui.visibility = Visibility.FORCE_OFF
 			end
 		else
 			upgrader_ui.visibility = Visibility.FORCE_OFF
 		end
-	else
-		upgrader_ui.visibility = Visibility.FORCE_OFF
 	end
-	
 end

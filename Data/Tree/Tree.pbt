@@ -3229,7 +3229,7 @@ Objects {
     }
     UseParentWidth: true
     Text {
-      Label: "All players start with 500 points, late joiners will get an increase depending on what the "
+      Label: "All players start with 750 points, late joiners will get an increase depending on what the "
       Color {
         R: 1
         G: 1
@@ -8698,7 +8698,7 @@ Objects {
     }
     AudioBP {
       AutoPlay: true
-      Volume: 0.5
+      Volume: 0.65
       Falloff: 3600
       Radius: 400
     }

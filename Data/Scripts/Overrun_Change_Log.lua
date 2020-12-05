@@ -1,4 +1,15 @@
-﻿0.3 [05/12/2020]
+﻿0.3.3 [05/12/2020]
+   - Increased starting money from 500 to 750
+   - Fixed a script error when having no equipment when upgrading a weapon
+   - Attempted to fix broadcast rate limit issues.  This is causing issues and might not be fixable
+   
+0.3.2 [05/12/2020]
+   - Fixed an issue where if players were dead and last alive left, everyone couldn't resapwn
+
+0.3.1 [05/12/2020]
+   - Fixed a collision issue that would lead to player getting stuck
+
+0.3 [05/12/2020]
    - World space UI icons for perks and upgrade machine
    
 0.2.6 [04/12/2020]

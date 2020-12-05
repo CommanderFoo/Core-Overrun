@@ -1,4 +1,5 @@
-﻿local debug_ui = script:GetCustomProperty("debug_ui"):WaitForObject()
+﻿--[[
+local debug_ui = script:GetCustomProperty("debug_ui"):WaitForObject()
 local max_spawns = script:GetCustomProperty("max_spawns"):WaitForObject()
 local spawned = script:GetCustomProperty("spawned"):WaitForObject()
 local killed = script:GetCustomProperty("killed"):WaitForObject()
@@ -9,8 +10,8 @@ local calls = script:GetCustomProperty("calls"):WaitForObject()
 local spawn_calls = 0
 
 Game.playerJoinedEvent:Connect(function(p)
-	if(p.name == "CommanderFoo") then
-		--debug_ui.visibility = Visibility.FORCE_ON
+	if(p.name == "CommanderFoo" or p.name == "Bot1") then
+		debug_ui.visibility = Visibility.FORCE_ON
 	end
 end)
 
@@ -29,4 +30,4 @@ Events.Connect("on_debug_spawn_called", function()
 	spawn_calls = spawn_calls + 1
 	calls.text = "Spawn Calls: " .. tostring(spawn_calls)
 end)
-
+--]]

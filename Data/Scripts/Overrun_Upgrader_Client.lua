@@ -24,6 +24,10 @@ function on_trigger_enter(t, obj)
 	if(obj:IsA("Player") and obj.id == local_player.id and obj:GetResource("is_down") == 0) then
 		ui.parent.visibility = Visibility.FORCE_ON
 
+		if(#local_player:GetEquipment() == 0) then
+			return
+		end
+		
 		local equipment = local_player:GetEquipment()[1]
 		local upgrade_asset_id = equipment:GetCustomProperty("upgrade_asset_id")
 		local upgrade_price = equipment:GetCustomProperty("upgrade_price")
