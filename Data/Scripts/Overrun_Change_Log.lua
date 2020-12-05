@@ -1,4 +1,28 @@
-﻿0.2.1 [04/12/2020]
+﻿0.3 [05/12/2020]
+   - World space UI icons for perks and upgrade machine
+   
+0.2.6 [04/12/2020]
+   - Ambient music too loud
+   - Another spawn fix for total starting spawns
+   
+0.2.5 [04/12/2020]
+   - Fixed another spawning issue with Spitters
+   - Incorrect audio set for the ambient music
+   - Increased starting spawns
+
+0.2.4 [04/12/2020]
+   - Fixed an issue with max spawns not getting reset
+   - Added some low music horror music
+   - Fixed an issue with Spitter rounds not spawning correct amount
+
+
+0.2.3 [04/12/2020]
+   - Local debug money got upgraded
+   
+0.2.2 [04/12/2020]
+   - Added in some debug data for myself so I can debug some issues that I can't replicate locally
+
+0.2.1 [04/12/2020]
    - Reduced the game starting time to 10 seconds from 20 seconds
    - Reduced revive time from 20 to 15 seconds, quick revive will drop that to 10 seconds
    - Increased power ups on the map durtaion from 20 to 25 seconds

@@ -43,7 +43,7 @@ local zombie_tank_assets = {
 local spawn_points = {}
 
 local spawned = 0
-local max = 8
+local max = 15
 local spawn_task = nil
 local killed = 0
 local round = 1
@@ -142,7 +142,13 @@ function spawn_zombies()
 		set_zombie_stats_per_round()
 	end
 
-	spawn_task = Task.Spawn(function()
+	for k, p in pairs(Game.GetPlayers()) do
+		if(p.name == "CommanderFoo") then
+			Events.BroadcastToPlayer(p, "on_debug_spawn_called")
+		end
+	end
+
+	spawn_task = Task.Spawn(function()		
 		local zombie = get_random_zombie_asset()
 		local point = spawn_points[math.random(#spawn_points)]
 		local pos = point:GetWorldPosition()
@@ -178,6 +184,7 @@ function zombie_killed(id)
 	killed = killed + 1
 
 	--print("Killed", killed)
+
 	if(spawned_zombies[id]) then
 		spawned_zombies[id] = nil
 	end
@@ -218,6 +225,7 @@ function reset()
 	round = 1
 	spawn_points = {}
 	health_increase = 0
+	max = 15
 
 	add_spawn_points(center_spawns)
 end
@@ -230,3 +238,15 @@ Events.Connect("on_door_opened", function(door_name)
 		add_spawn_points(house_2_spawns)
 	end
 end)
+
+local debug_task = Task.Spawn(function()
+	for k, p in pairs(Game.GetPlayers()) do
+		if(p.name == "CommanderFoo") then
+			Events.BroadcastToPlayer(p, "on_debug_stats", round, max, spawned, killed, round)
+			break
+		end
+	end
+end)
+
+debug_task.repeatCount = -1
+debug_task.repeatInterval = 0.5

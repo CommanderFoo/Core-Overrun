@@ -1,11 +1,19 @@
-﻿--[[local debug_ui = script:GetCustomProperty("debug_ui"):WaitForObject()
-local max_spawns = script:GetCustomProperty("max_spawns"):WaitForObject()
-local spawned = script:GetCustomProperty("spawned"):WaitForObject()
-local killed = script:GetCustomProperty("killed"):WaitForObject()
-local on_map = script:GetCustomProperty("on_map"):WaitForObject()
+﻿local zombies = script:GetCustomProperty("zombies"):WaitForObject()
 
-local local_player = Game.GetLocalPlayer()
+function Tick()
+	Task.Wait(1)
 
-if(local_player == "CommanderFoo" or Environment.IsLocalGame()) then
-	--debug_ui.visibility = Visibility.FORCE_ON
-end--]]
+	for k, p in pairs(Game.GetPlayers()) do
+		if(p.name == "CommanderFoo") then
+			Events.BroadcastToPlayer(p, "on_total_zombies", #zombies:GetChildren())
+			break
+		end
+	end
+end
+
+Game.playerJoinedEvent:Connect(function(p)
+	if(p.name == "CommanderFoo") then
+		Task.Wait(2)
+		p:SetResource("money", 50000)
+	end
+end)

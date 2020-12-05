@@ -1,32 +1,6 @@
 ﻿Name: "Scripts"
 RootId: 5539997602360125933
 Objects {
-  Id: 8217406139491570638
-  Name: "DEBUG"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 5539997602360125933
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "DEBUG"
-  }
-}
-Objects {
   Id: 4313802532582342519
   Name: "Overrun_Weapon_Lookup"
   Transform {

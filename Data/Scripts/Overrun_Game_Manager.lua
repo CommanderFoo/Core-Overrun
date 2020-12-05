@@ -180,6 +180,8 @@ end
 function start_count_down()
 	countdown_started = true
 
+	Spawner.context.reset()
+
 	Events.Broadcast("on_reset_doors")
 	Events.Broadcast("on_disable_all_players")
 
@@ -214,10 +216,10 @@ function round_completed()
 		
 		local max_spawns = 15
 
-		if(round > 3) then
-			max_spawns = max_spawns + (round + 2)
-		elseif(round % 5 == 0) then
+		if(round % 5 == 0) then
 			max_spawns = 10
+		elseif(round > 3) then
+			max_spawns = max_spawns + (round + 2)
 		end
 
 		Spawner.context.set_max_spawns(math.min(40, max_spawns))

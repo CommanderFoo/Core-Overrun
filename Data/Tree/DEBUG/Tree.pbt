@@ -1,6 +1,34 @@
 ﻿Name: "DEBUG"
 RootId: 8217406139491570638
 Objects {
+  Id: 10931591649578262749
+  Name: "ClientContext"
+  Transform {
+    Location {
+      X: 1098.62585
+      Y: -9580
+      Z: 646.787109
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8217406139491570638
+  ChildIds: 6178510590884979218
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
   Id: 6178510590884979218
   Name: "Debug UI"
   Transform {
@@ -18,7 +46,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8217406139491570638
+  ParentId: 10931591649578262749
   ChildIds: 4987744842944940401
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -64,10 +92,12 @@ Objects {
     }
   }
   ParentId: 6178510590884979218
+  ChildIds: 1299392427123167628
   ChildIds: 11903155880014193206
   ChildIds: 9988010873333169507
   ChildIds: 14690455096491563461
   ChildIds: 130430898434401412
+  ChildIds: 11279276471525725501
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -75,8 +105,10 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Control {
-    Width: 591
-    Height: 100
+    Width: 210
+    Height: 274
+    UIX: 6.67836952
+    UIY: 180.671936
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -87,12 +119,72 @@ Objects {
     AnchorLayout {
       SelfAnchor {
         Anchor {
-          Value: "mc:euianchor:topcenter"
+          Value: "mc:euianchor:middleright"
         }
       }
       TargetAnchor {
         Anchor {
-          Value: "mc:euianchor:topcenter"
+          Value: "mc:euianchor:middleright"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 11279276471525725501
+  Name: "Spawn Calls"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Yaw: 9.90377375e-05
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4987744842944940401
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 200
+    Height: 60
+    UIY: 190.086731
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    UseParentWidth: true
+    Text {
+      Label: "Spawn Calls: 0"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      Size: 20
+      Justification {
+        Value: "mc:etextjustify:left"
+      }
+      AutoWrapText: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
         }
       }
     }
@@ -123,14 +215,15 @@ Objects {
   Control {
     Width: 200
     Height: 60
-    UIX: 42.3989868
+    UIY: 152.603592
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
       }
     }
+    UseParentWidth: true
     Text {
-      Label: "On Map: 22"
+      Label: "On Map: 0"
       Color {
         R: 1
         G: 1
@@ -139,19 +232,19 @@ Objects {
       }
       Size: 20
       Justification {
-        Value: "mc:etextjustify:center"
+        Value: "mc:etextjustify:left"
       }
       AutoWrapText: true
     }
     AnchorLayout {
       SelfAnchor {
         Anchor {
-          Value: "mc:euianchor:middleright"
+          Value: "mc:euianchor:topleft"
         }
       }
       TargetAnchor {
         Anchor {
-          Value: "mc:euianchor:middleright"
+          Value: "mc:euianchor:topleft"
         }
       }
     }
@@ -182,14 +275,15 @@ Objects {
   Control {
     Width: 200
     Height: 60
-    UIX: -81.6252747
+    UIY: 114.728386
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
       }
     }
+    UseParentWidth: true
     Text {
-      Label: "Killed: 11"
+      Label: "Killed: 0"
       Color {
         R: 1
         G: 1
@@ -198,19 +292,19 @@ Objects {
       }
       Size: 20
       Justification {
-        Value: "mc:etextjustify:center"
+        Value: "mc:etextjustify:left"
       }
       AutoWrapText: true
     }
     AnchorLayout {
       SelfAnchor {
         Anchor {
-          Value: "mc:euianchor:middleright"
+          Value: "mc:euianchor:topleft"
         }
       }
       TargetAnchor {
         Anchor {
-          Value: "mc:euianchor:middleright"
+          Value: "mc:euianchor:topleft"
         }
       }
     }
@@ -239,16 +333,17 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Control {
-    Width: 200
+    Width: 224
     Height: 60
-    UIX: -20.9051094
+    UIY: 77.2456665
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
       }
     }
+    UseParentWidth: true
     Text {
-      Label: "Spawned: 33"
+      Label: "Spawned: 0"
       Color {
         R: 1
         G: 1
@@ -257,19 +352,19 @@ Objects {
       }
       Size: 20
       Justification {
-        Value: "mc:etextjustify:center"
+        Value: "mc:etextjustify:left"
       }
       AutoWrapText: true
     }
     AnchorLayout {
       SelfAnchor {
         Anchor {
-          Value: "mc:euianchor:middlecenter"
+          Value: "mc:euianchor:topleft"
         }
       }
       TargetAnchor {
         Anchor {
-          Value: "mc:euianchor:middlecenter"
+          Value: "mc:euianchor:topleft"
         }
       }
     }
@@ -299,13 +394,15 @@ Objects {
   Control {
     Width: 200
     Height: 60
+    UIY: 39.1056519
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
       }
     }
+    UseParentWidth: true
     Text {
-      Label: "Max Spawns: 55"
+      Label: "Max Spawns: 0"
       Color {
         R: 1
         G: 1
@@ -314,19 +411,78 @@ Objects {
       }
       Size: 20
       Justification {
-        Value: "mc:etextjustify:center"
+        Value: "mc:etextjustify:left"
       }
       AutoWrapText: true
     }
     AnchorLayout {
       SelfAnchor {
         Anchor {
-          Value: "mc:euianchor:middleleft"
+          Value: "mc:euianchor:topleft"
         }
       }
       TargetAnchor {
         Anchor {
-          Value: "mc:euianchor:middleleft"
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 1299392427123167628
+  Name: "Round"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Yaw: 2.39056608e-05
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4987744842944940401
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 200
+    Height: 60
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    UseParentWidth: true
+    Text {
+      Label: "Round: 1"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      Size: 20
+      Justification {
+        Value: "mc:etextjustify:left"
+      }
+      AutoWrapText: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
         }
       }
     }
@@ -373,6 +529,14 @@ Objects {
     }
   }
   ParentId: 10975260348600211591
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:zombies"
+      ObjectReference {
+        SelfId: 2202992188429786742
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -454,6 +618,18 @@ Objects {
       Name: "cs:on_map"
       ObjectReference {
         SelfId: 130430898434401412
+      }
+    }
+    Overrides {
+      Name: "cs:round"
+      ObjectReference {
+        SelfId: 1299392427123167628
+      }
+    }
+    Overrides {
+      Name: "cs:calls"
+      ObjectReference {
+        SelfId: 11279276471525725501
       }
     }
   }

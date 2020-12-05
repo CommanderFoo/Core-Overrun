@@ -15,8 +15,6 @@ function on_trigger_enter(t, obj)
 
 		player_events[obj.id] = obj.bindingPressedEvent:Connect(function(player, binding)
 			if(in_zone and binding == "ability_extra_33" and obj:GetResource("is_down") == 0) then
-				print("pressed")
-
 				local equipment = obj:GetEquipment()[1]
 				local upgrade_asset_id = equipment:GetCustomProperty("upgrade_asset_id")
 				local upgrade_price = equipment:GetCustomProperty("upgrade_price")

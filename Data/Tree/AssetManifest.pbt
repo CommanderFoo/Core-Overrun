@@ -1,10 +1,37 @@
 ﻿Assets {
+  Id: 18186441773229733714
+  Name: "Horror & Dark Music Score Set 01"
+  PlatformAssetType: 10
+  PrimaryAsset {
+    AssetType: "AudioBlueprintAssetRef"
+    AssetId: "abp_HorrorDarkMusic_ref"
+  }
+}
+Assets {
+  Id: 17955215723797228524
+  Name: "Icon Player Crouch"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_PlayerCrouch"
+  }
+}
+Assets {
   Id: 16742125756419714110
   Name: "BG Flat 004"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "BackgroundNoOutline_22"
+  }
+}
+Assets {
+  Id: 15222117640704811538
+  Name: "BG Flat 003"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundNoOutline_21"
   }
 }
 Assets {
@@ -86,6 +113,15 @@ Assets {
   PrimaryAsset {
     AssetType: "AudioAssetRef"
     AssetId: "sfx_slap_face_hit_02_Cue_ref"
+  }
+}
+Assets {
+  Id: 7305015043504940560
+  Name: "Fantasy Symbol 03"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_icon_Symbol_03"
   }
 }
 Assets {
