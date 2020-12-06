@@ -1,4 +1,33 @@
-﻿0.3.3 [05/12/2020]
+﻿0.6 [06/12/2020]
+   - Leaderboards for kills and rounds
+   - Buffed wall assault rifle damage from 20 to 50
+   - Buffed wall shotgun multishot from 4 to 5
+
+0.5.1 [06/12/2020]
+   - Buffed wall damage from 20 to 45
+   - More prep for Leaderboards
+
+0.5 [06/12/2020]
+   - Fixed an issue with zombies not getting cleaned up when all dead
+   - Fixed an issue with tombs not being cleaned up
+   - Buffed the starting / wall pistol damage from 35 to 50
+   - Prep for leaderboards
+
+0.4.2 [06/12/2020]
+   - More deadcam tweaks
+
+0.4.1 [06/12/2020]
+   - Deadcam info showing up when all players are dead
+
+0.4 [06/12/2020]
+   - Rewrite some of the spawing logic to better handle zombie counts
+   - Slowed down broadcast sending for a few events
+   - Max ammo at end of every 5 rounds is awarded automatically now
+   - Tweaked decal for tombstones to be level with the base
+   - Added deadcam to back of house 2
+   - Message for dead players about camera switching and respawning next round
+
+0.3.3 [05/12/2020]
    - Increased starting money from 500 to 750
    - Fixed a script error when having no equipment when upgrading a weapon
    - Attempted to fix broadcast rate limit issues.  This is causing issues and might not be fixable
@@ -25,7 +54,6 @@
    - Fixed an issue with max spawns not getting reset
    - Added some low music horror music
    - Fixed an issue with Spitter rounds not spawning correct amount
-
 
 0.2.3 [04/12/2020]
    - Local debug money got upgraded

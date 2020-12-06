@@ -90,7 +90,7 @@
               Id: 841534158063459245
             }
             BurstCount: 1
-            BurstDuration: 0.5
+            BurstDuration: 2
             AttackCooldown: 0.25
             Range: 650
             ImpactPlayerAssetRef {
@@ -102,7 +102,7 @@
             MaxAmmo: 6
             AmmoType: "rounds"
             IsFiniteAmmo: true
-            MultiShot: 4
+            MultiShot: 5
             ProjectileSpeed: 25000
             ProjectileLifeSpan: 10
             ProjectileLength: 80

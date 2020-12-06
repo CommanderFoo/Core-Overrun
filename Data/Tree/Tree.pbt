@@ -35,6 +35,7 @@ Objects {
   ChildIds: 7926792424440722291
   ChildIds: 8217406139491570638
   ChildIds: 5324843417026633406
+  ChildIds: 5852898475310592106
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -44,6 +45,34 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 5852898475310592106
+  Name: "Leaderboards"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Leaderboards"
   }
 }
 Objects {
@@ -952,6 +981,7 @@ Objects {
   ParentId: 4781671109827199097
   ChildIds: 3219051380956180749
   ChildIds: 3080040862781519854
+  ChildIds: 8645972727939658765
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -959,6 +989,232 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   NetworkContext {
+  }
+}
+Objects {
+  Id: 8645972727939658765
+  Name: "UI Container"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3291882807981518249
+  ChildIds: 14246962236716494708
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Canvas {
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 14246962236716494708
+  Name: "Info"
+  Transform {
+    Location {
+      X: -501.253967
+      Y: -1185.31201
+      Z: -418.688934
+    }
+    Rotation {
+      Yaw: 132.462708
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8645972727939658765
+  ChildIds: 2297552369542053574
+  ChildIds: 434200186934615944
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  Control {
+    Width: 662
+    Height: 135
+    UIY: -130.034698
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Image {
+      Brush {
+        Id: 16742125756419714110
+      }
+      Color {
+        R: 0.00647617318
+        B: 0.0340000391
+        A: 0.5
+      }
+      TeamSettings {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:bottomcenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:bottomcenter"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 434200186934615944
+  Name: "Text"
+  Transform {
+    Location {
+      X: 536.02356
+      Y: -1169.99878
+      Z: 418.688934
+    }
+    Rotation {
+      Yaw: -132.462692
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14246962236716494708
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 850
+    Height: 52
+    UIY: 26.0958138
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Text {
+      Label: "Press [F] to switch between map cameras."
+      Color {
+        R: 1
+        G: 1
+        A: 1
+      }
+      Size: 24
+      Justification {
+        Value: "mc:etextjustify:center"
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 2297552369542053574
+  Name: "Text"
+  Transform {
+    Location {
+      X: 536.023926
+      Y: -1169.99951
+      Z: 418.688934
+    }
+    Rotation {
+      Yaw: -132.462662
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14246962236716494708
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 850
+    Height: 52
+    UIY: -17.5067062
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Text {
+      Label: "You have died and will respawn next round."
+      Color {
+        R: 1
+        G: 1
+        A: 1
+      }
+      Size: 24
+      Justification {
+        Value: "mc:etextjustify:center"
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+    }
   }
 }
 Objects {
@@ -1013,6 +1269,12 @@ Objects {
       Name: "cs:blood"
       ObjectReference {
         SelfId: 5804301829799054227
+      }
+    }
+    Overrides {
+      Name: "cs:info_ui"
+      ObjectReference {
+        SelfId: 14246962236716494708
       }
     }
   }

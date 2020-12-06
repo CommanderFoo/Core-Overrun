@@ -23,6 +23,13 @@ local player_spawn_points = {
 
 }
 
+local t = Task.Spawn(function()
+	Events.Broadcast("update_leaderboards")
+end)
+
+t.repeatCount = -1
+t.repeatInterval = 30
+
 function player_joined(p)
 	if(not players[p.id]) then
 		players[p.id] = {
@@ -60,6 +67,13 @@ function player_left(p)
 		players[p.id] = nil
 	end
 
+	Storage.SetPlayerData(p, {
+		
+		total_kills = p:GetResource("total_kills"),
+		highest_round = p:GetResource("highest_round")
+
+	})
+	
 	check_player_status()
 end
 
@@ -85,6 +99,20 @@ function setup_resources(p, lives, reset_total_money, new_player)
 	p:SetResource("lifes", lives)
 	p:SetResource("quick_revive", 0)
 	p:SetResource("juggernog", 0)
+	p:SetResource("total_kills", 0)
+	p:SetResource("highest_round", 1)
+
+	local player_data = Storage.GetPlayerData(p)
+
+	if(player_data ~= nil) then
+		if(player_data["total_kills" ] ~= nil) then
+			p:SetResource("total_kills", player_data["total_kills"])
+		end
+
+		if(player_data["highest_round" ] ~= nil) then
+			p:SetResource("highest_round", player_data["highest_round"])
+		end
+	end
 
 	p.maxHitPoints = 100
 
@@ -106,9 +134,9 @@ end
 function check_player_status()
 	if(all_dead()) then
 		Spawner.context.reset()
-		
+
 		Task.Spawn(function()
-			Task.Wait(0.5)
+			Task.Wait(2)
 
 			for k, v in pairs(players) do
 				Events.BroadcastToAllPlayers("on_game_over")
@@ -125,7 +153,6 @@ function check_player_status()
 			start_count_down()
 
 			Task.Wait(game_start_duration)
-			--Events.Broadcast("on_disable_all_players")
 			spawn_players(true, starting_lives, true)
 		end)
 	end
@@ -202,10 +229,25 @@ function start_count_down()
 	task.repeatCount = game_start_duration
 end
 
+function update_highest_round()
+	for k, p in pairs(Game.GetPlayers()) do
+		local hr = p:GetResource("highest_round")
+
+		if(round > hr) then
+			p:SetResource("highest_round", round)
+		end
+	end
+end
+
 function round_completed()
-	--print("ROund complete")
+	if(round % 5 == 0) then
+		Events.Broadcast("on_give_max_ammo")
+	end
+
 	Events.BroadcastToAllPlayers("on_round_completed", round)
 	round = round + 1
+
+	update_highest_round()
 
 	Spawner.context.set_round(round)
 

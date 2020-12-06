@@ -254,6 +254,7 @@ function ApplyDamage(dmg, source, position, rotation)
 			
 			if(zombie_dead) then
 				source:AddResource("kills", 1)
+				source:AddResource("total_kills", 1)
 				spawn_random_power_up(source)
 			end
 		end
@@ -298,13 +299,5 @@ Events.Connect("on_power_up", function(power_up, enabled)
 		has_instant_kill = enabled
 	elseif(power_up == "double_points") then
 		has_double_points = enabled
-	end
-end)
-
-Events.Connect("on_previous_npc_killed", function(round, killed, max)
-	if(killed == max and round % 5 == 0) then
-		spawn_max_ammo = true
-	else
-		spawn_max_ammo = false
 	end
 end)

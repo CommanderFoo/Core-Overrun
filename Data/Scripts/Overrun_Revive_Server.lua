@@ -76,6 +76,7 @@ function put_player_down(id)
 		if(player:GetResource("lifes") == 0) then
 			notification_key = "playerdead"
 			player:Die()
+			Task.Wait(0.5)
 			Events.BroadcastToPlayer(player, "on_player_dead")
 		end
 		

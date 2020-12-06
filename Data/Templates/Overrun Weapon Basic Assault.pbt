@@ -90,7 +90,7 @@
               Id: 841534158063459245
             }
             BurstCount: 30
-            BurstDuration: 5.5
+            BurstDuration: 6
             BurstStopsWithRelease: true
             AttackCooldown: 0.25
             Range: 100000
@@ -1029,7 +1029,7 @@
         UnregisteredParameters {
           Overrides {
             Name: "cs:DamageToObjects"
-            Int: 20
+            Int: 50
           }
           Overrides {
             Name: "cs:DamageToPlayers"

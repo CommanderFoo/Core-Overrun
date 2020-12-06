@@ -77,7 +77,10 @@ function handle_notification(type, player_name, has_quick_revive)
 
 	}
 
-	if(type == "maxammo") then
+	if(type == "maxammogive") then
+		item.title = "Max Ammo" .. name
+		item.desc = "Max Ammo has been given to everyone."
+	elseif(type == "maxammo") then
 		item.title = "Max Ammo" .. name
 		item.desc = "Max Ammo has been picked up for everyone."
 	elseif(type == "doublepoints") then

@@ -135,6 +135,7 @@ Events.Connect("on_spawn_random_power_up", function(pos_x, pos_y, rot_z)
 	end
 end)
 
-Events.Connect("on_force_spawn_max_ammo", function(pos_x, pos_y, rot_z)
-	power_up_handlers.max_ammo_spawn(pos_x, pos_y, rot_z)
+Events.Connect("on_give_max_ammo", function()
+	Events.BroadcastToAllPlayers("on_notification", "maxammogive")
+	Events.Broadcast("on_power_up_max_ammo")
 end)

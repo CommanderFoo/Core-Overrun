@@ -67,6 +67,17 @@ Objects {
       }
     }
     ParameterOverrideMap {
+      key: 6570728466512436722
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            Z: -4.81462383
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 6857586211677339966
       value {
         Overrides {
@@ -161,6 +172,17 @@ Objects {
         Overrides {
           Name: "cs:revive_duration"
           Int: 15
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6570728466512436722
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            Z: -4.81462383
+          }
         }
       }
     }
@@ -263,6 +285,17 @@ Objects {
       }
     }
     ParameterOverrideMap {
+      key: 6570728466512436722
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            Z: -4.81462383
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 6857586211677339966
       value {
         Overrides {
@@ -326,6 +359,17 @@ Objects {
       }
     }
     ParameterOverrideMap {
+      key: 4354177456273038973
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:forceoff"
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 4378342255339779195
       value {
         Overrides {
@@ -345,6 +389,17 @@ Objects {
         Overrides {
           Name: "cs:revive_duration"
           Int: 15
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6570728466512436722
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            Z: -4.81462336
+          }
         }
       }
     }

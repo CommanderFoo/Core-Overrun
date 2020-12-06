@@ -7,7 +7,7 @@
       RootId: 14156651541393010698
       Objects {
         Id: 14156651541393010698
-        Name: "Overrun Weapon Starting Pistol"
+        Name: "Overrun Weapon Basic Pistol"
         Transform {
           Scale {
             X: 1
@@ -604,7 +604,7 @@
         UnregisteredParameters {
           Overrides {
             Name: "cs:DamageToObjects"
-            Int: 35
+            Int: 50
           }
           Overrides {
             Name: "cs:DamageToPlayers"

@@ -42,15 +42,11 @@ local zombie_tank_assets = {
 
 local spawn_points = {}
 
-local spawned = 0
 local max = 15
 local spawn_task = nil
-local killed = 0
 local round = 1
 
 local health_increase = 0
-
-local spawned_zombies = {}
 
 function add_spawn_points(points)
 	for i = 1, #points:GetChildren() do
@@ -65,13 +61,13 @@ function set_zombie_stats_per_round()
 		local health_add = 10
 
 		if(round >= 25) then
-			health_add = 100
+			health_add = 50
 		elseif(round >= 20) then
-			health_add = 60
+			health_add = 30
 		elseif(round >= 10) then
-			health_add = 40
-		elseif(round >= 5) then
 			health_add = 20
+		elseif(round >= 5) then
+			health_add = 15
 		elseif(round >= 2) then
 			health_add = 10
 		end
@@ -96,13 +92,18 @@ function get_random_zombie_asset()
 	local assets = {}
 	
 	 assets = concat_table({}, zombie_slow_assets)
+	 assets = concat_table(assets, zombie_fast_assets)
 
 	if(round >= 4) then
 		assets = concat_table(assets, zombie_fast_assets)
 		assets = concat_table(assets, zombie_slow_assets)
+		assets = concat_table(assets, zombie_faster_assets)
+		assets = concat_table(assets, zombie_faster_assets)
 	end
 
 	if(round >= 6) then
+		assets = concat_table(assets, zombie_faster_assets)
+		assets = concat_table(assets, zombie_faster_assets)
 		assets = concat_table(assets, zombie_spitter_assets)
 		assets = concat_table(assets, zombie_faster_assets)
 		assets = concat_table(assets, zombie_fast_assets)
@@ -112,7 +113,7 @@ function get_random_zombie_asset()
 		assets = concat_table(assets, zombie_tank_assets)
 		assets = concat_table(assets, zombie_spitter_assets)
 		assets = concat_table(assets, zombie_fast_assets)
-		assets = concat_table(assets, zombie_slow_assets)
+		assets = concat_table(assets, zombie_faster_assets)
 		assets = concat_table(assets, zombie_faster_assets)
 	end
 
@@ -121,12 +122,6 @@ function get_random_zombie_asset()
 	if(round % 5 == 0) then
 		assets = concat_table({}, zombie_spitter_assets)
 	end
-
-	--for i, v in ipairs(assets) do
-	--	print(i, v)
-	--end
-
-	--print()
 
 	local index = math.random(#assets)
 
@@ -138,6 +133,8 @@ function spawn_zombies()
 		return
 	end
 	
+	watch_container()
+
 	if(round > 1) then
 		set_zombie_stats_per_round()
 	end
@@ -151,27 +148,41 @@ function spawn_zombies()
 	--]]
 
 	spawn_task = Task.Spawn(function()
-		--print("zombie spawned", spawned, killed)
 		local zombie = get_random_zombie_asset()
 		local point = spawn_points[math.random(#spawn_points)]
 		local pos = point:GetWorldPosition()
 		local rot = point:GetWorldRotation()
 
-		local z = World.SpawnAsset(zombie, {parent = container, position = pos, rotation = rot})
-		
-		spawned_zombies[z:GetCustomProperty("ObjectId")] = z
-
-		spawned = spawned + 1
-
-		--print(max, spawned)
+		World.SpawnAsset(zombie, {parent = container, position = pos, rotation = rot})
 	end)
 	
 	spawn_task.repeatCount = max - 1
-	spawn_task.repeatInterval = 1.5
+	spawn_task.repeatInterval = 1
+end
+
+local watcher = nil
+
+function watch_container()
+	if(watcher == nil) then
+		watcher = Task.Spawn(function()
+			if(#container:GetChildren() == 0) then
+				if(spawn_task ~= nil) then
+					spawn_task:Cancel()
+				end
+				
+				Events.Broadcast("on_all_zombies_killed")
+				watcher:Cancel()
+				watcher = nil
+			end
+		end)
+
+		watcher.repeatCount = -1
+		watcher.repeatInterval = 0.3
+	end
 end
 
 function get_total_spawned()
-	return spawned
+	return #container:GetChildren()
 end
 
 function get_max_spawns()
@@ -180,40 +191,14 @@ end
 
 function set_max_spawns(amount)
 	max = amount
-	spawned = 0
-end
-
-function zombie_killed(id)
-	killed = killed + 1
-
-	--print("Killed", killed)
-
-	if(spawned_zombies[id]) then
-		spawned_zombies[id] = nil
-	end
-
-	Events.Broadcast("on_previous_npc_killed", round, killed, max)
-
-	if(killed >= max) then
-		if(spawn_task ~= nil) then
-			spawn_task:Cancel()
-		end
-		
-		killed = 0
-		Events.Broadcast("on_all_zombies_killed")
-	end
 end
 
 function clear_all_zombies()
-	if(spawn_task ~= nil) then
-		spawn_task:Cancel()
+	if(#container:GetChildren() > 0) then
+		while(#container:GetChildren() > 0) do
+			container:GetChildren()[1]:Destroy()
+		end
 	end
-	
-	for k, v in pairs(spawned_zombies) do
-		v:Destroy()
-	end
-
-	spawned_zombies = {}
 end
 
 function set_round(r)
@@ -221,9 +206,18 @@ function set_round(r)
 end
 
 function reset()
+	if(watcher ~= nil) then
+		watcher:Cancel()
+		watcher = nil
+	end
+
+	if(spawn_task ~= nil) then
+		spawn_task:Cancel()
+		spawn_task = nil
+	end
+
 	clear_all_zombies()
-	killed = 0
-	spawned = 0
+
 	round = 1
 	spawn_points = {}
 	health_increase = 0
@@ -232,7 +226,6 @@ function reset()
 	add_spawn_points(center_spawns)
 end
 
-Events.Connect("on_zombie_killed", zombie_killed)
 Events.Connect("on_door_opened", function(door_name)
 	if(door_name == "House 1 Back Door") then
 		add_spawn_points(house_1_spawns)
