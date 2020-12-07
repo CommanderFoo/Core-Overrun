@@ -116,11 +116,11 @@
           }
           Overrides {
             Name: "cs:money_per_hit"
-            Int: 20
+            Int: 30
           }
           Overrides {
             Name: "cs:money_per_kill"
-            Int: 100
+            Int: 150
           }
           Overrides {
             Name: "cs:Overrun_Spawner_Server"

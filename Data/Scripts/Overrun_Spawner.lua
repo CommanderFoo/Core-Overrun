@@ -92,12 +92,10 @@ function get_random_zombie_asset()
 	local assets = {}
 	
 	 assets = concat_table({}, zombie_slow_assets)
-	 assets = concat_table(assets, zombie_fast_assets)
 
-	if(round >= 4) then
+	if(round >= 3) then
 		assets = concat_table(assets, zombie_fast_assets)
 		assets = concat_table(assets, zombie_slow_assets)
-		assets = concat_table(assets, zombie_faster_assets)
 		assets = concat_table(assets, zombie_faster_assets)
 	end
 

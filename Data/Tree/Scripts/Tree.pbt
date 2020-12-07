@@ -285,7 +285,7 @@ Objects {
     }
     Overrides {
       Name: "cs:game_start_duration"
-      Int: 10
+      Int: 15
     }
     Overrides {
       Name: "cs:starting_money"

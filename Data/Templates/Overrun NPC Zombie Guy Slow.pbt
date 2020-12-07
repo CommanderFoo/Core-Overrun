@@ -120,7 +120,7 @@
           }
           Overrides {
             Name: "cs:money_per_kill"
-            Int: 50
+            Int: 80
           }
           Overrides {
             Name: "cs:Overrun_Spawner_Server"

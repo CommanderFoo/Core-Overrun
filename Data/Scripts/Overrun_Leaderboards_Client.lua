@@ -62,5 +62,5 @@ local updater = Task.Spawn(function()
 	end
 end)
 
-updater.repeatInterval = 30
+updater.repeatInterval = 20
 updater.repeatCount = -1

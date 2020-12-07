@@ -443,7 +443,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Text {
-    Text: "-"
+    Text: "Loading..."
     Color {
       R: 1
       G: 1
@@ -664,7 +664,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Text {
-    Text: "-"
+    Text: "Loading..."
     Color {
       R: 1
       G: 1
@@ -885,7 +885,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Text {
-    Text: "-"
+    Text: "Loading..."
     Color {
       R: 1
       G: 1
@@ -1106,7 +1106,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Text {
-    Text: "-"
+    Text: "Loading..."
     Color {
       R: 1
       G: 1
@@ -1297,7 +1297,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Text {
-    Text: "-"
+    Text: "Loading..."
     Color {
       R: 1
       G: 1
@@ -1732,7 +1732,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Text {
-    Text: "-"
+    Text: "Loading..."
     Color {
       R: 1
       G: 1
@@ -1923,7 +1923,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Text {
-    Text: "-"
+    Text: "Loading..."
     Color {
       R: 1
       G: 1
@@ -2114,7 +2114,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Text {
-    Text: "-"
+    Text: "Loading..."
     Color {
       R: 1
       G: 1
@@ -2305,7 +2305,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Text {
-    Text: "-"
+    Text: "Loading..."
     Color {
       R: 1
       G: 1
@@ -2496,7 +2496,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Text {
-    Text: "-"
+    Text: "Loading..."
     Color {
       R: 1
       G: 1
