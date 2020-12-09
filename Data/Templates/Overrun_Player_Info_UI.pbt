@@ -17,6 +17,7 @@
         }
         ParentId: 3010311085128505972
         ChildIds: 12538310932224241879
+        ChildIds: 11283732595111028840
         UnregisteredParameters {
           Overrides {
             Name: "cs:money"
@@ -97,6 +98,12 @@
               A: 1
             }
           }
+          Overrides {
+            Name: "cs:frame"
+            ObjectReference {
+              SubObjectId: 11283732595111028840
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -168,7 +175,7 @@
           UseParentHeight: true
           Image {
             Brush {
-              Id: 2624737745351425337
+              Id: 3010892631177260788
             }
             Color {
               A: 0.5
@@ -274,20 +281,20 @@
           Width: 200
           Height: 44
           UIX: -90
-          UIY: 7
+          UIY: 9
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
             }
           }
           Text {
-            Label: "500"
+            Label: "750"
             Color {
               R: 1
               G: 1
               A: 1
             }
-            Size: 18
+            Size: 16
             Justification {
               Value: "mc:etextjustify:right"
             }
@@ -331,7 +338,7 @@
           Width: 200
           Height: 44
           UIX: -90
-          UIY: 2
+          UIY: 4
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -344,7 +351,7 @@
               B: 1
               A: 1
             }
-            Size: 18
+            Size: 16
             Justification {
               Value: "mc:etextjustify:right"
             }
@@ -591,14 +598,64 @@
           }
         }
       }
-    }
-    Assets {
-      Id: 2624737745351425337
-      Name: "Frame Outline Thin 001"
-      PlatformAssetType: 9
-      PrimaryAsset {
-        AssetType: "PlatformBrushAssetRef"
-        AssetId: "FrameOutline_020"
+      Objects {
+        Id: 11283732595111028840
+        Name: "Border"
+        Transform {
+          Location {
+            X: -6906.99268
+            Y: -7715.05273
+            Z: 389.188843
+          }
+          Rotation {
+            Yaw: -116.833183
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 13704409164750388238
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Control {
+          Width: 200
+          Height: 200
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          UseParentWidth: true
+          UseParentHeight: true
+          Image {
+            Brush {
+              Id: 2624737745351425337
+            }
+            Color {
+              A: 1
+            }
+            TeamSettings {
+            }
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+          }
+        }
       }
     }
     Assets {
@@ -617,6 +674,15 @@
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
         AssetId: "UI_Fantasy_Ability_Blue_016"
+      }
+    }
+    Assets {
+      Id: 2624737745351425337
+      Name: "Frame Outline Thin 001"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "FrameOutline_020"
       }
     }
     PrimaryAssetId {

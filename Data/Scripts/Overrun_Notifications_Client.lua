@@ -4,6 +4,9 @@ local container = script:GetCustomProperty("container"):WaitForObject()
 local title = script:GetCustomProperty("title"):WaitForObject()
 local desc = script:GetCustomProperty("desc"):WaitForObject()
 
+local double_points_ui = script:GetCustomProperty("double_points_ui"):WaitForObject()
+local instant_kill_ui = script:GetCustomProperty("instant_kill_ui"):WaitForObject()
+
 local queue = PIXELDEPTH.Utils.Queue.new()
 local current_item = nil
 local in_tween = nil
@@ -86,9 +89,13 @@ function handle_notification(type, player_name, has_quick_revive)
 	elseif(type == "doublepoints") then
 		item.title = "Double Points" .. name
 		item.desc = "Double Points has been picked up for 25 seconds."
+
+		show_double_points_ui()
 	elseif(type == "instantkill") then
 		item.title = "Instant Kill" .. name
 		item.desc = "Instant Kill has been picked up for 25 seconds."
+
+		show_instant_kill_ui()
 	elseif(type == "spitters") then
 		item.title = "Spitters"
 		item.desc = "Spitters are incominng, stay on the move."
@@ -96,16 +103,13 @@ function handle_notification(type, player_name, has_quick_revive)
 		item.title = "Barrier Open" .. name
 		item.desc = "A Barrier has been purchased and opens up an area."
 	elseif(type == "playerdown") then
-		local revive_time = 15
+		local revive_time = 10
 
 		if(has_quick_revive) then
-			revive_time = 10
+			revive_time = 6
 		end
 		
-		if(local_player.name == player_name) then
-			item.title = "Player Down"
-			item.desc = "You are down and will be revived in " .. revive_time .. " seconds."
-		else
+		if(local_player.name ~= player_name) then
 			item.title = "Player Down" .. name
 			item.desc = "They will be revived in " .. revive_time .. " seconds."
 		end
@@ -124,6 +128,9 @@ function handle_notification(type, player_name, has_quick_revive)
 	elseif(type == "weaponmaxupgraded") then
 		item.title = "Weapon Upgraded Max"
 		item.desc = "You have upgraded your weapon to the max tier."
+	elseif(type == "heavyfog") then
+		item.title = "Heavy Fog"
+		item.desc = "Heavy fog incoming.  Visibility will be low."
 	end
 
 	if(item.title ~= "") then
@@ -131,4 +138,52 @@ function handle_notification(type, player_name, has_quick_revive)
 	end
 end
 
+function is_visible(i)
+	return i.visibility == Visibility.FORCE_ON
+end
+
+function show_double_points_ui()
+	local offset = 0
+	
+	if(is_visible(instant_kill_ui)) then
+		if(instant_kill_ui.x == 0) then
+			offset = 100
+		end
+	end
+
+	double_points_ui.x = offset
+	double_points_ui.visibility = Visibility.FORCE_ON
+end
+
+function show_instant_kill_ui()
+	local offset = 0
+	
+	if(is_visible(double_points_ui)) then
+		if(double_points_ui.x == 0) then
+			offset = 100
+		end
+	end
+
+	instant_kill_ui.x = offset
+	instant_kill_ui.visibility = Visibility.FORCE_ON
+end
+
+function remove_double_points_ui()
+	double_points_ui.visibility = Visibility.FORCE_OFF
+
+	if(instant_kill_ui.x > 0) then
+		instant_kill_ui.x = 0
+	end
+end
+
+function remove_instant_kill_ui()
+	instant_kill_ui.visibility = Visibility.FORCE_OFF
+
+	if(double_points_ui.x > 0) then
+		double_points_ui.x = 0
+	end
+end
+
 Events.Connect("on_notification", handle_notification)
+Events.Connect("on_double_points_ended", remove_double_points_ui)
+Events.Connect("on_instant_kill_ended", remove_instant_kill_ui)

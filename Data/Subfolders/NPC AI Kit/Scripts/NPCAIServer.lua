@@ -63,7 +63,7 @@ local ATTACK_RANGE_SQUARED = ATTACK_RANGE * ATTACK_RANGE
 local SPAWN_POSITION = ROOT:GetWorldPosition()
 
 local DEAD_1_DURATION = 1.5
-local DEAD_2_DURATION = 0.2
+local DEAD_2_DURATION = 0
 
 local STATE_SLEEPING = 0
 local STATE_ENGAGING = 1
@@ -141,14 +141,14 @@ function SetState(newState)
 
 	elseif (newState == STATE_DEAD_2) then
 
-			ROOT:MoveTo(ROOT:GetWorldPosition() + Vector3.New(0, 0, -100), DEAD_2_DURATION)
+			--ROOT:MoveTo(ROOT:GetWorldPosition() + Vector3.New(0, 0, -100), DEAD_2_DURATION)
 
 
 	elseif (newState == STATE_DISABLED) then
 
 			if(ROOT) then
-				ROOT.visibility = Visibility.FORCE_OFF
-				ROOT:Destroy()
+				--ROOT.visibility = Visibility.FORCE_OFF
+				--ROOT:Destroy()
 			end
 
 	end

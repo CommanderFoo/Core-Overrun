@@ -15,18 +15,19 @@ local obj_pos = outline:GetWorldPosition()
 local fade_start = root:GetCustomProperty("fade_start")
 local fade_end = root:GetCustomProperty("fade_end")
 
-fade_start = fade_start * fade_start
-fade_end = fade_end * fade_end
+--fade_start = fade_start * fade_start
+--fade_end = fade_end * fade_end
 
-outline:SetSmartProperty("Color A", outline_color)
+--outline:SetSmartProperty("Color A", outline_color)
 
 function Tick()
+	--[[
 	Task.Wait(0.2) -- Let's slow this down, doesn't need to be run every tick
 
 	local dist_sq = (local_player:GetWorldPosition() - obj_pos).sizeSquared
 
 	if(dist_sq > fade_start) then
-		outline.isEnabled = false
+		--outline.isEnabled = false
 	else
 	
 		local fade = 0
@@ -36,10 +37,10 @@ function Tick()
 		end
 
 		outline_color.a = 1.0 - CoreMath.Clamp(fade, 0, 1)
-		outline:SetSmartProperty("Color A", outline_color)
-		outline.isEnabled = true
+		--outline:SetSmartProperty("Color A", outline_color)
+		--outline.isEnabled = true
 	end
-
+--]]
 	local objects = trigger:GetOverlappingObjects()
 
 	for _, obj in pairs(objects) do

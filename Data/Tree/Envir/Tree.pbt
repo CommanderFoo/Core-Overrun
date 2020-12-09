@@ -3378,6 +3378,14 @@ Objects {
         A: 1
       }
     }
+    Overrides {
+      Name: "ma:Building_WallOuter:color"
+      Color {
+        G: 0.194000125
+        B: 0.0554285794
+        A: 1
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -3749,6 +3757,14 @@ Objects {
         Id: 2758266643690185227
       }
     }
+    Overrides {
+      Name: "ma:Building_WallOuter:color"
+      Color {
+        G: 0.194000125
+        B: 0.0554285794
+        A: 1
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -3849,6 +3865,14 @@ Objects {
       Name: "ma:Building_WallInner:id"
       AssetReference {
         Id: 2758266643690185227
+      }
+    }
+    Overrides {
+      Name: "ma:Building_WallOuter:color"
+      Color {
+        G: 0.194000125
+        B: 0.0554285794
+        A: 1
       }
     }
   }
@@ -5055,6 +5079,14 @@ Objects {
         A: 1
       }
     }
+    Overrides {
+      Name: "ma:Building_WallOuter:color"
+      Color {
+        G: 0.194000125
+        B: 0.0554285794
+        A: 1
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -5114,6 +5146,14 @@ Objects {
       Color {
         R: 0.72
         G: 0.400529832
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Building_WallOuter:color"
+      Color {
+        G: 0.194000125
+        B: 0.0554285794
         A: 1
       }
     }
@@ -5178,6 +5218,14 @@ Objects {
         A: 1
       }
     }
+    Overrides {
+      Name: "ma:Building_WallOuter:color"
+      Color {
+        G: 0.194000125
+        B: 0.0554285794
+        A: 1
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -5239,6 +5287,14 @@ Objects {
         A: 1
       }
     }
+    Overrides {
+      Name: "ma:Building_WallOuter:color"
+      Color {
+        G: 0.194000125
+        B: 0.0554285794
+        A: 1
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -5291,6 +5347,14 @@ Objects {
       Color {
         R: 0.134635791
         G: 0.190000057
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Building_WallOuter:color"
+      Color {
+        G: 0.194000125
+        B: 0.0554285794
         A: 1
       }
     }
@@ -5491,6 +5555,14 @@ Objects {
         Id: 2758266643690185227
       }
     }
+    Overrides {
+      Name: "ma:Building_WallOuter:color"
+      Color {
+        G: 0.194000125
+        B: 0.0554285794
+        A: 1
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -5613,6 +5685,14 @@ Objects {
         Id: 2758266643690185227
       }
     }
+    Overrides {
+      Name: "ma:Building_WallOuter:color"
+      Color {
+        G: 0.194000125
+        B: 0.0554285794
+        A: 1
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -5665,6 +5745,14 @@ Objects {
       Name: "ma:Building_WallInner:id"
       AssetReference {
         Id: 2758266643690185227
+      }
+    }
+    Overrides {
+      Name: "ma:Building_WallOuter:color"
+      Color {
+        G: 0.194000125
+        B: 0.0554285794
+        A: 1
       }
     }
   }
@@ -5721,6 +5809,14 @@ Objects {
         Id: 2758266643690185227
       }
     }
+    Overrides {
+      Name: "ma:Building_WallOuter:color"
+      Color {
+        G: 0.194000125
+        B: 0.0554285794
+        A: 1
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -5773,6 +5869,14 @@ Objects {
       Name: "ma:Building_WallInner:id"
       AssetReference {
         Id: 2758266643690185227
+      }
+    }
+    Overrides {
+      Name: "ma:Building_WallOuter:color"
+      Color {
+        G: 0.194000125
+        B: 0.0554285794
+        A: 1
       }
     }
   }
@@ -5829,6 +5933,14 @@ Objects {
         Id: 2758266643690185227
       }
     }
+    Overrides {
+      Name: "ma:Building_WallOuter:color"
+      Color {
+        G: 0.194000125
+        B: 0.0554285794
+        A: 1
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -5883,6 +5995,14 @@ Objects {
         Id: 2758266643690185227
       }
     }
+    Overrides {
+      Name: "ma:Building_WallOuter:color"
+      Color {
+        G: 0.194000125
+        B: 0.0554285794
+        A: 1
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -5935,6 +6055,14 @@ Objects {
       Color {
         R: 0.134635791
         G: 0.190000057
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Building_WallOuter:color"
+      Color {
+        G: 0.194000125
+        B: 0.0554285794
         A: 1
       }
     }
@@ -5995,6 +6123,14 @@ Objects {
     Overrides {
       Name: "ma:Building_WallInner:smart"
       Bool: false
+    }
+    Overrides {
+      Name: "ma:Building_WallOuter:color"
+      Color {
+        G: 0.194000125
+        B: 0.0554285794
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -6566,6 +6702,14 @@ Objects {
   }
   ParentId: 4131872850895316345
   UnregisteredParameters {
+    Overrides {
+      Name: "ma:Building_WallOuter:color"
+      Color {
+        G: 0.194000125
+        B: 0.0554285794
+        A: 1
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -6719,6 +6863,14 @@ Objects {
         R: 0.730461
         G: 0.376262218
         B: 0.102241725
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Building_WallOuter:color"
+      Color {
+        G: 0.194000125
+        B: 0.0554285794
         A: 1
       }
     }
@@ -7146,6 +7298,14 @@ Objects {
         A: 1
       }
     }
+    Overrides {
+      Name: "ma:Building_WallOuter:color"
+      Color {
+        G: 0.301041603
+        B: 0.0716765895
+        A: 1
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -7204,6 +7364,14 @@ Objects {
       Color {
         R: 0.309000015
         G: 0.104364209
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Building_WallOuter:color"
+      Color {
+        G: 0.194000125
+        B: 0.0554285794
         A: 1
       }
     }
@@ -7268,6 +7436,14 @@ Objects {
         A: 1
       }
     }
+    Overrides {
+      Name: "ma:Building_WallOuter:color"
+      Color {
+        G: 0.194000125
+        B: 0.0554285794
+        A: 1
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -7327,6 +7503,14 @@ Objects {
       Color {
         R: 0.309000015
         G: 0.104364209
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Building_WallOuter:color"
+      Color {
+        G: 0.301041603
+        B: 0.0716765895
         A: 1
       }
     }
@@ -7440,6 +7624,14 @@ Objects {
         A: 1
       }
     }
+    Overrides {
+      Name: "ma:Building_WallOuter:color"
+      Color {
+        G: 0.301041603
+        B: 0.0716765895
+        A: 1
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -7499,6 +7691,14 @@ Objects {
       Color {
         R: 0.309000015
         G: 0.104364209
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Building_WallOuter:color"
+      Color {
+        G: 0.301041603
+        B: 0.0716765895
         A: 1
       }
     }
@@ -7609,6 +7809,14 @@ Objects {
       Color {
         R: 0.309000015
         G: 0.104364209
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Building_WallOuter:color"
+      Color {
+        G: 0.194000125
+        B: 0.0554285794
         A: 1
       }
     }
@@ -10440,6 +10648,14 @@ Objects {
   }
   ParentId: 4131872850895316345
   UnregisteredParameters {
+    Overrides {
+      Name: "ma:Building_WallOuter:color"
+      Color {
+        G: 0.194000125
+        B: 0.0554285794
+        A: 1
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -10502,6 +10718,14 @@ Objects {
         A: 1
       }
     }
+    Overrides {
+      Name: "ma:Building_WallOuter:color"
+      Color {
+        G: 0.194000125
+        B: 0.0554285794
+        A: 1
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -10550,6 +10774,14 @@ Objects {
   }
   ParentId: 4131872850895316345
   UnregisteredParameters {
+    Overrides {
+      Name: "ma:Building_WallOuter:color"
+      Color {
+        G: 0.194000125
+        B: 0.0554285794
+        A: 1
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -10598,6 +10830,14 @@ Objects {
   }
   ParentId: 4131872850895316345
   UnregisteredParameters {
+    Overrides {
+      Name: "ma:Building_WallOuter:color"
+      Color {
+        G: 0.194000125
+        B: 0.0554285794
+        A: 1
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -10694,6 +10934,14 @@ Objects {
   }
   ParentId: 4131872850895316345
   UnregisteredParameters {
+    Overrides {
+      Name: "ma:Building_WallOuter:color"
+      Color {
+        G: 0.194000125
+        B: 0.0554285794
+        A: 1
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -10742,6 +10990,14 @@ Objects {
   }
   ParentId: 4131872850895316345
   UnregisteredParameters {
+    Overrides {
+      Name: "ma:Building_WallOuter:color"
+      Color {
+        G: 0.194000125
+        B: 0.0554285794
+        A: 1
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"

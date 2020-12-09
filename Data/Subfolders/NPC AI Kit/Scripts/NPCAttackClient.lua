@@ -51,6 +51,7 @@ function OnObjectDamaged(id, prevHealth, dmgAmount, impactPosition, impactRotati
 end
 
 function OnObjectDestroyed(id)
+	print("gone")
 	-- Ignore other NPCs, make sure this event is for us
 	--if id == GetID() then
 		--SpawnAsset(DESTROY_FX, script:GetWorldPosition(), script:GetWorldRotation())

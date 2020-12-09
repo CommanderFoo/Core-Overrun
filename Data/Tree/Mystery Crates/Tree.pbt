@@ -707,6 +707,14 @@ Objects {
       Name: "bp:Enabled"
       Bool: false
     }
+    Overrides {
+      Name: "bp:Color A"
+      Color {
+        R: 1
+        G: 1
+        A: 1
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -2178,6 +2186,14 @@ Objects {
     Overrides {
       Name: "bp:Enabled"
       Bool: false
+    }
+    Overrides {
+      Name: "bp:Color A"
+      Color {
+        R: 1
+        G: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -3651,6 +3667,14 @@ Objects {
       Name: "bp:Enabled"
       Bool: false
     }
+    Overrides {
+      Name: "bp:Color A"
+      Color {
+        R: 1
+        G: 1
+        A: 1
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -5123,6 +5147,14 @@ Objects {
       Name: "bp:Enabled"
       Bool: false
     }
+    Overrides {
+      Name: "bp:Color A"
+      Color {
+        R: 1
+        G: 1
+        A: 1
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -6594,6 +6626,14 @@ Objects {
     Overrides {
       Name: "bp:Enabled"
       Bool: false
+    }
+    Overrides {
+      Name: "bp:Color A"
+      Color {
+        R: 1
+        G: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {

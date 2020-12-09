@@ -4,6 +4,9 @@ local player_info_ui_root = script:GetCustomProperty("players_info_ui_root"):Wai
 local player_info_ui = script:GetCustomProperty("player_info_ui")
 local own_info_color = script:GetCustomProperty("own_info_color")
 
+local quick_revive_ui = script:GetCustomProperty("quick_revive_ui"):WaitForObject()
+local juggernog_ui = script:GetCustomProperty("juggernog_ui"):WaitForObject()
+
 local hit_ui = script:GetCustomProperty("hit_ui"):WaitForObject()
 local hit_sound = script:GetCustomProperty("hit_sound"):WaitForObject()
 
@@ -12,6 +15,8 @@ local hit_effect = script:GetCustomProperty("hit_effect"):WaitForObject()
 local local_player = Game.GetLocalPlayer()
 local players = {}
 local total_players = 0
+
+local gibs_fx = script:GetCustomProperty("gibs_fx")
 
 function player_joined(p)
 	total_players = total_players + 1
@@ -53,6 +58,7 @@ function player_joined(p)
 	local background_ui = ui:GetCustomProperty("background"):WaitForObject()
 	local box_ui = ui:GetCustomProperty("box"):WaitForObject()
 	local avatar_border_ui = ui:GetCustomProperty("avatar_border"):WaitForObject()
+	local frame_ui = ui:GetCustomProperty("frame"):WaitForObject()
 
 	players[p.id].ui = ui
 	players[p.id].money_ui = money_ui
@@ -62,11 +68,12 @@ function player_joined(p)
 	players[p.id].background_ui = background_ui
 	players[p.id].box_ui = box_ui
 	players[p.id].avatar_border_ui = avatar_border_ui
+	players[p.id].frame_ui = frame_ui
 
 	if(local_player.id == p.id) then
 		money_ui.text = PIXELDEPTH.Utils.number_format(local_player:GetResource("money"))
 		name_ui:SetColor(own_info_color)
-		name_ui.text = local_player.name
+		name_ui.text = PIXELDEPTH.Utils.truncate(local_player.name, 13, "...")
 		avatar_ui:SetImage(local_player)
 	else
 		name_ui.text = p.name
@@ -76,6 +83,18 @@ function player_joined(p)
 		Task.Spawn(function()
 			Events.Broadcast("on_audio_player_joined")
 		end)
+	end
+
+	local color_index = p:GetResource("color_index")
+
+	if(color_index == 1) then
+		frame_ui:SetColor(Color.RED)
+	elseif(color_index == 2) then
+		frame_ui:SetColor(Color.BLUE)
+	elseif(color_index == 3) then
+		frame_ui:SetColor(Color.GREEN)
+	elseif(color_index == 4) then
+		frame_ui:SetColor(Color.RED)
 	end
 end
 
@@ -93,6 +112,7 @@ function reset_info_ui(info)
 	local background_ui = info:GetCustomProperty("background"):WaitForObject()
 	local box_ui = info:GetCustomProperty("box"):WaitForObject()
 	local avatar_border_ui = info:GetCustomProperty("avatar_border"):WaitForObject()
+	local frame_ui = info:GetCustomProperty("frame"):WaitForObject()
 
 	money_ui:SetColor(money_color)
 	name_ui:SetColor(name_color)
@@ -100,6 +120,7 @@ function reset_info_ui(info)
 	background_ui:SetColor(background_color)
 	box_ui:SetColor(box_color)
 	avatar_border_ui:SetColor(avatar_border_color)
+	frame_ui:SetColor(Color.BLACK)
 
 	overlay_ui.visibility = Visibility.FORCE_OFF
 
@@ -188,6 +209,13 @@ function purchase_complete(is_melee, play_audio)
 	end
 end
 
+function on_zombie_destroyed(pos)
+	Task.Spawn(function()
+		Task.Wait(.8)
+		World.SpawnAsset(gibs_fx, { position = pos})
+	end)
+end
+
 function on_zombie_hit(amount, position)
 	hit_ui.visibility = Visibility.FORCE_ON
 
@@ -234,6 +262,18 @@ function Tick(dt)
 	elseif(hit_effect:GetSmartProperty("Effect Strength") > 0) then
 		hit_effect:SetSmartProperty("Effect Strength", 0)
 	end
+
+	if(local_player:GetResource("quick_revive") == 1) then
+		quick_revive_ui.visibility = Visibility.FORCE_ON
+	else
+		quick_revive_ui.visibility = Visibility.FORCE_OFF
+	end
+
+	if(local_player:GetResource("juggernog") == 1) then
+		juggernog_ui.visibility = Visibility.FORCE_ON
+	else
+		juggernog_ui.visibility = Visibility.FORCE_OFF
+	end
 end
 
 --function on_player_damaged(source, hit_points)
@@ -260,6 +300,7 @@ end)
 Events.Connect("on_player_money_changed", money_changed)
 Events.Connect("on_purchase_complete", purchase_complete)
 Events.Connect("on_zombie_hit", on_zombie_hit)
+Events.Connect("on_zombie_destroyed", on_zombie_destroyed)
 
 Game.playerJoinedEvent:Connect(player_joined)
 Game.playerLeftEvent:Connect(player_left)

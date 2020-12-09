@@ -281,7 +281,7 @@ Objects {
     }
     Overrides {
       Name: "cs:round_end_duration"
-      Int: 6
+      Int: 8
     }
     Overrides {
       Name: "cs:game_start_duration"
@@ -297,7 +297,7 @@ Objects {
     }
     Overrides {
       Name: "cs:starting_lives"
-      Int: 2
+      Int: 3
     }
   }
   Collidable_v2 {
@@ -462,6 +462,12 @@ Objects {
         SelfId: 4313802532582342519
       }
     }
+    Overrides {
+      Name: "cs:debug_weapon"
+      AssetReference {
+        Id: 10814552519067637946
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -499,7 +505,7 @@ Objects {
     }
     Overrides {
       Name: "cs:power_up_chance"
-      Int: 50
+      Int: 30
     }
     Overrides {
       Name: "cs:instant_kill"
@@ -527,7 +533,7 @@ Objects {
     }
     Overrides {
       Name: "cs:double_points_chance"
-      Int: 25
+      Int: 15
     }
     Overrides {
       Name: "cs:max_ammo"
@@ -537,7 +543,7 @@ Objects {
     }
     Overrides {
       Name: "cs:max_ammo_chance"
-      Int: 12
+      Int: 15
     }
   }
   Collidable_v2 {
@@ -705,6 +711,24 @@ Objects {
         Id: 16622261663679835299
       }
     }
+    Overrides {
+      Name: "cs:double_points_ui"
+      ObjectReference {
+        SelfId: 8601390989182172711
+        SubObjectId: 17365292360682819244
+        InstanceId: 14357247512914669293
+        TemplateId: 15378842876090014399
+      }
+    }
+    Overrides {
+      Name: "cs:instant_kill_ui"
+      ObjectReference {
+        SelfId: 18251224452871112049
+        SubObjectId: 11041856344997348217
+        InstanceId: 2682885373632565799
+        TemplateId: 14557867761764933263
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -788,6 +812,12 @@ Objects {
         Id: 16622261663679835299
       }
     }
+    Overrides {
+      Name: "cs:fog"
+      ObjectReference {
+        SelfId: 1315552106580729237
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -821,6 +851,12 @@ Objects {
       Name: "cs:round_completed"
       ObjectReference {
         SelfId: 13285737509251707278
+      }
+    }
+    Overrides {
+      Name: "cs:music"
+      ObjectReference {
+        SelfId: 15163695149504512038
       }
     }
   }
@@ -936,6 +972,24 @@ Objects {
       Name: "cs:hit_effect"
       ObjectReference {
         SelfId: 5804301829799054227
+      }
+    }
+    Overrides {
+      Name: "cs:quick_revive_ui"
+      ObjectReference {
+        SelfId: 2427241964310332877
+      }
+    }
+    Overrides {
+      Name: "cs:juggernog_ui"
+      ObjectReference {
+        SelfId: 7426552155368146586
+      }
+    }
+    Overrides {
+      Name: "cs:gibs_fx"
+      AssetReference {
+        Id: 1828773146990716755
       }
     }
   }

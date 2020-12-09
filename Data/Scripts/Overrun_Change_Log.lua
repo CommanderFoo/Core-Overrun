@@ -1,4 +1,59 @@
-﻿0.6.4 [07/12/2020]
+﻿0.8.2 [09/12/2020]
+   - Due to amount of testing I am doing on live servers, I have stopped my kills being counted for 
+     the leaderboards
+
+0.8.1 [09/12/2020]
+   - Fix for client side effect not working if other clients killed the zombie
+
+0.8.0 [09/12/2020]
+   - Player icons:  The border color of the player info (top right) will match with an in world icon as well
+     which will make finding where people are much easier now
+   - Reduced drop chance of all powerups a tad. They were dropping too often.
+   - Increased starting spawns by 1
+   - Increased Spitter rounds from 10 to 15
+   - Front doors of both houses raised to 1500.  Increase in money made it too cheap.
+   - Changed the color of house 2 so callouts are easier (as seen on stream)
+   
+0.7.8 [09/12/2020]
+   - Testing some UI changes (not public)
+
+0.7.7 [08/12/2020]
+   - Efx when zombie dies
+   
+0.7.6 [08/12/2020]
+   - Debug ui removed
+   
+0.7.5 [08/12/2020]
+   - Handling the destroy of zombies myself instead of the NPC Kit, nothing but issues
+   - Hopefully invinicble zombie bug is fixed now
+
+0.7.4 [08/12/2020]
+   - More debugging to find the cause of the invincible zombie
+   - Round debug set to 21
+
+0.7.3 [08/12/2020]
+   - More debugging to find the cause of the invincible zombie
+
+0.7.2 [08/12/2020]
+   - More debugging to find the cause of the invincible zombie
+
+0.7.1 [08/12/2020]
+   - Debug tools to help track down the last zombie who is invincible
+
+0.7 [08/12/2020]
+   - Players now start with 3 revives
+   - Reduced revive time from 15 to 10 seconds (6 with quick revive)
+   - Upgrade machine icon will always show even when holding a weapon that can't be upgraded
+   - Removed barrier and revive (for self) notifications to help reduce the amount popping up
+   - Money will not reset if you die and respawn next round, it was too harsh
+   - Outline color of crate changed to make it stand out more
+   - Removed distance check on barriers for outline and made them stand out more
+   - Fixed cost of house 2 front barrier
+   - Quick revive and juggernog icons will show up on UI if purchased
+   - Music fades out when round is finished and fades back in when it is started
+   - Power ups now show in the UI
+
+0.6.4 [07/12/2020]
    - More money balance, I think I was too generous
     
 0.6.3 [07/12/2020]

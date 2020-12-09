@@ -82,7 +82,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:cost"
-      Int: 100
+      Int: 1500
     }
     Overrides {
       Name: "cs:outline_color"
@@ -200,13 +200,13 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:cost"
-      Int: 1000
+      Int: 1500
     }
     Overrides {
       Name: "cs:outline_color"
       Color {
-        R: 0.0472381413
-        G: 0.186000109
+        R: 1
+        G: 1
         A: 1
       }
     }

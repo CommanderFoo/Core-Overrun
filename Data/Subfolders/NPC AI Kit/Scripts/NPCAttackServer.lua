@@ -174,6 +174,10 @@ function ApplyDamage(dmg, source, position, rotation)
 
 	if(has_instant_kill) then
 		amount = GetHealth()
+
+		if(amount <= 0) then
+			amount = 1
+		end
 	end
 
 	if (amount ~= 0) then
@@ -224,7 +228,6 @@ function ApplyDamage(dmg, source, position, rotation)
 		
 		local money = ROOT:GetCustomProperty("money_per_hit")
 
-		Events.BroadcastToPlayer(source, "on_zombie_hit", amount, impactPosition)
 		Events.Broadcast("ObjectDamaged", id, prevHealth, amount, impactPosition, impactRotation, source)
 		--Events.BroadcastToAllPlayers("ObjectDamaged", id, prevHealth, amount, impactPosition, impactRotation)
 
@@ -236,10 +239,12 @@ function ApplyDamage(dmg, source, position, rotation)
 
 			Events.Broadcast("ObjectDestroyed", id)
 			Events.Broadcast("on_zombie_killed", id)
-			--Events.BroadcastToAllPlayers("ObjectDestroyed", id)
+			Events.BroadcastToAllPlayers("on_zombie_destroyed", ROOT:GetWorldPosition())
 			
-			DropRewards(source)
+			--DropRewards(source)
 		end
+
+		Events.BroadcastToPlayer(source, "on_zombie_hit", amount, impactPosition)
 
 		if(source:IsA("Player")) then
 			local double = 1
@@ -257,6 +262,16 @@ function ApplyDamage(dmg, source, position, rotation)
 				source:AddResource("total_kills", 1)
 				spawn_random_power_up(source)
 			end
+		end
+
+		if(zombie_dead) then
+			Task.Spawn(function()
+				Task.Wait(1.1)
+				
+				if(Object.IsValid(ROOT)) then
+					ROOT:Destroy()
+				end
+			end)
 		end
 
 		--print(ROOT.name .. " Health = " .. newHealth)

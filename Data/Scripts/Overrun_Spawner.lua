@@ -43,10 +43,14 @@ local zombie_tank_assets = {
 local spawn_points = {}
 
 local max = 15
+local max_reset = max
 local spawn_task = nil
 local round = 1
-
+local spawned = 0
 local health_increase = 0
+
+local watcher = nil
+local kill_watcher = nil
 
 function add_spawn_points(points)
 	for i = 1, #points:GetChildren() do
@@ -100,6 +104,8 @@ function get_random_zombie_asset()
 	end
 
 	if(round >= 6) then
+		assets = {} -- Clear out so we don't get slow ones
+
 		assets = concat_table(assets, zombie_faster_assets)
 		assets = concat_table(assets, zombie_faster_assets)
 		assets = concat_table(assets, zombie_spitter_assets)
@@ -131,19 +137,13 @@ function spawn_zombies()
 		return
 	end
 	
+	spawned = 0
+
 	watch_container()
 
 	if(round > 1) then
 		set_zombie_stats_per_round()
 	end
-
-	--[[
-	for k, p in pairs(Game.GetPlayers()) do
-		if(p.name == "CommanderFoo") then
-			Events.BroadcastToPlayer(p, "on_debug_spawn_called")
-		end
-	end
-	--]]
 
 	spawn_task = Task.Spawn(function()
 		local zombie = get_random_zombie_asset()
@@ -152,13 +152,12 @@ function spawn_zombies()
 		local rot = point:GetWorldRotation()
 
 		World.SpawnAsset(zombie, {parent = container, position = pos, rotation = rot})
+		spawned = spawned + 1
 	end)
 	
 	spawn_task.repeatCount = max - 1
 	spawn_task.repeatInterval = 1
 end
-
-local watcher = nil
 
 function watch_container()
 	if(watcher == nil) then
@@ -169,13 +168,19 @@ function watch_container()
 				end
 				
 				Events.Broadcast("on_all_zombies_killed")
+
+				if(kill_watcher ~= nil) then
+					kill_watcher:Cancel()
+					kill_watcher = nil
+				end
+
 				watcher:Cancel()
 				watcher = nil
 			end
 		end)
 
 		watcher.repeatCount = -1
-		watcher.repeatInterval = 0.3
+		watcher.repeatInterval = 0.4
 	end
 end
 
@@ -219,7 +224,7 @@ function reset()
 	round = 1
 	spawn_points = {}
 	health_increase = 0
-	max = 15
+	max = max_reset
 
 	add_spawn_points(center_spawns)
 end
@@ -236,12 +241,20 @@ end)
 local debug_task = Task.Spawn(function()
 	for k, p in pairs(Game.GetPlayers()) do
 		if(p.name == "CommanderFoo") then
-			Events.BroadcastToPlayer(p, "on_debug_stats", round, max, spawned, killed, round)
+			local last_zombie = -1
+			local last_state = -1
+
+			if(#container:GetChildren() == 1) then
+				last_zombie = container:GetChildren()[1]:GetCustomProperty("CurrentHealth")
+				last_state = container:GetChildren()[1]:GetCustomProperty("CurrentState")
+			end
+
+			Events.BroadcastToPlayer(p, "on_debug_stats", round, max, spawned, #container:GetChildren(), last_zombie, last_state)
 			break
 		end
 	end
 end)
 
 debug_task.repeatCount = -1
-debug_task.repeatInterval = 0.5
+debug_task.repeatInterval = 1
 --]]

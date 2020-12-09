@@ -201,7 +201,7 @@ Objects {
     }
     Overrides {
       Name: "bp:Thickness"
-      Float: 1
+      Float: 0.55
     }
     Overrides {
       Name: "bp:Outline Channel"
@@ -218,6 +218,18 @@ Objects {
     Overrides {
       Name: "bp:Enabled"
       Bool: true
+    }
+    Overrides {
+      Name: "bp:Color A"
+      Color {
+        R: 1
+        G: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Dynamic Thickness"
+      Bool: false
     }
   }
   Collidable_v2 {

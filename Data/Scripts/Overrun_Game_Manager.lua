@@ -67,50 +67,60 @@ function player_left(p)
 		players[p.id] = nil
 	end
 
-	Storage.SetPlayerData(p, {
-		
-		total_kills = p:GetResource("total_kills"),
-		highest_round = p:GetResource("highest_round")
+	-- Remove self from leaderboards on next reset
 
-	})
+	if(p.name ~= "CommanderFoo") then
+		Storage.SetPlayerData(p, {
+			
+			total_kills = p:GetResource("total_kills"),
+			highest_round = p:GetResource("highest_round")
+
+		})
+	end
 	
 	check_player_status()
 end
 
-function setup_resources(p, lives, reset_total_money, new_player)
+function setup_resources(p, lives, reset_total_money, new_player, round_spawned)
 	local money_to_add = 0
 
 	if(new_player and game_state == "PLAYING" and round > 1) then
 		money_to_add = math.min(3000, round * late_join_money_per_round)
 	end
 
-	p:SetResource("money", starting_money + money_to_add)
+	if(not round_spawned) then
+		p:SetResource("money", starting_money + money_to_add)
 
-	if(reset_total_money) then
-		p:SetResource("total_money", starting_money + money_to_add)
+		if(reset_total_money) then
+			p:SetResource("total_money", starting_money + money_to_add)
+		end
+
+
+		p:SetResource("downs", 0)
+		p:SetResource("revives", 0)
+		p:SetResource("damage", 0)
+		p:SetResource("kills", 0)
+		p:SetResource("total_kills", 0)
+		p:SetResource("highest_round", 1)
 	end
 
-	p:SetResource("downs", 0)
-	p:SetResource("revives", 0)
-	p:SetResource("damage", 0)
-	p:SetResource("kills", 0)
 	p:SetResource("rounds", 48)
 	p:SetResource("is_down", 0)
 	p:SetResource("lifes", lives)
 	p:SetResource("quick_revive", 0)
 	p:SetResource("juggernog", 0)
-	p:SetResource("total_kills", 0)
-	p:SetResource("highest_round", 1)
 
-	local player_data = Storage.GetPlayerData(p)
+	if(not round_spawned) then
+		local player_data = Storage.GetPlayerData(p)
 
-	if(player_data ~= nil) then
-		if(player_data["total_kills" ] ~= nil) then
-			p:SetResource("total_kills", player_data["total_kills"])
-		end
+		if(player_data ~= nil) then
+			if(player_data["total_kills" ] ~= nil) then
+				p:SetResource("total_kills", player_data["total_kills"])
+			end
 
-		if(player_data["highest_round" ] ~= nil) then
-			p:SetResource("highest_round", player_data["highest_round"])
+			if(player_data["highest_round" ] ~= nil) then
+				p:SetResource("highest_round", player_data["highest_round"])
+			end
 		end
 	end
 
@@ -170,7 +180,7 @@ function all_dead()
 	return all_dead
 end
 
-function spawn_players(force_spawn, lives, reset_total_money)
+function spawn_players(force_spawn, lives, reset_total_money, round_spawned)
 	local counter = 1
 
 	for k, v in pairs(players) do
@@ -182,7 +192,7 @@ function spawn_players(force_spawn, lives, reset_total_money)
 			v.player.team = 1
 
 			if(was_dead and not force_spawn) then
-				lives = 1
+				lives = 0
 				Events.Broadcast("on_clean_up_tombstones", k)
 			end
 
@@ -198,7 +208,7 @@ function spawn_players(force_spawn, lives, reset_total_money)
 				Events.BroadcastToPlayer(v.player, "on_player_respawn")
 			end
 
-			setup_resources(v.player, lives, reset_total_money)
+			setup_resources(v.player, lives, reset_total_money, false, round_spawned)
 		end
 
 		counter = counter + 1
@@ -251,9 +261,16 @@ function round_completed()
 
 	Spawner.context.set_round(round)
 
-	spawn_players(false, starting_lives, false)
+	spawn_players(false, starting_lives, false, true)
 
 	Task.Wait(round_end_duration)
+
+	local fog_round = false
+	local fog_rand = math.random(100)
+
+	if(fog_rand <= 15 or round == 2 or round == 11 or round == 20 or round == 50) then
+		fog_round = true
+	end
 
 	if(round % 5 == 0) then
 		Events.BroadcastToAllPlayers("on_notification", "spitters")
@@ -261,14 +278,14 @@ function round_completed()
 	
 	local max_spawns = 15
 
-	if(round % 5 == 0) then
-		max_spawns = 10
-	elseif(round > 3) then
+	if(round % 5 == 0 and round > 5) then
+		max_spawns = 15
+	elseif(round > 2) then
 		max_spawns = max_spawns + (round + 2)
 	end
 
-	Spawner.context.set_max_spawns(math.min(40, max_spawns))
-	Events.BroadcastToAllPlayers("on_round_start", round)
+	Spawner.context.set_max_spawns(math.min(50, max_spawns))
+	Events.BroadcastToAllPlayers("on_round_start", round, fog_round)
 	Spawner.context.spawn_zombies()	
 end
 

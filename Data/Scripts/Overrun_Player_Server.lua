@@ -39,6 +39,24 @@ function player_joined(p)
 			player = p
 		
 		}
+
+		local color_index = 1
+		
+		for k, v in pairs(Game.GetPlayers()) do
+			if(v.id ~= p.id) then
+				if(v:GetResource("color_index") == 1) then
+					color_index = 2
+				elseif(v:GetResource("color_index") == 2) then
+					color_index = 3
+				elseif(v:GetResource("color_index") == 3) then
+					color_index = 4
+				elseif(v:GetResource("color_index") == 4) then
+					color_index = 1
+				end
+			end
+		end
+
+		p:SetResource("color_index", color_index)
 	end
 
 	--[[

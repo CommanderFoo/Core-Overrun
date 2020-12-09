@@ -1,7 +1,9 @@
-﻿--[[
+﻿local Spawner = script.parent:GetCustomProperty("Overrun_Spawner_Server"):WaitForObject()
+
+--[[
 	NPCAttack - Server
 	by: standardcombo
-	v0.10.2
+	v0.9.1
 	
 	Works in conjunction with NPCAIServer. The separation of the two scripts makes it
 	easier to design diverse kinds of enemies.
@@ -16,8 +18,9 @@ function PLAYER_HOMING_TARGETS() return MODULE.Get("standardcombo.Combat.PlayerH
 function CROSS_CONTEXT_CALLER() return MODULE.Get("standardcombo.Utils.CrossContextCaller") end
 function LOOT_DROP_FACTORY() return MODULE.Get_Optional("standardcombo.NPCKit.LootDropFactory") end
 
-
 local ROOT = script:GetCustomProperty("Root"):WaitForObject()
+
+ROOT:SetNetworkedCustomProperty("CurrentHealth", ROOT:GetCustomProperty("CurrentHealth") + Spawner.context.get_health_increase())
 
 local DAMAGE_TO_PLAYERS = script:GetCustomProperty("DamageToPlayers") or 1
 local DAMAGE_TO_NPCS = script:GetCustomProperty("DamageToNPCs") or 1
@@ -43,6 +46,14 @@ local cooldownRemaining = 0
 
 local projectileImpactListener = nil
 
+-- Custom changes for powerups
+
+local has_instant_kill = false
+local has_double_points = false
+
+local spawn_max_ammo = false
+
+-- end custom
 
 function GetTeam()
 	return ROOT:GetCustomProperty("Team")
@@ -114,16 +125,12 @@ function OnProjectileImpact(projectile, other, hitResult)
 		SpawnAsset(IMPACT_SURFACE_VFX, pos, hitResult:GetTransform():GetRotation())
 	end
 	
-	if damageAmount == 0 then return end
-	
 	local dmg = Damage.New(damageAmount)
 	dmg:SetHitResult(hitResult)
 	dmg.reason = DamageReason.COMBAT
 		
-	-- Apply the damage
 	COMBAT().ApplyDamage(other, dmg, script, pos, rot)
-	
-	-- Cleanup
+		
 	projectile:Destroy()
 end
 
@@ -164,6 +171,11 @@ ROOT:SetNetworkedCustomProperty("ObjectId", id)
 
 function ApplyDamage(dmg, source, position, rotation)
 	local amount = dmg.amount
+
+	if(has_instant_kill) then
+		amount = GetHealth()
+	end
+
 	if (amount ~= 0) then
 		local prevHealth = GetHealth()
 		local newHealth = prevHealth - amount
@@ -207,20 +219,55 @@ function ApplyDamage(dmg, source, position, rotation)
 		elseif DAMAGE_FX then
 			SpawnAsset(DAMAGE_FX, impactPosition, impactRotation)
 		end
-		
+
 		-- Events
 		
+		local money = ROOT:GetCustomProperty("money_per_hit")
+
+		Events.BroadcastToPlayer(source, "on_zombie_hit", amount, impactPosition)
 		Events.Broadcast("ObjectDamaged", id, prevHealth, amount, impactPosition, impactRotation, source)
-		Events.BroadcastToAllPlayers("ObjectDamaged", id, prevHealth, amount, impactPosition, impactRotation)
+		--Events.BroadcastToAllPlayers("ObjectDamaged", id, prevHealth, amount, impactPosition, impactRotation)
+
+		local zombie_dead = false
 
 		if (newHealth <= 0) then
+			zombie_dead = true
+			money = money + ROOT:GetCustomProperty("money_per_kill")
+
 			Events.Broadcast("ObjectDestroyed", id)
-			Events.BroadcastToAllPlayers("ObjectDestroyed", id)
+			Events.Broadcast("on_zombie_killed", id)
+			--Events.BroadcastToAllPlayers("ObjectDestroyed", id)
 			
 			DropRewards(source)
 		end
 
+		if(source:IsA("Player")) then
+			local double = 1
+
+			if(has_double_points) then
+				double = 2
+			end
+
+			source:AddResource("money", money * double)
+			source:AddResource("total_money", amount * double)
+			source:AddResource("damage", amount)
+			
+			if(zombie_dead) then
+				source:AddResource("kills", 1)
+				source:AddResource("total_kills", 1)
+				spawn_random_power_up(source)
+			end
+		end
+
 		--print(ROOT.name .. " Health = " .. newHealth)
+	end
+end
+
+function spawn_random_power_up(source)
+	if(spawn_max_ammo) then
+		Events.Broadcast("on_force_spawn_max_ammo", ROOT:GetWorldPosition().x, ROOT:GetWorldPosition().y, source:GetWorldRotation().z)
+	else
+		Events.Broadcast("on_spawn_random_power_up", ROOT:GetWorldPosition().x, ROOT:GetWorldPosition().y, source:GetWorldRotation().z)
 	end
 end
 
@@ -231,7 +278,6 @@ end
 function SetHealth(value)
 	ROOT:SetNetworkedCustomProperty("CurrentHealth", value)
 end
-
 
 function DropRewards(killer)
 	-- Give resources
@@ -248,3 +294,10 @@ function DropRewards(killer)
 	end
 end
 
+Events.Connect("on_power_up", function(power_up, enabled)
+	if(power_up == "instant_kill") then
+		has_instant_kill = enabled
+	elseif(power_up == "double_points") then
+		has_double_points = enabled
+	end
+end)

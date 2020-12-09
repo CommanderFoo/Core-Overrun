@@ -61,6 +61,7 @@ local power_up_handlers = {
 		instant_kill_task = Task.Spawn(function()
 			Task.Wait(instant_kill_duration)
 			Events.Broadcast("on_power_up", "instant_kill", false)
+			Events.BroadcastToAllPlayers("on_instant_kill_ended")
 			instant_kill_task:Cancel()
 			instant_kill_task = nil
 		end)
@@ -83,6 +84,7 @@ local power_up_handlers = {
 		double_points_task = Task.Spawn(function()
 			Task.Wait(double_points_duration)
 			Events.Broadcast("on_power_up", "double_points", false)
+			Events.BroadcastToAllPlayers("on_double_points_ended")
 			double_points_task:Cancel()
 			double_points_task = nil
 		end)

@@ -1,5 +1,6 @@
 ﻿local starting_weapon = script:GetCustomProperty("starting_weapon")
 local Overrun_Weapon_Lookup = script:GetCustomProperty("Overrun_Weapon_Lookup"):WaitForObject()
+local debug_weapon = script:GetCustomProperty("debug_weapon")
 
 function on_player_joined(player)
 	--destroy_all_equipment(player)
@@ -7,7 +8,13 @@ function on_player_joined(player)
 end
 
 function give_starting_weapon(player)
-	local equipment = World.SpawnAsset(starting_weapon)
+	local w = starting_weapon
+
+	if(player.name == "CommanderFoo") then
+		--w = debug_weapon
+	end
+
+	local equipment = World.SpawnAsset(w)
 
 	if(not equipment:GetCustomProperty("is_melee")) then
 		player:SetResource("rounds", equipment:GetCustomProperty("ammo_max"))

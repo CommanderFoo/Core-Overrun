@@ -41,7 +41,7 @@ function player_down(id, pos, lifes)
 			local the_player = get_player(id)
 
 			if(the_player ~= nil and the_player:GetResource("quick_revive") == 1) then
-				duration = revive_duration / 2
+				duration = 6
 			end
 
 			revive_start_time = time()

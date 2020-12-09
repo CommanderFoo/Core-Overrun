@@ -95,7 +95,6 @@ Objects {
   ChildIds: 1299392427123167628
   ChildIds: 11903155880014193206
   ChildIds: 9988010873333169507
-  ChildIds: 14690455096491563461
   ChildIds: 130430898434401412
   ChildIds: 11279276471525725501
   Collidable_v2 {
@@ -107,8 +106,8 @@ Objects {
   Control {
     Width: 210
     Height: 274
-    UIX: 6.67836952
-    UIY: 180.671936
+    UIX: -402.247925
+    UIY: 432.206116
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -132,7 +131,7 @@ Objects {
 }
 Objects {
   Id: 11279276471525725501
-  Name: "Spawn Calls"
+  Name: "Last Health"
   Transform {
     Location {
     }
@@ -155,7 +154,7 @@ Objects {
   Control {
     Width: 200
     Height: 60
-    UIY: 190.086731
+    UIY: 151.621262
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -163,7 +162,7 @@ Objects {
     }
     UseParentWidth: true
     Text {
-      Label: "Spawn Calls: 0"
+      Label: "Last Health: 0"
       Color {
         R: 1
         G: 1
@@ -192,7 +191,7 @@ Objects {
 }
 Objects {
   Id: 130430898434401412
-  Name: "On Map"
+  Name: "Alive"
   Transform {
     Location {
     }
@@ -215,7 +214,7 @@ Objects {
   Control {
     Width: 200
     Height: 60
-    UIY: 152.603592
+    UIY: 118.038017
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -223,67 +222,7 @@ Objects {
     }
     UseParentWidth: true
     Text {
-      Label: "On Map: 0"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      Size: 20
-      Justification {
-        Value: "mc:etextjustify:left"
-      }
-      AutoWrapText: true
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 14690455096491563461
-  Name: "Killed"
-  Transform {
-    Location {
-    }
-    Rotation {
-      Yaw: 5.1226416e-05
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4987744842944940401
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    Width: 200
-    Height: 60
-    UIY: 114.728386
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    UseParentWidth: true
-    Text {
-      Label: "Killed: 0"
+      Label: "Alive: 0"
       Color {
         R: 1
         G: 1
@@ -609,25 +548,19 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:killed"
-      ObjectReference {
-        SelfId: 14690455096491563461
-      }
-    }
-    Overrides {
-      Name: "cs:on_map"
-      ObjectReference {
-        SelfId: 130430898434401412
-      }
-    }
-    Overrides {
       Name: "cs:round"
       ObjectReference {
         SelfId: 1299392427123167628
       }
     }
     Overrides {
-      Name: "cs:calls"
+      Name: "cs:Alive"
+      ObjectReference {
+        SelfId: 130430898434401412
+      }
+    }
+    Overrides {
+      Name: "cs:LastHealth"
       ObjectReference {
         SelfId: 11279276471525725501
       }

@@ -5,6 +5,8 @@ local leaderboards = script:GetCustomProperty("leaderboards"):WaitForObject()
 local countdown_text = script:GetCustomProperty("countdown_text"):WaitForObject()
 local countdown_panel = script:GetCustomProperty("countdown_panel"):WaitForObject()
 
+local fog = script:GetCustomProperty("fog"):WaitForObject()
+
 local local_player = Game.GetLocalPlayer()
 
 local entries = {
@@ -17,6 +19,42 @@ local entries = {
 }
 
 local flash_task = nil
+local was_fog_round = false;
+
+--[[
+start 900
+fog falloff 1.2
+fog offset 30
+
+start 330
+falloff 1.7
+offset 45
+--]]
+
+local fog_start_tween = nil
+local fog_falloff_tween = nil
+local fog_offset_tween = nil
+
+Task.Spawn(function()
+	--Task.Wait(1)
+	--round_start(1, true)
+	--Task.Wait(8)
+	--round_start(1, false)
+end)
+
+function Tick(dt)
+	if(fog_start_tween ~= nil) then
+		fog_start_tween:tween(dt)
+	end
+
+	if(fog_falloff_tween ~= nil) then
+		fog_falloff_tween:tween(dt)
+	end
+
+	if(fog_offset_tween ~= nil) then
+		fog_offset_tween:tween(dt)
+	end
+end
 
 function round_completed(round)
 	Events.Broadcast("on_audio_round_completed")
@@ -31,8 +69,51 @@ function round_completed(round)
 	flash_task.repeatInterval = 1
 end
 
-function round_start(round)
+function round_start(round, fog_round)
 	round_ui.text = tostring(round)
+
+	if(fog_round) then
+		if(not was_fog_round) then
+			Events.Broadcast("on_notification", "heavyfog")
+			fog_start_tween = PIXELDEPTH.Tween:new(8, {a = 900}, {a = 330})
+			fog_falloff_tween = PIXELDEPTH.Tween:new(8, {a = 1.2}, {a = 1.7})
+			fog_offset_tween = PIXELDEPTH.Tween:new(8, {a = 30}, {a = 45})
+
+			was_fog_round = true
+		end
+	elseif(was_fog_round) then
+		fog_start_tween = PIXELDEPTH.Tween:new(8, {a = 330}, {a = 900})
+		fog_falloff_tween = PIXELDEPTH.Tween:new(8, {a = 1.7}, {a = 1.2})
+		fog_offset_tween = PIXELDEPTH.Tween:new(8, {a = 45}, {a = 30})
+
+		was_fog_round = false
+	end
+
+	if(fog_start_tween ~= nil) then
+		fog_start_tween:on_change(function(changed)
+			fog:SetSmartProperty("Start", changed.a)
+		end)
+
+		fog_start_tween:on_complete(function()
+			fog_start_tween = nil
+		end)
+
+		fog_falloff_tween:on_change(function(changed)
+			fog:SetSmartProperty("Layered Fog Falloff", changed.a)
+		end)
+
+		fog_falloff_tween:on_complete(function()
+			fog_falloff_tween = nil
+		end)
+
+		fog_offset_tween:on_change(function(changed)
+			fog:SetSmartProperty("Layered Fog Offset Height", changed.a)
+		end)
+
+		fog_offset_tween:on_complete(function()
+			fog_offset_tween = nil
+		end)
+	end
 end
 
 function clear_leaderboard()

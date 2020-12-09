@@ -62,7 +62,7 @@ Objects {
         }
         Overrides {
           Name: "cs:revive_duration"
-          Int: 15
+          Int: 10
         }
       }
     }
@@ -171,7 +171,7 @@ Objects {
         }
         Overrides {
           Name: "cs:revive_duration"
-          Int: 15
+          Int: 10
         }
       }
     }
@@ -280,7 +280,7 @@ Objects {
         }
         Overrides {
           Name: "cs:revive_duration"
-          Int: 15
+          Int: 10
         }
       }
     }
@@ -388,7 +388,7 @@ Objects {
         }
         Overrides {
           Name: "cs:revive_duration"
-          Int: 15
+          Int: 10
         }
       }
     }

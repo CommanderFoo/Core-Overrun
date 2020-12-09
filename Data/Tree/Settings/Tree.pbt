@@ -55,6 +55,9 @@ Objects {
     Overrides {
       Name: "bp:Directional Inscattering Color"
       Color {
+        R: 0.0968750343
+        G: 0.0968750343
+        B: 0.0968750343
         A: 1
       }
     }
@@ -64,17 +67,20 @@ Objects {
     }
     Overrides {
       Name: "bp:Start"
-      Float: 749.052368
+      Float: 900
     }
     Overrides {
       Name: "bp:Albedo"
       Color {
+        R: 0.0968750343
+        G: 0.0968750343
+        B: 0.0968750343
         A: 1
       }
     }
     Overrides {
       Name: "bp:Layered Fog Density"
-      Float: 0.902992129
+      Float: 10
     }
     Overrides {
       Name: "bp:color"
@@ -87,18 +93,22 @@ Objects {
     }
     Overrides {
       Name: "bp:Layered Fog Offset Height"
-      Float: 45.1013947
+      Float: 30
     }
     Overrides {
       Name: "bp:Layered Fog Falloff"
-      Float: 1.75375915
+      Float: 1.5
+    }
+    Overrides {
+      Name: "bp:opacity"
+      Float: 1
     }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceon"
   }
   Blueprint {
     BlueprintAsset {
