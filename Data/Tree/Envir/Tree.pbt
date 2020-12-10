@@ -2,7 +2,7 @@
 RootId: 5508549066234980964
 Objects {
   Id: 4385416386111343334
-  Name: "Plane 1m - One Sided"
+  Name: "Spawn Catcher"
   Transform {
     Location {
       X: 1658.34265
@@ -12,8 +12,8 @@ Objects {
     Rotation {
     }
     Scale {
-      X: 8.50001431
-      Y: 8.50001431
+      X: 11.5065403
+      Y: 10.7029438
       Z: 8.50001431
     }
   }

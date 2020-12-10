@@ -54,7 +54,8 @@ function player_joined(p)
 		p.team = 1
 
 		Task.Spawn(function()
-			Task.Wait(5)
+			Task.Wait(6)
+			handle_welcome()
 			Events.Broadcast("on_update_players_crate")
 		end)
 	end
@@ -67,16 +68,13 @@ function player_left(p)
 		players[p.id] = nil
 	end
 
-	-- Remove self from leaderboards on next reset
-
-	if(p.name ~= "CommanderFoo") then
-		Storage.SetPlayerData(p, {
+	Storage.SetPlayerData(p, {
 			
-			total_kills = p:GetResource("total_kills"),
-			highest_round = p:GetResource("highest_round")
+		total_kills = p:GetResource("total_kills"),
+		highest_round = p:GetResource("highest_round"),
+		welcome = 1
 
-		})
-	end
+	})
 	
 	check_player_status()
 end
@@ -94,7 +92,6 @@ function setup_resources(p, lives, reset_total_money, new_player, round_spawned)
 		if(reset_total_money) then
 			p:SetResource("total_money", starting_money + money_to_add)
 		end
-
 
 		p:SetResource("downs", 0)
 		p:SetResource("revives", 0)
@@ -120,6 +117,12 @@ function setup_resources(p, lives, reset_total_money, new_player, round_spawned)
 
 			if(player_data["highest_round" ] ~= nil) then
 				p:SetResource("highest_round", player_data["highest_round"])
+			end
+
+			if(player_data["welcome" ] ~= nil) then
+				p:SetResource("welcome", player_data["welcome"])
+			else
+				p:SetResource("welcome", 0)
 			end
 		end
 	end
@@ -225,6 +228,7 @@ function start_count_down()
 
 	local task = Task.Spawn(function()
 		Events.BroadcastToAllPlayers("on_game_starting", timer)
+		
 		timer = timer - 1
 
 		if(timer == -1) then
@@ -232,11 +236,24 @@ function start_count_down()
 			game_state = "PLAYING"
 			Events.Broadcast("on_enable_all_players")
 			Spawner.context.spawn_zombies()
+
+			handle_welcome()
 		end
 	end)
 
 	task.repeatInterval = 1
 	task.repeatCount = game_start_duration
+end
+
+function handle_welcome()
+	Task.Wait(2)
+
+	for k, p in pairs(Game.GetPlayers()) do
+		if(p:GetResource("welcome") == 0) then
+			Events.BroadcastToPlayer(p, "on_welcome")
+			p:SetResource("welcome", 1)
+		end
+	end
 end
 
 function update_highest_round()
@@ -268,7 +285,7 @@ function round_completed()
 	local fog_round = false
 	local fog_rand = math.random(100)
 
-	if(fog_rand <= 15 or round == 2 or round == 11 or round == 20 or round == 50) then
+	if(fog_rand <= 10 or round == 2 or round == 11 or round == 20 or round == 50) then
 		fog_round = true
 	end
 

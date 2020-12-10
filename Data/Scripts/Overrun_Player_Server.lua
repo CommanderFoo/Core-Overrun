@@ -27,10 +27,36 @@ end
 
 local regen_task = Task.Spawn(function()
 	regen()
+
+	--for k, p in pairs(Game.GetPlayers()) do
+	--	print(p.name, p:GetResource("color_index"))
+	--end
+
+	--print("--------------")
 end)
 
 regen_task.repeatCount = -1
 regen_task.repeatInterval = 1
+
+function get_free_color_index(id)
+	local used = {0, 0, 0, 0}
+
+	for k, p in pairs(Game.GetPlayers()) do
+		if(id ~= p.id) then
+			used[p:GetResource("color_index")] = p:GetResource("color_index")
+		end
+	end
+
+	local index = 1
+
+	for i = 1, #used do
+		if(used[i] == 0) then
+			index = i
+		end
+	end
+
+	return index
+end
 
 function player_joined(p)
 	if(not players[p.id]) then
@@ -40,23 +66,7 @@ function player_joined(p)
 		
 		}
 
-		local color_index = 1
-		
-		for k, v in pairs(Game.GetPlayers()) do
-			if(v.id ~= p.id) then
-				if(v:GetResource("color_index") == 1) then
-					color_index = 2
-				elseif(v:GetResource("color_index") == 2) then
-					color_index = 3
-				elseif(v:GetResource("color_index") == 3) then
-					color_index = 4
-				elseif(v:GetResource("color_index") == 4) then
-					color_index = 1
-				end
-			end
-		end
-
-		p:SetResource("color_index", color_index)
+		p:SetResource("color_index", get_free_color_index(p.id))
 	end
 
 	--[[

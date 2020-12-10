@@ -14,6 +14,8 @@ function give_starting_weapon(player)
 		--w = debug_weapon
 	end
 
+	destroy_all_equipment(player)
+	
 	local equipment = World.SpawnAsset(w)
 
 	if(not equipment:GetCustomProperty("is_melee")) then

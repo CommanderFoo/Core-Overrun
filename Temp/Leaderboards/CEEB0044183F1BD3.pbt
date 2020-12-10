@@ -7,20 +7,38 @@
 GlobalEntries {
   Id: "BOT_Bot1"
   Name: "Bot1"
-  ScoreFormatted: "120.0"
-  DateTime: "2020-12-09T13:01:43.775Z"
+  ScoreFormatted: "143.0"
+  DateTime: "2020-12-10T20:40:03.471Z"
 }
 GlobalEntries {
   Id: "BOT_Bot2"
   Name: "Bot2"
-  ScoreFormatted: "31.0"
-  DateTime: "2020-12-09T10:41:30.557Z"
+  ScoreFormatted: "36.0"
+  DateTime: "2020-12-10T20:40:03.471Z"
+}
+GlobalEntries {
+  Id: "BOT_Bot5"
+  Name: "Bot5"
+  ScoreFormatted: "0.0"
+  DateTime: "2020-12-10T12:00:21.927Z"
 }
 GlobalEntries {
   Id: "BOT_Bot3"
   Name: "Bot3"
   ScoreFormatted: "0.0"
   DateTime: "2020-12-09T10:59:29.107Z"
+}
+GlobalEntries {
+  Id: "BOT_Bot4"
+  Name: "Bot4"
+  ScoreFormatted: "0.0"
+  DateTime: "2020-12-10T11:58:11.580Z"
+}
+GlobalEntries {
+  Id: "BOT_Bot6"
+  Name: "Bot6"
+  ScoreFormatted: "0.0"
+  DateTime: "2020-12-10T12:03:44.495Z"
 }
 Config {
   SortType {

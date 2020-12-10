@@ -5,6 +5,11 @@ local juggernog_ui = script:GetCustomProperty("juggernog_ui"):WaitForObject()
 local quick_revive = script:GetCustomProperty("quick_revive"):WaitForObject()
 local quick_revive_ui = script:GetCustomProperty("quick_revive_ui"):WaitForObject()
 
+local player_1_color = script:GetCustomProperty("player_1_color")
+local player_2_color = script:GetCustomProperty("player_2_color")
+local player_3_color = script:GetCustomProperty("player_3_color")
+local player_4_color = script:GetCustomProperty("player_4_color")
+
 local player_icons = script:GetCustomProperty("player_icons"):WaitForObject()
 
 local local_player = Game.GetLocalPlayer()
@@ -86,19 +91,19 @@ function show_player_icons(screen)
 
 			if(screen_pos) then
 				if(screen_pos.x > 0 and screen_pos.x < screen.x and screen_pos.y > 0 and screen_pos.y < screen.y) then
-					icon.x = screen_pos.x
-					icon.y = screen_pos.y - 30
+					icon.x = screen_pos.x - 15
+					icon.y = screen_pos.y - 15
 
 					local color_index = players[i]:GetResource("color_index")
 
 					if(color_index == 1) then
-						icon:SetColor(Color.RED)
+						icon:SetColor(player_1_color)
 					elseif(color_index == 2) then
-						icon:SetColor(Color.BLUE)
+						icon:SetColor(player_2_color)
 					elseif(color_index == 3) then
-						icon:SetColor(Color.GREEN)
+						icon:SetColor(player_3_color)
 					elseif(color_index == 4) then
-						icon:SetColor(Color.RED)
+						icon:SetColor(player_4_color)
 					end
 
 					icon.visibility = Visibility.FORCE_ON

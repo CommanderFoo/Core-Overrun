@@ -27,7 +27,7 @@ fog falloff 1.2
 fog offset 30
 
 start 330
-falloff 1.7
+falloff 1.6
 offset 45
 --]]
 
@@ -35,12 +35,14 @@ local fog_start_tween = nil
 local fog_falloff_tween = nil
 local fog_offset_tween = nil
 
+--[[
 Task.Spawn(function()
-	--Task.Wait(1)
-	--round_start(1, true)
-	--Task.Wait(8)
-	--round_start(1, false)
+	Task.Wait(1)
+	round_start(1, true)
+	Task.Wait(45)
+	round_start(1, false)
 end)
+--]]
 
 function Tick(dt)
 	if(fog_start_tween ~= nil) then
@@ -76,14 +78,14 @@ function round_start(round, fog_round)
 		if(not was_fog_round) then
 			Events.Broadcast("on_notification", "heavyfog")
 			fog_start_tween = PIXELDEPTH.Tween:new(8, {a = 900}, {a = 330})
-			fog_falloff_tween = PIXELDEPTH.Tween:new(8, {a = 1.2}, {a = 1.7})
+			fog_falloff_tween = PIXELDEPTH.Tween:new(8, {a = 1.2}, {a = 1.6})
 			fog_offset_tween = PIXELDEPTH.Tween:new(8, {a = 30}, {a = 45})
 
 			was_fog_round = true
 		end
 	elseif(was_fog_round) then
 		fog_start_tween = PIXELDEPTH.Tween:new(8, {a = 330}, {a = 900})
-		fog_falloff_tween = PIXELDEPTH.Tween:new(8, {a = 1.7}, {a = 1.2})
+		fog_falloff_tween = PIXELDEPTH.Tween:new(8, {a = 1.6}, {a = 1.2})
 		fog_offset_tween = PIXELDEPTH.Tween:new(8, {a = 45}, {a = 30})
 
 		was_fog_round = false

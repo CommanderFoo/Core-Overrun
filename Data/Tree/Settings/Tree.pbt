@@ -97,7 +97,7 @@ Objects {
     }
     Overrides {
       Name: "bp:Layered Fog Falloff"
-      Float: 1.5
+      Float: 1.2
     }
     Overrides {
       Name: "bp:opacity"

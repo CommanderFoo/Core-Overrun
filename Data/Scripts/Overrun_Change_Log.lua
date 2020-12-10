@@ -1,7 +1,32 @@
-﻿0.8.2 [09/12/2020]
+﻿0.8.8 [10/12/2020]
+- Welcome / Help ui live
+
+0.8.7 [10/12/2020]
+   - Debug UI for self
+
+0.8.7 [10/12/2020]
+   - Reverted a UI change
+
+0.8.6 [10/12/2020]
+   - Welcome / help UI
+   
+0.8.5 [10/12/2020]
+   - Tweaking player colors
+   
+0.8.4 [10/12/2020]
+   - Fixed player icon position, it's now more center
+   - Fixed color of player ui border not matching up with in game player icon color
+
+0.8.3 [10/12/2020]
+   - Fog round chance lowered to 10%
+   - Reduced the fog effect a small amount so it's not too annoying
+
+0.8.2 [09/12/2020]
    - Due to amount of testing I am doing on live servers, I have stopped my kills being counted for 
      the leaderboards
-
+   - Tweak spawns per round
+   - 15% chance of a fog round, 100% chance at 2, 11, 20, and 50
+   
 0.8.1 [09/12/2020]
    - Fix for client side effect not working if other clients killed the zombie
 

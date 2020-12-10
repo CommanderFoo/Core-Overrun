@@ -580,6 +580,7 @@ Objects {
   ChildIds: 2600664526236328316
   ChildIds: 2163844371996655319
   ChildIds: 13225820577735480176
+  ChildIds: 10841546411383999139
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -587,6 +588,83 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   NetworkContext {
+  }
+}
+Objects {
+  Id: 10841546411383999139
+  Name: "Overrun_Welcome_Client"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17922148234597677997
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:PIXELDEPTH_API"
+      AssetReference {
+        Id: 16622261663679835299
+      }
+    }
+    Overrides {
+      Name: "cs:container"
+      ObjectReference {
+        SelfId: 12421471463233971294
+      }
+    }
+    Overrides {
+      Name: "cs:welcome"
+      ObjectReference {
+        SelfId: 10672329124163986696
+      }
+    }
+    Overrides {
+      Name: "cs:controls"
+      ObjectReference {
+        SelfId: 111474929912340780
+      }
+    }
+    Overrides {
+      Name: "cs:colors"
+      ObjectReference {
+        SelfId: 1619795465564071706
+      }
+    }
+    Overrides {
+      Name: "cs:revives"
+      ObjectReference {
+        SelfId: 17151441711325775319
+      }
+    }
+    Overrides {
+      Name: "cs:drops"
+      ObjectReference {
+        SelfId: 10288186491426979589
+      }
+    }
+    Overrides {
+      Name: "cs:thoughts"
+      ObjectReference {
+        SelfId: 5412910409210372173
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 9488448068839842599
+    }
   }
 }
 Objects {
@@ -990,6 +1068,39 @@ Objects {
       Name: "cs:gibs_fx"
       AssetReference {
         Id: 1828773146990716755
+      }
+    }
+    Overrides {
+      Name: "cs:player_1_color"
+      Color {
+        R: 0.890000105
+        G: 4.24385121e-07
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:player_2_color"
+      Color {
+        R: 1
+        G: 0.975
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:player_3_color"
+      Color {
+        R: 0.217745543
+        B: 0.722
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:player_4_color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
       }
     }
   }

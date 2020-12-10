@@ -12,6 +12,11 @@ local hit_sound = script:GetCustomProperty("hit_sound"):WaitForObject()
 
 local hit_effect = script:GetCustomProperty("hit_effect"):WaitForObject()
 
+local player_1_color = script:GetCustomProperty("player_1_color")
+local player_2_color = script:GetCustomProperty("player_2_color")
+local player_3_color = script:GetCustomProperty("player_3_color")
+local player_4_color = script:GetCustomProperty("player_4_color")
+
 local local_player = Game.GetLocalPlayer()
 local players = {}
 local total_players = 0
@@ -88,13 +93,13 @@ function player_joined(p)
 	local color_index = p:GetResource("color_index")
 
 	if(color_index == 1) then
-		frame_ui:SetColor(Color.RED)
+		frame_ui:SetColor(player_1_color)
 	elseif(color_index == 2) then
-		frame_ui:SetColor(Color.BLUE)
+		frame_ui:SetColor(player_2_color)
 	elseif(color_index == 3) then
-		frame_ui:SetColor(Color.GREEN)
+		frame_ui:SetColor(player_3_color)
 	elseif(color_index == 4) then
-		frame_ui:SetColor(Color.RED)
+		frame_ui:SetColor(player_4_color)
 	end
 end
 
@@ -165,6 +170,8 @@ function update_player_info(obj, left)
 		set_alpha(obj, "background_ui", alpha)
 		set_alpha(obj, "box_ui", alpha)
 		set_alpha(obj, "avatar_border_ui", alpha)
+
+		obj.frame_ui:SetColor(Color.BLACK)
 
 		obj.overlay_ui.visibility = Visibility.FORCE_ON
 	end
