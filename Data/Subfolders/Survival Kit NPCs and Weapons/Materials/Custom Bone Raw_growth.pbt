@@ -2,7 +2,7 @@
   Id: 2243990600866156013
   Name: "Custom Bone Raw_growth"
   PlatformAssetType: 13
-  SerializationVersion: 68
+  SerializationVersion: 70
   CustomMaterialAsset {
     BaseMaterialId: 6872496993114819571
     ParameterOverrides {

@@ -1,6 +1,6 @@
 ﻿Assets {
   Id: 9279130763178750287
-  Name: "Military Fence Doorway"
+  Name: "Urban Fence Doorway"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
@@ -9,7 +9,7 @@
 }
 Assets {
   Id: 7720350652240094542
-  Name: "Military Fence Pole - Connecting"
+  Name: "Urban Fence Pole - Connecting"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
@@ -18,7 +18,7 @@ Assets {
 }
 Assets {
   Id: 5457962044230310640
-  Name: "Military Fence Crossbar - Panel"
+  Name: "Urban Fence Crossbar - Panel"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
@@ -27,7 +27,7 @@ Assets {
 }
 Assets {
   Id: 472496642976630875
-  Name: "Military Fence Panel"
+  Name: "Urban Fence Panel"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"

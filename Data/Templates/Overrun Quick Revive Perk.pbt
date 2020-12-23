@@ -2573,7 +2573,7 @@
     }
     Assets {
       Id: 10396917736734746205
-      Name: "Foundation 01 Corner Mainstreet"
+      Name: "Main Street Foundation 01 - Corner"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -2657,5 +2657,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 68
+  SerializationVersion: 70
 }

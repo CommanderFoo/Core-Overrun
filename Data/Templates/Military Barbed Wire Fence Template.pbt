@@ -906,7 +906,7 @@
     }
     Assets {
       Id: 3844709690263076331
-      Name: "Military Fence Pole - Gate End"
+      Name: "Urban Fence Pole - Gate End"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -942,7 +942,7 @@
     }
     Assets {
       Id: 18236536682416522687
-      Name: "Decal Logo 02"
+      Name: "Decal Military Symbols 02"
       PlatformAssetType: 14
       PrimaryAsset {
         AssetType: "DecalBlueprintAssetRef"
@@ -999,5 +999,5 @@
       AssetId: "Barbed_Wire_Fence_Template"
     }
   }
-  SerializationVersion: 68
+  SerializationVersion: 70
 }

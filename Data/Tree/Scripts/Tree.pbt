@@ -285,7 +285,7 @@ Objects {
     }
     Overrides {
       Name: "cs:game_start_duration"
-      Int: 15
+      Int: 0
     }
     Overrides {
       Name: "cs:starting_money"
@@ -299,6 +299,12 @@ Objects {
       Name: "cs:starting_lives"
       Int: 3
     }
+    Overrides {
+      Name: "cs:Overrun_Pod_Spawner"
+      ObjectReference {
+        SelfId: 13560153559646981623
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -309,6 +315,77 @@ Objects {
   Script {
     ScriptAsset {
       Id: 5372937809984182755
+    }
+  }
+}
+Objects {
+  Id: 13560153559646981623
+  Name: "Overrun_Toxic_Pod_Spawner"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5539997602360125933
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:PIXELDEPTH_API"
+      AssetReference {
+        Id: 16622261663679835299
+      }
+    }
+    Overrides {
+      Name: "cs:pod_container"
+      ObjectReference {
+        SelfId: 7952590385204833906
+      }
+    }
+    Overrides {
+      Name: "cs:zombie_container"
+      ObjectReference {
+        SelfId: 2202992188429786742
+      }
+    }
+    Overrides {
+      Name: "cs:pod"
+      AssetReference {
+        Id: 16235717740936835536
+      }
+    }
+    Overrides {
+      Name: "cs:center_spawns"
+      ObjectReference {
+        SelfId: 6224838324090798873
+      }
+    }
+    Overrides {
+      Name: "cs:house_1_spawns"
+      ObjectReference {
+        SelfId: 14201031784172545230
+      }
+    }
+    Overrides {
+      Name: "cs:house_2_spawns"
+      ObjectReference {
+        SelfId: 12974885884026637877
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 14840155415782989137
     }
   }
 }

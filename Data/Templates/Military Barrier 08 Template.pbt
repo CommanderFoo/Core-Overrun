@@ -2980,7 +2980,7 @@
     }
     Assets {
       Id: 93416790986469
-      Name: "Hesco Barrier - Tall"
+      Name: "Military Hesco Barrier - Tall"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -2998,7 +2998,7 @@
     }
     Assets {
       Id: 12793060997350586228
-      Name: "Hesco Barrier 01"
+      Name: "Military Hesco Barrier"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -3145,5 +3145,5 @@
       AssetId: "Military_Barrier_08_Template"
     }
   }
-  SerializationVersion: 68
+  SerializationVersion: 70
 }

@@ -21,6 +21,8 @@ Objects {
   ChildIds: 2792350089564264743
   ChildIds: 10208137556615864073
   ChildIds: 2202992188429786742
+  ChildIds: 3481697410042539894
+  ChildIds: 7952590385204833906
   ChildIds: 6538324789638676258
   ChildIds: 3121589836909472008
   ChildIds: 7265624749015544125
@@ -36,6 +38,7 @@ Objects {
   ChildIds: 8217406139491570638
   ChildIds: 5324843417026633406
   ChildIds: 5852898475310592106
+  ChildIds: 8423343104719029048
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -45,6 +48,46 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 8423343104719029048
+  Name: "Overrun Weapon Basic Pistol"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 14156651541393010698
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Overrun Weapon Basic Pistol"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 1851.49072
+            Y: -7934.71582
+            Z: -0.042535305
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 16298143866150817198
+    }
   }
 }
 Objects {
@@ -2189,6 +2232,58 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "Wall Weapons"
+  }
+}
+Objects {
+  Id: 7952590385204833906
+  Name: "Toxic Pods"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Toxic Pods"
+  }
+}
+Objects {
+  Id: 3481697410042539894
+  Name: "Toxic Pods Spawn Points"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceon"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Toxic Pods Spawn Points"
   }
 }
 Objects {

@@ -2022,7 +2022,7 @@
     }
     Assets {
       Id: 16965777294932964901
-      Name: "Cube - Polished"
+      Name: "Cube - Chamfered Large Polished"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -2067,7 +2067,7 @@
     }
     Assets {
       Id: 13442051517733671574
-      Name: "Gunshot SMG Sub-Machine Gun Set 01 SFX"
+      Name: "Gunshot Sub-Machine Gun SMG Set 01 SFX"
       PlatformAssetType: 10
       PrimaryAsset {
         AssetType: "AudioBlueprintAssetRef"
@@ -2082,6 +2082,6 @@
   Marketplace {
     Description: "this are the gus form core roual so the inventory to work"
   }
-  SerializationVersion: 68
+  SerializationVersion: 70
   DirectlyPublished: true
 }

@@ -2,7 +2,7 @@
   Id: 9819501501065865823
   Name: "Custom Camouflage - Digital bottom"
   PlatformAssetType: 13
-  SerializationVersion: 68
+  SerializationVersion: 70
   CustomMaterialAsset {
     BaseMaterialId: 4348109682638095147
     ParameterOverrides {

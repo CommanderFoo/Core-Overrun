@@ -51,7 +51,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "House 2 Spawns"
+    FilePartitionName: "House 2 Spawns_1"
   }
 }
 Objects {
@@ -79,6 +79,6 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "House 1 Spawns"
+    FilePartitionName: "House 1 Spawns_1"
   }
 }

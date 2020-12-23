@@ -227,7 +227,7 @@
     }
     Assets {
       Id: 14803841533992348173
-      Name: "Military Rare Crate Hinge"
+      Name: "Military Crate Hinge 02"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -248,5 +248,5 @@
       AssetId: "Military_Rare_Crate"
     }
   }
-  SerializationVersion: 68
+  SerializationVersion: 70
 }

@@ -570,7 +570,7 @@
     }
     Assets {
       Id: 16225996946116169271
-      Name: "Railing 01 1m Mainstreet"
+      Name: "Main Street Railing 01 - 1m"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -579,7 +579,7 @@
     }
     Assets {
       Id: 5945942976172211747
-      Name: "Railing 01 Angled Mainstreet"
+      Name: "Main Street Railing 01 - Angled"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -588,7 +588,7 @@
     }
     Assets {
       Id: 4519163911553529386
-      Name: "Railing 01 Post Mainstreet"
+      Name: "Main Street Railing 01 - Post"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -597,7 +597,7 @@
     }
     Assets {
       Id: 18379924532194096666
-      Name: "Landing 01 4m x 4m Mainstreet"
+      Name: "MAin Street Landing 01 4m x 4m"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -606,7 +606,7 @@
     }
     Assets {
       Id: 6023105047490337935
-      Name: "Stairs 01 1.5m Mainstreet"
+      Name: "Main Street Stairs 01 - 1.5m"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -618,5 +618,5 @@
       AssetId: "Main_Street_Exterior_Stairs_-_Short_Template"
     }
   }
-  SerializationVersion: 68
+  SerializationVersion: 70
 }

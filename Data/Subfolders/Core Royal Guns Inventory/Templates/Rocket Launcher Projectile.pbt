@@ -560,7 +560,7 @@
     }
     Assets {
       Id: 16077824162186241922
-      Name: "Scifi Panel 2x3m Triangle"
+      Name: "Sci-fi Panel 2x3m Triangle"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -572,5 +572,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 68
+  SerializationVersion: 70
 }

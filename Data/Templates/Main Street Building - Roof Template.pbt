@@ -795,7 +795,7 @@
     }
     Assets {
       Id: 11998078646685907456
-      Name: "Trim Roof Corner 01 Mainstreet"
+      Name: "Main Street Trim Roof 01 - Corner"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -804,7 +804,7 @@
     }
     Assets {
       Id: 16542590046639866815
-      Name: "Trim Roof 01 Mainstreet"
+      Name: "Main Street Trim Roof 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -813,7 +813,7 @@
     }
     Assets {
       Id: 15402296587404581505
-      Name: "Trim 02 Corner Mainstreet"
+      Name: "Main Street Trim 02 - Corner"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -822,7 +822,7 @@
     }
     Assets {
       Id: 1936447668697306516
-      Name: "Trim 02 Mainstreet"
+      Name: "Main Street Trim 02"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -831,7 +831,7 @@
     }
     Assets {
       Id: 13751408475123645462
-      Name: "Floor 01 8m x 8m Mainstreet"
+      Name: "Main Street Floor 01 - 8m x 8m"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -852,5 +852,5 @@
       AssetId: "Main_Street_Building_-_Roof_Template"
     }
   }
-  SerializationVersion: 68
+  SerializationVersion: 70
 }

@@ -1,4 +1,4 @@
-﻿local DEBUG_DISABLE_SPAWNS = false
+﻿local DEBUG_DISABLE_SPAWNS = true
 
 local container = script:GetCustomProperty("container"):WaitForObject()
 
@@ -151,7 +151,12 @@ function spawn_zombies()
 		local pos = point:GetWorldPosition()
 		local rot = point:GetWorldRotation()
 
-		World.SpawnAsset(zombie, {parent = container, position = pos, rotation = rot})
+		local z = World.SpawnAsset(zombie, {parent = container, position = pos, rotation = rot})
+		local max_health = z:GetCustomProperty("CurrentHealth") + get_health_increase()
+
+		z:SetNetworkedCustomProperty("CurrentHealth", max_health)
+		z:SetNetworkedCustomProperty("max_health", max_health)
+
 		spawned = spawned + 1
 	end)
 	
@@ -219,7 +224,7 @@ function reset()
 		spawn_task = nil
 	end
 
-	clear_all_zombies()
+	--clear_all_zombies()
 
 	round = 1
 	spawn_points = {}
@@ -236,25 +241,3 @@ Events.Connect("on_door_opened", function(door_name)
 		add_spawn_points(house_2_spawns)
 	end
 end)
-
---[[
-local debug_task = Task.Spawn(function()
-	for k, p in pairs(Game.GetPlayers()) do
-		if(p.name == "CommanderFoo") then
-			local last_zombie = -1
-			local last_state = -1
-
-			if(#container:GetChildren() == 1) then
-				last_zombie = container:GetChildren()[1]:GetCustomProperty("CurrentHealth")
-				last_state = container:GetChildren()[1]:GetCustomProperty("CurrentState")
-			end
-
-			Events.BroadcastToPlayer(p, "on_debug_stats", round, max, spawned, #container:GetChildren(), last_zombie, last_state)
-			break
-		end
-	end
-end)
-
-debug_task.repeatCount = -1
-debug_task.repeatInterval = 1
---]]

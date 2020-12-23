@@ -1697,7 +1697,7 @@
     }
     Assets {
       Id: 10396917736734746205
-      Name: "Foundation 01 Corner Mainstreet"
+      Name: "Main Street Foundation 01 - Corner"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -1787,7 +1787,7 @@
     }
     Assets {
       Id: 18236536682416522687
-      Name: "Decal Logo 02"
+      Name: "Decal Military Symbols 02"
       PlatformAssetType: 14
       PrimaryAsset {
         AssetType: "DecalBlueprintAssetRef"
@@ -1799,5 +1799,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 68
+  SerializationVersion: 70
 }

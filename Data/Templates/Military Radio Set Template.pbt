@@ -184,5 +184,5 @@
       AssetId: "Military_Radio_Set_Template"
     }
   }
-  SerializationVersion: 68
+  SerializationVersion: 70
 }

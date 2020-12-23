@@ -9983,7 +9983,7 @@
     }
     Assets {
       Id: 14565993562237882178
-      Name: "Military Worn Tire 01"
+      Name: "Tire Worn"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -9992,7 +9992,7 @@
     }
     Assets {
       Id: 9605197959426201295
-      Name: "Military Worn Tire 02"
+      Name: "Tire Worn - Small"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -10001,7 +10001,7 @@
     }
     Assets {
       Id: 4832010047877921553
-      Name: "Railing 01 2m Mainstreet"
+      Name: "Main Street Railing 01 - 2m"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -10037,7 +10037,7 @@
     }
     Assets {
       Id: 12793060997350586228
-      Name: "Hesco Barrier 01"
+      Name: "Military Hesco Barrier"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -10220,5 +10220,5 @@
       AssetId: "Military_Barrier_07_Template"
     }
   }
-  SerializationVersion: 68
+  SerializationVersion: 70
 }

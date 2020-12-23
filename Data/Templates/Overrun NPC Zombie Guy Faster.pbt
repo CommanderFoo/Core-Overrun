@@ -123,10 +123,8 @@
             Int: 100
           }
           Overrides {
-            Name: "cs:Overrun_Spawner_Server"
-            ObjectReference {
-              SelfId: 17836668198438326760
-            }
+            Name: "cs:buffed"
+            Bool: false
           }
           Overrides {
             Name: "cs:CurrentState:isrep"
@@ -235,6 +233,10 @@
           Overrides {
             Name: "cs:RewardResourceAmount:tooltip"
             String: "Some NPCs can grant resources to players that kill them. The RewardResourceAmount is the Amount of the resource to grant to players"
+          }
+          Overrides {
+            Name: "cs:buffed:isrep"
+            Bool: true
           }
         }
         WantsNetworking: true
@@ -2257,5 +2259,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 68
+  SerializationVersion: 70
 }

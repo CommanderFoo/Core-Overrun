@@ -31,7 +31,14 @@ function Tick()
 	
 	local hp = _data:GetHealth()
 	local maxHP = _data:GetMaxHealth()
-	
+	local buffed = _data:is_buffed()
+
+	--print(hp, maxHP)
+
+	if(buffed) then
+		FILL_BAR:SetColor(Color.GREEN)
+	end
+
 	if hp <= 0 then
 		script.parent.visibility = Visibility.FORCE_OFF
 		return
@@ -49,6 +56,6 @@ function Tick()
 	scale.z = percent
 	FILL_BAR:SetScale(scale)
 	
-	FILL_BAR.team = _data:GetTeam()
+	--FILL_BAR.team = _data:GetTeam()
 end
 

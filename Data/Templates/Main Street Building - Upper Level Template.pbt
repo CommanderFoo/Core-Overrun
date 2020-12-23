@@ -1066,7 +1066,7 @@
     }
     Assets {
       Id: 13751408475123645462
-      Name: "Floor 01 8m x 8m Mainstreet"
+      Name: "Main Street Floor 01 - 8m x 8m"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -1075,7 +1075,7 @@
     }
     Assets {
       Id: 3374330078197732504
-      Name: "Wall 02 Window Mainstreet"
+      Name: "Main Street Wall 02 - Window 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -1093,7 +1093,7 @@
     }
     Assets {
       Id: 3456686779070553167
-      Name: "Part - Window 02 Mainstreet"
+      Name: "Main Street Window 02"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -1102,7 +1102,7 @@
     }
     Assets {
       Id: 2469313280627759486
-      Name: "Wall 02 Corner Trim Mainstreet"
+      Name: "Main Street Wall 02 - Corner Trim 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -1120,7 +1120,7 @@
     }
     Assets {
       Id: 17775019098342521252
-      Name: "Wall 02 Mainstreet"
+      Name: "Main Street Wall 02"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -1132,5 +1132,5 @@
       AssetId: "Main_Street_Building_-_Upper_Level_Template"
     }
   }
-  SerializationVersion: 68
+  SerializationVersion: 70
 }

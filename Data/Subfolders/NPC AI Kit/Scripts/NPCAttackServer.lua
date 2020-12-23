@@ -1,6 +1,4 @@
-﻿local Spawner = script.parent:GetCustomProperty("Overrun_Spawner_Server"):WaitForObject()
-
---[[
+﻿--[[
 	NPCAttack - Server
 	by: standardcombo
 	v0.9.1
@@ -19,8 +17,6 @@ function CROSS_CONTEXT_CALLER() return MODULE.Get("standardcombo.Utils.CrossCont
 function LOOT_DROP_FACTORY() return MODULE.Get_Optional("standardcombo.NPCKit.LootDropFactory") end
 
 local ROOT = script:GetCustomProperty("Root"):WaitForObject()
-
-ROOT:SetNetworkedCustomProperty("CurrentHealth", ROOT:GetCustomProperty("CurrentHealth") + Spawner.context.get_health_increase())
 
 local DAMAGE_TO_PLAYERS = script:GetCustomProperty("DamageToPlayers") or 1
 local DAMAGE_TO_NPCS = script:GetCustomProperty("DamageToNPCs") or 1
@@ -46,12 +42,14 @@ local cooldownRemaining = 0
 
 local projectileImpactListener = nil
 
--- Custom changes for powerups
+-- Custom changes
 
 local has_instant_kill = false
 local has_double_points = false
 
 local spawn_max_ammo = false
+
+local is_pod = script:GetCustomProperty("is_pod")
 
 -- end custom
 
@@ -265,6 +263,11 @@ function ApplyDamage(dmg, source, position, rotation)
 		end
 
 		if(zombie_dead) then
+			if(is_pod) then
+				print("is pod")
+				Events.Broadcast("on_toxic_pod_destroyed")
+			end
+
 			Task.Spawn(function()
 				Task.Wait(1.1)
 				

@@ -131,6 +131,9 @@ function handle_notification(type, player_name, has_quick_revive)
 	elseif(type == "heavyfog") then
 		item.title = "Heavy Fog"
 		item.desc = "Heavy fog incoming.  Visibility will be low."
+	elseif(type == "toxicpod") then
+		item.title = "Toxic Pod Has Landed"
+		item.desc = "Destroy the pod quickly, it will buff random Zombies."
 	end
 
 	if(item.title ~= "") then

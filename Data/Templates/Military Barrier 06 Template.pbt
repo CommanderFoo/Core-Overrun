@@ -1349,7 +1349,7 @@
     }
     Assets {
       Id: 9605197959426201295
-      Name: "Military Worn Tire 02"
+      Name: "Tire Worn - Small"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -1397,5 +1397,5 @@
       AssetId: "Military_Barrier_06_Template"
     }
   }
-  SerializationVersion: 68
+  SerializationVersion: 70
 }

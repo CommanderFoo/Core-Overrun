@@ -19,8 +19,6 @@
 local ROOT = script:GetCustomProperty("Root"):WaitForObject()
 
 local HEALTH_BAR_TEMPLATE = script:GetCustomProperty("HealthBarTemplate")
-local MAX_HEALTH = ROOT:GetCustomProperty("CurrentHealth")
-
 
 function GetHealth()
 	if Object.IsValid(ROOT) then
@@ -30,7 +28,11 @@ function GetHealth()
 end
 
 function GetMaxHealth()
-	return MAX_HEALTH
+	if Object.IsValid(ROOT) then
+		return ROOT:GetCustomProperty("max_health")
+	end
+
+	return 1
 end
 
 function GetTeam()
@@ -38,6 +40,18 @@ function GetTeam()
 		return ROOT:GetCustomProperty("Team")
 	end
 	return 0
+end
+
+function is_buffed()
+	if(Object.IsValid(ROOT)) then
+		if(ROOT:GetCustomProperty("health_buff")) then
+			return true
+		elseif(ROOT:GetCustomProperty("damage_buff")) then
+			return true
+		end
+	end
+
+	return false
 end
 
 -- Creates the health bar UI and places it as a child of this script

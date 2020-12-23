@@ -1871,5 +1871,5 @@
       AssetId: "Barbed_Wire_Barrier_Template"
     }
   }
-  SerializationVersion: 68
+  SerializationVersion: 70
 }

@@ -2,7 +2,7 @@
   Id: 7404590917227307424
   Name: "Metal Basic Steel - Black"
   PlatformAssetType: 13
-  SerializationVersion: 68
+  SerializationVersion: 70
   CustomMaterialAsset {
     BaseMaterialId: 2464597011835789243
     ParameterOverrides {

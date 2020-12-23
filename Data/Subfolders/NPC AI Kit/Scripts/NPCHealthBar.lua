@@ -25,7 +25,6 @@ function SetDataProvider(data)
 	_data = data
 end
 
-
 function Tick()
 	if not _data then return end
 	

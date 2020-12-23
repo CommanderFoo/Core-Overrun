@@ -15,7 +15,7 @@
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 2202992188429786742
         ChildIds: 992381263805632952
         ChildIds: 4038829529074194711
         ChildIds: 16000052252837293193
@@ -37,6 +37,10 @@
           Overrides {
             Name: "cs:CurrentHealth"
             Float: 100
+          }
+          Overrides {
+            Name: "cs:max_health"
+            Int: 100
           }
           Overrides {
             Name: "cs:MoveSpeed"
@@ -123,10 +127,12 @@
             Int: 80
           }
           Overrides {
-            Name: "cs:Overrun_Spawner_Server"
-            ObjectReference {
-              SelfId: 17836668198438326760
-            }
+            Name: "cs:health_buff"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:damage_buff"
+            Bool: false
           }
           Overrides {
             Name: "cs:CurrentState:isrep"
@@ -235,6 +241,18 @@
           Overrides {
             Name: "cs:RewardResourceAmount:tooltip"
             String: "Some NPCs can grant resources to players that kill them. The RewardResourceAmount is the Amount of the resource to grant to players"
+          }
+          Overrides {
+            Name: "cs:health_buff:isrep"
+            Bool: true
+          }
+          Overrides {
+            Name: "cs:max_health:isrep"
+            Bool: true
+          }
+          Overrides {
+            Name: "cs:damage_buff:isrep"
+            Bool: true
           }
         }
         WantsNetworking: true
@@ -2409,7 +2427,7 @@
     }
     Assets {
       Id: 4768974327810390069
-      Name: "Lense - Half"
+      Name: "Lens - Half"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -2475,5 +2493,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 68
+  SerializationVersion: 70
 }

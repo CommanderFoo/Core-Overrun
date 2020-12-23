@@ -1,4 +1,5 @@
 ﻿local Spawner = script:GetCustomProperty("Overrun_Spawner_Server"):WaitForObject()
+local Pod_Spawner = script:GetCustomProperty("Overrun_Pod_Spawner"):WaitForObject()
 local Player_Equipment = script:GetCustomProperty("Overrun_Player_Equipment"):WaitForObject()
 
 local round_end_duration = script:GetCustomProperty("round_end_duration")
@@ -236,6 +237,12 @@ function start_count_down()
 			game_state = "PLAYING"
 			Events.Broadcast("on_enable_all_players")
 			Spawner.context.spawn_zombies()
+			
+			-- Make it random
+			Task.Spawn(function()
+				Task.Wait(1)
+				Events.Broadcast("on_pod_spawn")
+			end)
 
 			handle_welcome()
 		end
@@ -303,7 +310,7 @@ function round_completed()
 
 	Spawner.context.set_max_spawns(math.min(50, max_spawns))
 	Events.BroadcastToAllPlayers("on_round_start", round, fog_round)
-	Spawner.context.spawn_zombies()	
+	Spawner.context.spawn_zombies()
 end
 
 Events.Connect("on_all_zombies_killed", round_completed)
