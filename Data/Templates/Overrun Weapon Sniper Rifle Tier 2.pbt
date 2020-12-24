@@ -1226,6 +1226,10 @@
             Name: "cs:DamageToPlayers"
             Int: 0
           }
+          Overrides {
+            Name: "cs:damage_to_head"
+            Int: 400
+          }
         }
         WantsNetworking: true
         Collidable_v2 {

@@ -506,7 +506,7 @@
             Name: "cs:DamageRange"
             Vector2 {
               X: 100
-              Y: 300
+              Y: 250
             }
           }
           Overrides {
@@ -560,8 +560,8 @@
           Overrides {
             Name: "cs:DamageRange"
             Vector2 {
-              X: 250
-              Y: 400
+              X: 100
+              Y: 250
             }
           }
           Overrides {

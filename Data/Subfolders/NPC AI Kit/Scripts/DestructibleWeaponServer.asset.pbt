@@ -18,6 +18,10 @@
         Name: "cs:DamageToObjects"
         Int: 1
       }
+      Overrides {
+        Name: "cs:damage_to_head"
+        Int: 0
+      }
     }
   }
   SerializationVersion: 70

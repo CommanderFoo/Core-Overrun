@@ -1,6 +1,6 @@
 ﻿local zombies = script:GetCustomProperty("zombies"):WaitForObject()
 
-Task.Wait(10)
+Task.Wait(5)
 
 local buffs = {
 
@@ -9,6 +9,7 @@ local buffs = {
 }
 
 local buff_task = Task.Spawn(function()
+	print("running")
 	if(#zombies:GetChildren() > 0) then
 		local random_zombie = zombies:GetChildren()[math.random(#zombies:GetChildren())]
 
@@ -38,5 +39,5 @@ local buff_task = Task.Spawn(function()
 	end
 end)
 
-buff_task.repeatInterval = 10
+buff_task.repeatInterval = 2
 buff_task.repeatCount = -1

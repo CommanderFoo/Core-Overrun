@@ -1,8 +1,11 @@
 ﻿0.9 []
  - 8% chance a toxic pod can drop down and give random buffs to random Zombies (health, damage, and steal your money)
  - Heavy fog falloff reduced a tiny bit
+ - Heavy fog chance reduced from 10% to 8%
  - Solo players will now get 2 seconds of invulnerability (you can't hurt Zombies either) after self revive
- 
+ - Headshots will do increased damage to all Zombies
+ - Crate sword and hammer were too strong at tier 1 and 2.  Damaged reduced a little but both more even for both attacks
+
  
 0.8.8 [10/12/2020]
 - Welcome / Help ui live

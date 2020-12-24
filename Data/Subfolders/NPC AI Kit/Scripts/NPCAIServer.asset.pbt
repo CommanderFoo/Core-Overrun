@@ -42,6 +42,11 @@
         }
       }
       Overrides {
+        Name: "cs:head_collider"
+        ObjectReference {
+        }
+      }
+      Overrides {
         Name: "cs:NPCManager:tooltip"
         String: "Reference to the NPC Manager allows the NPC to register itself into the system."
       }

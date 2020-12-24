@@ -19,6 +19,7 @@
         ChildIds: 14900165472460720459
         ChildIds: 9438071822281559418
         ChildIds: 4066325197445149819
+        ChildIds: 5366124773421072623
         ChildIds: 6556242475753478669
         ChildIds: 258620598679194360
         UnregisteredParameters {
@@ -337,6 +338,12 @@
               SubObjectId: 9438071822281559418
             }
           }
+          Overrides {
+            Name: "cs:head_collider"
+            ObjectReference {
+              SubObjectId: 5366124773421072623
+            }
+          }
         }
         WantsNetworking: true
         Collidable_v2 {
@@ -445,14 +452,68 @@
         Name: "Collider"
         Transform {
           Location {
-            Z: 110
+            Z: 92.454
           }
           Rotation {
           }
           Scale {
             X: 0.9
             Y: 0.9
-            Z: 1.1
+            Z: 0.94
+          }
+        }
+        ParentId: 5428197330804731499
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:Walkable"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 10184847056121543272
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              A: 1
+            }
+          }
+        }
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:forceoff"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 916665379155427451
+          }
+          Teams {
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 5366124773421072623
+        Name: "Head"
+        Transform {
+          Location {
+            Z: 191.693
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.369542897
+            Y: 0.369542897
+            Z: 0.215217307
           }
         }
         ParentId: 5428197330804731499

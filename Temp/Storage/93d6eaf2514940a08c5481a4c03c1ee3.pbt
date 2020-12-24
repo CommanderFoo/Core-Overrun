@@ -1,17 +1,17 @@
 ﻿Entries {
   Key {
-    StringVar: "highest_round"
+    StringVar: "total_kills"
   }
   SimpleValue {
-    IntVar: 5
+    IntVar: 411
   }
 }
 Entries {
   Key {
-    StringVar: "total_kills"
+    StringVar: "highest_round"
   }
   SimpleValue {
-    IntVar: 249
+    IntVar: 5
   }
 }
 Entries {

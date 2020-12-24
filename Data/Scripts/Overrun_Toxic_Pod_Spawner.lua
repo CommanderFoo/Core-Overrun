@@ -26,14 +26,16 @@ function Tick(dt)
 	end
 end
 
-function spawn_pod()
+function spawn_pod(round)
+	local rnd = math.random(100)
+
+	print(rnd, #pod_container:GetChildren(), current_item)
+
 	if(#pod_container:GetChildren() == 1 or Object.IsValid(current_item)) then
 		return
 	end
-
-	local rnd = math.random(100)
-
-	if(rnd <= 8) then
+	
+	if(rnd >= 40) then
 		return
 	end
 
@@ -55,8 +57,20 @@ function spawn_pod()
 		
 			})
 
-			current_item:SetNetworkedCustomProperty("CurrentHealth", 1000 * #Game.GetPlayers());
-			current_item:SetNetworkedCustomProperty("max_health", 1000 * #Game.GetPlayers());
+			local pod_health = 2000
+			
+			if(#Game.GetPlayers() > 1) then
+				pod_health = pod_health * #Game.GetPlayers()
+			end
+
+			if(round > 5) then
+				pod_health = math.floor(((round / 2) * pod_health) + 0.5)
+			end
+
+			print(pod_health)
+
+			current_item:SetNetworkedCustomProperty("CurrentHealth", pod_health);
+			current_item:SetNetworkedCustomProperty("max_health", pod_health);
 		
 			tween = PIXELDEPTH.Tween:new(1.2, {v = 3000}, {v = 0}, "inExpo")
 			
@@ -88,6 +102,7 @@ function clean_up()
 	end
 
 	current_item = nil
+	round = 1
 end
 
 Events.Connect("on_pod_spawn", spawn_pod)

@@ -27,6 +27,8 @@ function OnTargetImpact(theWeapon, impactData)
 		amount = DAMAGE_TO_PLAYERS
 	end
 	
+	local head_shot_damage = DAMAGE_TO_HEAD
+
 	-- Multihit (e.g. shotgun)
 	if #impactData:GetHitResults() > 1 then
 		local numberOfHits = 0
@@ -36,6 +38,7 @@ function OnTargetImpact(theWeapon, impactData)
 			end
 		end
 		amount = amount * numberOfHits
+		head_shot_damage = amount * numberOfHits
 	end
 	
 	-- Apply the damage
@@ -49,9 +52,9 @@ function OnTargetImpact(theWeapon, impactData)
 	
 	local pos = hitResult:GetImpactPosition()
 	local rot = hitResult:GetTransform():GetRotation()
-	
-	if(hitResult.other.name == "Head" and DAMAGE_TO_HEAD) then
-		dmg.amount = DAMAGE_TO_HEAD
+
+	if(hitResult and Object.IsValid(hitResult.other) and hitResult.other.name == "Head" and DAMAGE_TO_HEAD) then
+		dmg.amount = head_shot_damage
 	end
 
 	COMBAT().ApplyDamage(impactData.targetObject, dmg, dmg.sourcePlayer, pos, rot)

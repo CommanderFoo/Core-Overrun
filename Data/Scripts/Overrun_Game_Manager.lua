@@ -286,7 +286,7 @@ function round_completed()
 	local fog_round = false
 	local fog_rand = math.random(100)
 
-	if(fog_rand <= 10 or round == 2 or round == 11 or round == 20 or round == 50) then
+	if(fog_rand <= 8 or round == 2 or round == 11 or round == 20 or round == 50) then
 		fog_round = true
 	end
 
