@@ -47,10 +47,14 @@ end
 -- GetMaxHitPoints()
 
 -- ApplyDamage()
-function API.ApplyDamage(object, dmg, source, pos, rot)
+function API.ApplyDamage(object, dmg, source, pos, rot, money_buff)
 	Events.Broadcast("GoingToTakeDamage", object, dmg, source)
 	
 	if(object ~= nil and object:IsA("Player")) then
+		if(money_buff) then
+			object:RemoveResource("money", 100)
+		end
+
 		local current_health = object.hitPoints
 		local damage_amount = dmg.amount
 

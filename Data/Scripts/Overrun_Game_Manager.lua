@@ -147,7 +147,7 @@ end
 
 function check_player_status()
 	if(all_dead()) then
-		Spawner.context.reset()
+		Events.Broadcast("on_clean_up")
 
 		Task.Spawn(function()
 			Task.Wait(2)
@@ -237,13 +237,7 @@ function start_count_down()
 			game_state = "PLAYING"
 			Events.Broadcast("on_enable_all_players")
 			Spawner.context.spawn_zombies()
-			
-			-- Make it random
-			Task.Spawn(function()
-				Task.Wait(1)
-				Events.Broadcast("on_pod_spawn")
-			end)
-
+		
 			handle_welcome()
 		end
 	end)

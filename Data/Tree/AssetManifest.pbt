@@ -26,6 +26,42 @@ Assets {
   }
 }
 Assets {
+  Id: 16630259605395466384
+  Name: "Frosted Glass"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "fxma_frosted_glass"
+  }
+}
+Assets {
+  Id: 16179859024420455086
+  Name: "Invisible"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_invisible_001"
+  }
+}
+Assets {
+  Id: 15746374432032373988
+  Name: "Sphere"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_sphere_002"
+  }
+}
+Assets {
+  Id: 15434117106106413882
+  Name: "Decal Stains Round 01"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_stain_round_001"
+  }
+}
+Assets {
   Id: 15222117640704811538
   Name: "BG Flat 003"
   PlatformAssetType: 9
@@ -71,6 +107,33 @@ Assets {
   }
 }
 Assets {
+  Id: 11302073280474298634
+  Name: "Decal Bullet Damage Stone"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_bullet_stone_001"
+  }
+}
+Assets {
+  Id: 10512577683718946604
+  Name: "Scorch Mark Decal"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_scorchmark"
+  }
+}
+Assets {
+  Id: 10184847056121543272
+  Name: "Basic Material"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_basic_pbr_material_001"
+  }
+}
+Assets {
   Id: 10127750887433588570
   Name: "Flower Bellflower 02"
   PlatformAssetType: 1
@@ -107,6 +170,24 @@ Assets {
   }
 }
 Assets {
+  Id: 8978021181060125027
+  Name: "Ice Opaque"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "fxmi_ice_opaque"
+  }
+}
+Assets {
+  Id: 8898705476164105834
+  Name: "Fantasy Human Gal 2"
+  PlatformAssetType: 17
+  PrimaryAsset {
+    AssetType: "AnimatedMeshAssetRef"
+    AssetId: "npc_human_gal_fantasy_001_ref"
+  }
+}
+Assets {
   Id: 7312235065341263458
   Name: "Melee Hit Slap Face Hit 02 SFX"
   PlatformAssetType: 7
@@ -131,6 +212,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "FrameTri_008"
+  }
+}
+Assets {
+  Id: 6660739200641117586
+  Name: "Decal Bullet Damage Wood"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_bullet_wood_001"
   }
 }
 Assets {
@@ -170,12 +260,30 @@ Assets {
   }
 }
 Assets {
+  Id: 4768974327810390069
+  Name: "Lens - Half"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_half_lense_001"
+  }
+}
+Assets {
   Id: 3914586926377705325
   Name: "Cash Register Purchase 05 SFX"
   PlatformAssetType: 7
   PrimaryAsset {
     AssetType: "AudioAssetRef"
     AssetId: "sfx_cash_register_purchase_05_Cue_ref"
+  }
+}
+Assets {
+  Id: 3731280060356036897
+  Name: "Decal Stains Top 01"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_stain_top_001"
   }
 }
 Assets {
@@ -206,11 +314,29 @@ Assets {
   }
 }
 Assets {
+  Id: 1095190196265347926
+  Name: "Decal Dirt Patch"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_dirt_patch_001"
+  }
+}
+Assets {
   Id: 936751460831594415
   Name: "Flower Wild Lily Patch 01"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_foliage_gen_flower_wild_lily_patch_001_ref"
+  }
+}
+Assets {
+  Id: 916665379155427451
+  Name: "Capsule"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_capsule_001"
   }
 }

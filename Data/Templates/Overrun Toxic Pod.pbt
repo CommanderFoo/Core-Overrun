@@ -37,7 +37,7 @@
           }
           Overrides {
             Name: "cs:CurrentHealth"
-            Float: 2500
+            Float: 1000
           }
           Overrides {
             Name: "cs:MoveSpeed"
@@ -138,6 +138,10 @@
             ObjectReference {
               SubObjectId: 13213311801420114556
             }
+          }
+          Overrides {
+            Name: "cs:max_health"
+            Int: 1000
           }
           Overrides {
             Name: "cs:CurrentState:isrep"
@@ -249,6 +253,10 @@
           }
           Overrides {
             Name: "cs:landed:isrep"
+            Bool: true
+          }
+          Overrides {
+            Name: "cs:max_health:isrep"
             Bool: true
           }
         }

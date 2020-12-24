@@ -27,7 +27,15 @@ function Tick(dt)
 end
 
 function spawn_pod()
-	Task.Wait(3)
+	if(#pod_container:GetChildren() == 1 or Object.IsValid(current_item)) then
+		return
+	end
+
+	local rnd = math.random(100)
+
+	if(rnd <= 8) then
+		return
+	end
 
 	local blocker_check = nil
 	local point = spawn_points[math.random(#spawn_points)]
@@ -46,8 +54,11 @@ function spawn_pod()
 				position = pos
 		
 			})
+
+			current_item:SetNetworkedCustomProperty("CurrentHealth", 1000 * #Game.GetPlayers());
+			current_item:SetNetworkedCustomProperty("max_health", 1000 * #Game.GetPlayers());
 		
-			tween = PIXELDEPTH.Tween:new(2, {v = 3000}, {v = 0}, "inExpo")
+			tween = PIXELDEPTH.Tween:new(1.2, {v = 3000}, {v = 0}, "inExpo")
 			
 			tween:on_start(function()
 				current_item.visibility = Visibility.FORCE_ON
@@ -66,7 +77,17 @@ function spawn_pod()
 	end)
 
 	blocker_check.repeatCount = -1
-	blocker_check.repeatInterval = 1
+	blocker_check.repeatInterval = 3
+end
+
+function clean_up()
+	if(#pod_container:GetChildren() > 0) then
+		while(#pod_container:GetChildren() > 0) do
+			pod_container:GetChildren()[1]:Destroy()
+		end
+	end
+
+	current_item = nil
 end
 
 Events.Connect("on_pod_spawn", spawn_pod)
@@ -78,3 +99,5 @@ Events.Connect("on_door_opened", function(door_name)
 		add_spawn_points(house_2_spawns)
 	end
 end)
+
+Events.Connect("on_clean_up", clean_up)

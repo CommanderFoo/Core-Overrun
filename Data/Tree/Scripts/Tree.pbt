@@ -1148,6 +1148,12 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:pod_fx"
+      AssetReference {
+        Id: 6339344975616724810
+      }
+    }
+    Overrides {
       Name: "cs:player_1_color"
       Color {
         R: 0.890000105
@@ -1245,7 +1251,7 @@ Objects {
     }
     Overrides {
       Name: "cs:no_damage_duration"
-      Int: 0
+      Int: 2
     }
   }
   Collidable_v2 {

@@ -1,4 +1,10 @@
-﻿0.8.8 [10/12/2020]
+﻿0.9 []
+ - 8% chance a toxic pod can drop down and give random buffs to random Zombies (health, damage, and steal your money)
+ - Heavy fog falloff reduced a tiny bit
+ - Solo players will now get 2 seconds of invulnerability (you can't hurt Zombies either) after self revive
+ 
+ 
+0.8.8 [10/12/2020]
 - Welcome / Help ui live
 
 0.8.7 [10/12/2020]

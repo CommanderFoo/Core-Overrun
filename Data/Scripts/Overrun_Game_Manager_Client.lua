@@ -27,7 +27,7 @@ fog falloff 1.2
 fog offset 30
 
 start 330
-falloff 1.6
+falloff 1.5
 offset 45
 --]]
 
@@ -73,19 +73,19 @@ end
 
 function round_start(round, fog_round)
 	round_ui.text = tostring(round)
-
+ 
 	if(fog_round) then
 		if(not was_fog_round) then
 			Events.Broadcast("on_notification", "heavyfog")
 			fog_start_tween = PIXELDEPTH.Tween:new(8, {a = 900}, {a = 330})
-			fog_falloff_tween = PIXELDEPTH.Tween:new(8, {a = 1.2}, {a = 1.6})
+			fog_falloff_tween = PIXELDEPTH.Tween:new(8, {a = 1.2}, {a = 1.5})
 			fog_offset_tween = PIXELDEPTH.Tween:new(8, {a = 30}, {a = 45})
 
 			was_fog_round = true
 		end
 	elseif(was_fog_round) then
 		fog_start_tween = PIXELDEPTH.Tween:new(8, {a = 330}, {a = 900})
-		fog_falloff_tween = PIXELDEPTH.Tween:new(8, {a = 1.6}, {a = 1.2})
+		fog_falloff_tween = PIXELDEPTH.Tween:new(8, {a = 1.5}, {a = 1.2})
 		fog_offset_tween = PIXELDEPTH.Tween:new(8, {a = 45}, {a = 30})
 
 		was_fog_round = false

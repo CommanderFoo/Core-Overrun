@@ -19,7 +19,7 @@ local WEAPON = script.parent
 
 local DAMAGE_TO_PLAYERS = script:GetCustomProperty("DamageToPlayers")
 local DAMAGE_TO_OBJECTS = script:GetCustomProperty("DamageToObjects")
-
+local DAMAGE_TO_HEAD = script:GetCustomProperty("damage_to_head")
 
 function OnTargetImpact(theWeapon, impactData)
 	local amount = DAMAGE_TO_OBJECTS
@@ -41,6 +41,7 @@ function OnTargetImpact(theWeapon, impactData)
 	-- Apply the damage
 	local dmg = Damage.New(amount)
 	local hitResult = impactData:GetHitResult()
+
 	dmg:SetHitResult(hitResult)
 	dmg.reason = DamageReason.COMBAT
 	dmg.sourcePlayer = theWeapon.owner
@@ -49,6 +50,10 @@ function OnTargetImpact(theWeapon, impactData)
 	local pos = hitResult:GetImpactPosition()
 	local rot = hitResult:GetTransform():GetRotation()
 	
+	if(hitResult.other.name == "Head" and DAMAGE_TO_HEAD) then
+		dmg.amount = DAMAGE_TO_HEAD
+	end
+
 	COMBAT().ApplyDamage(impactData.targetObject, dmg, dmg.sourcePlayer, pos, rot)
 end
 

@@ -22,6 +22,7 @@ local players = {}
 local total_players = 0
 
 local gibs_fx = script:GetCustomProperty("gibs_fx")
+local pod_fx = script:GetCustomProperty("pod_fx")
 
 function player_joined(p)
 	total_players = total_players + 1
@@ -197,12 +198,6 @@ function resource_changed(p, prop, val)
 end
 
 function money_changed(data)
-	--for i = 1, #data do
-	--	if(data[i].id ~= local_player.id and players[data[i].id]) then
-	--		players[data[i].id].money_ui.text =  PIXELDEPTH.Utils.number_format(data[i].m)
-	--	end
-	--end
-
 	if(data.id ~= local_player.id and players[data.id]) then
 		players[data.id].money_ui.text =  PIXELDEPTH.Utils.number_format(data.m)
 	end
@@ -216,10 +211,17 @@ function purchase_complete(is_melee, play_audio)
 	end
 end
 
-function on_zombie_destroyed(pos)
+function on_zombie_destroyed(pos, is_pod)
 	Task.Spawn(function()
 		Task.Wait(.8)
-		World.SpawnAsset(gibs_fx, { position = pos})
+
+		local fx = gibs_fx
+
+		if(is_pod) then
+			fx = pod_fx
+		end
+
+		World.SpawnAsset(fx, { position = pos})
 	end)
 end
 
@@ -282,27 +284,6 @@ function Tick(dt)
 		juggernog_ui.visibility = Visibility.FORCE_OFF
 	end
 end
-
---function on_player_damaged(source, hit_points)
---	if(source.id ~= local_player.id) then
---		UI.ShowDamageDirection(source)
---	end
---end
-
---[[
-Events.Connect("on_weapon_tier_changed", function()
-	local equipment = local_player:GetEquipment()[1]
-	local upgrade_asset_id = equipment:GetCustomProperty("upgrade_asset_id")
-	local upgrade_price = equipment:GetCustomProperty("upgrade_price")
-	local notify_key = "wepaonupgraded"
-
-	if(upgrade_asset_id == "" and upgrade_price == 0) then
-		notify_key = "weaponmaxupgraded"
-	end
-
-	Events.Broadcast("on_notification", notify_key, local_player.name)
-end)
---]]
 
 Events.Connect("on_player_money_changed", money_changed)
 Events.Connect("on_purchase_complete", purchase_complete)

@@ -20,6 +20,9 @@ function NAV_MESH() return _G.NavMesh end
 local ROOT = script:GetCustomProperty("Root"):WaitForObject()
 local ROTATION_ROOT = script:GetCustomProperty("RotationRoot"):WaitForObject()
 local COLLIDER = script:GetCustomProperty("Collider"):WaitForObject()
+
+local HEAD_COLLIDER = script:GetCustomProperty("head_collider"):WaitForObject()
+
 local TRIGGER = script:GetCustomProperty("Trigger"):GetObject()
 local ATTACK_COMPONENT = script:GetCustomProperty("AttackComponent"):WaitForObject()
 local ENGAGE_EFFECT = script:GetCustomProperty("EngageEffect")
@@ -687,8 +690,16 @@ end
 function SetCollision(enabled)
 	if enabled then
 		COLLIDER.collision = Collision.INHERIT
+
+		if(Object.IsValid(HEAD_COLLIDER)) then
+			HEAD_COLLIDER.collision = Collision.INHERIT
+		end
 	else
 		COLLIDER.collision = Collision.FORCE_OFF
+
+		if(Object.IsValid(HEAD_COLLIDER)) then
+			HEAD_COLLIDER.collision = Collision.FORCE_OFF
+		end
 	end
 end
 
@@ -852,6 +863,10 @@ end
 
 function HandleTeamChanged()
 	COLLIDER.team = GetTeam()
+
+	if(Object.IsValid(HEAD_COLLIDER)) then
+		HEAD_COLLIDER.team = GetTeam()
+	end
 end
 HandleTeamChanged()
 
@@ -869,3 +884,7 @@ ROOT.networkedPropertyChangedEvent:Connect(OnPropertyChanged)
 
 NPC_MANAGER().Register(script)
 NPC_MANAGER().RegisterCollider(script, COLLIDER)
+
+if(Object.IsValid(HEAD_COLLIDER)) then
+	NPC_MANAGER().RegisterCollider(script, HEAD_COLLIDER)
+end

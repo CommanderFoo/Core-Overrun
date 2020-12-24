@@ -123,8 +123,28 @@
             Int: 80
           }
           Overrides {
-            Name: "cs:buffed"
+            Name: "cs:health_buff"
             Bool: false
+          }
+          Overrides {
+            Name: "cs:damage_buff"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:money_buff"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:damage_to_players"
+            Int: 50
+          }
+          Overrides {
+            Name: "cs:damage_to_npcs"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:max_health"
+            Int: 100
           }
           Overrides {
             Name: "cs:CurrentState:isrep"
@@ -235,7 +255,27 @@
             String: "Some NPCs can grant resources to players that kill them. The RewardResourceAmount is the Amount of the resource to grant to players"
           }
           Overrides {
-            Name: "cs:buffed:isrep"
+            Name: "cs:health_buff:isrep"
+            Bool: true
+          }
+          Overrides {
+            Name: "cs:damage_buff:isrep"
+            Bool: true
+          }
+          Overrides {
+            Name: "cs:damage_to_players:isrep"
+            Bool: true
+          }
+          Overrides {
+            Name: "cs:damage_to_npcs:isrep"
+            Bool: true
+          }
+          Overrides {
+            Name: "cs:money_buff:isrep"
+            Bool: true
+          }
+          Overrides {
+            Name: "cs:max_health:isrep"
             Bool: true
           }
         }

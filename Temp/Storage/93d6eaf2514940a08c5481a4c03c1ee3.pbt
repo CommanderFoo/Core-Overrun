@@ -1,17 +1,9 @@
 ﻿Entries {
   Key {
-    StringVar: "welcome"
-  }
-  SimpleValue {
-    IntVar: 1
-  }
-}
-Entries {
-  Key {
     StringVar: "highest_round"
   }
   SimpleValue {
-    IntVar: 1
+    IntVar: 5
   }
 }
 Entries {
@@ -19,6 +11,14 @@ Entries {
     StringVar: "total_kills"
   }
   SimpleValue {
-    IntVar: 7
+    IntVar: 249
+  }
+}
+Entries {
+  Key {
+    StringVar: "welcome"
+  }
+  SimpleValue {
+    IntVar: 1
   }
 }

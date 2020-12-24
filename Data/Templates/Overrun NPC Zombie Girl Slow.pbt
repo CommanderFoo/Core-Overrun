@@ -15,10 +15,11 @@
             Z: 1
           }
         }
-        ParentId: 2202992188429786742
+        ParentId: 4781671109827199097
         ChildIds: 992381263805632952
         ChildIds: 4038829529074194711
-        ChildIds: 16000052252837293193
+        ChildIds: 15636825023966415995
+        ChildIds: 12731300245529908704
         ChildIds: 2731678540028606970
         ChildIds: 15541151765880765236
         UnregisteredParameters {
@@ -37,10 +38,6 @@
           Overrides {
             Name: "cs:CurrentHealth"
             Float: 100
-          }
-          Overrides {
-            Name: "cs:max_health"
-            Int: 100
           }
           Overrides {
             Name: "cs:MoveSpeed"
@@ -133,6 +130,22 @@
           Overrides {
             Name: "cs:damage_buff"
             Bool: false
+          }
+          Overrides {
+            Name: "cs:money_buff"
+            Bool: false
+          }
+          Overrides {
+            Name: "cs:damage_to_players"
+            Int: 50
+          }
+          Overrides {
+            Name: "cs:damage_to_npcs"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:max_health"
+            Int: 100
           }
           Overrides {
             Name: "cs:CurrentState:isrep"
@@ -247,11 +260,23 @@
             Bool: true
           }
           Overrides {
-            Name: "cs:max_health:isrep"
+            Name: "cs:damage_buff:isrep"
             Bool: true
           }
           Overrides {
-            Name: "cs:damage_buff:isrep"
+            Name: "cs:damage_to_players:isrep"
+            Bool: true
+          }
+          Overrides {
+            Name: "cs:damage_to_npcs:isrep"
+            Bool: true
+          }
+          Overrides {
+            Name: "cs:money_buff:isrep"
+            Bool: true
+          }
+          Overrides {
+            Name: "cs:max_health:isrep"
             Bool: true
           }
         }
@@ -298,7 +323,7 @@
           Overrides {
             Name: "cs:Collider"
             ObjectReference {
-              SubObjectId: 16000052252837293193
+              SubObjectId: 15636825023966415995
             }
           }
           Overrides {
@@ -311,6 +336,12 @@
             Name: "cs:AttackComponent"
             ObjectReference {
               SubObjectId: 4038829529074194711
+            }
+          }
+          Overrides {
+            Name: "cs:head_collider"
+            ObjectReference {
+              SubObjectId: 12731300245529908704
             }
           }
         }
@@ -417,18 +448,72 @@
         }
       }
       Objects {
-        Id: 16000052252837293193
+        Id: 15636825023966415995
         Name: "Collider"
         Transform {
           Location {
-            Z: 110
+            Z: 92.4537048
           }
           Rotation {
           }
           Scale {
             X: 0.9
             Y: 0.9
-            Z: 1.1
+            Z: 0.94
+          }
+        }
+        ParentId: 3491882363712052561
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:Walkable"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 10184847056121543272
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              A: 1
+            }
+          }
+        }
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:forceoff"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 916665379155427451
+          }
+          Teams {
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 12731300245529908704
+        Name: "Head"
+        Transform {
+          Location {
+            Z: 191.693481
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.369542897
+            Y: 0.369542897
+            Z: 0.215217307
           }
         }
         ParentId: 3491882363712052561

@@ -117,7 +117,10 @@ function get_player_up(id, is_respawn)
 				player:AddResource("revives", 1)
 
 				Task.Spawn(function()
-					Task.Wait(no_damage_duration)
+					if(#Game.GetPlayers() == 1) then
+						Task.Wait(no_damage_duration)
+					end
+
 					player.team = 1
 				end)
 			end

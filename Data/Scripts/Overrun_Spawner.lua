@@ -52,6 +52,8 @@ local health_increase = 0
 local watcher = nil
 local kill_watcher = nil
 
+local pod_spawner = nil
+
 function add_spawn_points(points)
 	for i = 1, #points:GetChildren() do
 		table.insert(spawn_points, points:GetChildren()[i])
@@ -137,6 +139,15 @@ function spawn_zombies()
 		return
 	end
 	
+	if(pod_spawner == nil) then
+		pod_spawner = Task.Spawn(function()
+			Events.Broadcast("on_pod_spawn")
+		end)
+
+		pod_spawner.repeatCount = -1
+		pod_spawner.repeatInterval = 8
+	end
+
 	spawned = 0
 
 	watch_container()
@@ -224,7 +235,12 @@ function reset()
 		spawn_task = nil
 	end
 
-	--clear_all_zombies()
+	clear_all_zombies()
+
+	if(pod_spawner ~= nil) then
+		pod_spawner:Cancel()
+		pod_spawner = nil
+	end
 
 	round = 1
 	spawn_points = {}
@@ -233,6 +249,8 @@ function reset()
 
 	add_spawn_points(center_spawns)
 end
+
+Events.Connect("on_clean_up", reset)
 
 Events.Connect("on_door_opened", function(door_name)
 	if(door_name == "House 1 Back Door") then

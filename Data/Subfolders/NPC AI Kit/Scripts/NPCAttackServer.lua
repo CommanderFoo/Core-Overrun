@@ -18,9 +18,6 @@ function LOOT_DROP_FACTORY() return MODULE.Get_Optional("standardcombo.NPCKit.Lo
 
 local ROOT = script:GetCustomProperty("Root"):WaitForObject()
 
-local DAMAGE_TO_PLAYERS = script:GetCustomProperty("DamageToPlayers") or 1
-local DAMAGE_TO_NPCS = script:GetCustomProperty("DamageToNPCs") or 1
-
 local PROJECTILE_BODY = script:GetCustomProperty("ProjectileBody")
 local MUZZLE_FLASH_VFX = script:GetCustomProperty("MuzzleFlash")
 local IMPACT_SURFACE_VFX = script:GetCustomProperty("ImpactSurface")
@@ -116,10 +113,10 @@ function OnProjectileImpact(projectile, other, hitResult)
 	local damageAmount = 0
 	
 	if other:IsA("Player") then
-		damageAmount = DAMAGE_TO_PLAYERS
+		damageAmount = ROOT:GetCustomProperty("damage_to_players")
 		SpawnAsset(IMPACT_CHARACTER_VFX, pos, rot)
 	else
-		damageAmount = DAMAGE_TO_NPCS
+		damageAmount = ROOT:GetCustomProperty("damage_to_npcs")
 		SpawnAsset(IMPACT_SURFACE_VFX, pos, hitResult:GetTransform():GetRotation())
 	end
 	
@@ -127,7 +124,7 @@ function OnProjectileImpact(projectile, other, hitResult)
 	dmg:SetHitResult(hitResult)
 	dmg.reason = DamageReason.COMBAT
 		
-	COMBAT().ApplyDamage(other, dmg, script, pos, rot)
+	COMBAT().ApplyDamage(other, dmg, script, pos, rot, ROOT:GetCustomProperty("money_buff"))
 		
 	projectile:Destroy()
 end
@@ -170,7 +167,7 @@ ROOT:SetNetworkedCustomProperty("ObjectId", id)
 function ApplyDamage(dmg, source, position, rotation)
 	local amount = dmg.amount
 
-	if(has_instant_kill) then
+	if(has_instant_kill and not is_pod) then
 		amount = GetHealth()
 
 		if(amount <= 0) then
@@ -237,7 +234,7 @@ function ApplyDamage(dmg, source, position, rotation)
 
 			Events.Broadcast("ObjectDestroyed", id)
 			Events.Broadcast("on_zombie_killed", id)
-			Events.BroadcastToAllPlayers("on_zombie_destroyed", ROOT:GetWorldPosition())
+			Events.BroadcastToAllPlayers("on_zombie_destroyed", ROOT:GetWorldPosition(), is_pod)
 			
 			--DropRewards(source)
 		end
@@ -264,8 +261,7 @@ function ApplyDamage(dmg, source, position, rotation)
 
 		if(zombie_dead) then
 			if(is_pod) then
-				print("is pod")
-				Events.Broadcast("on_toxic_pod_destroyed")
+				Events.Broadcast("on_give_max_ammo")
 			end
 
 			Task.Spawn(function()
