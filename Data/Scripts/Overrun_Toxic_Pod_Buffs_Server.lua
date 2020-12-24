@@ -41,3 +41,9 @@ end)
 
 buff_task.repeatInterval = 2
 buff_task.repeatCount = -1
+
+script.destroyEvent:Connect(function()
+	if(buff_task ~= nil) then
+		buff_task:Cancel()
+	end
+end)

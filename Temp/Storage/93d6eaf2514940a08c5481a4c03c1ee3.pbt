@@ -1,9 +1,9 @@
 ﻿Entries {
   Key {
-    StringVar: "total_kills"
+    StringVar: "welcome"
   }
   SimpleValue {
-    IntVar: 411
+    IntVar: 1
   }
 }
 Entries {
@@ -16,9 +16,9 @@ Entries {
 }
 Entries {
   Key {
-    StringVar: "welcome"
+    StringVar: "total_kills"
   }
   SimpleValue {
-    IntVar: 1
+    IntVar: 426
   }
 }
