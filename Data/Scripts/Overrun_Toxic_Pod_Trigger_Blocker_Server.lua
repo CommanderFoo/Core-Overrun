@@ -5,7 +5,6 @@ local players_in_zone = 0
 
 trigger.beginOverlapEvent:Connect(function(t, obj)
 	if(obj:IsA("Player")) then
-		print("blocked")
 		players_in_zone = players_in_zone + 1
 
 		root:SetNetworkedCustomProperty("blocked", true)

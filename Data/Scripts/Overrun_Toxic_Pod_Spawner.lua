@@ -1,4 +1,4 @@
-﻿local PIXELDEPTH = require(script:GetCustomProperty("PIXELDEPTH_API"))
+﻿local YOOTIL = require(script:GetCustomProperty("YOOTIL"))
 
 local pod_container = script:GetCustomProperty("pod_container"):WaitForObject()
 local zombie_container = script:GetCustomProperty("zombie_container"):WaitForObject()
@@ -68,7 +68,7 @@ function spawn_pod(round)
 			current_item:SetNetworkedCustomProperty("CurrentHealth", pod_health);
 			current_item:SetNetworkedCustomProperty("max_health", pod_health);
 		
-			tween = PIXELDEPTH.Tween:new(1.2, {v = 3000}, {v = 0}, "inExpo")
+			tween = YOOTIL.Tween:new(1.2, {v = 3000}, {v = 0}, "inExpo")
 			
 			tween:on_start(function()
 				current_item.visibility = Visibility.FORCE_ON

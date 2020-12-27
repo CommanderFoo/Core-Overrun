@@ -1,4 +1,4 @@
-﻿local PIXELDEPTH = require(script:GetCustomProperty("PIXELDEPTH_API"))
+﻿local YOOTIL = require(script:GetCustomProperty("YOOTIL"))
 
 local trigger = script:GetCustomProperty("trigger"):WaitForObject()
 local root = script:GetCustomProperty("root"):WaitForObject()
@@ -64,7 +64,7 @@ function on_trigger_enter(t, obj)
 			interact_ui:SetColor(Color.YELLOW)
 		end
 
-		interact_ui.text = "Press [F] to open this area for " .. PIXELDEPTH.Utils.number_format(cost)
+		interact_ui.text = "Press [F] to open this area for " .. YOOTIL.Utils.number_format(cost)
 		interact_ui.parent.visibility = Visibility.FORCE_ON
 	end
 end

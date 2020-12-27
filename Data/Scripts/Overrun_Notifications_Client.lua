@@ -1,4 +1,4 @@
-﻿local PIXELDEPTH = require(script:GetCustomProperty("PIXELDEPTH_API"))
+﻿local YOOTIL = require(script:GetCustomProperty("YOOTIL"))
 
 local container = script:GetCustomProperty("container"):WaitForObject()
 local title = script:GetCustomProperty("title"):WaitForObject()
@@ -7,7 +7,7 @@ local desc = script:GetCustomProperty("desc"):WaitForObject()
 local double_points_ui = script:GetCustomProperty("double_points_ui"):WaitForObject()
 local instant_kill_ui = script:GetCustomProperty("instant_kill_ui"):WaitForObject()
 
-local queue = PIXELDEPTH.Utils.Queue.new()
+local queue = YOOTIL.Utils.Queue.new()
 local current_item = nil
 local in_tween = nil
 local out_tween = nil	
@@ -17,8 +17,8 @@ local local_player = Game.GetLocalPlayer()
 function Tick(dt)
 	if(queue:length() > 0 and current_item == nil) then
 		current_item = queue:pop()
-		in_tween = PIXELDEPTH.Tween:new(1.2, {v = current_item.offset}, {v = -50})
-		out_tween = PIXELDEPTH.Tween:new(1.2, {v = -50}, {v = current_item.offset})
+		in_tween = YOOTIL.Tween:new(1.2, {v = current_item.offset}, {v = -50})
+		out_tween = YOOTIL.Tween:new(1.2, {v = -50}, {v = current_item.offset})
 	end
 
 	if(current_item ~= nil) then
@@ -63,7 +63,7 @@ function handle_notification(type, player_name, has_quick_revive)
 	local name = player_name
 
 	if(name ~= nil) then
-		name = PIXELDEPTH.Utils.truncate(player_name, 16, "...")
+		name = YOOTIL.Utils.truncate(player_name, 16, "...")
 	end
 
 	if(player_name == local_player.name or player_name == nil) then

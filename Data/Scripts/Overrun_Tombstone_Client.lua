@@ -1,4 +1,4 @@
-﻿local PIXELDEPTH = require(script:GetCustomProperty("PIXELDEPTH_API"))
+﻿local YOOTIL = require(script:GetCustomProperty("YOOTIL"))
 
 local root = script:GetCustomProperty("root"):WaitForObject()
 local tomb = root:GetCustomProperty("tomb"):WaitForObject()
@@ -29,7 +29,7 @@ function start_player_reviving(id)
 			duration = revive_duration / 2
 		end
 
-		progress_tween = PIXELDEPTH.Tween:new(duration, {v = 1}, {v = 0})
+		progress_tween = YOOTIL.Tween:new(duration, {v = 1}, {v = 0})
 
 		progress_tween:on_change(function(changed)
 			revive_progress.progress = changed.v

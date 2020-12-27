@@ -117,12 +117,6 @@ Objects {
   ParentId: 18022361806751986938
   UnregisteredParameters {
     Overrides {
-      Name: "cs:PIXELDEPTH_API"
-      AssetReference {
-        Id: 16622261663679835299
-      }
-    }
-    Overrides {
       Name: "cs:rounds"
       NetReference {
         Key: "A644A3FFACB88102"
@@ -216,6 +210,12 @@ Objects {
       Name: "cs:kills_ui"
       ObjectReference {
         SelfId: 4557238380794822030
+      }
+    }
+    Overrides {
+      Name: "cs:YOOTIL"
+      AssetReference {
+        Id: 16622261663679835299
       }
     }
   }

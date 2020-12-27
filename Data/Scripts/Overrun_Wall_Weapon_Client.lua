@@ -1,4 +1,4 @@
-﻿local PIXELDEPTH = require(script:GetCustomProperty("PIXELDEPTH_API"))
+﻿local YOOTIL = require(script:GetCustomProperty("YOOTIL"))
 
 local trigger = script:GetCustomProperty("trigger"):WaitForObject()
 local root = script:GetCustomProperty("root"):WaitForObject()
@@ -43,10 +43,10 @@ function on_trigger_enter(t, obj)
 
 					if(id == asset_id and not is_melee) then
 						if(money >= ammo_price) then
-							purchase_ui.text = "Press [F] to purchase ammo for " .. PIXELDEPTH.Utils.number_format(ammo_price)
+							purchase_ui.text = "Press [F] to purchase ammo for " .. YOOTIL.Utils.number_format(ammo_price)
 							purchase_ui:SetColor(can_afford_color)
 						else
-							purchase_ui.text = "Ammo cost " .. PIXELDEPTH.Utils.number_format(price)
+							purchase_ui.text = "Ammo cost " .. YOOTIL.Utils.number_format(price)
 							purchase_ui:SetColor(cant_afford_color)
 						end
 					else
@@ -54,12 +54,12 @@ function on_trigger_enter(t, obj)
 							if(price == 0) then
 								purchase_ui.text = "Press [F] to get this weapon for free"
 							else
-								purchase_ui.text = "Press [F] to purchase this weapon for " .. PIXELDEPTH.Utils.number_format(price)
+								purchase_ui.text = "Press [F] to purchase this weapon for " .. YOOTIL.Utils.number_format(price)
 							end
 
 							purchase_ui:SetColor(can_afford_color)
 						else
-							purchase_ui.text = "Weapon cost " .. PIXELDEPTH.Utils.number_format(price)
+							purchase_ui.text = "Weapon cost " .. YOOTIL.Utils.number_format(price)
 							purchase_ui:SetColor(cant_afford_color)
 						end
 					end

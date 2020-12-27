@@ -1,4 +1,4 @@
-﻿local PIXELDEPTH = require(script:GetCustomProperty("PIXELDEPTH_API"))
+﻿local YOOTIL = require(script:GetCustomProperty("YOOTIL"))
 
 local root = script:GetCustomProperty("root"):WaitForObject()
 local trigger = root:GetCustomProperty("trigger"):WaitForObject()
@@ -36,10 +36,10 @@ function on_trigger_enter(t, obj)
 			local money = local_player:GetResource("money")
 
 			if(money >= upgrade_price) then
-				ui.text = "Press [F] to upgrade your weapon for " .. PIXELDEPTH.Utils.number_format(upgrade_price)
+				ui.text = "Press [F] to upgrade your weapon for " .. YOOTIL.Utils.number_format(upgrade_price)
 				ui:SetColor(can_afford_color)
 			else
-				ui.text = "Upgrading your weapon will cost " .. PIXELDEPTH.Utils.number_format(upgrade_price)
+				ui.text = "Upgrading your weapon will cost " .. YOOTIL.Utils.number_format(upgrade_price)
 				ui:SetColor(cant_afford_color)
 			end
 		elseif(upgrade_price == -1) then

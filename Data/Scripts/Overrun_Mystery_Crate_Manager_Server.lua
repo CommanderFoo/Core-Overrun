@@ -23,7 +23,7 @@ function random_crate()
 
 	--print("crates", to_enable, to_disable)
 	
-	--to_enable = 3
+	to_enable = 3
 	
 	random_enabled_crate = to_enable
 

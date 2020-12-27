@@ -1,4 +1,4 @@
-﻿local PIXELDEPTH = require(script:GetCustomProperty("PIXELDEPTH_API"))
+﻿local YOOTIL = require(script:GetCustomProperty("YOOTIL"))
 
 local round_ui = script:GetCustomProperty("round_ui"):WaitForObject()
 local leaderboards = script:GetCustomProperty("leaderboards"):WaitForObject()
@@ -68,16 +68,16 @@ function round_start(round, fog_round)
 	if(fog_round) then
 		if(not was_fog_round) then
 			Events.Broadcast("on_notification", "heavyfog")
-			fog_start_tween = PIXELDEPTH.Tween:new(8, {a = 900}, {a = 330})
-			fog_falloff_tween = PIXELDEPTH.Tween:new(8, {a = 1.2}, {a = 1.5})
-			fog_offset_tween = PIXELDEPTH.Tween:new(8, {a = 30}, {a = 45})
+			fog_start_tween = YOOTIL.Tween:new(8, {a = 900}, {a = 330})
+			fog_falloff_tween = YOOTIL.Tween:new(8, {a = 1.2}, {a = 1.5})
+			fog_offset_tween = YOOTIL.Tween:new(8, {a = 30}, {a = 45})
 
 			was_fog_round = true
 		end
 	elseif(was_fog_round) then
-		fog_start_tween = PIXELDEPTH.Tween:new(8, {a = 330}, {a = 900})
-		fog_falloff_tween = PIXELDEPTH.Tween:new(8, {a = 1.5}, {a = 1.2})
-		fog_offset_tween = PIXELDEPTH.Tween:new(8, {a = 45}, {a = 30})
+		fog_start_tween = YOOTIL.Tween:new(8, {a = 330}, {a = 900})
+		fog_falloff_tween = YOOTIL.Tween:new(8, {a = 1.5}, {a = 1.2})
+		fog_offset_tween = YOOTIL.Tween:new(8, {a = 45}, {a = 30})
 
 		was_fog_round = false
 	end
@@ -131,11 +131,11 @@ function show_leaderboard()
 		local entry = entries[counter]
 		
 		entry:FindDescendantByName("Name").text = v.name
-		entry:FindDescendantByName("Downs").text = PIXELDEPTH.Utils.number_format(v:GetResource("downs"))
-		entry:FindDescendantByName("Revives").text = PIXELDEPTH.Utils.number_format(v:GetResource("revives"))
-		entry:FindDescendantByName("Kills").text = PIXELDEPTH.Utils.number_format(v:GetResource("kills"))
-		entry:FindDescendantByName("Money").text = PIXELDEPTH.Utils.number_format(v:GetResource("total_money"))
-		entry:FindDescendantByName("Damage").text = PIXELDEPTH.Utils.number_format(v:GetResource("damage"))
+		entry:FindDescendantByName("Downs").text = YOOTIL.Utils.number_format(v:GetResource("downs"))
+		entry:FindDescendantByName("Revives").text = YOOTIL.Utils.number_format(v:GetResource("revives"))
+		entry:FindDescendantByName("Kills").text = YOOTIL.Utils.number_format(v:GetResource("kills"))
+		entry:FindDescendantByName("Money").text = YOOTIL.Utils.number_format(v:GetResource("total_money"))
+		entry:FindDescendantByName("Damage").text = YOOTIL.Utils.number_format(v:GetResource("damage"))
 
 		counter = counter + 1
 	end

@@ -1,4 +1,4 @@
-﻿local PIXELDEPTH = require(script:GetCustomProperty("PIXELDEPTH_API"))
+﻿local YOOTIL = require(script:GetCustomProperty("YOOTIL"))
 
 local rounds = script:GetCustomProperty("rounds")
 local kills = script:GetCustomProperty("kills")
@@ -34,8 +34,8 @@ local updater = Task.Spawn(function()
 		for k, v in pairs(kills_leaderboard) do
 			local entry = kills_entries[kills_index]
 
-			entry:FindDescendantByName("Name").text = PIXELDEPTH.Utils.truncate(v.name, 12)
-			entry:FindDescendantByName("Stat").text = PIXELDEPTH.Utils.number_format(string.format("%.0u", v.score))
+			entry:FindDescendantByName("Name").text = YOOTIL.Utils.truncate(v.name, 12)
+			entry:FindDescendantByName("Stat").text = YOOTIL.Utils.number_format(string.format("%.0u", v.score))
 
 			if(kills_index == 5) then
 				break
@@ -50,8 +50,8 @@ local updater = Task.Spawn(function()
 		for k, v in pairs(round_leaderboard) do
 			local entry = round_entries[round_index]
 			
-			entry:FindDescendantByName("Name").text = PIXELDEPTH.Utils.truncate(v.name, 12)
-			entry:FindDescendantByName("Stat").text = PIXELDEPTH.Utils.number_format(string.format("%.0u", v.score))
+			entry:FindDescendantByName("Name").text = YOOTIL.Utils.truncate(v.name, 12)
+			entry:FindDescendantByName("Stat").text = YOOTIL.Utils.number_format(string.format("%.0u", v.score))
 
 			if(round_index == 5) then
 				break

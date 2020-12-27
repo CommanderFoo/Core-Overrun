@@ -1,6 +1,6 @@
-﻿local PIXELDEPTH = require(script:GetCustomProperty("PIXELDEPTH_API"))
+﻿local YOOTIL = require(script:GetCustomProperty("YOOTIL"))
 
-local queue = PIXELDEPTH.Utils.Queue.new()
+local queue = YOOTIL.Utils.Queue.new()
 
 queue:push(script:GetCustomProperty("welcome"):WaitForObject())
 queue:push(script:GetCustomProperty("controls"):WaitForObject())
@@ -20,8 +20,8 @@ function Tick(dt)
 	if(show_welcome_tips) then
 		if(queue:length() > 0 and current_item == nil) then
 			current_item = queue:pop()
-			in_tween = PIXELDEPTH.Tween:new(1.2, {v = -200}, {v = 40})
-			out_tween = PIXELDEPTH.Tween:new(1.2, {v = 40}, {v = -200})
+			in_tween = YOOTIL.Tween:new(1.2, {v = -200}, {v = 40})
+			out_tween = YOOTIL.Tween:new(1.2, {v = 40}, {v = -200})
 		end
 	
 		if(current_item ~= nil) then

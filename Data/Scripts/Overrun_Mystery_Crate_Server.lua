@@ -35,7 +35,9 @@ local assets = {
 	[6] = "760A24B635D5051D",
 	[7] = "D2F9B9CAC9A6E629",
 	[8] = "06A947E4C06F43C7",
-	[9] = "96150237D7D518BA"
+	[9] = "96150237D7D518BA",
+	[10] = "4CBF684098BBDCFD",
+	[11] = "1B85C22EB32178F3"
 
 }
 
@@ -139,9 +141,10 @@ function get_random_index()
 	local r = math.random(items)
 
 	--print(total_spins)
+	--r = 11
 
 	if(total_spins == 9) then
-		--r = skull_index
+		r = skull_index
 	elseif(total_spins >= 4) then
 		if(math.random(4) == 1) then
 		--	r = skull_index

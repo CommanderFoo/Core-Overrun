@@ -1,4 +1,4 @@
-﻿local PIXELDEPTH = require(script:GetCustomProperty("PIXELDEPTH_API"))
+﻿local YOOTIL = require(script:GetCustomProperty("YOOTIL"))
 
 local root = script:GetCustomProperty("root"):WaitForObject()
 local trigger = root:GetCustomProperty("trigger"):WaitForObject()
@@ -48,11 +48,11 @@ local randomising = false
 local move_weapons_up = false
 local move_weapons_down = false
 
-local open_tween = PIXELDEPTH.Tween:new(time_to_open, {v = 0}, {v = -90}, "outExpo")
-local close_tween = PIXELDEPTH.Tween:new(time_to_close, {v = -90}, {v = 0}, "inCirc")
+local open_tween = YOOTIL.Tween:new(time_to_open, {v = 0}, {v = -90}, "outExpo")
+local close_tween = YOOTIL.Tween:new(time_to_close, {v = -90}, {v = 0}, "inCirc")
 
-local weapons_up_tween = PIXELDEPTH.Tween:new(weapons_up_time, {v = 0}, {v = 130}, "outExpo")
-local weapons_down_tween = PIXELDEPTH.Tween:new(weapons_down_time, {v = 130}, {v = 0}, "inCirc")
+local weapons_up_tween = YOOTIL.Tween:new(weapons_up_time, {v = 0}, {v = 130}, "outExpo")
+local weapons_down_tween = YOOTIL.Tween:new(weapons_down_time, {v = 130}, {v = 0}, "inCirc")
 
 local disabled = root:GetCustomProperty("disabled")
 
@@ -85,13 +85,13 @@ function Tick(dt)
 	elseif(not open and in_zone and not has_skull) then
 		local money = local_player:GetResource("money")
 
-		if(money <= cost) then
+		if(money < cost) then
 			interact_ui:SetColor(Color.RED)
 		else
 			interact_ui:SetColor(Color.YELLOW)
 		end
 
-		interact_ui.text = "Press [F] to spin mystery crate for " .. PIXELDEPTH.Utils.number_format(cost)
+		interact_ui.text = "Press [F] to spin mystery crate for " .. YOOTIL.Utils.number_format(cost)
 		show_ui = true
 	end
 	
@@ -238,7 +238,6 @@ function setup_close_tween()
 	end)
 
 	close_tween:on_complete(function()
-		open = false
 		took_weapon = false
 		weapon_index = 0
 		close_tween:reset():pause()
@@ -254,6 +253,7 @@ function setup_close_tween()
 		open_sound:Play()
 		
 		show_ui = false
+		open = false
 	end)
 
 	close_tween:on_change(function(changed)

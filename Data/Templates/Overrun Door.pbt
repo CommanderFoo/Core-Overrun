@@ -15,7 +15,7 @@
             Z: 1
           }
         }
-        ParentId: 7508389135912318772
+        ParentId: 4781671109827199097
         ChildIds: 13075082258103556735
         ChildIds: 3495746164414845004
         ChildIds: 4624660643014799237
@@ -388,12 +388,6 @@
         ParentId: 3495746164414845004
         UnregisteredParameters {
           Overrides {
-            Name: "cs:PIXELDEPTH_API"
-            AssetReference {
-              Id: 16622261663679835299
-            }
-          }
-          Overrides {
             Name: "cs:trigger"
             ObjectReference {
               SubObjectId: 1674400571141172617
@@ -415,6 +409,12 @@
             Name: "cs:outline"
             ObjectReference {
               SubObjectId: 18170817965451680727
+            }
+          }
+          Overrides {
+            Name: "cs:YOOTIL"
+            AssetReference {
+              Id: 16622261663679835299
             }
           }
         }

@@ -3345,7 +3345,7 @@
           }
         }
         ParentId: 13213311801420114556
-        ChildIds: 9900931709833676680
+        ChildIds: 17824152459370996792
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -3359,6 +3359,56 @@
             }
           }
           Canvas {
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:topleft"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:topleft"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 17824152459370996792
+        Name: "UI Panel"
+        Transform {
+          Location {
+            X: 314.983032
+            Y: -643.901855
+            Z: 93.6984863
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 2073372067752493569
+        ChildIds: 9900931709833676680
+        ChildIds: 18101933463805345425
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:forceoff"
+        }
+        Control {
+          Width: 30
+          Height: 30
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          Panel {
           }
           AnchorLayout {
             SelfAnchor {
@@ -3392,12 +3442,12 @@
             Z: 1
           }
         }
-        ParentId: 2073372067752493569
+        ParentId: 17824152459370996792
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:forceoff"
+          Value: "mc:evisibilitysetting:forceon"
         }
         Control {
           Width: 30
@@ -3422,12 +3472,69 @@
           AnchorLayout {
             SelfAnchor {
               Anchor {
-                Value: "mc:euianchor:topleft"
+                Value: "mc:euianchor:middlecenter"
               }
             }
             TargetAnchor {
               Anchor {
-                Value: "mc:euianchor:topleft"
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 18101933463805345425
+        Name: "Distance"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 17824152459370996792
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Control {
+          Width: 62
+          Height: 30
+          UIY: 32
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          UseParentWidth: true
+          Text {
+            Color {
+              R: 1
+              G: 1
+              B: 1
+              A: 1
+            }
+            Size: 14
+            Justification {
+              Value: "mc:etextjustify:center"
+            }
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
               }
             }
           }
@@ -3458,7 +3565,19 @@
           Overrides {
             Name: "cs:pod_icon"
             ObjectReference {
-              SubObjectId: 9900931709833676680
+              SubObjectId: 17824152459370996792
+            }
+          }
+          Overrides {
+            Name: "cs:YOOTIL"
+            AssetReference {
+              Id: 16622261663679835299
+            }
+          }
+          Overrides {
+            Name: "cs:UITextBox"
+            ObjectReference {
+              SubObjectId: 18101933463805345425
             }
           }
         }

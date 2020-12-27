@@ -1,4 +1,4 @@
-﻿local PIXELDEPTH = require(script:GetCustomProperty("PIXELDEPTH_API"))
+﻿local YOOTIL = require(script:GetCustomProperty("YOOTIL"))
 
 local player_info_ui_root = script:GetCustomProperty("players_info_ui_root"):WaitForObject()
 local player_info_ui = script:GetCustomProperty("player_info_ui")
@@ -77,13 +77,13 @@ function player_joined(p)
 	players[p.id].frame_ui = frame_ui
 
 	if(local_player.id == p.id) then
-		money_ui.text = PIXELDEPTH.Utils.number_format(local_player:GetResource("money"))
+		money_ui.text = YOOTIL.Utils.number_format(local_player:GetResource("money"))
 		name_ui:SetColor(own_info_color)
-		name_ui.text = PIXELDEPTH.Utils.truncate(local_player.name, 13, "...")
+		name_ui.text = YOOTIL.Utils.truncate(local_player.name, 13, "...")
 		avatar_ui:SetImage(local_player)
 	else
 		name_ui.text = p.name
-		money_ui.text = PIXELDEPTH.Utils.number_format(p:GetResource("money"))
+		money_ui.text = YOOTIL.Utils.number_format(p:GetResource("money"))
 		avatar_ui:SetImage(p)
 
 		Task.Spawn(function()
@@ -192,14 +192,14 @@ end
 function resource_changed(p, prop, val)
 	if(prop == "money") then
 		if(players[local_player.id]) then
-			players[local_player.id].money_ui.text = PIXELDEPTH.Utils.number_format(local_player:GetResource("money"))
+			players[local_player.id].money_ui.text = YOOTIL.Utils.number_format(local_player:GetResource("money"))
 		end
 	end
 end
 
 function money_changed(data)
 	if(data.id ~= local_player.id and players[data.id]) then
-		players[data.id].money_ui.text =  PIXELDEPTH.Utils.number_format(data.m)
+		players[data.id].money_ui.text =  YOOTIL.Utils.number_format(data.m)
 	end
 end
 
@@ -239,7 +239,7 @@ function on_zombie_hit(amount, position)
 	local distance = (view_pos - position).sizeSquared
 	local is_big = (distance < 1000000) -- 10 meters squared
 		
-	UI.ShowFlyUpText(PIXELDEPTH.Utils.number_format(amount), position, {color = Color.YELLOW, isBig = is_big, duration = 1})
+	UI.ShowFlyUpText(YOOTIL.Utils.number_format(amount), position, {color = Color.YELLOW, isBig = is_big, duration = 1})
 end
 
 local fx_tween = nil
@@ -249,7 +249,7 @@ function Tick(dt)
 		local s = (1 - (local_player.hitPoints / local_player.maxHitPoints))
 
 		if(fx_tween == nil) then
-			fx_tween = PIXELDEPTH.Tween:new(.3, {
+			fx_tween = YOOTIL.Tween:new(.3, {
 				
 				a = hit_effect:GetSmartProperty("Effect Strength")
 			}, {

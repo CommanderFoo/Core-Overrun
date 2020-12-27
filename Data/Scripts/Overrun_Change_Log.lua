@@ -1,10 +1,16 @@
 ﻿0.9 []
- - 8% chance a toxic pod can drop down and give random buffs to random Zombies (health, damage, and steal your money)
+ - 8% chance a pod can drop down and give random buffs to random Zombies (health, damage, and steal your money when hit)
  - Heavy fog falloff reduced a tiny bit
  - Heavy fog chance reduced from 10% to 8%
  - Solo players will now get 2 seconds of invulnerability (you can't hurt Zombies either) after self revive
- - Headshots will do increased damage to all Zombies
- - Crate sword and hammer were too strong at tier 1 and 2.  Damaged reduced a little but both more even for both attacks
+ - Headshots added.  Will do increased damage to all Zombies
+ - Crate sword and hammer were too strong at tier 1 and 2.  Damaged reduced a little but both are more even for both attacks
+ - Fixed ammo UI if you die with a melee weapon
+ - Fixed typo in welcome slide
+ - Late joiners will now get the current round sent to them a little sooner instead of it updating on next round
+ - Fixed an issue with the crate not showing weapons if purchase is spammed really quickly
+ - Added 2 new weapons to the crate (no special ones just yet)
+ 
 
  
 0.8.8 [10/12/2020]

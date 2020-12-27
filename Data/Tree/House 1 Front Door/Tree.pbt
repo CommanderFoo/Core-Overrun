@@ -201,7 +201,7 @@ Objects {
     }
     Overrides {
       Name: "bp:Thickness"
-      Float: 0.55
+      Float: 2
     }
     Overrides {
       Name: "bp:Outline Channel"
@@ -272,12 +272,6 @@ Objects {
   ParentId: 1267543024118406174
   UnregisteredParameters {
     Overrides {
-      Name: "cs:PIXELDEPTH_API"
-      AssetReference {
-        Id: 16622261663679835299
-      }
-    }
-    Overrides {
       Name: "cs:trigger"
       ObjectReference {
         SelfId: 3902649749444960731
@@ -299,6 +293,12 @@ Objects {
       Name: "cs:outline"
       ObjectReference {
         SelfId: 15942711470269339525
+      }
+    }
+    Overrides {
+      Name: "cs:YOOTIL"
+      AssetReference {
+        Id: 16622261663679835299
       }
     }
   }

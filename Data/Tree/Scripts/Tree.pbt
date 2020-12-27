@@ -208,6 +208,42 @@ Objects {
         Id: 6386063460561306959
       }
     }
+    Overrides {
+      Name: "cs:OverrunWeaponM1Garand"
+      AssetReference {
+        Id: 5530253494083902717
+      }
+    }
+    Overrides {
+      Name: "cs:OverrunWeaponM1GarandTier2"
+      AssetReference {
+        Id: 7411047861848118846
+      }
+    }
+    Overrides {
+      Name: "cs:OverrunWeaponM1GarandTier3"
+      AssetReference {
+        Id: 9288311484468413293
+      }
+    }
+    Overrides {
+      Name: "cs:OverrunWeaponStandardSMG"
+      AssetReference {
+        Id: 1983204716756170995
+      }
+    }
+    Overrides {
+      Name: "cs:OverrunWeaponStandardSMGTier2"
+      AssetReference {
+        Id: 10005461202347200350
+      }
+    }
+    Overrides {
+      Name: "cs:OverrunWeaponStandardSMGTier3"
+      AssetReference {
+        Id: 2188392935847311075
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -335,12 +371,6 @@ Objects {
   ParentId: 5539997602360125933
   UnregisteredParameters {
     Overrides {
-      Name: "cs:PIXELDEPTH_API"
-      AssetReference {
-        Id: 16622261663679835299
-      }
-    }
-    Overrides {
       Name: "cs:pod_container"
       ObjectReference {
         SelfId: 7952590385204833906
@@ -374,6 +404,12 @@ Objects {
       Name: "cs:house_2_spawns"
       ObjectReference {
         SelfId: 12974885884026637877
+      }
+    }
+    Overrides {
+      Name: "cs:YOOTIL"
+      AssetReference {
+        Id: 16622261663679835299
       }
     }
   }
@@ -684,12 +720,6 @@ Objects {
   ParentId: 17922148234597677997
   UnregisteredParameters {
     Overrides {
-      Name: "cs:PIXELDEPTH_API"
-      AssetReference {
-        Id: 16622261663679835299
-      }
-    }
-    Overrides {
       Name: "cs:container"
       ObjectReference {
         SelfId: 12421471463233971294
@@ -729,6 +759,12 @@ Objects {
       Name: "cs:thoughts"
       ObjectReference {
         SelfId: 5412910409210372173
+      }
+    }
+    Overrides {
+      Name: "cs:YOOTIL"
+      AssetReference {
+        Id: 16622261663679835299
       }
     }
   }
@@ -861,12 +897,6 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:PIXELDEPTH_API"
-      AssetReference {
-        Id: 16622261663679835299
-      }
-    }
-    Overrides {
       Name: "cs:double_points_ui"
       ObjectReference {
         SelfId: 8601390989182172711
@@ -882,6 +912,12 @@ Objects {
         SubObjectId: 11041856344997348217
         InstanceId: 2682885373632565799
         TemplateId: 14557867761764933263
+      }
+    }
+    Overrides {
+      Name: "cs:YOOTIL"
+      AssetReference {
+        Id: 16622261663679835299
       }
     }
   }
@@ -962,15 +998,15 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:PIXELDEPTH_API"
-      AssetReference {
-        Id: 16622261663679835299
-      }
-    }
-    Overrides {
       Name: "cs:fog"
       ObjectReference {
         SelfId: 1315552106580729237
+      }
+    }
+    Overrides {
+      Name: "cs:YOOTIL"
+      AssetReference {
+        Id: 16622261663679835299
       }
     }
   }
@@ -1106,12 +1142,6 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:PIXELDEPTH_API"
-      AssetReference {
-        Id: 16622261663679835299
-      }
-    }
-    Overrides {
       Name: "cs:hit_ui"
       ObjectReference {
         SelfId: 6278713090139348785
@@ -1184,6 +1214,12 @@ Objects {
         G: 1
         B: 1
         A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:YOOTIL"
+      AssetReference {
+        Id: 16622261663679835299
       }
     }
   }

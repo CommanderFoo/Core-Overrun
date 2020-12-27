@@ -1,4 +1,4 @@
-﻿local PIXELDEPTH = require(script:GetCustomProperty("PIXELDEPTH_API"))
+﻿local YOOTIL = require(script:GetCustomProperty("YOOTIL"))
 
 local root = script:GetCustomProperty("root"):WaitForObject()
 local trigger = root:GetCustomProperty("trigger"):WaitForObject()
@@ -34,10 +34,10 @@ function on_trigger_enter(t, obj)
 			local money = local_player:GetResource("money")
 
 			if(money >= price) then
-				ui.text = "Press [F] to purchase " .. perk_text .. " for " .. PIXELDEPTH.Utils.number_format(price)
+				ui.text = "Press [F] to purchase " .. perk_text .. " for " .. YOOTIL.Utils.number_format(price)
 				ui:SetColor(can_afford_color)
 			else
-				ui.text = perk_text .. " cost " .. PIXELDEPTH.Utils.number_format(price)
+				ui.text = perk_text .. " cost " .. YOOTIL.Utils.number_format(price)
 				ui:SetColor(cant_afford_color)
 			end
 		end
