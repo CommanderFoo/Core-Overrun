@@ -1,7 +1,7 @@
 ﻿Name: "Pod Spawn_1"
-RootId: 13421789084467092234
+RootId: 87511124106490395
 Objects {
-  Id: 10217418392165665921
+  Id: 3317262476213383871
   Name: "Server"
   Transform {
     Location {
@@ -14,8 +14,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13421789084467092234
-  ChildIds: 17644014817795218004
+  ParentId: 87511124106490395
+  ChildIds: 12236931043505963722
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -28,7 +28,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17644014817795218004
+  Id: 12236931043505963722
   Name: "Overrun_Toxic_Pod_Trigger_Blocker_Server"
   Transform {
     Location {
@@ -43,18 +43,18 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10217418392165665921
+  ParentId: 3317262476213383871
   UnregisteredParameters {
     Overrides {
       Name: "cs:trigger"
       ObjectReference {
-        SelfId: 584354312175646975
+        SelfId: 16579192616977928953
       }
     }
     Overrides {
       Name: "cs:root"
       ObjectReference {
-        SelfId: 13421789084467092234
+        SelfId: 87511124106490395
       }
     }
   }
@@ -71,21 +71,21 @@ Objects {
   }
 }
 Objects {
-  Id: 584354312175646975
+  Id: 16579192616977928953
   Name: "Blocking Trigger"
   Transform {
     Location {
-      Z: 120
+      Z: 174.065369
     }
     Rotation {
     }
     Scale {
-      X: 15
-      Y: 15
+      X: 18
+      Y: 18
       Z: 4
     }
   }
-  ParentId: 13421789084467092234
+  ParentId: 87511124106490395
   UnregisteredParameters {
   }
   WantsNetworking: true
@@ -106,7 +106,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4224390165628279544
+  Id: 14397192661886122456
   Name: "Cube"
   Transform {
     Location {
@@ -120,7 +120,7 @@ Objects {
       Z: 4
     }
   }
-  ParentId: 13421789084467092234
+  ParentId: 87511124106490395
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"

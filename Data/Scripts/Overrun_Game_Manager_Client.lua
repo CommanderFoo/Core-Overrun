@@ -35,15 +35,6 @@ local fog_start_tween = nil
 local fog_falloff_tween = nil
 local fog_offset_tween = nil
 
---[[
-Task.Spawn(function()
-	Task.Wait(1)
-	round_start(1, true)
-	Task.Wait(45)
-	round_start(1, false)
-end)
---]]
-
 function Tick(dt)
 	if(fog_start_tween ~= nil) then
 		fog_start_tween:tween(dt)
@@ -170,7 +161,13 @@ function game_starting(timer)
 	end
 end
 
+function update_round_ui(round)
+	round_ui.text = tostring(round)
+end
+
 Events.Connect("on_round_completed", round_completed)
+Events.Connect("on_round_update", update_round_ui)
+
 Events.Connect("on_round_start", round_start)
 
 Events.Connect("on_game_starting", game_starting)

@@ -1,4 +1,4 @@
-﻿local DEBUG_DISABLE_SPAWNS = false
+﻿local DEBUG_DISABLE_SPAWNS = true
 
 local container = script:GetCustomProperty("container"):WaitForObject()
 
@@ -135,17 +135,17 @@ function get_random_zombie_asset()
 end
 
 function spawn_zombies()
-	if(DEBUG_DISABLE_SPAWNS) then
-		return
-	end
-	
 	if(pod_spawner == nil) then
 		pod_spawner = Task.Spawn(function()
 			Events.Broadcast("on_pod_spawn", round)
-		end)
+		end, 5)
 
 		pod_spawner.repeatCount = -1
 		pod_spawner.repeatInterval = 8
+	end
+
+	if(DEBUG_DISABLE_SPAWNS) then
+		return
 	end
 
 	spawned = 0

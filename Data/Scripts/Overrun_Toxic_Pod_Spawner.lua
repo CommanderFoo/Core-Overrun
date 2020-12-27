@@ -27,16 +27,14 @@ function Tick(dt)
 end
 
 function spawn_pod(round)
-	local rnd = math.random(100)
-
-	print(rnd, #pod_container:GetChildren(), current_item)
-
 	if(#pod_container:GetChildren() == 1 or Object.IsValid(current_item)) then
 		return
 	end
 	
+	local rnd = math.random(100)
+
 	if(rnd >= 40) then
-		return
+		--return
 	end
 
 	local blocker_check = nil
@@ -66,8 +64,6 @@ function spawn_pod(round)
 			if(round > 5) then
 				pod_health = math.floor(((round / 2) * pod_health) + 0.5)
 			end
-
-			print(pod_health)
 
 			current_item:SetNetworkedCustomProperty("CurrentHealth", pod_health);
 			current_item:SetNetworkedCustomProperty("max_health", pod_health);

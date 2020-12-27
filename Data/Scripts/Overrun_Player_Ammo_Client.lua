@@ -18,19 +18,17 @@ end
 function Tick()
 	local weapon = get_weapon()
 
-	if(weapon or hide_ammo) then
-		if(hide_ammo) then
-			clip.text = "---"
-			total.text = "---"
-		else
-			clip.text = tostring(weapon.currentAmmo) .. " / " .. tostring(weapon.maxAmmo)
-			total.text = tostring(local_player:GetResource("rounds"))
-		end
+	if(Object.IsValid(weapon)) then
+		clip.text = tostring(weapon.currentAmmo) .. " / " .. tostring(weapon.maxAmmo)
+		total.text = tostring(local_player:GetResource("rounds"))
+	else 
+		clip.text = "---"
+		total.text = "---"
 	end
 end
 
 function set_ui_state_for_ammo(is_melee)
-	hide_ammo = is_melee
+--	hide_ammo = is_melee
 end
 
-Events.Connect("on_ammo_purchase_change", set_ui_state_for_ammo)
+--Events.Connect("on_ammo_purchase_change", set_ui_state_for_ammo)

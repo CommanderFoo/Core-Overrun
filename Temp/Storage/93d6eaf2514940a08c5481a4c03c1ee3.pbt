@@ -1,5 +1,13 @@
 ﻿Entries {
   Key {
+    StringVar: "total_kills"
+  }
+  SimpleValue {
+    IntVar: 453
+  }
+}
+Entries {
+  Key {
     StringVar: "welcome"
   }
   SimpleValue {
@@ -12,13 +20,5 @@ Entries {
   }
   SimpleValue {
     IntVar: 5
-  }
-}
-Entries {
-  Key {
-    StringVar: "total_kills"
-  }
-  SimpleValue {
-    IntVar: 426
   }
 }

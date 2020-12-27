@@ -56,6 +56,7 @@ function player_joined(p)
 
 		Task.Spawn(function()
 			Task.Wait(6)
+			Events.BroadcastToPlayer(p, "on_round_update", round)
 			handle_welcome()
 			Events.Broadcast("on_update_players_crate")
 		end)

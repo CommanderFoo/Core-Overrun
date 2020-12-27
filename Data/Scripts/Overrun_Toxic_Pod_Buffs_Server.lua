@@ -9,7 +9,6 @@ local buffs = {
 }
 
 local buff_task = Task.Spawn(function()
-	print("running")
 	if(#zombies:GetChildren() > 0) then
 		local random_zombie = zombies:GetChildren()[math.random(#zombies:GetChildren())]
 

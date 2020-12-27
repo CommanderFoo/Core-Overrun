@@ -4226,7 +4226,7 @@ Objects {
     AddSizeToParentIfUsingParentSize: true
     UseParentWidth: true
     Text {
-      Label: "icon and the border of the player information to the right of your sceen."
+      Label: "icon and the border of the player information to the right of your screen."
       Color {
         R: 1
         G: 1

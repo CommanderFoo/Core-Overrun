@@ -204,7 +204,7 @@ function money_changed(data)
 end
 
 function purchase_complete(is_melee, play_audio)
-	Events.Broadcast("on_ammo_purchase_change", is_melee)
+	--Events.Broadcast("on_ammo_purchase_change", is_melee)
 
 	if(play_audio) then
 		Events.Broadcast("on_audio_purchase")

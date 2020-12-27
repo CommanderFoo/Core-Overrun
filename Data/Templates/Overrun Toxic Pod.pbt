@@ -265,7 +265,7 @@
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:forceoff"
+          Value: "mc:evisibilitysetting:forceon"
         }
         Folder {
           IsGroup: true
@@ -537,6 +537,8 @@
         ChildIds: 113129775136346683
         ChildIds: 15261650045140780798
         ChildIds: 2917863063307574653
+        ChildIds: 2073372067752493569
+        ChildIds: 4888115435278946379
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -3326,6 +3328,153 @@
         }
       }
       Objects {
+        Id: 2073372067752493569
+        Name: "UI Container"
+        Transform {
+          Location {
+            X: 731.718872
+            Y: 7266.31348
+            Z: -93.5979
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 13213311801420114556
+        ChildIds: 9900931709833676680
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Control {
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          Canvas {
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:topleft"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:topleft"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 9900931709833676680
+        Name: "Pod"
+        Transform {
+          Location {
+            X: -155.484619
+            Y: -6540.89453
+            Z: 613.102966
+          }
+          Rotation {
+            Yaw: -75.4798737
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 2073372067752493569
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:forceoff"
+        }
+        Control {
+          Width: 30
+          Height: 30
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          Image {
+            Brush {
+              Id: 1773122989610012624
+            }
+            Color {
+              R: 0.0385715738
+              G: 0.810000062
+              A: 0.7
+            }
+            TeamSettings {
+            }
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:topleft"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:topleft"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 4888115435278946379
+        Name: "Overrun_Pod_Indicator_Client"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 13213311801420114556
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:root"
+            ObjectReference {
+              SubObjectId: 1164551797689700475
+            }
+          }
+          Overrides {
+            Name: "cs:pod_icon"
+            ObjectReference {
+              SubObjectId: 9900931709833676680
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Script {
+          ScriptAsset {
+            Id: 12827665849708329461
+          }
+        }
+      }
+      Objects {
         Id: 7554697692784837314
         Name: "Server"
         Transform {
@@ -3552,6 +3701,15 @@
       PrimaryAsset {
         AssetType: "VfxBlueprintAssetRef"
         AssetId: "fxbp_smoke_puff_radial"
+      }
+    }
+    Assets {
+      Id: 1773122989610012624
+      Name: "Biohazard"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "UI_Scifi_Icon_024"
       }
     }
     PrimaryAssetId {
