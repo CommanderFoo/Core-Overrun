@@ -182,6 +182,10 @@ function ApplyDamage(dmg, source, position, rotation)
 		
 		local hitResult = dmg:GetHitResult()
 		
+		if(hitResult.other and hitResult.other.name == "Head") then
+			source:AddResource("total_headshots", 1)
+		end
+
 		-- Determine best value for impact position
 		local impactPosition
 		
@@ -251,6 +255,7 @@ function ApplyDamage(dmg, source, position, rotation)
 			source:AddResource("money", money * double)
 			source:AddResource("total_money", amount * double)
 			source:AddResource("damage", amount)
+			source:AddResource("total_money", money * double)
 			
 			if(zombie_dead) then
 				source:AddResource("kills", 1)

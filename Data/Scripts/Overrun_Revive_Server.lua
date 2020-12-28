@@ -74,6 +74,7 @@ function put_player_down(id)
 		local notification_key = "playerdown"
 
 		if(player:GetResource("lifes") == 0) then
+			player:AddResource("total_deaths", 1)
 			notification_key = "playerdead"
 			player:Die()
 			Task.Wait(0.5)
@@ -115,6 +116,7 @@ function get_player_up(id, is_respawn)
 				player:SetResource("is_down", 0)
 				player:RemoveResource("lifes", 1)
 				player:AddResource("revives", 1)
+				player:AddResource("total_revives", 1)
 
 				Task.Spawn(function()
 					if(#Game.GetPlayers() == 1) then

@@ -374,7 +374,7 @@ local function StepTowardsFallback(targetPosition)
 end
 
 local function FindPathOnNavMesh(targetPosition)
-	if(not ROOT) then
+	if(not Object.IsValid(ROOT)) then
 		return
 	end
 

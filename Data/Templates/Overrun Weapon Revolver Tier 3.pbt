@@ -1125,7 +1125,7 @@
         UnregisteredParameters {
           Overrides {
             Name: "cs:DamageToObjects"
-            Int: 250
+            Int: 300
           }
           Overrides {
             Name: "cs:DamageToPlayers"
@@ -1133,7 +1133,7 @@
           }
           Overrides {
             Name: "cs:damage_to_head"
-            Int: 270
+            Int: 350
           }
         }
         WantsNetworking: true

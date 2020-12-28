@@ -92,11 +92,14 @@ function on_trigger_enter(t, obj)
 						open_time = time()
 
 						obj:SetResource("money", math.max(0, obj:GetResource("money") - cost))
-						
+						obj:AddResource("total_crates", 1)
+						obj:AddResource("total_spent", cost)
+
 						if(random_index == skull_index) then
 							--print("got skulled", random_index, skull_index, type(random_index), type(skull_index), trigger:GetCustomProperty("weapon_index"))
 							has_skull = true
 							obj:SetResource("money", math.max(0, obj:GetResource("money") + cost))
+							obj:RemoveResource("total_spent", cost)
 						end
 						
 						open = true

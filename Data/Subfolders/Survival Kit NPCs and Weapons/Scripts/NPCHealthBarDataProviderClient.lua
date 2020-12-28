@@ -44,9 +44,7 @@ end
 
 function is_buffed()
 	if(Object.IsValid(ROOT)) then
-		if(ROOT:GetCustomProperty("health_buff")) then
-			return true
-		elseif(ROOT:GetCustomProperty("damage_buff")) then
+		if(ROOT:GetCustomProperty("health_buff") or ROOT:GetCustomProperty("damage_buff") or ROOT:GetCustomProperty("money_buff")) then
 			return true
 		end
 	end

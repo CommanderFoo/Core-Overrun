@@ -101,6 +101,7 @@
             }
             MaxAmmo: 16
             AmmoType: "rounds"
+            IsFiniteAmmo: true
             MultiShot: 1
             ProjectileSpeed: 25000
             ProjectileLifeSpan: 10
@@ -603,7 +604,7 @@
         UnregisteredParameters {
           Overrides {
             Name: "cs:DamageToObjects"
-            Int: 500
+            Int: 50
           }
           Overrides {
             Name: "cs:DamageToPlayers"

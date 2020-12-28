@@ -31,6 +31,8 @@ function on_trigger_enter(t, obj)
 
 						obj:SetResource("money", math.max(0, money - price))
 						obj:SetResource(resource_key, 1)
+						obj:AddResource("total_perks", 1)
+						obj:AddResource("total_spent", price)
 					end
 				end
 			end

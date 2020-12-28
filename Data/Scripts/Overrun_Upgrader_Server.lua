@@ -23,6 +23,9 @@ function on_trigger_enter(t, obj)
 					local money = obj:GetResource("money")
 
 					if(upgrade_price <= money) then
+						obj:AddResource("total_upgrades", 1)
+						obj:AddResource("total_spent", upgrade_price)
+						
 						Events.Broadcast("on_bought_item", obj, upgrade_asset_id, true)
 						Events.BroadcastToPlayer(obj, "on_weapon_tier_changed")
 

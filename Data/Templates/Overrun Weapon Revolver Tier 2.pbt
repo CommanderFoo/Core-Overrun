@@ -123,7 +123,7 @@
           }
           Overrides {
             Name: "cs:upgrade_price"
-            Int: 7500
+            Int: 10000
           }
           Overrides {
             Name: "cs:BaseDamage:tooltip"
@@ -1125,7 +1125,7 @@
         UnregisteredParameters {
           Overrides {
             Name: "cs:DamageToObjects"
-            Int: 160
+            Int: 200
           }
           Overrides {
             Name: "cs:DamageToPlayers"
@@ -1133,7 +1133,7 @@
           }
           Overrides {
             Name: "cs:damage_to_head"
-            Int: 180
+            Int: 250
           }
         }
         WantsNetworking: true

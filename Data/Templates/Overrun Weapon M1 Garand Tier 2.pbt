@@ -119,7 +119,7 @@
           }
           Overrides {
             Name: "cs:upgrade_price"
-            Int: 7500
+            Int: 10000
           }
           Overrides {
             Name: "cs:BaseDamage:tooltip"
@@ -1893,7 +1893,7 @@
           }
           Overrides {
             Name: "cs:damage_to_head"
-            Int: 200
+            Int: 220
           }
         }
         WantsNetworking: true

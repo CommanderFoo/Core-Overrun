@@ -1,17 +1,24 @@
-﻿0.9 []
- - 8% chance a pod can drop down and give random buffs to random Zombies (health, damage, and steal your money when hit)
- - Heavy fog falloff reduced a tiny bit
+﻿0.9 [28/12/2020]
+ - 8% chance a pod can drop down and give buffs to random Zombies (health, damage, and steal your money when hit)
+ - Heavy fog falloff reduced a tiny bit to help out those that are visually impaired (I found it too strong myself)
  - Heavy fog chance reduced from 10% to 8%
- - Solo players will now get 2 seconds of invulnerability (you can't hurt Zombies either) after self revive
- - Headshots added.  Will do increased damage to all Zombies
+ - Solo players will now get 2 seconds of invulnerability (you can't hurt Zombies either) after self revive to help with spitter instant kill
+ - Headshots added to all zombies and weapon damage.  Zombies will take a damage increase if hit in the head (not including melee)
  - Crate sword and hammer were too strong at tier 1 and 2.  Damaged reduced a little but both are more even for both attacks
  - Fixed ammo UI if you die with a melee weapon
  - Fixed typo in welcome slide
  - Late joiners will now get the current round sent to them a little sooner instead of it updating on next round
  - Fixed an issue with the crate not showing weapons if purchase is spammed really quickly
- - Added 2 new weapons to the crate (no special ones just yet)
- 
-
+ - Added 2 new basic weapons (models from CC) to the crate (no special ones just yet)
+ - Fixed crate text showing up as red if having exactly 950 money
+ - Buffed Revolver damage for all 3 tiers
+ - Various small fixes to some props clipping
+ - Zombies health bar color will change if they have received a buff (helps with focusing on specific ones)
+ - Credits UI updated with newest CC addition (weapon models)
+ - Max ammo rewarded for destroying a pod
+ - Pod damage will now award a small amount of money per hit
+ - In world icon and distance to pod added to help locate them quicker
+ - Increased tier 3 cost 7,500 to 10,000.  Was too easy to get a tier 3 weapon.
  
 0.8.8 [10/12/2020]
 - Welcome / Help ui live

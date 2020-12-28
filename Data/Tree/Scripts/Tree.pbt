@@ -325,7 +325,7 @@ Objects {
     }
     Overrides {
       Name: "cs:starting_money"
-      Int: 999750
+      Int: 75000
     }
     Overrides {
       Name: "cs:late_join_money_per_round"
@@ -832,6 +832,12 @@ Objects {
   ParentId: 17922148234597677997
   UnregisteredParameters {
     Overrides {
+      Name: "cs:YOOTIL"
+      AssetReference {
+        Id: 16622261663679835299
+      }
+    }
+    Overrides {
       Name: "cs:credits"
       ObjectReference {
         SelfId: 10576236432992691335
@@ -847,6 +853,96 @@ Objects {
       Name: "cs:notes"
       ObjectReference {
         SelfId: 1061648515972012744
+      }
+    }
+    Overrides {
+      Name: "cs:stats"
+      ObjectReference {
+        SelfId: 9955540405081835219
+      }
+    }
+    Overrides {
+      Name: "cs:total_games"
+      ObjectReference {
+        SelfId: 11880692730569526274
+      }
+    }
+    Overrides {
+      Name: "cs:total_rounds"
+      ObjectReference {
+        SelfId: 10115873332949317925
+      }
+    }
+    Overrides {
+      Name: "cs:total_perks"
+      ObjectReference {
+        SelfId: 3037272727621580023
+      }
+    }
+    Overrides {
+      Name: "cs:total_barriers"
+      ObjectReference {
+        SelfId: 13104321220006588164
+      }
+    }
+    Overrides {
+      Name: "cs:total_revives"
+      ObjectReference {
+        SelfId: 15430839999234416898
+      }
+    }
+    Overrides {
+      Name: "cs:total_deaths"
+      ObjectReference {
+        SelfId: 12912915893305746733
+      }
+    }
+    Overrides {
+      Name: "cs:total_upgrades"
+      ObjectReference {
+        SelfId: 5262350314273383753
+      }
+    }
+    Overrides {
+      Name: "cs:total_crates"
+      ObjectReference {
+        SelfId: 1924052291540369080
+      }
+    }
+    Overrides {
+      Name: "cs:total_kills"
+      ObjectReference {
+        SelfId: 7715154576928770728
+      }
+    }
+    Overrides {
+      Name: "cs:total_headshots"
+      ObjectReference {
+        SelfId: 3367205010939289445
+      }
+    }
+    Overrides {
+      Name: "cs:total_money"
+      ObjectReference {
+        SelfId: 7744516318483110351
+      }
+    }
+    Overrides {
+      Name: "cs:total_spent"
+      ObjectReference {
+        SelfId: 6578895389407500909
+      }
+    }
+    Overrides {
+      Name: "cs:total_spitters"
+      ObjectReference {
+        SelfId: 8347440318220963092
+      }
+    }
+    Overrides {
+      Name: "cs:highest_round"
+      ObjectReference {
+        SelfId: 14489810602703468014
       }
     }
   }

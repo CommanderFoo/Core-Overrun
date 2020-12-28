@@ -62,6 +62,7 @@ function player_joined(p)
 		end)
 	end
 
+	p:AddResource("total_games", 1)
 	p.diedEvent:Connect(on_player_died)
 end
 
@@ -72,8 +73,22 @@ function player_left(p)
 
 	Storage.SetPlayerData(p, {
 			
+		total_games = p:GetResource("total_games"),
+		total_rounds = p:GetResource("total_rounds"),
+		total_perks = p:GetResource("total_perks"),
+		total_barriers = p:GetResource("total_barriers"),
+		total_revives = p:GetResource("total_revives"),
+		total_deaths = p:GetResource("total_deaths"),
+		total_upgrades = p:GetResource("total_upgrades"),
+		total_crates = p:GetResource("total_crates"),
 		total_kills = p:GetResource("total_kills"),
+		total_kills = p:GetResource("total_kills"),
+		total_headshots = p:GetResource("total_headshots"),
+		total_money = p:GetResource("total_money"),
+		total_spent = p:GetResource("total_spent"),
 		highest_round = p:GetResource("highest_round"),
+		total_spitters = p:GetResource("total_spitters"),
+		
 		welcome = 1
 
 	})
@@ -113,12 +128,60 @@ function setup_resources(p, lives, reset_total_money, new_player, round_spawned)
 		local player_data = Storage.GetPlayerData(p)
 
 		if(player_data ~= nil) then
+			if(player_data["total_games" ] ~= nil) then
+				p:SetResource("total_games", player_data["total_games"])
+			end
+			
+			if(player_data["total_rounds" ] ~= nil) then
+				p:SetResource("total_rounds", player_data["total_rounds"])
+			end
+
+			if(player_data["total_perks" ] ~= nil) then
+				p:SetResource("total_perks", player_data["total_perks"])
+			end
+
+			if(player_data["total_barriers" ] ~= nil) then
+				p:SetResource("total_barriers", player_data["total_barriers"])
+			end
+
+			if(player_data["total_revives" ] ~= nil) then
+				p:SetResource("total_revives", player_data["total_revives"])
+			end
+
+			if(player_data["total_deaths" ] ~= nil) then
+				p:SetResource("total_deaths", player_data["total_deaths"])
+			end
+
+			if(player_data["total_upgrades" ] ~= nil) then
+				p:SetResource("total_upgrades", player_data["total_upgrades"])
+			end
+
+			if(player_data["total_crates" ] ~= nil) then
+				p:SetResource("total_crates", player_data["total_crates"])
+			end
+
 			if(player_data["total_kills" ] ~= nil) then
 				p:SetResource("total_kills", player_data["total_kills"])
 			end
 
+			if(player_data["total_headshots" ] ~= nil) then
+				p:SetResource("total_headshots", player_data["total_headshots"])
+			end
+
+			if(player_data["total_money" ] ~= nil) then
+				p:SetResource("total_money", player_data["total_money"])
+			end
+
+			if(player_data["total_spent" ] ~= nil) then
+				p:SetResource("total_spent", player_data["total_spent"])
+			end
+
 			if(player_data["highest_round" ] ~= nil) then
 				p:SetResource("highest_round", player_data["highest_round"])
+			end
+
+			if(player_data["total_spitters" ] ~= nil) then
+				p:SetResource("total_spitters", player_data["total_spitters"])
 			end
 
 			if(player_data["welcome" ] ~= nil) then
@@ -306,6 +369,10 @@ function round_completed()
 	Spawner.context.set_max_spawns(math.min(50, max_spawns))
 	Events.BroadcastToAllPlayers("on_round_start", round, fog_round)
 	Spawner.context.spawn_zombies()
+
+	for k, p in pairs(Game.GetPlayers()) do
+		p:AddResource("total_rounds", 1)
+	end
 end
 
 Events.Connect("on_all_zombies_killed", round_completed)

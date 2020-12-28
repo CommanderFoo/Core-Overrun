@@ -33,8 +33,8 @@ function spawn_pod(round)
 	
 	local rnd = math.random(100)
 
-	if(rnd >= 40) then
-		--return
+	if(rnd >= 8) then
+		return
 	end
 
 	local blocker_check = nil

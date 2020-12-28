@@ -22,7 +22,11 @@ function on_trigger_enter(t, obj)
 
 				if(money >= cost) then
 					Events.BroadcastToPlayer(obj, "on_audio_purchase")
+					
 					obj:SetResource("money", math.max(0, money - cost))
+					obj:AddResource("total_barriers", 1)
+					obj:AddResource("total_spent", cost)
+
 					Events.Broadcast("on_door_opened", root.name)
 					--root:Destroy()
 					geo.visibility = Visibility.FORCE_OFF
