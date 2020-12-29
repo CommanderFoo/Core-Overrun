@@ -1,18 +1,48 @@
 ﻿local nametag_tpl = script:GetCustomProperty("nametag_tpl")
+local support_me = script:GetCustomProperty("support_me")
 
 local local_player = Game.GetLocalPlayer()
 local nametags = {}
 
+function perk_changed(player)
+	if(nametags[player.id]) then
+		local name = nametags[player.id]:FindChildByName("Name")
+		local supporter = nametags[player.id]:FindChildByName("Supporter")
+
+		name:SetColor(Color.YELLOW)
+		supporter.text = "Supporter"
+
+		if(player:GetPerkCount(support_me) > 1) then
+			supporter.text = supporter.text .. " x" .. tostring(player:GetPerkCount(support_me))
+		end
+	end
+end
+
 function on_player_joined(player)	
 	if(player.id ~= local_player.id) then
 		local nametag = World.SpawnAsset(nametag_tpl)
-		
-		nametag.text = player.name
+		local name = nametag:FindChildByName("Name")
+		local supporter = nametag:FindChildByName("Supporter")
+
+		name.text = player.name
+
+		if(player:HasPerk(support_me)) then
+			name:SetColor(Color.YELLOW)
+			
+			supporter.text = "Supporter"
+
+			if(player:GetPerkCount(support_me) > 1) then
+				supporter.text = supporter.text .. " x" .. tostring(player:GetPerkCount(support_me))
+			end
+		end
+
 		nametags[player.id] = nametag
 
 		nametag:AttachToPlayer(player, "nameplate")
 		nametag:SetScale(Vector3.New(0.85, 0.85, 0.85))
 	end
+
+	player.perkChangedEvent:Connect(perk_changed)
 end
 
 function on_player_left(player)

@@ -2,9 +2,7 @@
 
 local rounds = script:GetCustomProperty("rounds")
 local kills = script:GetCustomProperty("kills")
-
-local rounds_ui = script:GetCustomProperty("rounds_ui"):WaitForObject()
-local kills_ui = script:GetCustomProperty("kills_ui"):WaitForObject()
+local headshots = script:GetCustomProperty("headshots")
 
 local kills_entries = {
 
@@ -26,38 +24,70 @@ local round_entries = {
 
 }
 
+local headshots_entries = {
+
+	[1] = script:GetCustomProperty("headshots_entry_1"):WaitForObject(),
+	[2] = script:GetCustomProperty("headshots_entry_2"):WaitForObject(),
+	[3] = script:GetCustomProperty("headshots_entry_3"):WaitForObject(),
+	[4] = script:GetCustomProperty("headshots_entry_4"):WaitForObject(),
+	[5] = script:GetCustomProperty("headshots_entry_5"):WaitForObject()
+
+}
+
 local updater = Task.Spawn(function()
 	if(Leaderboards.HasLeaderboards()) then
 		local kills_leaderboard = Leaderboards.GetLeaderboard(kills, LeaderboardType.GLOBAL)
 		local kills_index = 1
 
-		for k, v in pairs(kills_leaderboard) do
-			local entry = kills_entries[kills_index]
+		if(kills_leaderboard ~= nil) then
+			for k, v in pairs(kills_leaderboard) do
+				local entry = kills_entries[kills_index]
 
-			entry:FindDescendantByName("Name").text = YOOTIL.Utils.truncate(v.name, 12)
-			entry:FindDescendantByName("Stat").text = YOOTIL.Utils.number_format(string.format("%.0u", v.score))
+				entry:FindDescendantByName("Name").text = YOOTIL.Utils.truncate(v.name, 12)
+				entry:FindDescendantByName("Stat").text = YOOTIL.Utils.number_format(string.format("%.0u", v.score))
 
-			if(kills_index == 5) then
-				break
+				if(kills_index == 5) then
+					break
+				end
+				
+				kills_index = kills_index + 1
 			end
-			
-			kills_index = kills_index + 1
 		end
 
 		local round_leaderboard = Leaderboards.GetLeaderboard(rounds, LeaderboardType.GLOBAL)
 		local round_index = 1
 
-		for k, v in pairs(round_leaderboard) do
-			local entry = round_entries[round_index]
-			
-			entry:FindDescendantByName("Name").text = YOOTIL.Utils.truncate(v.name, 12)
-			entry:FindDescendantByName("Stat").text = YOOTIL.Utils.number_format(string.format("%.0u", v.score))
+		if(round_leaderboard ~= nil) then
+			for k, v in pairs(round_leaderboard) do
+				local entry = round_entries[round_index]
+				
+				entry:FindDescendantByName("Name").text = YOOTIL.Utils.truncate(v.name, 12)
+				entry:FindDescendantByName("Stat").text = YOOTIL.Utils.number_format(string.format("%.0u", v.score))
 
-			if(round_index == 5) then
-				break
+				if(round_index == 5) then
+					break
+				end
+				
+				round_index = round_index + 1
 			end
-			
-			round_index = round_index + 1
+		end
+
+		local headshots_leaderboard = Leaderboards.GetLeaderboard(headshots, LeaderboardType.GLOBAL)
+		local headshots_index = 1
+
+		if(headshots_leaderboard ~= nil) then
+			for k, v in pairs(headshots_leaderboard) do
+				local entry = headshots_entries[headshots_index]
+				
+				entry:FindDescendantByName("Name").text = YOOTIL.Utils.truncate(v.name, 12)
+				entry:FindDescendantByName("Stat").text = YOOTIL.Utils.number_format(string.format("%.0u", v.score))
+
+				if(headshots_index == 5) then
+					break
+				end
+				
+				headshots_index = headshots_index + 1
+			end
 		end
 	end
 end)

@@ -61,8 +61,8 @@ function spawn_pod(round)
 				pod_health = pod_health * #Game.GetPlayers()
 			end
 
-			if(round > 5) then
-				pod_health = math.floor(((round / 2) * pod_health) + 0.5)
+			if(round >= 5) then
+				pod_health = math.floor(((round / 4) * pod_health) + 0.5)
 			end
 
 			current_item:SetNetworkedCustomProperty("CurrentHealth", pod_health);
@@ -112,3 +112,21 @@ Events.Connect("on_door_opened", function(door_name)
 end)
 
 Events.Connect("on_clean_up", clean_up)
+
+--[[
+
+local pod_health = 2000
+local players = 4
+local round = 30
+
+if(players > 1) then
+	pod_health = pod_health * players
+end
+
+if(round >= 5) then
+	pod_health = math.floor(((round / 4) * pod_health) + 0.5)
+end
+
+print(pod_health)
+
+]]

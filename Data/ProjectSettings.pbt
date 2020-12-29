@@ -6,8 +6,8 @@
     FormatType {
       Value: "mc:ecoresdkleaderboardformat:numeric"
     }
-    Name: "rounds"
-    Id: "A644A3FFACB88102"
+    Name: "highest_round"
+    Id: "6C23EDED8394036D"
     EntryLimit: 25
   }
   Config {
@@ -17,8 +17,19 @@
     FormatType {
       Value: "mc:ecoresdkleaderboardformat:numeric"
     }
-    Name: "kills"
-    Id: "CEEB0044183F1BD3"
+    Name: "most_kills"
+    Id: "6A93ECCAF6F76B8B"
+    EntryLimit: 25
+  }
+  Config {
+    SortType {
+      Value: "mc:ecoresdkleaderboardsorting:higherisbetter"
+    }
+    FormatType {
+      Value: "mc:ecoresdkleaderboardformat:numeric"
+    }
+    Name: "total_headshots"
+    Id: "E2E6F389A0C41849"
     EntryLimit: 25
   }
 }

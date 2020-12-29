@@ -51,6 +51,10 @@ local is_pod = script:GetCustomProperty("is_pod")
 -- end custom
 
 function GetTeam()
+	if(not Object.IsValid(ROOT)) then
+		return
+	end
+	
 	return ROOT:GetCustomProperty("Team")
 end
 
@@ -181,11 +185,7 @@ function ApplyDamage(dmg, source, position, rotation)
 		SetHealth(newHealth)
 		
 		local hitResult = dmg:GetHitResult()
-		
-		if(hitResult.other and hitResult.other.name == "Head") then
-			source:AddResource("total_headshots", 1)
-		end
-
+	
 		-- Determine best value for impact position
 		local impactPosition
 		
@@ -233,8 +233,16 @@ function ApplyDamage(dmg, source, position, rotation)
 		local zombie_dead = false
 
 		if (newHealth <= 0) then
+			if(hitResult.other and hitResult.other.name == "Head") then
+				source:AddResource("total_headshots", 1)
+			end
+			
 			zombie_dead = true
 			money = money + ROOT:GetCustomProperty("money_per_kill")
+
+			if(ROOT.name == "Overrun NPC Zombie Spitter" or ROOT.name == "Overrun NPC Zombie Spitter Brute") then
+				source:AddResource("total_spitters", 1)
+			end
 
 			Events.Broadcast("ObjectDestroyed", id)
 			Events.Broadcast("on_zombie_killed", id)
@@ -259,7 +267,7 @@ function ApplyDamage(dmg, source, position, rotation)
 			
 			if(zombie_dead) then
 				source:AddResource("kills", 1)
-				source:AddResource("total_kills", 1)
+				source:AddResource("total_kills_v2", 1)
 				spawn_random_power_up(source)
 			end
 		end

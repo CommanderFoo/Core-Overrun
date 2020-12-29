@@ -38,7 +38,7 @@ local buff_task = Task.Spawn(function()
 	end
 end)
 
-buff_task.repeatInterval = 2
+buff_task.repeatInterval = 6
 buff_task.repeatCount = -1
 
 script.destroyEvent:Connect(function()

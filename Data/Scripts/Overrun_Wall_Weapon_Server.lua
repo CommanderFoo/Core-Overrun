@@ -51,6 +51,7 @@ function on_trigger_enter(t, obj)
 						if(cost >= 0) then
 							Events.Broadcast("on_bought_item", obj, asset_id, true)
 							obj:SetResource("money", math.max(0, money - cost))
+							obj:AddResource("total_spent", cost)
 						end
 					end
 				end

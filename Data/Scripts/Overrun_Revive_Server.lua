@@ -3,6 +3,7 @@
 local no_damage_duration = script:GetCustomProperty("no_damage_duration")
 
 local players = {}
+local already_called_down = false
 
 function player_joined(p)
 	if(not players[p.id]) then
@@ -56,6 +57,12 @@ end
 
 function put_player_down(id)
 	if(players[id] ~= nil) then
+		if(already_called_down) then
+			return
+		end
+
+		already_called_down = true
+
 		local player = players[id].player
 
 		player:SetResource("is_down", 1)
@@ -91,8 +98,10 @@ function put_player_down(id)
 		Events.Broadcast("on_player_down", id, pos, player:GetResource("lifes"))
 
 		if(not all_dead()) then
-			Events.BroadcastToAllPlayers("on_notification", notification_key, player.name, player:GetResource("quick_revive") == 1)
+			--Events.BroadcastToAllPlayers("on_notification", notification_key, player.name, player:GetResource("quick_revive") == 1)
 		end
+
+		already_called_down = false
 	end
 end
 

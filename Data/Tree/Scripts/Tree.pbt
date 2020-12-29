@@ -321,11 +321,11 @@ Objects {
     }
     Overrides {
       Name: "cs:game_start_duration"
-      Int: 0
+      Int: 15
     }
     Overrides {
       Name: "cs:starting_money"
-      Int: 75000
+      Int: 750
     }
     Overrides {
       Name: "cs:late_join_money_per_round"
@@ -339,6 +339,12 @@ Objects {
       Name: "cs:Overrun_Pod_Spawner"
       ObjectReference {
         SelfId: 13560153559646981623
+      }
+    }
+    Overrides {
+      Name: "cs:YOOTIL"
+      AssetReference {
+        Id: 16622261663679835299
       }
     }
   }
@@ -618,7 +624,7 @@ Objects {
     }
     Overrides {
       Name: "cs:power_up_chance"
-      Int: 30
+      Int: 25
     }
     Overrides {
       Name: "cs:instant_kill"
@@ -799,7 +805,16 @@ Objects {
     Overrides {
       Name: "cs:nametag_tpl"
       AssetReference {
-        Id: 14457330189020935665
+        Id: 4047840122259097908
+      }
+    }
+    Overrides {
+      Name: "cs:support_me"
+      NetReference {
+        Key: "d6b1e314e7df46d78661072a92c86c97"
+        Type {
+          Value: "mc:enetreferencetype:creatorperk"
+        }
       }
     }
   }
@@ -943,6 +958,12 @@ Objects {
       Name: "cs:highest_round"
       ObjectReference {
         SelfId: 14489810602703468014
+      }
+    }
+    Overrides {
+      Name: "cs:support_me"
+      ObjectReference {
+        SelfId: 2104928629745804160
       }
     }
   }

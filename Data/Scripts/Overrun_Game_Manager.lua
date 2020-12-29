@@ -1,4 +1,6 @@
-﻿local Spawner = script:GetCustomProperty("Overrun_Spawner_Server"):WaitForObject()
+﻿local YOOTIL = require(script:GetCustomProperty("YOOTIL"))
+
+local Spawner = script:GetCustomProperty("Overrun_Spawner_Server"):WaitForObject()
 local Pod_Spawner = script:GetCustomProperty("Overrun_Pod_Spawner"):WaitForObject()
 local Player_Equipment = script:GetCustomProperty("Overrun_Player_Equipment"):WaitForObject()
 
@@ -42,6 +44,7 @@ function player_joined(p)
 	end
 
 	setup_resources(p, starting_lives, true, true)
+	setup_stats(p)
 
 	p.team = 1
 
@@ -66,6 +69,78 @@ function player_joined(p)
 	p.diedEvent:Connect(on_player_died)
 end
 
+function setup_stats(p)
+	local player_data = Storage.GetPlayerData(p)
+
+	--YOOTIL.Utils.dumpp(player_data)
+
+	if(player_data ~= nil) then
+		if(player_data["total_games"] ~= nil) then
+			p:SetResource("total_games", player_data["total_games"])
+		end
+		
+		if(player_data["total_rounds"] ~= nil) then
+			p:SetResource("total_rounds", player_data["total_rounds"])
+		end
+
+		if(player_data["total_perks"] ~= nil) then
+			p:SetResource("total_perks", player_data["total_perks"])
+		end
+
+		if(player_data["total_barriers"] ~= nil) then
+			p:SetResource("total_barriers", player_data["total_barriers"])
+		end
+
+		if(player_data["total_revives"] ~= nil) then
+			p:SetResource("total_revives", player_data["total_revives"])
+		end
+
+		if(player_data["total_deaths"] ~= nil) then
+			p:SetResource("total_deaths", player_data["total_deaths"])
+		end
+
+		if(player_data["total_upgrades"] ~= nil) then
+			p:SetResource("total_upgrades", player_data["total_upgrades"])
+		end
+
+		if(player_data["total_crates"] ~= nil) then
+			p:SetResource("total_crates", player_data["total_crates"])
+		end
+
+		if(player_data["total_kills_v2"] ~= nil) then
+			p:SetResource("total_kills_v2", player_data["total_kills_v2"])
+		end
+
+		if(player_data["total_headshots"] ~= nil) then
+			p:SetResource("total_headshots", player_data["total_headshots"])
+		end
+
+		if(player_data["total_money"] ~= nil) then
+			p:SetResource("total_money", player_data["total_money"])
+		end
+
+		if(player_data["total_spent"] ~= nil) then
+			p:SetResource("total_spent", player_data["total_spent"])
+		end
+
+		if(player_data["total_spitters"] ~= nil) then
+			p:SetResource("total_spitters", player_data["total_spitters"])
+		end
+
+		if(player_data["highest_round_v2"] ~= nil) then
+			p:SetResource("highest_round_v2", player_data["highest_round_v2"])
+		else
+			p:SetResource("highest_round_v2", 1)
+		end
+
+		if(player_data["welcome"] ~= nil) then
+			p:SetResource("welcome", player_data["welcome"])
+		else
+			p:SetResource("welcome", 0)
+		end
+	end
+end
+
 function player_left(p)
 	if(players[p.id]) then
 		players[p.id] = nil
@@ -81,18 +156,22 @@ function player_left(p)
 		total_deaths = p:GetResource("total_deaths"),
 		total_upgrades = p:GetResource("total_upgrades"),
 		total_crates = p:GetResource("total_crates"),
-		total_kills = p:GetResource("total_kills"),
-		total_kills = p:GetResource("total_kills"),
 		total_headshots = p:GetResource("total_headshots"),
 		total_money = p:GetResource("total_money"),
 		total_spent = p:GetResource("total_spent"),
-		highest_round = p:GetResource("highest_round"),
 		total_spitters = p:GetResource("total_spitters"),
+
+		total_kills_v2 = p:GetResource("total_kills_v2"),
+		highest_round_v2 = p:GetResource("highest_round_v2"),
 		
 		welcome = 1
 
 	})
 	
+	local player_data = Storage.GetPlayerData(p)
+
+	--YOOTIL.Utils.dumpp(player_data)
+
 	check_player_status()
 end
 
@@ -114,8 +193,6 @@ function setup_resources(p, lives, reset_total_money, new_player, round_spawned)
 		p:SetResource("revives", 0)
 		p:SetResource("damage", 0)
 		p:SetResource("kills", 0)
-		p:SetResource("total_kills", 0)
-		p:SetResource("highest_round", 1)
 	end
 
 	p:SetResource("rounds", 48)
@@ -123,74 +200,6 @@ function setup_resources(p, lives, reset_total_money, new_player, round_spawned)
 	p:SetResource("lifes", lives)
 	p:SetResource("quick_revive", 0)
 	p:SetResource("juggernog", 0)
-
-	if(not round_spawned) then
-		local player_data = Storage.GetPlayerData(p)
-
-		if(player_data ~= nil) then
-			if(player_data["total_games" ] ~= nil) then
-				p:SetResource("total_games", player_data["total_games"])
-			end
-			
-			if(player_data["total_rounds" ] ~= nil) then
-				p:SetResource("total_rounds", player_data["total_rounds"])
-			end
-
-			if(player_data["total_perks" ] ~= nil) then
-				p:SetResource("total_perks", player_data["total_perks"])
-			end
-
-			if(player_data["total_barriers" ] ~= nil) then
-				p:SetResource("total_barriers", player_data["total_barriers"])
-			end
-
-			if(player_data["total_revives" ] ~= nil) then
-				p:SetResource("total_revives", player_data["total_revives"])
-			end
-
-			if(player_data["total_deaths" ] ~= nil) then
-				p:SetResource("total_deaths", player_data["total_deaths"])
-			end
-
-			if(player_data["total_upgrades" ] ~= nil) then
-				p:SetResource("total_upgrades", player_data["total_upgrades"])
-			end
-
-			if(player_data["total_crates" ] ~= nil) then
-				p:SetResource("total_crates", player_data["total_crates"])
-			end
-
-			if(player_data["total_kills" ] ~= nil) then
-				p:SetResource("total_kills", player_data["total_kills"])
-			end
-
-			if(player_data["total_headshots" ] ~= nil) then
-				p:SetResource("total_headshots", player_data["total_headshots"])
-			end
-
-			if(player_data["total_money" ] ~= nil) then
-				p:SetResource("total_money", player_data["total_money"])
-			end
-
-			if(player_data["total_spent" ] ~= nil) then
-				p:SetResource("total_spent", player_data["total_spent"])
-			end
-
-			if(player_data["highest_round" ] ~= nil) then
-				p:SetResource("highest_round", player_data["highest_round"])
-			end
-
-			if(player_data["total_spitters" ] ~= nil) then
-				p:SetResource("total_spitters", player_data["total_spitters"])
-			end
-
-			if(player_data["welcome" ] ~= nil) then
-				p:SetResource("welcome", player_data["welcome"])
-			else
-				p:SetResource("welcome", 0)
-			end
-		end
-	end
 
 	p.maxHitPoints = 100
 
@@ -323,10 +332,10 @@ end
 
 function update_highest_round()
 	for k, p in pairs(Game.GetPlayers()) do
-		local hr = p:GetResource("highest_round")
+		local hr = p:GetResource("highest_round_v2")
 
 		if(round > hr) then
-			p:SetResource("highest_round", round)
+			p:SetResource("highest_round_v2", round)
 		end
 	end
 end

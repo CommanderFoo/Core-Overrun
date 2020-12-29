@@ -52,18 +52,10 @@ function API.ApplyDamage(object, dmg, source, pos, rot, money_buff)
 	
 	if(object ~= nil and object:IsA("Player")) then
 		if(money_buff) then
-			object:RemoveResource("money", 100)
-		end
-
-		local current_health = object.hitPoints
-		local damage_amount = dmg.amount
-
-		if(damage_amount >= current_health) then
-			dmg.amount = current_health - 1
-			Events.Broadcast("on_player_put_down", object.id)
+			object:RemoveResource("money", 200)
 		end
 	end
-	
+
 	CROSS_CONTEXT_CALLER().Call(function()
 		GetWrapperFor(object).ApplyDamage(object, dmg, source, pos, rot)
 	end)

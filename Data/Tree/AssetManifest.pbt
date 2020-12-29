@@ -107,6 +107,19 @@ Assets {
   }
 }
 Assets {
+  Id: 8244118602442741491
+  Name: "Supporter"
+  PlatformAssetType: 24
+  NetReferenceAsset {
+    NetReference {
+      Key: "d6b1e314e7df46d78661072a92c86c97"
+      Type {
+        Value: "mc:enetreferencetype:creatorperk"
+      }
+    }
+  }
+}
+Assets {
   Id: 7312235065341263458
   Name: "Melee Hit Slap Face Hit 02 SFX"
   PlatformAssetType: 7

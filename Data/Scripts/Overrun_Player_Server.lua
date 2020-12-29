@@ -93,6 +93,7 @@ function Tick()
 			if(v.money_to_broadcast ~= nil) then
 				Events.BroadcastToAllPlayers("on_player_money_changed", {id = v.player.id, m = v.money_to_broadcast})
 				v.money_to_broadcast = nil
+				Task.Wait(0.3)
 			end
 		end
 	end

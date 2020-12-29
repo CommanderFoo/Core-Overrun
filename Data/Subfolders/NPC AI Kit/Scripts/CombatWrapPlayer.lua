@@ -41,6 +41,15 @@ end
 
 -- ApplyDamage()
 function wrapper.ApplyDamage(player, dmg)
+	local current_health = player.hitPoints
+
+	if(dmg.amount >= player.hitPoints) then
+		dmg.amount = 0
+		player.hitPoints = 1
+
+		Events.Broadcast("on_player_put_down", player.id)
+	end
+	
 	player:ApplyDamage(dmg)
 end
 

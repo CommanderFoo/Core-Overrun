@@ -1,4 +1,4 @@
-﻿0.9 [28/12/2020]
+﻿0.9 [29/12/2020]
  - 8% chance a pod can drop down and give buffs to random Zombies (health, damage, and steal your money when hit)
  - Heavy fog falloff reduced a tiny bit to help out those that are visually impaired (I found it too strong myself)
  - Heavy fog chance reduced from 10% to 8%
@@ -18,8 +18,17 @@
  - Max ammo rewarded for destroying a pod
  - Pod damage will now award a small amount of money per hit
  - In world icon and distance to pod added to help locate them quicker
- - Increased tier 3 cost 7,500 to 10,000.  Was too easy to get a tier 3 weapon.
- 
+ - Increased tier 3 cost 7,500 to 10,000.  Was too easy to get a tier 3 weapon
+ - Headshots leaderboard added
+ - Kills and rounds leaderboards reset
+ - Pod health now scales per round (after round 4) and doubles per player
+ - Player stats (press Q) UI
+ - Fixed a critical revive bug with cross context function of the NPC code
+ - Moved review progress bar down to prevent overlapping with most UI popups
+ - "Support Me" perk pre work.  Doesn't effect gameplay, adds "Supporter" title for others to see
+ - Removed notification when players are down or dead, there was too much notification spam happening
+ - Various minor under the hood tweaks
+
 0.8.8 [10/12/2020]
 - Welcome / Help ui live
 

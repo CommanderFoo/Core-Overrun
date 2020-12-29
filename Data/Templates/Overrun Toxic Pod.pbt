@@ -117,7 +117,7 @@
           }
           Overrides {
             Name: "cs:money_per_hit"
-            Int: 2
+            Int: 5
           }
           Overrides {
             Name: "cs:money_per_kill"

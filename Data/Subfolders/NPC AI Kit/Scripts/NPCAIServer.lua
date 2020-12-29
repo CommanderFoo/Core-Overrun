@@ -391,6 +391,10 @@ local function FindPathOnNavMesh(targetPosition)
 			local quickBreak = false
 			local removePathIndex = 0
 			for i = 1, #navMeshPath - 1 do
+				if(not Object.IsValid(ROOT)) then
+					break
+				end
+				
 				local pointOnLine = GetClosestPointOnLineSegment(navMeshPath[i], navMeshPath[i+1], ROOT:GetWorldPosition())
 				local checkDist = (pointOnLine - ROOT:GetWorldPosition()).size
 				if checkDist < closestDist then
