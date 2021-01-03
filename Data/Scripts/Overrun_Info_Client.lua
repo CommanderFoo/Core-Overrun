@@ -92,7 +92,7 @@ local_player.bindingPressedEvent:Connect(function(player, binding)
 				total_upgrades.text = YOOTIL.Utils.number_format(local_player:GetResource("total_upgrades"))
 				total_crates.text = YOOTIL.Utils.number_format(local_player:GetResource("total_crates"))
 				total_headshots.text = YOOTIL.Utils.number_format(local_player:GetResource("total_headshots"))
-				total_money.text = YOOTIL.Utils.number_format(local_player:GetResource("total_money"))
+				total_money.text = YOOTIL.Utils.number_format(local_player:GetResource("total_money_all_time"))
 				total_spent.text = YOOTIL.Utils.number_format(local_player:GetResource("total_spent"))
 				total_spitters.text = YOOTIL.Utils.number_format(local_player:GetResource("total_spitters"))
 

@@ -1,4 +1,15 @@
-﻿0.9 [29/12/2020]
+﻿0.9.2 [03/01/2021]
+ - Pod spawn interval changed from 8 to 12 seconds (every 12 seconds there is an 8% chance of a spawn)
+ - Decreased the health of pod past wave 8.  Example: Wave 20 it was 40,000 health. Now it will be just over 26,000 at that wave.
+ - Late joiners money now raised from 100 to 200 per round, but caps out at 5,000 max.
+
+0.9.1 [31/12/2020]
+ - Fixed player getting stuck in enviroment object
+ - Corrected damage to shotguns for headshots, was using wrong value
+ - Fixed pod spawn points not being reset on new game
+ - Increased starting pistol damage from 50 to 60
+   
+0.9 [29/12/2020]
  - 8% chance a pod can drop down and give buffs to random Zombies (health, damage, and steal your money when hit)
  - Heavy fog falloff reduced a tiny bit to help out those that are visually impaired (I found it too strong myself)
  - Heavy fog chance reduced from 10% to 8%
@@ -24,7 +35,7 @@
  - Pod health now scales per round (after round 4) and doubles per player
  - Player stats (press Q) UI
  - Fixed a critical revive bug with cross context function of the NPC code
- - Moved review progress bar down to prevent overlapping with most UI popups
+ - Moved revive progress bar down to prevent overlapping with most UI popups
  - "Support Me" perk pre work.  Doesn't effect gameplay, adds "Supporter" title for others to see
  - Removed notification when players are down or dead, there was too much notification spam happening
  - Various minor under the hood tweaks

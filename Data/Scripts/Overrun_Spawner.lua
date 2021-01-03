@@ -138,10 +138,10 @@ function spawn_zombies()
 	if(pod_spawner == nil) then
 		pod_spawner = Task.Spawn(function()
 			Events.Broadcast("on_pod_spawn", round)
-		end, 5)
+		end, 6)
 
 		pod_spawner.repeatCount = -1
-		pod_spawner.repeatInterval = 8
+		pod_spawner.repeatInterval = 12
 	end
 
 	if(DEBUG_DISABLE_SPAWNS) then

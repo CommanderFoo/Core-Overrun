@@ -38,7 +38,7 @@ function OnTargetImpact(theWeapon, impactData)
 			end
 		end
 		amount = amount * numberOfHits
-		head_shot_damage = amount * numberOfHits
+		head_shot_damage = DAMAGE_TO_HEAD * numberOfHits
 	end
 	
 	-- Apply the damage

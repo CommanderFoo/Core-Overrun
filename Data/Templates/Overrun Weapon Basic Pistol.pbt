@@ -604,7 +604,7 @@
         UnregisteredParameters {
           Overrides {
             Name: "cs:DamageToObjects"
-            Int: 50
+            Int: 60
           }
           Overrides {
             Name: "cs:DamageToPlayers"

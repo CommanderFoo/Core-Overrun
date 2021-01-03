@@ -261,7 +261,7 @@ function ApplyDamage(dmg, source, position, rotation)
 			end
 
 			source:AddResource("money", money * double)
-			source:AddResource("total_money", amount * double)
+			source:AddResource("total_money_all_time", money * double)
 			source:AddResource("damage", amount)
 			source:AddResource("total_money", money * double)
 			

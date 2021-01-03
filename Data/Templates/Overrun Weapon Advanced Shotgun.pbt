@@ -1071,7 +1071,7 @@
           }
           Overrides {
             Name: "cs:damage_to_head"
-            Int: 50
+            Int: 45
           }
         }
         WantsNetworking: true

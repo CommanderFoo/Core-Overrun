@@ -1,7 +1,6 @@
 ﻿local YOOTIL = require(script:GetCustomProperty("YOOTIL"))
 
 local Spawner = script:GetCustomProperty("Overrun_Spawner_Server"):WaitForObject()
-local Pod_Spawner = script:GetCustomProperty("Overrun_Pod_Spawner"):WaitForObject()
 local Player_Equipment = script:GetCustomProperty("Overrun_Player_Equipment"):WaitForObject()
 
 local round_end_duration = script:GetCustomProperty("round_end_duration")
@@ -115,8 +114,10 @@ function setup_stats(p)
 			p:SetResource("total_headshots", player_data["total_headshots"])
 		end
 
-		if(player_data["total_money"] ~= nil) then
-			p:SetResource("total_money", player_data["total_money"])
+		if(player_data["total_money_all_time"] ~= nil) then
+			p:SetResource("total_money_all_time", player_data["total_money_all_time"])
+		else
+			p:SetResource("total_money_all_time", player_data["total_spent"])
 		end
 
 		if(player_data["total_spent"] ~= nil) then
@@ -157,7 +158,7 @@ function player_left(p)
 		total_upgrades = p:GetResource("total_upgrades"),
 		total_crates = p:GetResource("total_crates"),
 		total_headshots = p:GetResource("total_headshots"),
-		total_money = p:GetResource("total_money"),
+		total_money_all_time = p:GetResource("total_money_all_time"),
 		total_spent = p:GetResource("total_spent"),
 		total_spitters = p:GetResource("total_spitters"),
 
@@ -179,7 +180,7 @@ function setup_resources(p, lives, reset_total_money, new_player, round_spawned)
 	local money_to_add = 0
 
 	if(new_player and game_state == "PLAYING" and round > 1) then
-		money_to_add = math.min(3000, round * late_join_money_per_round)
+		money_to_add = math.min(5000, round * late_join_money_per_round)
 	end
 
 	if(not round_spawned) then

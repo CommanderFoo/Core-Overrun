@@ -61,8 +61,8 @@ function spawn_pod(round)
 				pod_health = pod_health * #Game.GetPlayers()
 			end
 
-			if(round >= 5) then
-				pod_health = math.floor(((round / 4) * pod_health) + 0.5)
+			if(round >= 8) then
+				pod_health = math.floor(((round / 6) * pod_health) + 0.5)
 			end
 
 			current_item:SetNetworkedCustomProperty("CurrentHealth", pod_health);
@@ -91,6 +91,10 @@ function spawn_pod(round)
 end
 
 function clean_up()
+	spawn_points = {}
+	
+	add_spawn_points(center_spawns)
+
 	if(#pod_container:GetChildren() > 0) then
 		while(#pod_container:GetChildren() > 0) do
 			pod_container:GetChildren()[1]:Destroy()

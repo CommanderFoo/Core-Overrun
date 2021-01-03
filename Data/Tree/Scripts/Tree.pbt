@@ -329,7 +329,7 @@ Objects {
     }
     Overrides {
       Name: "cs:late_join_money_per_round"
-      Int: 100
+      Int: 200
     }
     Overrides {
       Name: "cs:starting_lives"

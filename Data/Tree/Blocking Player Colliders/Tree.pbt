@@ -4269,11 +4269,12 @@ Objects {
   Name: "Cube"
   Transform {
     Location {
-      X: -971.782837
-      Y: 2727.83203
+      X: -992.518555
+      Y: 2693.65186
       Z: -45
     }
     Rotation {
+      Yaw: 5.28736734
     }
     Scale {
       X: 8.25300217
