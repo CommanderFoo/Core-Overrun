@@ -1,4 +1,12 @@
-﻿0.9.2 [03/01/2021]
+﻿0.9.4 [04/01/2021]
+ - Power up UI moved down to prevent overlap with text UI
+ - Regular and brute spitters attack range reduced a little
+ - Changed upgrade message to "Only Crate weapons can be upgraded" to prevent confusion
+
+0.9.3 [03/01/2021]
+ - Fixed total money all time stat being cleared on new game
+
+0.9.2 [03/01/2021]
  - Pod spawn interval changed from 8 to 12 seconds (every 12 seconds there is an 8% chance of a spawn)
  - Decreased the health of pod past wave 8.  Example: Wave 20 it was 40,000 health. Now it will be just over 26,000 at that wave.
  - Late joiners money now raised from 100 to 200 per round, but caps out at 5,000 max.

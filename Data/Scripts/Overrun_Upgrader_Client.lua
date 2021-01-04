@@ -43,7 +43,7 @@ function on_trigger_enter(t, obj)
 				ui:SetColor(cant_afford_color)
 			end
 		elseif(upgrade_price == -1) then
-			ui.text = "This weapon can not be upgraded."
+			ui.text = "Only Crate weapons can be upgraded."
 			ui:SetColor(cant_afford_color)
 		else
 			ui.text = "Your weapon can't be upgraded anymore."

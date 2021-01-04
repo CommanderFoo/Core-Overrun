@@ -8875,7 +8875,7 @@ Objects {
     Width: 60
     Height: 60
     UIX: 40
-    UIY: 40
+    UIY: 60
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -8954,6 +8954,12 @@ Objects {
     }
   }
   ParentId: 671602529849075870
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceon"
+  }
   TemplateInstance {
     ParameterOverrideMap {
       key: 17365292360682819244
@@ -8963,17 +8969,14 @@ Objects {
           String: "Overrun Notification UI Double Points"
         }
         Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: -6.83018879e-06
+          Name: "Position"
+          Vector {
           }
         }
         Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
+          Name: "Rotation"
+          Rotator {
+            Yaw: -6.83018879e-06
           }
         }
         Overrides {
@@ -8981,10 +8984,6 @@ Objects {
           Enum {
             Value: "mc:evisibilitysetting:forceoff"
           }
-        }
-        Overrides {
-          Name: "UIX"
-          Float: 0
         }
       }
     }

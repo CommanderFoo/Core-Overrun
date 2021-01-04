@@ -85,7 +85,7 @@
           }
           Overrides {
             Name: "cs:AttackRange"
-            Float: 600
+            Float: 500
           }
           Overrides {
             Name: "cs:AttackCast"
