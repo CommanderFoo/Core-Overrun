@@ -1,6 +1,6 @@
 ﻿Entries {
   Key {
-    StringVar: "total_spitters"
+    StringVar: "total_money_all_time"
   }
   SimpleValue {
     IntVar: 0
@@ -12,62 +12,6 @@ Entries {
   }
   SimpleValue {
     IntVar: 0
-  }
-}
-Entries {
-  Key {
-    StringVar: "total_upgrades"
-  }
-  SimpleValue {
-    IntVar: 0
-  }
-}
-Entries {
-  Key {
-    StringVar: "highest_round_v2"
-  }
-  SimpleValue {
-    IntVar: 1
-  }
-}
-Entries {
-  Key {
-    StringVar: "total_crates"
-  }
-  SimpleValue {
-    IntVar: 0
-  }
-}
-Entries {
-  Key {
-    StringVar: "total_barriers"
-  }
-  SimpleValue {
-    IntVar: 0
-  }
-}
-Entries {
-  Key {
-    StringVar: "total_spent"
-  }
-  SimpleValue {
-    IntVar: 0
-  }
-}
-Entries {
-  Key {
-    StringVar: "total_rounds"
-  }
-  SimpleValue {
-    IntVar: 0
-  }
-}
-Entries {
-  Key {
-    StringVar: "total_money"
-  }
-  SimpleValue {
-    IntVar: 750
   }
 }
 Entries {
@@ -88,10 +32,10 @@ Entries {
 }
 Entries {
   Key {
-    StringVar: "total_headshots"
+    StringVar: "total_upgrades"
   }
   SimpleValue {
-    IntVar: 2
+    IntVar: 0
   }
 }
 Entries {
@@ -104,10 +48,50 @@ Entries {
 }
 Entries {
   Key {
-    StringVar: "total_games"
+    StringVar: "total_crates"
   }
   SimpleValue {
-    IntVar: 28
+    IntVar: 0
+  }
+}
+Entries {
+  Key {
+    StringVar: "total_headshots"
+  }
+  SimpleValue {
+    IntVar: 2
+  }
+}
+Entries {
+  Key {
+    StringVar: "total_rounds"
+  }
+  SimpleValue {
+    IntVar: 0
+  }
+}
+Entries {
+  Key {
+    StringVar: "total_spitters"
+  }
+  SimpleValue {
+    IntVar: 0
+  }
+}
+Entries {
+  Key {
+    StringVar: "total_spent"
+  }
+  SimpleValue {
+    IntVar: 0
+  }
+}
+Entries {
+  Key {
+    StringVar: "highest_round_v2"
+  }
+  SimpleValue {
+    IntVar: 1
   }
 }
 Entries {
@@ -116,5 +100,21 @@ Entries {
   }
   SimpleValue {
     IntVar: 76
+  }
+}
+Entries {
+  Key {
+    StringVar: "total_games"
+  }
+  SimpleValue {
+    IntVar: 30
+  }
+}
+Entries {
+  Key {
+    StringVar: "total_barriers"
+  }
+  SimpleValue {
+    IntVar: 0
   }
 }

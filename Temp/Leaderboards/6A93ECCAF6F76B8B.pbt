@@ -1,8 +1,8 @@
 ﻿GlobalEntries {
   Id: "93d6eaf2514940a08c5481a4c03c1ee3"
   Name: "CommanderFoo"
-  ScoreFormatted: "262.0"
-  DateTime: "2020-12-29T19:27:44.545Z"
+  ScoreFormatted: "324.0"
+  DateTime: "2021-01-05T16:20:59.538Z"
 }
 GlobalEntries {
   Id: "BOT_Bot1"
@@ -15,6 +15,12 @@ GlobalEntries {
   Name: "Bot2"
   ScoreFormatted: "3.0"
   DateTime: "2020-12-29T17:52:52.740Z"
+}
+GlobalEntries {
+  Id: "BOT_Bot3"
+  Name: "Bot3"
+  ScoreFormatted: "0.0"
+  DateTime: "2021-01-05T13:19:21.347Z"
 }
 Config {
   SortType {

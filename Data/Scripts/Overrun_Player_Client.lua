@@ -7,6 +7,8 @@ local own_info_color = script:GetCustomProperty("own_info_color")
 local quick_revive_ui = script:GetCustomProperty("quick_revive_ui"):WaitForObject()
 local juggernog_ui = script:GetCustomProperty("juggernog_ui"):WaitForObject()
 
+local revive_count_ui = script:GetCustomProperty("revive_count"):WaitForObject()
+
 local hit_ui = script:GetCustomProperty("hit_ui"):WaitForObject()
 local hit_sound = script:GetCustomProperty("hit_sound"):WaitForObject()
 
@@ -17,12 +19,24 @@ local player_2_color = script:GetCustomProperty("player_2_color")
 local player_3_color = script:GetCustomProperty("player_3_color")
 local player_4_color = script:GetCustomProperty("player_4_color")
 
+local supporter_perk = script:GetCustomProperty("supporter_perk")
+
 local local_player = Game.GetLocalPlayer()
 local players = {}
 local total_players = 0
 
 local gibs_fx = script:GetCustomProperty("gibs_fx")
 local pod_fx = script:GetCustomProperty("pod_fx")
+
+function perk_changed(player)
+	if(players[player.id]) then
+		players[player.id].supporter_ui.text = "Supporter"
+
+		if(player:GetPerkCount(supporter_perk) > 1) then
+			players[player.id].supporter_ui.text = players[player.id].supporter_ui.text .. " x" .. tostring(player:GetPerkCount(supporter_perk))
+		end
+	end
+end
 
 function player_joined(p)
 	total_players = total_players + 1
@@ -65,6 +79,7 @@ function player_joined(p)
 	local box_ui = ui:GetCustomProperty("box"):WaitForObject()
 	local avatar_border_ui = ui:GetCustomProperty("avatar_border"):WaitForObject()
 	local frame_ui = ui:GetCustomProperty("frame"):WaitForObject()
+	local supporter_ui = ui:GetCustomProperty("supporter"):WaitForObject()
 
 	players[p.id].ui = ui
 	players[p.id].money_ui = money_ui
@@ -75,6 +90,7 @@ function player_joined(p)
 	players[p.id].box_ui = box_ui
 	players[p.id].avatar_border_ui = avatar_border_ui
 	players[p.id].frame_ui = frame_ui
+	players[p.id].supporter_ui = supporter_ui
 
 	if(local_player.id == p.id) then
 		money_ui.text = YOOTIL.Utils.number_format(local_player:GetResource("money"))
@@ -82,13 +98,23 @@ function player_joined(p)
 		name_ui.text = YOOTIL.Utils.truncate(local_player.name, 13, "...")
 		avatar_ui:SetImage(local_player)
 	else
-		name_ui.text = p.name
+		name_ui.text = YOOTIL.Utils.truncate(p.name, 13, "...")
 		money_ui.text = YOOTIL.Utils.number_format(p:GetResource("money"))
 		avatar_ui:SetImage(p)
 
 		Task.Spawn(function()
 			Events.Broadcast("on_audio_player_joined")
 		end)
+	end
+
+	if(p.name == "CommanderFoo") then
+		supporter_ui.text = "Developer"
+	elseif(p:HasPerk(supporter_perk)) then
+		supporter_ui.text = "Supporter"
+
+		if(p:GetPerkCount(supporter_perk) > 1) then
+			supporter_ui.text = supporter_ui.text .. " x" .. tostring(p:GetPerkCount(supporter_perk))
+		end
 	end
 
 	local color_index = p:GetResource("color_index")
@@ -102,6 +128,8 @@ function player_joined(p)
 	elseif(color_index == 4) then
 		frame_ui:SetColor(player_4_color)
 	end
+
+	p.perkChangedEvent:Connect(perk_changed)
 end
 
 function reset_info_ui(info)
@@ -181,6 +209,8 @@ end
 function player_left(p)
 	if(players[p.id]) then
 		if(players[p.id].ui) then
+			players[p.id].supporter_ui.text = ""
+
 			update_player_info(players[p.id], true)
 		end
 
@@ -283,6 +313,8 @@ function Tick(dt)
 	else
 		juggernog_ui.visibility = Visibility.FORCE_OFF
 	end
+
+	revive_count_ui.text = tostring(local_player:GetResource("lifes"))
 end
 
 Events.Connect("on_player_money_changed", money_changed)

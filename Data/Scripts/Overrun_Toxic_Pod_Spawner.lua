@@ -33,7 +33,7 @@ function spawn_pod(round)
 	
 	local rnd = math.random(100)
 
-	if(rnd >= 8) then
+	if(rnd >= 7) then
 		return
 	end
 

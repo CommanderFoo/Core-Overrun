@@ -34,6 +34,12 @@ local zombie_spitter_assets = {
 
 }
 
+local zombie_slow_spitter_assets = {
+
+	[1] = script:GetCustomProperty("OverrunNPCZombieSpitterSlow"),
+
+}
+
 local zombie_tank_assets = {
 
 	[1] = script:GetCustomProperty("OverrunNPCZombieGuyTank")
@@ -42,7 +48,7 @@ local zombie_tank_assets = {
 
 local spawn_points = {}
 
-local max = 15
+local max = 12
 local max_reset = max
 local spawn_task = nil
 local round = 1
@@ -63,7 +69,7 @@ end
 add_spawn_points(center_spawns)
 
 function set_zombie_stats_per_round()
-	if(round >= 2) then
+	if(round >= 3) then
 		local health_add = 10
 
 		if(round >= 25) then
@@ -74,7 +80,7 @@ function set_zombie_stats_per_round()
 			health_add = 20
 		elseif(round >= 5) then
 			health_add = 15
-		elseif(round >= 2) then
+		elseif(round >= 3) then
 			health_add = 10
 		end
 
@@ -99,12 +105,6 @@ function get_random_zombie_asset()
 	
 	 assets = concat_table({}, zombie_slow_assets)
 
-	if(round >= 3) then
-		assets = concat_table(assets, zombie_fast_assets)
-		assets = concat_table(assets, zombie_slow_assets)
-		assets = concat_table(assets, zombie_faster_assets)
-	end
-
 	if(round >= 6) then
 		assets = {} -- Clear out so we don't get slow ones
 
@@ -115,7 +115,7 @@ function get_random_zombie_asset()
 		assets = concat_table(assets, zombie_fast_assets)
 	end
 
-	if(round >= 8) then
+	if(round >= 11) then
 		assets = concat_table(assets, zombie_tank_assets)
 		assets = concat_table(assets, zombie_spitter_assets)
 		assets = concat_table(assets, zombie_fast_assets)
@@ -126,7 +126,11 @@ function get_random_zombie_asset()
 	-- Spitter only rounds
 
 	if(round % 5 == 0) then
-		assets = concat_table({}, zombie_spitter_assets)
+		if(round == 5) then
+			assets = concat_table({}, zombie_slow_spitter_assets)
+		else
+			assets = concat_table({}, zombie_spitter_assets)
+		end
 	end
 
 	local index = math.random(#assets)
@@ -141,7 +145,7 @@ function spawn_zombies()
 		end, 6)
 
 		pod_spawner.repeatCount = -1
-		pod_spawner.repeatInterval = 12
+		pod_spawner.repeatInterval = 15
 	end
 
 	if(DEBUG_DISABLE_SPAWNS) then

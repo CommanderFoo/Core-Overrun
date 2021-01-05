@@ -32,5 +32,16 @@
     Id: "E2E6F389A0C41849"
     EntryLimit: 25
   }
+  Config {
+    SortType {
+      Value: "mc:ecoresdkleaderboardsorting:higherisbetter"
+    }
+    FormatType {
+      Value: "mc:ecoresdkleaderboardformat:numeric"
+    }
+    Name: "total_rounds"
+    Id: "3857A1C374B3FA10"
+    EntryLimit: 25
+  }
 }
 MaxPlayers: 4

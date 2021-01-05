@@ -1,4 +1,19 @@
-﻿0.9.4 [04/01/2021]
+﻿0.9.7 [05/01/2021]
+ - Removed debug pistol from floor and debug damage
+
+0.9.6 [05/01/2021]
+   - Round 5 spitters will all be slow and no brutes
+   - Rounds 1 - 5 made a little more easier to help newcomers out (no health scaling until round 3)
+   - Spitters at round 5 capped at 8
+   - Added amount of lives to the UI
+
+0.9.5 [05/01/2021]
+ - UI player info now includes "Supporter" tag (optional way to support me)
+ - Total rounds played leaderboard added
+ - Pod spawn dropped to 6% chance every 15 seconds.  It was still coming in too often.
+ - Head collider improved a little for headshots
+
+0.9.4 [04/01/2021]
  - Power up UI moved down to prevent overlap with text UI
  - Regular and brute spitters attack range reduced a little
  - Changed upgrade message to "Only Crate weapons can be upgraded" to prevent confusion

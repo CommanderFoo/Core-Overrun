@@ -531,6 +531,12 @@ Objects {
         Id: 15071444661122516876
       }
     }
+    Overrides {
+      Name: "cs:OverrunNPCZombieSpitterSlow"
+      AssetReference {
+        Id: 5281453410741415747
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1337,6 +1343,21 @@ Objects {
       Name: "cs:YOOTIL"
       AssetReference {
         Id: 16622261663679835299
+      }
+    }
+    Overrides {
+      Name: "cs:supporter_perk"
+      NetReference {
+        Key: "d6b1e314e7df46d78661072a92c86c97"
+        Type {
+          Value: "mc:enetreferencetype:creatorperk"
+        }
+      }
+    }
+    Overrides {
+      Name: "cs:revive_count"
+      ObjectReference {
+        SelfId: 9603853050346741776
       }
     }
   }

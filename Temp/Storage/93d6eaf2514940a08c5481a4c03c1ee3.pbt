@@ -1,5 +1,29 @@
 ﻿Entries {
   Key {
+    StringVar: "total_spitters"
+  }
+  SimpleValue {
+    IntVar: 42
+  }
+}
+Entries {
+  Key {
+    StringVar: "total_rounds"
+  }
+  SimpleValue {
+    IntVar: 14
+  }
+}
+Entries {
+  Key {
+    StringVar: "total_deaths"
+  }
+  SimpleValue {
+    IntVar: 4
+  }
+}
+Entries {
+  Key {
     StringVar: "welcome"
   }
   SimpleValue {
@@ -8,18 +32,18 @@
 }
 Entries {
   Key {
-    StringVar: "total_deaths"
+    StringVar: "total_games"
   }
   SimpleValue {
-    IntVar: 3
+    IntVar: 33
   }
 }
 Entries {
   Key {
-    StringVar: "highest_round_v2"
+    StringVar: "total_barriers"
   }
   SimpleValue {
-    IntVar: 1
+    IntVar: 13
   }
 }
 Entries {
@@ -27,55 +51,15 @@ Entries {
     StringVar: "total_kills_v2"
   }
   SimpleValue {
-    IntVar: 17
+    IntVar: 324
   }
 }
 Entries {
   Key {
-    StringVar: "total_games"
+    StringVar: "highest_round_v2"
   }
   SimpleValue {
-    IntVar: 12
-  }
-}
-Entries {
-  Key {
-    StringVar: "total_perks"
-  }
-  SimpleValue {
-    IntVar: 0
-  }
-}
-Entries {
-  Key {
-    StringVar: "total_rounds"
-  }
-  SimpleValue {
-    IntVar: 0
-  }
-}
-Entries {
-  Key {
-    StringVar: "total_spitters"
-  }
-  SimpleValue {
-    IntVar: 0
-  }
-}
-Entries {
-  Key {
-    StringVar: "total_crates"
-  }
-  SimpleValue {
-    IntVar: 1
-  }
-}
-Entries {
-  Key {
-    StringVar: "total_headshots"
-  }
-  SimpleValue {
-    IntVar: 1
+    IntVar: 11
   }
 }
 Entries {
@@ -83,7 +67,47 @@ Entries {
     StringVar: "total_spent"
   }
   SimpleValue {
-    IntVar: 22950
+    IntVar: 61700
+  }
+}
+Entries {
+  Key {
+    StringVar: "total_money_all_time"
+  }
+  SimpleValue {
+    IntVar: 58025
+  }
+}
+Entries {
+  Key {
+    StringVar: "total_headshots"
+  }
+  SimpleValue {
+    IntVar: 57
+  }
+}
+Entries {
+  Key {
+    StringVar: "total_crates"
+  }
+  SimpleValue {
+    IntVar: 4
+  }
+}
+Entries {
+  Key {
+    StringVar: "total_revives"
+  }
+  SimpleValue {
+    IntVar: 7
+  }
+}
+Entries {
+  Key {
+    StringVar: "total_perks"
+  }
+  SimpleValue {
+    IntVar: 4
   }
 }
 Entries {
@@ -92,29 +116,5 @@ Entries {
   }
   SimpleValue {
     IntVar: 2
-  }
-}
-Entries {
-  Key {
-    StringVar: "total_barriers"
-  }
-  SimpleValue {
-    IntVar: 4
-  }
-}
-Entries {
-  Key {
-    StringVar: "total_money_all_time"
-  }
-  SimpleValue {
-    IntVar: 4220
-  }
-}
-Entries {
-  Key {
-    StringVar: "total_revives"
-  }
-  SimpleValue {
-    IntVar: 4
   }
 }

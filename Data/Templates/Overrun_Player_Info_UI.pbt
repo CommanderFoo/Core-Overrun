@@ -104,6 +104,12 @@
               SubObjectId: 11283732595111028840
             }
           }
+          Overrides {
+            Name: "cs:supporter"
+            ObjectReference {
+              SubObjectId: 5019669335929240733
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -112,7 +118,7 @@
           Value: "mc:evisibilitysetting:forceon"
         }
         Control {
-          Width: 73
+          Width: 25
           Height: 80
           RenderTransformPivot {
             Anchor {
@@ -215,6 +221,7 @@
         ChildIds: 4806772359499002204
         ChildIds: 6217327967268783684
         ChildIds: 9606681259019038777
+        ChildIds: 5019669335929240733
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -288,7 +295,7 @@
             }
           }
           Text {
-            Label: "750"
+            Label: "7500000"
             Color {
               R: 1
               G: 1
@@ -533,6 +540,63 @@
             TargetAnchor {
               Anchor {
                 Value: "mc:euianchor:middlecenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 5019669335929240733
+        Name: "Supporter"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 17654841973569191533
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:forceon"
+        }
+        Control {
+          Width: 94
+          Height: 24
+          UIX: 9.64706421
+          UIY: 2.63631296
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          Text {
+            Color {
+              R: 0.254285276
+              G: 0.130000055
+              B: 1
+              A: 1
+            }
+            Size: 11
+            Justification {
+              Value: "mc:etextjustify:left"
+            }
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:topleft"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:topleft"
               }
             }
           }

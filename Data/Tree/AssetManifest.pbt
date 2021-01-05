@@ -80,6 +80,15 @@ Assets {
   }
 }
 Assets {
+  Id: 9830920072151089418
+  Name: "Icon Arrow Up"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_ArrowUp"
+  }
+}
+Assets {
   Id: 9201278188679827779
   Name: "Flower Bellflower 01"
   PlatformAssetType: 1

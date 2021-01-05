@@ -3,6 +3,7 @@
 local rounds = script:GetCustomProperty("rounds")
 local kills = script:GetCustomProperty("kills")
 local headshots = script:GetCustomProperty("headshots")
+local total_rounds = script:GetCustomProperty("total_rounds")
 
 local kills_entries = {
 
@@ -31,6 +32,16 @@ local headshots_entries = {
 	[3] = script:GetCustomProperty("headshots_entry_3"):WaitForObject(),
 	[4] = script:GetCustomProperty("headshots_entry_4"):WaitForObject(),
 	[5] = script:GetCustomProperty("headshots_entry_5"):WaitForObject()
+
+}
+
+local total_rounds_entries = {
+
+	[1] = script:GetCustomProperty("total_rounds_entry_1"):WaitForObject(),
+	[2] = script:GetCustomProperty("total_rounds_entry_2"):WaitForObject(),
+	[3] = script:GetCustomProperty("total_rounds_entry_3"):WaitForObject(),
+	[4] = script:GetCustomProperty("total_rounds_entry_4"):WaitForObject(),
+	[5] = script:GetCustomProperty("total_rounds_entry_5"):WaitForObject()
 
 }
 
@@ -87,6 +98,24 @@ local updater = Task.Spawn(function()
 				end
 				
 				headshots_index = headshots_index + 1
+			end
+		end
+
+		local total_rounds_leaderboard = Leaderboards.GetLeaderboard(total_rounds, LeaderboardType.GLOBAL)
+		local total_rounds_index = 1
+
+		if(total_rounds_leaderboard ~= nil) then
+			for k, v in pairs(total_rounds_leaderboard) do
+				local entry = total_rounds_entries[total_rounds_index]
+				
+				entry:FindDescendantByName("Name").text = YOOTIL.Utils.truncate(v.name, 12)
+				entry:FindDescendantByName("Stat").text = YOOTIL.Utils.number_format(string.format("%.0u", v.score))
+
+				if(total_rounds_index == 5) then
+					break
+				end
+				
+				total_rounds_index = total_rounds_index + 1
 			end
 		end
 	end

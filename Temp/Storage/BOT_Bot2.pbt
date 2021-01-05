@@ -1,6 +1,6 @@
 ﻿Entries {
   Key {
-    StringVar: "total_spent"
+    StringVar: "total_money_all_time"
   }
   SimpleValue {
     IntVar: 0
@@ -16,30 +16,6 @@ Entries {
 }
 Entries {
   Key {
-    StringVar: "total_rounds"
-  }
-  SimpleValue {
-    IntVar: 0
-  }
-}
-Entries {
-  Key {
-    StringVar: "total_games"
-  }
-  SimpleValue {
-    IntVar: 15
-  }
-}
-Entries {
-  Key {
-    StringVar: "total_barriers"
-  }
-  SimpleValue {
-    IntVar: 0
-  }
-}
-Entries {
-  Key {
     StringVar: "welcome"
   }
   SimpleValue {
@@ -48,15 +24,15 @@ Entries {
 }
 Entries {
   Key {
-    StringVar: "total_revives"
+    StringVar: "total_deaths"
   }
   SimpleValue {
-    IntVar: 39
+    IntVar: 7
   }
 }
 Entries {
   Key {
-    StringVar: "total_crates"
+    StringVar: "total_upgrades"
   }
   SimpleValue {
     IntVar: 0
@@ -72,18 +48,10 @@ Entries {
 }
 Entries {
   Key {
-    StringVar: "total_spitters"
+    StringVar: "total_crates"
   }
   SimpleValue {
     IntVar: 0
-  }
-}
-Entries {
-  Key {
-    StringVar: "total_money"
-  }
-  SimpleValue {
-    IntVar: 750
   }
 }
 Entries {
@@ -96,6 +64,30 @@ Entries {
 }
 Entries {
   Key {
+    StringVar: "total_rounds"
+  }
+  SimpleValue {
+    IntVar: 0
+  }
+}
+Entries {
+  Key {
+    StringVar: "total_spitters"
+  }
+  SimpleValue {
+    IntVar: 0
+  }
+}
+Entries {
+  Key {
+    StringVar: "total_spent"
+  }
+  SimpleValue {
+    IntVar: 0
+  }
+}
+Entries {
+  Key {
     StringVar: "highest_round_v2"
   }
   SimpleValue {
@@ -104,17 +96,25 @@ Entries {
 }
 Entries {
   Key {
-    StringVar: "total_upgrades"
+    StringVar: "total_revives"
   }
   SimpleValue {
-    IntVar: 0
+    IntVar: 39
   }
 }
 Entries {
   Key {
-    StringVar: "total_deaths"
+    StringVar: "total_games"
   }
   SimpleValue {
-    IntVar: 7
+    IntVar: 16
+  }
+}
+Entries {
+  Key {
+    StringVar: "total_barriers"
+  }
+  SimpleValue {
+    IntVar: 0
   }
 }

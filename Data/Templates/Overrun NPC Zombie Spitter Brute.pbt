@@ -458,14 +458,14 @@
         Name: "Collider"
         Transform {
           Location {
-            Z: 92.454
+            Z: 92
           }
           Rotation {
           }
           Scale {
             X: 0.9
             Y: 0.9
-            Z: 0.94
+            Z: 0.9
           }
         }
         ParentId: 8073282820397737318
@@ -517,9 +517,9 @@
           Rotation {
           }
           Scale {
-            X: 0.369542897
+            X: 0.4
             Y: 0.369542897
-            Z: 0.215217307
+            Z: 0.25
           }
         }
         ParentId: 8073282820397737318

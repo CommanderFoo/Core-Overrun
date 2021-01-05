@@ -368,12 +368,16 @@ function round_completed()
 		Events.BroadcastToAllPlayers("on_notification", "spitters")
 	end
 	
-	local max_spawns = 15
+	local max_spawns = 12
 
 	if(round % 5 == 0 and round > 5) then
 		max_spawns = 15
 	elseif(round > 2) then
 		max_spawns = max_spawns + (round + 2)
+	end
+
+	if(round == 5) then
+		max_spawns = 8
 	end
 
 	Spawner.context.set_max_spawns(math.min(50, max_spawns))
