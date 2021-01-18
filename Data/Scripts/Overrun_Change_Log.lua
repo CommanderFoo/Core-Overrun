@@ -1,4 +1,10 @@
-﻿0.9.7 [05/01/2021]
+﻿0.9.8 [Jan 18th 2021]
+ - Changed M1 Garand tier 3 ammon from 20 to 60
+ - Reduced range of all spitters
+ - Reduced health of pod by 500 (including scaling), so should be a little more easier at higher waves
+ - Increased max ammo drop chance a little
+ 
+0.9.7 [05/01/2021]
  - Removed debug pistol from floor and debug damage
 
 0.9.6 [05/01/2021]

@@ -1067,5 +1067,5 @@
       AssetId: "Rubble_Pile_Brick_-_Small_Template"
     }
   }
-  SerializationVersion: 70
+  SerializationVersion: 72
 }

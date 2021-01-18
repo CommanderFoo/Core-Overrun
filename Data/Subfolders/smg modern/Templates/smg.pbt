@@ -1915,6 +1915,6 @@
   Marketplace {
     Description: "an smg"
   }
-  SerializationVersion: 70
+  SerializationVersion: 72
   DirectlyPublished: true
 }

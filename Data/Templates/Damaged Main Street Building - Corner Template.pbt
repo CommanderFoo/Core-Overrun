@@ -34289,5 +34289,5 @@
       AssetId: "Damaged_Main_Street_Building_-_Corner_Template"
     }
   }
-  SerializationVersion: 70
+  SerializationVersion: 72
 }

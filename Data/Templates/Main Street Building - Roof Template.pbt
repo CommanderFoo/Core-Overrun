@@ -852,5 +852,5 @@
       AssetId: "Main_Street_Building_-_Roof_Template"
     }
   }
-  SerializationVersion: 70
+  SerializationVersion: 72
 }

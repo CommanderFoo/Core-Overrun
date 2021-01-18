@@ -2,7 +2,7 @@
   Id: 18405729803713019385
   Name: "Custom Base Material from Fantasy Human Gal 2_armedciv retro"
   PlatformAssetType: 13
-  SerializationVersion: 70
+  SerializationVersion: 72
   CustomMaterialAsset {
     BaseMaterialId: 15537840613542427220
     ParameterOverrides {

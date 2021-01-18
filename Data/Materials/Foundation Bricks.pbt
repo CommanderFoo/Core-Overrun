@@ -2,7 +2,7 @@
   Id: 17315070957124721441
   Name: "Foundation Bricks"
   PlatformAssetType: 13
-  SerializationVersion: 70
+  SerializationVersion: 72
   CustomMaterialAsset {
     BaseMaterialId: 1778715206891753348
     ParameterOverrides {

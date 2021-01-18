@@ -924,5 +924,5 @@
       AssetId: "Advanced_2-Handed_Sword"
     }
   }
-  SerializationVersion: 70
+  SerializationVersion: 72
 }

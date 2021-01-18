@@ -1132,5 +1132,5 @@
       AssetId: "Main_Street_Building_-_Upper_Level_Template"
     }
   }
-  SerializationVersion: 70
+  SerializationVersion: 72
 }

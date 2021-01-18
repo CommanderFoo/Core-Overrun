@@ -704,5 +704,5 @@
       AssetId: "Basic_Submachine_Gun"
     }
   }
-  SerializationVersion: 70
+  SerializationVersion: 72
 }

@@ -962,6 +962,6 @@
   Marketplace {
     Description: "Burning, Rusted Barrel for any camping, survival or apocalyptic scenes. \r\n\r\nFire and burning wood inside. \r\n\r\nEnjoy\r\n\r\nNDG"
   }
-  SerializationVersion: 70
+  SerializationVersion: 72
   DirectlyPublished: true
 }

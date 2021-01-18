@@ -2,7 +2,7 @@
   Id: 5838555605866310072
   Name: "Wall Weapon"
   PlatformAssetType: 13
-  SerializationVersion: 70
+  SerializationVersion: 72
   CustomMaterialAsset {
     BaseMaterialId: 5351428073291024820
     ParameterOverrides {

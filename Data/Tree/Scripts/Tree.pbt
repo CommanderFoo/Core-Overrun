@@ -668,7 +668,7 @@ Objects {
     }
     Overrides {
       Name: "cs:max_ammo_chance"
-      Int: 15
+      Int: 20
     }
   }
   Collidable_v2 {

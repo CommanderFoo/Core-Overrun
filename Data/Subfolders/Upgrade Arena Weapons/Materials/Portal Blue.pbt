@@ -2,7 +2,7 @@
   Id: 4010008667436696788
   Name: "Portal Blue"
   PlatformAssetType: 13
-  SerializationVersion: 70
+  SerializationVersion: 72
   CustomMaterialAsset {
     BaseMaterialId: 3702191406046426907
     ParameterOverrides {

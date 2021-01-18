@@ -2,7 +2,7 @@
   Id: 9327012266229388855
   Name: "Custom Base Material from Human Guy 3_dark skin"
   PlatformAssetType: 13
-  SerializationVersion: 70
+  SerializationVersion: 72
   CustomMaterialAsset {
     BaseMaterialId: 9746558897603253214
     ParameterOverrides {

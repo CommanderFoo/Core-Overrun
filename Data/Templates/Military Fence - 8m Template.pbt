@@ -447,5 +447,5 @@
       AssetId: "Military_Fence_-_8m_Template"
     }
   }
-  SerializationVersion: 70
+  SerializationVersion: 72
 }

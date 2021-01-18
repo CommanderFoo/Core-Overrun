@@ -2921,5 +2921,5 @@
       AssetId: "Military_Barrier_04_Template"
     }
   }
-  SerializationVersion: 70
+  SerializationVersion: 72
 }

@@ -356,5 +356,5 @@
       AssetId: "Road_1-Lane_Straight"
     }
   }
-  SerializationVersion: 70
+  SerializationVersion: 72
 }

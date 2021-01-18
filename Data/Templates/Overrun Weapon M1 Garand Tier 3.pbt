@@ -236,7 +236,7 @@
             ReticleType {
               Value: "mc:ereticletype:crosshair"
             }
-            MaxAmmo: 20
+            MaxAmmo: 60
             AmmoType: "rounds"
             IsFiniteAmmo: true
             MultiShot: 1
@@ -2267,5 +2267,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 70
+  SerializationVersion: 72
 }

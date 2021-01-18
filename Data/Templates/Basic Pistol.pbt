@@ -671,5 +671,5 @@
       AssetId: "Basic_Pistol"
     }
   }
-  SerializationVersion: 70
+  SerializationVersion: 72
 }

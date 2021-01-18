@@ -2,7 +2,7 @@
   Id: 9485497942318161105
   Name: "Opaque Emissive - Orange"
   PlatformAssetType: 13
-  SerializationVersion: 70
+  SerializationVersion: 72
   CustomMaterialAsset {
     BaseMaterialId: 12827530473249900764
     ParameterOverrides {

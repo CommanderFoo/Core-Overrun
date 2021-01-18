@@ -85,7 +85,7 @@
           }
           Overrides {
             Name: "cs:AttackRange"
-            Float: 400
+            Float: 350
           }
           Overrides {
             Name: "cs:AttackCast"
@@ -6057,5 +6057,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 70
+  SerializationVersion: 72
 }

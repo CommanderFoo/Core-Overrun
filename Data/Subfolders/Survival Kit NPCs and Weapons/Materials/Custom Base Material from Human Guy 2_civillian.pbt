@@ -2,7 +2,7 @@
   Id: 11823985658974634318
   Name: "Custom Base Material from Human Guy 2_civillian"
   PlatformAssetType: 13
-  SerializationVersion: 70
+  SerializationVersion: 72
   CustomMaterialAsset {
     BaseMaterialId: 12929538443392159583
     ParameterOverrides {
