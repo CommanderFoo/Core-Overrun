@@ -97,7 +97,7 @@ local_player.bindingPressedEvent:Connect(function(player, binding)
 				total_spitters.text = YOOTIL.Utils.number_format(local_player:GetResource("total_spitters"))
 
 				total_kills.text = YOOTIL.Utils.number_format(local_player:GetResource("total_kills_v2"))
-				highest_round.text = YOOTIL.Utils.number_format(local_player:GetResource("highest_round_v2"))
+				highest_round.text = YOOTIL.Utils.number_format(local_player:GetResource("highest_round_v3"))
 
 				stats.visibility = Visibility.FORCE_ON
 			end

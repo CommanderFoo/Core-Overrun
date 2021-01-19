@@ -34,6 +34,10 @@ function on_player_joined(player)
 			if(player:GetPerkCount(support_me) > 1) then
 				supporter.text = supporter.text .. " x" .. tostring(player:GetPerkCount(support_me))
 			end
+		elseif(player.name == "CommanderFoo") then
+			supporter.text = "Developer"
+		elseif(player.name == "kurucon") then
+			supporter.text = "Zombie Slayer"
 		end
 
 		nametags[player.id] = nametag

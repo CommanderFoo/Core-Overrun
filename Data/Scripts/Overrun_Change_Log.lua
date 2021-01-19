@@ -1,5 +1,9 @@
-﻿0.9.8 [Jan 18th 2021]
- - Changed M1 Garand tier 3 ammon from 20 to 60
+﻿0.9.9 [Jan 19th 2021]
+ - Profiler enabled for server debugging
+ - Highest round leaderboard reset (the reason for reset is things have been tuned and tweaked since last reset)
+
+0.9.8 [Jan 18th 2021]
+ - Changed M1 Garand tier 3 ammo from 20 to 60
  - Reduced range of all spitters
  - Reduced health of pod by 500 (including scaling), so should be a little more easier at higher waves
  - Increased max ammo drop chance a little

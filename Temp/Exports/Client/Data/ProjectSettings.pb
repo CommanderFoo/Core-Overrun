@@ -2,7 +2,7 @@
 ò
 {".
 ,mc:ecoresdkleaderboardsorting:higherisbetter*&
-$mc:ecoresdkleaderboardformat:numeric2highest_round:6C23EDED8394036D@
+$mc:ecoresdkleaderboardformat:numeric2highest_round:64629D6F3F697D43@
 x".
 ,mc:ecoresdkleaderboardsorting:higherisbetter*&
 $mc:ecoresdkleaderboardformat:numeric2

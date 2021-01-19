@@ -964,6 +964,7 @@ Objects {
       ChatMode {
         Value: "mc:echatmode:teamandall"
       }
+      EnablePlayModeProfiler: true
       ChatSettings {
         ChatMode {
           Value: "mc:echatmode:allonly"

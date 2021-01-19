@@ -13,7 +13,7 @@ ScreenshotPaths: "C:\\Users\\Peter\\Documents\\My Games\\CORE\\Saved\\Maps\\Over
 ScreenshotPaths: "C:\\Users\\Peter\\Documents\\My Games\\CORE\\Saved\\Maps\\Overrun\\Screens\\Screenshot 2020-12-04 114204.png"
 ScreenshotPaths: "C:\\Users\\Peter\\Documents\\My Games\\CORE\\Saved\\Maps\\Overrun\\Screens\\Screenshot 2020-12-04 114418.png"
 ScreenshotPaths: "C:\\Users\\Peter\\Documents\\My Games\\CORE\\Saved\\Maps\\Overrun\\Screens\\Screenshot 2020-12-04 114703.png"
-ReleaseNotes: "0.9.8 [Jan 18th 2021]\r\n - Changed M1 Garand tier 3 ammon from 20 to 60\r\n - Reduced range of all spitters\r\n - Reduced health of pod by 500 (including scaling), so should be a little more easier at higher waves\r\n - Increased max ammo drop chance a little"
+ReleaseNotes: "0.9.9 [Jan 19th 2021]\r\n - Profiler enabled for server debugging\r\n - Highest round leaderboard reset (the reason for reset is things have been tuned and tweaked since last reset)\r\n\r\n0.9.8 [Jan 18th 2021]\r\n - Changed M1 Garand tier 3 ammo from 20 to 60\r\n - Reduced range of all spitters\r\n - Reduced health of pod by 500 (including scaling), so should be a little more easier at higher waves\r\n - Increased max ammo drop chance a little"
 OwnerId: "93d6eaf2514940a08c5481a4c03c1ee3"
 SerializationVersion: 1
 PublishedState: Public

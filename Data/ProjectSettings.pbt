@@ -7,7 +7,7 @@
       Value: "mc:ecoresdkleaderboardformat:numeric"
     }
     Name: "highest_round"
-    Id: "6C23EDED8394036D"
+    Id: "64629D6F3F697D43"
     EntryLimit: 25
   }
   Config {

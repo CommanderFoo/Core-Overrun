@@ -128,10 +128,10 @@ function setup_stats(p)
 			p:SetResource("total_spitters", player_data["total_spitters"])
 		end
 
-		if(player_data["highest_round_v2"] ~= nil) then
-			p:SetResource("highest_round_v2", player_data["highest_round_v2"])
+		if(player_data["highest_round_v3"] ~= nil) then
+			p:SetResource("highest_round_v3", player_data["highest_round_v3"])
 		else
-			p:SetResource("highest_round_v2", 1)
+			p:SetResource("highest_round_v3", 1)
 		end
 
 		if(player_data["welcome"] ~= nil) then
@@ -163,7 +163,7 @@ function player_left(p)
 		total_spitters = p:GetResource("total_spitters"),
 
 		total_kills_v2 = p:GetResource("total_kills_v2"),
-		highest_round_v2 = p:GetResource("highest_round_v2"),
+		highest_round_v3 = p:GetResource("highest_round_v3"),
 		
 		welcome = 1
 
@@ -333,10 +333,10 @@ end
 
 function update_highest_round()
 	for k, p in pairs(Game.GetPlayers()) do
-		local hr = p:GetResource("highest_round_v2")
+		local hr = p:GetResource("highest_round_v3")
 
 		if(round > hr) then
-			p:SetResource("highest_round_v2", round)
+			p:SetResource("highest_round_v3", round)
 		end
 	end
 end

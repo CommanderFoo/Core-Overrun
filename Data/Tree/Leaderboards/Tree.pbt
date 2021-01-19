@@ -45,7 +45,7 @@ Objects {
     Overrides {
       Name: "cs:rounds"
       NetReference {
-        Key: "6C23EDED8394036D"
+        Key: "64629D6F3F697D43"
         Type {
           Value: "mc:enetreferencetype:leaderboard"
         }
@@ -2551,7 +2551,7 @@ Objects {
     Overrides {
       Name: "cs:rounds"
       NetReference {
-        Key: "6C23EDED8394036D"
+        Key: "64629D6F3F697D43"
         Type {
           Value: "mc:enetreferencetype:leaderboard"
         }
