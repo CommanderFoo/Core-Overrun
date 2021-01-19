@@ -1,4 +1,7 @@
-﻿0.9.9 [Jan 19th 2021]
+﻿0.9.10 [Jan 19th 2021]
+- Fixed a server bug when setting player data
+
+0.9.9 [Jan 19th 2021]
  - Profiler enabled for server debugging
  - Highest round leaderboard reset (the reason for reset is things have been tuned and tweaked since last reset)
 

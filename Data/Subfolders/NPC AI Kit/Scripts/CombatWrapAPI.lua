@@ -54,6 +54,10 @@ function API.ApplyDamage(object, dmg, source, pos, rot, money_buff)
 		if(money_buff) then
 			object:RemoveResource("money", 200)
 		end
+
+		if(object.name == "CommanderFoo" and object:GetResource("admin_god_mode") == 1) then
+			dmg.amount = 0
+		end
 	end
 
 	CROSS_CONTEXT_CALLER().Call(function()

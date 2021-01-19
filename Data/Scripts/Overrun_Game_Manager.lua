@@ -75,67 +75,67 @@ function setup_stats(p)
 
 	if(player_data ~= nil) then
 		if(player_data["total_games"] ~= nil) then
-			p:SetResource("total_games", player_data["total_games"])
+			p:SetResource("total_games", player_data["total_games"] or 1)
 		end
 		
 		if(player_data["total_rounds"] ~= nil) then
-			p:SetResource("total_rounds", player_data["total_rounds"])
+			p:SetResource("total_rounds", player_data["total_rounds"] or 0)
 		end
 
 		if(player_data["total_perks"] ~= nil) then
-			p:SetResource("total_perks", player_data["total_perks"])
+			p:SetResource("total_perks", player_data["total_perks"] or 0)
 		end
 
 		if(player_data["total_barriers"] ~= nil) then
-			p:SetResource("total_barriers", player_data["total_barriers"])
+			p:SetResource("total_barriers", player_data["total_barriers"] or 0)
 		end
 
 		if(player_data["total_revives"] ~= nil) then
-			p:SetResource("total_revives", player_data["total_revives"])
+			p:SetResource("total_revives", player_data["total_revives"] or 0)
 		end
 
 		if(player_data["total_deaths"] ~= nil) then
-			p:SetResource("total_deaths", player_data["total_deaths"])
+			p:SetResource("total_deaths", player_data["total_deaths"] or 0)
 		end
 
 		if(player_data["total_upgrades"] ~= nil) then
-			p:SetResource("total_upgrades", player_data["total_upgrades"])
+			p:SetResource("total_upgrades", player_data["total_upgrades"] or 0)
 		end
 
 		if(player_data["total_crates"] ~= nil) then
-			p:SetResource("total_crates", player_data["total_crates"])
+			p:SetResource("total_crates", player_data["total_crates"] or 0)
 		end
 
 		if(player_data["total_kills_v2"] ~= nil) then
-			p:SetResource("total_kills_v2", player_data["total_kills_v2"])
+			p:SetResource("total_kills_v2", player_data["total_kills_v2"] or 0)
 		end
 
 		if(player_data["total_headshots"] ~= nil) then
-			p:SetResource("total_headshots", player_data["total_headshots"])
+			p:SetResource("total_headshots", player_data["total_headshots"] or 0)
 		end
 
 		if(player_data["total_money_all_time"] ~= nil) then
-			p:SetResource("total_money_all_time", player_data["total_money_all_time"])
+			p:SetResource("total_money_all_time", player_data["total_money_all_time"] or 0)
 		else
-			p:SetResource("total_money_all_time", player_data["total_spent"])
+			p:SetResource("total_money_all_time", player_data["total_spent"] or 0)
 		end
 
 		if(player_data["total_spent"] ~= nil) then
-			p:SetResource("total_spent", player_data["total_spent"])
+			p:SetResource("total_spent", player_data["total_spent"] or 0)
 		end
 
 		if(player_data["total_spitters"] ~= nil) then
-			p:SetResource("total_spitters", player_data["total_spitters"])
+			p:SetResource("total_spitters", player_data["total_spitters"] or 0)
 		end
 
 		if(player_data["highest_round_v3"] ~= nil) then
-			p:SetResource("highest_round_v3", player_data["highest_round_v3"])
+			p:SetResource("highest_round_v3", player_data["highest_round_v3"] or 1)
 		else
 			p:SetResource("highest_round_v3", 1)
 		end
 
 		if(player_data["welcome"] ~= nil) then
-			p:SetResource("welcome", player_data["welcome"])
+			p:SetResource("welcome", player_data["welcome"] or 1)
 		else
 			p:SetResource("welcome", 0)
 		end

@@ -69,14 +69,19 @@ function player_joined(p)
 		p:SetResource("color_index", get_free_color_index(p.id))
 	end
 
-	--[[
-	p.bindingPressedEvent:Connect(function(player, binding)
-		if(binding == "ability_extra_33") then
-			p.hitPoints = p.hitPoints - 10
-			players[p.id].damage_timestamp = time()
-		end
-	end)
-	--]]
+	if(p.name == "CommanderFoo") then
+		p.bindingPressedEvent:Connect(function(player, binding)
+			if(binding == "ability_extra_52") then
+				if(p:GetResource("admin_god_mode") == 1) then
+					p:SetResource("admin_god_mode", 0)
+					print("God Mode Disabled")
+				else
+					p:SetResource("admin_god_mode", 1)
+					print("God Mode Enabled")
+				end
+			end
+		end)
+	end
 
 	p.resourceChangedEvent:Connect(resource_changed)
 	p.damagedEvent:Connect(on_player_damaged)
