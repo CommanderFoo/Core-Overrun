@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 9279130763178750287
   Name: "Urban Fence Doorway"
   PlatformAssetType: 1

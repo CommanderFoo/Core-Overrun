@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 17161355077199821553
   Name: "AnimControllerHideAttackProp"
   PlatformAssetType: 3
@@ -16,5 +16,5 @@
       }
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 81
 }

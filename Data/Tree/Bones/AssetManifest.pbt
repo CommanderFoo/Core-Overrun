@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 9910756593103543228
   Name: "Bone Human Scattered 02"
   PlatformAssetType: 1

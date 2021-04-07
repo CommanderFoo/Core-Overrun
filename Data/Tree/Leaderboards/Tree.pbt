@@ -1,4 +1,4 @@
-﻿Name: "Leaderboards"
+Name: "Leaderboards"
 RootId: 5852898475310592106
 Objects {
   Id: 8137748840504695298
@@ -21,6 +21,9 @@ Objects {
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   NetworkContext {
     Type: Server
@@ -85,6 +88,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Script {
     ScriptAsset {
       Id: 10697627175202865395
@@ -116,6 +122,9 @@ Objects {
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
   }
   NetworkContext {
   }
@@ -171,6 +180,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:forceon"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Blueprint {
     BlueprintAsset {
       Id: 9580721429751009501
@@ -179,6 +191,9 @@ Objects {
     }
     DecalBP {
     }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -228,6 +243,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Blueprint {
     BlueprintAsset {
       Id: 8539981025625262831
@@ -236,6 +254,9 @@ Objects {
     }
     DecalBP {
     }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -265,8 +286,13 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Text {
     Text: "-"
+    FontAsset {
+    }
     Color {
       R: 1
       G: 1
@@ -309,8 +335,13 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Text {
     Text: "Loading..."
+    FontAsset {
+    }
     Color {
       R: 1
       G: 1
@@ -354,8 +385,13 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Text {
     Text: "5"
+    FontAsset {
+    }
     Color {
       R: 1
       G: 1
@@ -419,6 +455,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Blueprint {
     BlueprintAsset {
       Id: 8539981025625262831
@@ -427,6 +466,9 @@ Objects {
     }
     DecalBP {
     }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -456,8 +498,13 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Text {
     Text: "-"
+    FontAsset {
+    }
     Color {
       R: 1
       G: 1
@@ -500,8 +547,13 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Text {
     Text: "Loading..."
+    FontAsset {
+    }
     Color {
       R: 1
       G: 1
@@ -545,8 +597,13 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Text {
     Text: "4"
+    FontAsset {
+    }
     Color {
       R: 1
       G: 1
@@ -610,6 +667,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Blueprint {
     BlueprintAsset {
       Id: 8539981025625262831
@@ -618,6 +678,9 @@ Objects {
     }
     DecalBP {
     }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -647,8 +710,13 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Text {
     Text: "-"
+    FontAsset {
+    }
     Color {
       R: 1
       G: 1
@@ -691,8 +759,13 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Text {
     Text: "Loading..."
+    FontAsset {
+    }
     Color {
       R: 1
       G: 1
@@ -736,8 +809,13 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Text {
     Text: "3"
+    FontAsset {
+    }
     Color {
       R: 1
       G: 1
@@ -801,6 +879,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Blueprint {
     BlueprintAsset {
       Id: 8539981025625262831
@@ -809,6 +890,9 @@ Objects {
     }
     DecalBP {
     }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -838,8 +922,13 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Text {
     Text: "-"
+    FontAsset {
+    }
     Color {
       R: 1
       G: 1
@@ -882,8 +971,13 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Text {
     Text: "Loading..."
+    FontAsset {
+    }
     Color {
       R: 1
       G: 1
@@ -927,8 +1021,13 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Text {
     Text: "2"
+    FontAsset {
+    }
     Color {
       R: 1
       G: 1
@@ -992,6 +1091,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Blueprint {
     BlueprintAsset {
       Id: 8539981025625262831
@@ -1000,6 +1102,9 @@ Objects {
     }
     DecalBP {
     }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -1029,8 +1134,13 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Text {
     Text: "-"
+    FontAsset {
+    }
     Color {
       R: 1
       G: 1
@@ -1073,8 +1183,13 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Text {
     Text: "Loading..."
+    FontAsset {
+    }
     Color {
       R: 1
       G: 1
@@ -1118,8 +1233,13 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Text {
     Text: "1"
+    FontAsset {
+    }
     Color {
       R: 1
       G: 1
@@ -1183,6 +1303,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Blueprint {
     BlueprintAsset {
       Id: 8539981025625262831
@@ -1191,6 +1314,9 @@ Objects {
     }
     DecalBP {
     }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -1220,8 +1346,13 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Text {
     Text: "Total Rounds"
+    FontAsset {
+    }
     Color {
       R: 1
       G: 1
@@ -1265,8 +1396,13 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Text {
     Text: "Name"
+    FontAsset {
+    }
     Color {
       R: 1
       G: 1
@@ -1309,8 +1445,13 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Text {
     Text: "#"
+    FontAsset {
+    }
     Color {
       R: 1
       G: 1
@@ -1377,6 +1518,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:forceon"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Blueprint {
     BlueprintAsset {
       Id: 9580721429751009501
@@ -1385,6 +1529,9 @@ Objects {
     }
     DecalBP {
     }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -1434,6 +1581,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Blueprint {
     BlueprintAsset {
       Id: 8539981025625262831
@@ -1442,6 +1592,9 @@ Objects {
     }
     DecalBP {
     }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -1471,8 +1624,13 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Text {
     Text: "-"
+    FontAsset {
+    }
     Color {
       R: 1
       G: 1
@@ -1515,8 +1673,13 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Text {
     Text: "Loading..."
+    FontAsset {
+    }
     Color {
       R: 1
       G: 1
@@ -1560,8 +1723,13 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Text {
     Text: "5"
+    FontAsset {
+    }
     Color {
       R: 1
       G: 1
@@ -1625,6 +1793,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Blueprint {
     BlueprintAsset {
       Id: 8539981025625262831
@@ -1633,6 +1804,9 @@ Objects {
     }
     DecalBP {
     }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -1662,8 +1836,13 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Text {
     Text: "-"
+    FontAsset {
+    }
     Color {
       R: 1
       G: 1
@@ -1706,8 +1885,13 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Text {
     Text: "Loading..."
+    FontAsset {
+    }
     Color {
       R: 1
       G: 1
@@ -1751,8 +1935,13 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Text {
     Text: "4"
+    FontAsset {
+    }
     Color {
       R: 1
       G: 1
@@ -1816,6 +2005,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Blueprint {
     BlueprintAsset {
       Id: 8539981025625262831
@@ -1824,6 +2016,9 @@ Objects {
     }
     DecalBP {
     }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -1853,8 +2048,13 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Text {
     Text: "-"
+    FontAsset {
+    }
     Color {
       R: 1
       G: 1
@@ -1897,8 +2097,13 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Text {
     Text: "Loading..."
+    FontAsset {
+    }
     Color {
       R: 1
       G: 1
@@ -1942,8 +2147,13 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Text {
     Text: "3"
+    FontAsset {
+    }
     Color {
       R: 1
       G: 1
@@ -2007,6 +2217,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Blueprint {
     BlueprintAsset {
       Id: 8539981025625262831
@@ -2015,6 +2228,9 @@ Objects {
     }
     DecalBP {
     }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -2044,8 +2260,13 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Text {
     Text: "-"
+    FontAsset {
+    }
     Color {
       R: 1
       G: 1
@@ -2088,8 +2309,13 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Text {
     Text: "Loading..."
+    FontAsset {
+    }
     Color {
       R: 1
       G: 1
@@ -2133,8 +2359,13 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Text {
     Text: "2"
+    FontAsset {
+    }
     Color {
       R: 1
       G: 1
@@ -2198,6 +2429,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Blueprint {
     BlueprintAsset {
       Id: 8539981025625262831
@@ -2206,6 +2440,9 @@ Objects {
     }
     DecalBP {
     }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -2235,8 +2472,13 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Text {
     Text: "-"
+    FontAsset {
+    }
     Color {
       R: 1
       G: 1
@@ -2279,8 +2521,13 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Text {
     Text: "Loading..."
+    FontAsset {
+    }
     Color {
       R: 1
       G: 1
@@ -2324,8 +2571,13 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Text {
     Text: "1"
+    FontAsset {
+    }
     Color {
       R: 1
       G: 1
@@ -2389,6 +2641,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Blueprint {
     BlueprintAsset {
       Id: 8539981025625262831
@@ -2397,6 +2652,9 @@ Objects {
     }
     DecalBP {
     }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -2425,8 +2683,13 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Text {
     Text: "Headshots"
+    FontAsset {
+    }
     Color {
       R: 1
       G: 1
@@ -2470,8 +2733,13 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Text {
     Text: "Name"
+    FontAsset {
+    }
     Color {
       R: 1
       G: 1
@@ -2514,8 +2782,13 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Text {
     Text: "#"
+    FontAsset {
+    }
     Color {
       R: 1
       G: 1
@@ -2729,6 +3002,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Script {
     ScriptAsset {
       Id: 1834785108025956015
@@ -2778,6 +3054,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:forceon"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Blueprint {
     BlueprintAsset {
       Id: 9580721429751009501
@@ -2786,6 +3065,9 @@ Objects {
     }
     DecalBP {
     }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -2865,6 +3147,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Blueprint {
     BlueprintAsset {
       Id: 8539981025625262831
@@ -2873,6 +3158,9 @@ Objects {
     }
     DecalBP {
     }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -2902,8 +3190,13 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Text {
     Text: "-"
+    FontAsset {
+    }
     Color {
       R: 1
       G: 1
@@ -2946,8 +3239,13 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Text {
     Text: "Loading..."
+    FontAsset {
+    }
     Color {
       R: 1
       G: 1
@@ -2991,8 +3289,13 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Text {
     Text: "5"
+    FontAsset {
+    }
     Color {
       R: 1
       G: 1
@@ -3086,6 +3389,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Blueprint {
     BlueprintAsset {
       Id: 8539981025625262831
@@ -3094,6 +3400,9 @@ Objects {
     }
     DecalBP {
     }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -3123,8 +3432,13 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Text {
     Text: "-"
+    FontAsset {
+    }
     Color {
       R: 1
       G: 1
@@ -3167,8 +3481,13 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Text {
     Text: "Loading..."
+    FontAsset {
+    }
     Color {
       R: 1
       G: 1
@@ -3212,8 +3531,13 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Text {
     Text: "4"
+    FontAsset {
+    }
     Color {
       R: 1
       G: 1
@@ -3307,6 +3631,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Blueprint {
     BlueprintAsset {
       Id: 8539981025625262831
@@ -3315,6 +3642,9 @@ Objects {
     }
     DecalBP {
     }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -3344,8 +3674,13 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Text {
     Text: "-"
+    FontAsset {
+    }
     Color {
       R: 1
       G: 1
@@ -3388,8 +3723,13 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Text {
     Text: "Loading..."
+    FontAsset {
+    }
     Color {
       R: 1
       G: 1
@@ -3433,8 +3773,13 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Text {
     Text: "3"
+    FontAsset {
+    }
     Color {
       R: 1
       G: 1
@@ -3528,6 +3873,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Blueprint {
     BlueprintAsset {
       Id: 8539981025625262831
@@ -3536,6 +3884,9 @@ Objects {
     }
     DecalBP {
     }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -3565,8 +3916,13 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Text {
     Text: "-"
+    FontAsset {
+    }
     Color {
       R: 1
       G: 1
@@ -3609,8 +3965,13 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Text {
     Text: "Loading..."
+    FontAsset {
+    }
     Color {
       R: 1
       G: 1
@@ -3654,8 +4015,13 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Text {
     Text: "2"
+    FontAsset {
+    }
     Color {
       R: 1
       G: 1
@@ -3719,6 +4085,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Blueprint {
     BlueprintAsset {
       Id: 8539981025625262831
@@ -3727,6 +4096,9 @@ Objects {
     }
     DecalBP {
     }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -3756,8 +4128,13 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Text {
     Text: "-"
+    FontAsset {
+    }
     Color {
       R: 1
       G: 1
@@ -3800,8 +4177,13 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Text {
     Text: "Loading..."
+    FontAsset {
+    }
     Color {
       R: 1
       G: 1
@@ -3845,8 +4227,13 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Text {
     Text: "1"
+    FontAsset {
+    }
     Color {
       R: 1
       G: 1
@@ -3910,6 +4297,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Blueprint {
     BlueprintAsset {
       Id: 8539981025625262831
@@ -3918,6 +4308,9 @@ Objects {
     }
     DecalBP {
     }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -3947,8 +4340,13 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Text {
     Text: "Kills"
+    FontAsset {
+    }
     Color {
       R: 1
       G: 1
@@ -3992,8 +4390,13 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Text {
     Text: "Name"
+    FontAsset {
+    }
     Color {
       R: 1
       G: 1
@@ -4036,8 +4439,13 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Text {
     Text: "#"
+    FontAsset {
+    }
     Color {
       R: 1
       G: 1
@@ -4097,6 +4505,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:forceon"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Blueprint {
     BlueprintAsset {
       Id: 9580721429751009501
@@ -4105,6 +4516,9 @@ Objects {
     }
     DecalBP {
     }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -4154,6 +4568,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Blueprint {
     BlueprintAsset {
       Id: 8539981025625262831
@@ -4162,6 +4579,9 @@ Objects {
     }
     DecalBP {
     }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -4191,8 +4611,13 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Text {
     Text: "-"
+    FontAsset {
+    }
     Color {
       R: 1
       G: 1
@@ -4235,8 +4660,13 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Text {
     Text: "Loading..."
+    FontAsset {
+    }
     Color {
       R: 1
       G: 1
@@ -4280,8 +4710,13 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Text {
     Text: "5"
+    FontAsset {
+    }
     Color {
       R: 1
       G: 1
@@ -4345,6 +4780,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Blueprint {
     BlueprintAsset {
       Id: 8539981025625262831
@@ -4353,6 +4791,9 @@ Objects {
     }
     DecalBP {
     }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -4382,8 +4823,13 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Text {
     Text: "-"
+    FontAsset {
+    }
     Color {
       R: 1
       G: 1
@@ -4426,8 +4872,13 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Text {
     Text: "Loading..."
+    FontAsset {
+    }
     Color {
       R: 1
       G: 1
@@ -4471,8 +4922,13 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Text {
     Text: "4"
+    FontAsset {
+    }
     Color {
       R: 1
       G: 1
@@ -4536,6 +4992,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Blueprint {
     BlueprintAsset {
       Id: 8539981025625262831
@@ -4544,6 +5003,9 @@ Objects {
     }
     DecalBP {
     }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -4573,8 +5035,13 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Text {
     Text: "-"
+    FontAsset {
+    }
     Color {
       R: 1
       G: 1
@@ -4617,8 +5084,13 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Text {
     Text: "Loading..."
+    FontAsset {
+    }
     Color {
       R: 1
       G: 1
@@ -4662,8 +5134,13 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Text {
     Text: "3"
+    FontAsset {
+    }
     Color {
       R: 1
       G: 1
@@ -4727,6 +5204,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Blueprint {
     BlueprintAsset {
       Id: 8539981025625262831
@@ -4735,6 +5215,9 @@ Objects {
     }
     DecalBP {
     }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -4764,8 +5247,13 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Text {
     Text: "-"
+    FontAsset {
+    }
     Color {
       R: 1
       G: 1
@@ -4808,8 +5296,13 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Text {
     Text: "Loading..."
+    FontAsset {
+    }
     Color {
       R: 1
       G: 1
@@ -4853,8 +5346,13 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Text {
     Text: "2"
+    FontAsset {
+    }
     Color {
       R: 1
       G: 1
@@ -4918,6 +5416,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Blueprint {
     BlueprintAsset {
       Id: 8539981025625262831
@@ -4926,6 +5427,9 @@ Objects {
     }
     DecalBP {
     }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -4955,8 +5459,13 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Text {
     Text: "-"
+    FontAsset {
+    }
     Color {
       R: 1
       G: 1
@@ -4999,8 +5508,13 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Text {
     Text: "Loading..."
+    FontAsset {
+    }
     Color {
       R: 1
       G: 1
@@ -5044,8 +5558,13 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Text {
     Text: "1"
+    FontAsset {
+    }
     Color {
       R: 1
       G: 1
@@ -5109,6 +5628,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Blueprint {
     BlueprintAsset {
       Id: 8539981025625262831
@@ -5117,6 +5639,9 @@ Objects {
     }
     DecalBP {
     }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {
@@ -5145,8 +5670,13 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Text {
     Text: "Round"
+    FontAsset {
+    }
     Color {
       R: 1
       G: 1
@@ -5190,8 +5720,13 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Text {
     Text: "Name"
+    FontAsset {
+    }
     Color {
       R: 1
       G: 1
@@ -5234,8 +5769,13 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Text {
     Text: "#"
+    FontAsset {
+    }
     Color {
       R: 1
       G: 1

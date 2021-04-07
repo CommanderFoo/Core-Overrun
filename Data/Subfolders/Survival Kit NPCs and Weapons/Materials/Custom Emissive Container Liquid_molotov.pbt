@@ -1,8 +1,8 @@
-﻿Assets {
+Assets {
   Id: 15171491401794470947
   Name: "Custom Emissive Container Liquid_molotov"
   PlatformAssetType: 13
-  SerializationVersion: 72
+  SerializationVersion: 81
   CustomMaterialAsset {
     BaseMaterialId: 4079164913229030135
     ParameterOverrides {

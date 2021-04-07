@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 4047840122259097908
   Name: "Overrun Nametag"
   PlatformAssetType: 5
@@ -23,6 +23,9 @@
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Folder {
           IsGroup: true
@@ -49,7 +52,12 @@
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Text {
+          FontAsset {
+          }
           Color {
             R: 1
             G: 1
@@ -88,7 +96,12 @@
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Text {
+          FontAsset {
+          }
           Color {
             R: 0.254285276
             G: 0.130000055
@@ -111,5 +124,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 81
 }

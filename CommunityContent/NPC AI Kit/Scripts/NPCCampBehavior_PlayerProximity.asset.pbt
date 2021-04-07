@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 11219237905401151703
   Name: "NPCCampBehavior_PlayerProximity"
   PlatformAssetType: 3
@@ -58,5 +58,5 @@
       }
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 81
 }

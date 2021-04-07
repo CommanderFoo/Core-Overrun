@@ -1,8 +1,8 @@
-﻿Assets {
+Assets {
   Id: 11061236124742635688
   Name: "Overrun House Walls Inside"
   PlatformAssetType: 13
-  SerializationVersion: 72
+  SerializationVersion: 81
   CustomMaterialAsset {
     BaseMaterialId: 17067775927665836537
     ParameterOverrides {

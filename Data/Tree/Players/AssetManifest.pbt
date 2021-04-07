@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 1839550566188309142
   Name: "Icon Player"
   PlatformAssetType: 9

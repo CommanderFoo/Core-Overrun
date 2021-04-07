@@ -1,4 +1,4 @@
-﻿Name: "Overrun Wall Weapon Basic Pistol"
+Name: "Overrun Wall Weapon Basic Pistol"
 RootId: 9924687104957850418
 Objects {
   Id: 8971346647986207862
@@ -21,6 +21,9 @@ Objects {
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   NetworkContext {
     Type: Server
@@ -69,6 +72,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   Script {
     ScriptAsset {
       Id: 768736100330168367
@@ -104,6 +110,9 @@ Objects {
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Trigger {
     TeamSettings {
@@ -146,6 +155,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
   NetworkContext {
   }
   InstanceHistory {
@@ -181,6 +193,9 @@ Objects {
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Equipment {
     SocketName: "right_prop"
@@ -282,6 +297,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   NetworkContext {
   }
   InstanceHistory {
@@ -318,6 +336,9 @@ Objects {
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Folder {
     IsGroup: true
@@ -369,6 +390,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
   CoreMesh {
     MeshAsset {
       Id: 9117384065423546074
@@ -377,6 +401,7 @@ Objects {
     }
     DisableCastShadows: true
     DisableReceiveDecals: true
+    InteractWithTriggers: true
     StaticMesh {
       Physics {
       }
@@ -444,12 +469,16 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
   CoreMesh {
     MeshAsset {
       Id: 7395101924488058849
     }
     Teams {
     }
+    InteractWithTriggers: true
     StaticMesh {
       Physics {
       }
@@ -518,6 +547,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
   CoreMesh {
     MeshAsset {
       Id: 15552769917126078605
@@ -526,6 +558,7 @@ Objects {
     }
     DisableCastShadows: true
     DisableReceiveDecals: true
+    InteractWithTriggers: true
     StaticMesh {
       Physics {
       }
@@ -579,6 +612,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
   CoreMesh {
     MeshAsset {
       Id: 16965777294932964901
@@ -587,6 +623,7 @@ Objects {
     }
     DisableCastShadows: true
     DisableReceiveDecals: true
+    InteractWithTriggers: true
     StaticMesh {
       Physics {
       }
@@ -669,6 +706,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
   CoreMesh {
     MeshAsset {
       Id: 697347799158381382
@@ -677,6 +717,7 @@ Objects {
     }
     DisableCastShadows: true
     DisableReceiveDecals: true
+    InteractWithTriggers: true
     StaticMesh {
       Physics {
       }
@@ -738,6 +779,9 @@ Objects {
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Script {
     ScriptAsset {

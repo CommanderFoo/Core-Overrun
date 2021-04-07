@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 7361609338059821575
   Name: "DDLazyThetaStar"
   PlatformAssetType: 3
@@ -22,5 +22,5 @@
       }
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 81
 }

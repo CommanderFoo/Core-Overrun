@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 18052318672521571529
   Name: "Large Wood Board 8m"
   PlatformAssetType: 1

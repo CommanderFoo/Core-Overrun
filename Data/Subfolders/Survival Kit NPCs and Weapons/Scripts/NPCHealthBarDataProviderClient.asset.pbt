@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 10760934329670836395
   Name: "NPCHealthBarDataProviderClient"
   PlatformAssetType: 3
@@ -25,5 +25,5 @@
       }
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 81
 }

@@ -1,4 +1,4 @@
-﻿Name: "Player Spawns"
+Name: "Player Spawns"
 RootId: 9079804109610400015
 Objects {
   Id: 6369583621083966554
@@ -26,6 +26,9 @@ Objects {
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   PlayerSpawnPoint {
     TeamInt: 1
@@ -59,6 +62,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   PlayerSpawnPoint {
     TeamInt: 1
     PlayerScaleMultiplier: 1
@@ -91,6 +97,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   PlayerSpawnPoint {
     TeamInt: 1
     PlayerScaleMultiplier: 1
@@ -122,6 +131,9 @@ Objects {
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   PlayerSpawnPoint {
     TeamInt: 1

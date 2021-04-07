@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 14853486309475416979
   Name: "Survival Kit NPCs and Weapons"
   PlatformAssetType: 5
@@ -18,6 +18,9 @@
             Y: 1
             Z: 1
           }
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Folder {
           BundleDummy {
@@ -157,5 +160,5 @@
     Version: "1.0.0"
     Description: "This Survival Kit NPCs and Weapons CC contains:\r\n\342\200\242A brain (prop)\r\n\342\200\242Survival weapons (rifles, bats, crossbow, knife, katana, revolver, smg, crowbar, stop sign, and pipe)\r\n\342\200\2429 x Militia NPCs (soldiers, police, regular people, dog)\r\n\342\200\24217 x Zombie NPCs (soldiers, police, regular people, dog, legs, fleshy skeletons)\r\n\r\nEnjoy!"
   }
-  SerializationVersion: 72
+  SerializationVersion: 81
 }

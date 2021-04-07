@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 15310095795066678195
   Name: "PlayerHomingTargets"
   PlatformAssetType: 3
@@ -16,5 +16,5 @@
       }
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 81
 }

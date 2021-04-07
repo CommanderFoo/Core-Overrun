@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 17798409052959246679
   Name: "Modern Weapon - Grip 03"
   PlatformAssetType: 1

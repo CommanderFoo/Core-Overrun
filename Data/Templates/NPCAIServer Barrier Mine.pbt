@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 15719878666886044336
   Name: "NPCAIServer Barrier Mine"
   PlatformAssetType: 5
@@ -55,6 +55,9 @@
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Script {
           ScriptAsset {
             Id: 633439961858390085
@@ -67,5 +70,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 81
 }

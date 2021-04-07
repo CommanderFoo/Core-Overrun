@@ -1,8 +1,8 @@
-﻿Assets {
+Assets {
   Id: 7229683475589860530
   Name: "Custom Metal Abstract Tech Panel 02"
   PlatformAssetType: 13
-  SerializationVersion: 72
+  SerializationVersion: 81
   CustomMaterialAsset {
     BaseMaterialId: 7442151427742839825
     ParameterOverrides {

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 1724598123402264109
   Name: "Stone Tombstone"
   PlatformAssetType: 5
@@ -18,6 +18,9 @@
             Y: 1
             Z: 1
           }
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Folder {
           BundleDummy {
@@ -40,5 +43,5 @@
     Version: "1.0.0"
     Description: "Just a basic stone tombstone with a bit of decoration. Nothing too fancy."
   }
-  SerializationVersion: 72
+  SerializationVersion: 81
 }

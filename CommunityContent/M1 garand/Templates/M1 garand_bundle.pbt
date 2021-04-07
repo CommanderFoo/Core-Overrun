@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 6702110216115188385
   Name: "M1 garand"
   PlatformAssetType: 5
@@ -18,6 +18,9 @@
             Y: 1
             Z: 1
           }
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Folder {
           BundleDummy {
@@ -40,5 +43,5 @@
     Version: "1.0.0"
     Description: "a gun that i made"
   }
-  SerializationVersion: 72
+  SerializationVersion: 81
 }

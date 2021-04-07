@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 13255536663817284914
   Name: "Core Royal Guns Inventory"
   PlatformAssetType: 5
@@ -24,6 +24,9 @@
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:forceon"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Folder {
           BundleDummy {
@@ -64,5 +67,5 @@
     Version: "1.0.0"
     Description: "this are the gus form core roual so the inventory to work"
   }
-  SerializationVersion: 72
+  SerializationVersion: 81
 }

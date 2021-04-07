@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 3994090323722992185
   Name: "Wood 2x4 4m"
   PlatformAssetType: 1

@@ -1,8 +1,8 @@
-﻿Assets {
+Assets {
   Id: 15464049448192696760
   Name: "Edge Stripe - Thin"
   PlatformAssetType: 13
-  SerializationVersion: 72
+  SerializationVersion: 81
   CustomMaterialAsset {
     BaseMaterialId: 17657810120729887906
     ParameterOverrides {

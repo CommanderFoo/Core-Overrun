@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 17067775927665836537
   Name: "Wallpaper Fleur De Lis 02"
   PlatformAssetType: 2

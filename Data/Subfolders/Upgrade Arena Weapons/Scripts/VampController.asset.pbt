@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 16428790011810747220
   Name: "VampController"
   PlatformAssetType: 3
@@ -16,5 +16,5 @@
       }
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 81
 }

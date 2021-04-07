@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 2608986537269715559
   Name: "MeleeAbilityServer"
   PlatformAssetType: 3
@@ -59,5 +59,5 @@
       }
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 81
 }

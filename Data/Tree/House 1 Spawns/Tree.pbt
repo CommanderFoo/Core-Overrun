@@ -1,4 +1,4 @@
-﻿Name: "House 1 Spawns"
+Name: "House 1 Spawns"
 RootId: 14201031784172545230
 Objects {
   Id: 1194308590050478007
@@ -34,6 +34,9 @@ Objects {
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Folder {
     IsFilePartition: true
@@ -74,6 +77,9 @@ Objects {
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Folder {
     IsFilePartition: true

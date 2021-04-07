@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 15827398177630134467
   Name: "Torch Fire VFX"
   PlatformAssetType: 8

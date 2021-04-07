@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 4910569012336387525
   Name: "DDPathfindingManager"
   PlatformAssetType: 3
@@ -48,5 +48,5 @@
       }
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 81
 }

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 18186441773229733714
   Name: "Horror & Dark Music Score Set 01"
   PlatformAssetType: 10

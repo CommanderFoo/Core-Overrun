@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 15332333668289696256
   Name: "DDThetaStar"
   PlatformAssetType: 3
@@ -22,5 +22,5 @@
       }
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 81
 }

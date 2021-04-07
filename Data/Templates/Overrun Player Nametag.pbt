@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 14457330189020935665
   Name: "Overrun Player Nametag"
   PlatformAssetType: 5
@@ -22,8 +22,13 @@
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Text {
           Text: "HELLO WORLD"
+          FontAsset {
+          }
           Color {
             R: 1
             G: 1
@@ -46,5 +51,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 81
 }

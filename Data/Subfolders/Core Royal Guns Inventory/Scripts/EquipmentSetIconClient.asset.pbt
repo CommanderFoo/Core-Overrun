@@ -1,8 +1,8 @@
-﻿Assets {
+Assets {
   Id: 14930318131322807853
   Name: "EquipmentSetIconClient"
   PlatformAssetType: 3
   TextAsset {
   }
-  SerializationVersion: 72
+  SerializationVersion: 81
 }

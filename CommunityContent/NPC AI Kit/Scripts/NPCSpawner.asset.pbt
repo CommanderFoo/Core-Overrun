@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 14464307064279057077
   Name: "NPCSpawner"
   PlatformAssetType: 3
@@ -40,5 +40,5 @@
       }
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 81
 }

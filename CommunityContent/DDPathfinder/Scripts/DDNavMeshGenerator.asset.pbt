@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 331082752684503937
   Name: "DDNavMeshGenerator"
   PlatformAssetType: 3
@@ -46,5 +46,5 @@
       }
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 81
 }

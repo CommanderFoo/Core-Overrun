@@ -1,8 +1,8 @@
-﻿Assets {
+Assets {
   Id: 16322165823528311754
   Name: "CombatWrapPlayer"
   PlatformAssetType: 3
   TextAsset {
   }
-  SerializationVersion: 72
+  SerializationVersion: 81
 }

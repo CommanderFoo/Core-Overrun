@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 12736664069979370939
   Name: "NPCAIClient"
   PlatformAssetType: 3
@@ -78,5 +78,5 @@
       }
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 81
 }

@@ -1,4 +1,4 @@
-﻿DebuggerSettings {
+DebuggerSettings {
   ScriptSettings {
     Script {
       Id: 3455697263916177463

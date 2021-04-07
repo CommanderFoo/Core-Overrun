@@ -1,2 +1,2 @@
-﻿Name: "Power Ups"
+Name: "Power Ups"
 RootId: 13713193877966858064

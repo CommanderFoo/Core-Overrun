@@ -1,8 +1,8 @@
-﻿Assets {
+Assets {
   Id: 12273839138830354709
   Name: "DestructibleManager"
   PlatformAssetType: 3
   TextAsset {
   }
-  SerializationVersion: 72
+  SerializationVersion: 81
 }

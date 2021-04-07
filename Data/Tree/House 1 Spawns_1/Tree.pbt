@@ -1,4 +1,4 @@
-﻿Name: "House 1 Spawns_1"
+Name: "House 1 Spawns_1"
 RootId: 13194144015473889140
 Objects {
   Id: 14878965614000335814
@@ -40,6 +40,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
   CoreMesh {
     MeshAsset {
       Id: 12095835209017042614
@@ -49,6 +52,7 @@ Objects {
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
     DisableReceiveDecals: true
+    InteractWithTriggers: true
     StaticMesh {
       Physics {
       }
@@ -95,6 +99,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
   CoreMesh {
     MeshAsset {
       Id: 12095835209017042614
@@ -104,6 +111,7 @@ Objects {
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
     DisableReceiveDecals: true
+    InteractWithTriggers: true
     StaticMesh {
       Physics {
       }
@@ -150,6 +158,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
   CoreMesh {
     MeshAsset {
       Id: 12095835209017042614
@@ -159,6 +170,7 @@ Objects {
     DisableDistanceFieldLighting: true
     DisableCastShadows: true
     DisableReceiveDecals: true
+    InteractWithTriggers: true
     StaticMesh {
       Physics {
       }

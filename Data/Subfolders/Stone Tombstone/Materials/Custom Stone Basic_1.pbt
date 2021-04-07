@@ -1,8 +1,8 @@
-﻿Assets {
+Assets {
   Id: 15125335934156946514
   Name: "Custom Stone Basic_1"
   PlatformAssetType: 13
-  SerializationVersion: 72
+  SerializationVersion: 81
   CustomMaterialAsset {
     BaseMaterialId: 11699563938914086432
     ParameterOverrides {

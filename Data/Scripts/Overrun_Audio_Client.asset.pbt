@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 16490992877313499928
   Name: "Overrun_Audio_Client"
   PlatformAssetType: 3
@@ -24,5 +24,5 @@
       }
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 81
 }

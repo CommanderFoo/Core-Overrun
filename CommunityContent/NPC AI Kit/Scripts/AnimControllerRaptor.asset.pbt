@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 9676235431982837092
   Name: "AnimControllerRaptor"
   PlatformAssetType: 3
@@ -24,5 +24,5 @@
       }
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 81
 }

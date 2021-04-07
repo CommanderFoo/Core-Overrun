@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 3694419892625887874
   Name: "Military Hazard Barrel"
   PlatformAssetType: 1

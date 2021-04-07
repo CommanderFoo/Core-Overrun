@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 9034544182856840251
   Name: "WeaponUtilityHideObjectClient"
   PlatformAssetType: 3
@@ -19,5 +19,5 @@
       }
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 81
 }

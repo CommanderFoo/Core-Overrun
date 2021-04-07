@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 9194274695573563405
   Name: "DDNavMeshDataStore"
   PlatformAssetType: 3
@@ -12,5 +12,5 @@
       }
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 81
 }

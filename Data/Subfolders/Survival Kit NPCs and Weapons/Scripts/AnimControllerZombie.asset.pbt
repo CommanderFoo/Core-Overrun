@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 4761850594540472189
   Name: "AnimControllerZombie"
   PlatformAssetType: 3
@@ -24,5 +24,5 @@
       }
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 81
 }

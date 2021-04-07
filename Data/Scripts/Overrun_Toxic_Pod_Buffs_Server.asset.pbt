@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 2793342572321819441
   Name: "Overrun_Toxic_Pod_Buffs_Server"
   PlatformAssetType: 3
@@ -12,5 +12,5 @@
       }
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 81
 }

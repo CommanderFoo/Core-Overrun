@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 16742125756419714110
   Name: "BG Flat 004"
   PlatformAssetType: 9

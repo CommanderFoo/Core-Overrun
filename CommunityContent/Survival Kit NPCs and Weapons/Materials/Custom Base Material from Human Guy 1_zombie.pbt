@@ -1,8 +1,8 @@
-﻿Assets {
+Assets {
   Id: 14546245992036898960
   Name: "Custom Base Material from Human Guy 1_zombie"
   PlatformAssetType: 13
-  SerializationVersion: 72
+  SerializationVersion: 81
   CustomMaterialAsset {
     BaseMaterialId: 12995393132088816410
     ParameterOverrides {

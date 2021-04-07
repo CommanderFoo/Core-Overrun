@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 18117296537460076293
   Name: "Sci-fi Base Breakout Box 04"
   PlatformAssetType: 1

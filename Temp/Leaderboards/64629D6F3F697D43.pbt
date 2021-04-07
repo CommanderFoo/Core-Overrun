@@ -1,8 +1,8 @@
-﻿GlobalEntries {
+GlobalEntries {
   Id: "93d6eaf2514940a08c5481a4c03c1ee3"
   Name: "CommanderFoo"
-  ScoreFormatted: "1.0"
-  DateTime: "2021-01-19T14:17:34.933Z"
+  ScoreFormatted: "7.0"
+  DateTime: "2021-04-07T17:08:56.399Z"
 }
 Config {
   SortType {

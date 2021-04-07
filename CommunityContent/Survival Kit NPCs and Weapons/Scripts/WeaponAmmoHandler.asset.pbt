@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 6332419982874281611
   Name: "WeaponAmmoHandler"
   PlatformAssetType: 3
@@ -29,5 +29,5 @@
       }
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 81
 }

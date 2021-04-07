@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 7018041226583989658
   Name: "Overrun Player Joined Sound"
   PlatformAssetType: 5
@@ -21,6 +21,9 @@
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         AudioInstance {
           AudioAsset {
@@ -47,5 +50,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 81
 }

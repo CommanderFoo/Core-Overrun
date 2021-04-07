@@ -1,8 +1,8 @@
-﻿Assets {
+Assets {
   Id: 174274613790324682
   Name: "DDPriorityQueue"
   PlatformAssetType: 3
   TextAsset {
   }
-  SerializationVersion: 72
+  SerializationVersion: 81
 }

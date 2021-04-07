@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 2097760314933973788
   Name: "Burning Barrel"
   PlatformAssetType: 5
@@ -18,6 +18,9 @@
             Y: 1
             Z: 1
           }
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Folder {
           BundleDummy {
@@ -40,5 +43,5 @@
     Version: "1.0.0"
     Description: "Burning, Rusted Barrel for any camping, survival or apocalyptic scenes. \r\n\r\nFire and burning wood inside. \r\n\r\nEnjoy\r\n\r\nNDG"
   }
-  SerializationVersion: 72
+  SerializationVersion: 81
 }

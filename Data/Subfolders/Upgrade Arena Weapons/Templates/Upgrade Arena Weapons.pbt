@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 225017105716325310
   Name: "Upgrade Arena Weapons"
   PlatformAssetType: 5
@@ -18,6 +18,9 @@
             Y: 1
             Z: 1
           }
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Folder {
           BundleDummy {
@@ -61,5 +64,5 @@
     Version: "1.0.0"
     Description: "The 8 unique weapons from Upgrade Arena - they\'ve been simplified to use normal reloading, and have standard pickup trigger boxes, but other than that work as expected! Try out the health draining Vamp, the hectic Orber, or the up close Energy Sword!"
   }
-  SerializationVersion: 72
+  SerializationVersion: 81
 }

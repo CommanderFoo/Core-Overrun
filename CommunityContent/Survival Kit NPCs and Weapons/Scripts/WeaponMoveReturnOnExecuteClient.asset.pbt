@@ -1,8 +1,8 @@
-﻿Assets {
+Assets {
   Id: 7352043311188248481
   Name: "WeaponMoveReturnOnExecuteClient"
   PlatformAssetType: 3
   TextAsset {
   }
-  SerializationVersion: 72
+  SerializationVersion: 81
 }

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 6256197809870210818
   Name: "DDAStar"
   PlatformAssetType: 3
@@ -22,5 +22,5 @@
       }
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 81
 }

@@ -1,8 +1,8 @@
-﻿Assets {
+Assets {
   Id: 6181281743609134716
   Name: "BulletClient"
   PlatformAssetType: 3
   TextAsset {
   }
-  SerializationVersion: 72
+  SerializationVersion: 81
 }

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 15143766926267315553
   Name: "Hill 03"
   PlatformAssetType: 1

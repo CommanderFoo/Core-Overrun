@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 17140169920881623408
   Name: "SetRotation"
   PlatformAssetType: 3
@@ -11,5 +11,5 @@
       }
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 81
 }

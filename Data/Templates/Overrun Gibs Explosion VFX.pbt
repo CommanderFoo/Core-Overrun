@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 1828773146990716755
   Name: "Overrun Gibs Explosion VFX"
   PlatformAssetType: 5
@@ -40,6 +40,9 @@
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Blueprint {
           BlueprintAsset {
             Id: 3137516374477183732
@@ -49,6 +52,9 @@
           Vfx {
             AutoPlay: true
           }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
         }
       }
     }
@@ -66,5 +72,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 81
 }

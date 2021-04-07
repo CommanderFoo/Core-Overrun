@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 15382879434847562985
   Name: "Axe Melee Swing Sound"
   PlatformAssetType: 5
@@ -41,6 +41,9 @@
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Blueprint {
           BlueprintAsset {
             Id: 5588725286865802105
@@ -71,5 +74,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 81
 }

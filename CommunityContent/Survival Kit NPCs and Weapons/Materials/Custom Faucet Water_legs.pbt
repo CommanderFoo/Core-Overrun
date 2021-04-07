@@ -1,8 +1,8 @@
-﻿Assets {
+Assets {
   Id: 10900243851038107022
   Name: "Custom Faucet Water_legs"
   PlatformAssetType: 13
-  SerializationVersion: 72
+  SerializationVersion: 81
   CustomMaterialAsset {
     BaseMaterialId: 8571943783165622750
     ParameterOverrides {

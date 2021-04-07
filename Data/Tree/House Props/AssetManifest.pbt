@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 18212178088843234956
   Name: "Craftsman End Table"
   PlatformAssetType: 1

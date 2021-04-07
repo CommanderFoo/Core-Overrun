@@ -1,8 +1,8 @@
-﻿Assets {
+Assets {
   Id: 11823985658974634318
   Name: "Custom Base Material from Human Guy 2_civillian"
   PlatformAssetType: 13
-  SerializationVersion: 72
+  SerializationVersion: 81
   CustomMaterialAsset {
     BaseMaterialId: 12929538443392159583
     ParameterOverrides {

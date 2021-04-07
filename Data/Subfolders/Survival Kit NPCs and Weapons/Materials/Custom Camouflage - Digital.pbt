@@ -1,8 +1,8 @@
-﻿Assets {
+Assets {
   Id: 17472924575694968559
   Name: "Custom Camouflage - Digital"
   PlatformAssetType: 13
-  SerializationVersion: 72
+  SerializationVersion: 81
   CustomMaterialAsset {
     BaseMaterialId: 4348109682638095147
     ParameterOverrides {

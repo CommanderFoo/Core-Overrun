@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 9580721429751009501
   Name: "Decal Military Posters 01"
   PlatformAssetType: 14

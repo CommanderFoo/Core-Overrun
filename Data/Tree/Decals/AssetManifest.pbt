@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 15760578896978427594
   Name: "Decal Stencil Font 01"
   PlatformAssetType: 14

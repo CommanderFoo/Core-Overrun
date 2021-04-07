@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 17044523319975618427
   Name: "DestructibleWeaponServer"
   PlatformAssetType: 3
@@ -20,5 +20,5 @@
       }
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 81
 }

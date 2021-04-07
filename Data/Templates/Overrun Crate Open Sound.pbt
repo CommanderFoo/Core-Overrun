@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 18443078751069168377
   Name: "Overrun Crate Open Sound"
   PlatformAssetType: 5
@@ -21,6 +21,9 @@
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         AudioInstance {
           AudioAsset {
@@ -49,5 +52,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 81
 }

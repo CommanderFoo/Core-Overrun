@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 8749147197677918040
   Name: "Mainstreet Wall 01 Half Window - Basic Window Template"
   PlatformAssetType: 5
@@ -23,6 +23,9 @@
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 11180821767795272231
@@ -31,7 +34,7 @@
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
+          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
@@ -61,6 +64,9 @@
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
         CoreMesh {
           MeshAsset {
             Id: 11730308934333352162
@@ -69,7 +75,7 @@
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
+          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
@@ -100,5 +106,5 @@
       AssetId: "Mainstreet_Wall_01_Half_Window_-_Basic_Window_Template"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 81
 }

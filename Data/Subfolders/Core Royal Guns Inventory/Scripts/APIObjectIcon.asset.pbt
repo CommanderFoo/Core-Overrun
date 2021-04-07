@@ -1,8 +1,8 @@
-﻿Assets {
+Assets {
   Id: 17452788349229305645
   Name: "APIObjectIcon"
   PlatformAssetType: 3
   TextAsset {
   }
-  SerializationVersion: 72
+  SerializationVersion: 81
 }

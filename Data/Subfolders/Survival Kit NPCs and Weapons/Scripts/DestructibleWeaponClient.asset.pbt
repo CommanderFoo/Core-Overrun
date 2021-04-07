@@ -1,8 +1,8 @@
-﻿Assets {
+Assets {
   Id: 8262745812845396946
   Name: "DestructibleWeaponClient"
   PlatformAssetType: 3
   TextAsset {
   }
-  SerializationVersion: 72
+  SerializationVersion: 81
 }

@@ -1,4 +1,4 @@
-﻿Name: "DD Nav Mesh + Pathfinding"
+Name: "DD Nav Mesh + Pathfinding"
 RootId: 12461314409581590319
 Objects {
   Id: 11905597774153302554
@@ -11,6 +11,9 @@ Objects {
     }
   }
   ParentId: 12461314409581590319
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   TemplateInstance {
     ParameterOverrideMap {
       key: 4920491915511984392
@@ -118,6 +121,9 @@ Objects {
     }
   }
   ParentId: 12461314409581590319
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
   TemplateInstance {
     ParameterOverrideMap {
       key: 17182930257740680113
@@ -184,6 +190,9 @@ Objects {
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
   }
   Folder {
     IsFilePartition: true
