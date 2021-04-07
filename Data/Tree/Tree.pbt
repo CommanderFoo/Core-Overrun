@@ -9416,9 +9416,9 @@ Objects {
       Label: "Having Fun? Press [L]"
       Color {
         R: 1
-        G: 1
-        B: 1
-        A: 0.5
+        G: 0.953238
+        B: 0.0180000067
+        A: 0.967000067
       }
       Size: 18
       Justification {
