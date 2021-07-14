@@ -2,7 +2,7 @@ Assets {
   Id: 11717158675922420920
   Name: "Custom Base Material from Fantasy Human Gal 2_retro militia"
   PlatformAssetType: 13
-  SerializationVersion: 81
+  SerializationVersion: 92
   CustomMaterialAsset {
     BaseMaterialId: 15537840613542427220
     ParameterOverrides {

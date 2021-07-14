@@ -548,6 +548,7 @@ Assets {
           StaticMesh {
             Physics {
             }
+            BoundsScale: 1
           }
         }
       }
@@ -610,6 +611,7 @@ Assets {
           StaticMesh {
             Physics {
             }
+            BoundsScale: 1
           }
         }
       }
@@ -704,6 +706,7 @@ Assets {
           StaticMesh {
             Physics {
             }
+            BoundsScale: 1
           }
         }
       }
@@ -749,5 +752,5 @@ Assets {
       AssetId: "Urban_Fence_Gate_-_Single_Template"
     }
   }
-  SerializationVersion: 81
+  SerializationVersion: 92
 }

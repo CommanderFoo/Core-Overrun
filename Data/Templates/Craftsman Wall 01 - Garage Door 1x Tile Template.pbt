@@ -176,6 +176,7 @@ Assets {
           StaticMesh {
             Physics {
             }
+            BoundsScale: 1
           }
         }
       }
@@ -299,6 +300,7 @@ Assets {
           StaticMesh {
             Physics {
             }
+            BoundsScale: 1
           }
         }
       }
@@ -326,5 +328,5 @@ Assets {
       AssetId: "Craftsman_Wall_01_-_Garage_Door_1x_Tile_Template"
     }
   }
-  SerializationVersion: 81
+  SerializationVersion: 92
 }

@@ -38,6 +38,7 @@ Assets {
           StaticMesh {
             Physics {
             }
+            BoundsScale: 1
           }
         }
       }
@@ -79,6 +80,7 @@ Assets {
           StaticMesh {
             Physics {
             }
+            BoundsScale: 1
           }
         }
       }
@@ -106,5 +108,5 @@ Assets {
       AssetId: "Mainstreet_Wall_01_Half_Window_-_Basic_Window_Template"
     }
   }
-  SerializationVersion: 81
+  SerializationVersion: 92
 }

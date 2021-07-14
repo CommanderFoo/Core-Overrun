@@ -13,7 +13,9 @@ ScreenshotPaths: "C:\\Users\\pixel\\Documents\\My Games\\CORE\\Saved\\Maps\\Over
 ScreenshotPaths: "C:\\Users\\pixel\\Documents\\My Games\\CORE\\Saved\\Maps\\Overrun\\Screenshots\\3.jpg"
 ScreenshotPaths: "C:\\Users\\pixel\\Documents\\My Games\\CORE\\Saved\\Maps\\Overrun\\Screenshots\\4.jpg"
 ScreenshotPaths: "C:\\Users\\pixel\\Documents\\My Games\\CORE\\Saved\\Maps\\Overrun\\Screenshots\\5.jpg"
-ReleaseNotes: "Added jam logo."
+ReleaseNotes: "Daily login reward points changed (will change in the future to be mini quests once API is updated)."
 OwnerId: "93d6eaf2514940a08c5481a4c03c1ee3"
 SerializationVersion: 1
 PublishedState: Public
+CubemapPath: "C:/Users/pixel/Documents/My Games/CORE/Saved/Maps/Overrun/Screenshots/Cubemaps/Cubemap0003.png"
+ContainsRewardPointEvents: true

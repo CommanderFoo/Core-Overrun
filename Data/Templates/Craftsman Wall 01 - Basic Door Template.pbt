@@ -528,6 +528,7 @@ Assets {
           StaticMesh {
             Physics {
             }
+            BoundsScale: 1
           }
         }
       }
@@ -606,6 +607,7 @@ Assets {
           StaticMesh {
             Physics {
             }
+            BoundsScale: 1
           }
         }
       }
@@ -642,5 +644,5 @@ Assets {
       AssetId: "Craftsman_Wall_01_-_Basic_Door_Template"
     }
   }
-  SerializationVersion: 81
+  SerializationVersion: 92
 }

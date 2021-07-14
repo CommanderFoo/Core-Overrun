@@ -2,7 +2,7 @@ Assets {
   Id: 12654224807825208798
   Name: "Custom Faucet Water_guts"
   PlatformAssetType: 13
-  SerializationVersion: 81
+  SerializationVersion: 92
   CustomMaterialAsset {
     BaseMaterialId: 8571943783165622750
     ParameterOverrides {

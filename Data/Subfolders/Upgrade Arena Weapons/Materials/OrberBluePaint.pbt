@@ -2,7 +2,7 @@ Assets {
   Id: 2338527876785101382
   Name: "OrberBluePaint"
   PlatformAssetType: 13
-  SerializationVersion: 81
+  SerializationVersion: 92
   CustomMaterialAsset {
     BaseMaterialId: 18243883846388958174
     ParameterOverrides {

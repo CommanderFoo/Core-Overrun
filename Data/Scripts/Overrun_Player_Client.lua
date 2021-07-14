@@ -96,7 +96,7 @@ function player_joined(p)
 		money_ui.text = YOOTIL.Utils.number_format(local_player:GetResource("money"))
 		name_ui:SetColor(own_info_color)
 		name_ui.text = YOOTIL.Utils.truncate(local_player.name, 13, "...")
-		avatar_ui:SetImage(local_player)
+		avatar_ui:SetPlayerProfile(local_player)
 	else
 		name_ui.text = YOOTIL.Utils.truncate(p.name, 13, "...")
 		money_ui.text = YOOTIL.Utils.number_format(p:GetResource("money"))

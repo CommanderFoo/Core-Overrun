@@ -44,6 +44,7 @@ Assets {
           StaticMesh {
             Physics {
             }
+            BoundsScale: 1
           }
         }
       }
@@ -547,6 +548,7 @@ Assets {
           StaticMesh {
             Physics {
             }
+            BoundsScale: 1
           }
         }
       }
@@ -622,5 +624,5 @@ Assets {
       AssetId: "Mainstreet_Wall_02_Doorway_-_Basic_Door_Template"
     }
   }
-  SerializationVersion: 81
+  SerializationVersion: 92
 }

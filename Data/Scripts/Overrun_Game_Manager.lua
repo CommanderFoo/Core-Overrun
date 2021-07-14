@@ -42,6 +42,8 @@ function player_joined(p)
 		}
 	end
 
+	p:GrantRewardPoints(50000, "Daily Login")
+	
 	setup_resources(p, starting_lives, true, true)
 	setup_stats(p)
 
@@ -140,6 +142,26 @@ function setup_stats(p)
 			p:SetResource("welcome", 0)
 		end
 	end
+end
+
+function first_join_today(player)
+    local today = os.date("*t")
+    local day = today.day
+    local month = today.month
+
+    local data = Storage.GetPlayerData(player)
+
+    if(day ~= data.last_day or month ~= data.last_month) then
+		data.last_day = day
+        data.last_month = month
+
+        player:SetResource("last_day", day)
+		player:SetResource("last_month", month)
+
+        return true
+    end
+
+    return false
 end
 
 function player_left(p)

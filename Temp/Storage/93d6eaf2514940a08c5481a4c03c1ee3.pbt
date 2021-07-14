@@ -1,13 +1,5 @@
 Entries {
   Key {
-    StringVar: "total_money_all_time"
-  }
-  SimpleValue {
-    IntVar: 76645
-  }
-}
-Entries {
-  Key {
     StringVar: "welcome"
   }
   SimpleValue {
@@ -16,34 +8,26 @@ Entries {
 }
 Entries {
   Key {
-    StringVar: "total_revives"
+    StringVar: "total_deaths"
   }
   SimpleValue {
-    IntVar: 9
+    IntVar: 4
   }
 }
 Entries {
   Key {
-    StringVar: "total_perks"
-  }
-  SimpleValue {
-    IntVar: 5
-  }
-}
-Entries {
-  Key {
-    StringVar: "total_barriers"
-  }
-  SimpleValue {
-    IntVar: 15
-  }
-}
-Entries {
-  Key {
-    StringVar: "total_headshots"
+    StringVar: "total_games"
   }
   SimpleValue {
     IntVar: 76
+  }
+}
+Entries {
+  Key {
+    StringVar: "total_kills_v2"
+  }
+  SimpleValue {
+    IntVar: 501
   }
 }
 Entries {
@@ -56,10 +40,10 @@ Entries {
 }
 Entries {
   Key {
-    StringVar: "total_kills_v2"
+    StringVar: "total_headshots"
   }
   SimpleValue {
-    IntVar: 422
+    IntVar: 90
   }
 }
 Entries {
@@ -72,10 +56,18 @@ Entries {
 }
 Entries {
   Key {
-    StringVar: "total_games"
+    StringVar: "total_crates"
   }
   SimpleValue {
-    IntVar: 47
+    IntVar: 9
+  }
+}
+Entries {
+  Key {
+    StringVar: "total_barriers"
+  }
+  SimpleValue {
+    IntVar: 17
   }
 }
 Entries {
@@ -83,7 +75,31 @@ Entries {
     StringVar: "total_rounds"
   }
   SimpleValue {
-    IntVar: 19
+    IntVar: 23
+  }
+}
+Entries {
+  Key {
+    StringVar: "total_perks"
+  }
+  SimpleValue {
+    IntVar: 5
+  }
+}
+Entries {
+  Key {
+    StringVar: "total_spent"
+  }
+  SimpleValue {
+    IntVar: 78450
+  }
+}
+Entries {
+  Key {
+    StringVar: "total_revives"
+  }
+  SimpleValue {
+    IntVar: 9
   }
 }
 Entries {
@@ -96,25 +112,9 @@ Entries {
 }
 Entries {
   Key {
-    StringVar: "total_spent"
+    StringVar: "total_money_all_time"
   }
   SimpleValue {
-    IntVar: 72100
-  }
-}
-Entries {
-  Key {
-    StringVar: "total_crates"
-  }
-  SimpleValue {
-    IntVar: 6
-  }
-}
-Entries {
-  Key {
-    StringVar: "total_deaths"
-  }
-  SimpleValue {
-    IntVar: 4
+    IntVar: 85440
   }
 }

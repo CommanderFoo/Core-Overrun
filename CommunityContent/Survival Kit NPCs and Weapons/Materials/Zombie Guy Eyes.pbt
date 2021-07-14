@@ -2,7 +2,7 @@ Assets {
   Id: 6170271910892513404
   Name: "Zombie Guy Eyes"
   PlatformAssetType: 13
-  SerializationVersion: 81
+  SerializationVersion: 92
   CustomMaterialAsset {
     BaseMaterialId: 5512810902718236569
     ParameterOverrides {
