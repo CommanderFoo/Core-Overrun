@@ -1,25 +1,9 @@
 Entries {
   Key {
-    StringVar: "welcome"
+    StringVar: "total_money_all_time"
   }
   SimpleValue {
-    IntVar: 1
-  }
-}
-Entries {
-  Key {
-    StringVar: "total_deaths"
-  }
-  SimpleValue {
-    IntVar: 4
-  }
-}
-Entries {
-  Key {
-    StringVar: "total_games"
-  }
-  SimpleValue {
-    IntVar: 76
+    IntVar: 85440
   }
 }
 Entries {
@@ -32,58 +16,10 @@ Entries {
 }
 Entries {
   Key {
-    StringVar: "total_upgrades"
-  }
-  SimpleValue {
-    IntVar: 2
-  }
-}
-Entries {
-  Key {
-    StringVar: "total_headshots"
-  }
-  SimpleValue {
-    IntVar: 90
-  }
-}
-Entries {
-  Key {
     StringVar: "highest_round_v3"
   }
   SimpleValue {
     IntVar: 7
-  }
-}
-Entries {
-  Key {
-    StringVar: "total_crates"
-  }
-  SimpleValue {
-    IntVar: 9
-  }
-}
-Entries {
-  Key {
-    StringVar: "total_barriers"
-  }
-  SimpleValue {
-    IntVar: 17
-  }
-}
-Entries {
-  Key {
-    StringVar: "total_rounds"
-  }
-  SimpleValue {
-    IntVar: 23
-  }
-}
-Entries {
-  Key {
-    StringVar: "total_perks"
-  }
-  SimpleValue {
-    IntVar: 5
   }
 }
 Entries {
@@ -112,9 +48,73 @@ Entries {
 }
 Entries {
   Key {
-    StringVar: "total_money_all_time"
+    StringVar: "total_perks"
   }
   SimpleValue {
-    IntVar: 85440
+    IntVar: 5
+  }
+}
+Entries {
+  Key {
+    StringVar: "total_headshots"
+  }
+  SimpleValue {
+    IntVar: 90
+  }
+}
+Entries {
+  Key {
+    StringVar: "total_crates"
+  }
+  SimpleValue {
+    IntVar: 9
+  }
+}
+Entries {
+  Key {
+    StringVar: "total_games"
+  }
+  SimpleValue {
+    IntVar: 82
+  }
+}
+Entries {
+  Key {
+    StringVar: "total_deaths"
+  }
+  SimpleValue {
+    IntVar: 4
+  }
+}
+Entries {
+  Key {
+    StringVar: "total_rounds"
+  }
+  SimpleValue {
+    IntVar: 23
+  }
+}
+Entries {
+  Key {
+    StringVar: "welcome"
+  }
+  SimpleValue {
+    IntVar: 1
+  }
+}
+Entries {
+  Key {
+    StringVar: "total_upgrades"
+  }
+  SimpleValue {
+    IntVar: 2
+  }
+}
+Entries {
+  Key {
+    StringVar: "total_barriers"
+  }
+  SimpleValue {
+    IntVar: 17
   }
 }

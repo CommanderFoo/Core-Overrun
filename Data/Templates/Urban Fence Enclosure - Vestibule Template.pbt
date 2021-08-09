@@ -47,7 +47,7 @@ Assets {
         Name: "Urban Fence - 8m Doorway Template"
         Transform {
           Location {
-            Z: 6.10351563e-05
+            Z: 6.10351562e-05
           }
           Rotation {
             Yaw: 180
@@ -809,7 +809,7 @@ Assets {
           Location {
             X: -800
             Y: -0.00048828125
-            Z: 6.10351563e-05
+            Z: 6.10351562e-05
           }
           Rotation {
             Yaw: -90
@@ -2331,7 +2331,7 @@ Assets {
         Name: "Urban Fence - 8m Template"
         Transform {
           Location {
-            X: 0.000610351563
+            X: 0.000610351562
             Y: -1599.99988
           }
           Rotation {
@@ -3226,7 +3226,7 @@ Assets {
           Location {
             X: -1.04904175e-05
             Y: 15.000001
-            Z: -6.10351563e-05
+            Z: -6.10351562e-05
           }
           Rotation {
             Pitch: 44.9999504
@@ -3604,7 +3604,7 @@ Assets {
           Location {
             X: -1.04904175e-05
             Y: 15.000001
-            Z: -6.10351563e-05
+            Z: -6.10351562e-05
           }
           Rotation {
             Pitch: 44.9999504
@@ -4726,7 +4726,7 @@ Assets {
           Location {
             X: -1.07288352e-05
             Y: 14.9999962
-            Z: -6.10351563e-05
+            Z: -6.10351562e-05
           }
           Rotation {
             Pitch: 44.9999695
@@ -5384,5 +5384,5 @@ Assets {
       AssetId: "Urban_Fence_Enclosure_-_Vestibule_Template"
     }
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
 }

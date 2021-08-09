@@ -906,6 +906,7 @@ Objects {
     }
     MinPitch: -89
     MaxPitch: 89
+    UseAsAudioListener: true
   }
 }
 Objects {
@@ -1053,6 +1054,35 @@ Objects {
           LowDistance: 4500
           MediumDistance: 7000
           HighDistance: 9000
+        }
+      }
+      VoiceChatSettings {
+        VoiceChatMode {
+          Value: "mc:evoicechatmode:all"
+        }
+        VoiceChannelType {
+          Value: "mc:evoicechanneltype:normal"
+        }
+        AudibleDistance: 6000
+        ConversationalDistance: 1500
+        AudioFadeModel {
+          Value: "mc:evoiceaudiofademodel:inverse"
+        }
+        AudioFadeIntensityByDistance: 1
+        VoiceChatPosition {
+          Y: -40
+        }
+        VoiceChatHorizontalAlignment {
+          Value: "mc:ecorehorizontalalign:center"
+        }
+        VoiceChatVerticalAlignment {
+          Value: "mc:ecoreverticalalign:bottom"
+        }
+        VoiceChatEntryHorizontalFlow {
+          Value: "mc:ecorehorizontalflow:righttoleft"
+        }
+        VoiceChatEntryVerticalFlow {
+          Value: "mc:ecoreverticalflow:bottomtotop"
         }
       }
       PlayerInteractDistance: 500

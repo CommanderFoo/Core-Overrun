@@ -40,7 +40,7 @@ Objects {
   Name: "Overrun_Wall_Weapon_Server"
   Transform {
     Location {
-      Y: 0.000122070313
+      Y: 0.000122070312
       Z: 3.05175781e-05
     }
     Rotation {

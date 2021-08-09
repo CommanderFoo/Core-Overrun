@@ -732,7 +732,7 @@ Assets {
           Location {
             X: 314.218475
             Y: -194.783203
-            Z: 6.10351563e-05
+            Z: 6.10351562e-05
           }
           Rotation {
             Yaw: -159.203812
@@ -2796,5 +2796,5 @@ Assets {
       AssetId: "Rubble_Pile_Concrete_-_Large_Template"
     }
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
 }

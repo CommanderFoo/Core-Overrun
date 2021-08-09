@@ -181,7 +181,7 @@ Objects {
   Name: "Decal Burnt Streak 01"
   Transform {
     Location {
-      X: 2200.76563
+      X: 2200.76562
       Y: -4789.59277
       Z: 60.0001221
     }
@@ -229,7 +229,7 @@ Objects {
   Name: "Decal Burnt Streak 01"
   Transform {
     Location {
-      X: 2160.76563
+      X: 2160.76562
       Y: -4724.59277
       Z: 95.0001221
     }
@@ -283,7 +283,7 @@ Objects {
   Name: "Decal Burnt Streak 01"
   Transform {
     Location {
-      X: 2200.76563
+      X: 2200.76562
       Y: -4704.59277
       Z: 95.0001221
     }
@@ -337,7 +337,7 @@ Objects {
   Name: "Decal Burnt Streak 01"
   Transform {
     Location {
-      X: 2255.76563
+      X: 2255.76562
       Y: -4714.59277
       Z: 90.0001221
     }
@@ -391,7 +391,7 @@ Objects {
   Name: "Decal Burnt Streak 01"
   Transform {
     Location {
-      X: 2270.76563
+      X: 2270.76562
       Y: -4784.59277
       Z: 65.0001221
     }
@@ -439,7 +439,7 @@ Objects {
   Name: "Smoke Volume VFX"
   Transform {
     Location {
-      X: 2230.76563
+      X: 2230.76562
       Y: -4749.59277
       Z: 90.0001221
     }
@@ -509,7 +509,7 @@ Objects {
   Name: "Torch Fire VFX"
   Transform {
     Location {
-      X: 2220.76563
+      X: 2220.76562
       Y: -4759.59277
       Z: 75.0001221
     }
@@ -556,7 +556,7 @@ Objects {
   Name: "Urban Plank Debris 04"
   Transform {
     Location {
-      X: 2220.76563
+      X: 2220.76562
       Y: -4779.59277
       Z: 55.0001221
     }
@@ -617,7 +617,7 @@ Objects {
   Name: "Urban Plank Debris 03"
   Transform {
     Location {
-      X: 2245.76563
+      X: 2245.76562
       Y: -4764.59277
       Z: 45.0001221
     }
@@ -678,7 +678,7 @@ Objects {
   Name: "Urban Plank Debris 04"
   Transform {
     Location {
-      X: 2200.76563
+      X: 2200.76562
       Y: -4764.59277
       Z: 55.0001221
     }
@@ -738,7 +738,7 @@ Objects {
   Name: "Urban Plank Debris 04"
   Transform {
     Location {
-      X: 2220.76563
+      X: 2220.76562
       Y: -4734.59277
       Z: 55.0001221
     }
@@ -799,7 +799,7 @@ Objects {
   Name: "Pipe - Thin"
   Transform {
     Location {
-      X: 2225.76563
+      X: 2225.76562
       Y: -4759.59277
       Z: 90.0001221
     }
@@ -861,7 +861,7 @@ Objects {
   Name: "Pipe - Thin"
   Transform {
     Location {
-      X: 2225.76563
+      X: 2225.76562
       Y: -4759.59277
       Z: 80.0001221
     }
@@ -923,7 +923,7 @@ Objects {
   Name: "Pipe - Thin"
   Transform {
     Location {
-      X: 2225.76563
+      X: 2225.76562
       Y: -4759.59277
       Z: 10.0001221
     }
@@ -985,7 +985,7 @@ Objects {
   Name: "Pipe - Thin"
   Transform {
     Location {
-      X: 2225.76563
+      X: 2225.76562
       Y: -4759.59277
       Z: 35.0001221
     }
@@ -1047,7 +1047,7 @@ Objects {
   Name: "Pipe - Thin"
   Transform {
     Location {
-      X: 2225.76563
+      X: 2225.76562
       Y: -4759.59277
       Z: 25.0001221
     }
@@ -1109,7 +1109,7 @@ Objects {
   Name: "Pipe - Thin"
   Transform {
     Location {
-      X: 2225.76563
+      X: 2225.76562
       Y: -4759.59277
       Z: 10.0001221
     }
@@ -1170,7 +1170,7 @@ Objects {
   Name: "Pipe - Thin"
   Transform {
     Location {
-      X: 2225.76563
+      X: 2225.76562
       Y: -4759.59277
       Z: 10.0001221
     }
@@ -9246,7 +9246,7 @@ Objects {
   Name: "Wood 2x4 4m"
   Transform {
     Location {
-      X: 2945.01563
+      X: 2945.01562
       Y: 481.143311
       Z: 1.97180033
     }

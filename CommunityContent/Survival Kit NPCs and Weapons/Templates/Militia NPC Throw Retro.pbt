@@ -4043,7 +4043,7 @@ Assets {
         Name: "Cylinder - Bottom-Aligned"
         Transform {
           Location {
-            X: 0.000122070313
+            X: 0.000122070312
           }
           Rotation {
           }
@@ -4092,7 +4092,7 @@ Assets {
         Name: "Pipe"
         Transform {
           Location {
-            X: 0.000122070313
+            X: 0.000122070312
             Z: 14.5026493
           }
           Rotation {
@@ -4142,7 +4142,7 @@ Assets {
         Name: "Cone - Truncated Hollow Concave"
         Transform {
           Location {
-            X: 0.000122070313
+            X: 0.000122070312
             Z: 204.638794
           }
           Rotation {
@@ -4192,7 +4192,7 @@ Assets {
         Name: "Pipe"
         Transform {
           Location {
-            X: 0.000122070313
+            X: 0.000122070312
             Z: 284.419067
           }
           Rotation {
@@ -4242,7 +4242,7 @@ Assets {
         Name: "Ring - Thick"
         Transform {
           Location {
-            X: 0.000122070313
+            X: 0.000122070312
             Z: 301.534363
           }
           Rotation {
@@ -4987,6 +4987,6 @@ Assets {
   Marketplace {
     Description: "This Survival Kit NPCs and Weapons CC contains:\r\n\342\200\242A brain (prop)\r\n\342\200\242Survival weapons (rifles, bats, crossbow, knife, katana, revolver, smg, crowbar, stop sign, and pipe)\r\n\342\200\2429 x Militia NPCs (soldiers, police, regular people, dog)\r\n\342\200\24217 x Zombie NPCs (soldiers, police, regular people, dog, legs, fleshy skeletons)\r\n\r\nEnjoy!"
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
   DirectlyPublished: true
 }

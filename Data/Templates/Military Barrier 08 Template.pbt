@@ -364,7 +364,7 @@ Assets {
           Location {
             X: -8.75390625
             Y: 423.473877
-            Z: -6.10351563e-05
+            Z: -6.10351562e-05
           }
           Rotation {
             Yaw: 21.7447567
@@ -3404,5 +3404,5 @@ Assets {
       AssetId: "Military_Barrier_08_Template"
     }
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
 }

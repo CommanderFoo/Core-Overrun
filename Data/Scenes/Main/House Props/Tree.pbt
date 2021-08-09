@@ -4070,7 +4070,7 @@ Objects {
   Transform {
     Location {
       X: 804.192444
-      Y: -3277.01563
+      Y: -3277.01562
       Z: 186.71759
     }
     Rotation {

@@ -44,7 +44,7 @@ Assets {
           Location {
             X: 4.16624737
             Y: -4.08987216e-05
-            Z: -6.10351563e-05
+            Z: -6.10351562e-05
           }
           Rotation {
           }
@@ -77,7 +77,7 @@ Assets {
         Transform {
           Location {
             X: -4.16626
-            Y: 6.10351563e-05
+            Y: 6.10351562e-05
           }
           Rotation {
           }
@@ -700,7 +700,7 @@ Assets {
           Location {
             X: 795.573181
             Y: -4.06901054e-05
-            Z: -6.10351563e-05
+            Z: -6.10351562e-05
           }
           Rotation {
           }
@@ -825,7 +825,7 @@ Assets {
         Transform {
           Location {
             X: 4.42675781
-            Y: 6.10351563e-05
+            Y: 6.10351562e-05
           }
           Rotation {
             Yaw: 179.999954
@@ -1082,5 +1082,5 @@ Assets {
       AssetId: "Barbed_Wire_Fence_Template"
     }
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
 }

@@ -78,7 +78,7 @@ Assets {
           Location {
             X: -100
             Y: 215
-            Z: -6.10351563e-05
+            Z: -6.10351562e-05
           }
           Rotation {
             Yaw: 140
@@ -122,7 +122,7 @@ Assets {
           Location {
             X: 155
             Y: 85
-            Z: -0.000122070313
+            Z: -0.000122070312
           }
           Rotation {
             Yaw: -159.999985
@@ -2475,5 +2475,5 @@ Assets {
       AssetId: "Military_Tire_Pile_03_Template"
     }
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
 }

@@ -457,7 +457,7 @@ Assets {
         Name: "Avatar Border"
         Transform {
           Location {
-            X: 0.000122070313
+            X: 0.000122070312
             Y: 2.67028809e-05
           }
           Rotation {
@@ -795,5 +795,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
 }

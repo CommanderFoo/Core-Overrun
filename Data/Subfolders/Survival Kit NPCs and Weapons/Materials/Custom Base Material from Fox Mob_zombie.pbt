@@ -2,7 +2,7 @@ Assets {
   Id: 3322809500413961428
   Name: "Custom Base Material from Fox Mob_zombie"
   PlatformAssetType: 13
-  SerializationVersion: 92
+  SerializationVersion: 94
   CustomMaterialAsset {
     BaseMaterialId: 6392793871545382780
     ParameterOverrides {

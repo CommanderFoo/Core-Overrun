@@ -714,5 +714,5 @@ Assets {
       AssetId: "Basic_Pistol"
     }
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
 }

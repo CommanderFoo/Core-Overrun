@@ -251,6 +251,8 @@ Assets {
         }
         Text {
           Text: "100 / 100"
+          FontAsset {
+          }
           Color {
             R: 1
             G: 1
@@ -291,5 +293,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
 }

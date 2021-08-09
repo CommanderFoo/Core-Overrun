@@ -1234,5 +1234,5 @@ Assets {
       AssetId: "Basic_Assault_Rifle"
     }
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
 }

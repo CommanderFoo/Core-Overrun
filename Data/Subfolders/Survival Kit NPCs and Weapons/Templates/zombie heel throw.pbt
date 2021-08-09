@@ -992,7 +992,7 @@ Assets {
         Name: "Plane Circle - One Sided"
         Transform {
           Location {
-            X: -8.36914063
+            X: -8.36914062
             Y: 0.0393676758
             Z: 4.529953e-06
           }
@@ -1119,7 +1119,7 @@ Assets {
         Transform {
           Location {
             X: -16.9449463
-            Y: 0.0668945313
+            Y: 0.0668945312
             Z: 5.48760414
           }
           Rotation {
@@ -1256,5 +1256,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
 }

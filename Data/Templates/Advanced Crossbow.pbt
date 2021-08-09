@@ -1098,7 +1098,7 @@ Assets {
           Location {
             X: 1172.56531
             Y: -1053.95959
-            Z: -0.000122070313
+            Z: -0.000122070312
           }
           Rotation {
           }
@@ -1195,5 +1195,5 @@ Assets {
       AssetId: "Advanced_Crossbow"
     }
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
 }

@@ -301,7 +301,7 @@ Assets {
         Transform {
           Location {
             X: 100
-            Z: 6.10351563e-05
+            Z: 6.10351562e-05
           }
           Rotation {
             Yaw: -6.10351526e-05
@@ -402,7 +402,7 @@ Assets {
         Transform {
           Location {
             X: 300
-            Z: 0.000122070313
+            Z: 0.000122070312
           }
           Rotation {
             Yaw: 1.65204954
@@ -787,7 +787,7 @@ Assets {
             Z: 204.029327
           }
           Rotation {
-            Yaw: -6.10351563e-05
+            Yaw: -6.10351562e-05
           }
           Scale {
             X: 1
@@ -1249,7 +1249,7 @@ Assets {
           Location {
             X: 300
             Y: -200
-            Z: 6.10351563e-05
+            Z: 6.10351562e-05
           }
           Rotation {
             Yaw: -89.9999924
@@ -1458,7 +1458,7 @@ Assets {
           Location {
             X: -261.309814
             Y: -79.44104
-            Z: 0.000122070313
+            Z: 0.000122070312
           }
           Rotation {
             Yaw: 87.1137619
@@ -1499,7 +1499,7 @@ Assets {
           Location {
             X: 299.83374
             Y: -95.6373901
-            Z: 0.000122070313
+            Z: 0.000122070312
           }
           Rotation {
           }
@@ -1539,7 +1539,7 @@ Assets {
           Location {
             X: 100
             Y: -200
-            Z: 6.10351563e-05
+            Z: 6.10351562e-05
           }
           Rotation {
             Yaw: -179.999985
@@ -1699,5 +1699,5 @@ Assets {
       AssetId: "Military_Barrier_05_Template"
     }
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
 }

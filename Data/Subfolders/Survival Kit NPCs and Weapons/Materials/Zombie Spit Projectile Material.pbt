@@ -2,7 +2,7 @@ Assets {
   Id: 4984917190543971664
   Name: "Zombie Spit Projectile Material"
   PlatformAssetType: 13
-  SerializationVersion: 92
+  SerializationVersion: 94
   CustomMaterialAsset {
     BaseMaterialId: 11767544275552772952
     ParameterOverrides {

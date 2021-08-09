@@ -179,7 +179,7 @@ Assets {
         Name: "bottle"
         Transform {
           Location {
-            X: -0.145507813
+            X: -0.145507812
             Y: -2.46685791
           }
           Rotation {
@@ -214,7 +214,7 @@ Assets {
         Name: "Cylinder - Bottom-Aligned"
         Transform {
           Location {
-            X: 0.000122070313
+            X: 0.000122070312
           }
           Rotation {
           }
@@ -263,7 +263,7 @@ Assets {
         Name: "Pipe"
         Transform {
           Location {
-            X: 0.000122070313
+            X: 0.000122070312
             Z: 14.5026493
           }
           Rotation {
@@ -313,7 +313,7 @@ Assets {
         Name: "Cone - Truncated Hollow Concave"
         Transform {
           Location {
-            X: 0.000122070313
+            X: 0.000122070312
             Z: 204.638794
           }
           Rotation {
@@ -363,7 +363,7 @@ Assets {
         Name: "Pipe"
         Transform {
           Location {
-            X: 0.000122070313
+            X: 0.000122070312
             Z: 284.419067
           }
           Rotation {
@@ -413,7 +413,7 @@ Assets {
         Name: "Ring - Thick"
         Transform {
           Location {
-            X: 0.000122070313
+            X: 0.000122070312
             Z: 301.534363
           }
           Rotation {
@@ -1056,5 +1056,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
 }

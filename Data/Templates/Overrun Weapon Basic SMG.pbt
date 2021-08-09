@@ -660,7 +660,7 @@ Assets {
           Location {
             X: 1191.18237
             Y: -1009.63391
-            Z: -0.000122070313
+            Z: -0.000122070312
           }
           Rotation {
           }
@@ -779,5 +779,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
 }

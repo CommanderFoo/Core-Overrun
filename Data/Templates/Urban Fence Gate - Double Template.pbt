@@ -836,7 +836,7 @@ Assets {
         Name: "RotationRoot2"
         Transform {
           Location {
-            X: 0.000122070313
+            X: 0.000122070312
             Y: 799.996826
           }
           Rotation {
@@ -1156,5 +1156,5 @@ Assets {
       AssetId: "Urban_Fence_Gate_-_Double_Template"
     }
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
 }

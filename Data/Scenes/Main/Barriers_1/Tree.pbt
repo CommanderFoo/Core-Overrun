@@ -8885,7 +8885,7 @@ Objects {
   Transform {
     Location {
       X: -1132.70166
-      Y: 35.0195313
+      Y: 35.0195312
       Z: 453.537048
     }
     Rotation {
@@ -11247,7 +11247,7 @@ Objects {
     Location {
       X: -2921.77612
       Y: -4805.85791
-      Z: 67.9414063
+      Z: 67.9414062
     }
     Rotation {
       Pitch: 43.8991928
@@ -12347,7 +12347,7 @@ Objects {
     Location {
       X: -2074.48706
       Y: -5177.10498
-      Z: 513.164063
+      Z: 513.164062
     }
     Rotation {
       Pitch: 85.3902283
@@ -13422,7 +13422,7 @@ Objects {
     Rotation {
       Pitch: -0.81381017
       Yaw: -91.1744308
-      Roll: 91.3164063
+      Roll: 91.3164062
     }
     Scale {
       X: 0.306267381
@@ -16800,7 +16800,7 @@ Objects {
     Location {
       X: 1622.98022
       Y: -1870.95068
-      Z: 67.9414063
+      Z: 67.9414062
     }
     Rotation {
       Pitch: 43.8992043
@@ -19121,7 +19121,7 @@ Objects {
     Location {
       X: -1404.22009
       Y: -1329.33252
-      Z: 67.9414063
+      Z: 67.9414062
     }
     Rotation {
       Pitch: 43.8991852
@@ -21713,7 +21713,7 @@ Objects {
     Location {
       X: 1807.20068
       Y: 3174.07715
-      Z: 67.9414063
+      Z: 67.9414062
     }
     Rotation {
       Pitch: 43.8991852
@@ -25098,7 +25098,7 @@ Objects {
     Location {
       X: 2402.23315
       Y: 6059.77246
-      Z: 67.9414063
+      Z: 67.9414062
     }
     Rotation {
       Pitch: 43.8992
@@ -25990,7 +25990,7 @@ Objects {
     Location {
       X: 2033.44482
       Y: 1384.09766
-      Z: 67.9414063
+      Z: 67.9414062
     }
     Rotation {
       Pitch: 43.8991928
@@ -27092,8 +27092,8 @@ Objects {
   Transform {
     Location {
       X: 2687.6084
-      Y: 730.039063
-      Z: 513.164063
+      Y: 730.039062
+      Z: 513.164062
     }
     Rotation {
       Pitch: 85.3902664
@@ -28172,7 +28172,7 @@ Objects {
     Rotation {
       Pitch: -0.813803315
       Yaw: -112.508759
-      Roll: 91.3164063
+      Roll: 91.3164062
     }
     Scale {
       X: 0.306267381
@@ -30510,7 +30510,7 @@ Objects {
   Transform {
     Location {
       X: 2058.97705
-      Y: 561.226563
+      Y: 561.226562
       Z: 665.994751
     }
     Rotation {
@@ -31012,7 +31012,7 @@ Objects {
   Name: "Large Wood Board 8m"
   Transform {
     Location {
-      X: 2194.01563
+      X: 2194.01562
       Y: 917.20752
       Z: 306.794067
     }
@@ -32051,7 +32051,7 @@ Objects {
   Transform {
     Location {
       X: -2661.7771
-      Y: 335.945313
+      Y: 335.945312
       Z: 71.5183258
     }
     Rotation {

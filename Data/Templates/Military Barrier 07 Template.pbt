@@ -209,7 +209,7 @@ Assets {
           Location {
             X: 244.206436
             Y: -259.762573
-            Z: 6.10351563e-05
+            Z: 6.10351562e-05
           }
           Rotation {
             Pitch: 90
@@ -255,7 +255,7 @@ Assets {
           Location {
             X: 240.847824
             Y: 264.701172
-            Z: 6.10351563e-05
+            Z: 6.10351562e-05
           }
           Rotation {
             Pitch: 90
@@ -1904,7 +1904,7 @@ Assets {
         Transform {
           Location {
             X: -239.82547
-            Y: 207.351563
+            Y: 207.351562
             Z: -5.7220459e-05
           }
           Rotation {
@@ -4306,7 +4306,7 @@ Assets {
           Rotation {
             Pitch: -0.81381017
             Yaw: -91.1744308
-            Roll: 91.3164063
+            Roll: 91.3164062
           }
           Scale {
             X: 0.306267381
@@ -8388,7 +8388,7 @@ Assets {
           Location {
             X: -415.440887
             Y: 596.307617
-            Z: -6.10351563e-05
+            Z: -6.10351562e-05
           }
           Rotation {
             Yaw: 110.558014
@@ -11084,5 +11084,5 @@ Assets {
       AssetId: "Military_Barrier_07_Template"
     }
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
 }

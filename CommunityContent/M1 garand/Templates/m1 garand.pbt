@@ -2298,6 +2298,6 @@ Assets {
   Marketplace {
     Description: "a gun that i made"
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
   DirectlyPublished: true
 }

@@ -1227,5 +1227,5 @@ Assets {
       AssetId: "Advanced_Pistol"
     }
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
 }

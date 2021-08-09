@@ -485,7 +485,7 @@ Assets {
           }
           Rotation {
             Yaw: 5.21765724e-05
-            Roll: -6.10351563e-05
+            Roll: -6.10351562e-05
           }
           Scale {
             X: 2.03605652
@@ -745,7 +745,7 @@ Assets {
         Name: "Geo"
         Transform {
           Location {
-            X: -198.695313
+            X: -198.695312
             Y: -14.3671875
             Z: -18.6317139
           }
@@ -800,7 +800,7 @@ Assets {
         Name: "Sphere"
         Transform {
           Location {
-            X: 198.070313
+            X: 198.070312
             Y: 13.328125
             Z: 91.8631592
           }
@@ -1055,7 +1055,7 @@ Assets {
         Name: "Spiral"
         Transform {
           Location {
-            X: 198.039063
+            X: 198.039062
             Y: 13.25
             Z: 107.170898
           }
@@ -1123,7 +1123,7 @@ Assets {
         Transform {
           Location {
             X: 198.0625
-            Y: 13.3164063
+            Y: 13.3164062
             Z: 94.3562
           }
           Rotation {
@@ -1189,8 +1189,8 @@ Assets {
         Name: "Sphere"
         Transform {
           Location {
-            X: 198.070313
-            Y: 13.3320313
+            X: 198.070312
+            Y: 13.3320312
             Z: 91.1547852
           }
           Rotation {
@@ -1457,7 +1457,7 @@ Assets {
         Name: "Pyramid - 3-Sided"
         Transform {
           Location {
-            X: 198.695313
+            X: 198.695312
             Y: 15.359375
             Z: 98.6991
           }
@@ -1509,7 +1509,7 @@ Assets {
         Name: "Pyramid - 3-Sided"
         Transform {
           Location {
-            X: 198.695313
+            X: 198.695312
             Y: 15.359375
             Z: 98.6991
           }
@@ -1562,7 +1562,7 @@ Assets {
         Name: "Pyramid - 3-Sided"
         Transform {
           Location {
-            X: 198.695313
+            X: 198.695312
             Y: 15.359375
             Z: 98.6991
           }
@@ -1615,7 +1615,7 @@ Assets {
         Name: "Pyramid - 3-Sided"
         Transform {
           Location {
-            X: 198.695313
+            X: 198.695312
             Y: 15.359375
             Z: 98.6991
           }
@@ -1668,7 +1668,7 @@ Assets {
         Name: "Pyramid - 3-Sided"
         Transform {
           Location {
-            X: 198.695313
+            X: 198.695312
             Y: 15.359375
             Z: 92.4840088
           }
@@ -1721,7 +1721,7 @@ Assets {
         Name: "Pyramid - 3-Sided"
         Transform {
           Location {
-            X: 198.695313
+            X: 198.695312
             Y: 15.359375
             Z: 92.4840088
           }
@@ -1774,7 +1774,7 @@ Assets {
         Name: "Pyramid - 3-Sided"
         Transform {
           Location {
-            X: 198.695313
+            X: 198.695312
             Y: 15.359375
             Z: 92.4840088
           }
@@ -1827,7 +1827,7 @@ Assets {
         Name: "Pyramid - 3-Sided"
         Transform {
           Location {
-            X: 198.695313
+            X: 198.695312
             Y: 15.359375
             Z: 92.4840088
           }
@@ -1880,7 +1880,7 @@ Assets {
         Name: "Pyramid - 3-Sided"
         Transform {
           Location {
-            X: 198.695313
+            X: 198.695312
             Y: 15.359375
             Z: 86.3609619
           }
@@ -1933,7 +1933,7 @@ Assets {
         Name: "Pyramid - 3-Sided"
         Transform {
           Location {
-            X: 198.695313
+            X: 198.695312
             Y: 15.359375
             Z: 86.3609619
           }
@@ -1986,7 +1986,7 @@ Assets {
         Name: "Pyramid - 3-Sided"
         Transform {
           Location {
-            X: 198.695313
+            X: 198.695312
             Y: 15.359375
             Z: 86.3609619
           }
@@ -2038,7 +2038,7 @@ Assets {
         Name: "Pyramid - 3-Sided"
         Transform {
           Location {
-            X: 198.695313
+            X: 198.695312
             Y: 15.359375
             Z: 86.3609619
           }
@@ -2092,7 +2092,7 @@ Assets {
         Transform {
           Location {
             X: 198.953125
-            Y: 19.3945313
+            Y: 19.3945312
             Z: 89.0606689
           }
           Rotation {
@@ -2284,6 +2284,6 @@ Assets {
   Marketplace {
     Description: "This Survival Kit NPCs and Weapons CC contains:\r\n\342\200\242A brain (prop)\r\n\342\200\242Survival weapons (rifles, bats, crossbow, knife, katana, revolver, smg, crowbar, stop sign, and pipe)\r\n\342\200\2429 x Militia NPCs (soldiers, police, regular people, dog)\r\n\342\200\24217 x Zombie NPCs (soldiers, police, regular people, dog, legs, fleshy skeletons)\r\n\r\nEnjoy!"
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
   DirectlyPublished: true
 }

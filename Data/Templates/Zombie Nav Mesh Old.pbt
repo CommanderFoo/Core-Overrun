@@ -3183,7 +3183,7 @@ Assets {
         Transform {
           Location {
             X: -812.00647
-            Y: -9839.14063
+            Y: -9839.14062
             Z: 6
           }
           Rotation {
@@ -4453,7 +4453,7 @@ Assets {
         Name: "Plane"
         Transform {
           Location {
-            X: 2659.14063
+            X: 2659.14062
             Y: -8818.09473
             Z: 6
           }
@@ -6527,7 +6527,7 @@ Assets {
         Transform {
           Location {
             X: -594.014282
-            Y: -4940.89063
+            Y: -4940.89062
             Z: 6
           }
           Rotation {
@@ -7136,7 +7136,7 @@ Assets {
         Name: "Plane"
         Transform {
           Location {
-            X: -555.226563
+            X: -555.226562
             Y: -2076.61768
             Z: 6
           }
@@ -11175,5 +11175,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
 }

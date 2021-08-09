@@ -357,5 +357,5 @@ Assets {
       AssetId: "Military_Fence_-_4m_Template"
     }
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
 }

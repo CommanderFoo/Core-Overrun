@@ -328,5 +328,5 @@ Assets {
       AssetId: "Craftsman_Wall_01_-_Garage_Door_1x_Tile_Template"
     }
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
 }

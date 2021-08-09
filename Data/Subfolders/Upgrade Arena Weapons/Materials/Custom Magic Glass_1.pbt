@@ -2,7 +2,7 @@ Assets {
   Id: 647429518550847612
   Name: "Custom Magic Glass_1"
   PlatformAssetType: 13
-  SerializationVersion: 92
+  SerializationVersion: 94
   CustomMaterialAsset {
     BaseMaterialId: 1742334019211745779
     ParameterOverrides {

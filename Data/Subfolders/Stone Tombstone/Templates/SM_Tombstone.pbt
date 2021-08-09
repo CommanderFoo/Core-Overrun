@@ -639,7 +639,7 @@ Assets {
         Transform {
           Location {
             X: -8.65710449
-            Y: 0.0219726563
+            Y: 0.0219726562
             Z: 121.908691
           }
           Rotation {
@@ -1158,6 +1158,6 @@ Assets {
   Marketplace {
     Description: "Just a basic stone tombstone with a bit of decoration. Nothing too fancy."
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
   DirectlyPublished: true
 }

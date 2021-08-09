@@ -209,7 +209,7 @@ Assets {
           Location {
             X: -1.04904175e-05
             Y: 15.000001
-            Z: -6.10351563e-05
+            Z: -6.10351562e-05
           }
           Rotation {
             Pitch: 44.9999504
@@ -419,5 +419,5 @@ Assets {
       AssetId: "Urban_Fence_-_Corner_Template"
     }
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
 }

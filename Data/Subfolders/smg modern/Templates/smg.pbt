@@ -1635,7 +1635,7 @@ Assets {
             Z: 52.669014
           }
           Rotation {
-            Pitch: -0.000122070313
+            Pitch: -0.000122070312
             Yaw: 0.000100745114
             Roll: 0.000128065891
           }
@@ -2042,6 +2042,6 @@ Assets {
   Marketplace {
     Description: "an smg"
   }
-  SerializationVersion: 92
+  SerializationVersion: 94
   DirectlyPublished: true
 }
