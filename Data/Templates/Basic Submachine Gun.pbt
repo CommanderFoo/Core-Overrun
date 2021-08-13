@@ -750,5 +750,5 @@ Assets {
       AssetId: "Basic_Submachine_Gun"
     }
   }
-  SerializationVersion: 94
+  SerializationVersion: 95
 }

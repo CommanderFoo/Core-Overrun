@@ -221,5 +221,5 @@ Assets {
       AssetId: "tm_fan_candle_sconce_001_lit_01"
     }
   }
-  SerializationVersion: 94
+  SerializationVersion: 95
 }

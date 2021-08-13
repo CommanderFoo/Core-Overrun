@@ -1,17 +1,9 @@
 Entries {
   Key {
-    StringVar: "total_money_all_time"
+    StringVar: "welcome"
   }
   SimpleValue {
-    IntVar: 85440
-  }
-}
-Entries {
-  Key {
-    StringVar: "total_kills_v2"
-  }
-  SimpleValue {
-    IntVar: 501
+    IntVar: 1
   }
 }
 Entries {
@@ -24,42 +16,10 @@ Entries {
 }
 Entries {
   Key {
-    StringVar: "total_spent"
+    StringVar: "total_games"
   }
   SimpleValue {
-    IntVar: 78450
-  }
-}
-Entries {
-  Key {
-    StringVar: "total_revives"
-  }
-  SimpleValue {
-    IntVar: 9
-  }
-}
-Entries {
-  Key {
-    StringVar: "total_spitters"
-  }
-  SimpleValue {
-    IntVar: 45
-  }
-}
-Entries {
-  Key {
-    StringVar: "total_perks"
-  }
-  SimpleValue {
-    IntVar: 5
-  }
-}
-Entries {
-  Key {
-    StringVar: "total_headshots"
-  }
-  SimpleValue {
-    IntVar: 90
+    IntVar: 86
   }
 }
 Entries {
@@ -72,18 +32,10 @@ Entries {
 }
 Entries {
   Key {
-    StringVar: "total_games"
+    StringVar: "total_barriers"
   }
   SimpleValue {
-    IntVar: 82
-  }
-}
-Entries {
-  Key {
-    StringVar: "total_deaths"
-  }
-  SimpleValue {
-    IntVar: 4
+    IntVar: 17
   }
 }
 Entries {
@@ -96,10 +48,66 @@ Entries {
 }
 Entries {
   Key {
-    StringVar: "welcome"
+    StringVar: "total_revives"
   }
   SimpleValue {
-    IntVar: 1
+    IntVar: 9
+  }
+}
+Entries {
+  Key {
+    StringVar: "total_kills_v2"
+  }
+  SimpleValue {
+    IntVar: 501
+  }
+}
+Entries {
+  Key {
+    StringVar: "total_deaths"
+  }
+  SimpleValue {
+    IntVar: 4
+  }
+}
+Entries {
+  Key {
+    StringVar: "total_spitters"
+  }
+  SimpleValue {
+    IntVar: 45
+  }
+}
+Entries {
+  Key {
+    StringVar: "total_spent"
+  }
+  SimpleValue {
+    IntVar: 78450
+  }
+}
+Entries {
+  Key {
+    StringVar: "total_money_all_time"
+  }
+  SimpleValue {
+    IntVar: 85440
+  }
+}
+Entries {
+  Key {
+    StringVar: "total_headshots"
+  }
+  SimpleValue {
+    IntVar: 90
+  }
+}
+Entries {
+  Key {
+    StringVar: "total_perks"
+  }
+  SimpleValue {
+    IntVar: 5
   }
 }
 Entries {
@@ -108,13 +116,5 @@ Entries {
   }
   SimpleValue {
     IntVar: 2
-  }
-}
-Entries {
-  Key {
-    StringVar: "total_barriers"
-  }
-  SimpleValue {
-    IntVar: 17
   }
 }

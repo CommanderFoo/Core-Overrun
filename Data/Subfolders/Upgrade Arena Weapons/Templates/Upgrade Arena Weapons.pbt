@@ -64,5 +64,5 @@ Assets {
     Version: "1.0.0"
     Description: "The 8 unique weapons from Upgrade Arena - they\'ve been simplified to use normal reloading, and have standard pickup trigger boxes, but other than that work as expected! Try out the health draining Vamp, the hectic Orber, or the up close Energy Sword!"
   }
-  SerializationVersion: 94
+  SerializationVersion: 95
 }

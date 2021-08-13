@@ -1,8 +1,8 @@
 GlobalEntries {
   Id: "93d6eaf2514940a08c5481a4c03c1ee3"
   Name: "CommanderFoo"
-  ScoreFormatted: "501.0"
-  DateTime: "2021-07-14T08:21:45.004Z"
+  ScoreFormatted: "514.0"
+  DateTime: "2021-08-11T16:58:36.076Z"
 }
 GlobalEntries {
   Id: "BOT_Bot1"

@@ -43,5 +43,5 @@ Assets {
     Version: "1.0.0"
     Description: "a gun that i made"
   }
-  SerializationVersion: 94
+  SerializationVersion: 95
 }

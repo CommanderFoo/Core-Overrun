@@ -644,5 +644,5 @@ Assets {
       AssetId: "Craftsman_Wall_01_-_Basic_Door_Template"
     }
   }
-  SerializationVersion: 94
+  SerializationVersion: 95
 }

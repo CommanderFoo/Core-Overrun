@@ -43,5 +43,5 @@ Assets {
     Version: "1.0.0"
     Description: "an smg"
   }
-  SerializationVersion: 94
+  SerializationVersion: 95
 }
