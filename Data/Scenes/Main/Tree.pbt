@@ -127,11 +127,52 @@ Objects {
   ChildIds: 13373581018023303506
   ChildIds: 7276019051762307246
   ChildIds: 13829569023889284383
+  ChildIds: 4004506248491049175
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:forceoff"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 4004506248491049175
+  Name: "Signs"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10718600617090727217
+  ChildIds: 5609577277109531277
+  ChildIds: 8311298614326454446
+  ChildIds: 15512521920309065329
+  ChildIds: 17554359654839191259
+  ChildIds: 12417461090657338935
+  ChildIds: 17324010163477458942
+  ChildIds: 11287324496612658721
+  ChildIds: 8613412536015895406
+  ChildIds: 13168175956479801782
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -141,6 +182,437 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 13168175956479801782
+  Name: "Animated Neon Sign - Zombie Hand"
+  Transform {
+    Location {
+      X: 499.098083
+      Y: -10358.415
+      Z: 317.364899
+    }
+    Rotation {
+      Yaw: -42.5849762
+    }
+    Scale {
+      X: 1.4579761
+      Y: 1.4579761
+      Z: 1.4579761
+    }
+  }
+  ParentId: 4004506248491049175
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6257456198464523050
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 8613412536015895406
+  Name: "Animated Neon Sign - Witch Hat"
+  Transform {
+    Location {
+      X: -1200
+      Y: -6100
+      Z: 900
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4004506248491049175
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9314793623728955887
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 11287324496612658721
+  Name: "Animated Neon Sign - Witch"
+  Transform {
+    Location {
+      X: 370.361084
+      Y: -4415.77734
+      Z: 1394.11292
+    }
+    Rotation {
+      Pitch: -11.7798491
+      Yaw: -1.46023571
+      Roll: -0.323944062
+    }
+    Scale {
+      X: 1.94610119
+      Y: 1.94610119
+      Z: 1.94610119
+    }
+  }
+  ParentId: 4004506248491049175
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12944599312357604926
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 17324010163477458942
+  Name: "Animated Neon Sign - Zombie Head"
+  Transform {
+    Location {
+      X: -100
+      Y: 5117.63965
+      Z: 400
+    }
+    Rotation {
+      Yaw: 89.9999924
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4004506248491049175
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14351498267975475897
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 12417461090657338935
+  Name: "Animated Neon Sign - Haunted House"
+  Transform {
+    Location {
+      X: -332.972107
+      Y: 2578.2644
+      Z: 581.252747
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4004506248491049175
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 5587158830151446444
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 17554359654839191259
+  Name: "Animated Neon Sign - Dancing Skeleton"
+  Transform {
+    Location {
+      X: -786.811707
+      Y: 1812.4873
+      Z: 502.679199
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1.65867162
+      Y: 1.65867162
+      Z: 1.65867162
+    }
+  }
+  ParentId: 4004506248491049175
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 4473014690368599860
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 15512521920309065329
+  Name: "Animated Neon Sign - Ghost"
+  Transform {
+    Location {
+      X: 2153.92896
+      Y: -1800
+      Z: 300
+    }
+    Rotation {
+      Yaw: 63.1850929
+    }
+    Scale {
+      X: 0.404175609
+      Y: 0.404175609
+      Z: 0.404175609
+    }
+  }
+  ParentId: 4004506248491049175
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 16752093562801861924
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 8311298614326454446
+  Name: "Animated Neon Sign - Bat"
+  Transform {
+    Location {
+      X: -419.999634
+      Y: -4750
+      Z: 900
+    }
+    Rotation {
+      Yaw: 89.9999924
+    }
+    Scale {
+      X: 2.25
+      Y: 2.25
+      Z: 2.25
+    }
+  }
+  ParentId: 4004506248491049175
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6246995094840274941
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 5609577277109531277
+  Name: "Animated Neon Sign - Kitty"
+  Transform {
+    Location {
+      X: 1873.0144
+      Y: 1737.27466
+      Z: 447.816223
+    }
+    Rotation {
+      Yaw: -89.9999924
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4004506248491049175
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 8807187984402176657
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
   }
 }
 Objects {
@@ -7294,7 +7766,6 @@ Objects {
   ChildIds: 9938044284476972627
   ChildIds: 10954633374088544335
   ChildIds: 270122298350251229
-  ChildIds: 6441201814926908554
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -7309,54 +7780,6 @@ Objects {
   }
   Folder {
     IsGroup: true
-  }
-}
-Objects {
-  Id: 6441201814926908554
-  Name: "Bat Decoration"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4843667413334080784
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 14212472712131920880
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Bat Decoration"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 3167.06885
-            Y: 771.73877
-            Z: -124.058014
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: -110.094894
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 0.392965794
-            Y: 0.392965794
-            Z: 0.392965794
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 4330889700934483029
-    }
   }
 }
 Objects {
@@ -7731,6 +8154,7 @@ Objects {
           Name: "Rotation"
           Rotator {
             Pitch: 8.9971
+            Yaw: 180
           }
         }
       }

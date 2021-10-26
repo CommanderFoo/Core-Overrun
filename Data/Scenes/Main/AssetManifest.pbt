@@ -35,6 +35,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16752093562801861924
+  Name: "Animated Neon Sign - Ghost"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "fxsm_neonSign_ghost"
+  }
+}
+Assets {
   Id: 16742125756419714110
   Name: "BG Flat 004"
   PlatformAssetType: 9
@@ -134,6 +143,15 @@ Assets {
   }
 }
 Assets {
+  Id: 14351498267975475897
+  Name: "Animated Neon Sign - Zombie Head"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "fxsm_neonSign_frank"
+  }
+}
+Assets {
   Id: 14243630418685584405
   Name: "Icon Skull"
   PlatformAssetType: 9
@@ -176,6 +194,15 @@ Assets {
   PrimaryAsset {
     AssetType: "VfxBlueprintAssetRef"
     AssetId: "fxbp_rain_volume_vfx"
+  }
+}
+Assets {
+  Id: 12944599312357604926
+  Name: "Animated Neon Sign - Witch"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "fxsm_neonSign_witch"
   }
 }
 Assets {
@@ -332,6 +359,15 @@ Assets {
   }
 }
 Assets {
+  Id: 9314793623728955887
+  Name: "Animated Neon Sign - Witch Hat"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "fxsm_neonSign_witchHat"
+  }
+}
+Assets {
   Id: 9243343190549785133
   Name: "Bone Human Spine 01"
   PlatformAssetType: 1
@@ -383,6 +419,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_basic_emissive_001"
+  }
+}
+Assets {
+  Id: 8807187984402176657
+  Name: "Animated Neon Sign - Kitty"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "fxsm_neonSign_kitty"
   }
 }
 Assets {
@@ -480,6 +525,24 @@ Assets {
   }
 }
 Assets {
+  Id: 6257456198464523050
+  Name: "Animated Neon Sign - Zombie Hand"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "fxsm_neonSign_zombieHand"
+  }
+}
+Assets {
+  Id: 6246995094840274941
+  Name: "Animated Neon Sign - Bat"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "fxsm_neonSign_flappyBat"
+  }
+}
+Assets {
   Id: 6241908446144818512
   Name: "Flower Wild Lily 02"
   PlatformAssetType: 1
@@ -495,6 +558,15 @@ Assets {
   PrimaryAsset {
     AssetType: "BlueprintAssetRef"
     AssetId: "CORESKY_StarDome"
+  }
+}
+Assets {
+  Id: 5587158830151446444
+  Name: "Animated Neon Sign - Haunted House"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "fxsm_neonSign_hauntedHouse"
   }
 }
 Assets {
@@ -540,6 +612,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cone_truncated_hollow_001"
+  }
+}
+Assets {
+  Id: 4473014690368599860
+  Name: "Animated Neon Sign - Dancing Skeleton"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "fxsm_neonSign_skeleton"
   }
 }
 Assets {
