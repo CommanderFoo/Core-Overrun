@@ -5,7 +5,7 @@
 	
 	Handles melee combat interaction of attack abilities on weapons such as swords.
 --]]
-
+local YOOTIL = require(script:GetCustomProperty("YOOTIL"))
 
 -- Module dependencies
 local MODULE = require( script:GetCustomProperty("ModuleManager") )
@@ -81,7 +81,7 @@ end
 function OnDamageTaken(object, dmg, source, impactPosition, impactRotation)
 	if source == EQUIPMENT.owner and dmg.sourceAbility == ABILITY then
 		if object:IsA("Player") then
-			Events.BroadcastToAllPlayers("MeleeImpact", ABILITY.id, impactPosition, impactRotation)
+			YOOTIL.Events.broadcast_to_all_players("MeleeImpact", ABILITY.id, impactPosition, impactRotation)
 		end
 		
 		BroadcastDamageFeedback(dmg.amount, impactPosition)
@@ -93,7 +93,7 @@ local damagedListener = Events.Connect("CombatWrapAPI.OnDamageTaken", OnDamageTa
 function BroadcastDamageFeedback(amount, position)
 	local player = EQUIPMENT.owner
 	if Object.IsValid(player) then
-		Events.BroadcastToPlayer(player, "ShowDamageFeedback", amount, position)
+		YOOTIL.Events.broadcast_to_player(player, "ShowDamageFeedback", amount, position)
 	end
 end
 

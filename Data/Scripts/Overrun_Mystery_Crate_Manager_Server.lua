@@ -1,4 +1,6 @@
-﻿local crates = script:GetCustomProperty("crates"):WaitForObject()
+﻿local YOOTIL = require(script:GetCustomProperty("YOOTIL"))
+
+local crates = script:GetCustomProperty("crates"):WaitForObject()
 
 local ids = {}
 local random_enabled_crate = nil
@@ -28,14 +30,14 @@ function random_crate()
 	random_enabled_crate = to_enable
 
 	Events.Broadcast("on_crates_update", to_disable, to_enable)	
-	Events.BroadcastToAllPlayers("on_crates_update", to_disable, to_enable)
+	YOOTIL.Events.broadcast_to_all_players("on_crates_update", to_disable, to_enable)
 
 	picking_random = false
 end
 
 function update_players_crate()
 	if(not picking_random) then
-		Events.BroadcastToAllPlayers("on_crates_update", nil, random_enabled_crate)
+		YOOTIL.Events.broadcast_to_all_players("on_crates_update", nil, random_enabled_crate)
 	end
 end
 

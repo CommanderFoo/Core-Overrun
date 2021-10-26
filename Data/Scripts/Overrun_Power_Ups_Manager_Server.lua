@@ -1,4 +1,6 @@
-﻿local container = script:GetCustomProperty("container"):WaitForObject()
+﻿local YOOTIL = require(script:GetCustomProperty("YOOTIL"))
+
+local container = script:GetCustomProperty("container"):WaitForObject()
 local power_up_chance = script:GetCustomProperty("power_up_chance")
 
 local random_power_ups = {
@@ -51,7 +53,7 @@ local power_up_handlers = {
 	end,
 
 	instant_kill_picked_up = function(name)
-		Events.BroadcastToAllPlayers("on_notification", "instantkill", name)
+		YOOTIL.Events.broadcast_to_all_players("on_notification", "instantkill", name)
 		Events.Broadcast("on_power_up", "instant_kill", true)
 
 		if(instant_kill_task ~= nil) then
@@ -61,7 +63,7 @@ local power_up_handlers = {
 		instant_kill_task = Task.Spawn(function()
 			Task.Wait(instant_kill_duration)
 			Events.Broadcast("on_power_up", "instant_kill", false)
-			Events.BroadcastToAllPlayers("on_instant_kill_ended")
+			YOOTIL.Events.broadcast_to_all_players("on_instant_kill_ended")
 			instant_kill_task:Cancel()
 			instant_kill_task = nil
 		end)
@@ -74,7 +76,7 @@ local power_up_handlers = {
 	end,
 
 	double_points_picked_up = function(name)
-		Events.BroadcastToAllPlayers("on_notification", "doublepoints", name)
+		YOOTIL.Events.broadcast_to_all_players("on_notification", "doublepoints", name)
 		Events.Broadcast("on_power_up", "double_points", true)
 
 		if(double_points_task ~= nil) then
@@ -84,7 +86,7 @@ local power_up_handlers = {
 		double_points_task = Task.Spawn(function()
 			Task.Wait(double_points_duration)
 			Events.Broadcast("on_power_up", "double_points", false)
-			Events.BroadcastToAllPlayers("on_double_points_ended")
+			YOOTIL.Events.broadcast_to_all_players("on_double_points_ended")
 			double_points_task:Cancel()
 			double_points_task = nil
 		end)
@@ -97,7 +99,7 @@ local power_up_handlers = {
 	end,
 
 	max_ammo_picked_up = function(name)
-		Events.BroadcastToAllPlayers("on_notification", "maxammo", name)
+		YOOTIL.Events.broadcast_to_all_players("on_notification", "maxammo", name)
 		Events.Broadcast("on_power_up_max_ammo")
 	end
 
@@ -138,6 +140,6 @@ Events.Connect("on_spawn_random_power_up", function(pos_x, pos_y, rot_z)
 end)
 
 Events.Connect("on_give_max_ammo", function()
-	Events.BroadcastToAllPlayers("on_notification", "maxammogive")
+	YOOTIL.Events.broadcast_to_all_players("on_notification", "maxammogive")
 	Events.Broadcast("on_power_up_max_ammo")
 end)

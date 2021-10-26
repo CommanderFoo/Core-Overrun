@@ -419,5 +419,5 @@ Assets {
       AssetId: "Urban_Fence_-_Corner_Template"
     }
   }
-  SerializationVersion: 95
+  SerializationVersion: 101
 }

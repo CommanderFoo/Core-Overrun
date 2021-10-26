@@ -31,5 +31,6 @@ end
 API.Utils = API.require("Utils")
 API.Tween = API.require("Tween")
 API.Vector3 = API.require("Vector3")
+API.Events = API.require("Events")
 
 return API

@@ -73,7 +73,7 @@ function repair_barrier_part()
 		health = max_health
 		repair_task:Cancel()
 		repair_task = nil
-		root:SetNetworkedCustomProperty("is_repairing", false)
+		root:SetCustomProperty("is_repairing", false)
 	end
 
 	-- Add a blocker so that when updating the barrier health it
@@ -81,13 +81,13 @@ function repair_barrier_part()
 	-- health without a bar being removed and breaking the barrier
 	-- completely which would block zombies.
 
-	root:SetNetworkedCustomProperty("block_damage", true)
-	root:SetNetworkedCustomProperty("current_health", math.min(health, 60))
-	root:SetNetworkedCustomProperty("block_damage", false)
+	root:SetCustomProperty("block_damage", true)
+	root:SetCustomProperty("current_health", math.min(health, 60))
+	root:SetCustomProperty("block_damage", false)
 end
 
 function start_repair()
-	root:SetNetworkedCustomProperty("is_repairing", true)
+	root:SetCustomProperty("is_repairing", true)
 
 	repair_task = Task.Spawn(function()		
 		repair_barrier_part()
@@ -154,4 +154,4 @@ end
 trigger.beginOverlapEvent:Connect(on_enter_trigger)
 trigger.endOverlapEvent:Connect(on_exit_trigger)
 
-root.networkedPropertyChangedEvent:Connect(on_property_changed)
+root.customPropertyChangedEvent:Connect(on_property_changed)

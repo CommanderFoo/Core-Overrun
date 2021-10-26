@@ -91,6 +91,12 @@ Objects {
         SelfId: 7926792424440722291
       }
     }
+    Overrides {
+      Name: "cs:YOOTIL"
+      AssetReference {
+        Id: 16622261663679835299
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"

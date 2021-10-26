@@ -1,4 +1,6 @@
-﻿local starting_weapon = script:GetCustomProperty("starting_weapon")
+﻿local YOOTIL = require(script:GetCustomProperty("YOOTIL"))
+
+local starting_weapon = script:GetCustomProperty("starting_weapon")
 local Overrun_Weapon_Lookup = script:GetCustomProperty("Overrun_Weapon_Lookup"):WaitForObject()
 local debug_weapon = script:GetCustomProperty("debug_weapon")
 
@@ -49,7 +51,7 @@ function bought_item(player, asset_id, play_audio)
 
 				new_weapon:Equip(player)
 
-				Events.BroadcastToPlayer(player, "on_purchase_complete", new_weapon:GetCustomProperty("is_melee"), play_audio)
+				YOOTIL.Events.broadcast_to_player(player, "on_purchase_complete", new_weapon:GetCustomProperty("is_melee"), play_audio)
 			end
 		end
 	end

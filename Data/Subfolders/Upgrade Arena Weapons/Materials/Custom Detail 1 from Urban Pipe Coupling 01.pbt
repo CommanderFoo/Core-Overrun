@@ -2,7 +2,7 @@ Assets {
   Id: 4255012639854813479
   Name: "Custom Detail 1 from Urban Pipe Coupling 01"
   PlatformAssetType: 13
-  SerializationVersion: 95
+  SerializationVersion: 101
   CustomMaterialAsset {
     BaseMaterialId: 17298163846977474670
     ParameterOverrides {

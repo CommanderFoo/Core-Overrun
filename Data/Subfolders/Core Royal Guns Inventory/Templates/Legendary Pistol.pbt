@@ -2454,6 +2454,6 @@ Assets {
   Marketplace {
     Description: "this are the gus form core roual so the inventory to work"
   }
-  SerializationVersion: 95
+  SerializationVersion: 101
   DirectlyPublished: true
 }

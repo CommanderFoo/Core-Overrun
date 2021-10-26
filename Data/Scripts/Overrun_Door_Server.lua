@@ -1,4 +1,6 @@
-﻿local trigger = script:GetCustomProperty("Trigger"):WaitForObject()
+﻿local YOOTIL = require(script:GetCustomProperty("YOOTIL"))
+
+local trigger = script:GetCustomProperty("Trigger"):WaitForObject()
 local geo = script:GetCustomProperty("Geo"):WaitForObject()
 local root = script:GetCustomProperty("root"):WaitForObject()
 
@@ -21,7 +23,7 @@ function on_trigger_enter(t, obj)
 				local money = obj:GetResource("money")
 
 				if(money >= cost) then
-					Events.BroadcastToPlayer(obj, "on_audio_purchase")
+					YOOTIL.Events.broadcast_to_player(obj, "on_audio_purchase")
 					
 					obj:SetResource("money", math.max(0, money - cost))
 					obj:AddResource("total_barriers", 1)
@@ -32,7 +34,7 @@ function on_trigger_enter(t, obj)
 					geo.visibility = Visibility.FORCE_OFF
 					geo.collision = Collision.FORCE_OFF
 					is_open = true
-					trigger:SetNetworkedCustomProperty("opened", true)
+					trigger:SetCustomProperty("opened", true)
 					--Events.BroadcastToAllPlayers("on_notification", "barrier", player.name)
 				end
 			end
@@ -44,7 +46,7 @@ function reset_door()
 	geo.visibility = Visibility.FORCE_ON
 	geo.collision = Collision.FORCE_ON
 	is_open = false
-	trigger:SetNetworkedCustomProperty("opened", false)
+	trigger:SetCustomProperty("opened", false)
 end
 
 function on_trigger_exit(t, obj)

@@ -65,8 +65,8 @@ function spawn_pod(round)
 				pod_health = math.floor(((round / 6) * pod_health) + 0.5)
 			end
 
-			current_item:SetNetworkedCustomProperty("CurrentHealth", pod_health);
-			current_item:SetNetworkedCustomProperty("max_health", pod_health);
+			current_item:SetCustomProperty("CurrentHealth", pod_health);
+			current_item:SetCustomProperty("max_health", pod_health);
 		
 			tween = YOOTIL.Tween:new(1.2, {v = 3000}, {v = 0}, "inExpo")
 			
@@ -79,8 +79,8 @@ function spawn_pod(round)
 			end)
 		
 			tween:on_complete(function()
-				current_item:SetNetworkedCustomProperty("landed", true)
-				Events.BroadcastToAllPlayers("on_notification", "toxicpod")
+				current_item:SetCustomProperty("landed", true)
+				YOOTIL.Events.broadcast_to_all_players("on_notification", "toxicpod")
 				tween = nil
 			end)
 		end

@@ -32,7 +32,7 @@ end
 
 
 local id = DESTRUCTIBLE_MANAGER().Register(script)
-ROOT:SetNetworkedCustomProperty("ObjectId", id)
+ROOT:SetCustomProperty("ObjectId", id)
 
 function ApplyDamage(dmg, source, position, rotation)
 	if(source:IsA("Player")) then
@@ -63,5 +63,5 @@ function GetHealth()
 end
 
 function SetHealth(value)
-	ROOT:SetNetworkedCustomProperty("current_health", value)
+	ROOT:SetCustomProperty("current_health", value)
 end

@@ -1,4 +1,6 @@
-﻿local root = script:GetCustomProperty("root"):WaitForObject()
+﻿local YOOTIL = require(script:GetCustomProperty("YOOTIL"))
+
+local root = script:GetCustomProperty("root"):WaitForObject()
 local trigger = root:GetCustomProperty("trigger"):WaitForObject()
 
 local in_zone = false
@@ -27,7 +29,7 @@ function on_trigger_enter(t, obj)
 						obj:AddResource("total_spent", upgrade_price)
 						
 						Events.Broadcast("on_bought_item", obj, upgrade_asset_id, true)
-						Events.BroadcastToPlayer(obj, "on_weapon_tier_changed")
+						YOOTIL.Events.broadcast_to_player(obj, "on_weapon_tier_changed")
 
 						obj:SetResource("money", math.max(0, money - upgrade_price))
 					end

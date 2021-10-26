@@ -153,7 +153,7 @@ function SetState(newState)
 	stateTime = 0
 	
 	if Object.IsValid(ROOT) then
-		ROOT:SetNetworkedCustomProperty("CurrentState", newState)
+		ROOT:SetCustomProperty("CurrentState", newState)
 	end
 end
 
@@ -883,7 +883,7 @@ function PlayEngageEffect()
 	end
 end
 
-ROOT.networkedPropertyChangedEvent:Connect(OnPropertyChanged)
+ROOT.customPropertyChangedEvent:Connect(OnPropertyChanged)
 --]]
 
 NPC_MANAGER().Register(script)

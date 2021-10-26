@@ -43,5 +43,5 @@ Assets {
     Version: "1.0.0"
     Description: "Burning, Rusted Barrel for any camping, survival or apocalyptic scenes. \r\n\r\nFire and burning wood inside. \r\n\r\nEnjoy\r\n\r\nNDG"
   }
-  SerializationVersion: 95
+  SerializationVersion: 101
 }

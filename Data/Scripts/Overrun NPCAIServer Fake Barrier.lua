@@ -62,13 +62,13 @@ function on_property_changed(obj, prop)
 		end
 
 		if(the_health <= (max_health - health_per_bar)) then
-			root:SetNetworkedCustomProperty("can_repair", true)
-			root:SetNetworkedCustomProperty("is_repaired", false)
+			root:SetCustomProperty("can_repair", true)
+			root:SetCustomProperty("is_repaired", false)
 		elseif(the_health > (max_health - health_per_bar)) then
-			root:SetNetworkedCustomProperty("can_repair", false)
-			root:SetNetworkedCustomProperty("is_repaired", true)
+			root:SetCustomProperty("can_repair", false)
+			root:SetCustomProperty("is_repaired", true)
 		end
 	end
 end
 
-root.networkedPropertyChangedEvent:Connect(on_property_changed)
+root.customPropertyChangedEvent:Connect(on_property_changed)

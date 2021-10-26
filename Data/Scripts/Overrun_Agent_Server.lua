@@ -47,7 +47,7 @@ function follow_path(path)
 	end
 
 	follow_path_task = Task.Spawn(function()
-		agent:SetNetworkedCustomProperty("moving", true)
+		agent:SetCustomProperty("moving", true)
 
 		for _, waypoint in pairs(path) do
 			local direction = waypoint - agent:GetWorldPosition()
@@ -63,7 +63,7 @@ function follow_path(path)
 
 		agent:StopMove()
 		agent:StopRotate()
-		agent:SetNetworkedCustomProperty("moving", false)
+		agent:SetCustomProperty("moving", false)
 
 		if(follow_barrier) then
 			follow_barrier:Cancel()

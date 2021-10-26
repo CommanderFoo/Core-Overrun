@@ -1158,6 +1158,6 @@ Assets {
   Marketplace {
     Description: "Just a basic stone tombstone with a bit of decoration. Nothing too fancy."
   }
-  SerializationVersion: 95
+  SerializationVersion: 101
   DirectlyPublished: true
 }

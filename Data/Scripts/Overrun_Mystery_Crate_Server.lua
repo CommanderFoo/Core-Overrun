@@ -49,12 +49,12 @@ local player_events = {}
 
 function disable_crate()
 	has_skull = true
-	trigger:SetNetworkedCustomProperty("skull", true)
+	trigger:SetCustomProperty("skull", true)
 end
 
 function enable_crate()
 	has_skull = false
-	trigger:SetNetworkedCustomProperty("skull", false)
+	trigger:SetCustomProperty("skull", false)
 end
 
 if(disabled) then
@@ -64,7 +64,7 @@ end
 function Tick()
 	if(open) then
 		if(time() > (open_time + time_until_take_weapon)) then
-			trigger:SetNetworkedCustomProperty("can_take_weapon", true)
+			trigger:SetCustomProperty("can_take_weapon", true)
 		end
 	end
 end
@@ -104,20 +104,20 @@ function on_trigger_enter(t, obj)
 						
 						open = true
 
-						trigger:SetNetworkedCustomProperty("weapon_index", random_index)
-						trigger:SetNetworkedCustomProperty("state", "open")
-						trigger:SetNetworkedCustomProperty("player_purchased", obj.id)
-						trigger:SetNetworkedCustomProperty("skull", has_skull)
+						trigger:SetCustomProperty("weapon_index", random_index)
+						trigger:SetCustomProperty("state", "open")
+						trigger:SetCustomProperty("player_purchased", obj.id)
+						trigger:SetCustomProperty("skull", has_skull)
 
 						Task.Spawn(function()
 							Task.Wait(time_to_open + time_to_stay_open)
-							trigger:SetNetworkedCustomProperty("state", "close")
+							trigger:SetCustomProperty("state", "close")
 
 							Task.Wait(time_to_close)
-							trigger:SetNetworkedCustomProperty("player_purchased", "")
-							trigger:SetNetworkedCustomProperty("weapon_index", 0)
-							trigger:SetNetworkedCustomProperty("weapon_took", false)
-							trigger:SetNetworkedCustomProperty("can_take_weapon", false)
+							trigger:SetCustomProperty("player_purchased", "")
+							trigger:SetCustomProperty("weapon_index", 0)
+							trigger:SetCustomProperty("weapon_took", false)
+							trigger:SetCustomProperty("can_take_weapon", false)
 
 							if(has_skull) then
 								total_spins = 0
@@ -129,7 +129,7 @@ function on_trigger_enter(t, obj)
 					end
 				elseif(player_purchased == obj.id and open and not has_skull and not trigger:GetCustomProperty("weapon_took") and trigger:GetCustomProperty("can_take_weapon")) then
 					Events.Broadcast("on_bought_item", obj, assets[trigger:GetCustomProperty("weapon_index")], false)
-					trigger:SetNetworkedCustomProperty("weapon_took", true)
+					trigger:SetCustomProperty("weapon_took", true)
 				end
 			end
 		end)

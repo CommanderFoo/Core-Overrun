@@ -1,4 +1,6 @@
-﻿local Spawner = script.parent:GetCustomProperty("Overrun_Spawner_Server"):WaitForObject()
+﻿local YOOTIL = require(script:GetCustomProperty("YOOTIL"))
+
+local Spawner = script.parent:GetCustomProperty("Overrun_Spawner_Server"):WaitForObject()
 
 --[[
 	NPCAttack - Server
@@ -224,7 +226,7 @@ function ApplyDamage(dmg, source, position, rotation)
 		
 		local money = ROOT:GetCustomProperty("money_per_hit")
 
-		Events.BroadcastToPlayer(source, "on_zombie_hit", amount, impactPosition)
+		YOOTIL.Events.broadcast_to_player(source, "on_zombie_hit", amount, impactPosition)
 		Events.Broadcast("ObjectDamaged", id, prevHealth, amount, impactPosition, impactRotation, source)
 		--Events.BroadcastToAllPlayers("ObjectDamaged", id, prevHealth, amount, impactPosition, impactRotation)
 

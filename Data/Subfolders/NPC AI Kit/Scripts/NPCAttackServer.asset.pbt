@@ -74,6 +74,12 @@ Assets {
         Float: 15000
       }
       Overrides {
+        Name: "cs:YOOTIL"
+        AssetReference {
+          Id: 16622261663679835299
+        }
+      }
+      Overrides {
         Name: "cs:Root:tooltip"
         String: "A reference to the root of the template, where most of the NPC\'s custom properties are set."
       }
@@ -131,5 +137,5 @@ Assets {
       }
     }
   }
-  SerializationVersion: 95
+  SerializationVersion: 101
 }

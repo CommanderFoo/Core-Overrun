@@ -1,4 +1,6 @@
-﻿local root = script:GetCustomProperty("root"):WaitForObject()
+﻿local YOOTIL = require(script:GetCustomProperty("YOOTIL"))
+
+local root = script:GetCustomProperty("root"):WaitForObject()
 local tomb = root:GetCustomProperty("tomb"):WaitForObject()
 
 local front_name = root:GetCustomProperty("front_name"):WaitForObject()
@@ -13,10 +15,10 @@ local duration = revive_duration
 function Tick()
 	if(reviving and time() > (revive_start_time + duration)) then
 		reviving = false
-		tomb:SetNetworkedCustomProperty("reviving", false)
+		tomb:SetCustomProperty("reviving", false)
 		tomb.visibility = Visibility.FORCE_OFF
 		Events.Broadcast("on_player_get_up", tomb:GetCustomProperty("id"), false)
-		Events.BroadcastToAllPlayers("on_player_revived", tomb:GetCustomProperty("id"))
+		YOOTIL.Events.broadcast_to_all_players("on_player_revived", tomb:GetCustomProperty("id"))
 	end
 end
 
@@ -28,7 +30,7 @@ function player_down(id, pos, lifes)
 		front_name.text = tomb:GetCustomProperty("name")
 		back_name.text = tomb:GetCustomProperty("name")
 
-		Events.BroadcastToAllPlayers("on_player_down", tomb:GetCustomProperty("id"), tomb:GetCustomProperty("name"), pos)
+		YOOTIL.Events.broadcast_to_all_players("on_player_down", tomb:GetCustomProperty("id"), tomb:GetCustomProperty("name"), pos)
 		tomb:SetWorldPosition(Vector3.New(pos.x, pos.y, 0))
 		tomb:SetRotation(Rotation.New(0, 0, math.random(360)))
 		
@@ -45,10 +47,10 @@ function player_down(id, pos, lifes)
 			end
 
 			revive_start_time = time()
-			tomb:SetNetworkedCustomProperty("revive_time", revive_start_time)
-			tomb:SetNetworkedCustomProperty("reviving", true)
+			tomb:SetCustomProperty("revive_time", revive_start_time)
+			tomb:SetCustomProperty("reviving", true)
 			
-			Events.BroadcastToAllPlayers("on_player_start_revive", id)
+			YOOTIL.Events.broadcast_to_all_players("on_player_start_revive", id)
 
 			reviving = true
 		end

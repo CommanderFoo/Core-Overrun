@@ -4,6 +4,12 @@ GlobalEntries {
   ScoreFormatted: "7.0"
   DateTime: "2021-04-07T17:08:56.399Z"
 }
+GlobalEntries {
+  Id: "e8ad17ea6e7e4fa5a245d2e1942b7654"
+  Name: "CommanderFoo"
+  ScoreFormatted: "2.0"
+  DateTime: "2021-10-26T15:49:54.376Z"
+}
 Config {
   SortType {
     Value: "mc:ecoresdkleaderboardsorting:higherisbetter"

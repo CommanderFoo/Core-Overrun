@@ -1,4 +1,6 @@
-﻿local tombstones = script:GetCustomProperty("tombstones"):WaitForObject()
+﻿local YOOTIL = require(script:GetCustomProperty("YOOTIL"))
+
+local tombstones = script:GetCustomProperty("tombstones"):WaitForObject()
 
 local no_damage_duration = script:GetCustomProperty("no_damage_duration")
 
@@ -21,12 +23,12 @@ function player_joined(p)
 		if(t == nil) then
 			print("Tombstone is nil (Revive Server)")
 		else
-			t:SetNetworkedCustomProperty("used", true)
-			t:SetNetworkedCustomProperty("id", p.id)
-			t:SetNetworkedCustomProperty("name", p.name)
-			t:SetNetworkedCustomProperty("down", false)
-			t:SetNetworkedCustomProperty("reviving", false)
-			t:SetNetworkedCustomProperty("revive_time", 0)
+			t:SetCustomProperty("used", true)
+			t:SetCustomProperty("id", p.id)
+			t:SetCustomProperty("name", p.name)
+			t:SetCustomProperty("down", false)
+			t:SetCustomProperty("reviving", false)
+			t:SetCustomProperty("revive_time", 0)
 		end
 
 		players[p.id] = {
@@ -44,12 +46,12 @@ function player_left(p)
 	if(players[p.id]) then
 		Events.Broadcast("on_player_down_left", p.id)
 
-		players[p.id].tomb:SetNetworkedCustomProperty("used", false)
-		players[p.id].tomb:SetNetworkedCustomProperty("id", "")
-		players[p.id].tomb:SetNetworkedCustomProperty("name", "")
-		players[p.id].tomb:SetNetworkedCustomProperty("down", false)
-		players[p.id].tomb:SetNetworkedCustomProperty("reviving", false)
-		players[p.id].tomb:SetNetworkedCustomProperty("revive_time", 0)
+		players[p.id].tomb:SetCustomProperty("used", false)
+		players[p.id].tomb:SetCustomProperty("id", "")
+		players[p.id].tomb:SetCustomProperty("name", "")
+		players[p.id].tomb:SetCustomProperty("down", false)
+		players[p.id].tomb:SetCustomProperty("reviving", false)
+		players[p.id].tomb:SetCustomProperty("revive_time", 0)
 
 		players[p.id] = nil
 	end
@@ -76,7 +78,7 @@ function put_player_down(id)
 
 		player.movementControlMode = MovementControlMode.NONE
 		player.animationStance = "unarmed_death"
-		player:SetVisibility(false)
+		player.isVisible = false
 
 		local notification_key = "playerdown"
 
@@ -85,13 +87,13 @@ function put_player_down(id)
 			notification_key = "playerdead"
 			player:Die()
 			Task.Wait(0.5)
-			Events.BroadcastToPlayer(player, "on_player_dead")
+			YOOTIL.Events.broadcast_to_player(player, "on_player_dead")
 		end
 		
 		local pos = player:GetWorldPosition()
 
 		players[id].down_pos = pos
-		players[id].tomb:SetNetworkedCustomProperty("down", true)
+		players[id].tomb:SetCustomProperty("down", true)
 
 		player:AddResource("downs", 1)
 		
@@ -136,7 +138,7 @@ function get_player_up(id, is_respawn)
 				end)
 			end
 
-			player:SetVisibility(true)
+			player.isVisible = true
 
 			for _, v in ipairs(player:GetAttachedObjects()) do
 				if(v.name == "PlayerHomingTargetObject") then
@@ -144,8 +146,8 @@ function get_player_up(id, is_respawn)
 				end
 			end
 			
-			players[id].tomb:SetNetworkedCustomProperty("down", false)
-			players[id].tomb:SetNetworkedCustomProperty("revive_time", 0)
+			players[id].tomb:SetCustomProperty("down", false)
+			players[id].tomb:SetCustomProperty("revive_time", 0)
 		end
 	end
 end
@@ -165,7 +167,7 @@ end
 function clean_up_tombstones()
 	for k, v in pairs(players) do
 		if(v.player.isDead) then
-			v.tomb:SetNetworkedCustomProperty("down", false)
+			v.tomb:SetCustomProperty("down", false)
 			v.tomb.visibility = Visibility.FORCE_OFF
 		end
 	end

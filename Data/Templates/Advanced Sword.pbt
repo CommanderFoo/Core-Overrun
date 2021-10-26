@@ -944,5 +944,5 @@ Assets {
       AssetId: "Advanced_Sword"
     }
   }
-  SerializationVersion: 95
+  SerializationVersion: 101
 }

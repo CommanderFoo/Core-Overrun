@@ -1,4 +1,6 @@
-﻿local DEBUG_DISABLE_SPAWNS = false
+﻿local YOOTIL = require(script:GetCustomProperty("YOOTIL"))
+
+local DEBUG_DISABLE_SPAWNS = false
 
 local container = script:GetCustomProperty("container"):WaitForObject()
 
@@ -45,6 +47,42 @@ local zombie_tank_assets = {
 	[1] = script:GetCustomProperty("OverrunNPCZombieGuyTank")
 
 }
+
+local spooky_assets = script:GetChildren()[1]
+
+local propOverrunNPCZombieGuySlowSpooky = spooky_assets:GetCustomProperty("OverrunNPCZombieGuySlowSpooky")
+local propOverrunNPCZombieGirlSlowSpooky = spooky_assets:GetCustomProperty("OverrunNPCZombieGirlSlowSpooky")
+
+local propOverrunNPCZombieGirlFastSpooky = spooky_assets:GetCustomProperty("OverrunNPCZombieGirlFastSpooky")
+local propOverrunNPCZombieGuyFastSpooky = spooky_assets:GetCustomProperty("OverrunNPCZombieGuyFastSpooky")
+
+local propOverrunNPCZombieGuyFasterSpooky = spooky_assets:GetCustomProperty("OverrunNPCZombieGuyFasterSpooky")
+
+local propOverrunNPCZombieSpitterSpooky = spooky_assets:GetCustomProperty("OverrunNPCZombieSpitterSpooky")
+local propOverrunNPCZombieSpitterBruteSpooky = spooky_assets:GetCustomProperty("OverrunNPCZombieSpitterBruteSpooky")
+
+local event_active = false
+
+local event_id = "bf87a824c92b47f78799a91612ee96e2-f3e70fa094984aa08bdf4bd81b183894"
+
+local function check_event_state()
+    local event_data = CorePlatform.GetGameEvent(event_id)
+
+    if(event_data ~= nil) then
+        if event_data.state == CoreGameEventState.ACTIVE then
+            event_active = true
+			YOOTIL.Events.broadcast_to_all_players("enable_spooky_event")
+        else
+            event_active = false
+			YOOTIL.Events.broadcast_to_all_players("disable_spooky_event")
+        end
+    end
+end
+
+local task = Task.Spawn(check_event_state)
+
+task.repeatCount = -1
+task.repeatInterval = 30
 
 local spawn_points = {}
 
@@ -102,7 +140,7 @@ end
 
 function get_random_zombie_asset()
 	local assets = {}
-	
+
 	 assets = concat_table({}, zombie_slow_assets)
 
 	if(round >= 6) then
@@ -113,6 +151,23 @@ function get_random_zombie_asset()
 		assets = concat_table(assets, zombie_spitter_assets)
 		assets = concat_table(assets, zombie_faster_assets)
 		assets = concat_table(assets, zombie_fast_assets)
+
+		if(event_active) then
+			assets = concat_table(assets, {
+				
+				propOverrunNPCZombieGirlFastSpooky,
+				propOverrunNPCZombieGuyFastSpooky,
+				propOverrunNPCZombieGuyFasterSpooky,
+				propOverrunNPCZombieSpitterSpooky
+
+			})
+		end
+	elseif(event_active) then
+		assets = concat_table(assets, {
+			
+			propOverrunNPCZombieGuySlowSpooky,
+			propOverrunNPCZombieGirlSlowSpooky
+		})
 	end
 
 	if(round >= 11) then
@@ -121,6 +176,18 @@ function get_random_zombie_asset()
 		assets = concat_table(assets, zombie_fast_assets)
 		assets = concat_table(assets, zombie_faster_assets)
 		assets = concat_table(assets, zombie_faster_assets)
+
+		if(event_active) then
+			assets = concat_table(assets, {
+				
+				propOverrunNPCZombieGirlFastSpooky,
+				propOverrunNPCZombieGuyFastSpooky,
+				propOverrunNPCZombieGuyFasterSpooky,
+				propOverrunNPCZombieSpitterSpooky,
+				propOverrunNPCZombieSpitterBruteSpooky
+			
+			})
+		end
 	end
 
 	-- Spitter only rounds
@@ -128,8 +195,14 @@ function get_random_zombie_asset()
 	if(round % 5 == 0) then
 		if(round == 5) then
 			assets = concat_table({}, zombie_slow_spitter_assets)
+			assets = concat_table(assets, {propOverrunNPCZombieSpitterSpooky})
 		else
 			assets = concat_table({}, zombie_spitter_assets)
+
+			if(event_active) then
+				assets = concat_table(assets, {propOverrunNPCZombieSpitterSpooky})
+				assets = concat_table(assets, {propOverrunNPCZombieSpitterBruteSpooky})
+			end
 		end
 	end
 
@@ -169,8 +242,8 @@ function spawn_zombies()
 		local z = World.SpawnAsset(zombie, {parent = container, position = pos, rotation = rot})
 		local max_health = z:GetCustomProperty("CurrentHealth") + get_health_increase()
 
-		z:SetNetworkedCustomProperty("CurrentHealth", max_health)
-		z:SetNetworkedCustomProperty("max_health", max_health)
+		z:SetCustomProperty("CurrentHealth", max_health)
+		z:SetCustomProperty("max_health", max_health)
 
 		spawned = spawned + 1
 	end)

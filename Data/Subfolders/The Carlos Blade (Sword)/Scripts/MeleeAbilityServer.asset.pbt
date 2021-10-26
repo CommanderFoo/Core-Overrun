@@ -38,6 +38,12 @@ Assets {
         Float: 0
       }
       Overrides {
+        Name: "cs:YOOTIL"
+        AssetReference {
+          Id: 16622261663679835299
+        }
+      }
+      Overrides {
         Name: "cs:Ability:tooltip"
         String: "Reference to the Ability tracked by this script. The Ability is what detects player input and drives the player avatar\'s animation."
       }
@@ -59,5 +65,5 @@ Assets {
       }
     }
   }
-  SerializationVersion: 95
+  SerializationVersion: 101
 }

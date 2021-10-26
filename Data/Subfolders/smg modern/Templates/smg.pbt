@@ -2042,6 +2042,6 @@ Assets {
   Marketplace {
     Description: "an smg"
   }
-  SerializationVersion: 95
+  SerializationVersion: 101
   DirectlyPublished: true
 }

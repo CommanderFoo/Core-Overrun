@@ -16,7 +16,7 @@ local character = script:GetCustomProperty("character"):WaitForObject()
 
 --]]
 
-agent.networkedPropertyChangedEvent:Connect(function(owner, propertyName)
+agent.customPropertyChangedEvent:Connect(function(owner, propertyName)
 	--if propertyName == "Walking" then
 	--	CHARACTER.animationStance = AGENT:GetCustomProperty("Walking") and "zombie_unarmed_walk_forward" or "zombie_unarmed_idle_relaxed"
 

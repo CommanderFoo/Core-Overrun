@@ -455,6 +455,7 @@ Objects {
     }
   }
   ParentId: 5539997602360125933
+  ChildIds: 16297015911292617755
   UnregisteredParameters {
     Overrides {
       Name: "cs:container"
@@ -546,6 +547,12 @@ Objects {
         Id: 5281453410741415747
       }
     }
+    Overrides {
+      Name: "cs:YOOTIL"
+      AssetReference {
+        Id: 16622261663679835299
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -559,6 +566,83 @@ Objects {
   Script {
     ScriptAsset {
       Id: 18431964485802782552
+    }
+  }
+}
+Objects {
+  Id: 16297015911292617755
+  Name: "Spooky_Assets_Server"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17836668198438326760
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:OverrunNPCZombieGirlFastSpooky"
+      AssetReference {
+        Id: 455040237995859028
+      }
+    }
+    Overrides {
+      Name: "cs:OverrunNPCZombieGuyFastSpooky"
+      AssetReference {
+        Id: 3421465685965483177
+      }
+    }
+    Overrides {
+      Name: "cs:OverrunNPCZombieGuySlowSpooky"
+      AssetReference {
+        Id: 15177936960298649494
+      }
+    }
+    Overrides {
+      Name: "cs:OverrunNPCZombieSpitterSpooky"
+      AssetReference {
+        Id: 7863593304758086210
+      }
+    }
+    Overrides {
+      Name: "cs:OverrunNPCZombieGirlSlowSpooky"
+      AssetReference {
+        Id: 10021104276161836252
+      }
+    }
+    Overrides {
+      Name: "cs:OverrunNPCZombieGuyFasterSpooky"
+      AssetReference {
+        Id: 16693233235762573472
+      }
+    }
+    Overrides {
+      Name: "cs:OverrunNPCZombieSpitterBruteSpooky"
+      AssetReference {
+        Id: 4514232675587745104
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 12567902686902250715
     }
   }
 }
@@ -603,6 +687,12 @@ Objects {
       Name: "cs:debug_weapon"
       AssetReference {
         Id: 10814552519067637946
+      }
+    }
+    Overrides {
+      Name: "cs:YOOTIL"
+      AssetReference {
+        Id: 16622261663679835299
       }
     }
   }
@@ -685,6 +775,12 @@ Objects {
       Name: "cs:max_ammo_chance"
       Int: 20
     }
+    Overrides {
+      Name: "cs:YOOTIL"
+      AssetReference {
+        Id: 16622261663679835299
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -724,6 +820,7 @@ Objects {
   ChildIds: 2163844371996655319
   ChildIds: 13225820577735480176
   ChildIds: 10841546411383999139
+  ChildIds: 206956130412758469
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -734,6 +831,53 @@ Objects {
     Value: "mc:ecollisionsetting:forceoff"
   }
   NetworkContext {
+  }
+}
+Objects {
+  Id: 206956130412758469
+  Name: "Spooky_Event_Client"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17922148234597677997
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:spooky_props"
+      ObjectReference {
+        SelfId: 10718600617090727217
+      }
+    }
+    Overrides {
+      Name: "cs:webs"
+      ObjectReference {
+        SelfId: 13829569023889284383
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 13970313618003344770
+    }
   }
 }
 Objects {
@@ -1475,6 +1619,12 @@ Objects {
       Name: "cs:no_damage_duration"
       Int: 2
     }
+    Overrides {
+      Name: "cs:YOOTIL"
+      AssetReference {
+        Id: 16622261663679835299
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1511,6 +1661,12 @@ Objects {
       Name: "cs:crates"
       ObjectReference {
         SelfId: 8346790829017566368
+      }
+    }
+    Overrides {
+      Name: "cs:YOOTIL"
+      AssetReference {
+        Id: 16622261663679835299
       }
     }
   }
@@ -1552,6 +1708,12 @@ Objects {
     Overrides {
       Name: "cs:regen_after_time"
       Int: 2
+    }
+    Overrides {
+      Name: "cs:YOOTIL"
+      AssetReference {
+        Id: 16622261663679835299
+      }
     }
   }
   Collidable_v2 {

@@ -1,4 +1,6 @@
-﻿local regen_amount = script:GetCustomProperty("regen_amount")
+﻿local YOOTIL = require(script:GetCustomProperty("YOOTIL"))
+
+local regen_amount = script:GetCustomProperty("regen_amount")
 local regen_time_after_damage = script:GetCustomProperty("regen_after_time")
 
 local players = {}
@@ -8,7 +10,7 @@ local last_broadcast = 0
 local broadcast_cooldown = 5 -- Every X seconds if there is changes in money, broadcast it to all players.
 
 function on_player_damaged(p, damage)
-	Events.BroadcastToPlayer(p, "on_damaged", p.hitPoints)
+	YOOTIL.Events.broadcast_to_player(p, "on_damaged", p.hitPoints)
 	
 	if(players[p.id]) then
 		players[p.id].damage_timestamp = time()
@@ -83,6 +85,18 @@ function player_joined(p)
 		end)
 	end
 
+	p.bindingPressedEvent:Connect(function(obj, binding)
+		if binding == "ability_feet" then
+			p.maxWalkSpeed = 900
+		end
+	end)
+
+	p.bindingReleasedEvent:Connect(function(obj, binding)
+		if binding == "ability_feet" then
+			p.maxWalkSpeed = 640
+		end
+	end)
+
 	p.resourceChangedEvent:Connect(resource_changed)
 	p.damagedEvent:Connect(on_player_damaged)
 end
@@ -96,7 +110,7 @@ function Tick()
 
 		for k, v in pairs(players) do
 			if(v.money_to_broadcast ~= nil) then
-				Events.BroadcastToAllPlayers("on_player_money_changed", {id = v.player.id, m = v.money_to_broadcast})
+				YOOTIL.Events.broadcast_to_all_players("on_player_money_changed", {id = v.player.id, m = v.money_to_broadcast})
 				v.money_to_broadcast = nil
 				Task.Wait(0.3)
 			end

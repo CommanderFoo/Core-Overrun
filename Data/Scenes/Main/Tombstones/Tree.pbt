@@ -140,6 +140,12 @@ Objects {
         SelfId: 18104020658895788116
       }
     }
+    Overrides {
+      Name: "cs:YOOTIL"
+      AssetReference {
+        Id: 16622261663679835299
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -2405,6 +2411,12 @@ Objects {
       Name: "cs:root"
       ObjectReference {
         SelfId: 8002282809538867518
+      }
+    }
+    Overrides {
+      Name: "cs:YOOTIL"
+      AssetReference {
+        Id: 16622261663679835299
       }
     }
   }
@@ -4674,6 +4686,12 @@ Objects {
         SelfId: 15277638337301889770
       }
     }
+    Overrides {
+      Name: "cs:YOOTIL"
+      AssetReference {
+        Id: 16622261663679835299
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -6939,6 +6957,12 @@ Objects {
       Name: "cs:root"
       ObjectReference {
         SelfId: 2368198132748148192
+      }
+    }
+    Overrides {
+      Name: "cs:YOOTIL"
+      AssetReference {
+        Id: 16622261663679835299
       }
     }
   }

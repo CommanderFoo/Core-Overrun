@@ -21,18 +21,18 @@ local buff_task = Task.Spawn(function()
 				if(current_health == random_zombie:GetCustomProperty("max_health")) then
 					local new_health = math.floor((current_health * 1.5) + 0.5)
 
-					random_zombie:SetNetworkedCustomProperty("CurrentHealth", new_health)
-					random_zombie:SetNetworkedCustomProperty("max_health", new_health)
+					random_zombie:SetCustomProperty("CurrentHealth", new_health)
+					random_zombie:SetCustomProperty("max_health", new_health)
 				end
 
-				random_zombie:SetNetworkedCustomProperty("health_buff", true)
+				random_zombie:SetCustomProperty("health_buff", true)
 			elseif(random_buff == "damage" and not random_zombie:GetCustomProperty("damage_buff")) then
 				local current_damage = random_zombie:GetCustomProperty("damage_to_players")
 
-				random_zombie:SetNetworkedCustomProperty("damage_to_players", math.floor((current_damage * 1.3) + 0.5))
-				random_zombie:SetNetworkedCustomProperty("damage_buff", true)
+				random_zombie:SetCustomProperty("damage_to_players", math.floor((current_damage * 1.3) + 0.5))
+				random_zombie:SetCustomProperty("damage_buff", true)
 			elseif(random_buff == "money" and not random_zombie:GetCustomProperty("money_buff")) then
-				random_zombie:SetNetworkedCustomProperty("money_buff", true)
+				random_zombie:SetCustomProperty("money_buff", true)
 			end
 		end
 	end

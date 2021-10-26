@@ -60,7 +60,7 @@ function player_joined(p)
 
 		Task.Spawn(function()
 			Task.Wait(6)
-			Events.BroadcastToPlayer(p, "on_round_update", round)
+			YOOTIL.Events.broadcast_to_player(p, "on_round_update", round)
 			handle_welcome()
 			Events.Broadcast("on_update_players_crate")
 		end)
@@ -130,10 +130,10 @@ function setup_stats(p)
 			p:SetResource("total_spitters", player_data["total_spitters"] or 0)
 		end
 
-		if(player_data["highest_round_v3"] ~= nil) then
-			p:SetResource("highest_round_v3", player_data["highest_round_v3"] or 1)
+		if(player_data["highest_round_v4"] ~= nil) then
+			p:SetResource("highest_round_v4", player_data["highest_round_v4"] or 1)
 		else
-			p:SetResource("highest_round_v3", 1)
+			p:SetResource("highest_round_v4", 1)
 		end
 
 		if(player_data["welcome"] ~= nil) then
@@ -185,7 +185,7 @@ function player_left(p)
 		total_spitters = p:GetResource("total_spitters"),
 
 		total_kills_v2 = p:GetResource("total_kills_v2"),
-		highest_round_v3 = p:GetResource("highest_round_v3"),
+		highest_round_v4 = p:GetResource("highest_round_v4"),
 		
 		welcome = 1
 
@@ -249,7 +249,7 @@ function check_player_status()
 			Task.Wait(2)
 
 			for k, v in pairs(players) do
-				Events.BroadcastToAllPlayers("on_game_over")
+				YOOTIL.Events.broadcast_to_all_players("on_game_over")
 				Events.Broadcast("on_clean_up_tombstones", k)
 			end
 
@@ -305,7 +305,7 @@ function spawn_players(force_spawn, lives, reset_total_money, round_spawned)
 
 			if(was_dead) then
 				Events.Broadcast("on_player_get_up", v.player.id, true)
-				Events.BroadcastToPlayer(v.player, "on_player_respawn")
+				YOOTIL.Events.broadcast_to_player(v.player, "on_player_respawn")
 			end
 
 			setup_resources(v.player, lives, reset_total_money, false, round_spawned)
@@ -324,7 +324,7 @@ function start_count_down()
 	Events.Broadcast("on_disable_all_players")
 
 	local task = Task.Spawn(function()
-		Events.BroadcastToAllPlayers("on_game_starting", timer)
+		YOOTIL.Events.broadcast_to_all_players("on_game_starting", timer)
 		
 		timer = timer - 1
 
@@ -347,7 +347,7 @@ function handle_welcome()
 
 	for k, p in pairs(Game.GetPlayers()) do
 		if(p:GetResource("welcome") == 0) then
-			Events.BroadcastToPlayer(p, "on_welcome")
+			YOOTIL.Events.broadcast_to_player(p, "on_welcome")
 			p:SetResource("welcome", 1)
 		end
 	end
@@ -355,10 +355,10 @@ end
 
 function update_highest_round()
 	for k, p in pairs(Game.GetPlayers()) do
-		local hr = p:GetResource("highest_round_v3")
+		local hr = p:GetResource("highest_round_v4")
 
 		if(round > hr) then
-			p:SetResource("highest_round_v3", round)
+			p:SetResource("highest_round_v4", round)
 		end
 	end
 end
@@ -368,7 +368,7 @@ function round_completed()
 		Events.Broadcast("on_give_max_ammo")
 	end
 
-	Events.BroadcastToAllPlayers("on_round_completed", round)
+	YOOTIL.Events.broadcast_to_all_players("on_round_completed", round)
 	round = round + 1
 
 	update_highest_round()
@@ -387,7 +387,7 @@ function round_completed()
 	end
 
 	if(round % 5 == 0) then
-		Events.BroadcastToAllPlayers("on_notification", "spitters")
+		YOOTIL.Events.broadcast_to_all_players("on_notification", "spitters")
 	end
 	
 	local max_spawns = 12
@@ -403,7 +403,7 @@ function round_completed()
 	end
 
 	Spawner.context.set_max_spawns(math.min(50, max_spawns))
-	Events.BroadcastToAllPlayers("on_round_start", round, fog_round)
+	YOOTIL.Events.broadcast_to_all_players("on_round_start", round, fog_round)
 	Spawner.context.spawn_zombies()
 
 	for k, p in pairs(Game.GetPlayers()) do

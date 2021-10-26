@@ -708,5 +708,5 @@ Assets {
       AssetId: "Advanced_Axe"
     }
   }
-  SerializationVersion: 95
+  SerializationVersion: 101
 }

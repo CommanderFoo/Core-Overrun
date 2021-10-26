@@ -2,7 +2,7 @@ Assets {
   Id: 9414155807297428023
   Name: "Kustom Shotgun Secondary"
   PlatformAssetType: 13
-  SerializationVersion: 95
+  SerializationVersion: 101
   CustomMaterialAsset {
     BaseMaterialId: 11474494798142330149
     ParameterOverrides {

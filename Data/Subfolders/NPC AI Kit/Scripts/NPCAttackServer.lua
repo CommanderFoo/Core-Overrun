@@ -7,6 +7,8 @@
 	easier to design diverse kinds of enemies.
 --]]
 
+local YOOTIL = require(script:GetCustomProperty("YOOTIL"))
+
 -- Component dependencies
 local MODULE = require( script:GetCustomProperty("ModuleManager") )
 require ( script:GetCustomProperty("DestructibleManager") )
@@ -165,7 +167,7 @@ ROOT.destroyEvent:Connect(OnDestroyed)
 
 
 local id = DESTRUCTIBLE_MANAGER().Register(script)
-ROOT:SetNetworkedCustomProperty("ObjectId", id)
+ROOT:SetCustomProperty("ObjectId", id)
 
 
 function ApplyDamage(dmg, source, position, rotation)
@@ -246,12 +248,12 @@ function ApplyDamage(dmg, source, position, rotation)
 
 			Events.Broadcast("ObjectDestroyed", id)
 			Events.Broadcast("on_zombie_killed", id)
-			Events.BroadcastToAllPlayers("on_zombie_destroyed", ROOT:GetWorldPosition(), is_pod)
+			YOOTIL.Events.broadcast_to_all_players("on_zombie_destroyed", ROOT:GetWorldPosition(), is_pod)
 			
 			--DropRewards(source)
 		end
 
-		Events.BroadcastToPlayer(source, "on_zombie_hit", amount, impactPosition)
+		YOOTIL.Events.broadcast_to_player(source, "on_zombie_hit", amount, impactPosition)
 
 		if(source:IsA("Player")) then
 			local double = 1
@@ -303,7 +305,7 @@ function GetHealth()
 end
 
 function SetHealth(value)
-	ROOT:SetNetworkedCustomProperty("CurrentHealth", value)
+	ROOT:SetCustomProperty("CurrentHealth", value)
 end
 
 function DropRewards(killer)

@@ -1,4 +1,9 @@
-﻿0.9.10 [Jan 19th 2021]
+﻿- You can sprint now by holding shift.
+- Highest round leaderboard reset.
+- Moved all broadcasts to queuing library.
+- Made the area spooky for halloween.
+
+0.9.10 [Jan 19th 2021]
 - Fixed a server bug when setting player data
 
 0.9.9 [Jan 19th 2021]

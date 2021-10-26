@@ -43,6 +43,16 @@ LeaderboardConfigs {
     Id: "3857A1C374B3FA10"
     EntryLimit: 25
   }
+  Config {
+    SortType {
+      Value: "mc:ecoresdkleaderboardsorting:higherisbetter"
+    }
+    FormatType {
+      Value: "mc:ecoresdkleaderboardformat:numeric"
+    }
+    Name: "Highest Round"
+    Id: "04737FD7FE495E55"
+    EntryLimit: 25
+  }
 }
-MaxPlayers: 4
 MainScene: "Main"

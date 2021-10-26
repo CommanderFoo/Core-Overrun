@@ -167,7 +167,7 @@ function randomise_weapons()
 	random_weapon_task.repeatInterval = random_interval
 end
 
-trigger.networkedPropertyChangedEvent:Connect(function(obj, prop)
+trigger.customPropertyChangedEvent:Connect(function(obj, prop)
 	if(prop == "state") then
 		local state = trigger:GetCustomProperty(prop)
 

@@ -1,7 +1,7 @@
 ﻿--[[
 The MIT License (MIT)
 
-Copyright (c) 2020 pixeldepth.net
+Copyright (c) 2021 pixeldepth.net
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -24,29 +24,92 @@ SOFTWARE.
 
 local Utils = {}
 
-function Utils.dump(o)
-	if(type(o) == "table") then
-	   local s = "{ "
+local random = math.random
+local randomseed = math.randomseed
 
-		for k,v in pairs(o) do
-			if(type(k) ~= "number") then 
-				k = "\""..k.."\""
-			end
+-- https://stackoverflow.com/questions/9168058/how-to-dump-a-table-to-console
 
-			s = s .. "["..k.."] = " .. Utils.dump(v) .. ","
+function Utils.dump(node)
+	local cache, stack, output = {}, {}, {}
+	local depth = 1
+	local output_str = "{\n"
+
+	while(true) do
+		local size = 0
+
+		for k, v in pairs(node) do
+			size = size + 1
 		end
 
-		return s .. "} "
-	else
-		return tostring(o)
+		local cur_index = 1
+		
+		for k, v in pairs(node) do
+			if(cache[node] == nil) or (cur_index >= cache[node]) then
+				if(string.find(output_str,"}",output_str:len())) then
+					output_str = output_str .. ",\n"
+				elseif not (string.find(output_str,"\n",output_str:len())) then
+					output_str = output_str .. "\n"
+				end
+
+				table.insert(output,output_str)
+				output_str = ""
+
+				local key
+
+				if (type(k) == "number" or type(k) == "boolean") then
+					key = "["..tostring(k).."]"
+				else
+					key = "['"..tostring(k).."']"
+				end
+
+				if (type(v) == "number" or type(v) == "boolean") then
+					output_str = output_str .. string.rep('\t',depth) .. key .. " = "..tostring(v)
+				elseif (type(v) == "table") then
+					output_str = output_str .. string.rep('\t',depth) .. key .. " = {\n"
+					
+					table.insert(stack,node)
+					table.insert(stack,v)
+					cache[node] = cur_index+1
+					break
+				else
+					output_str = output_str .. string.rep('\t',depth) .. key .. " = '"..tostring(v).."'"
+				end
+
+				if (cur_index == size) then
+					output_str = output_str .. "\n" .. string.rep('\t',depth-1) .. "}"
+				else
+					output_str = output_str .. ","
+				end
+			else
+				-- close the table
+				if (cur_index == size) then
+					output_str = output_str .. "\n" .. string.rep('\t',depth-1) .. "}"
+				end
+			end
+
+			cur_index = cur_index + 1
+		end
+
+		if (size == 0) then
+			output_str = output_str .. "\n" .. string.rep('\t',depth-1) .. "}"
+		end
+
+		if (#stack > 0) then
+			node = stack[#stack]
+			stack[#stack] = nil
+			depth = cache[node] == nil and depth + 1 or depth - 1
+		else
+			break
+		end
 	end
- end
 
- function Utils.dumpp(o)
-	return print(Utils.dump(o))
- end
+	table.insert(output,output_str)
+	output_str = table.concat(output)
 
- Utils.Queue = {}
+	print(output_str)
+end
+
+Utils.Queue = {}
 
 function Utils.Queue.push(self, item)
 	table.insert(self.list, item)
@@ -54,6 +117,10 @@ end
 
 function Utils.Queue.pop(self)
 	return table.remove(self.list, 1)
+end
+
+function Utils.Queue.front(self)
+	return self.list[1]
 end
 
 function Utils.Queue.is_empty(self)
@@ -90,5 +157,53 @@ function Utils.truncate(str, len, post_str)
 
 	return the_str
 end
-  
+
+function Utils.uuid()
+	randomseed(os.time())
+
+	local template = "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx"
+    
+	return string.gsub(template, "[xy]", function(c)
+		local v = (c == "x") and random(0, 0xf) or random(8, 0xb)
+        
+		return string.format("%x", v)
+	end)
+end
+
+function Utils.first_to_upper(str)
+    return (str:gsub("^%l", string.upper))
+end
+
+function Utils.copy_table(t)
+	local tmp = {}
+
+	for k, v in pairs(t) do
+		tmp[k] = v
+	end
+
+	return tmp
+end
+
+function Utils.table_concat(t1, t2)
+	for i = 1, #t2 do
+		t1[#t1 + 1] = t2[i]
+	end
+
+	return t1
+end
+
+function Utils.table_unique(t1)
+	local hash = {}
+	local res = {}
+
+	for _, v in ipairs(t1) do
+		if(not hash[v]) then
+			res[#res + 1] = v
+			hash[v] = true
+		end
+	end
+	
+	return res
+end
+
 return Utils

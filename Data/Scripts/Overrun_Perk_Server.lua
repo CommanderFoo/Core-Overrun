@@ -1,4 +1,6 @@
-﻿local root = script:GetCustomProperty("root"):WaitForObject()
+﻿local YOOTIL = require(script:GetCustomProperty("YOOTIL"))
+
+local root = script:GetCustomProperty("root"):WaitForObject()
 local trigger = root:GetCustomProperty("trigger"):WaitForObject()
 
 local price = root:GetCustomProperty("price")
@@ -21,8 +23,8 @@ function on_trigger_enter(t, obj)
 					local money = obj:GetResource("money")
 					
 					if(price <= money) then
-						Events.BroadcastToPlayer(obj, "on_audio_purchase")
-						Events.BroadcastToPlayer(obj, "on_notification", "buy" .. resource_key)
+						YOOTIL.Events.broadcast_to_player(obj, "on_audio_purchase")
+						YOOTIL.Events.broadcast_to_player(obj, "on_notification", "buy" .. resource_key)
 
 						if(resource_key == "juggernog") then
 							obj.hitPoints = obj.maxHitPoints + 100
