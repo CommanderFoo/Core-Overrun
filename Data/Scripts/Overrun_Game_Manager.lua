@@ -141,6 +141,18 @@ function setup_stats(p)
 		else
 			p:SetResource("welcome", 0)
 		end
+
+		if(player_data["xp"] ~= nil) then
+			p:SetResource("xp", player_data["xp"])
+		else
+			p:SetResource("xp", 0)
+		end
+
+		if(player_data["hxp"] ~= nil) then
+			p:SetResource("hxp", player_data["hxp"])
+		else
+			p:SetResource("hxp", 0)
+		end
 	end
 end
 
@@ -186,6 +198,8 @@ function player_left(p)
 
 		total_kills_v2 = p:GetResource("total_kills_v2"),
 		highest_round_v4 = p:GetResource("highest_round_v4"),
+		xp = p:GetResource("xp"),
+		hxp = p:GetResource("hxp"),
 		
 		welcome = 1
 

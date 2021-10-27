@@ -1,8 +1,8 @@
 GlobalEntries {
   Id: "93d6eaf2514940a08c5481a4c03c1ee3"
   Name: "CommanderFoo"
-  ScoreFormatted: "31.0"
-  DateTime: "2021-10-26T18:53:01.812Z"
+  ScoreFormatted: "32.0"
+  DateTime: "2021-10-27T00:38:27.711Z"
 }
 GlobalEntries {
   Id: "e8ad17ea6e7e4fa5a245d2e1942b7654"
@@ -11,16 +11,28 @@ GlobalEntries {
   DateTime: "2021-10-26T16:00:52.999Z"
 }
 GlobalEntries {
+  Id: "BOT_Bot3"
+  Name: "Bot3"
+  ScoreFormatted: "2.0"
+  DateTime: "2021-10-27T00:41:42.895Z"
+}
+GlobalEntries {
+  Id: "BOT_Bot4"
+  Name: "Bot4"
+  ScoreFormatted: "2.0"
+  DateTime: "2021-10-27T00:41:42.895Z"
+}
+GlobalEntries {
   Id: "BOT_Bot2"
   Name: "Bot2"
-  ScoreFormatted: "0.0"
-  DateTime: "2021-01-19T14:01:27.150Z"
+  ScoreFormatted: "2.0"
+  DateTime: "2021-10-27T00:41:42.895Z"
 }
 GlobalEntries {
   Id: "BOT_Bot1"
   Name: "Bot1"
-  ScoreFormatted: "0.0"
-  DateTime: "2021-01-19T14:01:27.150Z"
+  ScoreFormatted: "1.0"
+  DateTime: "2021-10-27T00:10:04.110Z"
 }
 Config {
   SortType {

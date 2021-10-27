@@ -4,6 +4,30 @@ GlobalEntries {
   ScoreFormatted: "7.0"
   DateTime: "2021-10-26T16:51:52.851Z"
 }
+GlobalEntries {
+  Id: "BOT_Bot2"
+  Name: "Bot2"
+  ScoreFormatted: "2.0"
+  DateTime: "2021-10-27T00:10:04.110Z"
+}
+GlobalEntries {
+  Id: "BOT_Bot1"
+  Name: "Bot1"
+  ScoreFormatted: "2.0"
+  DateTime: "2021-10-27T00:10:04.110Z"
+}
+GlobalEntries {
+  Id: "BOT_Bot3"
+  Name: "Bot3"
+  ScoreFormatted: "2.0"
+  DateTime: "2021-10-27T00:13:01.092Z"
+}
+GlobalEntries {
+  Id: "BOT_Bot4"
+  Name: "Bot4"
+  ScoreFormatted: "2.0"
+  DateTime: "2021-10-27T00:13:01.093Z"
+}
 Config {
   SortType {
     Value: "mc:ecoresdkleaderboardsorting:higherisbetter"

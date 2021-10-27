@@ -328,11 +328,11 @@ Objects {
     }
     Overrides {
       Name: "cs:starting_money"
-      Int: 750
+      Int: 950
     }
     Overrides {
       Name: "cs:late_join_money_per_round"
-      Int: 250
+      Int: 350
     }
     Overrides {
       Name: "cs:starting_lives"
@@ -859,6 +859,12 @@ Objects {
       Name: "cs:webs"
       ObjectReference {
         SelfId: 13829569023889284383
+      }
+    }
+    Overrides {
+      Name: "cs:event_leaderboard"
+      ObjectReference {
+        SelfId: 17666483487478193818
       }
     }
   }
@@ -1544,6 +1550,12 @@ Objects {
       Name: "cs:revive_count"
       ObjectReference {
         SelfId: 9603853050346741776
+      }
+    }
+    Overrides {
+      Name: "cs:halloween_level"
+      ObjectReference {
+        SelfId: 16038024276342995660
       }
     }
   }

@@ -169,6 +169,11 @@ ROOT.destroyEvent:Connect(OnDestroyed)
 local id = DESTRUCTIBLE_MANAGER().Register(script)
 ROOT:SetCustomProperty("ObjectId", id)
 
+local event_active = false
+
+Events.Connect("event_active", function(a)
+	event_active = a
+end)
 
 function ApplyDamage(dmg, source, position, rotation)
 	local amount = dmg.amount
@@ -233,6 +238,7 @@ function ApplyDamage(dmg, source, position, rotation)
 		--Events.BroadcastToAllPlayers("ObjectDamaged", id, prevHealth, amount, impactPosition, impactRotation)
 
 		local zombie_dead = false
+		local is_spitter = false
 
 		if (newHealth <= 0) then
 			if(hitResult.other and hitResult.other.name == "Head") then
@@ -243,6 +249,7 @@ function ApplyDamage(dmg, source, position, rotation)
 			money = money + ROOT:GetCustomProperty("money_per_kill")
 
 			if(ROOT.name == "Overrun NPC Zombie Spitter" or ROOT.name == "Overrun NPC Zombie Spitter Brute") then
+				is_spitter = true
 				source:AddResource("total_spitters", 1)
 			end
 
@@ -277,6 +284,25 @@ function ApplyDamage(dmg, source, position, rotation)
 		if(zombie_dead) then
 			if(is_pod) then
 				Events.Broadcast("on_give_max_ammo")
+				source:AddResource("xp", 20)
+
+				if(event_active) then
+					source:AddResource("hxp", 20)
+				end
+			else
+				if(is_spitter) then
+					source:AddResource("xp", 15)
+
+					if(event_active) then
+						source:AddResource("hxp", 15)
+					end
+				else
+					source:AddResource("xp", 10)
+
+					if(event_active) then
+						source:AddResource("hxp", 10)
+					end
+				end
 			end
 
 			Task.Spawn(function()

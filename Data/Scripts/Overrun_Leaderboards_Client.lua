@@ -4,6 +4,7 @@ local rounds = script:GetCustomProperty("rounds")
 local kills = script:GetCustomProperty("kills")
 local headshots = script:GetCustomProperty("headshots")
 local total_rounds = script:GetCustomProperty("total_rounds")
+local halloween_level = script:GetCustomProperty("halloween_level")
 
 local kills_entries = {
 
@@ -42,6 +43,16 @@ local total_rounds_entries = {
 	[3] = script:GetCustomProperty("total_rounds_entry_3"):WaitForObject(),
 	[4] = script:GetCustomProperty("total_rounds_entry_4"):WaitForObject(),
 	[5] = script:GetCustomProperty("total_rounds_entry_5"):WaitForObject()
+
+}
+
+local halloween_level_entries = {
+
+	script:GetCustomProperty("Entry1"):WaitForObject(),
+	script:GetCustomProperty("Entry2"):WaitForObject(),
+	script:GetCustomProperty("Entry3"):WaitForObject(),
+	script:GetCustomProperty("Entry4"):WaitForObject(),
+	script:GetCustomProperty("Entry5"):WaitForObject()
 
 }
 
@@ -116,6 +127,24 @@ local updater = Task.Spawn(function()
 				end
 				
 				total_rounds_index = total_rounds_index + 1
+			end
+		end
+
+		local halloween_level_leaderboard = Leaderboards.GetLeaderboard(halloween_level, LeaderboardType.GLOBAL)
+		local level_index = 1
+
+		if(halloween_level_leaderboard ~= nil) then
+			for k, v in pairs(halloween_level_leaderboard) do
+				local entry = halloween_level_entries[level_index]
+				
+				entry:FindDescendantByName("Name").text = YOOTIL.Utils.truncate(v.name, 12)
+				entry:FindDescendantByName("Stat").text = YOOTIL.Utils.number_format(string.format("%.0u", v.score))
+
+				if(level_index == 5) then
+					break
+				end
+				
+				level_index = level_index + 1
 			end
 		end
 	end

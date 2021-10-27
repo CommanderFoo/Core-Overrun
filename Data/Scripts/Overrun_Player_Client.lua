@@ -21,6 +21,8 @@ local player_4_color = script:GetCustomProperty("player_4_color")
 
 local supporter_perk = script:GetCustomProperty("supporter_perk")
 
+local halloween_level = script:GetCustomProperty("halloween_level"):WaitForObject()
+
 local local_player = Game.GetLocalPlayer()
 local players = {}
 local total_players = 0
@@ -36,6 +38,10 @@ function perk_changed(player)
 			players[player.id].supporter_ui.text = players[player.id].supporter_ui.text .. " x" .. tostring(player:GetPerkCount(supporter_perk))
 		end
 	end
+end
+
+function get_level_from_xp(xp)
+	return tostring(math.max(1, math.floor(.7 * math.sqrt(xp))))
 end
 
 function player_joined(p)
@@ -80,6 +86,8 @@ function player_joined(p)
 	local avatar_border_ui = ui:GetCustomProperty("avatar_border"):WaitForObject()
 	local frame_ui = ui:GetCustomProperty("frame"):WaitForObject()
 	local supporter_ui = ui:GetCustomProperty("supporter"):WaitForObject()
+	local level_ui = ui:GetCustomProperty("level"):WaitForObject()
+	local level_frame_ui = ui:GetCustomProperty("level_frame"):WaitForObject()
 
 	players[p.id].ui = ui
 	players[p.id].money_ui = money_ui
@@ -91,16 +99,21 @@ function player_joined(p)
 	players[p.id].avatar_border_ui = avatar_border_ui
 	players[p.id].frame_ui = frame_ui
 	players[p.id].supporter_ui = supporter_ui
+	players[p.id].level_ui = level_ui
+	players[p.id].level_frame_ui = level_frame_ui
 
 	if(local_player.id == p.id) then
 		money_ui.text = YOOTIL.Utils.number_format(local_player:GetResource("money"))
 		name_ui:SetColor(own_info_color)
 		name_ui.text = YOOTIL.Utils.truncate(local_player.name, 13, "...")
 		avatar_ui:SetPlayerProfile(local_player)
+		level_ui.text = get_level_from_xp(local_player:GetResource("xp"))
+		halloween_level.text = get_level_from_xp(local_player:GetResource("hxp"))
 	else
 		name_ui.text = YOOTIL.Utils.truncate(p.name, 13, "...")
 		money_ui.text = YOOTIL.Utils.number_format(p:GetResource("money"))
-		avatar_ui:SetImage(p)
+		avatar_ui:SetPlayerProfile(p)
+		level_ui.text = get_level_from_xp(p:GetResource("xp"))
 
 		Task.Spawn(function()
 			Events.Broadcast("on_audio_player_joined")
@@ -123,12 +136,16 @@ function player_joined(p)
 
 	if(color_index == 1) then
 		frame_ui:SetColor(player_1_color)
+		level_frame_ui:SetColor(player_1_color)
 	elseif(color_index == 2) then
 		frame_ui:SetColor(player_2_color)
+		level_frame_ui:SetColor(player_2_color)
 	elseif(color_index == 3) then
 		frame_ui:SetColor(player_3_color)
+		level_frame_ui:SetColor(player_3_color)
 	elseif(color_index == 4) then
 		frame_ui:SetColor(player_4_color)
+		level_frame_ui:SetColor(player_4_color)
 	end
 
 	p.perkChangedEvent:Connect(perk_changed)
@@ -149,6 +166,7 @@ function reset_info_ui(info)
 	local box_ui = info:GetCustomProperty("box"):WaitForObject()
 	local avatar_border_ui = info:GetCustomProperty("avatar_border"):WaitForObject()
 	local frame_ui = info:GetCustomProperty("frame"):WaitForObject()
+	local level_frame_ui = info:GetCustomProperty("level_frame"):WaitForObject()
 
 	money_ui:SetColor(money_color)
 	name_ui:SetColor(name_color)
@@ -157,7 +175,8 @@ function reset_info_ui(info)
 	box_ui:SetColor(box_color)
 	avatar_border_ui:SetColor(avatar_border_color)
 	frame_ui:SetColor(Color.BLACK)
-
+	level_frame_ui:SetColor(Color.BLACK)
+	
 	overlay_ui.visibility = Visibility.FORCE_OFF
 
 	Task.Spawn(function()
@@ -203,6 +222,7 @@ function update_player_info(obj, left)
 		set_alpha(obj, "avatar_border_ui", alpha)
 
 		obj.frame_ui:SetColor(Color.BLACK)
+		obj.level_frame_ui:SetColor(Color.BLACK)
 
 		obj.overlay_ui.visibility = Visibility.FORCE_ON
 	end
@@ -226,12 +246,19 @@ function resource_changed(p, prop, val)
 		if(players[local_player.id]) then
 			players[local_player.id].money_ui.text = YOOTIL.Utils.number_format(local_player:GetResource("money"))
 		end
+	elseif(prop == "xp") then
+		if(players[local_player.id]) then
+			players[local_player.id].level_ui.text = get_level_from_xp(local_player:GetResource("xp"))
+		end
+	elseif(prop == "hxp") then
+		halloween_level.text = get_level_from_xp(local_player:GetResource("hxp"))
 	end
 end
 
 function money_changed(data)
 	if(data.id ~= local_player.id and players[data.id]) then
 		players[data.id].money_ui.text =  YOOTIL.Utils.number_format(data.m)
+		players[data.id].level_ui.text = get_level_from_xp(data.x)
 	end
 end
 

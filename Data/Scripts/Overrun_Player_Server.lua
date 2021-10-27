@@ -80,6 +80,8 @@ function player_joined(p)
 				else
 					p:SetResource("admin_god_mode", 1)
 					print("God Mode Enabled")
+
+					print(p:GetResource("xp"), p:GetResource("hxp"))
 				end
 			end
 		end)
@@ -110,7 +112,7 @@ function Tick()
 
 		for k, v in pairs(players) do
 			if(v.money_to_broadcast ~= nil) then
-				YOOTIL.Events.broadcast_to_all_players("on_player_money_changed", {id = v.player.id, m = v.money_to_broadcast})
+				YOOTIL.Events.broadcast_to_all_players("on_player_money_changed", {id = v.player.id, m = v.money_to_broadcast, x = v.player:GetResource("xp")})
 				v.money_to_broadcast = nil
 				Task.Wait(0.3)
 			end

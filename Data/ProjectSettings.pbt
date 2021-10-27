@@ -54,5 +54,16 @@ LeaderboardConfigs {
     Id: "04737FD7FE495E55"
     EntryLimit: 25
   }
+  Config {
+    SortType {
+      Value: "mc:ecoresdkleaderboardsorting:higherisbetter"
+    }
+    FormatType {
+      Value: "mc:ecoresdkleaderboardformat:numeric"
+    }
+    Name: "halloween_level"
+    Id: "C4A910DA3154D0E4"
+    EntryLimit: 25
+  }
 }
 MainScene: "Main"

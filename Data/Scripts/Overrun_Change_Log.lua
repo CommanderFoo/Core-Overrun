@@ -1,4 +1,6 @@
-﻿- You can sprint now by holding shift.
+﻿- New player level (no point to it, just something to increase)
+- Halloween leaderboard added
+- You can sprint now by holding shift.
 - Highest round leaderboard reset.
 - Moved all broadcasts to queuing library.
 - Made the area spooky for halloween.

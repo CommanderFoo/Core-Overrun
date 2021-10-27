@@ -3,7 +3,7 @@ Entries {
     StringVar: "total_revives"
   }
   SimpleValue {
-    IntVar: 76
+    IntVar: 3
   }
 }
 Entries {
@@ -19,7 +19,7 @@ Entries {
     StringVar: "total_kills_v2"
   }
   SimpleValue {
-    IntVar: 36
+    IntVar: 0
   }
 }
 Entries {
@@ -27,7 +27,7 @@ Entries {
     StringVar: "total_rounds"
   }
   SimpleValue {
-    IntVar: 1
+    IntVar: 2
   }
 }
 Entries {
@@ -51,7 +51,7 @@ Entries {
     StringVar: "xp"
   }
   SimpleValue {
-    IntVar: 220
+    IntVar: 0
   }
 }
 Entries {
@@ -59,7 +59,7 @@ Entries {
     StringVar: "total_deaths"
   }
   SimpleValue {
-    IntVar: 15
+    IntVar: 0
   }
 }
 Entries {
@@ -91,7 +91,7 @@ Entries {
     StringVar: "total_games"
   }
   SimpleValue {
-    IntVar: 40
+    IntVar: 3
   }
 }
 Entries {
@@ -107,7 +107,7 @@ Entries {
     StringVar: "total_money_all_time"
   }
   SimpleValue {
-    IntVar: 2420
+    IntVar: 0
   }
 }
 Entries {
@@ -115,7 +115,7 @@ Entries {
     StringVar: "total_headshots"
   }
   SimpleValue {
-    IntVar: 16
+    IntVar: 0
   }
 }
 Entries {

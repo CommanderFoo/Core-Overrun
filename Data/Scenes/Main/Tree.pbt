@@ -128,6 +128,7 @@ Objects {
   ChildIds: 7276019051762307246
   ChildIds: 13829569023889284383
   ChildIds: 4004506248491049175
+  ChildIds: 7543651485886310514
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -142,6 +143,54 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 7543651485886310514
+  Name: "Bone Human Skull 01"
+  Transform {
+    Location {
+      X: 414.925537
+      Y: -1866.66455
+      Z: 411.883057
+    }
+    Rotation {
+      Yaw: -164.002213
+    }
+    Scale {
+      X: 3.31137681
+      Y: 3.31137681
+      Z: 3.31137681
+    }
+  }
+  ParentId: 10718600617090727217
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9691201277854587040
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
   }
 }
 Objects {
@@ -7587,12 +7636,12 @@ Objects {
   Name: "Bone Human Skull 01"
   Transform {
     Location {
-      X: 888.078857
-      Y: -1850.69824
+      X: 1176.07153
+      Y: -1873.479
       Z: 411.883057
     }
     Rotation {
-      Yaw: 178.696884
+      Yaw: 161.920013
     }
     Scale {
       X: 3.31137681

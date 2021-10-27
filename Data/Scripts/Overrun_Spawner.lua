@@ -75,6 +75,9 @@ local function check_event_state()
         else
             event_active = false
 			YOOTIL.Events.broadcast_to_all_players("disable_spooky_event")
+
+			-- event_active = true
+			-- YOOTIL.Events.broadcast_to_all_players("enable_spooky_event")
         end
     end
 end
@@ -82,7 +85,7 @@ end
 local task = Task.Spawn(check_event_state)
 
 task.repeatCount = -1
-task.repeatInterval = 30
+task.repeatInterval = 45
 
 local spawn_points = {}
 
@@ -195,7 +198,10 @@ function get_random_zombie_asset()
 	if(round % 5 == 0) then
 		if(round == 5) then
 			assets = concat_table({}, zombie_slow_spitter_assets)
-			assets = concat_table(assets, {propOverrunNPCZombieSpitterSpooky})
+
+			if(event_active) then
+				assets = concat_table(assets, {propOverrunNPCZombieSpitterSpooky})
+			end
 		else
 			assets = concat_table({}, zombie_spitter_assets)
 
@@ -244,6 +250,8 @@ function spawn_zombies()
 
 		z:SetCustomProperty("CurrentHealth", max_health)
 		z:SetCustomProperty("max_health", max_health)
+
+		Events.Broadcast("event_active", event_active)
 
 		spawned = spawned + 1
 	end)
