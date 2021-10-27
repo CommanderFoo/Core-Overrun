@@ -38,6 +38,12 @@ function on_player_joined(player)
 			supporter.text = "Developer"
 		elseif(player.name == "kurucon") then
 			supporter.text = "Zombie Slayer"
+		elseif(player.name == "BlueClairy") then
+			supporter.text = "Blue"
+		elseif(player.name == "disatronaut" or player.name == "coreslinkous") then
+			supporter.text = "Coffee Drinker"
+		elseif(player.name == "Tobs") then
+			supporter.text = "Chief Hype Officer"
 		end
 
 		nametags[player.id] = nametag

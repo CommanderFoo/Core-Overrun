@@ -124,6 +124,12 @@ function player_joined(p)
 		supporter_ui.text = "Developer"
 	elseif(p.name == "kurucon") then
 		supporter_ui.text = "Zombie Slayer"
+	elseif(p.name == "BlueClairy") then
+		supporter_ui.text = "Blue"
+	elseif(p.name == "disatronaut" or p.name == "coreslinkous") then
+		supporter_ui.text = "Coffee Drinker"
+	elseif(p.name == "Tobs") then
+		supporter_ui.text = "Chief Hype Officer"
 	elseif(p:HasPerk(supporter_perk)) then
 		supporter_ui.text = "Supporter"
 
