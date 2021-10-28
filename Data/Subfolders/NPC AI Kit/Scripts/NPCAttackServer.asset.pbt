@@ -80,6 +80,12 @@ Assets {
         }
       }
       Overrides {
+        Name: "cs:boom"
+        AssetReference {
+          Id: 14035121061955830873
+        }
+      }
+      Overrides {
         Name: "cs:Root:tooltip"
         String: "A reference to the root of the template, where most of the NPC\'s custom properties are set."
       }

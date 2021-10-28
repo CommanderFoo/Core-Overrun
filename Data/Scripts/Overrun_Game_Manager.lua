@@ -310,7 +310,7 @@ function spawn_players(force_spawn, lives, reset_total_money, round_spawned)
 				Events.Broadcast("on_clean_up_tombstones", k)
 			end
 
-			v.player:Respawn({
+			v.player:Spawn({
 				
 				position = player_spawn_points[counter]:GetWorldPosition(),
 				rotation = player_spawn_points[counter]:GetWorldRotation()

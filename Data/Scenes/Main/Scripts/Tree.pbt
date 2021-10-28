@@ -553,6 +553,12 @@ Objects {
         Id: 16622261663679835299
       }
     }
+    Overrides {
+      Name: "cs:OverrunNPCZombieBomb"
+      AssetReference {
+        Id: 12750533946707549909
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -625,6 +631,12 @@ Objects {
       Name: "cs:OverrunNPCZombieSpitterBruteSpooky"
       AssetReference {
         Id: 4514232675587745104
+      }
+    }
+    Overrides {
+      Name: "cs:OverrunNPCZombieBomb"
+      AssetReference {
+        Id: 7761369151888772741
       }
     }
   }
@@ -865,6 +877,12 @@ Objects {
       Name: "cs:event_leaderboard"
       ObjectReference {
         SelfId: 17666483487478193818
+      }
+    }
+    Overrides {
+      Name: "cs:event_ui"
+      ObjectReference {
+        SelfId: 16497438089232591694
       }
     }
   }

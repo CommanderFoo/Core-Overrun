@@ -55,7 +55,7 @@ function spawn_pod(round)
 		
 			})
 
-			local pod_health = 1500
+			local pod_health = 1000
 			
 			if(#Game.GetPlayers() > 1) then
 				pod_health = pod_health * #Game.GetPlayers()

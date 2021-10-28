@@ -257,6 +257,27 @@ function ApplyDamage(dmg, source, position, rotation)
 			Events.Broadcast("on_zombie_killed", id)
 			YOOTIL.Events.broadcast_to_all_players("on_zombie_destroyed", ROOT:GetWorldPosition(), is_pod)
 			
+			local boom = script:GetCustomProperty("boom")
+
+			if((ROOT.name == "Overrun NPC Zombie Bomb" or ROOT.name == "Overrun NPC Zombie Bomb Normal") and boom ~= nil) then
+				local boom_obj = World.SpawnAsset(boom)
+				local pos = script:GetWorldPosition()
+
+				boom_obj:SetWorldPosition(Vector3.New(pos.x, pos.y, 150))
+
+				local results = World.FindObjectsOverlappingSphere(pos, 500)
+
+				--CoreDebug.DrawSphere(pos, 500, { duration = 1 })
+
+				for i, o in ipairs(results) do
+					if(Object.IsValid(o)) then
+						if(o:IsA("Player") and o:GetResource("admin_god_mode") == 0) then
+							COMBAT().ApplyDamage(o, Damage.New(80))
+						end
+					end
+				end
+			end
+
 			--DropRewards(source)
 		end
 
@@ -319,6 +340,10 @@ function ApplyDamage(dmg, source, position, rotation)
 end
 
 function spawn_random_power_up(source)
+	if(not Object.IsValid(ROOT)) then
+		return
+	end
+
 	if(spawn_max_ammo) then
 		Events.Broadcast("on_force_spawn_max_ammo", ROOT:GetWorldPosition().x, ROOT:GetWorldPosition().y, source:GetWorldRotation().z)
 	else

@@ -48,6 +48,12 @@ local zombie_tank_assets = {
 
 }
 
+local zombie_special = {
+
+	[1] = script:GetCustomProperty("OverrunNPCZombieBomb")
+
+}
+
 local spooky_assets = script:GetChildren()[1]
 
 local propOverrunNPCZombieGuySlowSpooky = spooky_assets:GetCustomProperty("OverrunNPCZombieGuySlowSpooky")
@@ -61,6 +67,8 @@ local propOverrunNPCZombieGuyFasterSpooky = spooky_assets:GetCustomProperty("Ove
 local propOverrunNPCZombieSpitterSpooky = spooky_assets:GetCustomProperty("OverrunNPCZombieSpitterSpooky")
 local propOverrunNPCZombieSpitterBruteSpooky = spooky_assets:GetCustomProperty("OverrunNPCZombieSpitterBruteSpooky")
 
+local propOverrunNPCZombieBomb = spooky_assets:GetCustomProperty("OverrunNPCZombieBomb")
+
 local event_active = false
 
 local event_id = "bf87a824c92b47f78799a91612ee96e2-f3e70fa094984aa08bdf4bd81b183894"
@@ -69,15 +77,16 @@ local function check_event_state()
     local event_data = CorePlatform.GetGameEvent(event_id)
 
     if(event_data ~= nil) then
+		if event_data.state == CoreGameEventState.SCHEDULED then
+			YOOTIL.Events.broadcast_to_all_players("enable_spooky_ui")
+		end
+
         if event_data.state == CoreGameEventState.ACTIVE then
             event_active = true
 			YOOTIL.Events.broadcast_to_all_players("enable_spooky_event")
         else
             event_active = false
 			YOOTIL.Events.broadcast_to_all_players("disable_spooky_event")
-
-			-- event_active = true
-			-- YOOTIL.Events.broadcast_to_all_players("enable_spooky_event")
         end
     end
 end
@@ -155,30 +164,7 @@ function get_random_zombie_asset()
 		assets = concat_table(assets, zombie_faster_assets)
 		assets = concat_table(assets, zombie_fast_assets)
 
-		if(event_active) then
-			assets = concat_table(assets, {
-				
-				propOverrunNPCZombieGirlFastSpooky,
-				propOverrunNPCZombieGuyFastSpooky,
-				propOverrunNPCZombieGuyFasterSpooky,
-				propOverrunNPCZombieSpitterSpooky
-
-			})
-		end
-	elseif(event_active) then
-		assets = concat_table(assets, {
-			
-			propOverrunNPCZombieGuySlowSpooky,
-			propOverrunNPCZombieGirlSlowSpooky
-		})
-	end
-
-	if(round >= 11) then
-		assets = concat_table(assets, zombie_tank_assets)
-		assets = concat_table(assets, zombie_spitter_assets)
-		assets = concat_table(assets, zombie_fast_assets)
-		assets = concat_table(assets, zombie_faster_assets)
-		assets = concat_table(assets, zombie_faster_assets)
+		assets = concat_table(assets, zombie_special)
 
 		if(event_active) then
 			assets = concat_table(assets, {
@@ -187,7 +173,48 @@ function get_random_zombie_asset()
 				propOverrunNPCZombieGuyFastSpooky,
 				propOverrunNPCZombieGuyFasterSpooky,
 				propOverrunNPCZombieSpitterSpooky,
-				propOverrunNPCZombieSpitterBruteSpooky
+				propOverrunNPCZombieBomb,
+				propOverrunNPCZombieBomb,
+				propOverrunNPCZombieBomb,
+				propOverrunNPCZombieBomb
+
+			})
+		end
+	else
+		if(round > 2) then
+			assets = concat_table(assets, zombie_special)
+		end
+
+		if(event_active) then
+			assets = concat_table(assets, {
+				
+				propOverrunNPCZombieGuySlowSpooky,
+				propOverrunNPCZombieGirlSlowSpooky,
+				propOverrunNPCZombieBomb
+
+			})
+		end
+	end
+
+	if(round >= 11) then
+		assets = concat_table(assets, zombie_tank_assets)
+		assets = concat_table(assets, zombie_spitter_assets)
+		assets = concat_table(assets, zombie_fast_assets)
+		assets = concat_table(assets, zombie_faster_assets)
+		assets = concat_table(assets, zombie_faster_assets)
+		assets = concat_table(assets, zombie_special)
+		assets = concat_table(assets, zombie_special)
+
+		if(event_active) then
+			assets = concat_table(assets, {
+				
+				propOverrunNPCZombieGirlFastSpooky,
+				propOverrunNPCZombieGuyFastSpooky,
+				propOverrunNPCZombieGuyFasterSpooky,
+				propOverrunNPCZombieSpitterSpooky,
+				propOverrunNPCZombieSpitterBruteSpooky,
+				propOverrunNPCZombieBomb,
+				propOverrunNPCZombieBomb
 			
 			})
 		end

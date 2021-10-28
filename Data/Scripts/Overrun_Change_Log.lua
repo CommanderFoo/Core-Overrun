@@ -1,4 +1,12 @@
-﻿- New player level (no point to it, just something to increase).
+﻿28th Oct 2021
+
+- Added halloween event button.
+- Lowered pod health.
+- Added exploding zombie.
+
+-- 26th Oct 2021
+
+- New player level (no point to it, just something to increase).
 - Halloween leaderboard added.
 - You can sprint now by holding shift.
 - Highest round leaderboard reset.
