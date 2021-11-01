@@ -244,6 +244,18 @@ Objects {
         Id: 2188392935847311075
       }
     }
+    Overrides {
+      Name: "cs:OverrunWeaponBasicPistolTier2"
+      AssetReference {
+        Id: 16806458643039786760
+      }
+    }
+    Overrides {
+      Name: "cs:OverrunWeaponBasicPistolTier3"
+      AssetReference {
+        Id: 7900544181433704064
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -332,7 +344,7 @@ Objects {
     }
     Overrides {
       Name: "cs:late_join_money_per_round"
-      Int: 350
+      Int: 300
     }
     Overrides {
       Name: "cs:starting_lives"

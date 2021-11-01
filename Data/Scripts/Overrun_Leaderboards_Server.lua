@@ -3,6 +3,7 @@ local kills = script:GetCustomProperty("kills")
 local headshots = script:GetCustomProperty("headshots")
 local total_rounds = script:GetCustomProperty("total_rounds")
 local halloween_level = script:GetCustomProperty("halloween_level")
+local player_level = script:GetCustomProperty("player_level")
 
 function get_level_from_xp(xp)
 	return math.max(1, math.floor(.7 * math.sqrt(xp)))
@@ -16,6 +17,7 @@ Events.Connect("update_leaderboards", function()
 			Leaderboards.SubmitPlayerScore(headshots, p, p:GetResource("total_headshots"))
 			Leaderboards.SubmitPlayerScore(total_rounds, p, p:GetResource("total_rounds"))
 			Leaderboards.SubmitPlayerScore(halloween_level, p, get_level_from_xp(p:GetResource("hxp")))
+			Leaderboards.SubmitPlayerScore(player_level, p, get_level_from_xp(p:GetResource("xp")))
 		end
 	end
 end)

@@ -247,7 +247,7 @@ Assets {
             ProjectileLifeSpan: 10
             ProjectileLength: 50
             ProjectileRadius: 5
-            SpreadMax: 0.7
+            SpreadMax: 0.6
             SpreadDecreaseSpeed: 5.5
             SpreadIncreasePerShot: 0.3
             SpreadPenaltyPerShot: 0.5

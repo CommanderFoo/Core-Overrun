@@ -115,7 +115,7 @@ Assets {
           }
           Overrides {
             Name: "cs:ammo_max"
-            Int: 90
+            Int: 120
           }
           Overrides {
             Name: "cs:upgrade_asset_id"
@@ -242,7 +242,7 @@ Assets {
             ReticleType {
               Value: "mc:ereticletype:crosshair"
             }
-            MaxAmmo: 16
+            MaxAmmo: 18
             AmmoType: "rounds"
             IsFiniteAmmo: true
             MultiShot: 1
@@ -1200,7 +1200,7 @@ Assets {
         UnregisteredParameters {
           Overrides {
             Name: "cs:DamageToObjects"
-            Int: 300
+            Int: 340
           }
           Overrides {
             Name: "cs:DamageToPlayers"
@@ -1208,7 +1208,7 @@ Assets {
           }
           Overrides {
             Name: "cs:damage_to_head"
-            Int: 350
+            Int: 420
           }
         }
         WantsNetworking: true

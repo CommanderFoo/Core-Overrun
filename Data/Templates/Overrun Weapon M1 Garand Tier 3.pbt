@@ -2010,7 +2010,7 @@ Assets {
         UnregisteredParameters {
           Overrides {
             Name: "cs:DamageToObjects"
-            Int: 200
+            Int: 240
           }
           Overrides {
             Name: "cs:DamageToPlayers"
@@ -2018,7 +2018,7 @@ Assets {
           }
           Overrides {
             Name: "cs:damage_to_head"
-            Int: 280
+            Int: 340
           }
         }
         WantsNetworking: true

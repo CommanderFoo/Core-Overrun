@@ -291,7 +291,7 @@ Assets {
             ReticleType {
               Value: "mc:ereticletype:crosshair"
             }
-            MaxAmmo: 6
+            MaxAmmo: 8
             AmmoType: "rounds"
             IsFiniteAmmo: true
             MultiShot: 1
@@ -1310,7 +1310,7 @@ Assets {
           }
           Overrides {
             Name: "cs:damage_to_head"
-            Int: 300
+            Int: 400
           }
         }
         WantsNetworking: true

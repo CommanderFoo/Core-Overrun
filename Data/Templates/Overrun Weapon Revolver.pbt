@@ -115,7 +115,7 @@ Assets {
           }
           Overrides {
             Name: "cs:ammo_max"
-            Int: 48
+            Int: 60
           }
           Overrides {
             Name: "cs:upgrade_asset_id"
@@ -242,7 +242,7 @@ Assets {
             ReticleType {
               Value: "mc:ereticletype:crosshair"
             }
-            MaxAmmo: 6
+            MaxAmmo: 8
             AmmoType: "rounds"
             IsFiniteAmmo: true
             MultiShot: 1

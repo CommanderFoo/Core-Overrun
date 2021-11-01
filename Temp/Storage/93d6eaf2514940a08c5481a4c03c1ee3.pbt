@@ -3,31 +3,7 @@ Entries {
     StringVar: "total_upgrades"
   }
   SimpleValue {
-    IntVar: 4
-  }
-}
-Entries {
-  Key {
-    StringVar: "hxp"
-  }
-  SimpleValue {
-    IntVar: 1045
-  }
-}
-Entries {
-  Key {
-    StringVar: "total_spent"
-  }
-  SimpleValue {
-    IntVar: 130100
-  }
-}
-Entries {
-  Key {
-    StringVar: "total_kills_v2"
-  }
-  SimpleValue {
-    IntVar: 2754
+    IntVar: 8
   }
 }
 Entries {
@@ -35,15 +11,55 @@ Entries {
     StringVar: "total_money_all_time"
   }
   SimpleValue {
-    IntVar: 384975
+    IntVar: 1890
   }
 }
 Entries {
   Key {
-    StringVar: "total_perks"
+    StringVar: "total_kills_v2"
   }
   SimpleValue {
-    IntVar: 7
+    IntVar: 17
+  }
+}
+Entries {
+  Key {
+    StringVar: "total_games"
+  }
+  SimpleValue {
+    IntVar: 8
+  }
+}
+Entries {
+  Key {
+    StringVar: "total_spent"
+  }
+  SimpleValue {
+    IntVar: 71450
+  }
+}
+Entries {
+  Key {
+    StringVar: "total_deaths"
+  }
+  SimpleValue {
+    IntVar: 0
+  }
+}
+Entries {
+  Key {
+    StringVar: "total_spitters"
+  }
+  SimpleValue {
+    IntVar: 0
+  }
+}
+Entries {
+  Key {
+    StringVar: "total_revives"
+  }
+  SimpleValue {
+    IntVar: 0
   }
 }
 Entries {
@@ -56,18 +72,18 @@ Entries {
 }
 Entries {
   Key {
-    StringVar: "xp"
+    StringVar: "total_crates"
   }
   SimpleValue {
-    IntVar: 20895
+    IntVar: 0
   }
 }
 Entries {
   Key {
-    StringVar: "total_games"
+    StringVar: "xp"
   }
   SimpleValue {
-    IntVar: 218
+    IntVar: 170
   }
 }
 Entries {
@@ -75,31 +91,15 @@ Entries {
     StringVar: "total_barriers"
   }
   SimpleValue {
-    IntVar: 30
+    IntVar: 6
   }
 }
 Entries {
   Key {
-    StringVar: "total_revives"
+    StringVar: "total_perks"
   }
   SimpleValue {
-    IntVar: 13
-  }
-}
-Entries {
-  Key {
-    StringVar: "total_headshots"
-  }
-  SimpleValue {
-    IntVar: 356
-  }
-}
-Entries {
-  Key {
-    StringVar: "total_rounds"
-  }
-  SimpleValue {
-    IntVar: 39
+    IntVar: 0
   }
 }
 Entries {
@@ -107,30 +107,30 @@ Entries {
     StringVar: "highest_round_v4"
   }
   SimpleValue {
-    IntVar: 3
+    IntVar: 0
   }
 }
 Entries {
   Key {
-    StringVar: "total_spitters"
+    StringVar: "total_headshots"
   }
   SimpleValue {
-    IntVar: 66
+    IntVar: 13
   }
 }
 Entries {
   Key {
-    StringVar: "total_deaths"
+    StringVar: "total_rounds"
   }
   SimpleValue {
-    IntVar: 4
+    IntVar: 0
   }
 }
 Entries {
   Key {
-    StringVar: "total_crates"
+    StringVar: "hxp"
   }
   SimpleValue {
-    IntVar: 14
+    IntVar: 120
   }
 }

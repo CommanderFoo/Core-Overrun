@@ -91,10 +91,10 @@ local function check_event_state()
     end
 end
 
-local task = Task.Spawn(check_event_state)
+-- local task = Task.Spawn(check_event_state)
 
-task.repeatCount = -1
-task.repeatInterval = 45
+-- task.repeatCount = -1
+-- task.repeatInterval = 45
 
 local spawn_points = {}
 

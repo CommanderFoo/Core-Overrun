@@ -1,13 +1,13 @@
 Assets {
-  Id: 16298143866150817198
-  Name: "Overrun Weapon Basic Pistol"
+  Id: 7900544181433704064
+  Name: "Overrun Weapon Basic Pistol Tier 3"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
       RootId: 14156651541393010698
       Objects {
         Id: 14156651541393010698
-        Name: "Overrun Weapon Basic Pistol"
+        Name: "Overrun Weapon Basic Pistol Tier 3"
         Transform {
           Scale {
             X: 1
@@ -23,7 +23,7 @@ Assets {
         UnregisteredParameters {
           Overrides {
             Name: "cs:asset_id"
-            String: "E22EA37EB8218DAE"
+            String: "6DA45F12FAA29E80"
           }
           Overrides {
             Name: "cs:is_melee"
@@ -31,15 +31,15 @@ Assets {
           }
           Overrides {
             Name: "cs:ammo_max"
-            Int: 50
+            Int: 160
           }
           Overrides {
             Name: "cs:upgrade_asset_id"
-            String: "E93C891766AE1708"
+            String: ""
           }
           Overrides {
             Name: "cs:upgrade_price"
-            Int: 5000
+            Int: 0
           }
         }
         WantsNetworking: true
@@ -93,7 +93,7 @@ Assets {
               Id: 841534158063459245
             }
             BurstCount: 1
-            BurstDuration: 1
+            BurstDuration: 6
             AttackCooldown: 0.25
             Range: 70000
             ImpactPlayerAssetRef {
@@ -102,7 +102,7 @@ Assets {
             ReticleType {
               Value: "mc:ereticletype:crosshair"
             }
-            MaxAmmo: 16
+            MaxAmmo: 40
             AmmoType: "rounds"
             IsFiniteAmmo: true
             MultiShot: 1
@@ -644,7 +644,7 @@ Assets {
         UnregisteredParameters {
           Overrides {
             Name: "cs:DamageToObjects"
-            Int: 60
+            Int: 300
           }
           Overrides {
             Name: "cs:DamageToPlayers"
@@ -652,7 +652,7 @@ Assets {
           }
           Overrides {
             Name: "cs:damage_to_head"
-            Int: 100
+            Int: 460
           }
         }
         WantsNetworking: true

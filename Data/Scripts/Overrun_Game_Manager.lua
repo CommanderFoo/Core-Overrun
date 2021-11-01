@@ -30,7 +30,7 @@ local t = Task.Spawn(function()
 end)
 
 t.repeatCount = -1
-t.repeatInterval = 30
+t.repeatInterval = 10
 
 function player_joined(p)
 	if(not players[p.id]) then
@@ -416,7 +416,7 @@ function round_completed()
 		max_spawns = 8
 	end
 
-	Spawner.context.set_max_spawns(math.min(50, max_spawns))
+	Spawner.context.set_max_spawns(math.min(40, max_spawns))
 	YOOTIL.Events.broadcast_to_all_players("on_round_start", round, fog_round)
 	Spawner.context.spawn_zombies()
 

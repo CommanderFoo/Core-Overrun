@@ -1,4 +1,12 @@
-﻿28th Oct 2021
+﻿1st Nov 2021
+
+- Added player level leaderboard.
+- Halloween event leaderboard will stay around for a bit.
+- Buffed some weapons.
+- Minor performance change to explosions.
+- Reduced max spawns to 40 for a round.
+
+28th Oct 2021
 
 - Added halloween event button.
 - Lowered pod health.

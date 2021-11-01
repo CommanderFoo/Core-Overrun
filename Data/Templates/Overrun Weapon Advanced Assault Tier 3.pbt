@@ -229,7 +229,7 @@ Assets {
               Id: 841534158063459245
             }
             BurstCount: 60
-            BurstDuration: 7
+            BurstDuration: 7.5
             BurstStopsWithRelease: true
             AttackCooldown: 0.25
             Range: 100000
@@ -247,7 +247,7 @@ Assets {
             ProjectileLifeSpan: 10
             ProjectileLength: 50
             ProjectileRadius: 5
-            SpreadMax: 0.7
+            SpreadMax: 0.6
             SpreadDecreaseSpeed: 5.5
             SpreadIncreasePerShot: 0.3
             SpreadPenaltyPerShot: 0.5
@@ -1391,7 +1391,7 @@ Assets {
           }
           Overrides {
             Name: "cs:damage_to_head"
-            Int: 180
+            Int: 200
           }
         }
         WantsNetworking: true

@@ -65,5 +65,16 @@ LeaderboardConfigs {
     Id: "C4A910DA3154D0E4"
     EntryLimit: 25
   }
+  Config {
+    SortType {
+      Value: "mc:ecoresdkleaderboardsorting:higherisbetter"
+    }
+    FormatType {
+      Value: "mc:ecoresdkleaderboardformat:numeric"
+    }
+    Name: "player_level"
+    Id: "AD4AE8B4C6DCD2DA"
+    EntryLimit: 10
+  }
 }
 MainScene: "Main"

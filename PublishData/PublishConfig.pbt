@@ -13,7 +13,7 @@ ScreenshotPaths: "C:\\Users\\pixel\\Documents\\My Games\\CORE\\Saved\\Maps\\Over
 ScreenshotPaths: "C:\\Users\\pixel\\Documents\\My Games\\CORE\\Saved\\Maps\\Overrun\\Screenshots\\3.jpg"
 ScreenshotPaths: "C:\\Users\\pixel\\Documents\\My Games\\CORE\\Saved\\Maps\\Overrun\\Screenshots\\4.jpg"
 ScreenshotPaths: "C:\\Users\\pixel\\Documents\\My Games\\CORE\\Saved\\Maps\\Overrun\\Screenshots\\5.jpg"
-ReleaseNotes: "28th Oct 2021\r\n\r\n- Added halloween event button.\r\n- Lowered pod health.\r\n- Added exploding zombie.\r\n\r\n-- 26th Oct 2021\r\n\r\n- New player level (no point to it, just something to increase).\r\n- Halloween leaderboard added.\r\n- You can sprint now by holding shift.\r\n- Highest round leaderboard reset.\r\n- Moved all broadcasts to queuing library.\r\n- Made the area spooky for halloween."
+ReleaseNotes: "1st Nov 2021\r\n\r\n- Added player level leaderboard.\r\n- Halloween event leaderboard will stay around for a bit.\r\n- Buffed some weapons.\r\n- Minor performance change to explosions.\r\n- Reduced max spawns to 40 for a round."
 OwnerId: "93d6eaf2514940a08c5481a4c03c1ee3"
 SerializationVersion: 2
 PublishedState: Public
