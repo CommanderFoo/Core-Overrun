@@ -111,7 +111,7 @@ Assets {
           }
           Overrides {
             Name: "cs:ammo_max"
-            Int: 280
+            Int: 320
           }
           Overrides {
             Name: "cs:upgrade_asset_id"
@@ -921,7 +921,7 @@ Assets {
         UnregisteredParameters {
           Overrides {
             Name: "cs:DamageToObjects"
-            Int: 100
+            Int: 160
           }
           Overrides {
             Name: "cs:DamageToPlayers"
@@ -929,7 +929,7 @@ Assets {
           }
           Overrides {
             Name: "cs:damage_to_head"
-            Int: 160
+            Int: 250
           }
         }
         WantsNetworking: true

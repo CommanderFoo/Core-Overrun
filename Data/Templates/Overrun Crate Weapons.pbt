@@ -15,7 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 6336150262430899683
+        ParentId: 16027638726408125116
         ChildIds: 9016470043389754198
         ChildIds: 16209070547319350132
         ChildIds: 10670759494488142622
@@ -5132,6 +5132,10 @@ Assets {
         ChildIds: 4595669443730848234
         ChildIds: 2643510531831739566
         UnregisteredParameters {
+          Overrides {
+            Name: "cs:asset_id"
+            String: "1B85C22EB32178F3"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"

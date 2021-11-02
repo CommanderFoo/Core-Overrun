@@ -228,7 +228,7 @@ Assets {
               Id: 841534158063459245
             }
             BurstCount: 20
-            BurstDuration: 12
+            BurstDuration: 9
             BurstStopsWithRelease: true
             AttackCooldown: 0.25
             Range: 25000
@@ -238,7 +238,7 @@ Assets {
             ReticleType {
               Value: "mc:ereticletype:crosshair"
             }
-            MaxAmmo: 20
+            MaxAmmo: 30
             AmmoType: "rounds"
             IsFiniteAmmo: true
             MultiShot: 1
@@ -1723,7 +1723,7 @@ Assets {
         UnregisteredParameters {
           Overrides {
             Name: "cs:DamageToObjects"
-            Int: 30
+            Int: 40
           }
           Overrides {
             Name: "cs:DamageToPlayers"
@@ -1731,7 +1731,7 @@ Assets {
           }
           Overrides {
             Name: "cs:damage_to_head"
-            Int: 50
+            Int: 70
           }
         }
         WantsNetworking: true

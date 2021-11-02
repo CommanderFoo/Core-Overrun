@@ -229,7 +229,7 @@ Assets {
               Id: 841534158063459245
             }
             BurstCount: 40
-            BurstDuration: 12
+            BurstDuration: 9
             BurstStopsWithRelease: true
             AttackCooldown: 0.25
             Range: 25000
@@ -1724,7 +1724,7 @@ Assets {
         UnregisteredParameters {
           Overrides {
             Name: "cs:DamageToObjects"
-            Int: 80
+            Int: 100
           }
           Overrides {
             Name: "cs:DamageToPlayers"
@@ -1732,7 +1732,7 @@ Assets {
           }
           Overrides {
             Name: "cs:damage_to_head"
-            Int: 100
+            Int: 140
           }
         }
         WantsNetworking: true

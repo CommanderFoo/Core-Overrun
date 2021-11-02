@@ -111,7 +111,7 @@ Assets {
           }
           Overrides {
             Name: "cs:ammo_max"
-            Int: 360
+            Int: 420
           }
           Overrides {
             Name: "cs:upgrade_asset_id"
@@ -229,7 +229,7 @@ Assets {
               Id: 841534158063459245
             }
             BurstCount: 40
-            BurstDuration: 12
+            BurstDuration: 9
             BurstStopsWithRelease: true
             AttackCooldown: 0.25
             Range: 25000
@@ -239,7 +239,7 @@ Assets {
             ReticleType {
               Value: "mc:ereticletype:crosshair"
             }
-            MaxAmmo: 40
+            MaxAmmo: 60
             AmmoType: "rounds"
             IsFiniteAmmo: true
             MultiShot: 1
@@ -1724,7 +1724,7 @@ Assets {
         UnregisteredParameters {
           Overrides {
             Name: "cs:DamageToObjects"
-            Int: 130
+            Int: 180
           }
           Overrides {
             Name: "cs:DamageToPlayers"
@@ -1732,7 +1732,7 @@ Assets {
           }
           Overrides {
             Name: "cs:damage_to_head"
-            Int: 160
+            Int: 250
           }
         }
         WantsNetworking: true

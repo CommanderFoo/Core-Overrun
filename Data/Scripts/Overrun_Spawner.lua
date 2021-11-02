@@ -98,7 +98,7 @@ end
 
 local spawn_points = {}
 
-local max = 12
+local max = 15
 local max_reset = max
 local spawn_task = nil
 local round = 1

@@ -1,4 +1,9 @@
-﻿1st Nov 2021
+﻿2nd Nov 2021
+
+- Added missing SMG
+- Weapon stats tweaked
+
+1st Nov 2021
 
 - Added player level leaderboard.
 - Halloween event leaderboard will stay around for a bit.

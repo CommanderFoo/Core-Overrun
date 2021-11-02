@@ -146,7 +146,7 @@ Assets {
           }
           Overrides {
             Name: "cs:ammo_max"
-            Int: 48
+            Int: 54
           }
           Overrides {
             Name: "cs:upgrade_asset_id"

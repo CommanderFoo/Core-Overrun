@@ -38,7 +38,7 @@ Objects {
     }
     Overrides {
       Name: "cs:items"
-      Int: 10
+      Int: 11
     }
     Overrides {
       Name: "cs:time_to_open"
@@ -1624,7 +1624,7 @@ Objects {
     }
     Overrides {
       Name: "cs:items"
-      Int: 10
+      Int: 11
     }
     Overrides {
       Name: "cs:time_to_open"
@@ -3202,7 +3202,7 @@ Objects {
     }
     Overrides {
       Name: "cs:items"
-      Int: 10
+      Int: 11
     }
     Overrides {
       Name: "cs:time_to_open"
@@ -4382,8 +4382,11 @@ Objects {
     }
   }
   ParentId: 16027638726408125116
-  CameraCollidable {
+  Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceon"
   }
   TemplateInstance {
     ParameterOverrideMap {
@@ -4394,11 +4397,13 @@ Objects {
           String: "Overrun Crate Weapons"
         }
         Overrides {
-          Name: "Scale"
+          Name: "Position"
           Vector {
-            X: 1
-            Y: 1
-            Z: 1
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
           }
         }
       }
@@ -4780,7 +4785,7 @@ Objects {
     }
     Overrides {
       Name: "cs:items"
-      Int: 10
+      Int: 11
     }
     Overrides {
       Name: "cs:time_to_open"
@@ -6368,7 +6373,7 @@ Objects {
     }
     Overrides {
       Name: "cs:items"
-      Int: 10
+      Int: 11
     }
     Overrides {
       Name: "cs:time_to_open"
