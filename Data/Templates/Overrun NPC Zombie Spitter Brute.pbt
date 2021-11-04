@@ -37,11 +37,11 @@ Assets {
           }
           Overrides {
             Name: "cs:CurrentHealth"
-            Float: 350
+            Float: 380
           }
           Overrides {
             Name: "cs:MoveSpeed"
-            Float: 400
+            Float: 450
           }
           Overrides {
             Name: "cs:TurnSpeed"
@@ -85,19 +85,19 @@ Assets {
           }
           Overrides {
             Name: "cs:AttackRange"
-            Float: 400
+            Float: 800
           }
           Overrides {
             Name: "cs:AttackCast"
-            Float: 0.5
+            Float: 0.4
           }
           Overrides {
             Name: "cs:AttackRecovery"
-            Float: 1
+            Float: 0.65
           }
           Overrides {
             Name: "cs:AttackCooldown"
-            Float: 1.5
+            Float: 1
           }
           Overrides {
             Name: "cs:IsPushable"
@@ -137,7 +137,7 @@ Assets {
           }
           Overrides {
             Name: "cs:damage_to_players"
-            Int: 40
+            Int: 60
           }
           Overrides {
             Name: "cs:damage_to_npcs"
@@ -145,7 +145,7 @@ Assets {
           }
           Overrides {
             Name: "cs:max_health"
-            Int: 350
+            Int: 380
           }
           Overrides {
             Name: "cs:CurrentState:isrep"

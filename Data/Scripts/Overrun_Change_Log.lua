@@ -1,4 +1,11 @@
-﻿2nd Nov 2021
+﻿4th Nov 2021
+
+- Tweaked spitter damage and range for brute.
+- 2 new weapons added to the box.
+- Tweaked the melee speed of the sword and hammer (was too fast).
+- Increased drop rate of max ammo.
+
+2nd Nov 2021
 
 - Added missing SMG
 - Weapon stats tweaked

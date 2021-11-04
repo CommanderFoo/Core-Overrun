@@ -265,7 +265,7 @@ function ApplyDamage(dmg, source, position, rotation)
 
 				boom_obj:SetWorldPosition(Vector3.New(pos.x, pos.y, 150))
 
-				local results = World.FindObjectsOverlappingSphere(pos, 500)
+				local results = World.FindObjectsOverlappingSphere(pos, 550)
 
 				--CoreDebug.DrawSphere(pos, 500, { duration = 1 })
 
@@ -299,6 +299,12 @@ function ApplyDamage(dmg, source, position, rotation)
 				source:AddResource("kills", 1)
 				source:AddResource("total_kills_v2", 1)
 				spawn_random_power_up(source)
+
+				-- Headshot testing in god mode
+
+				if(source:GetResource("admin_god_mode") == 1) then
+					source:AddResource("total_headshots", 1)
+				end
 			end
 		end
 

@@ -38,7 +38,7 @@ Objects {
     }
     Overrides {
       Name: "cs:items"
-      Int: 11
+      Int: 13
     }
     Overrides {
       Name: "cs:time_to_open"
@@ -159,7 +159,7 @@ Objects {
     }
     Overrides {
       Name: "cs:skull_index"
-      Int: 12
+      Int: 14
     }
   }
   Collidable_v2 {
@@ -1624,7 +1624,7 @@ Objects {
     }
     Overrides {
       Name: "cs:items"
-      Int: 11
+      Int: 13
     }
     Overrides {
       Name: "cs:time_to_open"
@@ -1745,7 +1745,7 @@ Objects {
     }
     Overrides {
       Name: "cs:skull_index"
-      Int: 12
+      Int: 14
     }
   }
   Collidable_v2 {
@@ -3202,7 +3202,7 @@ Objects {
     }
     Overrides {
       Name: "cs:items"
-      Int: 11
+      Int: 13
     }
     Overrides {
       Name: "cs:time_to_open"
@@ -3323,7 +3323,7 @@ Objects {
     }
     Overrides {
       Name: "cs:skull_index"
-      Int: 12
+      Int: 14
     }
   }
   Collidable_v2 {
@@ -4785,7 +4785,7 @@ Objects {
     }
     Overrides {
       Name: "cs:items"
-      Int: 11
+      Int: 13
     }
     Overrides {
       Name: "cs:time_to_open"
@@ -4906,7 +4906,7 @@ Objects {
     }
     Overrides {
       Name: "cs:skull_index"
-      Int: 12
+      Int: 14
     }
   }
   Collidable_v2 {
@@ -6373,7 +6373,7 @@ Objects {
     }
     Overrides {
       Name: "cs:items"
-      Int: 11
+      Int: 13
     }
     Overrides {
       Name: "cs:time_to_open"
@@ -6494,7 +6494,7 @@ Objects {
     }
     Overrides {
       Name: "cs:skull_index"
-      Int: 12
+      Int: 14
     }
   }
   Collidable_v2 {
@@ -7553,8 +7553,11 @@ Objects {
     }
   }
   ParentId: 14895428919348518554
-  CameraCollidable {
+  Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceon"
   }
   TemplateInstance {
     ParameterOverrideMap {
@@ -7573,7 +7576,7 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -2.39056571e-05
+            Yaw: -3.05175781e-05
           }
         }
       }

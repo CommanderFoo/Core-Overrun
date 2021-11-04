@@ -259,7 +259,7 @@ Assets {
             }
           }
           CooldownPhaseSettings {
-            Duration: 1
+            Duration: 1.2
             CanMove: true
             CanJump: true
             CanRotate: true
@@ -375,7 +375,7 @@ Assets {
             }
           }
           CooldownPhaseSettings {
-            Duration: 1
+            Duration: 1.2
             CanMove: true
             CanJump: true
             CanRotate: true

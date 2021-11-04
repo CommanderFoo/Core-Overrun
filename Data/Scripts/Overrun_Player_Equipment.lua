@@ -42,10 +42,16 @@ function bought_item(player, asset_id, play_audio)
 				local new_weapon = World.SpawnAsset(asset)
 
 				if(not new_weapon:GetCustomProperty("is_melee")) then
-					player:SetResource("rounds", new_weapon:GetCustomProperty("ammo_max"))
+					local m_ammo = new_weapon:GetCustomProperty("ammo_max")
+
+					if(player:GetResource("admin_god_mode") == 1) then
+						m_ammo = 999
+					end
+
+					player:SetResource("rounds", m_ammo)
 
 					if(new_weapon.currentAmmo ~= nil) then
-						new_weapon.currentAmmo = new_weapon:GetCustomProperty("ammo_max")
+						new_weapon.currentAmmo = m_ammo
 					end
 				end
 
@@ -71,11 +77,16 @@ function max_ammo()
 		local is_melee = equipment:GetCustomProperty("is_melee")
 
 		if(equipment:IsA("Weapon")) then
+			local m_ammo = equipment:GetCustomProperty("ammo_max")
 
-			player:SetResource("rounds", equipment:GetCustomProperty("ammo_max"))
+			if(player:GetResource("admin_god_mode") == 1) then
+				m_ammo = 999
+			end
+
+			player:SetResource("rounds", m_ammo)
 
 			if(equipment.currentAmmo ~= nil) then
-				equipment.currentAmmo = equipment:GetCustomProperty("ammo_max")
+				equipment.currentAmmo = m_ammo
 			end
 		end
 	end

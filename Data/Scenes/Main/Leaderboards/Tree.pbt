@@ -1880,9 +1880,9 @@ Objects {
   Name: "World Text"
   Transform {
     Location {
-      X: 38.3861656
-      Y: 42.6764793
-      Z: 2.7366333
+      X: 23.6654453
+      Y: 42.6762924
+      Z: 2.73659921
     }
     Rotation {
       Pitch: 90
@@ -1909,7 +1909,7 @@ Objects {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
   Text {
-    Text: "HALLOWEEN HIGHEST LEVEL"
+    Text: "HALLOWEEN LEVEL"
     FontAsset {
     }
     Color {

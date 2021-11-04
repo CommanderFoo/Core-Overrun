@@ -85,7 +85,7 @@ Assets {
           }
           Overrides {
             Name: "cs:AttackRange"
-            Float: 350
+            Float: 400
           }
           Overrides {
             Name: "cs:AttackCast"
@@ -97,7 +97,7 @@ Assets {
           }
           Overrides {
             Name: "cs:AttackCooldown"
-            Float: 1.8
+            Float: 1.5
           }
           Overrides {
             Name: "cs:IsPushable"
@@ -137,7 +137,7 @@ Assets {
           }
           Overrides {
             Name: "cs:damage_to_players"
-            Int: 30
+            Int: 40
           }
           Overrides {
             Name: "cs:damage_to_npcs"

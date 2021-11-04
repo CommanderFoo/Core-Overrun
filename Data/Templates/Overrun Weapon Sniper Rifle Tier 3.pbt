@@ -1310,7 +1310,7 @@ Assets {
           }
           Overrides {
             Name: "cs:damage_to_head"
-            Int: 700
+            Int: 750
           }
         }
         WantsNetworking: true

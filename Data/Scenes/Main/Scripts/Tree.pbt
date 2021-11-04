@@ -256,6 +256,42 @@ Objects {
         Id: 7900544181433704064
       }
     }
+    Overrides {
+      Name: "cs:OverrunWeaponSpecOpsSniperRifle"
+      AssetReference {
+        Id: 2301371153921549166
+      }
+    }
+    Overrides {
+      Name: "cs:OverrunWeaponSpecOpsSniperRifleTier2"
+      AssetReference {
+        Id: 2667541840963853972
+      }
+    }
+    Overrides {
+      Name: "cs:OverrunWeaponSpecOpsSniperRifleTier3"
+      AssetReference {
+        Id: 14055978586519738484
+      }
+    }
+    Overrides {
+      Name: "cs:OverrunWeaponMagnum"
+      AssetReference {
+        Id: 5225475900775360668
+      }
+    }
+    Overrides {
+      Name: "cs:OverrunWeaponMagnumTier2"
+      AssetReference {
+        Id: 356744861043468798
+      }
+    }
+    Overrides {
+      Name: "cs:OverrunWeaponMagnumTier3"
+      AssetReference {
+        Id: 10197994151715239154
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -797,7 +833,7 @@ Objects {
     }
     Overrides {
       Name: "cs:max_ammo_chance"
-      Int: 20
+      Int: 25
     }
     Overrides {
       Name: "cs:YOOTIL"

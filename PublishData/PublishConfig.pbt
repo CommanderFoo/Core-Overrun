@@ -13,7 +13,7 @@ ScreenshotPaths: "C:\\Users\\pixel\\Documents\\My Games\\CORE\\Saved\\Maps\\Over
 ScreenshotPaths: "C:\\Users\\pixel\\Documents\\My Games\\CORE\\Saved\\Maps\\Overrun\\Screenshots\\3.jpg"
 ScreenshotPaths: "C:\\Users\\pixel\\Documents\\My Games\\CORE\\Saved\\Maps\\Overrun\\Screenshots\\4.jpg"
 ScreenshotPaths: "C:\\Users\\pixel\\Documents\\My Games\\CORE\\Saved\\Maps\\Overrun\\Screenshots\\5.jpg"
-ReleaseNotes: "2nd Nov 2021\r\n\r\n- Added missing SMG\r\n- Weapon stats tweaked"
+ReleaseNotes: "4th Nov 2021\r\n\r\n- Tweaked spitter damage and range for brute.\r\n- 2 new weapons added to the box.\r\n- Tweaked the melee speed of the sword and hammer (was too fast).\r\n- Increased drop rate of max ammo."
 OwnerId: "93d6eaf2514940a08c5481a4c03c1ee3"
 SerializationVersion: 2
 PublishedState: Public

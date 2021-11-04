@@ -60,8 +60,6 @@ function Tick()
         else
             newSpreadModifyValue = CROUCH_PRECISION
         end
-    elseif (player.isSliding) then
-        newSpreadModifyValue = SLIDING_PRECISION
     elseif (player.isAccelerating) then
         newSpreadModifyValue = WALK_PRECISION
     else

@@ -983,7 +983,7 @@ Assets {
         UnregisteredParameters {
           Overrides {
             Name: "cs:DamageToObjects"
-            Int: 160
+            Int: 200
           }
           Overrides {
             Name: "cs:DamageToPlayers"
@@ -991,7 +991,7 @@ Assets {
           }
           Overrides {
             Name: "cs:damage_to_head"
-            Int: 200
+            Int: 300
           }
         }
         WantsNetworking: true

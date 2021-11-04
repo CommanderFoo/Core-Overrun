@@ -29,7 +29,7 @@ Assets {
           }
           Overrides {
             Name: "cs:HeadshotDamage"
-            Float: 50
+            Float: 60
           }
           Overrides {
             Name: "cs:EnableAutoReload"
@@ -228,7 +228,7 @@ Assets {
             BeamAssetRef {
               Id: 841534158063459245
             }
-            BurstCount: 40
+            BurstCount: 60
             BurstDuration: 9
             BurstStopsWithRelease: true
             AttackCooldown: 0.25
@@ -1732,7 +1732,7 @@ Assets {
           }
           Overrides {
             Name: "cs:damage_to_head"
-            Int: 250
+            Int: 280
           }
         }
         WantsNetworking: true
