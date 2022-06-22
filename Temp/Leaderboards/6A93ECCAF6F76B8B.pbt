@@ -13,8 +13,8 @@ GlobalEntries {
 GlobalEntries {
   Id: "BOT_Bot1"
   Name: "Bot1"
-  ScoreFormatted: "34.0"
-  DateTime: "2021-10-27T00:41:12.840Z"
+  ScoreFormatted: "36.0"
+  DateTime: "2022-02-21T23:41:46.005Z"
 }
 GlobalEntries {
   Id: "BOT_Bot3"

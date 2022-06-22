@@ -1,54 +1,6 @@
 Entries {
   Key {
-    StringVar: "total_revives"
-  }
-  SimpleValue {
-    IntVar: 41
-  }
-}
-Entries {
-  Key {
-    StringVar: "total_barriers"
-  }
-  SimpleValue {
-    IntVar: 0
-  }
-}
-Entries {
-  Key {
-    StringVar: "total_kills_v2"
-  }
-  SimpleValue {
-    IntVar: 3
-  }
-}
-Entries {
-  Key {
-    StringVar: "total_rounds"
-  }
-  SimpleValue {
-    IntVar: 2
-  }
-}
-Entries {
-  Key {
-    StringVar: "welcome"
-  }
-  SimpleValue {
-    IntVar: 1
-  }
-}
-Entries {
-  Key {
-    StringVar: "total_crates"
-  }
-  SimpleValue {
-    IntVar: 0
-  }
-}
-Entries {
-  Key {
-    StringVar: "xp"
+    StringVar: "total_perks"
   }
   SimpleValue {
     IntVar: 0
@@ -64,39 +16,23 @@ Entries {
 }
 Entries {
   Key {
-    StringVar: "highest_round_v4"
+    StringVar: "total_crates"
   }
   SimpleValue {
-    IntVar: 2
+    IntVar: 0
+  }
+}
+Entries {
+  Key {
+    StringVar: "hxp"
+  }
+  SimpleValue {
+    IntVar: 0
   }
 }
 Entries {
   Key {
     StringVar: "total_spitters"
-  }
-  SimpleValue {
-    IntVar: 0
-  }
-}
-Entries {
-  Key {
-    StringVar: "total_upgrades"
-  }
-  SimpleValue {
-    IntVar: 0
-  }
-}
-Entries {
-  Key {
-    StringVar: "total_games"
-  }
-  SimpleValue {
-    IntVar: 25
-  }
-}
-Entries {
-  Key {
-    StringVar: "total_spent"
   }
   SimpleValue {
     IntVar: 0
@@ -112,6 +48,38 @@ Entries {
 }
 Entries {
   Key {
+    StringVar: "total_rounds"
+  }
+  SimpleValue {
+    IntVar: 2
+  }
+}
+Entries {
+  Key {
+    StringVar: "total_revives"
+  }
+  SimpleValue {
+    IntVar: 42
+  }
+}
+Entries {
+  Key {
+    StringVar: "welcome"
+  }
+  SimpleValue {
+    IntVar: 1
+  }
+}
+Entries {
+  Key {
+    StringVar: "total_barriers"
+  }
+  SimpleValue {
+    IntVar: 0
+  }
+}
+Entries {
+  Key {
     StringVar: "total_headshots"
   }
   SimpleValue {
@@ -120,7 +88,47 @@ Entries {
 }
 Entries {
   Key {
-    StringVar: "total_perks"
+    StringVar: "total_games"
+  }
+  SimpleValue {
+    IntVar: 26
+  }
+}
+Entries {
+  Key {
+    StringVar: "total_kills_v2"
+  }
+  SimpleValue {
+    IntVar: 3
+  }
+}
+Entries {
+  Key {
+    StringVar: "highest_round_v4"
+  }
+  SimpleValue {
+    IntVar: 2
+  }
+}
+Entries {
+  Key {
+    StringVar: "total_upgrades"
+  }
+  SimpleValue {
+    IntVar: 0
+  }
+}
+Entries {
+  Key {
+    StringVar: "xp"
+  }
+  SimpleValue {
+    IntVar: 0
+  }
+}
+Entries {
+  Key {
+    StringVar: "total_spent"
   }
   SimpleValue {
     IntVar: 0
