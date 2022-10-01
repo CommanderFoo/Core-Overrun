@@ -28,6 +28,10 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "Center Spawns"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 1539028890634100055
@@ -59,6 +63,10 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "House 2 Spawns_1"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 13194144015473889140
@@ -90,4 +98,8 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "House 1 Spawns_1"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }

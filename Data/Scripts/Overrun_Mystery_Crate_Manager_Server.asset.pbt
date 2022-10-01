@@ -3,6 +3,8 @@ Assets {
   Name: "Overrun_Mystery_Crate_Manager_Server"
   PlatformAssetType: 3
   TextAsset {
+    CustomParameters {
+    }
   }
-  SerializationVersion: 101
+  SerializationVersion: 118
 }

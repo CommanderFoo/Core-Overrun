@@ -28,6 +28,10 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "House 2 Spawns"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 14201031784172545230
@@ -57,6 +61,10 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "House 1 Spawns"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 6224838324090798873
@@ -86,4 +94,8 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "Center Pod Spawns"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }

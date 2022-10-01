@@ -42,6 +42,10 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "Pod Spawn_4"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 15951593517389698332
@@ -85,6 +89,10 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "Pod Spawn_5"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 3924316513809425970
@@ -128,6 +136,10 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "Pod Spawn_6"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 1661613775214494936
@@ -170,6 +182,10 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "Pod Spawn_7"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 13421789084467092234
@@ -212,4 +228,8 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "Pod Spawn_8"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }

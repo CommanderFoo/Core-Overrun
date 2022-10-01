@@ -42,6 +42,10 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "Pod Spawn_2"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 6828072523061185255
@@ -85,4 +89,8 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "Pod Spawn_3"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }

@@ -2,7 +2,7 @@ Assets {
   Id: 1496275681172514905
   Name: "Banner Purple MAT"
   PlatformAssetType: 13
-  SerializationVersion: 101
+  SerializationVersion: 118
   CustomMaterialAsset {
     BaseMaterialId: 9222492698913230270
     ParameterOverrides {

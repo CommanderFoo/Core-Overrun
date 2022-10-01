@@ -3,6 +3,8 @@ Assets {
   Name: "Overrun_Spawner"
   PlatformAssetType: 3
   TextAsset {
+    CustomParameters {
+    }
   }
-  SerializationVersion: 101
+  SerializationVersion: 118
 }

@@ -2,7 +2,7 @@ Assets {
   Id: 5982031393844567229
   Name: "303 wood"
   PlatformAssetType: 13
-  SerializationVersion: 101
+  SerializationVersion: 118
   CustomMaterialAsset {
     BaseMaterialId: 9567186865643003320
     ParameterOverrides {

@@ -2,7 +2,7 @@ Assets {
   Id: 15870273313080591549
   Name: "Custom Glass 01_molotov"
   PlatformAssetType: 13
-  SerializationVersion: 101
+  SerializationVersion: 118
   CustomMaterialAsset {
     BaseMaterialId: 1695210268810994902
     ParameterOverrides {

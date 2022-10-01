@@ -2,7 +2,7 @@ Assets {
   Id: 8512601452298737056
   Name: "Custom Neon from Animated Neon Sign- Sparkles"
   PlatformAssetType: 13
-  SerializationVersion: 101
+  SerializationVersion: 118
   CustomMaterialAsset {
     BaseMaterialId: 4656903096734386422
     ParameterOverrides {

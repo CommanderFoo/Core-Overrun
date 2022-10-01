@@ -109,6 +109,10 @@ Objects {
       Id: 5439892087452713361
     }
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 561231916921763455
@@ -169,6 +173,10 @@ Objects {
       Id: 6789339011167713337
     }
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 4560180024027551022
@@ -198,4 +206,8 @@ Objects {
     IsFilePartition: true
     FilePartitionName: "Path Finding Collisions"
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }

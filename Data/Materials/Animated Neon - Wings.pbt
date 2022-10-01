@@ -2,7 +2,7 @@ Assets {
   Id: 881277530968661971
   Name: "Animated Neon - Wings"
   PlatformAssetType: 13
-  SerializationVersion: 101
+  SerializationVersion: 118
   CustomMaterialAsset {
     BaseMaterialId: 3521438332259672826
     ParameterOverrides {

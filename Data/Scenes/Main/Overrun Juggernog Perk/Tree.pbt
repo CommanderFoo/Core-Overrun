@@ -37,6 +37,10 @@ Objects {
     TriggerShape_v2 {
       Value: "mc:etriggershape:box"
     }
+    InteractionTemplate {
+    }
+    BreadcrumbTemplate {
+    }
   }
   InstanceHistory {
     SelfId: 15697686135713380320
@@ -44,6 +48,10 @@ Objects {
     InstanceId: 5277089153500760171
     TemplateId: 13087641139100061621
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 8223883554527081137
@@ -79,6 +87,10 @@ Objects {
     InstanceId: 5277089153500760171
     TemplateId: 13087641139100061621
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 10522829342220299259
@@ -132,6 +144,10 @@ Objects {
     InstanceId: 5277089153500760171
     TemplateId: 13087641139100061621
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 14963841571109271528
@@ -160,6 +176,12 @@ Objects {
     Value: "mc:ecollisionsetting:forceoff"
   }
   NetworkContext {
+    MinDetailLevel {
+      Value: "mc:edetaillevel:low"
+    }
+    MaxDetailLevel {
+      Value: "mc:edetaillevel:ultra"
+    }
   }
   InstanceHistory {
     SelfId: 14963841571109271528
@@ -167,6 +189,10 @@ Objects {
     InstanceId: 5277089153500760171
     TemplateId: 13087641139100061621
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 275893878698641084
@@ -220,6 +246,10 @@ Objects {
     InstanceId: 5277089153500760171
     TemplateId: 13087641139100061621
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 10448007443141994937
@@ -261,4 +291,8 @@ Objects {
     InstanceId: 5277089153500760171
     TemplateId: 13087641139100061621
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }

@@ -87,6 +87,10 @@ Objects {
     TemplateId: 13087641139100061621
     WasRoot: true
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 7602381977539412882
@@ -174,4 +178,8 @@ Objects {
     TemplateId: 12801802773454107622
     WasRoot: true
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }

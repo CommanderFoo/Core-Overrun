@@ -29,6 +29,10 @@ Assets {
             }
           }
         }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+        IsReplicationEnabledByDefault: true
       }
     }
     PrimaryAssetId {
@@ -43,5 +47,5 @@ Assets {
     Version: "1.0.0"
     Description: "Skeleton Corpse"
   }
-  SerializationVersion: 101
+  SerializationVersion: 118
 }

@@ -2,7 +2,7 @@ Assets {
   Id: 17224771745084872262
   Name: "Sten metal 01"
   PlatformAssetType: 13
-  SerializationVersion: 101
+  SerializationVersion: 118
   CustomMaterialAsset {
     BaseMaterialId: 9497951731488909799
     ParameterOverrides {

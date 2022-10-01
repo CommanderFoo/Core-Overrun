@@ -2,7 +2,7 @@ Assets {
   Id: 5379018547190268819
   Name: "Custom Metal Corrugated 01"
   PlatformAssetType: 13
-  SerializationVersion: 101
+  SerializationVersion: 118
   CustomMaterialAsset {
     BaseMaterialId: 2039967703738409461
     ParameterOverrides {

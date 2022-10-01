@@ -46,6 +46,10 @@ Objects {
     TriggerShape_v2 {
       Value: "mc:etriggershape:box"
     }
+    InteractionTemplate {
+    }
+    BreadcrumbTemplate {
+    }
   }
   InstanceHistory {
     SelfId: 6613349926254344868
@@ -53,6 +57,10 @@ Objects {
     InstanceId: 13774918262342810826
     TemplateId: 6902673128315260216
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 924896608012351656
@@ -89,6 +97,10 @@ Objects {
     InstanceId: 13774918262342810826
     TemplateId: 6902673128315260216
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 5340404284803864002
@@ -154,6 +166,10 @@ Objects {
     InstanceId: 13774918262342810826
     TemplateId: 6902673128315260216
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 8969092755444451169
@@ -185,6 +201,12 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   NetworkContext {
+    MinDetailLevel {
+      Value: "mc:edetaillevel:low"
+    }
+    MaxDetailLevel {
+      Value: "mc:edetaillevel:ultra"
+    }
   }
   InstanceHistory {
     SelfId: 8969092755444451169
@@ -192,6 +214,10 @@ Objects {
     InstanceId: 13774918262342810826
     TemplateId: 6902673128315260216
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 12740765122581155066
@@ -272,6 +298,10 @@ Objects {
     InstanceId: 13774918262342810826
     TemplateId: 6902673128315260216
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 1195075257821232075
@@ -343,6 +373,10 @@ Objects {
     InstanceId: 13774918262342810826
     TemplateId: 6902673128315260216
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 17982867553687178578
@@ -379,4 +413,8 @@ Objects {
     InstanceId: 13774918262342810826
     TemplateId: 6902673128315260216
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }

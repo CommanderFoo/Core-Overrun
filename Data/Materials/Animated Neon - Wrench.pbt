@@ -2,7 +2,7 @@ Assets {
   Id: 6445853505249521803
   Name: "Animated Neon - Wrench"
   PlatformAssetType: 13
-  SerializationVersion: 101
+  SerializationVersion: 118
   CustomMaterialAsset {
     BaseMaterialId: 3521438332259672826
     ParameterOverrides {

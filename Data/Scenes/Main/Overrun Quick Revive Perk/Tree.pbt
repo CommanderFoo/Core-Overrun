@@ -37,6 +37,10 @@ Objects {
     TriggerShape_v2 {
       Value: "mc:etriggershape:box"
     }
+    InteractionTemplate {
+    }
+    BreadcrumbTemplate {
+    }
   }
   InstanceHistory {
     SelfId: 2566105295679478137
@@ -44,6 +48,10 @@ Objects {
     InstanceId: 3906670633734473533
     TemplateId: 12801802773454107622
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 12075823803897831116
@@ -79,6 +87,10 @@ Objects {
     InstanceId: 3906670633734473533
     TemplateId: 12801802773454107622
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 195031496857822421
@@ -132,6 +144,10 @@ Objects {
     InstanceId: 3906670633734473533
     TemplateId: 12801802773454107622
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 8596238483607130626
@@ -160,6 +176,12 @@ Objects {
     Value: "mc:ecollisionsetting:forceoff"
   }
   NetworkContext {
+    MinDetailLevel {
+      Value: "mc:edetaillevel:low"
+    }
+    MaxDetailLevel {
+      Value: "mc:edetaillevel:ultra"
+    }
   }
   InstanceHistory {
     SelfId: 8596238483607130626
@@ -167,6 +189,10 @@ Objects {
     InstanceId: 3906670633734473533
     TemplateId: 12801802773454107622
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 13061033295628903797
@@ -220,6 +246,10 @@ Objects {
     InstanceId: 3906670633734473533
     TemplateId: 12801802773454107622
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }
 Objects {
   Id: 14959792820128182744
@@ -261,4 +291,8 @@ Objects {
     InstanceId: 3906670633734473533
     TemplateId: 12801802773454107622
   }
+  NetworkRelevanceDistance {
+    Value: "mc:eproxyrelevance:critical"
+  }
+  IsReplicationEnabledByDefault: true
 }

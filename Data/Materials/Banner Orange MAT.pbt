@@ -2,7 +2,7 @@ Assets {
   Id: 16658330778785445136
   Name: "Banner Orange MAT"
   PlatformAssetType: 13
-  SerializationVersion: 101
+  SerializationVersion: 118
   CustomMaterialAsset {
     BaseMaterialId: 9222492698913230270
     ParameterOverrides {

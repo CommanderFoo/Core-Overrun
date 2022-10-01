@@ -2,7 +2,7 @@ Assets {
   Id: 1120052098747201699
   Name: "Custom Metal Diamond Plates "
   PlatformAssetType: 13
-  SerializationVersion: 101
+  SerializationVersion: 118
   CustomMaterialAsset {
     BaseMaterialId: 11327141568225483858
     ParameterOverrides {

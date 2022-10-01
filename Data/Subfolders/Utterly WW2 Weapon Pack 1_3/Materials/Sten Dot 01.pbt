@@ -2,7 +2,7 @@ Assets {
   Id: 9861303845679484724
   Name: "Sten Dot 01"
   PlatformAssetType: 13
-  SerializationVersion: 101
+  SerializationVersion: 118
   CustomMaterialAsset {
     BaseMaterialId: 13729005593172074479
     ParameterOverrides {
